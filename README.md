@@ -75,3 +75,6 @@ Then open:
 The platform stores data in `data/exam.db`, lets admins generate papers by
 question count, supports online choice-question answering, and compiles/runs
 C++17 submissions against the bundled sample tests.
+
+The Docker Compose files use the named volume `gesp_exam_data` for SQLite data
+so NAS deployments do not need host-directory permission fixes.

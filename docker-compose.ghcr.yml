@@ -10,7 +10,7 @@ services:
       HOST: 0.0.0.0
       PORT: 8000
     volumes:
-      - ./data:/data
+      - gesp_exam_data:/data
     tmpfs:
       - /tmp:size=256m
     security_opt:
@@ -18,3 +18,5 @@ services:
     pids_limit: 256
     mem_limit: 512m
 
+volumes:
+  gesp_exam_data:

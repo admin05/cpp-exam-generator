@@ -51,7 +51,17 @@ ghcr.io/admin05/gesp-cpp-exam-generator:latest
 - 考试入口：http://NAS-IP:8088/
 - 管理后台：http://NAS-IP:8088/admin
 
-数据保存在项目根目录的 `data/exam.db`，NAS 重启或容器重建后不会丢失。
+数据保存在 Docker 命名卷 `gesp_exam_data` 的 `/data/exam.db` 中，NAS 重启或容器重建后不会丢失。
+
+如果你手动把 compose 改成 `./data:/data` 这类宿主目录绑定，遇到 `sqlite3.OperationalError: unable to open database file` 时，通常是 NAS 目录权限不允许容器内用户写入。可以在 NAS 项目目录执行：
+
+```bash
+mkdir -p data
+chmod 777 data
+docker compose -f docker-compose.ghcr.yml up -d
+```
+
+更推荐保持默认的命名卷配置，少踩权限坑。
 
 ## 生产提醒
 
