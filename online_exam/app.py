@@ -77,12 +77,16 @@ def normalize_output(value: str) -> str:
     return "\n".join(line.rstrip() for line in lines).strip()
 
 
-def balanced_pick(items: list[dict], count: int) -> list[dict]:
+def balanced_pick(items: list[dict], count: int, min_difficulty: int = 0) -> list[dict]:
     if count <= 0:
         return []
-    limit = min(count, len(items))
+    pool = [item for item in items if item.get("difficulty", 0) >= min_difficulty]
+    if len(pool) < count:
+        picked_ids = {item["id"] for item in pool}
+        pool.extend(item for item in items if item["id"] not in picked_ids)
+    limit = min(count, len(pool))
     grouped: dict[str, list[dict]] = {}
-    for item in items:
+    for item in pool:
         grouped.setdefault(item["category"], []).append(item)
 
     rng = random.SystemRandom()
@@ -106,13 +110,19 @@ def balanced_pick(items: list[dict], count: int) -> list[dict]:
     return selected
 
 
-def build_exam(title: str, choice_count: int, program_count: int, duration: int) -> dict:
+def build_exam(
+    title: str,
+    choice_count: int,
+    program_count: int,
+    duration: int,
+    program_min_difficulty: int = 5,
+) -> dict:
     return {
         "title": title,
         "duration_minutes": duration,
         "principle": "GESP C++ 四级偏上 / 五级入门：表达式、循环、数组字符串、函数递推、排序搜索、筛法质数、贪心枚举与逻辑推理均衡覆盖。",
         "choice_questions": balanced_pick(CHOICE_QUESTIONS, choice_count),
-        "programming_tasks": balanced_pick(PROGRAMMING_TASKS, program_count),
+        "programming_tasks": balanced_pick(PROGRAMMING_TASKS, program_count, program_min_difficulty),
     }
 
 
@@ -321,6 +331,12 @@ def admin_page(message: str = "") -> bytes:
                 <input name="program_count" type="number" min="0" max="{len(PROGRAMMING_TASKS)}" value="4">
               </label>
             </div>
+            <label>编程题最低难度
+              <select name="program_min_difficulty">
+                <option value="5" selected>五级入门（推荐）</option>
+                <option value="4">四级偏上</option>
+              </select>
+            </label>
             <label>考试时长（分钟）
               <input name="duration" type="number" min="5" max="240" value="90">
             </label>
@@ -562,8 +578,9 @@ def handle_create_exam(params: dict[str, list[str]]) -> bytes:
     title = params.get("title", ["GESP C++ 模拟测试"])[0].strip()[:80] or "GESP C++ 模拟测试"
     choice_count = max(0, min(int(params.get("choice_count", ["10"])[0]), len(CHOICE_QUESTIONS)))
     program_count = max(0, min(int(params.get("program_count", ["4"])[0]), len(PROGRAMMING_TASKS)))
+    program_min_difficulty = max(4, min(int(params.get("program_min_difficulty", ["5"])[0]), 5))
     duration = max(5, min(int(params.get("duration", ["90"])[0]), 240))
-    exam_id = save_exam(build_exam(title, choice_count, program_count, duration))
+    exam_id = save_exam(build_exam(title, choice_count, program_count, duration, program_min_difficulty))
     return redirect(f"/admin/exams/{exam_id}")
 
 
