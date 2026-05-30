@@ -313,6 +313,12 @@ textarea:focus {
   font-weight: 700;
 }
 
+.nav-grid a.answered {
+  border-color: #83c5a1;
+  background: #e9f8ef;
+  color: #0f6848;
+}
+
 .exam-main {
   display: grid;
   gap: 16px;

@@ -348,7 +348,7 @@ def exam_page(exam_id: int) -> bytes:
     nav = []
     choice_html = []
     for i, q in enumerate(payload["choice_questions"], 1):
-        nav.append(f"<a href=\"#q{i}\">{i}</a>")
+        nav.append(f"<a href=\"#q{i}\" data-target=\"q{i}\">{i}</a>")
         opts = []
         for oi, opt in enumerate(q["options"]):
             opts.append(
@@ -371,9 +371,8 @@ def exam_page(exam_id: int) -> bytes:
         )
 
     program_html = []
-    offset = len(payload["choice_questions"])
     for pi, task in enumerate(payload["programming_tasks"], 1):
-        nav.append(f"<a href=\"#p{pi}\">P{pi}</a>")
+        nav.append(f"<a href=\"#p{pi}\" data-target=\"p{pi}\">P{pi}</a>")
         samples = "".join(
             f"<tr><td>{idx}</td><td><pre>{h(t['input'])}</pre></td><td><pre>{h(t['output'])}</pre></td></tr>"
             for idx, t in enumerate(task["tests"], 1)
@@ -427,6 +426,44 @@ int main() {{
             {''.join(program_html)}
           </section>
         </form>
+        <script>
+        (() => {{
+          const form = document.querySelector(".exam-shell");
+          if (!form) return;
+
+          const defaultCodes = new Map();
+          form.querySelectorAll('textarea[name^="code_"]').forEach((textarea) => {{
+            defaultCodes.set(textarea.name, textarea.value.trim());
+          }});
+
+          const setAnswered = (targetId, answered) => {{
+            const link = form.querySelector(`.nav-grid a[data-target="${{targetId}}"]`);
+            if (link) link.classList.toggle("answered", answered);
+          }};
+
+          const updateChoice = (input) => {{
+            const index = input.name.replace("choice_", "");
+            const checked = !!form.querySelector(`input[name="${{input.name}}"]:checked`);
+            setAnswered(`q${{index}}`, checked);
+          }};
+
+          const updateCode = (textarea) => {{
+            const index = textarea.name.replace("code_", "");
+            const original = defaultCodes.get(textarea.name) || "";
+            setAnswered(`p${{index}}`, textarea.value.trim() !== original);
+          }};
+
+          form.querySelectorAll('input[type="radio"][name^="choice_"]').forEach((input) => {{
+            input.addEventListener("change", () => updateChoice(input));
+            updateChoice(input);
+          }});
+
+          form.querySelectorAll('textarea[name^="code_"]').forEach((textarea) => {{
+            textarea.addEventListener("input", () => updateCode(textarea));
+            updateCode(textarea);
+          }});
+        }})();
+        </script>
         """,
     )
 
