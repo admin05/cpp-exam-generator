@@ -389,21 +389,23 @@ def exam_page(exam_id: int) -> bytes:
     program_html = []
     for pi, task in enumerate(payload["programming_tasks"], 1):
         nav.append(f"<a href=\"#p{pi}\" data-target=\"p{pi}\">P{pi}</a>")
+        public_tests = task.get("public_tests") or task["tests"][:1]
         samples = "".join(
             f"<tr><td>{idx}</td><td><pre>{h(t['input'])}</pre></td><td><pre>{h(t['output'])}</pre></td></tr>"
-            for idx, t in enumerate(task["tests"], 1)
+            for idx, t in enumerate(public_tests, 1)
         )
         program_html.append(
             f"""
             <section class="question-card" id="p{pi}">
-              <div class="q-head"><span>编程题 {pi}. {h(task["title"])}</span><small>{h(task["category"])} · {len(task["tests"])} 组样例</small></div>
+              <div class="q-head"><span>编程题 {pi}. {h(task["title"])}</span><small>{h(task["category"])} · 隐藏测试 {len(task["tests"])} 组</small></div>
               <p>{h(task["description"])}</p>
               <div class="io-grid">
                 <div><b>输入格式</b><p>{h(task["input"])}</p></div>
                 <div><b>输出格式</b><p>{h(task["output"])}</p></div>
               </div>
               <p class="hint">数据范围：{h(task["constraints"])}</p>
-              <table class="samples"><thead><tr><th>#</th><th>输入</th><th>输出</th></tr></thead><tbody>{samples}</tbody></table>
+              <p class="hint">公开样例仅用于理解题意，提交后使用 5 组隐藏测试评分。</p>
+              <table class="samples"><thead><tr><th>#</th><th>公开输入</th><th>公开输出</th></tr></thead><tbody>{samples}</tbody></table>
               <label class="code-label">提交 C++17 代码
                 <textarea name="code_{pi}" spellcheck="false">#include &lt;iostream&gt;
 #include &lt;vector&gt;

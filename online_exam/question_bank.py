@@ -1625,3 +1625,48 @@ ADVANCED_PROGRAMMING_TASKS = [
 
 
 PROGRAMMING_TASKS.extend(ADVANCED_PROGRAMMING_TASKS)
+
+
+PUBLIC_PROGRAMMING_TESTS = {
+    "p-row-col": [{"input": "2 3\n1 2 3\n4 5 6\n1 2\n", "output": "11\n"}],
+    "p-prime-count": [{"input": "10 30\n", "output": "6\n"}],
+    "p-tasks": [{"input": "4 9\n2 5 3 4\n", "output": "3\n"}],
+    "p-longest-rise": [{"input": "6\n1 2 2 3 4 1\n", "output": "3\n"}],
+    "p-recurrence": [{"input": "7\n", "output": "64\n"}],
+    "p-official-gcd-lcm": [{"input": "21 6\n", "output": "3 42\n"}],
+    "p-official-prefix-sum": [{"input": "4 2\n1 3 5 7\n1 2\n2 4\n", "output": "4\n15\n"}],
+    "p-official-sort-students": [{"input": "3\n2 80\n1 90\n3 80\n", "output": "1 2 3\n"}],
+    "p-official-prime-pair": [{"input": "30\n", "output": "4\n"}],
+    "p-official-delete-value": [{"input": "6 4\n4 1 4 2 3 4\n", "output": "1 2 3\n"}],
+    "p-official-brackets": [{"input": "[([])]\n", "output": "YES\n"}],
+    "p-official-two-sum-pairs": [{"input": "5 5\n1 2 2 3 4\n", "output": "3\n"}],
+    "p-official-stairs": [{"input": "6\n", "output": "13\n"}],
+    "p-official-count-components": [{"input": "4 1\n2 3\n", "output": "3\n"}],
+    "p-official-merge-intervals": [{"input": "3\n1 4\n4 5\n8 9\n", "output": "2\n"}],
+    "p-official-grid-bfs": [{"input": "2 3\n...\n..#\n", "output": "-1\n"}],
+    "p-official-knapsack01": [{"input": "3 6\n2 5\n4 9\n3 6\n", "output": "14\n"}],
+    "p-official-lis": [{"input": "6\n3 1 2 1 8 5\n", "output": "3\n"}],
+    "p-official-big-add": [{"input": "456789\n987654\n", "output": "1444443\n"}],
+    "p-official-top-k": [{"input": "5 3\n8 1 5 8 2\n", "output": "5\n"}],
+    "p-official-quick-power": [{"input": "2 5 13\n", "output": "6\n"}],
+    "p-official-rotate-array": [{"input": "5 1\n9 8 7 6 5\n", "output": "5 9 8 7 6\n"}],
+    "p-official-matrix-border": [{"input": "3 2\n1 2\n3 4\n5 6\n", "output": "21\n"}],
+    "p-official-date-next": [{"input": "2024 12 31\n", "output": "2025 1 1\n"}],
+    "p-official-topological": [{"input": "4 2\n1 2\n1 3\n", "output": "2\n"}],
+    "p-advanced-dijkstra": [{"input": "3 3\n1 2 4\n2 3 5\n1 3 20\n", "output": "9\n"}],
+    "p-advanced-binary-answer": [{"input": "4 3\n1 5 9 10\n", "output": "4\n"}],
+    "p-advanced-edit-distance": [{"input": "horse\nros\n", "output": "3\n"}],
+    "p-advanced-min-coins": [{"input": "3 14\n2 5 7\n", "output": "2\n"}],
+    "p-advanced-sliding-window": [{"input": "5 9\n1 4 4 2 10\n", "output": "1\n"}],
+    "p-advanced-kmp": [{"input": "banana\nana\n", "output": "2\n"}],
+    "p-advanced-interval-diff": [{"input": "4 2\n1 2 3\n2 4 4\n", "output": "7\n"}],
+    "p-advanced-two-dimensional-prefix": [{"input": "2 2 2\n1 2\n3 4\n1 1 1 2\n1 2 2 2\n", "output": "3\n6\n"}],
+    "p-advanced-toposort": [{"input": "4 3\n1 2\n2 3\n1 4\n", "output": "YES\n"}],
+    "p-advanced-median-stream": [{"input": "5\n2 1 5 4 3\n", "output": "2 2 3\n"}],
+    "p-advanced-tree-depth": [{"input": "5\n1 2\n2 3\n1 4\n4 5\n", "output": "3\n"}],
+    "p-advanced-shortest-window": [{"input": "abcaac\nac\n", "output": "2\n"}],
+}
+
+
+for task in PROGRAMMING_TASKS:
+    task["public_tests"] = PUBLIC_PROGRAMMING_TESTS.get(task["id"], task["tests"][:1])
