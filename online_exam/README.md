@@ -34,6 +34,18 @@ docker compose up -d --build
 docker compose -f docker-compose.github.yml up -d --build
 ```
 
+如果 NAS 访问 `github.com` 不稳定，但可以像 metube 一样拉取 `ghcr.io` 镜像，推荐使用预构建镜像：
+
+```bash
+docker compose -f docker-compose.ghcr.yml up -d
+```
+
+每次代码推送到 GitHub 的 `main` 分支后，GitHub Actions 会自动发布：
+
+```text
+ghcr.io/admin05/gesp-cpp-exam-generator:latest
+```
+
 访问：
 
 - 考试入口：http://NAS-IP:8088/

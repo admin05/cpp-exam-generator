@@ -60,6 +60,13 @@ Alternatively, build directly from GitHub:
 docker compose -f docker-compose.github.yml up -d --build
 ```
 
+If your NAS cannot access `github.com` reliably but can pull from GHCR, use the
+prebuilt image compose file:
+
+```bash
+docker compose -f docker-compose.ghcr.yml up -d
+```
+
 Then open:
 
 - Student entry: `http://NAS-IP:8088/`
