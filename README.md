@@ -50,7 +50,14 @@ and official exam style. They are not verbatim copies of official GESP papers.
 This repo now also includes a lightweight local platform for NAS deployment.
 
 ```bash
+git pull
 docker compose up -d --build
+```
+
+Alternatively, build directly from GitHub:
+
+```bash
+docker compose -f docker-compose.github.yml up -d --build
 ```
 
 Then open:

@@ -13,10 +13,25 @@
 
 ## Docker Compose 部署
 
-在项目根目录运行：
+推荐方式：NAS 上克隆本仓库，以本地已拉取的代码构建镜像。
 
 ```bash
+git clone https://github.com/admin05/gesp-cpp-exam-generator.git
+cd gesp-cpp-exam-generator
 docker compose up -d --build
+```
+
+以后更新：
+
+```bash
+git pull
+docker compose up -d --build
+```
+
+如果只想让 Compose 直接从 GitHub 的 `main` 分支构建镜像，也可以使用：
+
+```bash
+docker compose -f docker-compose.github.yml up -d --build
 ```
 
 访问：
@@ -29,4 +44,3 @@ docker compose up -d --build
 ## 生产提醒
 
 当前测评器适合本地教学、小范围信任环境使用。它会在应用容器内编译并运行考生代码，已经通过非 root 用户、内存限制、进程数限制和运行超时做了基础约束，但还不是严格安全沙箱。公开给不可信用户使用时，建议把判题服务拆到独立容器沙箱或专门 OJ 判题系统。
-
