@@ -439,6 +439,11 @@ int main() {{
           <aside class="exam-side">
             <h2>{h(payload["title"])}</h2>
             <p>{exam["duration_minutes"]} 分钟 · {len(payload["choice_questions"])} 选 · {len(payload["programming_tasks"])} 编</p>
+            <div class="timer-box" data-duration-minutes="{exam["duration_minutes"]}">
+              <span>剩余时间</span>
+              <strong id="examTimer">--:--</strong>
+            </div>
+            <input type="hidden" name="auto_submitted" value="0">
             <label>考生姓名
               <input name="student_name" required placeholder="请输入姓名">
             </label>
@@ -457,6 +462,12 @@ int main() {{
         (() => {{
           const form = document.querySelector(".exam-shell");
           if (!form) return;
+          const timerBox = form.querySelector(".timer-box");
+          const timerText = form.querySelector("#examTimer");
+          const submitButton = form.querySelector('button[type="submit"]');
+          const autoSubmitted = form.querySelector('input[name="auto_submitted"]');
+          const studentName = form.querySelector('input[name="student_name"]');
+          let submitted = false;
 
           const defaultCodes = new Map();
           form.querySelectorAll('textarea[name^="code_"]').forEach((textarea) => {{
@@ -489,6 +500,34 @@ int main() {{
             textarea.addEventListener("input", () => updateCode(textarea));
             updateCode(textarea);
           }});
+
+          form.addEventListener("submit", () => {{
+            submitted = true;
+            if (submitButton) submitButton.disabled = true;
+          }});
+
+          const durationMinutes = Number(timerBox?.dataset.durationMinutes || 0);
+          if (timerBox && timerText && durationMinutes > 0) {{
+            const deadline = Date.now() + durationMinutes * 60 * 1000;
+            const renderTimer = () => {{
+              const remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+              const minutes = Math.floor(remaining / 60);
+              const seconds = remaining % 60;
+              timerText.textContent = `${{String(minutes).padStart(2, "0")}}:${{String(seconds).padStart(2, "0")}}`;
+              timerBox.classList.toggle("warning", remaining <= 5 * 60);
+              timerBox.classList.toggle("danger", remaining <= 60);
+              if (remaining <= 0 && !submitted) {{
+                submitted = true;
+                if (autoSubmitted) autoSubmitted.value = "1";
+                if (studentName && !studentName.value.trim()) {{
+                  studentName.value = "未填写姓名";
+                }}
+                form.requestSubmit ? form.requestSubmit() : form.submit();
+              }}
+            }};
+            renderTimer();
+            setInterval(renderTimer, 1000);
+          }}
         }})();
         </script>
         """,
