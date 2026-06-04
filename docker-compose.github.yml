@@ -1,0 +1,25 @@
+services:
+  gesp-exam:
+    build:
+      context: https://github.com/admin05/gesp-cpp-exam-generator.git#main
+      dockerfile: Dockerfile
+    image: gesp-cpp-exam-platform:github
+    container_name: gesp-cpp-exam
+    restart: unless-stopped
+    ports:
+      - "8088:8000"
+    environment:
+      EXAM_DB: /data/exam.db
+      HOST: 0.0.0.0
+      PORT: 8000
+    volumes:
+      - gesp_exam_data:/data
+    tmpfs:
+      - /judge:size=256m,exec
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 256
+    mem_limit: 512m
+
+volumes:
+  gesp_exam_data:
