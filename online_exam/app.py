@@ -16,6 +16,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from .question_bank import CHOICE_QUESTIONS, PROGRAMMING_TASKS
+from .question_generators import build_generated_tests, missing_generator_ids
 
 
 ROOT = Path(__file__).resolve().parent
@@ -110,6 +111,15 @@ def balanced_pick(items: list[dict], count: int, min_difficulty: int = 0) -> lis
     return selected
 
 
+def prepare_programming_task(task: dict) -> dict:
+    prepared = dict(task)
+    generated = build_generated_tests(task)
+    prepared["public_tests"] = generated["public_tests"]
+    prepared["hidden_tests"] = generated["hidden_tests"]
+    prepared["tests"] = generated["hidden_tests"]
+    return prepared
+
+
 def build_exam(
     title: str,
     choice_count: int,
@@ -117,12 +127,19 @@ def build_exam(
     duration: int,
     program_min_difficulty: int = 5,
 ) -> dict:
+    missing_generators = missing_generator_ids(PROGRAMMING_TASKS)
+    if missing_generators:
+        raise RuntimeError("以下编程题缺少测试生成器：" + ", ".join(missing_generators))
+    programming_tasks = [
+        prepare_programming_task(task)
+        for task in balanced_pick(PROGRAMMING_TASKS, program_count, program_min_difficulty)
+    ]
     return {
         "title": title,
         "duration_minutes": duration,
         "principle": "GESP C++ 四级偏上 / 五级入门：表达式、循环、数组字符串、函数递推、排序搜索、筛法质数、贪心枚举与逻辑推理均衡覆盖。",
         "choice_questions": balanced_pick(CHOICE_QUESTIONS, choice_count),
-        "programming_tasks": balanced_pick(PROGRAMMING_TASKS, program_count, program_min_difficulty),
+        "programming_tasks": programming_tasks,
     }
 
 
@@ -423,16 +440,9 @@ def exam_page(exam_id: int) -> bytes:
     for pi, task in enumerate(payload["programming_tasks"], 1):
         nav.append(f"<a href=\"#p{pi}\" data-target=\"p{pi}\">P{pi}</a>")
         public_tests = task.get("public_tests") or task["tests"][:1]
-        test_label = (
-            f"公开样例 {len(task['tests'])} 组"
-            if task.get("source", "").endswith("导入")
-            else f"隐藏测试 {len(task['tests'])} 组"
-        )
-        sample_note = (
-            f"本题导入了 {len(task['tests'])} 组公开样例，提交后按这些样例评分。"
-            if task.get("source", "").endswith("导入")
-            else "公开样例仅用于理解题意，提交后使用 5 组隐藏测试评分。"
-        )
+        hidden_tests = task.get("hidden_tests") or task["tests"]
+        test_label = f"公开样例 {len(public_tests)} 组 · 隐藏测试 {len(hidden_tests)} 组"
+        sample_note = "页面仅显示公开样例，提交后使用隐藏测试评分。"
         samples = "".join(
             f"<tr><td>{idx}</td><td><pre>{h(t['input'])}</pre></td><td><pre>{h(t['output'])}</pre></td></tr>"
             for idx, t in enumerate(public_tests, 1)
@@ -586,9 +596,8 @@ def result_page(submission_id: int) -> bytes:
     for item in detail["programs"]:
         case_rows = []
         for case in item["result"]["cases"]:
-            test_input = case.get("input", "旧记录未保存输入")
             case_rows.append(
-                f"<tr><td>{case['index']}</td><td><span class=\"badge {h(case['status']).lower()}\">{h(case['status'])}</span></td><td><pre>{h(test_input)}</pre></td><td><pre>{h(case['expected'])}</pre></td><td><pre>{h(case['actual'])}</pre></td></tr>"
+                f"<tr><td>{case['index']}</td><td><span class=\"badge {h(case['status']).lower()}\">{h(case['status'])}</span></td><td>隐藏测试不公开</td></tr>"
             )
         msg = f"<pre class=\"compile-msg\">{h(item['result']['message'])}</pre>" if item["result"]["message"] else ""
         program_blocks.append(
@@ -596,7 +605,7 @@ def result_page(submission_id: int) -> bytes:
             <section class="question-card">
               <div class="q-head"><span>{h(item["title"])}</span><small>{item["result"]["passed"]}/{item["result"]["total"]}</small></div>
               {msg}
-              <table class="samples result-cases"><thead><tr><th>#</th><th>状态</th><th>测试输入</th><th>正确输出</th><th>考生输出</th></tr></thead><tbody>{''.join(case_rows) or '<tr><td colspan="5">未运行样例</td></tr>'}</tbody></table>
+              <table class="samples result-cases"><thead><tr><th>#</th><th>状态</th><th>说明</th></tr></thead><tbody>{''.join(case_rows) or '<tr><td colspan="3">未运行测试</td></tr>'}</tbody></table>
             </section>
             """
         )
@@ -608,7 +617,7 @@ def result_page(submission_id: int) -> bytes:
           <h1>{h(row["student_name"])} 的提交结果</h1>
           <div class="score">
             <b>选择题 {row["choice_score"]}/{row["choice_total"]}</b>
-            <b>编程样例 {row["program_score"]}/{row["program_total"]}</b>
+            <b>编程测试 {row["program_score"]}/{row["program_total"]}</b>
           </div>
           <p class="muted">提交时间：{h(row["created_at"])}</p>
         </section>
@@ -651,7 +660,7 @@ def admin_exam_detail(exam_id: int) -> bytes:
             <a class="ghost" href="/exam/{exam_id}">考试页</a>
           </div>
           <table>
-            <thead><tr><th>ID</th><th>姓名</th><th>选择题</th><th>编程样例</th><th>时间</th><th>详情</th></tr></thead>
+            <thead><tr><th>ID</th><th>姓名</th><th>选择题</th><th>编程测试</th><th>时间</th><th>详情</th></tr></thead>
             <tbody>{''.join(body_rows) or '<tr><td colspan="6">暂无提交</td></tr>'}</tbody>
           </table>
         </section>
@@ -707,7 +716,8 @@ def handle_submit(exam_id: int, params: dict[str, list[str]]) -> bytes:
     program_total = 0
     for i, task in enumerate(payload["programming_tasks"], 1):
         code = params.get(f"code_{i}", [""])[0]
-        result = run_cpp_judge(code, task["tests"])
+        judge_tests = task.get("hidden_tests") or task["tests"]
+        result = run_cpp_judge(code, judge_tests)
         program_score += result["passed"]
         program_total += result["total"]
         program_details.append({"index": i, "title": task["title"], "result": result})
