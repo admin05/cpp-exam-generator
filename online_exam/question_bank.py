@@ -1627,6 +1627,194 @@ ADVANCED_PROGRAMMING_TASKS = [
 PROGRAMMING_TASKS.extend(ADVANCED_PROGRAMMING_TASKS)
 
 
+RESOURCE_2025_2026_CHOICE_QUESTIONS = [
+    {
+        "id": "c-resource-2025-scope-001",
+        "category": "竞赛规则理解",
+        "difficulty": 3,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "在信息素养编程类复赛中，哪类题目最适合用循环和数组进行模拟求解？",
+        "code": "",
+        "options": ["按规则逐步更新分数或状态", "只要求背诵赛项名称", "只比较文件大小", "无需任何输入输出"],
+        "answer": 0,
+    },
+    {
+        "id": "c-resource-2025-array-001",
+        "category": "数组",
+        "difficulty": 4,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "下面程序片段的输出结果是？",
+        "code": "int a[6] = {2, 5, 1, 8, 6, 3};\nint ans = 0;\nfor (int i = 1; i < 5; i++) {\n    if (a[i] > a[i - 1] && a[i] > a[i + 1]) ans++;\n}\ncout << ans;",
+        "options": ["1", "2", "3", "4"],
+        "answer": 1,
+    },
+    {
+        "id": "c-resource-2025-loop-001",
+        "category": "循环",
+        "difficulty": 3,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "若要统计 n 名选手中成绩不低于 60 分的人数，最直接需要使用哪种结构？",
+        "code": "",
+        "options": ["循环遍历每个成绩并计数", "只读入第一个成绩", "把所有成绩相乘", "对字符串进行反转"],
+        "answer": 0,
+    },
+    {
+        "id": "c-resource-2026-string-001",
+        "category": "字符串",
+        "difficulty": 4,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "下面程序片段的输出结果是？",
+        "code": "string s = \"C2026Plus\";\nint cnt = 0;\nfor (char ch : s) {\n    if (ch >= '0' && ch <= '9') cnt++;\n}\ncout << cnt;",
+        "options": ["2", "3", "4", "5"],
+        "answer": 2,
+    },
+    {
+        "id": "c-resource-2026-sort-001",
+        "category": "排序",
+        "difficulty": 4,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "要按总分从高到低、总分相同按编号从小到大输出选手，排序比较函数应优先比较什么？",
+        "code": "",
+        "options": ["总分", "编号字符串长度", "输入行号的奇偶", "选手姓名首字母"],
+        "answer": 0,
+    },
+    {
+        "id": "c-resource-2026-prefix-001",
+        "category": "前缀和",
+        "difficulty": 4,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "已有前缀和数组 pre，其中 pre[i] 表示前 i 个数之和。区间 [l, r] 的和应写为？",
+        "code": "",
+        "options": ["pre[r] - pre[l - 1]", "pre[r] + pre[l]", "pre[l] - pre[r]", "pre[r - l]"],
+        "answer": 0,
+    },
+    {
+        "id": "c-resource-2026-graph-001",
+        "category": "图论入门",
+        "difficulty": 5,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "在无权地图中求从起点到终点的最少步数，通常优先使用哪种算法？",
+        "code": "",
+        "options": ["广度优先搜索", "冒泡排序", "高精度加法", "枚举所有变量类型"],
+        "answer": 0,
+    },
+    {
+        "id": "c-resource-2026-dp-001",
+        "category": "动态规划入门",
+        "difficulty": 5,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "stem": "若一个问题可以拆成若干重叠子问题，并且当前最优解依赖较小规模结果，常见解法是？",
+        "code": "",
+        "options": ["动态规划", "随机输出", "删除所有输入", "只使用 cout 打印题面"],
+        "answer": 0,
+    },
+]
+
+
+RESOURCE_2025_2026_PROGRAMMING_TASKS = [
+    {
+        "id": "p-resource-score-summary",
+        "category": "数组",
+        "difficulty": 4,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "title": "成绩达标统计",
+        "description": "给定 n 名选手的成绩，请统计成绩不低于 60 分的人数，并输出最高分。",
+        "input": "第一行输入整数 n。第二行输入 n 个整数，表示每名选手的成绩。",
+        "output": "输出两个整数，分别表示达标人数和最高分。",
+        "constraints": "1 <= n <= 100000；0 <= 成绩 <= 100。",
+        "tests": [
+            {"input": "5\n58 60 92 40 75\n", "output": "3 92\n"},
+            {"input": "3\n10 20 30\n", "output": "0 30\n"},
+            {"input": "4\n100 100 99 98\n", "output": "4 100\n"},
+        ],
+    },
+    {
+        "id": "p-resource-topic-count",
+        "category": "哈希计数",
+        "difficulty": 4,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "title": "资料主题去重",
+        "description": "资料库中记录了 n 个主题标签。大小写不同但字母相同的标签视为同一主题，请输出不同主题的数量。",
+        "input": "第一行输入整数 n。接下来 n 行，每行一个只含英文字母的主题标签。",
+        "output": "输出一个整数，表示不同主题数量。",
+        "constraints": "1 <= n <= 10000；每个标签长度不超过 30。",
+        "tests": [
+            {"input": "5\nCpp\npython\nCPP\nGraph\ngraph\n", "output": "3\n"},
+            {"input": "3\narray\nstring\ndp\n", "output": "3\n"},
+            {"input": "4\nBFS\nbfs\nBfs\nDFS\n", "output": "2\n"},
+        ],
+    },
+    {
+        "id": "p-resource-route-energy",
+        "category": "动态规划入门",
+        "difficulty": 5,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "title": "主题路线最大积分",
+        "description": "有 n 个训练站排成一排，第 i 个训练站可获得 a_i 分。选手可以从第 1 站开始，每次前进 1 或 2 站，必须到达第 n 站。请输出最多能获得的总分。",
+        "input": "第一行输入整数 n。第二行输入 n 个整数 a_i。",
+        "output": "输出一个整数，表示最大总分。",
+        "constraints": "1 <= n <= 100000；-1000 <= a_i <= 1000。",
+        "tests": [
+            {"input": "5\n5 -2 4 1 3\n", "output": "13\n"},
+            {"input": "3\n10 -100 5\n", "output": "15\n"},
+            {"input": "1\n7\n", "output": "7\n"},
+        ],
+    },
+    {
+        "id": "p-resource-practice-streak",
+        "category": "双指针",
+        "difficulty": 5,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "title": "连续练习达标段",
+        "description": "给定 n 天每天完成的题目数量和目标 T，请找出总题数至少为 T 的最短连续天数。若不存在，输出 0。",
+        "input": "第一行输入 n 和 T。第二行输入 n 个正整数，表示每天完成题数。",
+        "output": "输出一个整数，表示最短连续天数。",
+        "constraints": "1 <= n <= 100000；1 <= 每天题数,T <= 1000000000。",
+        "tests": [
+            {"input": "6 12\n2 3 5 2 6 4\n", "output": "3\n"},
+            {"input": "4 20\n1 2 3 4\n", "output": "0\n"},
+            {"input": "5 7\n7 1 1 1 1\n", "output": "1\n"},
+        ],
+    },
+    {
+        "id": "p-resource-rank-list",
+        "category": "结构体排序",
+        "difficulty": 5,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "title": "选手排名名单",
+        "description": "给定 n 名选手的编号、理论分和编程分。总分为两项之和，请按总分从高到低排序；若总分相同，编号小的排在前面。输出排序后的编号。",
+        "input": "第一行输入整数 n。接下来 n 行，每行三个整数 id、a、b。",
+        "output": "输出一行 n 个整数，表示排名后的编号。",
+        "constraints": "1 <= n <= 1000；1 <= id <= 100000；0 <= a,b <= 100。",
+        "tests": [
+            {"input": "4\n3 40 50\n1 60 40\n2 50 50\n4 70 10\n", "output": "1 2 3 4\n"},
+            {"input": "3\n10 30 40\n5 80 0\n7 40 40\n", "output": "5 7 10\n"},
+            {"input": "1\n42 100 100\n", "output": "42\n"},
+        ],
+    },
+    {
+        "id": "p-resource-safe-area",
+        "category": "图论入门",
+        "difficulty": 5,
+        "source": "2025年资料/2026年资料 C++与信息素养赛题整理改编",
+        "title": "训练地图最短路",
+        "description": "给定 n 行 m 列地图，'.' 表示可通行，'#' 表示障碍。选手从左上角走到右下角，每次可向上下左右移动一格，请输出最少步数；若无法到达，输出 -1。",
+        "input": "第一行输入 n 和 m。接下来 n 行，每行一个长度为 m 的字符串。",
+        "output": "输出一个整数，表示最少步数。起点到自身步数为 0。",
+        "constraints": "1 <= n,m <= 500。保证左上角和右下角在地图范围内。",
+        "tests": [
+            {"input": "3 3\n...\n.#.\n...\n", "output": "4\n"},
+            {"input": "2 2\n.#\n#.\n", "output": "-1\n"},
+            {"input": "1 1\n.\n", "output": "0\n"},
+        ],
+    },
+]
+
+
+CHOICE_QUESTIONS.extend(RESOURCE_2025_2026_CHOICE_QUESTIONS)
+PROGRAMMING_TASKS.extend(RESOURCE_2025_2026_PROGRAMMING_TASKS)
+
+
 PUBLIC_PROGRAMMING_TESTS = {
     "p-row-col": [{"input": "2 3\n1 2 3\n4 5 6\n1 2\n", "output": "11\n"}],
     "p-prime-count": [{"input": "10 30\n", "output": "6\n"}],
@@ -1665,6 +1853,12 @@ PUBLIC_PROGRAMMING_TESTS = {
     "p-advanced-median-stream": [{"input": "5\n2 1 5 4 3\n", "output": "2 2 3\n"}],
     "p-advanced-tree-depth": [{"input": "5\n1 2\n2 3\n1 4\n4 5\n", "output": "3\n"}],
     "p-advanced-shortest-window": [{"input": "abcaac\nac\n", "output": "2\n"}],
+    "p-resource-score-summary": [{"input": "5\n58 60 92 40 75\n", "output": "3 92\n"}],
+    "p-resource-topic-count": [{"input": "5\nCpp\npython\nCPP\nGraph\ngraph\n", "output": "3\n"}],
+    "p-resource-route-energy": [{"input": "5\n5 -2 4 1 3\n", "output": "13\n"}],
+    "p-resource-practice-streak": [{"input": "6 12\n2 3 5 2 6 4\n", "output": "3\n"}],
+    "p-resource-rank-list": [{"input": "4\n3 40 50\n1 60 40\n2 50 50\n4 70 10\n", "output": "1 2 3 4\n"}],
+    "p-resource-safe-area": [{"input": "3 3\n...\n.#.\n...\n", "output": "4\n"}],
 }
 
 

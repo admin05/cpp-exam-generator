@@ -1014,6 +1014,133 @@ def gen_surrounded(rng, i) -> str:
     return f"{n} {m}\n" + "\n".join(grid) + "\n"
 
 
+def solve_resource_score_summary(data: str) -> str:
+    values = _ints(data)
+    n = values[0]
+    scores = values[1 : 1 + n]
+    return f"{sum(score >= 60 for score in scores)} {max(scores)}"
+
+
+def gen_resource_score_summary(rng, i) -> str:
+    n = rng.randint(1, 30)
+    scores = [rng.randint(0, 100) for _ in range(n)]
+    return f"{n}\n{_join(scores)}\n"
+
+
+def solve_resource_topic_count(data: str) -> str:
+    lines = data.strip("\n").splitlines()
+    n = int(lines[0])
+    return str(len({line.strip().lower() for line in lines[1 : 1 + n]}))
+
+
+def gen_resource_topic_count(rng, i) -> str:
+    base = ["cpp", "python", "graph", "array", "string", "dp", "bfs", "sort", "loop"]
+    n = rng.randint(1, 25)
+    rows = []
+    for _ in range(n):
+        word = rng.choice(base)
+        rows.append("".join(ch.upper() if rng.random() < 0.5 else ch for ch in word))
+    return f"{n}\n" + "\n".join(rows) + "\n"
+
+
+def solve_resource_route_energy(data: str) -> str:
+    values = _ints(data)
+    n = values[0]
+    scores = values[1 : 1 + n]
+    if n == 1:
+        return str(scores[0])
+    dp0 = scores[0]
+    dp1 = scores[0] + scores[1]
+    for score in scores[2:]:
+        dp0, dp1 = dp1, max(dp0, dp1) + score
+    return str(dp1)
+
+
+def gen_resource_route_energy(rng, i) -> str:
+    n = rng.randint(1, 25)
+    scores = [rng.randint(-20, 50) for _ in range(n)]
+    return f"{n}\n{_join(scores)}\n"
+
+
+def solve_resource_practice_streak(data: str) -> str:
+    values = _ints(data)
+    n, target = values[0], values[1]
+    arr = values[2 : 2 + n]
+    left = total = 0
+    best = n + 1
+    for right, value in enumerate(arr):
+        total += value
+        while total >= target:
+            best = min(best, right - left + 1)
+            total -= arr[left]
+            left += 1
+    return str(0 if best == n + 1 else best)
+
+
+def gen_resource_practice_streak(rng, i) -> str:
+    n = rng.randint(1, 30)
+    arr = [rng.randint(1, 20) for _ in range(n)]
+    target = rng.randint(1, sum(arr) + 20)
+    return f"{n} {target}\n{_join(arr)}\n"
+
+
+def solve_resource_rank_list(data: str) -> str:
+    values = _ints(data)
+    n = values[0]
+    players = []
+    pos = 1
+    for _ in range(n):
+        sid, a, b = values[pos], values[pos + 1], values[pos + 2]
+        pos += 3
+        players.append((sid, a + b))
+    players.sort(key=lambda item: (-item[1], item[0]))
+    return _join(sid for sid, _score in players)
+
+
+def gen_resource_rank_list(rng, i) -> str:
+    n = rng.randint(1, 20)
+    ids = rng.sample(range(1, 1000), n)
+    rows = [str(n)]
+    for sid in ids:
+        rows.append(f"{sid} {rng.randint(0, 100)} {rng.randint(0, 100)}")
+    return "\n".join(rows) + "\n"
+
+
+def solve_resource_safe_area(data: str) -> str:
+    lines = data.strip("\n").splitlines()
+    n, m = map(int, lines[0].split())
+    grid = lines[1 : 1 + n]
+    if grid[0][0] == "#" or grid[n - 1][m - 1] == "#":
+        return "-1"
+    dist = [[-1] * m for _ in range(n)]
+    dist[0][0] = 0
+    q = deque([(0, 0)])
+    while q:
+        x, y = q.popleft()
+        if x == n - 1 and y == m - 1:
+            return str(dist[x][y])
+        for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            nx, ny = x + dx, y + dy
+            if 0 <= nx < n and 0 <= ny < m and grid[nx][ny] == "." and dist[nx][ny] == -1:
+                dist[nx][ny] = dist[x][y] + 1
+                q.append((nx, ny))
+    return "-1"
+
+
+def gen_resource_safe_area(rng, i) -> str:
+    n, m = rng.randint(1, 10), rng.randint(1, 10)
+    grid = []
+    for x in range(n):
+        row = []
+        for y in range(m):
+            if (x, y) in ((0, 0), (n - 1, m - 1)):
+                row.append(".")
+            else:
+                row.append("#" if rng.random() < 0.28 else ".")
+        grid.append("".join(row))
+    return f"{n} {m}\n" + "\n".join(grid) + "\n"
+
+
 GENERATORS = {
     "p-row-col": TestGenerator(solve_row_col, gen_row_col),
     "p-prime-count": TestGenerator(solve_prime_count, gen_prime_count),
@@ -1060,4 +1187,10 @@ GENERATORS = {
     "fz-program-1981616870851272705": TestGenerator(solve_transport, gen_transport),
     "fz-program-1981617147746639874": TestGenerator(solve_travel, gen_travel),
     "fz-program-1981617328273678337": TestGenerator(solve_surrounded, gen_surrounded),
+    "p-resource-score-summary": TestGenerator(solve_resource_score_summary, gen_resource_score_summary),
+    "p-resource-topic-count": TestGenerator(solve_resource_topic_count, gen_resource_topic_count),
+    "p-resource-route-energy": TestGenerator(solve_resource_route_energy, gen_resource_route_energy),
+    "p-resource-practice-streak": TestGenerator(solve_resource_practice_streak, gen_resource_practice_streak),
+    "p-resource-rank-list": TestGenerator(solve_resource_rank_list, gen_resource_rank_list),
+    "p-resource-safe-area": TestGenerator(solve_resource_safe_area, gen_resource_safe_area),
 }
