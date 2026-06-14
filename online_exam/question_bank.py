@@ -1988,10 +1988,139 @@ SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS = [
 ]
 
 
+SILK_ROAD_NEW_CITY_2026_CHOICE_QUESTIONS = [
+    {
+        "id": "c-2026-silk-newcity1-arith-001",
+        "category": "表达式",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "stem": "在物流系统中，需要计算从长安到敦煌的货物重量总和。以下哪个语句能正确表达先加后除的平均重量计算？",
+        "code": "",
+        "options": [
+            "int total = weight1 + weight2 * discount;",
+            "double total = (weight1 + weight2) / count;",
+            "float total = weight1 - weight2 % 3;",
+            "char total = 'A' + 1;",
+        ],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-newcity1-sort-001",
+        "category": "排序",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "stem": "数组 [80, 50, 90, 60] 使用冒泡排序按从大到小排序，第一轮外层循环结束后的状态是？",
+        "code": "",
+        "options": ["[50, 80, 60, 90]", "[90, 80, 50, 60]", "[50, 60, 80, 90]", "[80, 50, 60, 90]"],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-newcity1-stack-001",
+        "category": "栈",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "stem": "商队使用栈记录路径，依次执行 push(长安)、push(敦煌)、pop()、push(楼兰)、push(龟兹)，此时栈顶元素是？",
+        "code": "",
+        "options": ["长安", "敦煌", "楼兰", "龟兹"],
+        "answer": 3,
+    },
+    {
+        "id": "c-2026-silk-newcity1-binary-001",
+        "category": "二分查找",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "stem": "在升序数组 [10,20,30,40,50,60,70] 中使用标准二分查找查找 60，需要比较几次才能找到？",
+        "code": "",
+        "options": ["1次", "2次", "3次", "4次"],
+        "answer": 2,
+    },
+    {
+        "id": "c-2026-silk-newcity1-loop-001",
+        "category": "循环",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "stem": "下面程序片段最终输出的 balance 值是多少？",
+        "code": "int profit[5] = {100, -50, 20, -30, 80};\nint balance = 0;\nfor (int i = 0; i < 5; i++) {\n    if (profit[i] > 0) balance += profit[i];\n}\ncout << balance;",
+        "options": ["120", "200", "80", "250"],
+        "answer": 1,
+    },
+]
+
+
+SILK_ROAD_NEW_CITY_2026_PROGRAMMING_TASKS = [
+    {
+        "id": "p-2026-silk-newcity1-visitor-total",
+        "category": "模拟",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "title": "丝路商旅计数器",
+        "description": "输入若干行，每行包含一个城市名和该城市接待的商旅人数，直到输入 END 为止。请输出所有城市接待人数总和。",
+        "input": "多行输入。每行先输入城市名；若城市名不是 END，则继续输入一个整数 people。",
+        "output": "输出一个整数，表示总接待人数。",
+        "constraints": "城市名不含空格；0 <= people <= 100000；数据行数不超过 1000。",
+        "tests": [
+            {"input": "Changan 120\nDunhuang 80\nEND\n", "output": "200\n"},
+            {"input": "END\n", "output": "0\n"},
+            {"input": "Loulan 5\nQiuci 7\nYumen 9\nEND\n", "output": "21\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-newcity1-string-process",
+        "category": "字符串",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "title": "丝路文化交流字符串处理",
+        "description": "给定一行文本字符串 s，请统计其中数字字符个数，将所有小写英文字母转为大写，再反转整个字符串。",
+        "input": "输入一行字符串 s，可能包含空格、英文字母、数字和标点。",
+        "output": "第一行输出数字字符个数；第二行输出处理后的字符串。",
+        "constraints": "1 <= |s| <= 1000。",
+        "tests": [
+            {"input": "Silk Road 2024 hello Xian!\n", "output": "4\n!NAIX OLLEH 4202 DAOR KLIS\n"},
+            {"input": "abc123\n", "output": "3\n321CBA\n"},
+            {"input": "NoDigits\n", "output": "0\nSTIGIDON\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-newcity1-silk-sort",
+        "category": "结构体排序",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "title": "丝绸评级排序",
+        "description": "给定若干批丝绸的编号和品质分数，请按品质分数从高到低排序；如果分数相同，则按编号从小到大排序。",
+        "input": "第一行输入整数 n。接下来 n 行，每行输入 id 和 score。",
+        "output": "输出 n 行，每行包含排序后的 id 和 score。",
+        "constraints": "1 <= n <= 1000；1 <= id <= 100000；0 <= score <= 100。",
+        "tests": [
+            {"input": "5\n101 85\n102 90\n103 85\n104 70\n105 90\n", "output": "102 90\n105 90\n101 85\n103 85\n104 70\n"},
+            {"input": "3\n3 80\n1 80\n2 90\n", "output": "2 90\n1 80\n3 80\n"},
+            {"input": "1\n7 100\n", "output": "7 100\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-newcity1-relic-dfs",
+        "category": "搜索入门",
+        "difficulty": 5,
+        "source": "2026年资料/丝路新程复赛卷一小学/C++/2026年信息素养大复赛C++.docx",
+        "title": "古代遗迹连通判断",
+        "description": "给定 N 行 M 列遗迹地图，'.' 可通行，'#' 为障碍，'S' 为起点，'T' 为终点。每次只能上下左右移动一格，请判断能否从 S 到达 T。",
+        "input": "第一行输入 N 和 M。接下来 N 行，每行一个长度为 M 的字符串。保证恰好有一个 S 和一个 T。",
+        "output": "如果可达输出 YES，否则输出 NO。",
+        "constraints": "1 <= N,M <= 100。",
+        "tests": [
+            {"input": "5 6\n######\n#S...#\n#.##.#\n#.#T.#\n######\n", "output": "YES\n"},
+            {"input": "4 4\n####\n#S.#\n#..#\n####\n", "output": "NO\n"},
+            {"input": "3 3\nS..\n##.\n..T\n", "output": "YES\n"},
+        ],
+    },
+]
+
+
 CHOICE_QUESTIONS.extend(RESOURCE_2025_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(RESOURCE_2025_2026_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS)
+CHOICE_QUESTIONS.extend(SILK_ROAD_NEW_CITY_2026_CHOICE_QUESTIONS)
+PROGRAMMING_TASKS.extend(SILK_ROAD_NEW_CITY_2026_PROGRAMMING_TASKS)
 
 
 PUBLIC_PROGRAMMING_TESTS = {
@@ -2042,6 +2171,12 @@ PUBLIC_PROGRAMMING_TESTS = {
     "p-2026-silk-primary7-country-code": [{"input": "china\n", "output": "ca\n"}],
     "p-2026-silk-primary7-profit-combos": [{"input": "5\n2,1,4,5,3\n3\n", "output": "7,5\n"}],
     "p-2026-silk-primary7-yanghui-column": [{"input": "5\n5,3\n", "output": "6,10\n"}],
+    "p-2026-silk-newcity1-visitor-total": [{"input": "Changan 120\nDunhuang 80\nEND\n", "output": "200\n"}],
+    "p-2026-silk-newcity1-string-process": [{"input": "Silk Road 2024 hello Xian!\n", "output": "4\n!NAIX OLLEH 4202 DAOR KLIS\n"}],
+    "p-2026-silk-newcity1-silk-sort": [
+        {"input": "5\n101 85\n102 90\n103 85\n104 70\n105 90\n", "output": "102 90\n105 90\n101 85\n103 85\n104 70\n"}
+    ],
+    "p-2026-silk-newcity1-relic-dfs": [{"input": "5 6\n######\n#S...#\n#.##.#\n#.#T.#\n######\n", "output": "YES\n"}],
 }
 
 

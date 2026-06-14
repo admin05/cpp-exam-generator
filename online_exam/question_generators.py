@@ -1223,6 +1223,98 @@ def gen_silk_yanghui_column(rng, i) -> str:
     return f"{n}\n{x},{y}\n"
 
 
+def solve_silk_newcity_visitor_total(data: str) -> str:
+    tokens = data.split()
+    total = 0
+    pos = 0
+    while pos < len(tokens):
+        city = tokens[pos]
+        pos += 1
+        if city == "END":
+            break
+        total += int(tokens[pos])
+        pos += 1
+    return str(total)
+
+
+def gen_silk_newcity_visitor_total(rng, i) -> str:
+    cities = ["Changan", "Dunhuang", "Loulan", "Qiuci", "Yumen", "Kashgar"]
+    n = rng.randint(0, 8)
+    rows = [f"{rng.choice(cities)} {rng.randint(0, 500)}" for _ in range(n)]
+    rows.append("END")
+    return "\n".join(rows) + "\n"
+
+
+def solve_silk_newcity_string_process(data: str) -> str:
+    s = data.rstrip("\n")
+    digit_count = sum(ch.isdigit() for ch in s)
+    converted = "".join(ch.upper() if "a" <= ch <= "z" else ch for ch in s)
+    return f"{digit_count}\n{converted[::-1]}"
+
+
+def gen_silk_newcity_string_process(rng, i) -> str:
+    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !?"
+    length = rng.randint(1, 40)
+    return "".join(rng.choice(alphabet) for _ in range(length)) + "\n"
+
+
+def solve_silk_newcity_silk_sort(data: str) -> str:
+    values = _ints(data)
+    n = values[0]
+    rows = [(values[i], values[i + 1]) for i in range(1, 2 * n + 1, 2)]
+    rows.sort(key=lambda item: (-item[1], item[0]))
+    return "\n".join(f"{sid} {score}" for sid, score in rows)
+
+
+def gen_silk_newcity_silk_sort(rng, i) -> str:
+    n = rng.randint(1, 12)
+    ids = rng.sample(range(1, 300), n)
+    rows = [f"{sid} {rng.randint(0, 100)}" for sid in ids]
+    return f"{n}\n" + "\n".join(rows) + "\n"
+
+
+def solve_silk_newcity_relic_dfs(data: str) -> str:
+    lines = data.strip("\n").splitlines()
+    n, m = map(int, lines[0].split())
+    grid = lines[1 : 1 + n]
+    start = target = None
+    for x, row in enumerate(grid):
+        for y, ch in enumerate(row):
+            if ch == "S":
+                start = (x, y)
+            elif ch == "T":
+                target = (x, y)
+    if start is None or target is None:
+        return "NO"
+    seen = [[False] * m for _ in range(n)]
+    q = deque([start])
+    seen[start[0]][start[1]] = True
+    while q:
+        x, y = q.popleft()
+        if (x, y) == target:
+            return "YES"
+        for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            nx, ny = x + dx, y + dy
+            if 0 <= nx < n and 0 <= ny < m and not seen[nx][ny] and grid[nx][ny] != "#":
+                seen[nx][ny] = True
+                q.append((nx, ny))
+    return "NO"
+
+
+def gen_silk_newcity_relic_dfs(rng, i) -> str:
+    n, m = rng.randint(1, 8), rng.randint(2, 8)
+    grid = []
+    for _ in range(n):
+        grid.append(["#" if rng.random() < 0.28 else "." for _ in range(m)])
+    sx, sy = rng.randrange(n), rng.randrange(m)
+    tx, ty = rng.randrange(n), rng.randrange(m)
+    while (tx, ty) == (sx, sy):
+        tx, ty = rng.randrange(n), rng.randrange(m)
+    grid[sx][sy] = "S"
+    grid[tx][ty] = "T"
+    return f"{n} {m}\n" + "\n".join("".join(row) for row in grid) + "\n"
+
+
 GENERATORS = {
     "p-row-col": TestGenerator(solve_row_col, gen_row_col),
     "p-prime-count": TestGenerator(solve_prime_count, gen_prime_count),
@@ -1279,4 +1371,8 @@ GENERATORS = {
     "p-2026-silk-primary7-country-code": TestGenerator(solve_silk_country_code, gen_silk_country_code),
     "p-2026-silk-primary7-profit-combos": TestGenerator(solve_silk_profit_combos, gen_silk_profit_combos),
     "p-2026-silk-primary7-yanghui-column": TestGenerator(solve_silk_yanghui_column, gen_silk_yanghui_column),
+    "p-2026-silk-newcity1-visitor-total": TestGenerator(solve_silk_newcity_visitor_total, gen_silk_newcity_visitor_total),
+    "p-2026-silk-newcity1-string-process": TestGenerator(solve_silk_newcity_string_process, gen_silk_newcity_string_process),
+    "p-2026-silk-newcity1-silk-sort": TestGenerator(solve_silk_newcity_silk_sort, gen_silk_newcity_silk_sort),
+    "p-2026-silk-newcity1-relic-dfs": TestGenerator(solve_silk_newcity_relic_dfs, gen_silk_newcity_relic_dfs),
 }
