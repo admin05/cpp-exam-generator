@@ -1811,8 +1811,187 @@ RESOURCE_2025_2026_PROGRAMMING_TASKS = [
 ]
 
 
+SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS = [
+    {
+        "id": "c-2026-silk-primary7-001",
+        "category": "字符串",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "为方便展示“一带一 路”合作标语，运行以下 C++ 代码，程序输出结果为？",
+        "code": "string trade = \"一带一路\";\ncout << trade + trade;",
+        "options": ["一带一路一带一路", "一带一路", "trade+trade", "一带一路 + 一带一路"],
+        "answer": 0,
+    },
+    {
+        "id": "c-2026-silk-primary7-002",
+        "category": "变量类型",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "外贸平台需要定义合法的贸易订单数量变量，在 C++ 中以下说法正确的是？",
+        "code": "",
+        "options": [
+            "可以使用 int 关键字定义整数类型订单数量变量",
+            "变量名可以设置为 1order",
+            "定义变量后不赋值，变量值一定为 0",
+            "int order,num 无法同时定义两个整型变量",
+        ],
+        "answer": 0,
+    },
+    {
+        "id": "c-2026-silk-primary7-003",
+        "category": "表达式",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "某海关统计出口货物数量，运行以下程序最终输出结果是？",
+        "code": "int total = 5;\ntotal = total + 3;\ntotal = total * 2;\ncout << total;",
+        "options": ["8", "10", "16", "30"],
+        "answer": 2,
+    },
+    {
+        "id": "c-2026-silk-primary7-004",
+        "category": "输入输出",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "海关系统需要批量输出每笔订单的交易明细，在 C++ 中用于控制台输出内容的语句是？",
+        "code": "",
+        "options": ["cin", "cout", "return", "include"],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-primary7-005",
+        "category": "数组",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "在统计多笔重复订单金额数据时，下列关于 C++ 数组特点的说法正确的是？",
+        "code": "",
+        "options": ["数组元素不允许重复", "数组可以存储多个同类型数据", "数组长度可以随意动态变化", "数组只能存储文本数据"],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-primary7-006",
+        "category": "数据结构",
+        "difficulty": 4,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "在贸易数据管理场景中，适合批量存储合作国家名称、商品清单、对应贸易额度的数据结构组合是？",
+        "code": "",
+        "options": ["一维数组 / set / map", "一维数组 / int", "set / int", "map / int"],
+        "answer": 0,
+    },
+    {
+        "id": "c-2026-silk-primary7-007",
+        "category": "输入输出",
+        "difficulty": 4,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "外贸企业读取本地年度进出口数据用于分析，以下属于 C++ 合法数据读取方式的组合是？",
+        "code": "",
+        "options": ["cin >> / getline() / read()", "cin >> / <<", "getline() / <<", "<< / read()"],
+        "answer": 0,
+    },
+    {
+        "id": "c-2026-silk-primary7-008",
+        "category": "循环",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "海关系统需要批量遍历上万条贸易记录完成筛查，C++ 中属于循环结构的组合是？",
+        "code": "",
+        "options": ["for / while", "if / break", "for / if", "while / return"],
+        "answer": 0,
+    },
+    {
+        "id": "c-2026-silk-primary7-009",
+        "category": "表达式",
+        "difficulty": 4,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "运行以下贸易金额计算代码，正确说法组合是？",
+        "code": "int a = 20, b = 6;\nint res = a % b + a / b;\ncout << res;",
+        "options": ["a%b 为取余，a/b 为整数除法且最终输出 5", "最终输出 6", "该代码无法完成数值运算", "a/b 的结果为 3.333"],
+        "answer": 0,
+    },
+    {
+        "id": "c-2026-silk-primary7-010",
+        "category": "字符串",
+        "difficulty": 4,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "stem": "清洗贸易数据时，C++ 中可用于字符串数据清洗与格式化的方法组合是？",
+        "code": "",
+        "options": ["去除首尾空格 / substr() / replace() / toupper()", "只使用 return", "只使用 int", "只使用 break"],
+        "answer": 0,
+    },
+]
+
+
+SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS = [
+    {
+        "id": "p-2026-silk-primary7-double-order",
+        "category": "表达式",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "title": "一带一路贸易订单翻倍",
+        "description": "某外贸企业拓展一带一路海外市场，将单笔原始贸易订单金额翻倍，核算新增贸易额度。输入一个正整数 N，计算并输出 N * 2。",
+        "input": "一行，一个正整数 N。",
+        "output": "一行，一个整数，为翻倍后的订单金额。",
+        "constraints": "1 <= N <= 1000000000。",
+        "tests": [
+            {"input": "500\n", "output": "1000\n"},
+            {"input": "1\n", "output": "2\n"},
+            {"input": "12345\n", "output": "24690\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-primary7-country-code",
+        "category": "字符串",
+        "difficulty": 3,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "title": "外贸合作国家名称提取",
+        "description": "输入一段纯英文国家名称字符串 S，提取第一个字符和最后一个字符，直接拼接后输出。",
+        "input": "一行，一个英文字符串 S。",
+        "output": "一行，首尾字符拼接结果。",
+        "constraints": "3 <= |S| <= 100，区分大小写。",
+        "tests": [
+            {"input": "china\n", "output": "ca\n"},
+            {"input": "Kazakhstan\n", "output": "Kn\n"},
+            {"input": "abc\n", "output": "ac\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-primary7-profit-combos",
+        "category": "搜索枚举",
+        "difficulty": 5,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "title": "外贸商品组合利润统计",
+        "description": "给定 N 种商品利润值，每次任选 K 种商品组成套餐，计算所有组合利润总和。输出不重复利润和数量，以及其中合数数量。合数指大于 1 且不是质数的自然数。",
+        "input": "第 1 行输入 N；第 2 行输入 N 个以英文逗号分隔的利润值；第 3 行输入 K。",
+        "output": "一行两个整数，英文逗号分隔，分别为不重复利润和数量、合数数量。",
+        "constraints": "2 <= N <= 25；2 <= K <= N；利润值为正整数。",
+        "tests": [
+            {"input": "5\n2,1,4,5,3\n3\n", "output": "7,5\n"},
+            {"input": "4\n1,2,3,4\n2\n", "output": "5,3\n"},
+            {"input": "3\n2,3,5\n2\n", "output": "3,1\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-primary7-yanghui-column",
+        "category": "二维数组",
+        "difficulty": 5,
+        "source": "2026年资料/复赛卷七小学组/C++.docx",
+        "title": "一带一路贸易合作金字塔",
+        "description": "以杨辉三角模拟贸易合作金字塔。给定总层数 N 和坐标 X,Y，输出第 X 行第 Y 列的数值，以及第 Y 列从第 1 行到第 N 行的总和。不存在的位置按 0 计入总和。",
+        "input": "第 1 行输入 N；第 2 行输入 X,Y，英文逗号分隔。",
+        "output": "一行两个整数，英文逗号分隔，分别为指定坐标数值、该列总和。",
+        "constraints": "2 <= N <= 30；1 <= Y <= X <= N。",
+        "tests": [
+            {"input": "5\n5,3\n", "output": "6,10\n"},
+            {"input": "4\n3,2\n", "output": "2,4\n"},
+            {"input": "6\n6,1\n", "output": "1,6\n"},
+        ],
+    },
+]
+
+
 CHOICE_QUESTIONS.extend(RESOURCE_2025_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(RESOURCE_2025_2026_PROGRAMMING_TASKS)
+CHOICE_QUESTIONS.extend(SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS)
+PROGRAMMING_TASKS.extend(SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS)
 
 
 PUBLIC_PROGRAMMING_TESTS = {
@@ -1859,6 +2038,10 @@ PUBLIC_PROGRAMMING_TESTS = {
     "p-resource-practice-streak": [{"input": "6 12\n2 3 5 2 6 4\n", "output": "3\n"}],
     "p-resource-rank-list": [{"input": "4\n3 40 50\n1 60 40\n2 50 50\n4 70 10\n", "output": "1 2 3 4\n"}],
     "p-resource-safe-area": [{"input": "3 3\n...\n.#.\n...\n", "output": "4\n"}],
+    "p-2026-silk-primary7-double-order": [{"input": "500\n", "output": "1000\n"}],
+    "p-2026-silk-primary7-country-code": [{"input": "china\n", "output": "ca\n"}],
+    "p-2026-silk-primary7-profit-combos": [{"input": "5\n2,1,4,5,3\n3\n", "output": "7,5\n"}],
+    "p-2026-silk-primary7-yanghui-column": [{"input": "5\n5,3\n", "output": "6,10\n"}],
 }
 
 

@@ -1141,6 +1141,88 @@ def gen_resource_safe_area(rng, i) -> str:
     return f"{n} {m}\n" + "\n".join(grid) + "\n"
 
 
+def solve_silk_double_order(data: str) -> str:
+    return str(_ints(data)[0] * 2)
+
+
+def gen_silk_double_order(rng, i) -> str:
+    return f"{rng.randint(1, 10**9)}\n"
+
+
+def solve_silk_country_code(data: str) -> str:
+    s = data.strip()
+    return s[0] + s[-1]
+
+
+def gen_silk_country_code(rng, i) -> str:
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    n = rng.randint(3, 16)
+    s = "".join(rng.choice(alphabet) for _ in range(n))
+    if rng.random() < 0.3:
+        s = s.capitalize()
+    return s + "\n"
+
+
+def _split_csv_ints(line: str) -> list[int]:
+    return [int(part) for part in line.strip().split(",") if part]
+
+
+def _is_prime_value(x: int) -> bool:
+    if x < 2:
+        return False
+    for d in range(2, isqrt(x) + 1):
+        if x % d == 0:
+            return False
+    return True
+
+
+def solve_silk_profit_combos(data: str) -> str:
+    lines = data.strip("\n").splitlines()
+    n = int(lines[0])
+    values = _split_csv_ints(lines[1])[:n]
+    k = int(lines[2])
+    sums = set()
+
+    def dfs(index: int, count: int, total: int) -> None:
+        if count == k:
+            sums.add(total)
+            return
+        if index == n or count + (n - index) < k:
+            return
+        dfs(index + 1, count + 1, total + values[index])
+        dfs(index + 1, count, total)
+
+    dfs(0, 0, 0)
+    composite = sum(value > 1 and not _is_prime_value(value) for value in sums)
+    return f"{len(sums)},{composite}"
+
+
+def gen_silk_profit_combos(rng, i) -> str:
+    n = rng.randint(2, 12)
+    values = [rng.randint(1, 30) for _ in range(n)]
+    k = rng.randint(2, n)
+    return f"{n}\n{','.join(map(str, values))}\n{k}\n"
+
+
+def solve_silk_yanghui_column(data: str) -> str:
+    lines = data.strip("\n").splitlines()
+    n = int(lines[0])
+    x, y = _split_csv_ints(lines[1])
+    tri = [[0] * (n + 2) for _ in range(n + 2)]
+    for i in range(1, n + 1):
+        tri[i][1] = tri[i][i] = 1
+        for j in range(2, i):
+            tri[i][j] = tri[i - 1][j - 1] + tri[i - 1][j]
+    return f"{tri[x][y]},{sum(tri[row][y] for row in range(1, n + 1))}"
+
+
+def gen_silk_yanghui_column(rng, i) -> str:
+    n = rng.randint(2, 30)
+    x = rng.randint(1, n)
+    y = rng.randint(1, x)
+    return f"{n}\n{x},{y}\n"
+
+
 GENERATORS = {
     "p-row-col": TestGenerator(solve_row_col, gen_row_col),
     "p-prime-count": TestGenerator(solve_prime_count, gen_prime_count),
@@ -1193,4 +1275,8 @@ GENERATORS = {
     "p-resource-practice-streak": TestGenerator(solve_resource_practice_streak, gen_resource_practice_streak),
     "p-resource-rank-list": TestGenerator(solve_resource_rank_list, gen_resource_rank_list),
     "p-resource-safe-area": TestGenerator(solve_resource_safe_area, gen_resource_safe_area),
+    "p-2026-silk-primary7-double-order": TestGenerator(solve_silk_double_order, gen_silk_double_order),
+    "p-2026-silk-primary7-country-code": TestGenerator(solve_silk_country_code, gen_silk_country_code),
+    "p-2026-silk-primary7-profit-combos": TestGenerator(solve_silk_profit_combos, gen_silk_profit_combos),
+    "p-2026-silk-primary7-yanghui-column": TestGenerator(solve_silk_yanghui_column, gen_silk_yanghui_column),
 }
