@@ -1315,6 +1315,50 @@ def gen_silk_newcity_relic_dfs(rng, i) -> str:
     return f"{n} {m}\n" + "\n".join("".join(row) for row in grid) + "\n"
 
 
+def solve_silk_challenge_market_income(data: str) -> str:
+    tea, silk, porcelain = _ints(data)
+    return str(tea * 15 + silk * 30 + porcelain * 50)
+
+
+def gen_silk_challenge_market_income(rng, i) -> str:
+    return f"{rng.randint(0, 10000)} {rng.randint(0, 10000)} {rng.randint(0, 10000)}\n"
+
+
+def solve_silk_challenge_camel_level(data: str) -> str:
+    weight = _ints(data)[0]
+    if weight >= 600:
+        return "Heavy"
+    if weight >= 400:
+        return "Medium"
+    return "Light"
+
+
+def gen_silk_challenge_camel_level(rng, i) -> str:
+    boundary = [1, 399, 400, 599, 600, 1200]
+    weight = boundary[i] if i < len(boundary) else rng.randint(1, 2000)
+    return f"{weight}\n"
+
+
+def solve_silk_challenge_max_forage(data: str) -> str:
+    values = _ints(data)
+    n = values[0]
+    return str(max(values[1 : 1 + n]))
+
+
+def gen_silk_challenge_max_forage(rng, i) -> str:
+    arr = gen_array(rng, i, 1, 30, -1000, 1000)
+    return f"{len(arr)}\n{_join(arr)}\n"
+
+
+def solve_silk_challenge_square_tile(data: str) -> str:
+    l, w = _ints(data)
+    return str(gcd(l, w))
+
+
+def gen_silk_challenge_square_tile(rng, i) -> str:
+    return f"{rng.randint(1, 10**9)} {rng.randint(1, 10**9)}\n"
+
+
 GENERATORS = {
     "p-row-col": TestGenerator(solve_row_col, gen_row_col),
     "p-prime-count": TestGenerator(solve_prime_count, gen_prime_count),
@@ -1375,4 +1419,8 @@ GENERATORS = {
     "p-2026-silk-newcity1-string-process": TestGenerator(solve_silk_newcity_string_process, gen_silk_newcity_string_process),
     "p-2026-silk-newcity1-silk-sort": TestGenerator(solve_silk_newcity_silk_sort, gen_silk_newcity_silk_sort),
     "p-2026-silk-newcity1-relic-dfs": TestGenerator(solve_silk_newcity_relic_dfs, gen_silk_newcity_relic_dfs),
+    "p-2026-silk-challenge3-market-income": TestGenerator(solve_silk_challenge_market_income, gen_silk_challenge_market_income),
+    "p-2026-silk-challenge3-camel-level": TestGenerator(solve_silk_challenge_camel_level, gen_silk_challenge_camel_level),
+    "p-2026-silk-challenge3-max-forage": TestGenerator(solve_silk_challenge_max_forage, gen_silk_challenge_max_forage),
+    "p-2026-silk-challenge3-square-tile": TestGenerator(solve_silk_challenge_square_tile, gen_silk_challenge_square_tile),
 }

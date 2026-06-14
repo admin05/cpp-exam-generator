@@ -2115,12 +2115,141 @@ SILK_ROAD_NEW_CITY_2026_PROGRAMMING_TASKS = [
 ]
 
 
+SILK_ROAD_CHALLENGE_2026_CHOICE_QUESTIONS = [
+    {
+        "id": "c-2026-silk-challenge3-type-001",
+        "category": "变量类型",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "stem": "商队队长统计丝绸库存。每匹丝绸长度可能是小数，例如 3.5 米。若要定义变量 silk_length 存储该数值，下列 C++ 语句正确的是？",
+        "code": "",
+        "options": ["int silk_length = 3.5;", "double silk_length = 3.5;", "string silk_length = 3.5;", "char silk_length = 3.5;"],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-challenge3-logic-001",
+        "category": "逻辑表达式",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "stem": "驼队穿越沙漠时，如果剩余水量 water 小于 50，或者距离下一个绿洲 dist 大于 100，就需要减速慢行。下列代码片段正确的是？",
+        "code": "",
+        "options": [
+            "if (water < 50 && dist > 100) { slow_down = true; }",
+            "if (water < 50 || dist > 100) { slow_down = true; }",
+            "if (water > 50 || dist < 100) { slow_down = true; }",
+            "if (water < 50 & dist > 100) { slow_down = true; }",
+        ],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-challenge3-array-001",
+        "category": "数组",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "stem": "商队有 10 峰骆驼，编号为 0 到 9，载重量存储在数组 load 中。查看编号为 2 的骆驼载重量，正确访问方式是？",
+        "code": "",
+        "options": ["load", "load(2)", "load[2]", "load{2}"],
+        "answer": 2,
+    },
+    {
+        "id": "c-2026-silk-challenge3-loop-001",
+        "category": "循环",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "stem": "计算从长安出发经过 7 个驿站后的总里程，若驿站编号从 0 开始计数，正确的 for 循环头是？",
+        "code": "",
+        "options": ["for (int i = 1; i <= 7; i++)", "for (int i = 0; i < 7; i++)", "for (int i = 0; i <= 7; i++)", "for (i = 0; i < 7; i++)"],
+        "answer": 1,
+    },
+    {
+        "id": "c-2026-silk-challenge3-const-001",
+        "category": "常量",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "stem": "计算瓷器交易税时，税率固定为 0.15。为了保证程序可读性和安全性，下列写法最规范的是？",
+        "code": "",
+        "options": ["#define TAX_RATE 0.15", "const double TAX_RATE = 0.15;", "double const TAX_RATE = 0.15;", "以上都可以"],
+        "answer": 1,
+    },
+]
+
+
+SILK_ROAD_CHALLENGE_2026_PROGRAMMING_TASKS = [
+    {
+        "id": "p-2026-silk-challenge3-market-income",
+        "category": "表达式",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "title": "敦煌集市总收入",
+        "description": "你在敦煌集市售卖茶叶、丝绸和瓷器。每斤茶叶售价 15 两银子，每匹丝绸售价 30 两银子，每件瓷器售价 50 两银子。输入卖出的数量，输出总收入。",
+        "input": "一行三个整数 tea, silk, porcelain。",
+        "output": "输出一个整数，表示总收入。",
+        "constraints": "0 <= tea, silk, porcelain <= 100000。",
+        "tests": [
+            {"input": "2 3 1\n", "output": "170\n"},
+            {"input": "0 0 0\n", "output": "0\n"},
+            {"input": "1 1 1\n", "output": "95\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-challenge3-camel-level",
+        "category": "分支",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "title": "骆驼体重等级",
+        "description": "输入骆驼体重 weight。若 weight >= 600，输出 Heavy；若 400 <= weight < 600，输出 Medium；若 weight < 400，输出 Light。",
+        "input": "一个整数 weight。",
+        "output": "输出 Heavy、Medium 或 Light。",
+        "constraints": "1 <= weight <= 2000。",
+        "tests": [
+            {"input": "450\n", "output": "Medium\n"},
+            {"input": "600\n", "output": "Heavy\n"},
+            {"input": "399\n", "output": "Light\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-challenge3-max-forage",
+        "category": "数组",
+        "difficulty": 3,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "title": "最大草料存量",
+        "description": "商队经过 n 个驿站，每个驿站草料存量不同。请找出并输出最大的草料存量。",
+        "input": "第一行输入 n；第二行输入 n 个整数，表示每个驿站的草料量。",
+        "output": "输出一个整数，表示最大值。",
+        "constraints": "1 <= n <= 100000；草料量为 int 范围内整数。",
+        "tests": [
+            {"input": "5\n100 250 80 300 150\n", "output": "300\n"},
+            {"input": "1\n42\n", "output": "42\n"},
+            {"input": "4\n-5 -2 -9 -3\n", "output": "-2\n"},
+        ],
+    },
+    {
+        "id": "p-2026-silk-challenge3-square-tile",
+        "category": "数论",
+        "difficulty": 4,
+        "source": "2026年资料/丝路新程复赛卷三小学/C++/C++.docx",
+        "title": "贸易广场地砖边长",
+        "description": "长方形贸易广场长为 L、宽为 W。要用边长相同的正方形地砖铺满且不能切割，请输出最大可能边长。",
+        "input": "一行两个整数 L 和 W。",
+        "output": "输出一个整数，表示最大的正方形边长。",
+        "constraints": "1 <= L,W <= 1000000000。",
+        "tests": [
+            {"input": "12 8\n", "output": "4\n"},
+            {"input": "15 5\n", "output": "5\n"},
+            {"input": "17 13\n", "output": "1\n"},
+        ],
+    },
+]
+
+
 CHOICE_QUESTIONS.extend(RESOURCE_2025_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(RESOURCE_2025_2026_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_NEW_CITY_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(SILK_ROAD_NEW_CITY_2026_PROGRAMMING_TASKS)
+CHOICE_QUESTIONS.extend(SILK_ROAD_CHALLENGE_2026_CHOICE_QUESTIONS)
+PROGRAMMING_TASKS.extend(SILK_ROAD_CHALLENGE_2026_PROGRAMMING_TASKS)
 
 
 PUBLIC_PROGRAMMING_TESTS = {
@@ -2177,6 +2306,10 @@ PUBLIC_PROGRAMMING_TESTS = {
         {"input": "5\n101 85\n102 90\n103 85\n104 70\n105 90\n", "output": "102 90\n105 90\n101 85\n103 85\n104 70\n"}
     ],
     "p-2026-silk-newcity1-relic-dfs": [{"input": "5 6\n######\n#S...#\n#.##.#\n#.#T.#\n######\n", "output": "YES\n"}],
+    "p-2026-silk-challenge3-market-income": [{"input": "2 3 1\n", "output": "170\n"}],
+    "p-2026-silk-challenge3-camel-level": [{"input": "450\n", "output": "Medium\n"}],
+    "p-2026-silk-challenge3-max-forage": [{"input": "5\n100 250 80 300 150\n", "output": "300\n"}],
+    "p-2026-silk-challenge3-square-tile": [{"input": "12 8\n", "output": "4\n"}],
 }
 
 
