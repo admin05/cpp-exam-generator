@@ -44,7 +44,11 @@ def build_generated_tests(task: dict, hidden_count: int = 10) -> dict[str, list[
 
 
 def missing_generator_ids(tasks: list[dict]) -> list[str]:
-    return [task["id"] for task in tasks if task["id"] not in GENERATORS]
+    return [task["id"] for task in tasks if task["id"] not in GENERATORS and not task.get("allow_static_tests")]
+
+
+def has_generator(task_id: str) -> bool:
+    return task_id in GENERATORS
 
 
 def _ensure_newline(value: str) -> str:

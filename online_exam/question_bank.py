@@ -2702,6 +2702,10 @@ IMPORTED_FUZHOU_PROGRAMMING_TASKS = [{'id': 'fz-program-2060253670649495554',
 CHOICE_QUESTIONS.extend(IMPORTED_FUZHOU_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(IMPORTED_FUZHOU_PROGRAMMING_TASKS)
 
+from .imported_fusai_questions import IMPORTED_FUSAI_PROGRAMMING_TASKS
+
+PROGRAMMING_TASKS.extend(IMPORTED_FUSAI_PROGRAMMING_TASKS)
+
 for task in PROGRAMMING_TASKS:
     if task.get("source", "").endswith("导入"):
         task["public_tests"] = task["tests"]

@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from .question_bank import CHOICE_QUESTIONS, PROGRAMMING_TASKS
-from .question_generators import build_generated_tests, missing_generator_ids
+from .question_generators import build_generated_tests, has_generator, missing_generator_ids
 
 
 ROOT = Path(__file__).resolve().parent
@@ -24,7 +24,7 @@ DB_PATH = Path(os.environ.get("EXAM_DB", "/data/exam.db"))
 JUDGE_DIR = Path(os.environ.get("JUDGE_DIR", "/judge"))
 HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8000"))
-LETTERS = ["A", "B", "C", "D"]
+LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 
 def db() -> sqlite3.Connection:
@@ -113,6 +113,13 @@ def balanced_pick(items: list[dict], count: int, min_difficulty: int = 0) -> lis
 
 def prepare_programming_task(task: dict) -> dict:
     prepared = dict(task)
+    if not has_generator(task["id"]):
+        public_tests = prepared.get("public_tests") or prepared["tests"][:1]
+        hidden_tests = prepared.get("hidden_tests") or prepared["tests"]
+        prepared["public_tests"] = public_tests
+        prepared["hidden_tests"] = hidden_tests
+        prepared["tests"] = hidden_tests
+        return prepared
     generated = build_generated_tests(task)
     prepared["public_tests"] = generated["public_tests"]
     prepared["hidden_tests"] = generated["hidden_tests"]
@@ -259,6 +266,18 @@ def render_code(code: str) -> str:
     if not code:
         return ""
     return f"<pre class=\"code\"><code>{h(code)}</code></pre>"
+
+
+def answer_indices(answer: object) -> list[int]:
+    if isinstance(answer, list):
+        return sorted(int(x) for x in answer)
+    return [int(answer)]
+
+
+def answer_label(indices: list[int]) -> str:
+    if not indices:
+        return "未作答"
+    return ", ".join(LETTERS[i] for i in indices if 0 <= i < len(LETTERS))
 
 
 def render_question_html(raw_html: str) -> str:
@@ -415,11 +434,12 @@ def exam_page(exam_id: int) -> bytes:
     for i, q in enumerate(payload["choice_questions"], 1):
         nav.append(f"<a href=\"#q{i}\" data-target=\"q{i}\">{i}</a>")
         opts = []
+        input_type = "checkbox" if isinstance(q["answer"], list) else "radio"
         for oi, opt in enumerate(q["options"]):
             opts.append(
                 f"""
                 <label class="option">
-                  <input type="radio" name="choice_{i}" value="{oi}">
+                  <input type="{input_type}" name="choice_{i}" value="{oi}">
                   <span>{LETTERS[oi]}. {h(opt)}</span>
                 </label>
                 """
@@ -442,7 +462,11 @@ def exam_page(exam_id: int) -> bytes:
         public_tests = task.get("public_tests") or task["tests"][:1]
         hidden_tests = task.get("hidden_tests") or task["tests"]
         test_label = f"公开样例 {len(public_tests)} 组 · 隐藏测试 {len(hidden_tests)} 组"
-        sample_note = "页面仅显示公开样例，提交后使用隐藏测试评分。"
+        sample_note = (
+            "页面仅显示公开样例，提交后使用隐藏测试评分。"
+            if hidden_tests
+            else "原始资料未提供可抽取样例，本题仅展示题面用于练习讲解。"
+        )
         samples = "".join(
             f"<tr><td>{idx}</td><td><pre>{h(t['input'])}</pre></td><td><pre>{h(t['output'])}</pre></td></tr>"
             for idx, t in enumerate(public_tests, 1)
@@ -525,7 +549,7 @@ int main() {{
 
           const updateChoice = (input) => {{
             const index = input.name.replace("choice_", "");
-            const checked = !!form.querySelector(`input[name="${{input.name}}"]:checked`);
+            const checked = form.querySelectorAll(`input[name="${{input.name}}"]:checked`).length > 0;
             setAnswered(`q${{index}}`, checked);
           }};
 
@@ -535,7 +559,7 @@ int main() {{
             setAnswered(`p${{index}}`, textarea.value.trim() !== original);
           }};
 
-          form.querySelectorAll('input[type="radio"][name^="choice_"]').forEach((input) => {{
+          form.querySelectorAll('input[name^="choice_"]').forEach((input) => {{
             input.addEventListener("change", () => updateChoice(input));
             updateChoice(input);
           }});
@@ -698,16 +722,17 @@ def handle_submit(exam_id: int, params: dict[str, list[str]]) -> bytes:
     choice_details = []
     choice_score = 0
     for i, q in enumerate(payload["choice_questions"], 1):
-        selected_raw = params.get(f"choice_{i}", [""])[0]
-        selected = int(selected_raw) if selected_raw.isdigit() else -1
-        ok = selected == q["answer"]
+        selected_values = params.get(f"choice_{i}", [])
+        selected = sorted(int(value) for value in selected_values if value.isdigit())
+        correct = answer_indices(q["answer"])
+        ok = selected == correct
         if ok:
             choice_score += 1
         choice_details.append(
             {
                 "index": i,
-                "selected": LETTERS[selected] if 0 <= selected < 4 else "未作答",
-                "answer": LETTERS[q["answer"]],
+                "selected": answer_label(selected),
+                "answer": answer_label(correct),
                 "ok": ok,
             }
         )
