@@ -1811,6 +1811,87 @@ RESOURCE_2025_2026_PROGRAMMING_TASKS = [
 ]
 
 
+OCR_2025_FINAL_ROUND_PROGRAMMING_TASKS = [
+    {
+        "id": "p-2025-ocr-junior-equipment-cost",
+        "category": "表达式",
+        "difficulty": 3,
+        "source": "2025年资料/c++资料/C++真题/2025/2025年信息素养大赛复赛 C++算法创意编程初中组真题 文字识别版.docx",
+        "title": "探险装备采购",
+        "description": "探险队有 n 人，每人需要 3 个探照灯、1 个氧气瓶、4 捆安全绳。已知探照灯单价为 x 元，氧气瓶单价为 y 元，安全绳单价为 z 元，请计算采购全部装备的总花费。",
+        "input": "一行输入四个整数 n、x、y、z，分别表示探险队人数、探照灯单价、氧气瓶单价、安全绳单价。",
+        "output": "输出一个整数，表示购买装备的总花费。",
+        "constraints": "2 <= n,x,y,z <= 100。",
+        "tests": [
+            {"input": "40 3 5 4\n", "output": "1200\n"},
+            {"input": "2 2 3 4\n", "output": "50\n"},
+            {"input": "10 8 6 5\n", "output": "500\n"},
+        ],
+        "public_tests": [{"input": "40 3 5 4\n", "output": "1200\n"}],
+        "hidden_tests": [
+            {"input": "40 3 5 4\n", "output": "1200\n"},
+            {"input": "2 2 3 4\n", "output": "50\n"},
+            {"input": "10 8 6 5\n", "output": "500\n"},
+        ],
+        "allow_static_tests": True,
+    },
+    {
+        "id": "p-2025-ocr-junior-terrain",
+        "category": "分支",
+        "difficulty": 4,
+        "source": "2025年资料/c++资料/C++真题/2025/2025年信息素养大赛复赛 C++算法创意编程初中组真题 文字识别版.docx",
+        "title": "地形判断",
+        "description": "输入东侧、中央、西侧三个关键点的海拔高度 a、b、c。若中央高于两侧，输出 hill；若中央低于两侧，输出 valley；若三点相同，输出 plain；若西侧高于中央且中央高于东侧，输出 east；若东侧高于中央且中央高于西侧，输出 west；否则输出 common。",
+        "input": "输入三个整数 a、b、c，分别表示东侧、中央、西侧的海拔高度。",
+        "output": "输出 hill、valley、plain、east、west 或 common 之一。",
+        "constraints": "海拔高度为 int 范围内整数。",
+        "tests": [
+            {"input": "60 60 60\n", "output": "plain\n"},
+            {"input": "10 20 15\n", "output": "hill\n"},
+            {"input": "30 10 20\n", "output": "valley\n"},
+            {"input": "10 20 30\n", "output": "east\n"},
+            {"input": "30 20 10\n", "output": "west\n"},
+            {"input": "10 30 30\n", "output": "common\n"},
+        ],
+        "public_tests": [{"input": "60 60 60\n", "output": "plain\n"}],
+        "hidden_tests": [
+            {"input": "60 60 60\n", "output": "plain\n"},
+            {"input": "10 20 15\n", "output": "hill\n"},
+            {"input": "30 10 20\n", "output": "valley\n"},
+            {"input": "10 20 30\n", "output": "east\n"},
+            {"input": "30 20 10\n", "output": "west\n"},
+            {"input": "10 30 30\n", "output": "common\n"},
+        ],
+        "allow_static_tests": True,
+    },
+    {
+        "id": "p-2025-ocr-junior-gem-step",
+        "category": "枚举计数",
+        "difficulty": 4,
+        "source": "2025年资料/c++资料/C++真题/2025/2025年信息素养大赛复赛 C++算法创意编程初中组真题 文字识别版.docx",
+        "title": "地宫取宝石",
+        "description": "地宫里有 n 堆宝石，每堆宝石数量为正整数。探险者选择一堆作为起点，此后每次跳过 k 堆宝石再取下一堆，即取下标序列 s, s+k+1, s+2(k+1), ...。请输出最多能拿走多少个宝石。",
+        "input": "第一行输入两个正整数 n、k；第二行输入 n 个正整数 a_i，表示每堆宝石的数量。",
+        "output": "输出一个整数，表示最多能拿走的宝石个数。",
+        "constraints": "1 <= n <= 1000；1 <= k <= 100；每堆宝石个数为正整数。",
+        "tests": [
+            {"input": "7 2\n4 6 2 1 10 1 3\n", "output": "16\n"},
+            {"input": "5 1\n1 2 3 4 5\n", "output": "9\n"},
+            {"input": "4 3\n8 1 2 7\n", "output": "8\n"},
+            {"input": "6 2\n5 1 9 4 2 8\n", "output": "17\n"},
+        ],
+        "public_tests": [{"input": "7 2\n4 6 2 1 10 1 3\n", "output": "16\n"}],
+        "hidden_tests": [
+            {"input": "7 2\n4 6 2 1 10 1 3\n", "output": "16\n"},
+            {"input": "5 1\n1 2 3 4 5\n", "output": "9\n"},
+            {"input": "4 3\n8 1 2 7\n", "output": "8\n"},
+            {"input": "6 2\n5 1 9 4 2 8\n", "output": "17\n"},
+        ],
+        "allow_static_tests": True,
+    },
+]
+
+
 SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS = [
     {
         "id": "c-2026-silk-primary7-001",
@@ -3368,6 +3449,7 @@ FINAL_ROUND_CPP_SINGLE_CHOICE_QUESTIONS = [
 
 CHOICE_QUESTIONS.extend(RESOURCE_2025_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(RESOURCE_2025_2026_PROGRAMMING_TASKS)
+PROGRAMMING_TASKS.extend(OCR_2025_FINAL_ROUND_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_NEW_CITY_2026_CHOICE_QUESTIONS)
