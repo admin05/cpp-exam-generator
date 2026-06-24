@@ -1892,6 +1892,87 @@ OCR_2025_FINAL_ROUND_PROGRAMMING_TASKS = [
 ]
 
 
+OCR_2023_FINAL_ROUND_PROGRAMMING_TASKS = [
+    {
+        "id": "p-2023-ocr-junior-no-repeat-subsequence",
+        "category": "搜索枚举",
+        "difficulty": 5,
+        "source": "2025年资料/c++资料/C++真题/2023/2023初中组C++决赛 文字版.docx",
+        "title": "判断是否存在重复的子序列",
+        "description": "从 m 个不同字符中选取字符，生成长度为 n 的序列，要求序列中不存在两个相邻且完全相同的非空子序列。请统计满足要求的序列总数。",
+        "input": "一行两个正整数 m、n，m 表示不同字符数量，n 表示序列长度。",
+        "output": "输出一个整数，表示没有两个相邻相同子序列的序列总数。",
+        "constraints": "0 < m <= n <= 10。",
+        "tests": [
+            {"input": "3 5\n", "output": "30\n"},
+            {"input": "1 1\n", "output": "1\n"},
+            {"input": "2 2\n", "output": "2\n"},
+            {"input": "2 3\n", "output": "2\n"},
+            {"input": "3 4\n", "output": "18\n"},
+        ],
+        "public_tests": [{"input": "3 5\n", "output": "30\n"}],
+        "hidden_tests": [
+            {"input": "3 5\n", "output": "30\n"},
+            {"input": "1 1\n", "output": "1\n"},
+            {"input": "2 2\n", "output": "2\n"},
+            {"input": "2 3\n", "output": "2\n"},
+            {"input": "3 4\n", "output": "18\n"},
+        ],
+        "allow_static_tests": True,
+    },
+    {
+        "id": "p-2023-ocr-junior-patient-order",
+        "category": "结构体排序",
+        "difficulty": 5,
+        "source": "2025年资料/c++资料/C++真题/2023/2023初中组C++决赛 文字版.docx",
+        "title": "病人看病",
+        "description": "病人登记看病。老年人（年龄 >= 60）优先于非老年人；老年人按年龄从大到小看病，相同年龄按登记顺序；非老年人按登记顺序。请输出看病顺序中的病人 ID。",
+        "input": "第一行输入病人个数 n。接下来 n 行，每行输入病人 ID 和年龄。",
+        "output": "按看病规则依次输出病人 ID，每行一个。",
+        "constraints": "1 <= n < 100；ID 长度小于 10，只包含数字或字母。",
+        "tests": [
+            {"input": "5\n021075 40\n004003 15\n010158 67\n021033 75\n102012 30\n", "output": "021033\n010158\n021075\n004003\n102012\n"},
+            {"input": "4\nA 60\nB 61\nC 59\nD 61\n", "output": "B\nD\nA\nC\n"},
+            {"input": "3\nx1 10\nx2 20\nx3 30\n", "output": "x1\nx2\nx3\n"},
+        ],
+        "public_tests": [{"input": "5\n021075 40\n004003 15\n010158 67\n021033 75\n102012 30\n", "output": "021033\n010158\n021075\n004003\n102012\n"}],
+        "hidden_tests": [
+            {"input": "5\n021075 40\n004003 15\n010158 67\n021033 75\n102012 30\n", "output": "021033\n010158\n021075\n004003\n102012\n"},
+            {"input": "4\nA 60\nB 61\nC 59\nD 61\n", "output": "B\nD\nA\nC\n"},
+            {"input": "3\nx1 10\nx2 20\nx3 30\n", "output": "x1\nx2\nx3\n"},
+        ],
+        "allow_static_tests": True,
+    },
+    {
+        "id": "p-2023-ocr-national-five-digit-cycle",
+        "category": "模拟",
+        "difficulty": 4,
+        "source": "2025年资料/c++资料/C++真题/2023/2023信息素养大赛智能算法挑战国赛真题 文字版.docx",
+        "title": "五位数循环",
+        "description": "给定一个五位数 x。每次将 x 的各个数位分别按从大到小、从小到大排序得到最大值和最小值，再用最大值减最小值作为新的 x。经过有限次操作后，x 会循环出现。请输出循环出现时的第一个数字。",
+        "input": "输入一个五位非负整数 x，可含前导零意义上的数位。",
+        "output": "输出循环出现时的第一个数字。",
+        "constraints": "0 <= x <= 99999；计算每一步时按 5 位数处理，不足 5 位在高位补 0。",
+        "tests": [
+            {"input": "12345\n", "output": "82962\n"},
+            {"input": "54321\n", "output": "82962\n"},
+            {"input": "10000\n", "output": "74943\n"},
+            {"input": "99999\n", "output": "0\n"},
+            {"input": "31415\n", "output": "71973\n"},
+        ],
+        "public_tests": [{"input": "12345\n", "output": "82962\n"}],
+        "hidden_tests": [
+            {"input": "12345\n", "output": "82962\n"},
+            {"input": "54321\n", "output": "82962\n"},
+            {"input": "10000\n", "output": "74943\n"},
+            {"input": "99999\n", "output": "0\n"},
+            {"input": "31415\n", "output": "71973\n"},
+        ],
+        "allow_static_tests": True,
+    },
+]
+
+
 SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS = [
     {
         "id": "c-2026-silk-primary7-001",
@@ -3450,6 +3531,7 @@ FINAL_ROUND_CPP_SINGLE_CHOICE_QUESTIONS = [
 CHOICE_QUESTIONS.extend(RESOURCE_2025_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(RESOURCE_2025_2026_PROGRAMMING_TASKS)
 PROGRAMMING_TASKS.extend(OCR_2025_FINAL_ROUND_PROGRAMMING_TASKS)
+PROGRAMMING_TASKS.extend(OCR_2023_FINAL_ROUND_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_PRIMARY_2026_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(SILK_ROAD_PRIMARY_2026_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(SILK_ROAD_NEW_CITY_2026_CHOICE_QUESTIONS)
