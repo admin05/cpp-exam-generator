@@ -15,6 +15,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+from .csp_j_explanations import CSP_J_ROUND1_EXPLANATIONS
 from .question_bank import CHOICE_QUESTIONS, PROGRAMMING_TASKS
 from .question_generators import build_generated_tests, has_generator, missing_generator_ids
 
@@ -310,6 +311,10 @@ def build_exam(
     missing_generators = missing_generator_ids(programming_pool)
     if missing_generators:
         raise RuntimeError("以下编程题缺少测试生成器：" + ", ".join(missing_generators))
+    choice_questions = [
+        prepare_choice_question(question, question_bank)
+        for question in balanced_pick(choice_pool, choice_count)
+    ]
     programming_tasks = [
         prepare_programming_task(task)
         for task in balanced_pick(programming_pool, program_count)
@@ -321,7 +326,7 @@ def build_exam(
         "question_bank": question_bank,
         "question_bank_label": profile["label"],
         "principle": profile["principle"],
-        "choice_questions": balanced_pick(choice_pool, choice_count),
+        "choice_questions": choice_questions,
         "programming_tasks": programming_tasks,
     }
 
@@ -454,6 +459,20 @@ def answer_label(indices: list[int]) -> str:
     if not indices:
         return "未作答"
     return ", ".join(LETTERS[i] for i in indices if 0 <= i < len(LETTERS))
+
+
+def csp_j_choice_explanation(question: dict) -> str:
+    explicit = str(question.get("explanation", "")).strip()
+    if explicit:
+        return explicit
+    return CSP_J_ROUND1_EXPLANATIONS.get(str(question.get("id", "")), "")
+
+
+def prepare_choice_question(question: dict, question_bank: str) -> dict:
+    prepared = dict(question)
+    if question_bank == "csp_j_round1":
+        prepared["explanation"] = csp_j_choice_explanation(question)
+    return prepared
 
 
 def is_multiple_choice(question: dict) -> bool:
@@ -811,13 +830,28 @@ def result_page(submission_id: int) -> bytes:
     if not row:
         return not_found()
     detail = json.loads(row["detail"])
+    exam = load_exam(row["exam_id"])
+    exam_payload = json.loads(exam["payload"]) if exam else {}
+    exam_choices = exam_payload.get("choice_questions", [])
+    is_csp_j_round1 = exam_payload.get("question_bank") == "csp_j_round1"
 
     choice_rows = []
     for item in detail["choices"]:
         status = "正确" if item["ok"] else "错误"
         result_class = "correct" if item["ok"] else "wrong"
+        question_index = int(item["index"]) - 1
+        question = exam_choices[question_index] if 0 <= question_index < len(exam_choices) else {}
+        explanation = csp_j_choice_explanation(question) if is_csp_j_round1 else ""
+        explanation_cell = '<span class="muted">—</span>'
+        if not item["ok"] and explanation:
+            explanation_cell = (
+                '<details class="answer-explanation">'
+                '<summary>查看答案解析</summary>'
+                f'<div class="answer-explanation-content">{h(explanation)}</div>'
+                '</details>'
+            )
         choice_rows.append(
-            f"<tr class=\"answer-row {result_class}\"><td>{item['index']}</td><td>{h(item.get('type', '客观题'))}</td><td class=\"answer-selected {result_class}\">{h(item['selected'])}</td><td class=\"answer-correct\">{h(item['answer'])}</td><td><span class=\"answer-status {result_class}\">{status}</span></td></tr>"
+            f"<tr class=\"answer-row {result_class}\"><td>{item['index']}</td><td>{h(item.get('type', '客观题'))}</td><td class=\"answer-selected {result_class}\">{h(item['selected'])}</td><td class=\"answer-correct\">{h(item['answer'])}</td><td><span class=\"answer-status {result_class}\">{status}</span></td><td class=\"answer-explanation-cell\">{explanation_cell}</td></tr>"
         )
 
     program_blocks = []
@@ -852,7 +886,7 @@ def result_page(submission_id: int) -> bytes:
         </section>
         <section class="panel">
           <h2>客观题明细</h2>
-          <table><thead><tr><th>题号</th><th>题型</th><th>作答</th><th>答案</th><th>结果</th></tr></thead><tbody>{''.join(choice_rows)}</tbody></table>
+          <table><thead><tr><th>题号</th><th>题型</th><th>作答</th><th>答案</th><th>结果</th><th>答案解析</th></tr></thead><tbody>{''.join(choice_rows)}</tbody></table>
         </section>
         <section>{''.join(program_blocks)}</section>
         """,
@@ -953,6 +987,7 @@ def handle_submit(exam_id: int, params: dict[str, list[str]]) -> bytes:
                 "answer": answer_label(correct),
                 "ok": ok,
                 "type": "多选题" if is_multiple_choice(q) else "单选题",
+                "question_id": q.get("id", ""),
             }
         )
 

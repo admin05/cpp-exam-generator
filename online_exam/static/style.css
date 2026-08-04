@@ -487,7 +487,9 @@ textarea:focus {
 
 .answer-selected,
 .answer-correct {
+  font-size: 18px;
   font-weight: 750;
+  line-height: 1.5;
 }
 
 .answer-selected.correct,
@@ -517,6 +519,45 @@ textarea:focus {
 
 .answer-status.wrong {
   background: #fff1f0;
+}
+
+.answer-explanation-cell {
+  min-width: 150px;
+}
+
+.answer-explanation summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #f0b7b2;
+  border-radius: 6px;
+  background: #fff7f6;
+  color: var(--red);
+  font-weight: 750;
+  cursor: pointer;
+  list-style: none;
+}
+
+.answer-explanation summary::-webkit-details-marker {
+  display: none;
+}
+
+.answer-explanation[open] summary {
+  border-color: #d88b84;
+  background: #fff1f0;
+}
+
+.answer-explanation-content {
+  width: min(420px, 70vw);
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--blue);
+  border-radius: 6px;
+  background: #f6f9ff;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.75;
 }
 
 .badge {
