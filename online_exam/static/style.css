@@ -485,6 +485,40 @@ textarea:focus {
   color: #24405f;
 }
 
+.answer-selected,
+.answer-correct {
+  font-weight: 750;
+}
+
+.answer-selected.correct,
+.answer-correct,
+.answer-status.correct {
+  color: var(--green);
+}
+
+.answer-selected.wrong,
+.answer-status.wrong {
+  color: var(--red);
+}
+
+.answer-status {
+  display: inline-flex;
+  min-width: 44px;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.answer-status.correct {
+  background: #e9f8ef;
+}
+
+.answer-status.wrong {
+  background: #fff1f0;
+}
+
 .badge {
   display: inline-flex;
   min-width: 44px;

@@ -9,7 +9,7 @@ import shutil
 import sqlite3
 import subprocess
 import tempfile
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -25,6 +25,7 @@ JUDGE_DIR = Path(os.environ.get("JUDGE_DIR", "/judge"))
 HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8000"))
 LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+BEIJING_TZ = timezone(timedelta(hours=8), name="Asia/Shanghai")
 PLATFORM_NAME = "C++ 竞赛训练平台"
 EXAM_FORM_SETTINGS_KEY = "admin_exam_form_defaults"
 DEFAULT_EXAM_FORM = {
@@ -123,7 +124,7 @@ def init_db() -> None:
 
 
 def now_text() -> str:
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.now(BEIJING_TZ).strftime("%Y-%m-%d %H:%M:%S")
 
 
 def h(value: object) -> str:
@@ -612,7 +613,7 @@ def admin_page(message: str = "") -> bytes:
           <section class="panel">
             <h2>最近试卷</h2>
             <table>
-              <thead><tr><th>ID</th><th>标题</th><th>题库</th><th>客观/编程</th><th>创建时间</th><th>操作</th></tr></thead>
+              <thead><tr><th>ID</th><th>标题</th><th>题库</th><th>客观/编程</th><th>创建时间（北京时间）</th><th>操作</th></tr></thead>
               <tbody>{''.join(rows) or '<tr><td colspan="6">暂无试卷</td></tr>'}</tbody>
             </table>
           </section>
@@ -814,8 +815,9 @@ def result_page(submission_id: int) -> bytes:
     choice_rows = []
     for item in detail["choices"]:
         status = "正确" if item["ok"] else "错误"
+        result_class = "correct" if item["ok"] else "wrong"
         choice_rows.append(
-            f"<tr><td>{item['index']}</td><td>{h(item.get('type', '客观题'))}</td><td>{h(item['selected'])}</td><td>{h(item['answer'])}</td><td>{status}</td></tr>"
+            f"<tr class=\"answer-row {result_class}\"><td>{item['index']}</td><td>{h(item.get('type', '客观题'))}</td><td class=\"answer-selected {result_class}\">{h(item['selected'])}</td><td class=\"answer-correct\">{h(item['answer'])}</td><td><span class=\"answer-status {result_class}\">{status}</span></td></tr>"
         )
 
     program_blocks = []
@@ -846,7 +848,7 @@ def result_page(submission_id: int) -> bytes:
             <b>客观题 {row["choice_score"]}/{row["choice_total"]}</b>
             <b>编程测试 {row["program_score"]}/{row["program_total"]}</b>
           </div>
-          <p class="muted">提交时间：{h(row["created_at"])}</p>
+          <p class="muted">提交时间（北京时间）：{h(row["created_at"])}</p>
         </section>
         <section class="panel">
           <h2>客观题明细</h2>
@@ -887,7 +889,7 @@ def admin_exam_detail(exam_id: int) -> bytes:
             <a class="ghost" href="/exam/{exam_id}">考试页</a>
           </div>
           <table>
-            <thead><tr><th>ID</th><th>姓名</th><th>客观题</th><th>编程测试</th><th>时间</th><th>详情</th></tr></thead>
+            <thead><tr><th>ID</th><th>姓名</th><th>客观题</th><th>编程测试</th><th>考试时间（北京时间）</th><th>详情</th></tr></thead>
             <tbody>{''.join(body_rows) or '<tr><td colspan="6">暂无提交</td></tr>'}</tbody>
           </table>
         </section>
