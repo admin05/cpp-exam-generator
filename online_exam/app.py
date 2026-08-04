@@ -26,6 +26,14 @@ HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8000"))
 LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 PLATFORM_NAME = "C++ 竞赛训练平台"
+EXAM_FORM_SETTINGS_KEY = "admin_exam_form_defaults"
+DEFAULT_EXAM_FORM = {
+    "title": "素养大赛 C++ 模拟训练",
+    "question_bank": "literacy",
+    "choice_count": 10,
+    "program_count": 4,
+    "duration": 90,
+}
 
 QUESTION_BANK_PROFILES = {
     "all": {
@@ -100,6 +108,15 @@ def init_db() -> None:
                 detail TEXT NOT NULL,
                 created_at TEXT NOT NULL,
                 FOREIGN KEY(exam_id) REFERENCES exams(id)
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS app_settings (
+                name TEXT PRIMARY KEY,
+                value TEXT NOT NULL,
+                updated_at TEXT NOT NULL
             )
             """
         )
@@ -190,6 +207,78 @@ def bank_counts(bank_key: str) -> tuple[int, int]:
 
 def bank_label(bank_key: str) -> str:
     return question_bank_profile(bank_key)["label"]
+
+
+def form_int(value: object, default: int) -> int:
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return default
+
+
+def normalize_exam_form_defaults(values: dict | None = None) -> dict:
+    merged = dict(DEFAULT_EXAM_FORM)
+    if values:
+        merged.update(values)
+
+    question_bank = str(merged.get("question_bank", DEFAULT_EXAM_FORM["question_bank"]))
+    if question_bank not in QUESTION_BANK_PROFILES:
+        question_bank = DEFAULT_EXAM_FORM["question_bank"]
+
+    choice_total, program_total = bank_counts(question_bank)
+    title = str(merged.get("title", DEFAULT_EXAM_FORM["title"])).strip()[:80] or DEFAULT_EXAM_FORM["title"]
+    return {
+        "title": title,
+        "question_bank": question_bank,
+        "choice_count": max(0, min(form_int(merged.get("choice_count"), DEFAULT_EXAM_FORM["choice_count"]), choice_total)),
+        "program_count": max(0, min(form_int(merged.get("program_count"), DEFAULT_EXAM_FORM["program_count"]), program_total)),
+        "duration": max(1, min(form_int(merged.get("duration"), DEFAULT_EXAM_FORM["duration"]), 240)),
+    }
+
+
+def defaults_from_latest_exam() -> dict | None:
+    with db() as conn:
+        exam = conn.execute("SELECT * FROM exams ORDER BY id DESC LIMIT 1").fetchone()
+    if not exam:
+        return None
+    payload = json.loads(exam["payload"])
+    return {
+        "title": exam["title"],
+        "question_bank": payload.get("question_bank", DEFAULT_EXAM_FORM["question_bank"]),
+        "choice_count": len(payload.get("choice_questions", [])),
+        "program_count": len(payload.get("programming_tasks", [])),
+        "duration": exam["duration_minutes"],
+    }
+
+
+def load_exam_form_defaults() -> dict:
+    with db() as conn:
+        row = conn.execute(
+            "SELECT value FROM app_settings WHERE name = ?",
+            (EXAM_FORM_SETTINGS_KEY,),
+        ).fetchone()
+    if row:
+        try:
+            return normalize_exam_form_defaults(json.loads(row["value"]))
+        except (TypeError, ValueError, json.JSONDecodeError):
+            pass
+
+    return normalize_exam_form_defaults(defaults_from_latest_exam())
+
+
+def save_exam_form_defaults(values: dict) -> None:
+    defaults = normalize_exam_form_defaults(values)
+    with db() as conn:
+        conn.execute(
+            """
+            INSERT INTO app_settings(name, value, updated_at)
+            VALUES (?, ?, ?)
+            ON CONFLICT(name) DO UPDATE SET
+                value = excluded.value,
+                updated_at = excluded.updated_at
+            """,
+            (EXAM_FORM_SETTINGS_KEY, json.dumps(defaults, ensure_ascii=False), now_text()),
+        )
 
 
 def prepare_programming_task(task: dict) -> dict:
@@ -481,11 +570,12 @@ def admin_page(message: str = "") -> bytes:
         )
 
     notice = f"<div class=\"notice\">{h(message)}</div>" if message else ""
+    form_defaults = load_exam_form_defaults()
     bank_options = []
     bank_summary = []
     for key, profile in QUESTION_BANK_PROFILES.items():
         choice_total, program_total = bank_counts(key)
-        selected = " selected" if key == "literacy" else ""
+        selected = " selected" if key == form_defaults["question_bank"] else ""
         bank_options.append(
             f"<option value=\"{h(key)}\"{selected}>{h(profile['label'])}（客观 {choice_total} / 编程 {program_total}）</option>"
         )
@@ -498,7 +588,7 @@ def admin_page(message: str = "") -> bytes:
             <h1>创建试卷</h1>
             {notice}
             <label>试卷标题
-              <input name="title" value="素养大赛 C++ 模拟训练" required>
+              <input name="title" value="{h(form_defaults['title'])}" required>
             </label>
             <label>题库范围
               <select name="question_bank">
@@ -507,14 +597,14 @@ def admin_page(message: str = "") -> bytes:
             </label>
             <div class="two">
               <label>客观题数量
-                <input name="choice_count" type="number" min="0" max="{len(CHOICE_QUESTIONS)}" value="10">
+                <input name="choice_count" type="number" min="0" max="{len(CHOICE_QUESTIONS)}" value="{form_defaults['choice_count']}">
               </label>
               <label>编程题数量
-                <input name="program_count" type="number" min="0" max="{len(PROGRAMMING_TASKS)}" value="4">
+                <input name="program_count" type="number" min="0" max="{len(PROGRAMMING_TASKS)}" value="{form_defaults['program_count']}">
               </label>
             </div>
             <label>考试时长（分钟）
-              <input name="duration" type="number" min="1" max="240" value="90">
+              <input name="duration" type="number" min="1" max="240" value="{form_defaults['duration']}">
             </label>
             <button class="button primary" type="submit">生成试卷</button>
             <p class="hint">当前题库：{'; '.join(bank_summary)}。CSP-J 已按第一轮客观题、第二轮编程题拆分；后续导入 CSP 真题时标记 competition="csp_j_round1" 或 competition="csp_j_round2" 即可进入对应题库。</p>
@@ -806,13 +896,26 @@ def admin_exam_detail(exam_id: int) -> bytes:
 
 
 def handle_create_exam(params: dict[str, list[str]]) -> bytes:
-    title = params.get("title", ["C++ 竞赛模拟训练"])[0].strip()[:80] or "C++ 竞赛模拟训练"
-    question_bank = params.get("question_bank", ["literacy"])[0]
-    choice_total, program_total = bank_counts(question_bank)
-    choice_count = max(0, min(int(params.get("choice_count", ["10"])[0]), choice_total))
-    program_count = max(0, min(int(params.get("program_count", ["4"])[0]), program_total))
-    duration = max(1, min(int(params.get("duration", ["90"])[0]), 240))
-    exam_id = save_exam(build_exam(title, choice_count, program_count, duration, question_bank))
+    current_defaults = load_exam_form_defaults()
+    form_defaults = normalize_exam_form_defaults(
+        {
+            "title": params.get("title", [current_defaults["title"]])[0],
+            "question_bank": params.get("question_bank", [current_defaults["question_bank"]])[0],
+            "choice_count": params.get("choice_count", [current_defaults["choice_count"]])[0],
+            "program_count": params.get("program_count", [current_defaults["program_count"]])[0],
+            "duration": params.get("duration", [current_defaults["duration"]])[0],
+        }
+    )
+    exam_id = save_exam(
+        build_exam(
+            form_defaults["title"],
+            form_defaults["choice_count"],
+            form_defaults["program_count"],
+            form_defaults["duration"],
+            form_defaults["question_bank"],
+        )
+    )
+    save_exam_form_defaults(form_defaults)
     return redirect(f"/admin/exams/{exam_id}")
 
 
