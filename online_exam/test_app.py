@@ -104,6 +104,9 @@ class ResultPageTest(unittest.TestCase):
             r"\.answer-selected,\s*\.answer-correct\s*\{[^}]*font-size: 18px;",
         )
         self.assertRegex(css, r"\.answer-status\s*\{[^}]*font-size: 18px;")
+        self.assertRegex(css, r"\.answer-explanation summary\s*\{[^}]*font-size: 16px;")
+        self.assertRegex(css, r"\.answer-explanation-content\s*\{[^}]*font-size: 17px;")
+        self.assertRegex(css, r"\.answer-explanation-content h3\s*\{[^}]*font-size: 18px;")
 
     def test_admin_score_page_labels_exam_time_as_beijing_time(self) -> None:
         payload = {"choice_questions": [], "programming_tasks": []}
