@@ -505,12 +505,13 @@ textarea:focus {
 
 .answer-status {
   display: inline-flex;
-  min-width: 44px;
+  min-width: 58px;
   justify-content: center;
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 800;
+  line-height: 1.35;
 }
 
 .answer-status.correct {
@@ -549,7 +550,7 @@ textarea:focus {
 }
 
 .answer-explanation-content {
-  width: min(420px, 70vw);
+  width: min(600px, 78vw);
   margin-top: 10px;
   padding: 12px 14px;
   border-left: 4px solid var(--blue);
@@ -558,6 +559,51 @@ textarea:focus {
   color: #334155;
   font-size: 14px;
   line-height: 1.75;
+}
+
+.answer-explanation-content h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.answer-explanation-content p {
+  margin: 0;
+}
+
+.answer-explanation-content section + section,
+.answer-explanation-correct,
+.answer-explanation-correct + section {
+  margin-top: 14px;
+}
+
+.answer-explanation-question .code {
+  margin-top: 10px;
+}
+
+.answer-explanation-options {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.answer-explanation-options li {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.answer-explanation-options li b {
+  display: inline-block;
+  min-width: 24px;
+  color: var(--blue-dark);
+}
+
+.answer-explanation-correct {
+  color: var(--green);
 }
 
 .badge {

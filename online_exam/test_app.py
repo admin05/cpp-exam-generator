@@ -32,7 +32,13 @@ class ResultPageTest(unittest.TestCase):
             "question_bank": "csp_j_round1",
             "choice_questions": [
                 {"id": "c-arith-001"},
-                {"id": "c-array-001"},
+                {
+                    "id": "c-array-001",
+                    "stem": "下面程序片段的输出结果是？",
+                    "code": "int a[5] = {2, 4, 6, 8, 10};\ncout << a[1] + a[3];",
+                    "options": ["6", "10", "12", "14"],
+                    "answer": 2,
+                },
             ],
             "programming_tasks": [],
         }
@@ -68,6 +74,14 @@ class ResultPageTest(unittest.TestCase):
         self.assertIn('class="answer-status correct">正确</span>', page)
         self.assertIn('class="answer-status wrong">错误</span>', page)
         self.assertEqual(page.count("查看答案解析"), 1)
+        self.assertIn("<h3>题目</h3>", page)
+        self.assertIn("下面程序片段的输出结果是？", page)
+        self.assertIn("cout &lt;&lt; a[1] + a[3];", page)
+        self.assertIn("<b>A.</b> 6", page)
+        self.assertIn("<b>B.</b> 10", page)
+        self.assertIn("<b>C.</b> 12", page)
+        self.assertIn("<b>D.</b> 14", page)
+        self.assertIn("<b>正确答案：</b>C", page)
         self.assertIn("a[1]=4、a[3]=8", page)
         self.assertIn("提交时间（北京时间）", page)
 
@@ -89,6 +103,7 @@ class ResultPageTest(unittest.TestCase):
             css,
             r"\.answer-selected,\s*\.answer-correct\s*\{[^}]*font-size: 18px;",
         )
+        self.assertRegex(css, r"\.answer-status\s*\{[^}]*font-size: 18px;")
 
     def test_admin_score_page_labels_exam_time_as_beijing_time(self) -> None:
         payload = {"choice_questions": [], "programming_tasks": []}

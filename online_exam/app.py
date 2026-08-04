@@ -507,6 +507,34 @@ def _sanitize_img_tag(match: re.Match[str]) -> str:
     return f"<img src=\"{h(src)}\" alt=\"题目图片\" loading=\"lazy\">"
 
 
+def render_choice_explanation(question: dict, explanation: str) -> str:
+    options = "".join(
+        f'<li><b>{LETTERS[index]}.</b> {h(option)}</li>'
+        for index, option in enumerate(question.get("options", []))
+        if index < len(LETTERS)
+    )
+    correct_answer = answer_label(answer_indices(question["answer"])) if "answer" in question else ""
+    return f"""
+    <div class="answer-explanation-content">
+      <section class="answer-explanation-question">
+        <h3>题目</h3>
+        <p>{h(question.get("stem", ""))}</p>
+        {render_question_html(question.get("content_html", ""))}
+        {render_code(question.get("code", ""))}
+      </section>
+      <section>
+        <h3>选项</h3>
+        <ol class="answer-explanation-options">{options}</ol>
+      </section>
+      <p class="answer-explanation-correct"><b>正确答案：</b>{h(correct_answer)}</p>
+      <section>
+        <h3>解析</h3>
+        <p>{h(explanation)}</p>
+      </section>
+    </div>
+    """
+
+
 def load_exam(exam_id: int) -> sqlite3.Row | None:
     with db() as conn:
         return conn.execute("SELECT * FROM exams WHERE id = ?", (exam_id,)).fetchone()
@@ -847,7 +875,7 @@ def result_page(submission_id: int) -> bytes:
             explanation_cell = (
                 '<details class="answer-explanation">'
                 '<summary>查看答案解析</summary>'
-                f'<div class="answer-explanation-content">{h(explanation)}</div>'
+                f'{render_choice_explanation(question, explanation)}'
                 '</details>'
             )
         choice_rows.append(
