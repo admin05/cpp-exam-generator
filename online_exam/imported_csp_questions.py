@@ -63,12 +63,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'options': ['鲁班奖',
               '普利策奖',
               '图灵奖',
-              '， 诺贝尔奖\n'
-              'CCF CSP-J 2019 第一轮 C++语言试题 BG\n'
-              '第2页，共9页\n'
-              '\n'
-              '二、阅读程序〈程序输入不超过数组或字符串定义的范围，判断题正确填 vV，\n'
-              '错误填X，除特殊说明外，判断题 1. 5 分，选择古3 分，共计 40 分)'],
+              '， 诺贝尔奖\n二、阅读程序〈程序输入不超过数组或字符串定义的范围，判断题正确填 vV，\n错误填X，除特殊说明外，判断题 1. 5 分，选择古3 分，共计 40 分)'],
   'answer': 2},
  {'id': 'csp_j_round1-2020-q01',
   'competition': 'csp_j_round1',
@@ -224,10 +219,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-J/2021/Round1/cspjs2021hj_cpp.pdf',
   'stem': '以比较作为基本运算，在 N 个数中找出最大数，最坏情况下所需要的最少的比较次数为\n (   )。',
   'code': '',
-  'options': ['N2\n\n                     CCF CSP-J 2021 第一轮 C++语言试题\n                               第1页，共12页',
-              'N',
-              'N-1',
-              'N+1'],
+  'options': ['N2', 'N', 'N-1', 'N+1'],
   'answer': 2},
  {'id': 'csp_j_round1-2021-q05',
   'competition': 'csp_j_round1',
@@ -274,10 +266,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-J/2021/Round1/cspjs2021hj_cpp.pdf',
   'stem': '如果一棵二叉树只有根结点，那么这棵二叉树高度为 1。请问高度为 5 的完全二叉树有\n  (   )种不同的形态？',
   'code': '',
-  'options': ['16',
-              '15',
-              '17',
-              '32\n\n                     CCF CSP-J 2021 第一轮 C++语言试题\n                               第2页，共12页'],
+  'options': ['16', '15', '17', '32'],
   'answer': 0},
  {'id': 'csp_j_round1-2021-q09',
   'competition': 'csp_j_round1',
@@ -333,9 +322,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'stem': '考虑如下递归算法\n'
           '    solve(n)\n'
           '         if n<=1 return 1\n'
-          '\n'
-          '                            CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                      第3页，共12页\n'
           '           else if n>=5 return n*solve(n-2)\n'
           '           else return n*solve(n-1)\n'
           '\n'
@@ -382,8 +368,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      02 using namespace std;\n'
           '      03\n'
           '      04 int n;\n'
-          '                            CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                      第4页，共12页\n'
           '    05 int a[1000];\n'
           '    06\n'
           '    07 int f(int x)\n'
@@ -427,8 +411,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      02 using namespace std;\n'
           '      03\n'
           '      04 int n;\n'
-          '                            CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                      第4页，共12页\n'
           '    05 int a[1000];\n'
           '    06\n'
           '    07 int f(int x)\n'
@@ -472,8 +454,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      02 using namespace std;\n'
           '      03\n'
           '      04 int n;\n'
-          '                            CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                      第4页，共12页\n'
           '    05 int a[1000];\n'
           '    06\n'
           '    07 int f(int x)\n'
@@ -517,8 +497,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      02 using namespace std;\n'
           '      03\n'
           '      04 int n;\n'
-          '                            CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                      第4页，共12页\n'
           '    05 int a[1000];\n'
           '    06\n'
           '    07 int f(int x)\n'
@@ -562,8 +540,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      02 using namespace std;\n'
           '      03\n'
           '      04 int n;\n'
-          '                            CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                      第4页，共12页\n'
           '    05 int a[1000];\n'
           '    06\n'
           '    07 int f(int x)\n'
@@ -601,8 +577,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '(2)\n'
               '  01 #include <iostream>\n'
               '  02 #include <string>\n'
-              '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                       第5页，共12页\n'
               '    03 using namespace std;\n'
               '    04\n'
               '    05 char base[64];\n'
@@ -654,9 +628,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    42     return 0;\n'
               '    43 }\n'
               '\n'
-              'l   判断题\n'
-              '                           CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                     第6页，共12页'],
+              'l   判断题'],
   'answer': 1},
  {'id': 'csp_j_round1-2021-q22',
   'competition': 'csp_j_round1',
@@ -679,8 +651,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'stem': '可能存在输入不同，但输出的第二行相同的情形。(                              )',
   'code': '01 #include <iostream>\n'
           '  02 #include <string>\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第5页，共12页\n'
           '    03 using namespace std;\n'
           '    04\n'
           '    05 char base[64];\n'
@@ -732,9 +702,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    42     return 0;\n'
           '    43 }\n'
           '\n'
-          'l   判断题\n'
-          '                           CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共12页',
+          'l   判断题',
   'options': ['正确', '错误'],
   'answer': 0},
  {'id': 'csp_j_round1-2021-q24',
@@ -747,8 +715,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'stem': '输出的第一行为“-1”。( )\n\nl   单选题\n\n                港',
   'code': '01 #include <iostream>\n'
           '  02 #include <string>\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第5页，共12页\n'
           '    03 using namespace std;\n'
           '    04\n'
           '    05 char base[64];\n'
@@ -800,9 +766,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    42     return 0;\n'
           '    43 }\n'
           '\n'
-          'l   判断题\n'
-          '                           CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共12页',
+          'l   判断题',
   'options': ['正确', '错误'],
   'answer': 0},
  {'id': 'csp_j_round1-2021-q25',
@@ -815,8 +779,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'stem': '设输入字符串长度为 n，decode 函数的时间复杂度为(                            )。',
   'code': '01 #include <iostream>\n'
           '  02 #include <string>\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第5页，共12页\n'
           '    03 using namespace std;\n'
           '    04\n'
           '    05 char base[64];\n'
@@ -868,9 +830,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    42     return 0;\n'
           '    43 }\n'
           '\n'
-          'l   判断题\n'
-          '                           CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共12页',
+          'l   判断题',
   'options': ['Θ(√𝑛)', 'Θ(𝑛)', 'Θ(𝑛 log 𝑛)', 'Θ(𝑛! )\n\n              香'],
   'answer': 1},
  {'id': 'csp_j_round1-2021-q26',
@@ -883,8 +843,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'stem': '当输入为“Y3Nx”时，输出的第二行为(                      )。',
   'code': '01 #include <iostream>\n'
           '  02 #include <string>\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第5页，共12页\n'
           '    03 using namespace std;\n'
           '    04\n'
           '    05 char base[64];\n'
@@ -936,9 +894,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    42     return 0;\n'
           '    43 }\n'
           '\n'
-          'l   判断题\n'
-          '                           CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共12页',
+          'l   判断题',
   'options': ['“csp”', '“csq”', '“CSP”', '“Csp”'],
   'answer': 1},
  {'id': 'csp_j_round1-2021-q27',
@@ -951,8 +907,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'stem': '(3.5 分)当输入为“Y2NmIDIwMjE=”时，输出的第二行为(                              )。',
   'code': '01 #include <iostream>\n'
           '  02 #include <string>\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第5页，共12页\n'
           '    03 using namespace std;\n'
           '    04\n'
           '    05 char base[64];\n'
@@ -1004,9 +958,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    42     return 0;\n'
           '    43 }\n'
           '\n'
-          'l   判断题\n'
-          '                           CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共12页',
+          'l   判断题',
   'options': ['“ccf2021”',
               '“ccf2022”',
               '“ccf 2021”',
@@ -1043,8 +995,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  24                 c[i * k] = c[i] + 1;\n'
               '  25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n'
               '  26                 d[i * k] = d[i];\n'
-              '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                       第7页，共12页\n'
               '    27                 g[i * k] = g[i] * k + d[i];\n'
               '    28                 break;\n'
               '    29             }\n'
@@ -1127,8 +1077,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24                 c[i * k] = c[i] + 1;\n'
           '  25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n'
           '  26                 d[i * k] = d[i];\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第7页，共12页\n'
           '    27                 g[i * k] = g[i] * k + d[i];\n'
           '    28                 break;\n'
           '    29             }\n'
@@ -1198,8 +1146,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24                 c[i * k] = c[i] + 1;\n'
           '  25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n'
           '  26                 d[i * k] = d[i];\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第7页，共12页\n'
           '    27                 g[i * k] = g[i] * k + d[i];\n'
           '    28                 break;\n'
           '    29             }\n'
@@ -1269,8 +1215,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24                 c[i * k] = c[i] + 1;\n'
           '  25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n'
           '  26                 d[i * k] = d[i];\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第7页，共12页\n'
           '    27                 g[i * k] = g[i] * k + d[i];\n'
           '    28                 break;\n'
           '    29             }\n'
@@ -1340,8 +1284,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24                 c[i * k] = c[i] + 1;\n'
           '  25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n'
           '  26                 d[i * k] = d[i];\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第7页，共12页\n'
           '    27                 g[i * k] = g[i] * k + d[i];\n'
           '    28                 break;\n'
           '    29             }\n'
@@ -1420,8 +1362,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24                 c[i * k] = c[i] + 1;\n'
           '  25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n'
           '  26                 d[i * k] = d[i];\n'
-          '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-          '                                       第7页，共12页\n'
           '    27                 g[i * k] = g[i] * k + d[i];\n'
           '    28                 break;\n'
           '    29             }\n'
@@ -1455,9 +1395,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '“15 2340”',
               '“16 2340”',
               '“16 1340”\n'
-              '\n'
-              '                                  CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                            第8页，共12页\n'
               '三、完善程序(单选题，每小题 3 分，共计 30 分)\n'
               '\n'
               '  (1)(Josephus 问题)有 𝑛 个人围成一个圈，依次标号 0 至 𝑛 − 1。从 0 号开\n'
@@ -1564,13 +1501,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  26     cout << ans << endl;\n'
           '  27     return 0;\n'
           '  28 }',
-  'options': ['i % 2 == 0',
-              'i % 2 == 1',
-              'p',
-              '!p\n'
-              '\n'
-              '                             CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                       第9页，共12页'],
+  'options': ['i % 2 == 0', 'i % 2 == 1', 'p', '!p'],
   'answer': 2},
  {'id': 'csp_j_round1-2021-q36',
   'competition': 'csp_j_round1',
@@ -1771,8 +1702,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               ' 24             }\n'
               ' 25 }\n'
               ' 26\n'
-              '                        CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                 第10页，共12页\n'
               '27 int unique(point A[], int n) {\n'
               '28     int t = 0;\n'
               '29     for (int i = 0; i < n; i++)\n'
@@ -1825,8 +1754,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '67                 ans++;\n'
               '68             }\n'
               '69     cout << ans << endl;\n'
-              '                      CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                               第11页，共12页\n'
               '70          return 0;\n'
               '71 }'],
   'answer': 1},
@@ -2102,10 +2029,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'options': ['A[i].x == A[j].x',
               'A[i].id < A[j].id',
               'A[i].x == A[j].x && A[i].id < A[j].id',
-              'A[i].x < A[j].x && A[i].y < A[j].y\n'
-              '\n'
-              '                               CCF CSP-J 2021 第一轮 C++语言试题\n'
-              '                                        第12页，共12页'],
+              'A[i].x < A[j].x && A[i].y < A[j].y'],
   'answer': 3},
  {'id': 'csp_j_round1-2022-q01',
   'competition': 'csp_j_round1',
@@ -2143,13 +2067,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '     int *q = &y;\n'
           '     p = q;',
   'code': '',
-  'options': ['将 x 的值赋为 201',
-              '将 y 的值赋为 101\n'
-              '\n'
-              '                        CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                  第1页，共12页',
-              '将 q 指向 x 的地址',
-              '将 p 指向 y 的地址'],
+  'options': ['将 x 的值赋为 201', '将 y 的值赋为 101', '将 q 指向 x 的地址', '将 p 指向 y 的地址'],
   'answer': 3},
  {'id': 'csp_j_round1-2022-q04',
   'competition': 'csp_j_round1',
@@ -2198,10 +2116,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  29%。若使用哈夫曼编码方式对字母进行不定长的二进制编码，字母 d 的编码长度为\n'
           '  (   )位。',
   'code': '',
-  'options': ['1',
-              '2\n\n                    CCF CSP-J 2022 第一轮 C++语言试题\n                              第2页，共12页',
-              '2 或 3',
-              '3'],
+  'options': ['1', '2', '2 或 3', '3'],
   'answer': 1},
  {'id': 'csp_j_round1-2022-q08',
   'competition': 'csp_j_round1',
@@ -2249,10 +2164,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'code': '',
   'options': ['p->next->prev=s;   s->prev=p;   p->next=s;    s->next=p->next;',
               'p->next->prev=s;   p->next=s;   s->prev=p;    s->next=p->next;',
-              's->prev=p;   s->next=p->next;   p->next=s;    p->next->prev=s;\n'
-              '\n'
-              '                         CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                   第3页，共12页',
+              's->prev=p;   s->next=p->next;   p->next=s;    p->next->prev=s;',
               's->next=p->next;   p->next->prev=s;    s->prev=p;   p->next=s;'],
   'answer': 3},
  {'id': 'csp_j_round1-2022-q12',
@@ -2304,9 +2216,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '\n'
               '二、阅读程序(程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特\n'
               '殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分)\n'
-              '\n'
-              '                         CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                   第4页，共12页\n'
               '(1)\n'
               '      01 #include <iostream>\n'
               '      02\n'
@@ -2501,8 +2410,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  05 using namespace std;\n'
               '  06\n'
               '  07 const int MAXN = 105;\n'
-              '                            CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                      第5页，共12页\n'
               '08 const int MAXK = 105;\n'
               '09\n'
               '10 int h[MAXN][MAXK];\n'
@@ -2547,8 +2454,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '49 }\n'
               '\n'
               '假设输入的 n、m 均是不超过 100 的正整数，完成下面的判断题和单选题:\n'
-              '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                第6页，共12页\n'
               '   判断题'],
   'answer': 1},
  {'id': 'csp_j_round1-2022-q22',
@@ -2577,8 +2482,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  05 using namespace std;\n'
           '  06\n'
           '  07 const int MAXN = 105;\n'
-          '                            CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                      第5页，共12页\n'
           '08 const int MAXK = 105;\n'
           '09\n'
           '10 int h[MAXN][MAXK];\n'
@@ -2623,8 +2526,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '49 }\n'
           '\n'
           '假设输入的 n、m 均是不超过 100 的正整数，完成下面的判断题和单选题:\n'
-          '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                第6页，共12页\n'
           '   判断题',
   'options': ['正确', '错误'],
   'answer': 0},
@@ -2643,8 +2544,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  05 using namespace std;\n'
           '  06\n'
           '  07 const int MAXN = 105;\n'
-          '                            CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                      第5页，共12页\n'
           '08 const int MAXK = 105;\n'
           '09\n'
           '10 int h[MAXN][MAXK];\n'
@@ -2689,8 +2588,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '49 }\n'
           '\n'
           '假设输入的 n、m 均是不超过 100 的正整数，完成下面的判断题和单选题:\n'
-          '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                第6页，共12页\n'
           '   判断题',
   'options': ['正确', '错误'],
   'answer': 0},
@@ -2709,8 +2606,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  05 using namespace std;\n'
           '  06\n'
           '  07 const int MAXN = 105;\n'
-          '                            CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                      第5页，共12页\n'
           '08 const int MAXK = 105;\n'
           '09\n'
           '10 int h[MAXN][MAXK];\n'
@@ -2755,8 +2650,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '49 }\n'
           '\n'
           '假设输入的 n、m 均是不超过 100 的正整数，完成下面的判断题和单选题:\n'
-          '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                第6页，共12页\n'
           '   判断题',
   'options': ['𝑂𝑂(𝑛𝑛   3/2\n                        𝑚𝑚)',
               '𝑂𝑂(𝑛𝑛𝑛𝑛)',
@@ -2778,8 +2671,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  05 using namespace std;\n'
           '  06\n'
           '  07 const int MAXN = 105;\n'
-          '                            CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                      第5页，共12页\n'
           '08 const int MAXK = 105;\n'
           '09\n'
           '10 int h[MAXN][MAXK];\n'
@@ -2824,8 +2715,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '49 }\n'
           '\n'
           '假设输入的 n、m 均是不超过 100 的正整数，完成下面的判断题和单选题:\n'
-          '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                第6页，共12页\n'
           '   判断题',
   'options': ['“4”', '“5”', '“6”', '“20”'],
   'answer': 2},
@@ -2844,8 +2733,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  05 using namespace std;\n'
           '  06\n'
           '  07 const int MAXN = 105;\n'
-          '                            CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                      第5页，共12页\n'
           '08 const int MAXK = 105;\n'
           '09\n'
           '10 int h[MAXN][MAXK];\n'
@@ -2890,8 +2777,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '49 }\n'
           '\n'
           '假设输入的 n、m 均是不超过 100 的正整数，完成下面的判断题和单选题:\n'
-          '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                第6页，共12页\n'
           '   判断题',
   'options': ['“6”',
               '“7”',
@@ -2925,8 +2810,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  24 }\n'
               '  25\n'
               '  26 int main()\n'
-              '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                                 第7页，共12页\n'
               '    27 {\n'
               '    28         cin >> n >> k;\n'
               '    29         double ans = solve2(solve1());\n'
@@ -2983,8 +2866,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24 }\n'
           '  25\n'
           '  26 int main()\n'
-          '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                                 第7页，共12页\n'
           '    27 {\n'
           '    28         cin >> n >> k;\n'
           '    29         double ans = solve2(solve1());\n'
@@ -3031,8 +2912,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24 }\n'
           '  25\n'
           '  26 int main()\n'
-          '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                                 第7页，共12页\n'
           '    27 {\n'
           '    28         cin >> n >> k;\n'
           '    29         double ans = solve2(solve1());\n'
@@ -3079,8 +2958,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24 }\n'
           '  25\n'
           '  26 int main()\n'
-          '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                                 第7页，共12页\n'
           '    27 {\n'
           '    28         cin >> n >> k;\n'
           '    29         double ans = solve2(solve1());\n'
@@ -3127,8 +3004,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24 }\n'
           '  25\n'
           '  26 int main()\n'
-          '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                                 第7页，共12页\n'
           '    27 {\n'
           '    28         cin >> n >> k;\n'
           '    29         double ans = solve2(solve1());\n'
@@ -3175,8 +3050,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24 }\n'
           '  25\n'
           '  26 int main()\n'
-          '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                                 第7页，共12页\n'
           '    27 {\n'
           '    28         cin >> n >> k;\n'
           '    29         double ans = solve2(solve1());\n'
@@ -3223,8 +3096,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  24 }\n'
           '  25\n'
           '  26 int main()\n'
-          '                                       CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                                 第7页，共12页\n'
           '    27 {\n'
           '    28         cin >> n >> k;\n'
           '    29         double ans = solve2(solve1());\n'
@@ -3252,9 +3123,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    04 int main() {\n'
               '    05   int n;\n'
               '    06   cin >> n;\n'
-              '\n'
-              '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                             第8页，共12页\n'
               '07\n'
               '08   vector<int> fac;\n'
               '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3308,9 +3176,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3354,9 +3219,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3400,9 +3262,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3446,9 +3305,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3477,8 +3333,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '\n'
               '(2)(洪水填充)现有用字符标记像素颜色的 8x8 图像。颜色填充的操作描述如下:给\n'
               '定起始像素的位置和待填充的颜色，将起始像素和所有可达的像素(可达的定义:经过\n'
-              '                          CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                    第9页，共12页\n'
               '一次或多次的向上、下、左、右四个方向移动所能到达且终点和路径上所有像素的颜色\n'
               '都与起始像素颜色相同)，替换为给定的颜色。\n'
               '\n'
@@ -3523,8 +3377,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '37       }\n'
               '38     }\n'
               '39   }\n'
-              '                      CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                               第10页，共12页\n'
               '40 }\n'
               '41\n'
               '42 int main() {\n'
@@ -3581,9 +3433,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3630,9 +3479,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3654,10 +3500,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '25     cout << ⑤ << " ";\n'
           '26   }\n'
           '27 }',
-  'options': ['image[cur.r+1][cur.c] = new_color\n'
-              '\n'
-              '                         CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                  第11页，共12页',
+  'options': ['image[cur.r+1][cur.c] = new_color',
               'image[cur.r][cur.c] = new_color',
               'image[cur.r][cur.c+1] = new_color',
               'image[cur.r][cur.c] = prev_color'],
@@ -3682,9 +3525,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3728,9 +3568,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3777,9 +3614,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    04 int main() {\n'
           '    05   int n;\n'
           '    06   cin >> n;\n'
-          '\n'
-          '                                   CCF CSP-J 2022 第一轮 C++语言试题\n'
-          '                                             第8页，共12页\n'
           '07\n'
           '08   vector<int> fac;\n'
           '09   fac.reserve((int)ceil(sqrt(n)));\n'
@@ -3801,13 +3635,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '25     cout << ⑤ << " ";\n'
           '26   }\n'
           '27 }',
-  'options': ['queue.push(p)',
-              'queue.push(pt)',
-              'queue.push(cur)',
-              'queue.push(Point(ROWS,COLS))\n'
-              '\n'
-              '                        CCF CSP-J 2022 第一轮 C++语言试题\n'
-              '                                 第12页，共12页'],
+  'options': ['queue.push(p)', 'queue.push(pt)', 'queue.push(cur)', 'queue.push(Point(ROWS,COLS))'],
   'answer': 0},
  {'id': 'csp_j_round1-2023-q01',
   'competition': 'csp_j_round1',
@@ -3847,13 +3675,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '         };\n'
           '         union Data data;',
   'code': '',
-  'options': ['data.value = 3.14;',
-              'value.data = 3.14;',
-              'data->value = 3.14;',
-              'value->data = 3.14;\n'
-              '\n'
-              '                    CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                             第1页，共 10 页'],
+  'options': ['data.value = 3.14;', 'value.data = 3.14;', 'data->value = 3.14;', 'value->data = 3.14;'],
   'answer': 0},
  {'id': 'csp_j_round1-2023-q04',
   'competition': 'csp_j_round1',
@@ -3912,10 +3734,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'options': ['高精度计算主要是用来处理大整数或需要保留多位小数的运算。',
               '大整数除以小整数的处理的步骤可以是，将被除数和除数对齐，从左到右逐\n  位尝试将除数乘以某个数，通过减法得到新的被除数，并累加商。',
               '高精度乘法的运算时间只与参与运算的两个整数中长度较长者的位数有关。',
-              '高精度加法运算的关键在于逐位相加并处理进位。\n'
-              '\n'
-              '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                                第2页，共 10 页'],
+              '高精度加法运算的关键在于逐位相加并处理进位。'],
   'answer': 2},
  {'id': 'csp_j_round1-2023-q08',
   'competition': 'csp_j_round1',
@@ -3985,10 +3804,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '\n'
               '                                               2       3\n'
               '\n'
-              '                                                   1\n'
-              '\n'
-              '                  CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                           第3页，共 10 页'],
+              '                                                   1'],
   'answer': 1},
  {'id': 'csp_j_round1-2023-q13',
   'competition': 'csp_j_round1',
@@ -4044,8 +3860,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      12      cout.precision(4);\n'
               '      13\n'
               '      14      int a, b, c;\n'
-              '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                                第4页，共 10 页\n'
               '      15     cin >> a >> b >> c;\n'
               '      16     cout << f(a, b, c) << endl;\n'
               '      17     return 0;\n'
@@ -4088,8 +3902,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      12      cout.precision(4);\n'
           '      13\n'
           '      14      int a, b, c;\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第4页，共 10 页\n'
           '      15     cin >> a >> b >> c;\n'
           '      16     cout << f(a, b, c) << endl;\n'
           '      17     return 0;\n'
@@ -4122,8 +3934,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      12      cout.precision(4);\n'
           '      13\n'
           '      14      int a, b, c;\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第4页，共 10 页\n'
           '      15     cin >> a >> b >> c;\n'
           '      16     cout << f(a, b, c) << endl;\n'
           '      17     return 0;\n'
@@ -4156,8 +3966,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      12      cout.precision(4);\n'
           '      13\n'
           '      14      int a, b, c;\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第4页，共 10 页\n'
           '      15     cin >> a >> b >> c;\n'
           '      16     cout << f(a, b, c) << endl;\n'
           '      17     return 0;\n'
@@ -4190,8 +3998,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      12      cout.precision(4);\n'
           '      13\n'
           '      14      int a, b, c;\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第4页，共 10 页\n'
           '      15     cin >> a >> b >> c;\n'
           '      16     cout << f(a, b, c) << endl;\n'
           '      17     return 0;\n'
@@ -4226,9 +4032,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      18     }\n'
               '      19     return v[m][n];\n'
               '      20 }\n'
-              '\n'
-              '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                                 第5页，共 10 页\n'
               '      21\n'
               '      22 bool g(string x, string y) {\n'
               '      23     if(x.size() != y.size()) {\n'
@@ -4285,9 +4088,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      18     }\n'
           '      19     return v[m][n];\n'
           '      20 }\n'
-          '\n'
-          '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                 第5页，共 10 页\n'
           '      21\n'
           '      22 bool g(string x, string y) {\n'
           '      23     if(x.size() != y.size()) {\n'
@@ -4334,9 +4134,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      18     }\n'
           '      19     return v[m][n];\n'
           '      20 }\n'
-          '\n'
-          '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                 第5页，共 10 页\n'
           '      21\n'
           '      22 bool g(string x, string y) {\n'
           '      23     if(x.size() != y.size()) {\n'
@@ -4383,9 +4180,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      18     }\n'
           '      19     return v[m][n];\n'
           '      20 }\n'
-          '\n'
-          '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                 第5页，共 10 页\n'
           '      21\n'
           '      22 bool g(string x, string y) {\n'
           '      23     if(x.size() != y.size()) {\n'
@@ -4432,9 +4226,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      18     }\n'
           '      19     return v[m][n];\n'
           '      20 }\n'
-          '\n'
-          '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                 第5页，共 10 页\n'
           '      21\n'
           '      22 bool g(string x, string y) {\n'
           '      23     if(x.size() != y.size()) {\n'
@@ -4481,9 +4272,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      18     }\n'
           '      19     return v[m][n];\n'
           '      20 }\n'
-          '\n'
-          '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                 第5页，共 10 页\n'
           '      21\n'
           '      22 bool g(string x, string y) {\n'
           '      23     if(x.size() != y.size()) {\n'
@@ -4515,9 +4303,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      07 }\n'
               '      08\n'
               '      09 int solve2(int n) {\n'
-              '\n'
-              '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                                第6页，共 10 页\n'
               '   10     int sum = 0;\n'
               '   11     for (int i = 1; i <= sqrt(n); i++) {\n'
               '   12         if(n % i == 0) {\n'
@@ -4569,9 +4354,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      07 }\n'
           '      08\n'
           '      09 int solve2(int n) {\n'
-          '\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第6页，共 10 页\n'
           '   10     int sum = 0;\n'
           '   11     for (int i = 1; i <= sqrt(n); i++) {\n'
           '   12         if(n % i == 0) {\n'
@@ -4613,9 +4395,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      07 }\n'
           '      08\n'
           '      09 int solve2(int n) {\n'
-          '\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第6页，共 10 页\n'
           '   10     int sum = 0;\n'
           '   11     for (int i = 1; i <= sqrt(n); i++) {\n'
           '   12         if(n % i == 0) {\n'
@@ -4657,9 +4436,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      07 }\n'
           '      08\n'
           '      09 int solve2(int n) {\n'
-          '\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第6页，共 10 页\n'
           '   10     int sum = 0;\n'
           '   11     for (int i = 1; i <= sqrt(n); i++) {\n'
           '   12         if(n % i == 0) {\n'
@@ -4701,9 +4477,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      07 }\n'
           '      08\n'
           '      09 int solve2(int n) {\n'
-          '\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第6页，共 10 页\n'
           '   10     int sum = 0;\n'
           '   11     for (int i = 1; i <= sqrt(n); i++) {\n'
           '   12         if(n % i == 0) {\n'
@@ -4745,9 +4518,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      07 }\n'
           '      08\n'
           '      09 int solve2(int n) {\n'
-          '\n'
-          '                       CCF CSP-J 2023 第一轮 C++语言试题\n'
-          '                                第6页，共 10 页\n'
           '   10     int sum = 0;\n'
           '   11     for (int i = 1; i <= sqrt(n); i++) {\n'
           '   12         if(n % i == 0) {\n'
@@ -4774,9 +4544,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '“650 729”',
               '“651 676”',
               '”652 625”\n'
-              '\n'
-              '                     CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                              第7页，共 10 页\n'
               '三、完善程序(单选题，每小题 3 分，共计 30 分)\n'
               '\n'
               '(1)(寻找被移除的元素)问题:原有长度为 n+1、公差为 1 的等差升序数列；将数\n'
@@ -4826,10 +4593,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-J/2023/Round1/[全国卷]CSP-J1-2023.pdf',
   'stem': '①处应该填(      )',
   'code': '',
-  'options': ['1',
-              'nums[0]',
-              'right',
-              'left\n\n                     CCF CSP-J 2023 第一轮 C++语言试题\n                              第8页，共 10 页'],
+  'options': ['1', 'nums[0]', 'right', 'left'],
   'answer': 1},
  {'id': 'csp_j_round1-2023-q34',
   'competition': 'csp_j_round1',
@@ -5058,9 +4822,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  21             else if (③)\n'
               '  22                 dp[i][j] = ④;\n'
               '  23             else\n'
-              '\n'
-              '                        CCF CSP-J 2023 第一轮 C++语言试题\n'
-              '                                 第9页，共 10 页\n'
               '   24                dp[i][j]=1+min(dp[i][j - 1],dp[i - 1][j], ⑤);\n'
               '   25          }\n'
               '   26      }\n'
@@ -5318,10 +5079,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 29     }\n'
           ' 30     return 0;\n'
           ' 31 }',
-  'options': ['dp[i][j] + 1',
-              'dp[i – 1][j – 1] + 1',
-              'dp[i – 1][j – 1]',
-              'dp[i][j]\n\n                     CCF CSP-J 2023 第一轮 C++语言试题\n                              第10页，共 10 页'],
+  'options': ['dp[i][j] + 1', 'dp[i – 1][j – 1] + 1', 'dp[i – 1][j – 1]', 'dp[i][j]'],
   'answer': 2},
  {'id': 'csp_j_round1-2024-q01',
   'competition': 'csp_j_round1',
@@ -5359,13 +5117,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    名员工。现需要从这 10 名员工中选出 4 名组成一个工作小组，且每个部门至少要有 1 人。\n'
           '    问有多少种选择方式?(          )',
   'code': '',
-  'options': ['120',
-              '126',
-              '132\n'
-              '\n'
-              '                          CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                                   第 1页，共 12页',
-              '238'],
+  'options': ['120', '126', '132', '238'],
   'answer': 1},
  {'id': 'csp_j_round1-2024-q04',
   'competition': 'csp_j_round1',
@@ -5423,10 +5175,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-J/2024/Round1/CSP-J1-2024.pdf',
   'stem': "在 C/C++中，(char)('a'+13)与下面的哪一个值相等？(               )",
   'code': '',
-  'options': ["'m'\n\n                        CCF CSP-J 2024 第一轮 C++语言试题\n                               第 2页，共 12页",
-              "'n'",
-              "'z'",
-              "'3'"],
+  'options': ["'m'", "'n'", "'z'", "'3'"],
   'answer': 1},
  {'id': 'csp_j_round1-2024-q09',
   'competition': 'csp_j_round1',
@@ -5470,13 +5219,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-J/2024/Round1/CSP-J1-2024.pdf',
   'stem': '已知二叉树的前序遍历为 [A, B, D, E, C, F, G]，中序遍历为 [D, B, E, A, F, C,\n   G]，请问该二叉树的后序遍历结果是？(                 )',
   'code': '',
-  'options': ['[D, E, B, F, G, C, A]',
-              '[D, E, B, F, G, A, C]',
-              '[D, B, E, F, G, C, A]',
-              '[D, E, B, F, G, A, C]\n'
-              '\n'
-              '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                               第 3页，共 12页'],
+  'options': ['[D, E, B, F, G, C, A]', '[D, E, B, F, G, A, C]', '[D, B, E, F, G, C, A]', '[D, E, B, F, G, A, C]'],
   'answer': 0},
  {'id': 'csp_j_round1-2024-q13',
   'competition': 'csp_j_round1',
@@ -5513,9 +5256,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '将源代码转换为机器代码',
               '进行代码调试',
               '管理程序运行时的内存\n'
-              '\n'
-              '                   CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                           第 4页，共 12页\n'
               '二、阅读程序(程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特\n'
               '殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分)\n'
               '(1)\n'
@@ -5557,9 +5297,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  36   int main() {\n'
               '  37      int x;\n'
               '  38      cin >> x;\n'
-              '\n'
-              '                          CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                                 第 5页，共 12页\n'
               '    39         cout << countPrimes(x) << " " << sumPrimes(x) << endl;\n'
               '    40         return 0;\n'
               '    41   }\n'
@@ -5623,9 +5360,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  36   int main() {\n'
           '  37      int x;\n'
           '  38      cin >> x;\n'
-          '\n'
-          '                          CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                 第 5页，共 12页\n'
           '    39         cout << countPrimes(x) << " " << sumPrimes(x) << endl;\n'
           '    40         return 0;\n'
           '    41   }\n'
@@ -5679,9 +5413,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  36   int main() {\n'
           '  37      int x;\n'
           '  38      cin >> x;\n'
-          '\n'
-          '                          CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                 第 5页，共 12页\n'
           '    39         cout << countPrimes(x) << " " << sumPrimes(x) << endl;\n'
           '    40         return 0;\n'
           '    41   }\n'
@@ -5735,9 +5466,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  36   int main() {\n'
           '  37      int x;\n'
           '  38      cin >> x;\n'
-          '\n'
-          '                          CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                 第 5页，共 12页\n'
           '    39         cout << countPrimes(x) << " " << sumPrimes(x) << endl;\n'
           '    40         return 0;\n'
           '    41   }\n'
@@ -5791,9 +5519,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  36   int main() {\n'
           '  37      int x;\n'
           '  38      cin >> x;\n'
-          '\n'
-          '                          CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                 第 5页，共 12页\n'
           '    39         cout << countPrimes(x) << " " << sumPrimes(x) << endl;\n'
           '    40         return 0;\n'
           '    41   }\n'
@@ -5813,9 +5538,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    06       int n = cost.size();\n'
               '    07       vector<int> dp(n+1, 0);\n'
               '    08       dp[1] = cost[0];\n'
-              '\n'
-              '                                CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                                       第 6页，共 12页\n'
               '    09        for (int i = 2; i <= n; i++) {\n'
               '    10            dp[i] = min(dp[i-1], dp[i-2]) + cost[i-1];\n'
               '    11        }\n'
@@ -5862,9 +5584,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    06       int n = cost.size();\n'
           '    07       vector<int> dp(n+1, 0);\n'
           '    08       dp[1] = cost[0];\n'
-          '\n'
-          '                                CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                       第 6页，共 12页\n'
           '    09        for (int i = 2; i <= n; i++) {\n'
           '    10            dp[i] = min(dp[i-1], dp[i-2]) + cost[i-1];\n'
           '    11        }\n'
@@ -5901,9 +5620,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    06       int n = cost.size();\n'
           '    07       vector<int> dp(n+1, 0);\n'
           '    08       dp[1] = cost[0];\n'
-          '\n'
-          '                                CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                       第 6页，共 12页\n'
           '    09        for (int i = 2; i <= n; i++) {\n'
           '    10            dp[i] = min(dp[i-1], dp[i-2]) + cost[i-1];\n'
           '    11        }\n'
@@ -5940,9 +5656,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    06       int n = cost.size();\n'
           '    07       vector<int> dp(n+1, 0);\n'
           '    08       dp[1] = cost[0];\n'
-          '\n'
-          '                                CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                       第 6页，共 12页\n'
           '    09        for (int i = 2; i <= n; i++) {\n'
           '    10            dp[i] = min(dp[i-1], dp[i-2]) + cost[i-1];\n'
           '    11        }\n'
@@ -5979,9 +5692,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    06       int n = cost.size();\n'
           '    07       vector<int> dp(n+1, 0);\n'
           '    08       dp[1] = cost[0];\n'
-          '\n'
-          '                                CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                       第 6页，共 12页\n'
           '    09        for (int i = 2; i <= n; i++) {\n'
           '    10            dp[i] = min(dp[i-1], dp[i-2]) + cost[i-1];\n'
           '    11        }\n'
@@ -6000,13 +5710,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    24   }\n'
           '\n'
           '    判断题',
-  'options': ['"25"',
-              '"30"',
-              '"35"',
-              '"40"\n'
-              '\n'
-              '                              CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                                     第 7页，共 12页'],
+  'options': ['"25"', '"30"', '"35"', '"40"'],
   'answer': 1},
  {'id': 'csp_j_round1-2024-q26',
   'competition': 'csp_j_round1',
@@ -6025,9 +5729,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    06       int n = cost.size();\n'
           '    07       vector<int> dp(n+1, 0);\n'
           '    08       dp[1] = cost[0];\n'
-          '\n'
-          '                                CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                       第 6页，共 12页\n'
           '    09        for (int i = 2; i <= n; i++) {\n'
           '    10            dp[i] = min(dp[i-1], dp[i-2]) + cost[i-1];\n'
           '    11        }\n'
@@ -6151,10 +5852,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读单选题',
   'difficulty': 4,
   'source': 'CSP/题库/CSP-J/2024/Round1/CSP-J1-2024.pdf',
-  'stem': '当输入为“5 4”时，customFunction(5, 4)的返回值为(                )。\n'
-          '\n'
-          '                            CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                                   第 8页，共 12页',
+  'stem': '当输入为“5 4”时，customFunction(5, 4)的返回值为(                )。',
   'code': '01   #include <iostream>\n'
           '    02   #include <cmath>\n'
           '    03   using namespace std;\n'
@@ -6258,9 +5956,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               ' 12    }\n'
               ' 13     return     ⑤    ;\n'
               ' 14 }\n'
-              '\n'
-              '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-              '                               第 9页，共 12页\n'
               ' 15     int main() {\n'
               ' 16        int n;\n'
               ' 17        cin >> n;\n'
@@ -6309,9 +6004,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6350,9 +6042,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6391,9 +6080,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6432,9 +6118,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6473,9 +6156,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6514,9 +6194,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6536,7 +6213,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '完善程序单选题',
   'difficulty': 4,
   'source': 'CSP/题库/CSP-J/2024/Round1/CSP-J1-2024.pdf',
-  'stem': '④处应填(   )\n\n                        CCF CSP-J 2024 第一轮 C++语言试题\n                               第 11页，共 12页',
+  'stem': '④处应填(   )',
   'code': '30 分)\n'
           '(1)(判断平方数)问题:给定一个正整数 n，希望判断这个数是否为完全平方数，即存在\n'
           '一个正整数 x 使得 x 的平方为 n。\n'
@@ -6555,9 +6232,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6596,9 +6270,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 12    }\n'
           ' 13     return     ⑤    ;\n'
           ' 14 }\n'
-          '\n'
-          '                        CCF CSP-J 2024 第一轮 C++语言试题\n'
-          '                               第 9页，共 12页\n'
           ' 15     int main() {\n'
           ' 16        int n;\n'
           ' 17        cin >> n;\n'
@@ -6609,10 +6280,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 22        }\n'
           ' 23        return 0;\n'
           '        }',
-  'options': ['0',
-              '1',
-              'i - 1',
-              'i\n\n                        CCF CSP-J 2024 第一轮 C++语言试题\n                              第 12页，共 12页'],
+  'options': ['0', '1', 'i - 1', 'i'],
   'answer': 2},
  {'id': 'csp_s_round1-2019-q10',
   'competition': 'csp_s_round1',
@@ -6664,9 +6332,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           'a21 A22\n'
           'ag, Nao 3,3\n'
           'Gna Anz 本 ann\n'
-          'CCF CSP-S 2019 第一轮 C++语言试题B 卷\n'
-          '第2页，共10页\n'
-          '\n'
           '令CLi] [fj是从aai到aiy的路径上的数的最大和，并且\n'
           'Ci[oj=CL0D]=0，则CD = ¢ ).',
   'code': '',
@@ -6707,9 +6372,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '\n'
           '接下来nan行。第i行的两个正整数，分别表示学习第ii个技术所需的最低经\n'
           '验值 (< 107) ，以及学会第i个技术后可获得的经验值 C< 104) 。\n'
-          'CCF CSP-S 2019 第一轮 C++语言试题 B 卷\n'
-          '第6页，共10页\n'
-          '\n'
           '接下来a行。第i行的第一个数mi 〈0 < mi <n), RABBI MRK\n'
           '技术数量。紧跟着 m 个两两不同的数，表示第i个技术的相关技术编号。\n'
           '输出最多能学会的新技术个数。\n'
@@ -6766,7 +6428,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2020/Round1/cspjs2020hs_cpp.pdf',
-  'stem': '下列哪些问题不能用贪心法精确求解?   )\nCCF CSP-S 2020 第一轮 C++语言试题\n第1页，共13页\n\nBEEP NSS\n1 | >=\nSe oF\nCCE',
+  'stem': '下列哪些问题不能用贪心法精确求解?   )\nBEEP NSS\n1 | >=\nSe oF\nCCE',
   'code': '',
   'options': ['GR 25H 05 1             B， 6-1背包问题', '”最小生成树问题', '单源最短路径问题'],
   'answer': 1},
@@ -6864,9 +6526,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '(+ Wf (John von Neumann)',
               '下劳德。香农 《Claude Shannon)',
               '(AR (Alan Turing)\n'
-              'CCF CSP-S 2020 第一轮 C++语言试题\n'
-              '第2页，共13页\n'
-              '\n'
               'UALS\n'
               'Zaps\n'
               'Se oF\n'
@@ -6918,10 +6577,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-S/2021/Round1/2021CSP-S1试题(C++).pdf',
   'stem': '以下排序方法中，(        )是不稳定的。',
   'code': '',
-  'options': ['插入排序',
-              '冒泡排序\n\n                        CCF CSP-S 2021 第一轮 C++语言试题\n                                 第1页，共16页',
-              '堆排序',
-              '归并排序'],
+  'options': ['插入排序', '冒泡排序', '堆排序', '归并排序'],
   'answer': 3},
  {'id': 'csp_s_round1-2021-q05',
   'competition': 'csp_s_round1',
@@ -6967,10 +6623,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-S/2021/Round1/2021CSP-S1试题(C++).pdf',
   'stem': '令根结点的高度为 1，则一棵含有 2021 个结点的二叉树的高度至少为(             )。',
   'code': '',
-  'options': ['10',
-              '11',
-              '12',
-              '2021\n\n                  CCF CSP-S 2021 第一轮 C++语言试题\n                           第2页，共16页'],
+  'options': ['10', '11', '12', '2021'],
   'answer': 3},
  {'id': 'csp_s_round1-2021-q09',
   'competition': 'csp_s_round1',
@@ -7021,10 +6674,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  那契数列的第 n 项，其时间复杂度为(              )。\n'
           '  F(n):\n'
           '   if n<=2 return 1\n'
-          '   else return F(n-1) + F(n-2)\n'
-          '\n'
-          '                        CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                 第3页，共16页',
+          '   else return F(n-1) + F(n-2)',
   'code': '',
   'options': ['O(𝑛)', 'O(𝑛! )', 'O(2" )', 'O(𝑛 log 𝑛)'],
   'answer': 3},
@@ -7059,11 +6709,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2021/Round1/2021CSP-S1试题(C++).pdf',
-  'stem': '有如下的有向图，节点为 A, B, … , J, 其中每条边的长度都标在图中。则节点 A 到节\n'
-          '  点 J 的最短路径长度为(      )。\n'
-          '\n'
-          '                     CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                              第4页，共16页',
+  'stem': '有如下的有向图，节点为 A, B, … , J, 其中每条边的长度都标在图中。则节点 A 到节\n  点 J 的最短路径长度为(      )。',
   'code': '',
   'options': ['16',
               '19',
@@ -7106,8 +6752,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      30     cout << endl;\n'
               '      31     return 0;\n'
               '      32 }\n'
-              '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                     第5页，共16页\n'
               '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
               'l 判断题'],
   'answer': 2},
@@ -7151,8 +6795,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      30     cout << endl;\n'
           '      31     return 0;\n'
           '      32 }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第5页，共16页\n'
           '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
           'l 判断题',
   'options': ['“3.1416”', '“6.2832”', '“4.7124”', '“4.1888”'],
@@ -7197,8 +6839,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      30     cout << endl;\n'
           '      31     return 0;\n'
           '      32 }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第5页，共16页\n'
           '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
           'l 判断题',
   'options': ['求圆的面积并',
@@ -7229,8 +6869,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      20             max(m + o.w, o.m),\n'
               '      21             w + o.w);\n'
               '      22     }\n'
-              '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                     第6页，共16页\n'
               '    23 };\n'
               '    24\n'
               '    25 Node solve1(int h, int m)\n'
@@ -7305,8 +6943,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      20             max(m + o.w, o.m),\n'
           '      21             w + o.w);\n'
           '      22     }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共16页\n'
           '    23 };\n'
           '    24\n'
           '    25 Node solve1(int h, int m)\n'
@@ -7382,8 +7018,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      20             max(m + o.w, o.m),\n'
           '      21             w + o.w);\n'
           '      22     }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共16页\n'
           '    23 };\n'
           '    24\n'
           '    25 Node solve1(int h, int m)\n'
@@ -7459,8 +7093,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      20             max(m + o.w, o.m),\n'
           '      21             w + o.w);\n'
           '      22     }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共16页\n'
           '    23 };\n'
           '    24\n'
           '    25 Node solve1(int h, int m)\n'
@@ -7538,8 +7170,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
               '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
               '      28         ret += base[str[i + 2] & 0x3f];\n'
-              '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                     第8页，共16页\n'
               '29     }\n'
               '30     if (i < str.size()) {\n'
               '31         ret += base[str[i] >> 2];\n'
@@ -7582,9 +7212,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
               '68     return 0;\n'
               '69 }\n'
-              '\n'
-              '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                               第9页，共16页\n'
               '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
               '的判断题和单选题:\n'
               'l 判断题'],
@@ -7625,8 +7252,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
           '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
           '      28         ret += base[str[i + 2] & 0x3f];\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第8页，共16页\n'
           '29     }\n'
           '30     if (i < str.size()) {\n'
           '31         ret += base[str[i] >> 2];\n'
@@ -7669,9 +7294,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
           '68     return 0;\n'
           '69 }\n'
-          '\n'
-          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                               第9页，共16页\n'
           '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
           '的判断题和单选题:\n'
           'l 判断题',
@@ -7713,8 +7335,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
           '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
           '      28         ret += base[str[i + 2] & 0x3f];\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第8页，共16页\n'
           '29     }\n'
           '30     if (i < str.size()) {\n'
           '31         ret += base[str[i] >> 2];\n'
@@ -7757,9 +7377,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
           '68     return 0;\n'
           '69 }\n'
-          '\n'
-          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                               第9页，共16页\n'
           '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
           '的判断题和单选题:\n'
           'l 判断题',
@@ -7801,8 +7418,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
           '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
           '      28         ret += base[str[i + 2] & 0x3f];\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第8页，共16页\n'
           '29     }\n'
           '30     if (i < str.size()) {\n'
           '31         ret += base[str[i] >> 2];\n'
@@ -7845,9 +7460,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
           '68     return 0;\n'
           '69 }\n'
-          '\n'
-          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                               第9页，共16页\n'
           '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
           '的判断题和单选题:\n'
           'l 判断题',
@@ -7876,9 +7488,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    08 bool Vis[M + 1];\n'
               '    09 int F[M + 1];\n'
               '    10\n'
-              '\n'
-              '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                   第10页，共16页\n'
               '11 void update(int &x, int y) {\n'
               '12     if (y < x)\n'
               '13         x = y;\n'
@@ -7954,9 +7563,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -7992,13 +7598,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43     cout << F[n] << endl;\n'
           '44     return 0;\n'
           '45 }',
-  'options': ['!Vis[n]',
-              'r < n',
-              'F[M] == INT_MAX',
-              'F[n] == INT_MAX\n'
-              '\n'
-              '                           CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                    第11页，共16页'],
+  'options': ['!Vis[n]', 'r < n', 'F[M] == INT_MAX', 'F[n] == INT_MAX'],
   'answer': 2},
  {'id': 'csp_s_round1-2021-q36',
   'competition': 'csp_s_round1',
@@ -8028,9 +7628,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8096,9 +7693,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8175,8 +7769,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '009 struct node {\n'
               '010     int val;\n'
               '011     int dep, dfn, end;\n'
-              '                             CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                      第12页，共16页\n'
               '012     node *son[2]; // son[0], son[1] 分别表示左右儿子\n'
               '013 } T[MAXN];\n'
               '014\n'
@@ -8221,8 +7813,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '053         Log2[i] = Log2[i >> 1] + 1;\n'
               '054     for (int i = 0; i < c; i++) {\n'
               '055         Min[0][i] = A[i * b];\n'
-              '                    CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                             第13页，共16页\n'
               '056        for (int j = 1; j < b; j++)\n'
               '057            Min[0][i] = min(Min[0][i], A[i * b + j]);\n'
               '058    }\n'
@@ -8267,8 +7857,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '096     if (pl == pr) {\n'
               '097         return small_query(l, r);\n'
               '098     } else {\n'
-              '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                               第14页，共16页\n'
               '099           node *s = min(small_query(l, pl * b + b - 1),\n'
               '                                             small_query(pr * b, r));\n'
               '100           if (pl + 1 <= pr - 1)\n'
@@ -8322,9 +7910,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8390,9 +7975,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8458,9 +8040,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8526,9 +8105,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8567,10 +8143,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'options': ['A[i * b + j - 1] == A[i * b + j]->son[0]',
               'A[i * b + j]->val < A[i * b + j - 1]->val',
               'A[i * b + j] == A[i * b + j - 1]->son[1]',
-              'A[i * b + j]->dep < A[i * b + j - 1]->dep\n'
-              '\n'
-              '                             CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                      第15页，共16页'],
+              'A[i * b + j]->dep < A[i * b + j - 1]->dep'],
   'answer': 2},
  {'id': 'csp_s_round1-2021-q42',
   'competition': 'csp_s_round1',
@@ -8600,9 +8173,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8671,9 +8241,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    08 bool Vis[M + 1];\n'
           '    09 int F[M + 1];\n'
           '    10\n'
-          '\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第10页，共16页\n'
           '11 void update(int &x, int y) {\n'
           '12     if (y < x)\n'
           '13         x = y;\n'
@@ -8712,10 +8279,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'options': ['(Dif[p] >> (r - p * b)) & ((1 << (r - l)) - 1)',
               'Dif[p]',
               '(Dif[p] >> (l - p * b)) & ((1 << (r - l)) - 1)',
-              '(Dif[p] >> ((p + 1) * b - r)) & ((1 << (r - l + 1)) - 1)\n'
-              '\n'
-              '                        CCF CSP-S 2021 第一轮 C++语言试题\n'
-              '                                 第16页，共16页'],
+              '(Dif[p] >> ((p + 1) * b - r)) & ((1 << (r - l + 1)) - 1)'],
   'answer': 3},
  {'id': 'csp_s_round1-2022-q01',
   'competition': 'csp_s_round1',
@@ -8753,13 +8317,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-S/2022/Round1/2022CSP-S1试题.pdf',
   'stem': '若元素 a、b、c、d、e、f 依次进栈，允许进栈、退栈操作交替进行，但不允许连续三次\n 退栈操作，则不可能得到的出栈序列是(                   )。',
   'code': '',
-  'options': ['dcebfa',
-              'cbdaef\n'
-              '\n'
-              '                         CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                  第1页，共13页',
-              'bcaefd',
-              'afedcb'],
+  'options': ['dcebfa', 'cbdaef', 'bcaefd', 'afedcb'],
   'answer': 3},
  {'id': 'csp_s_round1-2022-q04',
   'competition': 'csp_s_round1',
@@ -8810,11 +8368,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2022/Round1/2022CSP-S1试题.pdf',
-  'stem': '一个深度为 5(根结点深度为 1)的完全 3 叉树，按前序遍历的顺序给结点从 1 开始编号，\n'
-          '\n'
-          '                        CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                 第2页，共13页\n'
-          ' 则第 100 号结点的父结点是第(      )号。',
+  'stem': '一个深度为 5(根结点深度为 1)的完全 3 叉树，按前序遍历的顺序给结点从 1 开始编号，\n 则第 100 号结点的父结点是第(      )号。',
   'code': '',
   'options': ['95', '96', '97', '98'],
   'answer': 2},
@@ -8863,9 +8417,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 的 5 位号码中，前 2 位必须是大写英文字母，后 3 位必须是阿拉伯数字(ℒ代表 A 至 Z，𝒟𝒟\n'
           '\n'
           ' 表示 0 至 9，两个ℒ和三个𝒟𝒟之间可能相同也可能不同)。请问总共有多少个可供选择的车牌\n'
-          '\n'
-          '                   CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                            第3页，共13页\n'
           ' 号。(        )',
   'code': '',
   'options': ['20280', '52000', '676000', '1757600'],
@@ -8910,13 +8461,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-S/2022/Round1/2022CSP-S1试题.pdf',
   'stem': '以比较为基本运算，在 n 个数的数组中找最大的数，在最坏情况下至少要做(                  )次运算。',
   'code': '',
-  'options': ['n/2\n'
-              '\n'
-              '                             CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                      第4页，共13页',
-              'n-1',
-              'n',
-              'n+1'],
+  'options': ['n/2', 'n-1', 'n', 'n+1'],
   'answer': 1},
  {'id': 'csp_s_round1-2022-q15',
   'competition': 'csp_s_round1',
@@ -8958,8 +8503,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      15     for (j = 0; j < m; j++)\n'
               '      16         shift[t[j]] = m - j;\n'
               '      17\n'
-              '                              CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                       第5页，共13页\n'
               '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
               '      19         j = 0;\n'
               '      20         while (j < m && s[i + j] == t[j]) j++;\n'
@@ -9005,8 +8548,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      15     for (j = 0; j < m; j++)\n'
           '      16         shift[t[j]] = m - j;\n'
           '      17\n'
-          '                              CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                       第5页，共13页\n'
           '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
           '      19         j = 0;\n'
           '      20         while (j < m && s[i + j] == t[j]) j++;\n'
@@ -9053,8 +8594,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      15     for (j = 0; j < m; j++)\n'
           '      16         shift[t[j]] = m - j;\n'
           '      17\n'
-          '                              CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                       第5页，共13页\n'
           '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
           '      19         j = 0;\n'
           '      20         while (j < m && s[i + j] == t[j]) j++;\n'
@@ -9101,8 +8640,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      15     for (j = 0; j < m; j++)\n'
           '      16         shift[t[j]] = m - j;\n'
           '      17\n'
-          '                              CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                       第5页，共13页\n'
           '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
           '      19         j = 0;\n'
           '      20         while (j < m && s[i + j] == t[j]) j++;\n'
@@ -9133,8 +8670,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '      03 using namespace std;\n'
               '      04\n'
               '      05 const int MAXN = 105;\n'
-              '                                CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                         第6页，共13页\n'
               '06\n'
               '07 int n, m, k, val[MAXN];\n'
               '08 int temp[MAXN], cnt[MAXN];\n'
@@ -9177,9 +8712,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '45     cout << endl;\n'
               '46     return 0;\n'
               '47 }\n'
-              '\n'
-              '                      CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                               第7页，共13页\n'
               '   假设输入的 n 为不大于 100 的正整数，k 为不小于 2 且不大于 100 的正整数，val[i]在\n'
               'int 表示范围内，完成下面的判断题和单选题:\n'
               ' 判断题'],
@@ -9226,9 +8758,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-S/2023/Round1/CSP-S1-2023.pdf',
   'stem': '假设有 n 根柱子，需要按照以下规则依次放置编号为 1、2、3、...的圆环:每根柱子的底\n'
           ' 部固定，顶部可以放入圆环；每次从柱子顶部放入圆环时，需要保证任何两个相邻圆环的\n'
-          ' 编号之和是一个完全平方数。请计算当有 4 根柱子时，最多可以放置(                             )个圆环。\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 1页，共 13页',
+          ' 编号之和是一个完全平方数。请计算当有 4 根柱子时，最多可以放置(                             )个圆环。',
   'code': '',
   'options': ['7', '9', '11', '5'],
   'answer': 2},
@@ -9285,9 +8815,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 家第一次掷出 x 点，得到 2x 元；第二次掷出 y 点，当 y=x 时玩家会失去之前得到的 2x 元，\n'
           ' 而当 y≠x 时玩家能保住第一次获得的 2x 元。上述 x,y∈{1,2,3,4,5,6}。例如:玩家第\n'
           ' 一次掷出 3 点得到 6 元后，但第二次再次掷出 3 点，会失去之前得到的 6 元，玩家最终收\n'
-          '\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 2页，共 13页\n'
           ' 益为 0 元；如果玩家第一次掷出 3 点、第二次掷出 4 点，则最终收益是 6 元。假设骰子掷\n'
           ' 出任意一点的概率均为 1/6，玩家连续掷两次骰子后，所有可能情形下收益的平均值是多\n'
           ' 少？(       )',
@@ -9334,11 +8861,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2023/Round1/CSP-S1-2023.pdf',
-  'stem': '以下哪个命令，能将一个名为“main.cpp”的 C++源文件，编译并生成一个名为“main”\n'
-          ' 的可执行文件？(         )\n'
-          '\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 3页，共 13页',
+  'stem': '以下哪个命令，能将一个名为“main.cpp”的 C++源文件，编译并生成一个名为“main”\n 的可执行文件？(         )',
   'code': '',
   'options': ['g++ -o main main.cpp', 'g++ -o main.cpp main', 'g++ main -o main.cpp', 'g++ main.cpp -o main.cpp'],
   'answer': 0},
@@ -9381,13 +8904,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  在序列n0 , n1 , n2 , ⋯, nm ，其中对于 1 ≤ i ≤ m 都有ni = f(ni−1)，且nm = nm−1 ，称nm 为n0 关\n'
           '  于 f 的不动点。问在10016 至1A016 中，关于 f 的不动点为 9 的自然数个数为(                     )。',
   'code': '',
-  'options': ['10',
-              '11',
-              '12',
-              '13\n'
-              '\n'
-              '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                       第 4页，共 13页'],
+  'options': ['10', '11', '12', '13'],
   'answer': 1},
  {'id': 'csp_s_round1-2023-q15',
   'competition': 'csp_s_round1',
@@ -9432,10 +8949,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  16 }\n'
               '\n'
               '    假设输入的 x 是不超过 65535 的自然数，完成下面的判断题和单选题:\n'
-              '   判断题\n'
-              '\n'
-              '                                  CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                           第 5页，共 13页'],
+              '   判断题'],
   'answer': 0},
  {'id': 'csp_s_round1-2023-q16',
   'competition': 'csp_s_round1',
@@ -9474,10 +8988,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  16 }\n'
           '\n'
           '    假设输入的 x 是不超过 65535 的自然数，完成下面的判断题和单选题:\n'
-          '   判断题\n'
-          '\n'
-          '                                  CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                           第 5页，共 13页',
+          '   判断题',
   'options': ['正确', '错误'],
   'answer': 1},
  {'id': 'csp_s_round1-2023-q18',
@@ -9506,10 +9017,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  16 }\n'
           '\n'
           '    假设输入的 x 是不超过 65535 的自然数，完成下面的判断题和单选题:\n'
-          '   判断题\n'
-          '\n'
-          '                                  CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                           第 5页，共 13页',
+          '   判断题',
   'options': ['正确', '错误'],
   'answer': 0},
  {'id': 'csp_s_round1-2023-q19',
@@ -9538,10 +9046,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  16 }\n'
           '\n'
           '    假设输入的 x 是不超过 65535 的自然数，完成下面的判断题和单选题:\n'
-          '   判断题\n'
-          '\n'
-          '                                  CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                           第 5页，共 13页',
+          '   判断题',
   'options': ['正确', '错误'],
   'answer': 1},
  {'id': 'csp_s_round1-2023-q20',
@@ -9570,10 +9075,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  16 }\n'
           '\n'
           '    假设输入的 x 是不超过 65535 的自然数，完成下面的判断题和单选题:\n'
-          '   判断题\n'
-          '\n'
-          '                                  CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                           第 5页，共 13页',
+          '   判断题',
   'options': ['“33280”', '“33410”', '“33106”', '“33346”'],
   'answer': 1},
  {'id': 'csp_s_round1-2023-q21',
@@ -9602,10 +9104,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  16 }\n'
           '\n'
           '    假设输入的 x 是不超过 65535 的自然数，完成下面的判断题和单选题:\n'
-          '   判断题\n'
-          '\n'
-          '                                  CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                           第 5页，共 13页',
+          '   判断题',
   'options': ['“8256”',
               '“4130”',
               '“4128”',
@@ -9640,8 +9139,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  26     }\n'
               '  27     for (int i = sqrt(n) + 1; i <= n; i++) {\n'
               '  28         if (p[i]) {\n'
-              '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                    第 6页，共 13页\n'
               '    29             f[i] = i;\n'
               '    30             g[i] = i;\n'
               '    31         }\n'
@@ -9720,8 +9217,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  26     }\n'
           '  27     for (int i = sqrt(n) + 1; i <= n; i++) {\n'
           '  28         if (p[i]) {\n'
-          '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                    第 6页，共 13页\n'
           '    29             f[i] = i;\n'
           '    30             g[i] = i;\n'
           '    31         }\n'
@@ -9790,8 +9285,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  26     }\n'
           '  27     for (int i = sqrt(n) + 1; i <= n; i++) {\n'
           '  28         if (p[i]) {\n'
-          '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                    第 6页，共 13页\n'
           '    29             f[i] = i;\n'
           '    30             g[i] = i;\n'
           '    31         }\n'
@@ -9860,8 +9353,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  26     }\n'
           '  27     for (int i = sqrt(n) + 1; i <= n; i++) {\n'
           '  28         if (p[i]) {\n'
-          '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                    第 6页，共 13页\n'
           '    29             f[i] = i;\n'
           '    30             g[i] = i;\n'
           '    31         }\n'
@@ -9901,10 +9392,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读单选题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2023/Round1/CSP-S1-2023.pdf',
-  'stem': 'solve2(n) 的时间复杂度为(        )。\n'
-          '\n'
-          '                          CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                   第 7页，共 13页',
+  'stem': 'solve2(n) 的时间复杂度为(        )。',
   'code': '01 #include <iostream>\n'
           '  02 #include <cmath>\n'
           '  03 #include <vector>\n'
@@ -9933,8 +9421,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  26     }\n'
           '  27     for (int i = sqrt(n) + 1; i <= n; i++) {\n'
           '  28         if (p[i]) {\n'
-          '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                    第 6页，共 13页\n'
           '    29             f[i] = i;\n'
           '    30             g[i] = i;\n'
           '    31         }\n'
@@ -10003,8 +9489,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  26     }\n'
           '  27     for (int i = sqrt(n) + 1; i <= n; i++) {\n'
           '  28         if (p[i]) {\n'
-          '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                    第 6页，共 13页\n'
           '    29             f[i] = i;\n'
           '    30             g[i] = i;\n'
           '    31         }\n'
@@ -10078,8 +9562,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  35     cin >> n >> k;\n'
               '  36     vector<int> a(n, 0);\n'
               '  37     for(int i = 0; i < n; i++) {\n'
-              '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                  第 8页，共 13页\n'
               '    38         cin >> a[i];\n'
               '    39     }\n'
               '    40     cout<< f(a, k) << endl;\n'
@@ -10146,8 +9628,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  35     cin >> n >> k;\n'
           '  36     vector<int> a(n, 0);\n'
           '  37     for(int i = 0; i < n; i++) {\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 8页，共 13页\n'
           '    38         cin >> a[i];\n'
           '    39     }\n'
           '    40     cout<< f(a, k) << endl;\n'
@@ -10204,8 +9684,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  35     cin >> n >> k;\n'
           '  36     vector<int> a(n, 0);\n'
           '  37     for(int i = 0; i < n; i++) {\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 8页，共 13页\n'
           '    38         cin >> a[i];\n'
           '    39     }\n'
           '    40     cout<< f(a, k) << endl;\n'
@@ -10262,8 +9740,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  35     cin >> n >> k;\n'
           '  36     vector<int> a(n, 0);\n'
           '  37     for(int i = 0; i < n; i++) {\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 8页，共 13页\n'
           '    38         cin >> a[i];\n'
           '    39     }\n'
           '    40     cout<< f(a, k) << endl;\n'
@@ -10320,8 +9796,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  35     cin >> n >> k;\n'
           '  36     vector<int> a(n, 0);\n'
           '  37     for(int i = 0; i < n; i++) {\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 8页，共 13页\n'
           '    38         cin >> a[i];\n'
           '    39     }\n'
           '    40     cout<< f(a, k) << endl;\n'
@@ -10378,8 +9852,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  35     cin >> n >> k;\n'
           '  36     vector<int> a(n, 0);\n'
           '  37     for(int i = 0; i < n; i++) {\n'
-          '                         CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                  第 8页，共 13页\n'
           '    38         cin >> a[i];\n'
           '    39     }\n'
           '    40     cout<< f(a, k) << endl;\n'
@@ -10406,8 +9878,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '        试补全程序。\n'
               '\n'
               '    01 #include <iostream>\n'
-              '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                       第 9页，共 13页\n'
               '02 #include <algorithm>\n'
               '03 #include <vector>\n'
               '04\n'
@@ -10452,8 +9922,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '43   }\n'
               '44   int u = next(Q, k);\n'
               '45   std::cout << u << std::endl;\n'
-              '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                              第 10页，共 13页\n'
               '  46   while (④) {\n'
               '  47     ⑤;\n'
               '  48     u = next(E[u], k);\n'
@@ -10493,8 +9961,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -10539,8 +10005,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -10570,8 +10034,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -10616,8 +10078,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -10650,8 +10110,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -10696,8 +10154,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -10727,8 +10183,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -10773,8 +10227,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -10802,8 +10254,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '  02 #include <algorithm>\n'
               '  03 #include <vector>\n'
               '  04\n'
-              '                             CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                     第 11页，共 13页\n'
               '  05 const int MAXN = 100000;\n'
               '  06\n'
               '  07 int n;\n'
@@ -10858,8 +10308,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -10904,8 +10352,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -10938,8 +10384,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -10984,8 +10428,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -10993,13 +10435,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  50   }\n'
           '  51   return 0;\n'
           '  52 }',
-  'options': ['a[j] < max',
-              'a[j] < a[i]',
-              'pre[j - mid] < max',
-              'pre[j - mid] > max\n'
-              '\n'
-              '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                   第 12页，共 13页'],
+  'options': ['a[j] < max', 'a[j] < a[i]', 'pre[j - mid] < max', 'pre[j - mid] > max'],
   'answer': 1},
  {'id': 'csp_s_round1-2023-q41',
   'competition': 'csp_s_round1',
@@ -11021,8 +10457,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -11067,8 +10501,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -11101,8 +10533,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -11147,8 +10577,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -11181,8 +10609,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '        试补全程序。\n'
           '\n'
           '    01 #include <iostream>\n'
-          '                              CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                                       第 9页，共 13页\n'
           '02 #include <algorithm>\n'
           '03 #include <vector>\n'
           '04\n'
@@ -11227,8 +10653,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '43   }\n'
           '44   int u = next(Q, k);\n'
           '45   std::cout << u << std::endl;\n'
-          '                      CCF CSP-S 2023 第一轮 C++语言试题\n'
-          '                              第 10页，共 13页\n'
           '  46   while (④) {\n'
           '  47     ⑤;\n'
           '  48     u = next(E[u], k);\n'
@@ -11236,13 +10660,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '  50   }\n'
           '  51   return 0;\n'
           '  52 }',
-  'options': ['solve(0, n)',
-              'solve(0, n - 1)',
-              'solve(1, n)',
-              'solve(1, n - 1)\n'
-              '\n'
-              '                           CCF CSP-S 2023 第一轮 C++语言试题\n'
-              '                                   第 13页，共 13页'],
+  'options': ['solve(0, n)', 'solve(0, n - 1)', 'solve(1, n)', 'solve(1, n - 1)'],
   'answer': 0},
  {'id': 'csp_s_round1-2024-q01',
   'competition': 'csp_s_round1',
@@ -11278,10 +10696,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'options': ['int foo() { return 0; }',
               'int bar() { int x = 1; return x; }',
               'void baz() { int a[1000]; baz(); }',
-              'void qux() { return; }\n'
-              '\n'
-              '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                 第 1页，共 16页'],
+              'void qux() { return; }'],
   'answer': 2},
  {'id': 'csp_s_round1-2024-q04',
   'competition': 'csp_s_round1',
@@ -11336,13 +10751,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'source': 'CSP/题库/CSP-S/2024/Round1/CSP-S1-2024.pdf',
   'stem': '对数组进行二分查找的过程中，以下哪个条件必须满足？(                      )',
   'code': '',
-  'options': ['数组必须是有序的',
-              '数组必须是无序的',
-              '数组长度必须是 2 的幂\n'
-              '\n'
-              '                      CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                             第 2页，共 16页',
-              '数组中的元素必须是整数'],
+  'options': ['数组必须是有序的', '数组必须是无序的', '数组长度必须是 2 的幂', '数组中的元素必须是整数'],
   'answer': 0},
  {'id': 'csp_s_round1-2024-q09',
   'competition': 'csp_s_round1',
@@ -11397,11 +10806,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2024/Round1/CSP-S1-2024.pdf',
-  'stem': '对于一个整数 n，定义 f(n)为 n 的各位数字之和。问使 f(f(x))=10 的最小自然数 x 是\n'
-          '\n'
-          '                      CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                             第 3页，共 16页\n'
-          '   多少？(        )',
+  'stem': '对于一个整数 n，定义 f(n)为 n 的各位数字之和。问使 f(f(x))=10 的最小自然数 x 是\n   多少？(        )',
   'code': '',
   'options': ['29', '199', '299', '399'],
   'answer': 1},
@@ -11429,9 +10834,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '2',
               '3',
               '4\n'
-              '\n'
-              '                    CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                           第 4页，共 16页\n'
               '二、阅读程序(程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特\n'
               '殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分)\n'
               '(1)\n'
@@ -11473,9 +10875,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               ' 36       generate(a, b, c);\n'
               ' 37       recursion(d, c, b);\n'
               ' 38       for (int i = 0; i < b; ++i) cout << c[i] << " ";\n'
-              '\n'
-              '                            CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                   第 5页，共 16页\n'
               '    39           cout << endl;\n'
               '    40      }\n'
               '\n'
@@ -11538,9 +10937,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 36       generate(a, b, c);\n'
           ' 37       recursion(d, c, b);\n'
           ' 38       for (int i = 0; i < b; ++i) cout << c[i] << " ";\n'
-          '\n'
-          '                            CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                   第 5页，共 16页\n'
           '    39           cout << endl;\n'
           '    40      }\n'
           '\n'
@@ -11593,9 +10989,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 36       generate(a, b, c);\n'
           ' 37       recursion(d, c, b);\n'
           ' 38       for (int i = 0; i < b; ++i) cout << c[i] << " ";\n'
-          '\n'
-          '                            CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                   第 5页，共 16页\n'
           '    39           cout << endl;\n'
           '    40      }\n'
           '\n'
@@ -11648,9 +11041,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 36       generate(a, b, c);\n'
           ' 37       recursion(d, c, b);\n'
           ' 38       for (int i = 0; i < b; ++i) cout << c[i] << " ";\n'
-          '\n'
-          '                            CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                   第 5页，共 16页\n'
           '    39           cout << endl;\n'
           '    40      }\n'
           '\n'
@@ -11703,9 +11093,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 36       generate(a, b, c);\n'
           ' 37       recursion(d, c, b);\n'
           ' 38       for (int i = 0; i < b; ++i) cout << c[i] << " ";\n'
-          '\n'
-          '                            CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                   第 5页，共 16页\n'
           '    39           cout << endl;\n'
           '    40      }\n'
           '\n'
@@ -11729,9 +11116,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    11         dp[0] = 1;\n'
               '    12         for (int i = 0; i < n; ++i) {\n'
               '    13             for (int j = (1<<(m-1))-1; j >= 0; --j) {\n'
-              '\n'
-              '                                  CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                         第 6页，共 16页\n'
               "    14              int k = (j<<1)|(s[i]-'0');\n"
               "    15              if (j != 0 || s[i] == '1')\n"
               '    16                  dp[k] = (dp[k] + dp[j]) % P;\n'
@@ -11779,10 +11163,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读判断题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2024/Round1/CSP-S1-2024.pdf',
-  'stem': '假设数组 dp 长度无限制，函数 solve()所实现的算法的时间复杂度是 O(n*2^m)。(      )\n'
-          '\n'
-          '                             CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                    第 7页，共 16页',
+  'stem': '假设数组 dp 长度无限制，函数 solve()所实现的算法的时间复杂度是 O(n*2^m)。(      )',
   'code': '',
   'options': ['正确', '错误'],
   'answer': 0},
@@ -11807,9 +11188,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    11         dp[0] = 1;\n'
           '    12         for (int i = 0; i < n; ++i) {\n'
           '    13             for (int j = (1<<(m-1))-1; j >= 0; --j) {\n'
-          '\n'
-          '                                  CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                         第 6页，共 16页\n'
           "    14              int k = (j<<1)|(s[i]-'0');\n"
           "    15              if (j != 0 || s[i] == '1')\n"
           '    16                  dp[k] = (dp[k] + dp[j]) % P;\n'
@@ -11872,9 +11250,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    11         dp[0] = 1;\n'
           '    12         for (int i = 0; i < n; ++i) {\n'
           '    13             for (int j = (1<<(m-1))-1; j >= 0; --j) {\n'
-          '\n'
-          '                                  CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                         第 6页，共 16页\n'
           "    14              int k = (j<<1)|(s[i]-'0');\n"
           "    15              if (j != 0 || s[i] == '1')\n"
           '    16                  dp[k] = (dp[k] + dp[j]) % P;\n'
@@ -11937,9 +11312,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    11         dp[0] = 1;\n'
           '    12         for (int i = 0; i < n; ++i) {\n'
           '    13             for (int j = (1<<(m-1))-1; j >= 0; --j) {\n'
-          '\n'
-          '                                  CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                         第 6页，共 16页\n'
           "    14              int k = (j<<1)|(s[i]-'0');\n"
           "    15              if (j != 0 || s[i] == '1')\n"
           '    16                  dp[k] = (dp[k] + dp[j]) % P;\n'
@@ -12002,9 +11374,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    11         dp[0] = 1;\n'
           '    12         for (int i = 0; i < n; ++i) {\n'
           '    13             for (int j = (1<<(m-1))-1; j >= 0; --j) {\n'
-          '\n'
-          '                                  CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                         第 6页，共 16页\n'
           "    14              int k = (j<<1)|(s[i]-'0');\n"
           "    15              if (j != 0 || s[i] == '1')\n"
           '    16                  dp[k] = (dp[k] + dp[j]) % P;\n'
@@ -12067,9 +11436,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    11         dp[0] = 1;\n'
           '    12         for (int i = 0; i < n; ++i) {\n'
           '    13             for (int j = (1<<(m-1))-1; j >= 0; --j) {\n'
-          '\n'
-          '                                  CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                         第 6页，共 16页\n'
           "    14              int k = (j<<1)|(s[i]-'0');\n"
           "    15              if (j != 0 || s[i] == '1')\n"
           '    16                  dp[k] = (dp[k] + dp[j]) % P;\n'
@@ -12127,9 +11493,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    10\n'
               '    11   typedef long long ll;\n'
               '    12\n'
-              '\n'
-              '                                CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                       第 8页，共 16页\n'
               '13   int n;\n'
               '14   bool p[maxn];\n'
               '15   int p1[maxn], p2[maxn];\n'
@@ -12172,9 +11535,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '52       }\n'
               '53   }\n'
               '54\n'
-              '\n'
-              '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                第 9页，共 16页\n'
               '    55   int solve() {\n'
               '    56       for (int i = n; i; --i) {\n'
               '    57           h[i] = H(p[i]);\n'
@@ -12229,9 +11589,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    10\n'
           '    11   typedef long long ll;\n'
           '    12\n'
-          '\n'
-          '                                CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                       第 8页，共 16页\n'
           '13   int n;\n'
           '14   bool p[maxn];\n'
           '15   int p1[maxn], p2[maxn];\n'
@@ -12274,9 +11631,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '52       }\n'
           '53   }\n'
           '54\n'
-          '\n'
-          '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                第 9页，共 16页\n'
           '    55   int solve() {\n'
           '    56       for (int i = n; i; --i) {\n'
           '    57           h[i] = H(p[i]);\n'
@@ -12321,9 +11675,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    10\n'
           '    11   typedef long long ll;\n'
           '    12\n'
-          '\n'
-          '                                CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                       第 8页，共 16页\n'
           '13   int n;\n'
           '14   bool p[maxn];\n'
           '15   int p1[maxn], p2[maxn];\n'
@@ -12366,9 +11717,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '52       }\n'
           '53   }\n'
           '54\n'
-          '\n'
-          '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                第 9页，共 16页\n'
           '    55   int solve() {\n'
           '    56       for (int i = n; i; --i) {\n'
           '    57           h[i] = H(p[i]);\n'
@@ -12413,9 +11761,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    10\n'
           '    11   typedef long long ll;\n'
           '    12\n'
-          '\n'
-          '                                CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                       第 8页，共 16页\n'
           '13   int n;\n'
           '14   bool p[maxn];\n'
           '15   int p1[maxn], p2[maxn];\n'
@@ -12458,9 +11803,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '52       }\n'
           '53   }\n'
           '54\n'
-          '\n'
-          '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                第 9页，共 16页\n'
           '    55   int solve() {\n'
           '    56       for (int i = n; i; --i) {\n'
           '    57           h[i] = H(p[i]);\n'
@@ -12505,9 +11847,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    10\n'
           '    11   typedef long long ll;\n'
           '    12\n'
-          '\n'
-          '                                CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                       第 8页，共 16页\n'
           '13   int n;\n'
           '14   bool p[maxn];\n'
           '15   int p1[maxn], p2[maxn];\n'
@@ -12550,9 +11889,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '52       }\n'
           '53   }\n'
           '54\n'
-          '\n'
-          '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                第 9页，共 16页\n'
           '    55   int solve() {\n'
           '    56       for (int i = n; i; --i) {\n'
           '    57           h[i] = H(p[i]);\n'
@@ -12575,13 +11911,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    74   }\n'
           '\n'
           '    判断题',
-  'options': ['83',
-              '424\n'
-              '\n'
-              '                             CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                    第 10页，共 16页',
-              '54',
-              '110101000'],
+  'options': ['83', '424', '54', '110101000'],
   'answer': 2},
  {'id': 'csp_s_round1-2024-q32',
   'competition': 'csp_s_round1',
@@ -12603,9 +11933,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    10\n'
           '    11   typedef long long ll;\n'
           '    12\n'
-          '\n'
-          '                                CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                       第 8页，共 16页\n'
           '13   int n;\n'
           '14   bool p[maxn];\n'
           '15   int p1[maxn], p2[maxn];\n'
@@ -12648,9 +11975,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '52       }\n'
           '53   }\n'
           '54\n'
-          '\n'
-          '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                第 9页，共 16页\n'
           '    55   int solve() {\n'
           '    56       for (int i = n; i; --i) {\n'
           '    57           h[i] = H(p[i]);\n'
@@ -12677,9 +12001,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '9',
               '10',
               '12\n'
-              '\n'
-              '                 CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                        第 11页，共 16页\n'
               '三、完善程序(单选题，每小题 3 分，共计 30 分)\n'
               '(1)(序列合并)有两个长度为 N 的单调不降序列 A 和 B，序列的每个元素都是小于 10^9 的\n'
               '非负整数。在 A 和 B 中各取一个数相加可以得到 N^2 个和，求其中第 K 小的和。上述参数满\n'
@@ -12720,9 +12041,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               ' 34           int mid = ((long long)l+r)>>1;\n'
               ' 35           if (    ⑤    ) {\n'
               ' 36               l = mid + 1;\n'
-              '\n'
-              '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                 第 12页，共 16页\n'
               ' 37             } else {\n'
               ' 38                 r = mid;\n'
               ' 39             }\n'
@@ -12796,9 +12114,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -12862,9 +12177,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -12928,9 +12240,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -12994,9 +12303,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -13014,9 +12320,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               'get_rank(mid) <= k',
               'get_rank(mid) > k',
               'get_rank(mid) >= k\n'
-              '\n'
-              '                               CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                      第 13页，共 16页\n'
               '(2)(次短路)已知一个有 n 个点 m 条边的有向图 G，并且给定图中的两个点 s 和 t，求次短\n'
               '路(长度严格大于最短路的最短路径)。如果不存在，输出一行“-1”。如果存在，输出两行，\n'
               '第一行表示次短路的长度，第二行表示次短路的一个方案。\n'
@@ -13058,9 +12361,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '36       memset(pre, -1, sizeof(pre));\n'
               '37       dis2 = dis+n;\n'
               '38       pre2 = pre+n;\n'
-              '\n'
-              '                            CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                   第 14页，共 16页\n'
               '39       dis[s] = 0;\n'
               '40       while (!q.empty()) {\n'
               '41           int aa = q.top().second; q.pop();\n'
@@ -13101,10 +12401,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '76           printf("%d\\n", dis2[t]);\n'
               '77           out(n+t);\n'
               '78       }\n'
-              '79   }\n'
-              '\n'
-              '                         CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                第 15页，共 16页'],
+              '79   }'],
   'answer': 0},
  {'id': 'csp_s_round1-2024-q38',
   'competition': 'csp_s_round1',
@@ -13154,9 +12451,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -13220,9 +12514,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -13286,9 +12577,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -13352,9 +12640,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -13421,9 +12706,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 34           int mid = ((long long)l+r)>>1;\n'
           ' 35           if (    ⑤    ) {\n'
           ' 36               l = mid + 1;\n'
-          '\n'
-          '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-          '                                 第 12页，共 16页\n'
           ' 37             } else {\n'
           ' 38                 r = mid;\n'
           ' 39             }\n'
@@ -13437,13 +12719,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           ' 47          for (int i = 0; i < n; ++i) cin >> b[i];\n'
           ' 48          cout << solve() << endl;\n'
           ' 49      }',
-  'options': ['pre2[a%n]',
-              'pre[a%n]',
-              'pre2[a]',
-              'pre[a%n]+1\n'
-              '\n'
-              '                          CCF CSP-S 2024 第一轮 C++语言试题\n'
-              '                                 第 16页，共 16页'],
+  'options': ['pre2[a%n]', 'pre[a%n]', 'pre2[a]', 'pre[a%n]+1'],
   'answer': 0},
  {'id': 'csp_s_round1-2025-q01',
   'competition': 'csp_s_round1',
@@ -15681,8 +14957,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      30     cout << endl;\n'
           '      31     return 0;\n'
           '      32 }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第5页，共16页\n'
           '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
           'l 判断题',
   'options': ['正确', '错误'],
@@ -15731,8 +15005,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      30     cout << endl;\n'
           '      31     return 0;\n'
           '      32 }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第5页，共16页\n'
           '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
           'l 判断题',
   'options': ['正确', '错误'],
@@ -15781,8 +15053,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      30     cout << endl;\n'
           '      31     return 0;\n'
           '      32 }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第5页，共16页\n'
           '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
           'l 判断题',
   'options': ['正确', '错误'],
@@ -15794,9 +15064,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读判断题',
   'difficulty': 5,
   'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
-  'stem': '程序总是会正常执行并输出两行两个相等的数。( )\n'
-          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                   第7页，共16页',
+  'stem': '程序总是会正常执行并输出两行两个相等的数。( )',
   'code': '',
   'options': ['正确', '错误'],
   'answer': 0},
@@ -15834,8 +15102,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      20             max(m + o.w, o.m),\n'
           '      21             w + o.w);\n'
           '      22     }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共16页\n'
           '    23 };\n'
           '    24\n'
           '    25 Node solve1(int h, int m)\n'
@@ -15923,8 +15189,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      20             max(m + o.w, o.m),\n'
           '      21             w + o.w);\n'
           '      22     }\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第6页，共16页\n'
           '    23 };\n'
           '    24\n'
           '    25 Node solve1(int h, int m)\n'
@@ -16032,8 +15296,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
           '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
           '      28         ret += base[str[i + 2] & 0x3f];\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第8页，共16页\n'
           '29     }\n'
           '30     if (i < str.size()) {\n'
           '31         ret += base[str[i] >> 2];\n'
@@ -16084,9 +15346,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
           '68     return 0;\n'
           '69 }\n'
-          '\n'
-          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                               第9页，共16页\n'
           '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
           '的判断题和单选题:\n'
           'l 判断题',
@@ -16132,8 +15391,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
           '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
           '      28         ret += base[str[i + 2] & 0x3f];\n'
-          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                                     第8页，共16页\n'
           '29     }\n'
           '30     if (i < str.size()) {\n'
           '31         ret += base[str[i] >> 2];\n'
@@ -16184,9 +15441,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
           '68     return 0;\n'
           '69 }\n'
-          '\n'
-          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
-          '                               第9页，共16页\n'
           '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
           '的判断题和单选题:\n'
           'l 判断题',
@@ -16229,9 +15483,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      16         shift[t[j]] = m - j;\n'
           '      17\n'
           '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
-          '\n'
-          '                             CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                      第 5页，共 13页\n'
           '      19         j = 0;\n'
           '      20         while (j < m && s[i + j] == t[j]) j++;\n'
           '      21         if (j == m) return i;\n'
@@ -16278,9 +15529,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      16         shift[t[j]] = m - j;\n'
           '      17\n'
           '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
-          '\n'
-          '                             CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                      第 5页，共 13页\n'
           '      19         j = 0;\n'
           '      20         while (j < m && s[i + j] == t[j]) j++;\n'
           '      21         if (j == m) return i;\n'
@@ -16308,9 +15556,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读判断题',
   'difficulty': 5,
   'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
-  'stem': '这是一个不稳定的排序算法。( )\n'
-          '                        CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                 第 7页，共 13页',
+  'stem': '这是一个不稳定的排序算法。( )',
   'code': '',
   'options': ['正确', '错误'],
   'answer': 1},
@@ -16330,8 +15576,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      06\n'
           '      07 int n, m, k, val[MAXN];\n'
           '      08 int temp[MAXN], cnt[MAXN];\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 6页，共 13页\n'
           '  09\n'
           '  10 void init()\n'
           '  11 {\n'
@@ -16393,8 +15637,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      06\n'
           '      07 int n, m, k, val[MAXN];\n'
           '      08 int temp[MAXN], cnt[MAXN];\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 6页，共 13页\n'
           '  09\n'
           '  10 void init()\n'
           '  11 {\n'
@@ -16456,8 +15698,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      06\n'
           '      07 int n, m, k, val[MAXN];\n'
           '      08 int temp[MAXN], cnt[MAXN];\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 6页，共 13页\n'
           '  09\n'
           '  10 void init()\n'
           '  11 {\n'
@@ -16519,8 +15759,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      06\n'
           '      07 int n, m, k, val[MAXN];\n'
           '      08 int temp[MAXN], cnt[MAXN];\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 6页，共 13页\n'
           '  09\n'
           '  10 void init()\n'
           '  11 {\n'
@@ -16582,8 +15820,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '      06\n'
           '      07 int n, m, k, val[MAXN];\n'
           '      08 int temp[MAXN], cnt[MAXN];\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 6页，共 13页\n'
           '  09\n'
           '  10 void init()\n'
           '  11 {\n'
@@ -16659,8 +15895,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               "      24                 ans[i] + 'A' - 10 :\n"
               "      25                 ans[i] + '0');\n"
               '      26         cout << endl;\n'
-              '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                          第 8页，共 13页\n'
               '    27       }\n'
               '    28       return 0;\n'
               '    29 }\n'
@@ -16714,8 +15948,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           "      24                 ans[i] + 'A' - 10 :\n"
           "      25                 ans[i] + '0');\n"
           '      26         cout << endl;\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 8页，共 13页\n'
           '    27       }\n'
           '    28       return 0;\n'
           '    29 }\n'
@@ -16759,8 +15991,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           "      24                 ans[i] + 'A' - 10 :\n"
           "      25                 ans[i] + '0');\n"
           '      26         cout << endl;\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 8页，共 13页\n'
           '    27       }\n'
           '    28       return 0;\n'
           '    29 }\n'
@@ -16804,8 +16034,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           "      24                 ans[i] + 'A' - 10 :\n"
           "      25                 ans[i] + '0');\n"
           '      26         cout << endl;\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 8页，共 13页\n'
           '    27       }\n'
           '    28       return 0;\n'
           '    29 }\n'
@@ -16849,8 +16077,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           "      24                 ans[i] + 'A' - 10 :\n"
           "      25                 ans[i] + '0');\n"
           '      26         cout << endl;\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 8页，共 13页\n'
           '    27       }\n'
           '    28       return 0;\n'
           '    29 }\n'
@@ -16894,8 +16120,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           "      24                 ans[i] + 'A' - 10 :\n"
           "      25                 ans[i] + '0');\n"
           '      26         cout << endl;\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 8页，共 13页\n'
           '    27       }\n'
           '    28       return 0;\n'
           '    29 }\n'
@@ -16927,9 +16151,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '    09     int m2 = (left2 + right2) >> 1;\n'
               '    10     int cnt = ①;\n'
               '    11     if (②) {\n'
-              '\n'
-              '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                          第 9页，共 13页\n'
               '12       if (cnt < k) left1 = m1 + 1;\n'
               '13       else right2 = m2 - 1;\n'
               '14     } else {\n'
@@ -16992,9 +16213,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17047,9 +16265,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17102,9 +16317,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17157,9 +16369,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17187,9 +16396,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               'y = a1[k - left2]',
               'y = a2[k - left1 - 1]',
               'y = a2[k - left1]\n'
-              '\n'
-              '                           CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                   第 10页，共 13页\n'
               '(2)(容器分水)有两个容器，容器 1 的容量为为 a 升，容器 2 的容量为 b 升；同时允许\n'
               '下列的三种操作，分别为:\n'
               '   1)FILL(i):用水龙头将容器 i(i∈{1,2})灌满水；\n'
@@ -17234,8 +16440,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '31     cout << "FILL(1)" << endl;\n'
               '32     go(a, y);\n'
               '33   } else if (f[x][y] == dfs(x, b) + 1) {\n'
-              '                      CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                              第 11页，共 13页\n'
               '34     cout << "FILL(2)" << endl;\n'
               '35     go(x, b);\n'
               '36   } else if (f[x][y] == dfs(0, y) + 1) {\n'
@@ -17300,9 +16504,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17355,9 +16556,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17381,13 +16579,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '32     }\n'
           '33   }\n'
           '34 }',
-  'options': ['dfs(x + t, y - t) + 1',
-              'dfs(x + t, y - t) - 1',
-              'dfs(x - t, y + t) + 1',
-              'dfs(x - t, y + t) - 1\n'
-              '\n'
-              '                         CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                 第 12页，共 13页'],
+  'options': ['dfs(x + t, y - t) + 1', 'dfs(x + t, y - t) - 1', 'dfs(x - t, y + t) + 1', 'dfs(x - t, y + t) - 1'],
   'answer': 2},
  {'id': 'csp_s_round1-2022-q41',
   'competition': 'csp_s_round1',
@@ -17416,9 +16608,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17471,9 +16660,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17526,9 +16712,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '    09     int m2 = (left2 + right2) >> 1;\n'
           '    10     int cnt = ①;\n'
           '    11     if (②) {\n'
-          '\n'
-          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
-          '                                          第 9页，共 13页\n'
           '12       if (cnt < k) left1 = m1 + 1;\n'
           '13       else right2 = m2 - 1;\n'
           '14     } else {\n'
@@ -17552,13 +16735,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
           '32     }\n'
           '33   }\n'
           '34 }',
-  'options': ['dfs(x + t, y - t) + 1',
-              'dfs(x + t, y - t) - 1',
-              'dfs(x - t, y + t) + 1',
-              'dfs(x - t, y + t) - 1\n'
-              '\n'
-              '                          CCF CSP-S 2022 第一轮 C++语言试题\n'
-              '                                  第 13页，共 13页'],
+  'options': ['dfs(x + t, y - t) + 1', 'dfs(x + t, y - t) - 1', 'dfs(x - t, y + t) + 1', 'dfs(x - t, y + t) - 1'],
   'answer': 2},
  {'id': 'csp_x_round1-2023-q01',
   'competition': 'csp_x_round1',
@@ -19981,7 +19158,8 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '   对于 30% 的数据，保证 b ≤ 2。\n'
                  '   对于 60% 的数据，保证 b ≤ 30，ab ≤ 1018 。\n'
                  '   对于 100% 的数据，保证 1 ≤ a, b ≤ 109 。\n'
-                 '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                  入门级 解密(decode)',
+                 '\x0c'
+                 ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                  入门级 解密(decode)',
   'tests': [{'input': '10 9\n', 'output': '1000000000\n'},
             {'input': '23333 66666\n', 'output': '‐1\n2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证    入门级 乘方(pow)\n'}],
   'public_tests': [{'input': '10 9\n', 'output': '1000000000\n'}],
@@ -20016,7 +19194,6 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '8                                     保证有解\n'
                  '1018\n'
                  '无\n'
-                 '                      10\n'
                  '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           入门级 逻辑表达式(expr)',
   'tests': [{'input': '10\n'
                       '770 77 5\n'
@@ -20032,7 +19209,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
              'output': '2 385\n'
                        'NO\n'
                        'NO\n'
-                       '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                            入门级 解密(decode)\n'
+                       ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                            入门级 解密(decode)\n'
                        'NO\n'
                        '11 78\n'
                        '3 241\n'
@@ -20054,7 +19231,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                     'output': '2 385\n'
                               'NO\n'
                               'NO\n'
-                              '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                            入门级 解密(decode)\n'
+                              ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                            入门级 解密(decode)\n'
                               'NO\n'
                               '11 78\n'
                               '3 241\n'
@@ -20076,7 +19253,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                     'output': '2 385\n'
                               'NO\n'
                               'NO\n'
-                              '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                            入门级 解密(decode)\n'
+                              ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                            入门级 解密(decode)\n'
                               'NO\n'
                               '11 78\n'
                               '3 241\n'
@@ -20123,6 +19300,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
             '   输出共两行，第一行输出一个字符 0 或 1 ，表示这个逻辑表达式的值；第二行输\n'
             '出两个非负整数，分别表示计算上述逻辑表达式的过程中，形如 a&b 和 a|b 的“短路”\n'
             '各出现了多少次。\n'
+            '\x0c'
             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            入门级 逻辑表达式(expr)',
   'constraints': '设 |s| 为字符串 s 的长度。\n'
                  '   对于所有数据，1 ≤ |s| ≤ 106 。保证 s 中仅含有字符 0、1、&、|、(、) 且是一个\n'
@@ -20215,6 +19393,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                                           无\n'
                  '\n'
                  '   特殊性质:小苞第一天就取走编号为 n 的苹果。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证           入门级 公路(road)',
   'tests': [{'input': '8\n', 'output': '5 5\n'}],
   'public_tests': [{'input': '8\n', 'output': '5 5\n'}],
@@ -20254,6 +19433,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '   特殊性质 A:站点 1 的油价最低。\n'
                  '   特殊性质 B:对于所有 1 ≤ i < n，vi 为 d 的倍数。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证            入门级 一元二次方程(uqe)\n'
                  '\n'
                  '                          一元二次方程(uqe)\n'
@@ -20322,7 +19502,8 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '         • q1 , q2 为有理数，且 q2 > 0；\n'
                  '         • r 为正整数且 r > 1，且不存在正整数 d > 1 使 d2 |r(即 r 不应是 d2 的倍\n'
                  '            数)；\n'
-                 '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                入门级 一元二次方程(uqe)\n'
+                 '\x0c'
+                 ' 2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                入门级 一元二次方程(uqe)\n'
                  '\n'
                  '        此时:\n'
                  '             1. 若 q1 ̸= 0，则按照有理数的格式输出 q1 ，并再输出一个加号 +；\n'
@@ -20370,6 +19551,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '1 ‐3 1\n'
                  '2 ‐4 1\n'
                  '1 7 1\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                入门级 一元二次方程(uqe)\n'
                  '\n'
                  '    【样例 1 输出】\n'
@@ -20409,6 +19591,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '        • 特殊性质 A:保证 b = 0；\n'
                  '        • 特殊性质 B:保证 c = 0；\n'
                  '        • 特殊性质 C:如果方程有解，那么方程的两个解都是整数。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证       入门级 旅游巴士(bus)',
   'tests': [{'input': '5 4\n10 10 10 10\n9 8 9 6 5\n',
              'output': '79\n2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 入门级 公路(road)\n'},
@@ -20505,6 +19688,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
   'output': '输出到文件 bus.out 中。\n     输出一行，仅包含一个整数，表示小 Z 最早乘坐旅游巴士离开景区的时刻。如果不\n存在符合要求的旅游方案，输出 ‐1。',
   'constraints': '对于所有测试数据有:2 ≤ n ≤ 104 ，1 ≤ m ≤ 2 × 104 ，1 ≤ k ≤ 100，1 ≤ ui , vi ≤ n，\n'
                  '0 ≤ ai ≤ 106 。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                     入门级 旅游巴士(bus)\n'
                  '\n'
                  '              测试点编号      n≤       m≤     k≤     特殊性质\n'
@@ -20574,6 +19758,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '   接下来 n 行:\n'
            '   每行包含一个长度为 2 的字符串描述一张牌，其中第一个字符描述其花色，第二个\n'
            '字符描述其点数。\n'
+           '\x0c'
            '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                入门级 扑克牌(poker)',
   'output': '输出到文件 poker.out 中。\n        输出一行一个整数，表示最少还需要向小 S 借几张牌才能凑成一副完整的扑克牌。',
   'constraints': '对于所有测试数据，保证:1 ≤ n ≤ 52，输入的 n 个字符串每个都代表一张合法的\n'
@@ -20590,6 +19775,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '   特殊性质 A:保证输入的 n 张牌两两不同。\n'
                  '   特殊性质 B:保证所有牌按照点数从小到大依次输入，点数相同时按照方片、草花、\n'
                  '红桃、黑桃的顺序依次输入。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                  入门级 地图探险(explore)',
   'tests': [{'input': '1\nSA\n', 'output': '51\n'}, {'input': '4\nDQ\nH3\nDQ\nDT\n', 'output': '49\n'}],
   'public_tests': [{'input': '1\nSA\n', 'output': '51\n'}],
@@ -20648,10 +19834,12 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '   接下来 n 行，每行包含一个长度为 m 的字符串。保证字符串中只包含 x 和 . 两个\n'
            '字符。其中，第 x 行的字符串的第 y 个字符代表的位置为 (x, y)。这个位置是 x 即代表\n'
            '它是障碍，否则代表它是空地。数据保证机器人初始时所在的位置为空地。\n'
-           '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证        入门级 地图探险(explore)',
+           '\x0c'
+           ' 2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证        入门级 地图探险(explore)',
   'output': '输出到文件 explore.out 中。\n         对于每组数据:输出一行包含一个正整数，表示地图上所有被机器人经过的位置\n(包括起始位置)的个数。',
   'constraints': '对于所有测试数据，保证:1 ≤ T ≤ 5, 1 ≤ n, m ≤ 103 , 1 ≤ k ≤ 106 , 1 ≤ x0 ≤ n, 1 ≤\n'
                  'y0 ≤ m, 0 ≤ d0 ≤ 3，且机器人的起始位置为空地。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证             入门级 地图探险(explore)\n'
                  '\n'
                  '       测试点编号       n       m         k           特殊性质\n'
@@ -20665,7 +19853,6 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                          ≤ 103\n'
                  '≤ 103            ≤ 106\n'
                  '无\n'
-                 '           10\n'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证       入门级 小木棍(sticks)',
   'tests': [{'input': '2\n1 5 4\n1 1 2\n....x\n5 5 20\n1 1 0\n.....\n.xxx.\n.x.x.\n..xx.\nx....\n',
              'output': '3\n13\n'}],
@@ -20724,6 +19911,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '        特殊性质 A:保证 n 是 7 的倍数且 n ≥ 100。\n'
                  '        特殊性质 B:保证存在整数 k 使得 n = 7k + 1，且 n ≥ 100。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                        入门级 接龙(chain)',
   'tests': [{'input': '5\n1\n2\n3\n2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证             入门级 小木棍(sticks)\n6\n18\n',
              'output': '‐1\n1\n7\n6\n208\n'}],
@@ -20774,11 +19962,13 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '   第 j 行包含两个整数 rj , cj ，描述一个任务。',
   'output': '输出到文件 chain.out 中。\n'
             '   对于每个任务:输出一行包含一个整数，若任务可以完成输出 1，否则输出 0。\n'
-            '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                入门级 接龙(chain)',
+            '\x0c'
+            ' 2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                入门级 接龙(chain)',
   'constraints': '对于所有测试数据，保证:\n'
                  '  • 1 ≤ T ≤ 5；\n'
                  '  • 1 ≤ n ≤ 105 ，2 ≤ k ≤ 2 × 105 ，1 ≤ q ≤ 105 ；\n'
                  '  • 1 ≤ li ≤ 2 × 105 ，1 ≤ Si,j ≤ 2 × 105 ；\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                         入门级 接龙(chain)\n'
                  '\n'
                  '  • 1 ≤ rj ≤ 102 ，1 ≤ cj ≤ 2 × 105 ；\n'
@@ -20876,10 +20066,12 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  'A\n'
                  '                          21, 22      106        B\n'
                  '                         23 ∼ 25                 无\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证    入门级 拼数(number)\n'
                  '\n'
                  '   特殊性质 A:s 仅包含数字。\n'
                  '   特殊性质 B:s 仅包含不超过 103 个数字。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证                    入门级 座位(seat)',
   'tests': [{'input': '5\n', 'output': '5\n'},
             {'input': '290es1q0\n2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证               入门级 拼数(number)\n',
@@ -20948,6 +20140,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '                                             .\n'
            '   输入的第二行包含 n × m 个正整数 a1 , a2 , . . . , an×m ，分别表示小 R 所在的考场的\n'
            '所有考生 CSP-J 2025 第一轮的成绩，其中 a1 为小 R CSP-J 2025 第一轮的成绩。\n'
+           '\x0c'
            '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证      入门级 座位(seat)',
   'output': '输出到文件 seat.out 中。\n'
             '     输出一行两个正整数 c, r，表示小 R 的座位为第 c 列第\n'
@@ -20973,6 +20166,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '     特殊性质 A:对于所有 1 ≤ i ≤ n × m，均有 ai = i。\n'
                  '     特殊性质 B:对于所有 1 ≤ i ≤ n × m，均有 ai = n × m − i + 1。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证                       入门级 异或和(xor)',
   'tests': [{'input': '2 2\n99 100 97 98\n', 'output': '1 2\n'},
             {'input': '2 2\n98 99 100 97\n', 'output': '2 2\n'},
@@ -21031,6 +20225,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '   特殊性质 A:对于所有 1 ≤ i ≤ n，均有 ai = 1。\n'
                  '   特殊性质 B:对于所有 1 ≤ i ≤ n，均有 0 ≤ ai ≤ 1。\n'
                  '   特殊性质 C:对于所有 1 ≤ i ≤ n，均有 0 ≤ ai ≤ 255。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            入门级 多边形(polygon)',
   'tests': [{'input': '4 2\n2 1 0 3\n', 'output': '2\n'},
             {'input': '4 3\n2 1 0 3\n', 'output': '2\n'},
@@ -21200,6 +20395,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                     15 ∼ 17                        0\n'
                  '10000\n'
                  '                     18 ∼ 20                       100\n'
+                 '\x0c'
                  '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 策略游戏(game)',
   'tests': [{'input': '8 8 1\n'
                       '9 7 1 8 2 3 6\n'
@@ -21208,7 +20404,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       '3 4\n'
                       '4 5\n'
                       '5 6\n'
-                      '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           提高级 假期计划(holiday)\n'
+                      ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           提高级 假期计划(holiday)\n'
                       '6 7\n'
                       '7 8\n'
                       '8 1\n',
@@ -21222,7 +20418,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '3 4\n'
                              '4 5\n'
                              '5 6\n'
-                             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           提高级 假期计划(holiday)\n'
+                             ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           提高级 假期计划(holiday)\n'
                              '6 7\n'
                              '7 8\n'
                              '8 1\n',
@@ -21234,7 +20430,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '3 4\n'
                              '4 5\n'
                              '5 6\n'
-                             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           提高级 假期计划(holiday)\n'
+                             ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证           提高级 假期计划(holiday)\n'
                              '6 7\n'
                              '7 8\n'
                              '8 1\n',
@@ -21284,6 +20480,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '    其中，特殊性质 1 为:保证 Ai , Bi > 0。\n'
                  '    特殊性质 2 为:保证对于每轮游戏而言，要么 l1 = r1 ，要么 l2 = r2 。\n'
+                 '\x0c'
                  '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证    提高级 星战(galaxy)',
   'tests': [{'input': '3 2 2\n'
                       '0 1 ‐2\n'
@@ -21375,7 +20572,8 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '   输入的第一行包含两个正整数 n, m。\n'
            '   接下来 m 行每行两个数 u, v，表示一个从据点 u 出发到据点 v 的虫洞。保证 u ̸= v，\n'
            '保证不会有两条相同的虫洞。初始时所有的虫洞和据点都是完好的。\n'
-           '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证    提高级 星战(galaxy)\n'
+           '\x0c'
+           ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证    提高级 星战(galaxy)\n'
            '\n'
            '      接下来一行一个正整数 q 表示询问个数。\n'
            '      接下来 q 行每行表示一次询问或操作。首先读入一个正整数 t 表示指令类型:\n'
@@ -21403,6 +20601,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '  13,14,15,16    ≤ 105\n'
                  '                                                              无\n'
                  '  17,18,19,20   ≤ 5 × 105\n'
+                 '\x0c'
                  '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证                  提高级 数据传输(transmit)',
   'tests': [{'input': '3 6\n'
                       '2 3\n'
@@ -21422,7 +20621,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       '1 3 1\n'
                       '3 1 3\n'
                       '4 2\n'
-                      '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 星战(galaxy)\n'
+                      ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 星战(galaxy)\n'
                       '1 3 2\n',
              'output': 'NO\nNO\nYES\nNO\nYES\nNO\nNO\nNO\nYES\nNO\nNO\n'}],
   'public_tests': [{'input': '3 6\n'
@@ -21443,7 +20642,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '1 3 1\n'
                              '3 1 3\n'
                              '4 2\n'
-                             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 星战(galaxy)\n'
+                             ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 星战(galaxy)\n'
                              '1 3 2\n',
                     'output': 'NO\nNO\nYES\nNO\nYES\nNO\nNO\nNO\nYES\nNO\nNO\n'}],
   'hidden_tests': [{'input': '3 6\n'
@@ -21464,7 +20663,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '1 3 1\n'
                              '3 1 3\n'
                              '4 2\n'
-                             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 星战(galaxy)\n'
+                             ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证             提高级 星战(galaxy)\n'
                              '1 3 2\n',
                     'output': 'NO\nNO\nYES\nNO\nYES\nNO\nNO\nNO\nYES\nNO\nNO\n'}],
   'allow_static_tests': True},
@@ -21527,7 +20726,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '     特殊性质:保证 ai = i + 1，而 bi 则从 1, 2, . . . , i 中等概率选取。',
   'tests': [{'input': '7 3 3\n'
                       '1 2 3 4 5 6 7\n'
-                      '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            提高级 数据传输(transmit)\n'
+                      ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            提高级 数据传输(transmit)\n'
                       '1 2\n'
                       '1 3\n'
                       '2 4\n'
@@ -21540,7 +20739,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
              'output': '12\n12\n3\n'}],
   'public_tests': [{'input': '7 3 3\n'
                              '1 2 3 4 5 6 7\n'
-                             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            提高级 数据传输(transmit)\n'
+                             ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            提高级 数据传输(transmit)\n'
                              '1 2\n'
                              '1 3\n'
                              '2 4\n'
@@ -21553,7 +20752,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                     'output': '12\n12\n3\n'}],
   'hidden_tests': [{'input': '7 3 3\n'
                              '1 2 3 4 5 6 7\n'
-                             '2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            提高级 数据传输(transmit)\n'
+                             ' 2022 CCF 非专业级软件能力认证 CSP-J/S 2022 第二轮认证            提高级 数据传输(transmit)\n'
                              '1 2\n'
                              '1 3\n'
                              '2 4\n'
@@ -21597,6 +20796,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '        特殊性质 A:保证所有正确密码都可以通过仅转动一个拨圈得到测试数据给出的 n\n'
                  '个状态。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证            提高级 消消乐(game)',
   'tests': [{'input': '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证            提高级 密码锁(lock)\n1\n0 0 1 1 5\n',
              'output': '81\n'}],
@@ -21638,6 +20838,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '   特殊性质 A:字符串中的每个字符独立等概率地从字符集中选择。\n'
                  '   特殊性质 B:字符串仅由 a 和 b 构成。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证        提高级 结构体(struct)\n'
                  '\n'
                  '                           结构体(struct)\n'
@@ -21706,6 +20907,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '别占据第 0 ∼ 1，4 ∼ 7，8 ∼ 9 字节的地址。由于类型 d 需要对齐到 4 字节，因此 e 占\n'
                  '据了第 0 ∼ 11 字节的地址，大小为 12 字节。\n'
                  '     你需要处理 n 次操作，每次操作为以下四种之一:\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
                  '\n'
                  '        1. 定义一个结构体类型。具体而言，给定正整数 k 与字符串 s, t1 , n1 , . . . , tk , nk ，其\n'
@@ -21750,7 +20952,8 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  'int ab\n'
                  '1 b 2\n'
                  'a ba\n'
-                 '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
+                 '\x0c'
+                 ' 2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
                  'long bb\n'
                  '2 b x\n'
                  '3 x.ba.ab\n'
@@ -21787,6 +20990,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '         对于全部数据，满足 1 ≤ n ≤ 100，1 ≤ k ≤ 100，0 ≤ addr ≤ 1018 。\n'
                  '         所有定义的结构体类型名、成员名称和定义的元素名称均由不超过 10 个字符的小\n'
                  ' 写字母组成，且都不是 byte,short,int,long(即不与基本类型重名)。\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
                  '\n'
                  '   所有定义的结构体类型名和元素名称互不相同，同一结构体内成员名称互不相同。\n'
@@ -21817,7 +21021,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       'int ab\n'
                       '1 b 2\n'
                       'a ba\n'
-                      '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
+                      ' 2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
                       'long bb\n'
                       '2 b x\n'
                       '3 x.ba.ab\n'
@@ -21831,7 +21035,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              'int ab\n'
                              '1 b 2\n'
                              'a ba\n'
-                             '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
+                             ' 2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证                 提高级 结构体(struct)\n'
                              'long bb\n'
                              '2 b x\n'
                              '3 x.ba.ab\n'
@@ -21878,6 +21082,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
   'output': '输出到文件 tree.out 中。\n        输出一行仅包含一个正整数，表示完成任务所需的最少天数。',
   'constraints': '对于所有测试数据有:1 ≤ n ≤ 105 ，1 ≤ ai ≤ 1018 , 1 ≤ bi ≤ 109 ，0 ≤ |ci | ≤ 109 ，\n'
                  '1 ≤ ui , vi ≤ n。保证存在方案能在 109 天内完成任务\n'
+                 '\x0c'
                  '2023 CCF 非专业级软件能力认证 CSP-J/S 2023 第二轮认证               提高级 种树(tree)\n'
                  '\n'
                  '                     测试点编号         n≤       特殊性质\n'
@@ -21964,6 +21169,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                       16 ∼ 20   ≤ 10               无特殊性质\n'
                  '\n'
                  '        特殊性质 A:保证每个 ri 在可能的值域中独立均匀随机生成。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证      提高级 超速检测(detect)',
   'tests': [{'input': '5\n1 2 3 1 2\n', 'output': '2\n'},
             {'input': '10\n136 136 136 2417 136 136 2417 136 136 136\n', 'output': '8\n'}],
@@ -22013,6 +21219,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '   接下来 n 行:\n'
            '   第 i 行包含三个整数 di , vi , ai 描述一辆车。\n'
            '   最后一行包含 m 个整数 p1 , p2 , · · · , pm 描述道路上所有测速仪的位置。\n'
+           '\x0c'
            '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证       提高级 超速检测(detect)',
   'output': '输出到文件 detect.out 中。\n'
             '        对于每组数据:输出一行包含两个整数，第一个整数为所有测速仪都开启时被判定\n'
@@ -22023,6 +21230,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '  • 1 ≤ n, m ≤ 105 ，1 ≤ L ≤ 106 ，1 ≤ V ≤ 103 ；\n'
                  '  • 0 ≤ di < L，1 ≤ vi ≤ 103 ，|ai | ≤ 103 ；\n'
                  '  • 0 ≤ p1 < p2 < · · · < pm ≤ L。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证             提高级 超速检测(detect)\n'
                  '\n'
                  '                       测试点    n, m ≤      特殊性质\n'
@@ -22085,6 +21293,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '        第二行包含 n 个正整数 A1 , A2 , . . . , An ，表示数组 A 中的元素。',
   'output': '输出到文件 color.out 中。\n        对于每组数据:输出一行包含一个非负整数，表示最终得分的最大可能值。',
   'constraints': '对于所有测试数据，保证:1 ≤ T ≤ 10，2 ≤ n ≤ 2 × 105 ，1 ≤ Ai ≤ 106 。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                 提高级 染色(color)\n'
                  '\n'
                  '                     测试点            n            Ai\n'
@@ -22095,6 +21304,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                     13 ∼ 15                 ≤ 10\n'
                  '                               ≤ 2 × 105\n'
                  '                     16 ∼ 20                 ≤ 106\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证           提高级 擂台游戏(arena)',
   'tests': [{'input': '3\n'
                       '3\n'
@@ -22198,7 +21408,8 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
            '   输入的第三行包含 m 个正整数 c1 , c2 , · · · , cm ，表示询问。\n'
            '   设 K 是使得 2K ≥ n 的最小的非负整数，接下来的 K 行当中，第 R 行包含 2K−R\n'
            '个数(无空格)，其中第 G 个数表示第 R 轮的第 G 场比赛抽签得到的 dR,G = 0/1。\n'
-           '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证            提高级 擂台游戏(arena)\n'
+           '\x0c'
+           ' 2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证            提高级 擂台游戏(arena)\n'
            '\n'
            '         注意，由于询问只是将人数凑齐到 2k ≥ ci ，这里的 k ≤ K，因此你未必会用到全部\n'
            ' 的输入值。\n'
@@ -22209,6 +21420,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
             '         共输出 T 行，对于每组数据，设 Ai 为第 i(1 ≤ i ≤ m)组询问的答案，你只需要\n'
             ' 输出一行包含一个整数，表示 (1 × A1 ) ⊕ (2 × A2 ) ⊕ · · · ⊕ (m × Am ) 的结果。',
   'constraints': '对于所有测试数据，保证:2 ≤ n, m ≤ 105 ，0 ≤ ai , Xj < 231 ，1 ≤ ci ≤ n，1 ≤ T ≤ 256。\n'
+                 '\x0c'
                  '2024 CCF 非专业级软件能力认证 CSP-J/S 2024 第二轮认证                提高级 擂台游戏(arena)\n'
                  '\n'
                  '             测试点       T =   n, m ≤   特殊性质 A    特殊性质 B\n'
@@ -22300,6 +21512,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                                                             .匀.随\n'
                  '                                                                .机.\n'
                  '生成。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证                         提高级 道路修复(road)',
   'tests': [{'input': '3\n'
                       '4\n'
@@ -22308,7 +21521,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       '5 3 4\n'
                       '3 5 1\n'
                       '4\n'
-                      '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 社团招新(club)\n'
+                      ' 2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 社团招新(club)\n'
                       '0 1 0\n'
                       '0 1 0\n'
                       '0 2 0\n'
@@ -22324,7 +21537,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '5 3 4\n'
                              '3 5 1\n'
                              '4\n'
-                             '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 社团招新(club)\n'
+                             ' 2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 社团招新(club)\n'
                              '0 1 0\n'
                              '0 1 0\n'
                              '0 2 0\n'
@@ -22340,7 +21553,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '5 3 4\n'
                              '3 5 1\n'
                              '4\n'
-                             '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 社团招新(club)\n'
+                             ' 2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 社团招新(club)\n'
                              '0 1 0\n'
                              '0 1 0\n'
                              '0 2 0\n'
@@ -22399,6 +21612,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '     • 对于所有 1 ≤ j ≤ k，均有 0 ≤ cj ≤ 109 ；\n'
                  '     • 对于所有 1 ≤ j ≤ k，1 ≤ i ≤ n，均有 0 ≤ aj,i ≤ 109 ；\n'
                  '     • 任意两座原有的城市都能通过若干条原有的道路相互到达。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证                 提高级 道路修复(road)\n'
                  '\n'
                  '                测试点编号       n≤       m≤    k≤   特殊性质\n'
@@ -22416,6 +21630,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '                  21 ∼ 25                  10\n'
                  '\n'
                  '   特殊性质 A:对于所有 1 ≤ j ≤ k，均有 cj = 0 且均存在 1 ≤ i ≤ n 满足 aj,i = 0。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 谐音替换(replace)',
   'tests': [{'input': '4 4 2\n'
                       '1 4 6\n'
@@ -22514,6 +21729,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '            . 好一次。对于所有\n'
                  '              .        1 ≤ i ≤ n，si,1 , si,2 均为特别的，且对于所有\n'
                  '1 ≤ j ≤ q，tj,1 , tj,2 均为特别的。\n'
+                 '\x0c'
                  '2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证        提高级 员工招聘(employ)',
   'tests': [{'input': '4 2\n'
                       'xabcx xadex\n'
@@ -23019,6 +22235,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '.续.的\n'
                  '   .操. 作。\n'
                  '       .\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证      插入排序(sort)\n'
                  '\n'
                  '        H 老师不喜欢过多的修改，所以他保证类型 1 的操作次数不超过 5000。\n'
@@ -23046,6 +22263,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '         20,21,22                            保证所有输入的 ai , v 互不相同\n'
                  '                                 ≤ 2 × 105\n'
                  '         23,24,25                                      无\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                 网络连接(network)',
   'tests': [{'input': '3 4\n3 2 1\n2 3\n1 3 2\n2 2\n2 3\n', 'output': '1\n1\n2\n'}],
   'public_tests': [{'input': '3 4\n3 2 1\n2 3\n1 3 2\n2 2\n2 3\n', 'output': '1\n1\n2\n'}],
@@ -23095,6 +22313,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '的地址串，以及同一台服务机同时被多台客户机连接的情况是被允许的。\n'
                  '   你的任务很简单:在给出每台计算机的类型以及地址串之后，判断这台计算机的连\n'
                  '接情况。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           网络连接(network)',
   'input': '从文件 network.in 中读入数据。\n'
            '        第 1 行，一个正整数 n 。\n'
@@ -23136,6 +22355,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '     “性质 5 ”为:保证所有的地址串均形如 a.b.c.d:e 的格式，其中 a, b, c, d, e 均为\n'
                  ' 只含有数字的非空字符串。\n'
                  '         对于 100% 的数据，保证 1 ≤ n ≤ 1000 。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          小熊的果篮(fruit)',
   'tests': [{'input': '5\n'
                       'Server 192.168.1.1:8080\n'
@@ -23143,7 +22363,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       'Client 192.168.1.1:8080\n'
                       'Client 192.168.1.1:80\n'
                       'Client 192.168.1.1:99999\n',
-             'output': 'OK\nFAIL\n2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n1\nFAIL\nERR\n'},
+             'output': 'OK\nFAIL\n 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n1\nFAIL\nERR\n'},
             {'input': '10\n'
                       'Server 192.168.1.1:80\n'
                       'Client 192.168.1.1:80\n'
@@ -23162,7 +22382,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                        'OK\n'
                        'ERR\n'
                        'ERR\n'
-                       '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                      网络连接(network)\n'
+                       ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                      网络连接(network)\n'
                        '5\n'
                        '1\n'
                        'ERR\n'}],
@@ -23174,7 +22394,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              'Client 192.168.1.1:99999\n',
                     'output': 'OK\n'
                               'FAIL\n'
-                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n'
+                              ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n'
                               '1\n'
                               'FAIL\n'
                               'ERR\n'}],
@@ -23186,7 +22406,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              'Client 192.168.1.1:99999\n',
                     'output': 'OK\n'
                               'FAIL\n'
-                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n'
+                              ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n'
                               '1\n'
                               'FAIL\n'
                               'ERR\n'},
@@ -23208,7 +22428,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                               'OK\n'
                               'ERR\n'
                               'ERR\n'
-                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                      网络连接(network)\n'
+                              ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                      网络连接(network)\n'
                               '5\n'
                               '1\n'
                               'ERR\n'}],
@@ -23290,13 +22510,14 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '         对于 100% 的数据，1 ≤ n ≤ 100000, 1 ≤ m1 + m2 ≤ 100000。\n'
                  '         所有 a1,i , b1,i , a2,i , b2,i 为数值不超过 108 的互不相同的正整数。\n'
                  '         保证 ∀i ∈ [1, n], a1,i < b1,i , a2,i < b2,i 。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证      括号序列(bracket)',
   'tests': [{'input': '3 5 4\n'
                       '1 5\n'
                       '3 8\n'
                       '6 10\n'
                       '9 14\n'
-                      '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
+                      ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
                       '13 18\n'
                       '2 11\n'
                       '4 15\n'
@@ -23307,7 +22528,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       '20 30\n'
                       '40 50\n'
                       '21 22\n'
-                      '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                         廊桥分配(airport)\n'
+                      ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                         廊桥分配(airport)\n'
                       '41 42\n'
                       '1 19\n'
                       '2 18\n'
@@ -23321,7 +22542,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '3 8\n'
                              '6 10\n'
                              '9 14\n'
-                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
+                             ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
                              '13 18\n'
                              '2 11\n'
                              '4 15\n'
@@ -23333,7 +22554,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '3 8\n'
                              '6 10\n'
                              '9 14\n'
-                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
+                             ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
                              '13 18\n'
                              '2 11\n'
                              '4 15\n'
@@ -23344,7 +22565,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '20 30\n'
                              '40 50\n'
                              '21 22\n'
-                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                         廊桥分配(airport)\n'
+                             ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                         廊桥分配(airport)\n'
                              '41 42\n'
                              '1 19\n'
                              '2 18\n'
@@ -23396,6 +22617,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '16 ∼ 20                   无\n'
                  '\n'
                  '   对于 100% 的数据，1 ≤ k ≤ n ≤ 500 。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                             回文(palin)',
   'tests': [{'input': '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                  括号序列(bracket)\n7 3\n(*??*??\n',
              'output': '5\n'},
@@ -23453,6 +22675,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '\n'
                  '     特殊性质:如果我们每次删除 a 中两个相邻且相等的数，存在一种方式将序列删空\n'
                  '(例如 a = [1, 2, 2, 1])。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证        交通规划(traﬀic)\n'
                  '\n'
                  '                            交通规划(traﬀic)\n'
@@ -23483,6 +22706,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '(i, j) 和 (i + 1, j) 间的边权。\n'
                  '   接下来 n 行，每行 m − 1 个非负整数。其中第 i 行的第 j 个非负整数 x2i,j 表示\n'
                  '(i, j) 和 (i, j + 1) 间的边权。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                                交通规划(traﬀic)\n'
                  '\n'
                  '        接下来依次输入 T 组询问。第 i 组询问开头为一行一个正整数 ki 表示这次询问附\n'
@@ -23520,6 +22744,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                  '    【样例 3】\n'
                  '\n'
                  '        见选手目录下的 traﬀic/traﬀic3.in 与 traﬀic/traﬀic3.ans。\n'
+                 '\x0c'
                  '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                       交通规划(traﬀic)\n'
                  '\n'
                  ' 【样例 4】\n'
@@ -23550,7 +22775,7 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                       '4 1 2 4 5 3 1 2 3 5\n'
                       '3\n'
                       '3 2 1 2 1 3\n'
-                      '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
+                      ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
              'output': 'LRRLLRRRRL\n‐1\n'},
             {'input': '2 3 1\n9 4 7\n3 8\n10 5\n2\n19 3 1\n17 9 0\n', 'output': '12\n'}],
   'public_tests': [{'input': '2\n'
@@ -23558,14 +22783,14 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
                              '4 1 2 4 5 3 1 2 3 5\n'
                              '3\n'
                              '3 2 1 2 1 3\n'
-                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
+                             ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
                     'output': 'LRRLLRRRRL\n‐1\n'}],
   'hidden_tests': [{'input': '2\n'
                              '5\n'
                              '4 1 2 4 5 3 1 2 3 5\n'
                              '3\n'
                              '3 2 1 2 1 3\n'
-                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
+                             ' 2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
                     'output': 'LRRLLRRRRL\n‐1\n'},
                    {'input': '2 3 1\n9 4 7\n3 8\n10 5\n2\n19 3 1\n17 9 0\n', 'output': '12\n'}],
   'allow_static_tests': True},

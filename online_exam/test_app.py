@@ -122,6 +122,37 @@ class ResultPageTest(unittest.TestCase):
         self.assertTrue(imported)
         self.assertTrue(all(len(question.get("options", [])) <= 4 for question in imported))
 
+    def test_imported_csp_questions_have_no_pdf_page_artifacts(self) -> None:
+        competitions = {
+            "csp_j_round1",
+            "csp_s_round1",
+            "csp_x_round1",
+        }
+        imported = [
+            question
+            for question in app.CHOICE_QUESTIONS
+            if question.get("competition") in competitions
+        ]
+        page_artifacts = [
+            question["id"]
+            for question in imported
+            if "CCF CSP" in "\n".join(
+                [
+                    str(question.get("stem", "")),
+                    str(question.get("code", "")),
+                    *[str(option) for option in question.get("options", [])],
+                ]
+            )
+            or "语言试题" in "\n".join(
+                [
+                    str(question.get("stem", "")),
+                    str(question.get("code", "")),
+                    *[str(option) for option in question.get("options", [])],
+                ]
+            )
+        ]
+        self.assertEqual(page_artifacts, [])
+
     def test_result_answer_font_is_larger(self) -> None:
         css = (app.ROOT / "static" / "style.css").read_text(encoding="utf-8")
 

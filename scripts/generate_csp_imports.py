@@ -302,12 +302,25 @@ def ocr_pdf(source: Path, psm: int) -> str:
     return text
 
 
+def remove_page_artifacts(value: str) -> str:
+    value = re.sub(
+        r"(?im)^\s*CCF\s+CSP[-－][JS].*$\n?",
+        "",
+        value,
+    )
+    value = re.sub(
+        r"(?m)^\s*第\s*\d+\s*页\s*[，,]?\s*(?:共\s*)?\d+\s*页\s*$\n?",
+        "",
+        value,
+    )
+    return value
+
+
 def compact_text(value: str) -> str:
     value = value.replace("\u3000", " ").replace("\uf06c", "")
     value = value.replace("（", "(").replace("）", ")")
     value = value.replace("．", ".").replace("：", ":")
-    value = re.sub(r"\n\s*CCF CSP-[JS].*?第\s*\d+\s*页.*", "\n", value)
-    value = re.sub(r"\n\s*第\s*\d+\s*页\s*共\s*\d+\s*页\s*", "\n", value)
+    value = remove_page_artifacts(value)
     value = re.sub(r"(?m)^\s*香\s*港\s*$", "", value)
     value = re.sub(r"[ \t]+\n", "\n", value)
     return value
@@ -400,6 +413,7 @@ def option_index(answer: str) -> int:
 
 def clean_block(value: str) -> str:
     value = re.sub(r"\n?\s*[\f]+", "\n", value)
+    value = remove_page_artifacts(value)
     value = re.sub(r"(?m)^\s*香\s*港\s*$", "", value)
     value = re.sub(r"^\s*\d{1,2}[.)]\s*", "", value.strip())
     value = re.sub(r"\n{3,}", "\n\n", value)
@@ -593,6 +607,7 @@ def filter_unreadable_round1_questions(questions: list[dict]) -> tuple[list[dict
 
 
 def clean_statement(value: str) -> str:
+    value = remove_page_artifacts(value)
     value = re.sub(r"^\s*\d+\s{2,}", "", value, flags=re.M)
     value = re.sub(r"\n{3,}", "\n\n", value)
     return value.strip()
