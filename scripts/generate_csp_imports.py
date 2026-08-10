@@ -8,21 +8,38 @@ module consumed by the exam app.
 from __future__ import annotations
 
 import ast
+import hashlib
 import pprint
 import re
+import shutil
 import subprocess
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "online_exam" / "imported_csp_questions.py"
-PDFTOTEXT = (
-    Path.home()
-    / ".cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/poppler/bin/pdftotext"
-)
-if not PDFTOTEXT.exists():
-    PDFTOTEXT = Path("pdftotext")
+
+
+def tool_path(name: str) -> Path:
+    candidates = [
+        Path.home() / f".cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/poppler/bin/{name}",
+        Path.home() / f".cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/bin/{name}",
+        Path.home() / f".cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/{name}",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    found = shutil.which(name)
+    return Path(found) if found else Path(name)
+
+
+PDFTOTEXT = tool_path("pdftotext")
+PDFTOPPM = tool_path("pdftoppm")
+PDFINFO = tool_path("pdfinfo")
+TESSERACT = tool_path("tesseract")
+OCR_CACHE_DIR = Path(tempfile.gettempdir()) / "cpp_exam_csp_ocr_cache"
 
 
 @dataclass(frozen=True)
@@ -79,7 +96,7 @@ ROUND2_SOURCES = [
 ]
 
 
-def read_source(path: str) -> str:
+def read_source(path: str, allow_ocr: bool = True) -> str:
     source = ROOT / path
     if not source.exists():
         return ""
@@ -92,7 +109,77 @@ def read_source(path: str) -> str:
         text=True,
         timeout=60,
     )
-    return result.stdout
+    text = result.stdout
+    if is_answer_source(path) and answer_text_is_useful(text):
+        return text
+    if pdf_text_is_useful(text) or not allow_ocr:
+        return text
+    return ocr_pdf(source, psm=11 if is_answer_source(path) else 6)
+
+
+def is_answer_source(path: str) -> bool:
+    return any(marker in path for marker in ("答案", "参考答案", "solution", "sol"))
+
+
+def pdf_text_is_useful(text: str) -> bool:
+    cleaned = compact_text(text).strip()
+    chinese_count = sum("\u4e00" <= ch <= "\u9fff" for ch in cleaned)
+    option_count = len(re.findall(r"(?m)^\s*[A-D]\s*[.、]", cleaned))
+    return chinese_count >= 80 or option_count >= 20
+
+
+def answer_text_is_useful(text: str) -> bool:
+    cleaned = compact_text(text)
+    numbered = re.findall(r"(?<!\d)(\d{1,2})\s*[.)]?\s*([A-D√×])(?=\s|$)", cleaned)
+    tokens = re.findall(r"[A-D√×]", cleaned)
+    return len(numbered) >= 15 or len(tokens) >= 30
+
+
+def pdf_page_count(source: Path) -> int:
+    result = subprocess.run(
+        [str(PDFINFO), str(source)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    match = re.search(r"^Pages:\s+(\d+)", result.stdout, flags=re.M)
+    return int(match.group(1)) if match else 0
+
+
+def ocr_pdf(source: Path, psm: int) -> str:
+    OCR_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    stat = source.stat()
+    cache_key = hashlib.sha1(f"{source}:{stat.st_mtime_ns}:{stat.st_size}:psm{psm}".encode()).hexdigest()
+    cache_path = OCR_CACHE_DIR / f"{cache_key}.txt"
+    if cache_path.exists():
+        return cache_path.read_text(encoding="utf-8", errors="ignore")
+
+    page_count = pdf_page_count(source)
+    timeout = max(120, page_count * 30)
+    with tempfile.TemporaryDirectory(prefix="csp-ocr-", dir=tempfile.gettempdir()) as tmp:
+        prefix = Path(tmp) / "page"
+        subprocess.run(
+            [str(PDFTOPPM), "-r", "220", "-png", str(source), str(prefix)],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+        )
+        pages = []
+        for image in sorted(Path(tmp).glob("page-*.png")):
+            result = subprocess.run(
+                [str(TESSERACT), str(image), "stdout", "-l", "chi_sim+eng", "--psm", str(psm)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                timeout=90,
+            )
+            pages.append(result.stdout)
+    text = "\n\f\n".join(pages)
+    cache_path.write_text(text, encoding="utf-8")
+    return text
 
 
 def compact_text(value: str) -> str:
@@ -124,6 +211,13 @@ def answer_tokens_from_line(line: str) -> list[str]:
 
 def parse_answer_sequence(text: str) -> dict[int, str]:
     text = compact_text(text)
+    answer_start = -1
+    for marker in ("参考答案", "认证答案"):
+        pos = text.find(marker)
+        if pos >= 0 and (answer_start < 0 or pos < answer_start):
+            answer_start = pos
+    if answer_start >= 0:
+        text = text[answer_start:]
     numbered = {
         int(num): ans
         for num, ans in re.findall(r"(?<!\d)(\d{1,2})\s*[.)]?\s*([A-D√×])(?=\s|$)", text)
@@ -197,6 +291,7 @@ OPTION_RE = re.compile(r"(?m)^\s*([A-D])\s*[.、]\s*")
 
 def parse_options(block: str) -> tuple[str, list[str]] | None:
     block = re.sub(r"(?<![A-Za-z0-9])([A-D])\s*[.、]\s*", r"\n\1. ", block)
+    block = re.sub(r"(?m)^\s*([A-D])\s+(?=\S)", r"\n\1. ", block)
     matches = list(OPTION_RE.finditer(block))
     if len(matches) < 2:
         return None
@@ -465,7 +560,7 @@ def parse_round2() -> tuple[list[dict], list[str]]:
     tasks: list[dict] = []
     report: list[str] = []
     for source in ROUND2_SOURCES:
-        text = read_source(source.question_path)
+        text = read_source(source.question_path, allow_ocr=False)
         items = parse_round2_source(source, text)
         tasks.extend(items)
         report.append(f"{source.level_label} {source.year} Round2 {source.question_path}: {len(items)}")

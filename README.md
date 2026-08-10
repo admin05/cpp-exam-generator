@@ -50,9 +50,10 @@ used by `online_exam/question_bank.py`. Set `competition` to a short key such as
 `"literacy"`, `"csp_j_round1"`, `"csp_j_round2"`, `"csp_s_round1"`, or
 `"csp_s_round2"` so the admin page can include the question in the matching
 profile. The CSP import module is generated with
-`python3 scripts/generate_csp_imports.py`; scanned PDFs that do not expose
-Chinese text are kept as source references until OCR or manual normalization is
-available.
+`python3 scripts/generate_csp_imports.py`; the generator falls back to local
+Tesseract OCR for first-round papers and answer sheets whose PDF text is not
+extractable. Large scanned second-round PDFs are kept as source references until
+they are OCR-normalized or manually split into full programming tasks.
 
 ## Project Structure
 
@@ -145,7 +146,8 @@ SQLite 数据库。
 结构，并设置 `competition` 字段，例如 `"literacy"`、`"csp_j_round1"`、
 `"csp_j_round2"`、`"csp_s_round1"`、`"csp_s_round2"`、`"gesp"`。
 `online_exam/imported_csp_questions.py` 由 `python3 scripts/generate_csp_imports.py`
-从 `CSP/题库` 生成；扫描 PDF 暂作为来源保留，待 OCR 或人工规范化后可重新生成。
+从 `CSP/题库` 生成；生成器会对第一轮题面和答案 PDF 自动尝试本机 Tesseract OCR。
+大型扫描版第二轮 PDF 暂作为来源保留，待 OCR 规范化或人工拆题后可重新生成。
 
 ## Docker Compose 部署
 

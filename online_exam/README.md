@@ -28,8 +28,9 @@
 可以使用 `competition: "general"`，它会进入素养大赛、CSP-J、GESP 等基础训练池。
 
 CSP-J/S 本地资料导入文件为 `imported_csp_questions.py`，由仓库根目录执行
-`python3 scripts/generate_csp_imports.py` 生成。扫描 PDF 如果不能抽出中文文本，会先
-保留为来源引用，待 OCR 或人工规范化后再导入为完整小题。
+`python3 scripts/generate_csp_imports.py` 生成。脚本会对第一轮题面和答案 PDF 自动
+尝试本机 Tesseract OCR；大型扫描版第二轮 PDF 暂保留为来源引用，待 OCR 规范化或
+人工拆题后再导入为完整编程题。
 
 原始 PDF、DOCX、PPT、压缩包等资料目录由仓库根目录 `.gitignore` 忽略，不要直接把
 大体积原始资料提交进 Git。先提取、校验、规范化为结构化题目，再提交应用数据。
