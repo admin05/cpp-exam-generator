@@ -112,6 +112,16 @@ class ResultPageTest(unittest.TestCase):
         self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_x_round1", "choice")), 40)
         self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_x_round2", "programming")), 15)
 
+    def test_imported_csp_choice_options_are_not_merged(self) -> None:
+        competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}
+        imported = [
+            question
+            for question in app.CHOICE_QUESTIONS
+            if question.get("competition") in competitions
+        ]
+        self.assertTrue(imported)
+        self.assertTrue(all(len(question.get("options", [])) <= 4 for question in imported))
+
     def test_result_answer_font_is_larger(self) -> None:
         css = (app.ROOT / "static" / "style.css").read_text(encoding="utf-8")
 

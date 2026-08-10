@@ -575,6 +575,23 @@ def parse_round1() -> tuple[list[dict], list[str]]:
     return questions, report
 
 
+def filter_unreadable_round1_questions(questions: list[dict]) -> tuple[list[dict], int]:
+    """Drop OCR records that merged the next subquestion into the options.
+
+    CSP first-round source questions are single-choice or true/false items, so
+    more than four parsed options is evidence that the PDF parser crossed a
+    question boundary. Keeping these records makes the exam page unreadable.
+    """
+    filtered = []
+    skipped = 0
+    for question in questions:
+        if len(question.get("options", [])) > 4:
+            skipped += 1
+            continue
+        filtered.append(question)
+    return filtered, skipped
+
+
 def clean_statement(value: str) -> str:
     value = re.sub(r"^\s*\d+\s{2,}", "", value, flags=re.M)
     value = re.sub(r"\n{3,}", "\n\n", value)
@@ -787,16 +804,19 @@ def write_module(questions: list[dict], tasks: list[dict], report: list[str]) ->
 def main() -> None:
     questions, round1_report = parse_round1()
     tasks, round2_report = parse_round2()
+    questions, unreadable_questions = filter_unreadable_round1_questions(questions)
     questions, skipped_questions, renamed_questions = dedupe_items(questions, "choice")
     tasks, skipped_tasks, renamed_tasks = dedupe_items(tasks, "programming")
     report = round1_report + round2_report + [
         f"dedupe round1 skipped duplicates: {skipped_questions}, renamed id collisions: {renamed_questions}",
+        f"filtered unreadable round1 OCR records: {unreadable_questions}",
         f"dedupe round2 skipped duplicates: {skipped_tasks}, renamed id collisions: {renamed_tasks}",
     ]
     write_module(questions, tasks, report)
     print(f"wrote {OUTPUT}")
     print(f"round1 questions: {len(questions)}")
     print(f"round2 tasks: {len(tasks)}")
+    print(f"filtered unreadable round1 OCR records: {unreadable_questions}")
     print(f"round1 duplicates skipped: {skipped_questions}; id collisions renamed: {renamed_questions}")
     print(f"round2 duplicates skipped: {skipped_tasks}; id collisions renamed: {renamed_tasks}")
     for line in report:
