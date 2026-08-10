@@ -1,4 +1,4 @@
-"""Auto-generated CSP-J/S questions from local CSP/题库 source papers."""
+"""Auto-generated CSP-J/S/CSP-X questions from local CSP/题库 source papers."""
 
 # Regenerate with: python3 scripts/generate_csp_imports.py
 
@@ -323,60 +323,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               'n+1                     B 1 <<on',
               '1 << (n - 1)              D 12 << (n + 1)'],
   'answer': 0},
- {'id': 'csp_j_round1-2019-q12',
-  'competition': 'csp_j_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 4,
-  'source': 'CSP/题库/CSP-J/2019/Round1/cspjs2019hj_cpp.pdf',
-  'stem': 'scanf("%d", &n);\n'
-          '13 for (int i = 0; i < n; ++i)\n'
-          '14     scanf("%d%d", &ali], &b[i]);\n'
-          '15  memset(cnt, @, sizeof(cnt));\n'
-          '16 for (int i = 0; i < n; ++i)\n'
-          '17    ®; // 利用cnt 数组统计数量\n'
-          '18 for (int i = 6j i < maxs; ++i)\n'
-          '19     cnt[i + 1] += cnt[i];\n'
-          '2@ for (int i = 0; i < n; ++i)\n'
-          '21    @;  // 记录初步排序结果\n'
-          'CCF CSP-J 2019 第一轮 C++语言试题 B 卷\n'
-          '第8页，共9页\n'
-          '\n'
-          '22 memset(cnt, @, sizeof(cnt));\n'
-          '23 for (int i = 0; i < n; ++i)\n'
-          '24    @; // 利用cnt 数组统计数量\n'
-          '25 for (int i = 6j i < maxs; ++i)\n'
-          '26    cnt[i + 1] += cnt[i];\n'
-          '27 for (int i =n - 1; i >= @; --i)\n'
-          '28    OD;  // 记录最终排序结果\n'
-          '29 for (int i = @; i < n; ++i)\n'
-          '30    printf("%d %d\\n", ©);\n'
-          '31 return @;\n'
-          '32 }\n'
-          '1) DAAC)',
-  'code': '',
-  'options': ['++cnt[a[i]]',
-              '++cnt[i]',
-              '4++cnt[a[i] * maxs + b[i]]',
-              '++cnt[b[i]]\n2) QAI C )',
-              'ord[--cnt[b[i]]] = a[i]',
-              'ord[--cnt[a[i]]] = b[i]',
-              'ord[--cnt[b[i]]] =i',
-              'ord[--cnt[a[i]]] =i\n3) QAR CD',
-              '++cnt[a[i] * maxs + b[i]]',
-              '++cnt[a[i]]',
-              '4++cnt[b[i]]',
-              '++cnt[i]\n4) 由处应填( )',
-              'res[--cnt[a[ord[i]]]] = ord[i]',
-              'res[--cnt[b[ord[i]]]] = ord[i]',
-              'res[--cnt[a[i]]] = ord[i]',
-              'res[--cnt[b[i]]] = ord[i]\n5) @@处应填( )',
-              'afres[ord[i]]], b[res[ord[i]]]',
-              'afres[i]], b[res[i]]',
-              'aford[res[i]]], bf[ord[res[i]]]',
-              'afi], b[i]\nCCF CSP-J 2019 第一轮 C++语言试题 B 卷\n第9页，共9页'],
-  'answer': 0},
  {'id': 'csp_j_round1-2020-q01',
   'competition': 'csp_j_round1',
   'category': '单项选择题',
@@ -658,98 +604,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '2246',
               '2426\n三、完善程序 〈单选题，每小题 3 分，共计 36 分)'],
   'answer': 3},
- {'id': 'csp_j_round1-2020-q01',
-  'competition': 'csp_j_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 4,
-  'source': 'CSP/题库/CSP-J/2020/Round1/cspjs2020hj_cpp.pdf',
-  'stem': '〈(质因数分解) 给出正整数 n，请输出将 n 质因数分解的结果，结果从小\n'
-          '到大输出。\n'
-          'BU: AA n=126，程序应该输出2 2 2 3 5，表示 126=2X2X2X3X\n'
-          '5。和输入保证 2<n<10°. Has: 先从小到大枚举变量 1，然后用 a Bh\n'
-          '除 n 来寻找所有的质因子。\n'
-          '试补全程序。\n'
-          'Q@1 #include <cstdio>\n'
-          'Q@2 using namespace std;\n'
-          'CCF CSP-J 2020 第一轮 C++语言试题\n'
-          '第7页，共10页\n'
-          '\n'
-          'SS\n'
-          '<< >\n'
-          've I iA\n'
-          'CCE\n'
-          '03\n'
-          '04 int n, i;\n'
-          '65\n'
-          '@6 int main() {\n'
-          '@7 ~=scanf("%d", &n);\n'
-          'e8 «for(i = @; @ <= n; i ++) {\n'
-          '@9  @ {\n'
-          '10      printf("%d ", i);\n'
-          '11      n=n/ i;\n'
-          '12  }\n'
-          '13 }\n'
-          '14 if(@)\n'
-          '15     printf("%d ", ®);\n'
-          '16 =return @;\n'
-          '17 }\n'
-          '1) 外处应填 CD',
-  'code': '',
-  'options': ['1          Bon-41       C 2          dD 6\n2) 名处应填( )',
-              'on fi',
-              'n/ (i * i) Cc iti',
-              'i*irti\n3) QA CD',
-              'if (n% i == @)',
-              'if (i * i <= n)',
-              'while (n % i == @)',
-              'while (i * i <= n)\n4) 由处应填( )',
-              'not   Bon <= 1   QC i<n/i  D it+i<=n\n5) 名处应填( )',
-              '2          Bon/i       Coon          D i\n'
-              '2，《〈最小区间覆盖)给出n SX Tal, SS a STA AC A Lai, bi]. HLTE\n'
-              '要在这些区间中选出若干个，使得区闻 [8，m]被所选区间的并履盖《〈“即每\n'
-              '—F Oi <m 都在某个所选的区间中) 。保证答案存在，求所选区间个数\n'
-              '的最小值。\n'
-              '输入第一行包含两个整数n 和m (1<n<5000,1<m<10°).\n'
-              '接下来n 行，每行两个整数 ai，bi (8入ai，bi<m) 。\n'
-              '提示: 使用贪心法解决这个问题。先用 O(n?) 的时间复杂度排序，然后贪心\n'
-              '选择这些区间。\n'
-              '试补全程序。\n'
-              'CCF CSP-J2020 第一轮 C++语言试题\n'
-              '第8页，共10页\n'
-              '\n'
-              '5)\n'
-              '<< >\n'
-              'SS. 87\n'
-              'CCE\n'
-              '@1 #include <iostream>\n'
-              '02\n'
-              '@3 using namespace std;\n'
-              '84\n'
-              '@5 const int MAXN = 5000;\n'
-              '06 int n, m;\n'
-              '@7 struct segment { int a, b; } A[MAXN];\n'
-              '08\n'
-              '@9 void sort() // 排序\n'
-              '16 {\n'
-              '11 for (int i = @3; i <n; i++)\n'
-              '12     for (int j = 1; j < nj j++)\n'
-              '13         if (@)\n'
-              '14         {\n'
-              '15        segment t = A[j];\n'
-              '16           四\n'
-              '17         }\n'
-              '18 }\n'
-              '19\n'
-              '26 int main()\n'
-              '21 {\n'
-              '22 cin >> n >> m;\n'
-              '23 for (int i = @; i < ni i++)\n'
-              '24     cin >> A[i].a >> A[i].b;\n'
-              '25 =sort();\n'
-              '26 int p = 1;'],
-  'answer': 0},
  {'id': 'csp_j_round1-2020-q27',
   'competition': 'csp_j_round1',
   'category': '程序阅读单选题',
@@ -7538,123 +7392,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'code': '',
   'options': ['1250', '1276', '1225', '1176\n6) 此程序的时间复杂度是 ) 。', 'O(n?)', 'Odogn)', 'O(n)', 'O(nlogn)'],
   'answer': 3},
- {'id': 'csp_s_round1-2019-q03',
-  'competition': 'csp_s_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 5,
-  'source': 'CSP/题库/CSP-S/2019/Round1/cspjs2019hs_cpp.pdf',
-  'stem': 'RACE s 的子序列的意思是: Ms 中删去若干个字符，可以得到t; 特\n'
-          'HIN, WAR st, MAt the s 的子序列， 空串是任何串的子序列。例如\n'
-          '“acd”是“abcde”的子序列,“acd”是“acd”的子序列”但“adc”\n'
-          '不是“abcde”的子序列。\n'
-          's[x..y]表示 s[x] ...s[y]共y-x+1个字符构成的字符串，若xy>y Ill\n'
-          's[x..y]是空串。t[x..y]同理。\n'
-          '1 #include <iostream>\n'
-          '2 #include <string>\n'
-          '3 using namespace std;\n'
-          '4 const int maxl = 202;\n'
-          '5 string s, t;\n'
-          '6 int pre[maxl], suf[max1];\n'
-          '7\n'
-          '8 int main() {\n'
-          '9   cin >> s >> 七;\n'
-          '16 int slen = s.length(), tlen = t.length();\n'
-          '11 for (int i = 0, j = 0; i < slen; ++i) {\n'
-          '12    if (j < tlen && s[i] == t[j]) ++);\n'
-          '13   pre[i] = j; // t[e..j-1]是s[8..i]的子序列\n'
-          '14 }\n'
-          '15 for (int i = slen - 1, j = tlen - 1; i >= @; --i) {\n'
-          '16    if (j >= 6 & s[i] == t[j]) --33\n'
-          '17   suf[i] = j; // t[j+1..tlen-1] s[i..slen-1] {3 fF)\n'
-          '18 =}\n'
-          '19 suf[slen] = tlen - 1;\n'
-          '20 int ans = @;\n'
-          'CCF CSP-S 2019 第一轮 C++语言试题 B 卷\n'
-          'BSH, JOG\n'
-          '\n'
-          '21 for (int i = 0, j = 0, tmp = @; i <= slen; ++i) {\n'
-          '\n'
-          '22    while (j <= slen && tmp >= suf[j] + 1) ++j;\n'
-          '\n'
-          '23   ans = max(ans, j - i - 1);\n'
-          '\n'
-          '24    tmp = pre[i];\n'
-          '\n'
-          '25 }\n'
-          '\n'
-          '26 cout << ans << endl;\n'
-          '\n'
-          '27 ~return @;\n'
-          '\n'
-          '28 }\n'
-          '\n'
-          '提示:\n'
-          't[6..pre[i]-1]是s[8..i]的子序列;\n'
-          't[suf[i]+1. .tlen-1]是s[i..slen-1]的子序列。\n'
-          '\n'
-          '1) 《1分) 程序输出时，suf 数组满足: 对任意0 <i<slen, suf[i]<\n'
-          'suf[it1]. © )\n'
-          '\n'
-          '2) (24) 4tee s 的子序列时，输出一定不为8。\n'
-          '\n'
-          '3) (24>) 程序运行到第 23 行时，“j -i - 1”一定不小于86。 ( )\n'
-          '\n'
-          '4) (2分) 4ts 的子序列时，pre 数组和 suf 数组满足 对任意0 <\n'
-          'i<slen, preli]>suf[it+1]+1. ¢ )\n'
-          '\n'
-          '@ 选择题\n'
-          '5) 和若tlen=16，输出为6，则 slen 最小为( ) 。',
-  'code': '',
-  'options': ['12',
-              '0         Cc. ot',
-              '10\n6) 若tlen=16，输出为2，则 slen 最小为( ).',
-              '1',
-              '10        Cc. 0',
-              '12\n'
-              '\n'
-              '三、完善程序〈单选题，每小题 3 分，共计 30 分)\n'
-              '\n'
-              '1 《匠人的自我修养) 一个匠人诀定要学习m 个新技术。要想成功学习一个\n'
-              '新技术，他不仅要拥有一定的经验值，而且还必须要先学会若干个相关的\n'
-              '技术。学会一个新技术之后，他的经验值会增加一个对应的值。给定每个\n'
-              '技术的学习条件和习得后获得的经验值，给定他已有的经验值，请问他最\n'
-              '多能学会多少个新技术。\n'
-              '输入第一行有两个数，分别为新技术个数n (1和?< 103) ，以及已有经\n'
-              'WHE (< 107) 。\n'
-              '\n'
-              '接下来nan行。第i行的两个正整数，分别表示学习第ii个技术所需的最低经\n'
-              '验值 (< 107) ，以及学会第i个技术后可获得的经验值 C< 104) 。\n'
-              'CCF CSP-S 2019 第一轮 C++语言试题 B 卷\n'
-              '第6页，共10页\n'
-              '\n'
-              '接下来a行。第i行的第一个数mi 〈0 < mi <n), RABBI MRK\n'
-              '技术数量。紧跟着 m 个两两不同的数，表示第i个技术的相关技术编号。\n'
-              '输出最多能学会的新技术个数。\n'
-              '下面的程序以0(@2)的时间复杂度完成这个问题，试补全程序。\n'
-              '1 #include <cstdio>\n'
-              '2 using namespace std;\n'
-              '3 const int maxn = 1001;\n'
-              '4\n'
-              '5 int n;\n'
-              '6 int cnt[maxn];\n'
-              '7 int child[maxn][maxn];\n'
-              '8 int unlock[maxn];\n'
-              '9 int points;\n'
-              '16 int threshold[maxn], bonus[maxn];\n'
-              '11\n'
-              '12 bool find() {\n'
-              '13 int target = -1;\n'
-              '14 for (int i = 1; i <= n; ++i)\n'
-              '15    if (MD && @) {\n'
-              '16      target = i;\n'
-              '17      break;\n'
-              '18    }\n'
-              '19 if (target == -1)\n'
-              '20     return false;\n'
-              '21 unlock[target] = -1;'],
-  'answer': 2},
  {'id': 'csp_s_round1-2019-q22',
   'competition': 'csp_s_round1',
   'category': '程序阅读判断题',
@@ -7810,59 +7547,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               'unlock[i] = m',
               'unlock[i] = cnt[i]\nCCF CSP-S 2019 第一轮 C++语言试题 B 卷\n第8页，共10页'],
   'answer': 1},
- {'id': 'csp_s_round1-2019-q13',
-  'competition': 'csp_s_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 5,
-  'source': 'CSP/题库/CSP-S/2019/Round1/cspjs2019hs_cpp.pdf',
-  'stem': 'scanf("%d%d", &n, &m);\n'
-          '14 for (int i = 0; i < n; ++i)\n'
-          '15     scanf("%d%d", &a[i], &b[i]);\n'
-          '\n'
-          'CCF CSP-S 2019 第一轮 C++语言试题 B 卷\n'
-          '第9页，共10页\n'
-          '\n'
-          '16 for (int i = 0; i < n; ++i)\n'
-          '17   for (int j = i+1; j <n; +45)\n'
-          '18    if (a[i] > alj]) {\n'
-          '19        swap(a[i], a[j]);\n'
-          '20        swap(b[i], b[j]);\n'
-          '21   }\n'
-          '22 ~=status = 人GD;\n'
-          '23 trans = Q;\n'
-          '24 for (int 1= 1，j=6jix<= mi ++i) {\n'
-          '25   while (j <n 8&& @) {\n'
-          '26    @;\n'
-          '27     +455\n'
-          '28  }\n'
-          '29    win = @;\n'
-          '30   ®;\n'
-          '31 +}\n'
-          '32  puts(win ? "Win" : "Loss");\n'
-          '33 ~=return @;\n'
-          '34 }\n'
-          '1) OAR CD\n'
-          'A, ~@ull       B， 1',
-  'code': '',
-  'options': ['@       D = ~@ull * 1\n2) 名处应填( )\nA，a[rJj] >i',
-              'a{j] !=',
-              'afj] ==-i',
-              'afj] <i\n3) QAM CD',
-              'trans += 1ull << (b[j] - 1)',
-              'trans |= 1ull << (b[j] - 1)',
-              'status |= 1ull << (b[j] - 1)',
-              'status += lull << (b[j] - 1)\n4) 四处应填( )',
-              'wstatus & trans',
-              '«status | trans',
-              'status | trans',
-              'status & trans\n5) @@处应填( )',
-              'status = trans >> 1 ^ win',
-              'trans = status * trans | win',
-              'trans = status | trans * win',
-              'status = status << 1 ^ win\nCCF CSP-S 2019 第一轮 C++语言试题 B 卷\n第10页，共10页'],
-  'answer': 3},
  {'id': 'csp_s_round1-2020-q01',
   'competition': 'csp_s_round1',
   'category': '单项选择题',
@@ -8021,55 +7705,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               '\n'
               '错误填x，除特殊说明外，判断题 1.5 分，选择题 3 分，共计 405)'],
   'answer': 2},
- {'id': 'csp_s_round1-2020-q01',
-  'competition': 'csp_s_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 5,
-  'source': 'CSP/题库/CSP-S/2020/Round1/cspjs2020hs_cpp.pdf',
-  'stem': '61 #include <iostream>\n'
-          '@2 using namespace std;\n'
-          '03\n'
-          '04 int n;\n'
-          '@5 int d[1666];\n'
-          '06\n'
-          '@7 int main() {\n'
-          'Q@8 cin >> n;\n'
-          '69 for (int i = @; i < n; ++i)\n'
-          '18     cin >> d[i];\n'
-          '11 int ans = -1;\n'
-          '12 for (int i = 0; i < ni ++i)\n'
-          '13     for (int j = 6j j <n; ++35)\n'
-          '14      if (d[i] < d[j])\n'
-          '15        ans = max(ans, d[i] + d[j] - (d[i] & d[j]));\n'
-          '16 cout << ans;\n'
-          '17 —sreturn Q;\n'
-          '18 }\n'
-          '假设输入的n和 d[i]都是不超过 10000 的正整数，完成下面的判断题和单\n'
-          '\n'
-          'Brit\n'
-          '1) n 必须小于16888，和否则程序可能会发生运行错误。 ( )\n'
-          '2) 输出一定大于等于6。 )\n'
-          '3) 若将第 13 行的*j = OPN = i + 12”，程序输出可能会改变。\n'
-          '\n'
-          '( )\n'
-          '4) 将第 14 行的<“d[i] < d[Jj]?改为“d[i] != d[j]”，程序输出不会改\n'
-          '变。( )\n'
-          '\n'
-          '@ Hite\n'
-          '\n'
-          '5) 者输入n 为106，且输出为127，则输入的 d[i]中不可能有 C ) 。',
-  'code': '',
-  'options': ['127',
-              '126',
-              '128',
-              '125\n6) 若输出的数大于8，则下面说法正确的是( ) 。',
-              '者输出为偶数，则输入的 d[i]中最多有两个偶数\nCCF CSP-S 2020 第一轮 C++语言试题\n第3页，共13页\n\n5)\n<< >\nSS. 87\nC$c¥E',
-              '-A AAP, BAY d[i]中至少有两个奇数',
-              '若输出为偶数，则输入的 d[i]中至少有两个偶数',
-              '者输出为奇数，则输入的 d[i]中最多有两个奇数'],
-  'answer': 2},
  {'id': 'csp_s_round1-2020-q23',
   'competition': 'csp_s_round1',
   'category': '程序阅读单选题',
@@ -8122,276 +7757,6 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               'O(log n)',
               'O(n log n)',
               '@(n*2)'],
-  'answer': 1},
- {'id': 'csp_s_round1-2020-q03',
-  'competition': 'csp_s_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 5,
-  'source': 'CSP/题库/CSP-S/2020/Round1/cspjs2020hs_cpp.pdf',
-  'stem': '@1 #include <iostream>\n'
-          '@2 #include <queue>\n'
-          '063 using namespace std;\n'
-          '04\n'
-          '@5 const int maxl = 209Q@0e0000;\n'
-          '06\n'
-          '@7 class Map {\n'
-          '@8 struct item {\n'
-          '09     string key; int value;\n'
-          '16 } d[max1];\n'
-          '11 int cnt;\n'
-          '12 public:\n'
-          '13 int find(string x) {\n'
-          '14     for (int i = @; i < cnt; ++i)\n'
-          '15      if (d[i].key == x)\n'
-          '16        return d[i].value;\n'
-          '17     return -1;\n'
-          'CCF CSP-S 2020 第一轮 C++语言试题\n'
-          '第5页，共13页\n'
-          '\n'
-          '5)\n'
-          '<< >\n'
-          'SS. 87\n'
-          'CCE\n'
-          '18 }\n'
-          '19 static int end() { return -1; }\n'
-          '26 void insert(string k, int v) {\n'
-          '21     d[cnt].key = k; d[cnt++].value = v;\n'
-          '22 +}\n'
-          '23 } s[2];\n'
-          '24\n'
-          '25 class Queue {\n'
-          '26 string g[maxl];\n'
-          '27 ~int head, tail;\n'
-          '28 public:\n'
-          '29 void pop() { ++thead; }\n'
-          '36 string front() { return g[head + 1]; }\n'
-          '31 bool empty() { return head == tail; }\n'
-          '32 void push(string x) { q[++tail] = x; }\n'
-          '33 } q[2];\n'
-          '34\n'
-          '35 string st@, sti;\n'
-          '36 int m;\n'
-          '37\n'
-          '38 string LtoR(string s, int L, int R) {\n'
-          '39 string t = s;\n'
-          '4@ char tmp = t[L];\n'
-          '41 for (int i = L; i < Ri ++i)\n'
-          '42    t[i] = tli +1];\n'
-          '43 t[R] = tmp;\n'
-          '44 return t;\n'
-          '45 }\n'
-          '46\n'
-          '47 string RtoL(string s, int L, int R) {\n'
-          '48 string t = s;\n'
-          '49 char tmp = t[R];\n'
-          '5@ for (int i = R; i > L; --i)\n'
-          '51     t[i] = t[i - 1];\n'
-          '52 t[L] = tmp;\n'
-          '53 return t;\n'
-          '54 }\n'
-          '55\n'
-          '56 bool check(string st, int p, int step) {\n'
-          '57 if (s[p].find(st) != s[p].end())\n'
-          '58     return false;\n'
-          '59 +4+step;\n'
-          '66 if (s[p * 1].find(st) == s[p].end()) {\n'
-          'CCF CSP-S 2020 第一轮 C++语言试题\n'
-          '第6页，共13页\n'
-          '\n'
-          '5)\n'
-          '<< >\n'
-          'SS. 87\n'
-          'CCE\n'
-          '61     s[p].insert(st, step);\n'
-          '62    q[p].push(st) ;\n'
-          '63     return false;\n'
-          '64}\n'
-          '65 cout << s[p * 1].find(st) + step << endl;\n'
-          '66   return true;\n'
-          '67 }\n'
-          '68\n'
-          '69 int main() {\n'
-          '76 cin >> st® >> st1;\n'
-          '71 ~=int len = st@.length();\n'
-          '72 if (len != st1.length()) {\n'
-          '73     cout << -1 << endl;\n'
-          '74     return @;\n'
-          '75}\n'
-          '76 if (ste == sti) {\n'
-          '77     cout << @ << endl;\n'
-          '78     return @;\n'
-          '79 «}\n'
-          '8@ cin >> m;\n'
-          '81 s[@].insert(st®, 0); s[1].insert(st1, 0);\n'
-          '82 q[@].push(st®); q[1].push(st1);\n'
-          '83 for (int p = Q;\n'
-          '84      !(q[@].empty() && q[1].empty());\n'
-          '85      p “= 1) {\n'
-          '86    string st = q[p].front(); q[p]-pop();\n'
-          '87     int step = s[p].find(st);\n'
-          '88    if ((p == 6 &&\n'
-          '89           (check(LtoR(st, m, len - 1), p, step) ||\n'
-          '98           check(RtoL(st, @, m), p, step)))\n'
-          '91           I |\n'
-          '92       (p == 1 &&\n'
-          '93           (check(LtoR(st, @, m), p, step) ||\n'
-          '94           check(RtoL(st, m, len - 1), p, step))))\n'
-          '95        return 0;\n'
-          '96 =}\n'
-          '97 cout << -1 << endl;\n'
-          '98 return @;\n'
-          '99 }\n'
-          '1) 输出可能为96。 ( )\n'
-          'CCF CSP-S 2020 第一轮 C++语言试题\n'
-          '第7页，共13页\n'
-          '\n'
-          'WARS\n'
-          'Sey xz\n'
-          'CcE\n'
-          '2) 若输入的两个字符学长度均为 191时，则 m=0 时的输出与 m=166 时的\n'
-          '输出是一样的。 (5  )\n'
-          '3) 若两个字符冲的长度均为n，则最坏情况下，此程序的时间复度为\n'
-          '@(n!). € )\n'
-          '@ 单选题\n'
-          '4) (2.54) 知输入的第一个字符串长度由 166 个不同的字符构成，第二\n'
-          '个字符串是第一个字符串的倒序，输入的m为6，则输出为( ) 。',
-  'code': '',
-  'options': ['49',
-              '50',
-              '100        D = -1\n'
-              '5) (44¢) 已知当输入为“6123N\\n3216\\n1”时输出为 4，当输入为\n'
-              '“812345N\\n543216N\\n1”时输出为 14，当输入为\n'
-              '“81234567N\\n76543216NXn1”时输出为 283，则当输入为\n'
-              '“868123456789abNnba9876543216NXn1”输出为( ) 。其中“N\\n”为\n'
-              '换行符。',
-              '56',
-              '84',
-              '102',
-              '68\n'
-              '6) (44>) 若两个字符串的长度均为n，且 edmcn-1，且两个字符串的构\n'
-              '成相同〈即任何一个字符在两个字符串中出现的次数均相同) ，则下列\n'
-              '说法正确的是( )， 。提示: 考虑输入与输出有多少对字符前后顺序不\n'
-              '一样。\n'
-              'AL 若必mm均为奇数，则输出可能小于 8。',
-              '若 n、m 均为个数，则输出可能小于 8。',
-              'in 为奇数、m为偶数，则输出可能小于 8。',
-              'Fin 为偶数、m 为奇数，则输出可能小于 6。\n'
-              '\n'
-              '三、完善程序 〈单选题，每小题 3分，共计 30 分)\n'
-              '\n'
-              '1， 《分数背包) DS 有mn 块蛋糕，编号从1到nm。第工块蛋糕的价值是wi，\n'
-              'TEAR RED, © 他有一个大小为B 的盒子来装这些蛋糕，也就是说装入盒子的\n'
-              '蛋糕的体积总和不能超过 B。\n'
-              '\n'
-              '他打算选择一些蛋糕装入盒子，他希望盒子里装的蛋糕的价值之和尽量\n'
-              '大。\n'
-              '为了使盒子里的蛋糕价值之和更大，他可以任意切割蛋糕。有具体来说，他\n'
-              '可以选择一个qQ (O<a<l) ，并将一块价值是 w，体积为 v 的蛋糕切制成两\n'
-              '块，其中一块的价值是ck, w，体积是x. v，另一块的价值是(1 —a@)-w, PE\n'
-              '积是(1L- o:v。他可以重复无限次切割操作。\n'
-              '现要求编程输出最大可能的价值，以分数的形式输出。\n'
-              '比如 n=3，B=8，三块和蛋糕的价值分别是4、4、2，体积分别是5、3、2。\n'
-              '那么最优的方案就是将体积为 5 的蛋糕切成两份，一份体积是3，价值是'],
-  'answer': 1},
- {'id': 'csp_s_round1-2020-q02',
-  'competition': 'csp_s_round1',
-  'category': '单项选择题',
-  'source_question_type': '单项选择题',
-  'display_type': '单项选择题',
-  'difficulty': 5,
-  'source': 'CSP/题库/CSP-S/2020/Round1/cspjs2020hs_cpp.pdf',
-  'stem': '(BRFRAD I m= 16，给出长度为n的整数序列ai az … an(0 < aj <\n'
-          '2m)。对于一个二进制数x，定义其分值w(Cg为x十popcnt(CO，其中\n'
-          'popcnt(x表示Xx二进制表示中 1 的个数。对于一个子序列bbz…bk，定\n'
-          '义其子序列分值%为w(bl @ bz) + w(b @ b3) + w(ps B by) 十…十\n'
-          'W(de-1 四有大)。其中国表示按位异或。对于空子序列，规定其子序列分值为\n'
-          '868。求一个子序列使得其子序列分值最大，输出这个最大值。\n'
-          '输入第一行包含一个整数 n(1 <n 和40000)。接下来一行包含n个整数\n'
-          '0Q1 02 Ano\n'
-          '提示: 考虑优化朴素的动态规划算法， 将前=位和后位分开计算。\n'
-          'Max[x][y] 表示当前的子序列下一个位置的高 8 位是 x、最后一个位置的\n'
-          '低 8 位是y 时的最大价值。\n'
-          '试补全程序。\n'
-          '861 #include <iostream>\n'
-          '02\n'
-          '@3 using namespace std;\n'
-          '04\n'
-          '@5 typedef long long LL;\n'
-          '06\n'
-          '@7 const int MAXN = 40000, M = 16, B = M >> 1, MS = (1 <<\n'
-          'B) - 1;\n'
-          '08 const LL INF = 10000000000000@@LL ;\n'
-          '@9 LL Max[MS + 4][MS + 4];\n'
-          '10\n'
-          '11 int w(int x)\n'
-          '12 {\n'
-          '13 int s = x;\n'
-          '14 while (x)\n'
-          '15 {\n'
-          '16     Q;\n'
-          '17     St++3\n'
-          '18 =}\n'
-          '19 return s;\n'
-          '26 }\n'
-          '21\n'
-          '22 void to_max(LL &x, LL y)\n'
-          '23 {\n'
-          'CCF CSP-S 2020 第一轮 C++语言试题\n'
-          '第11页，共13页\n'
-          '\n'
-          '人\n'
-          '<<\n'
-          'SS Me\n'
-          'C$c¥E\n'
-          '24 if (x < y)\n'
-          '25    xX=Y3\n'
-          '26 }\n'
-          '27\n'
-          '28 int main()\n'
-          '29 {\n'
-          '36 int n;\n'
-          '31 LL ans = 6;\n'
-          '32 cin >> n;\n'
-          '33 for (int x = @; x <= MS; x++)\n'
-          '34     for (int y = @; y <= MS; y++)\n'
-          '35      Max[x][y] = -INF;\n'
-          '36 for (int i = 1; i <= nj i++)\n'
-          '37 {\n'
-          '38     LL a3\n'
-          '39     cin >> a;\n'
-          '40     int x = @, y = a & MS;\n'
-          '41     LL v = 8;\n'
-          '42     for (int z = @; z <= MS; z++)\n'
-          '43       to_max(v, @);\n'
-          '44     for (int z = @; z <= MS; z++)\n'
-          '45      @;\n'
-          '46     to_max(ans, v);\n'
-          '47}\n'
-          '48 cout << ans << endl;\n'
-          '49 return 6\n'
-          '50 }\n'
-          '1) 中处应填( )\n'
-          'AL xX >>= 1',
-  'code': '',
-  'options': ['x “= x & (x * (x + 1))',
-              'x -=x | -x',
-              'x 4= x & (x * (* - 1))\n2) 外处应填( )',
-              '(a & MS) << B',
-              'a>>B',
-              'a & (1 << B)           D =a & (MS << B)\n3) OANA CD',
-              '-INF',
-              'Max[y][x]',
-              '6',
-              'Max[x][y]\n4) 四处应填( )\nCCF CSP-S 2020 第一轮 C++语言试题\n第12页，共13页\n\nWS\nio SS\n1 | >=\nSey EF\nCc¥E',
-              'Max[x][z] + wily * z)',
-              'Max[x][z] + w(a * z)',
-              'Max[x][z] + w(x * (z << B))',
-              '， Max[x][z] + w(x * z)\n5) 名处应填( )\nA, to_max(Max[y][z], v + w(a * (z << B)))',
-              'to_max(Max[z][y], v + w((x * z) << B))',
-              'to_max(Max[z][y], v + w(a * (z << B)))',
-              'to_max(Max[x][z], v + wly * z))\nCCF CSP-S 2020 第一轮 C++语言试题\n第13页，共13页'],
   'answer': 1},
  {'id': 'csp_s_round1-2021-q01',
   'competition': 'csp_s_round1',
@@ -17142,6 +16507,4823 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
               'code[j] == sig_bits',
               'plan[j] == sig_bits',
               'code[j][i] == sig_bits[i]  \n\n---'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2021-q16',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '将第 21 行中 t 的类型声明从 int 改为 double，不会影响程序运行的结果。(                       )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2021-q17',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '将第 26、27 行中的“/ sqrt(t) / 2”替换为“/ 2 / sqrt(t)”，不会影响程\n     序运行的结果。( )\n\n                港',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <cmath>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const double r = acos(0.5);\n'
+          '      06\n'
+          '      07 int a1, b1, c1, d1;\n'
+          '      08 int a2, b2, c2, d2;\n'
+          '      09\n'
+          '      10 inline int sq(const int x) { return x * x; }\n'
+          '      11 inline int cu(const int x) { return x * x * x; }\n'
+          '      12\n'
+          '      13 int main()\n'
+          '      14 {\n'
+          '      15     cout.flags(ios::fixed);\n'
+          '      16     cout.precision(4);\n'
+          '\n'
+          '                                             港\n'
+          '      17\n'
+          '      18     cin >> a1 >> b1 >> c1 >> d1;\n'
+          '      19     cin >> a2 >> b2 >> c2 >> d2;\n'
+          '\n'
+          '                                            香\n'
+          '      20\n'
+          '      21     int t = sq(a1 - a2) + sq(b1 - b2) + sq(c1 - c2);\n'
+          '      22\n'
+          '      23     if (t <= sq(d2 - d1)) cout << cu(min(d1, d2)) * r * 4;\n'
+          '      24     else if (t >= sq(d2 + d1)) cout << 0;\n'
+          '      25     else {\n'
+          '      26         double x = d1 - (sq(d1) - sq(d2) + t) / sqrt(t) / 2;\n'
+          '      27         double y = d2 - (sq(d2) - sq(d1) + t) / sqrt(t) / 2;\n'
+          '      28         cout << (x * x * (3 * d1 - x) + y * y * (3 * d2 - y)) * r;\n'
+          '      29     }\n'
+          '      30     cout << endl;\n'
+          '      31     return 0;\n'
+          '      32 }\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第5页，共16页\n'
+          '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
+          'l 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2021-q18',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '将第 28 行中的“x * x”改成“sq(x)”、“y * y”改成“sq(y)” ，不会影响程\n     序运行的结果。( )\n\n              香',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <cmath>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const double r = acos(0.5);\n'
+          '      06\n'
+          '      07 int a1, b1, c1, d1;\n'
+          '      08 int a2, b2, c2, d2;\n'
+          '      09\n'
+          '      10 inline int sq(const int x) { return x * x; }\n'
+          '      11 inline int cu(const int x) { return x * x * x; }\n'
+          '      12\n'
+          '      13 int main()\n'
+          '      14 {\n'
+          '      15     cout.flags(ios::fixed);\n'
+          '      16     cout.precision(4);\n'
+          '\n'
+          '                                             港\n'
+          '      17\n'
+          '      18     cin >> a1 >> b1 >> c1 >> d1;\n'
+          '      19     cin >> a2 >> b2 >> c2 >> d2;\n'
+          '\n'
+          '                                            香\n'
+          '      20\n'
+          '      21     int t = sq(a1 - a2) + sq(b1 - b2) + sq(c1 - c2);\n'
+          '      22\n'
+          '      23     if (t <= sq(d2 - d1)) cout << cu(min(d1, d2)) * r * 4;\n'
+          '      24     else if (t >= sq(d2 + d1)) cout << 0;\n'
+          '      25     else {\n'
+          '      26         double x = d1 - (sq(d1) - sq(d2) + t) / sqrt(t) / 2;\n'
+          '      27         double y = d2 - (sq(d2) - sq(d1) + t) / sqrt(t) / 2;\n'
+          '      28         cout << (x * x * (3 * d1 - x) + y * y * (3 * d2 - y)) * r;\n'
+          '      29     }\n'
+          '      30     cout << endl;\n'
+          '      31     return 0;\n'
+          '      32 }\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第5页，共16页\n'
+          '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
+          'l 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2021-q19',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '(2 分)当输入为“0 0 0 1 1 0 0 1”时，输出为“1.3090”。(                 )\n\nl    单选题',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <cmath>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const double r = acos(0.5);\n'
+          '      06\n'
+          '      07 int a1, b1, c1, d1;\n'
+          '      08 int a2, b2, c2, d2;\n'
+          '      09\n'
+          '      10 inline int sq(const int x) { return x * x; }\n'
+          '      11 inline int cu(const int x) { return x * x * x; }\n'
+          '      12\n'
+          '      13 int main()\n'
+          '      14 {\n'
+          '      15     cout.flags(ios::fixed);\n'
+          '      16     cout.precision(4);\n'
+          '\n'
+          '                                             港\n'
+          '      17\n'
+          '      18     cin >> a1 >> b1 >> c1 >> d1;\n'
+          '      19     cin >> a2 >> b2 >> c2 >> d2;\n'
+          '\n'
+          '                                            香\n'
+          '      20\n'
+          '      21     int t = sq(a1 - a2) + sq(b1 - b2) + sq(c1 - c2);\n'
+          '      22\n'
+          '      23     if (t <= sq(d2 - d1)) cout << cu(min(d1, d2)) * r * 4;\n'
+          '      24     else if (t >= sq(d2 + d1)) cout << 0;\n'
+          '      25     else {\n'
+          '      26         double x = d1 - (sq(d1) - sq(d2) + t) / sqrt(t) / 2;\n'
+          '      27         double y = d2 - (sq(d2) - sq(d1) + t) / sqrt(t) / 2;\n'
+          '      28         cout << (x * x * (3 * d1 - x) + y * y * (3 * d2 - y)) * r;\n'
+          '      29     }\n'
+          '      30     cout << endl;\n'
+          '      31     return 0;\n'
+          '      32 }\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第5页，共16页\n'
+          '  假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
+          'l 判断题',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2021-q22',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '程序总是会正常执行并输出两行两个相等的数。( )\n'
+          '                          CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                   第7页，共16页',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2021-q23',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '第 28 行与第 38 行分别有可能执行两次及以上。(                    )',
+  'code': '01 #include <algorithm>\n'
+          '      02 #include <iostream>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 int n, a[1005];\n'
+          '      06\n'
+          '\n'
+          '                                             港\n'
+          '      07 struct Node\n'
+          '      08 {\n'
+          '      09     int h, j, m, w;\n'
+          '      10\n'
+          '\n'
+          '                                            香\n'
+          '      11     Node(const int _h, const int _j, const int _m, const int _w):\n'
+          '      12         h(_h), j(_j), m(_m), w(_w)\n'
+          '      13     { }\n'
+          '      14\n'
+          '      15     Node operator+(const Node &o) const\n'
+          '      16     {\n'
+          '      17         return Node(\n'
+          '      18             max(h, w + o.h),\n'
+          '      19             max(max(j, o.j), m + o.h),\n'
+          '      20             max(m + o.w, o.m),\n'
+          '      21             w + o.w);\n'
+          '      22     }\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第6页，共16页\n'
+          '    23 };\n'
+          '    24\n'
+          '    25 Node solve1(int h, int m)\n'
+          '    26 {\n'
+          '    27     if (h > m)\n'
+          '    28         return Node(-1, -1, -1, -1);\n'
+          '    29     if (h == m)\n'
+          '    30        return Node(max(a[h], 0), max(a[h], 0), max(a[h], 0), a[h]);\n'
+          '\n'
+          '              港\n'
+          '    31     int j = (h + m) >> 1;\n'
+          '    32     return solve1(h, j) + solve1(j + 1, m);\n'
+          '    33 }\n'
+          '\n'
+          '            香\n'
+          '    34\n'
+          '    35 int solve2(int h, int m)\n'
+          '    36 {\n'
+          '    37     if (h > m)\n'
+          '    38         return -1;\n'
+          '    39     if (h == m)\n'
+          '    40         return max(a[h], 0);\n'
+          '    41     int j = (h + m) >> 1;\n'
+          '    42     int wh = 0, wm = 0;\n'
+          '    43     int wht = 0, wmt = 0;\n'
+          '    44     for (int i = j; i >= h; i--) {\n'
+          '    45         wht += a[i];\n'
+          '    46         wh = max(wh, wht);\n'
+          '    47     }\n'
+          '    48     for (int i = j + 1; i <= m; i++) {\n'
+          '    49         wmt += a[i];\n'
+          '    50         wm = max(wm, wmt);\n'
+          '\n'
+          '                                           港\n'
+          '    51     }\n'
+          '    52     return max(max(solve2(h, j), solve2(j + 1, m)), wh + wm);\n'
+          '    53 }\n'
+          '    54\n'
+          '\n'
+          '                                          香\n'
+          '    55 int main()\n'
+          '    56 {\n'
+          '    57     cin >> n;\n'
+          '    58     for (int i = 1; i <= n; i++) cin >> a[i];\n'
+          '    59     cout << solve1(1, n).j << endl;\n'
+          '    60     cout << solve2(1, n) << endl;\n'
+          '    61     return 0;\n'
+          '    62 }\n'
+          '\n'
+          '    假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
+          'l   判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2021-q24',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '当输入为“5 -10 11 -9 5 -7”时，输出的第二行为“7”。(                      )\n\nl     单选题',
+  'code': '01 #include <algorithm>\n'
+          '      02 #include <iostream>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 int n, a[1005];\n'
+          '      06\n'
+          '\n'
+          '                                             港\n'
+          '      07 struct Node\n'
+          '      08 {\n'
+          '      09     int h, j, m, w;\n'
+          '      10\n'
+          '\n'
+          '                                            香\n'
+          '      11     Node(const int _h, const int _j, const int _m, const int _w):\n'
+          '      12         h(_h), j(_j), m(_m), w(_w)\n'
+          '      13     { }\n'
+          '      14\n'
+          '      15     Node operator+(const Node &o) const\n'
+          '      16     {\n'
+          '      17         return Node(\n'
+          '      18             max(h, w + o.h),\n'
+          '      19             max(max(j, o.j), m + o.h),\n'
+          '      20             max(m + o.w, o.m),\n'
+          '      21             w + o.w);\n'
+          '      22     }\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第6页，共16页\n'
+          '    23 };\n'
+          '    24\n'
+          '    25 Node solve1(int h, int m)\n'
+          '    26 {\n'
+          '    27     if (h > m)\n'
+          '    28         return Node(-1, -1, -1, -1);\n'
+          '    29     if (h == m)\n'
+          '    30        return Node(max(a[h], 0), max(a[h], 0), max(a[h], 0), a[h]);\n'
+          '\n'
+          '              港\n'
+          '    31     int j = (h + m) >> 1;\n'
+          '    32     return solve1(h, j) + solve1(j + 1, m);\n'
+          '    33 }\n'
+          '\n'
+          '            香\n'
+          '    34\n'
+          '    35 int solve2(int h, int m)\n'
+          '    36 {\n'
+          '    37     if (h > m)\n'
+          '    38         return -1;\n'
+          '    39     if (h == m)\n'
+          '    40         return max(a[h], 0);\n'
+          '    41     int j = (h + m) >> 1;\n'
+          '    42     int wh = 0, wm = 0;\n'
+          '    43     int wht = 0, wmt = 0;\n'
+          '    44     for (int i = j; i >= h; i--) {\n'
+          '    45         wht += a[i];\n'
+          '    46         wh = max(wh, wht);\n'
+          '    47     }\n'
+          '    48     for (int i = j + 1; i <= m; i++) {\n'
+          '    49         wmt += a[i];\n'
+          '    50         wm = max(wm, wmt);\n'
+          '\n'
+          '                                           港\n'
+          '    51     }\n'
+          '    52     return max(max(solve2(h, j), solve2(j + 1, m)), wh + wm);\n'
+          '    53 }\n'
+          '    54\n'
+          '\n'
+          '                                          香\n'
+          '    55 int main()\n'
+          '    56 {\n'
+          '    57     cin >> n;\n'
+          '    58     for (int i = 1; i <= n; i++) cin >> a[i];\n'
+          '    59     cout << solve1(1, n).j << endl;\n'
+          '    60     cout << solve2(1, n) << endl;\n'
+          '    61     return 0;\n'
+          '    62 }\n'
+          '\n'
+          '    假设输入的所有数的绝对值都不超过 1000，完成下面的判断题和单选题:\n'
+          'l   判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2021-q28',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '程序总是先输出一行一个整数，再输出一行一个字符串。( )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2021-q29',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '对于任意不含空白字符的字符串 str1，先执行程序输入“0 str1”，得到输出的第\n'
+          '    二行记为 str2；再执行程序输入“1 str2”，输出的第二行必为 str1。( )\n'
+          '\n'
+          '              港',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <string>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 char base[64];\n'
+          '      06 char table[256];\n'
+          '      07\n'
+          '      08 void init()\n'
+          '      09 {\n'
+          "      10     for (int i = 0; i < 26; i++) base[i] = 'A' + i;\n"
+          "      11     for (int i = 0; i < 26; i++) base[26 + i] = 'a' + i;\n"
+          "      12     for (int i = 0; i < 10; i++) base[52 + i] = '0' + i;\n"
+          '\n'
+          '                                             港\n'
+          "      13     base[62] = '+', base[63] = '/';\n"
+          '      14\n'
+          '      15     for (int i = 0; i < 256; i++) table[i] = 0xff;\n'
+          '      16     for (int i = 0; i < 64; i++) table[base[i]] = i;\n'
+          '\n'
+          '                                            香\n'
+          "      17     table['='] = 0;\n"
+          '      18 }\n'
+          '      19\n'
+          '      20 string encode(string str)\n'
+          '      21 {\n'
+          '      22     string ret;\n'
+          '      23     int i;\n'
+          '      24     for (i = 0; i + 3 <= str.size(); i += 3) {\n'
+          '      25         ret += base[str[i] >> 2];\n'
+          '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
+          '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
+          '      28         ret += base[str[i + 2] & 0x3f];\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第8页，共16页\n'
+          '29     }\n'
+          '30     if (i < str.size()) {\n'
+          '31         ret += base[str[i] >> 2];\n'
+          '32         if (i + 1 == str.size()) {\n'
+          '33             ret += base[(str[i] & 0x03) << 4];\n'
+          '34             ret += "==";\n'
+          '35         }\n'
+          '36         else {\n'
+          '\n'
+          '          港\n'
+          '37             ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
+          '38             ret += base[(str[i + 1] & 0x0f) << 2];\n'
+          '39             ret += "=";\n'
+          '\n'
+          '        香\n'
+          '40         }\n'
+          '41     }\n'
+          '42     return ret;\n'
+          '43 }\n'
+          '44\n'
+          '45 string decode(string str)\n'
+          '46 {\n'
+          '47     string ret;\n'
+          '48     int i;\n'
+          '49     for (i = 0; i < str.size(); i += 4) {\n'
+          '50         ret += table[str[i]] << 2 | table[str[i + 1]] >> 4;\n'
+          "51         if (str[i + 2] != '=')\n"
+          '52             ret += (table[str[i + 1]] & 0x0f) << 4 | table[str[i +\n'
+          '                                                          2]] >> 2;\n'
+          "53         if (str[i + 3] != '=')\n"
+          '54             ret += table[str[i + 2]] << 6 | table[str[i + 3]];\n'
+          '55     }\n'
+          '\n'
+          '                                       港\n'
+          '56     return ret;\n'
+          '57 }\n'
+          '58\n'
+          '59 int main()\n'
+          '\n'
+          '                                      香\n'
+          '60 {\n'
+          '61     init();\n'
+          '62     cout << int(table[0]) << endl;\n'
+          '63\n'
+          '64     int opt;\n'
+          '65     string str;\n'
+          '66     cin >> opt >> str;\n'
+          '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
+          '68     return 0;\n'
+          '69 }\n'
+          '\n'
+          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                               第9页，共16页\n'
+          '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
+          '的判断题和单选题:\n'
+          'l 判断题',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2021-q30',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
+  'stem': '当输入为“1 SGVsbG93b3JsZA==”时，输出的第二行为“HelloWorld”。( )\n\nl   单选题\n\n            香',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <string>\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 char base[64];\n'
+          '      06 char table[256];\n'
+          '      07\n'
+          '      08 void init()\n'
+          '      09 {\n'
+          "      10     for (int i = 0; i < 26; i++) base[i] = 'A' + i;\n"
+          "      11     for (int i = 0; i < 26; i++) base[26 + i] = 'a' + i;\n"
+          "      12     for (int i = 0; i < 10; i++) base[52 + i] = '0' + i;\n"
+          '\n'
+          '                                             港\n'
+          "      13     base[62] = '+', base[63] = '/';\n"
+          '      14\n'
+          '      15     for (int i = 0; i < 256; i++) table[i] = 0xff;\n'
+          '      16     for (int i = 0; i < 64; i++) table[base[i]] = i;\n'
+          '\n'
+          '                                            香\n'
+          "      17     table['='] = 0;\n"
+          '      18 }\n'
+          '      19\n'
+          '      20 string encode(string str)\n'
+          '      21 {\n'
+          '      22     string ret;\n'
+          '      23     int i;\n'
+          '      24     for (i = 0; i + 3 <= str.size(); i += 3) {\n'
+          '      25         ret += base[str[i] >> 2];\n'
+          '      26         ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
+          '      27         ret += base[(str[i + 1] & 0x0f) << 2 | str[i + 2] >> 6];\n'
+          '      28         ret += base[str[i + 2] & 0x3f];\n'
+          '                            CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                                     第8页，共16页\n'
+          '29     }\n'
+          '30     if (i < str.size()) {\n'
+          '31         ret += base[str[i] >> 2];\n'
+          '32         if (i + 1 == str.size()) {\n'
+          '33             ret += base[(str[i] & 0x03) << 4];\n'
+          '34             ret += "==";\n'
+          '35         }\n'
+          '36         else {\n'
+          '\n'
+          '          港\n'
+          '37             ret += base[(str[i] & 0x03) << 4 | str[i + 1] >> 4];\n'
+          '38             ret += base[(str[i + 1] & 0x0f) << 2];\n'
+          '39             ret += "=";\n'
+          '\n'
+          '        香\n'
+          '40         }\n'
+          '41     }\n'
+          '42     return ret;\n'
+          '43 }\n'
+          '44\n'
+          '45 string decode(string str)\n'
+          '46 {\n'
+          '47     string ret;\n'
+          '48     int i;\n'
+          '49     for (i = 0; i < str.size(); i += 4) {\n'
+          '50         ret += table[str[i]] << 2 | table[str[i + 1]] >> 4;\n'
+          "51         if (str[i + 2] != '=')\n"
+          '52             ret += (table[str[i + 1]] & 0x0f) << 4 | table[str[i +\n'
+          '                                                          2]] >> 2;\n'
+          "53         if (str[i + 3] != '=')\n"
+          '54             ret += table[str[i + 2]] << 6 | table[str[i + 3]];\n'
+          '55     }\n'
+          '\n'
+          '                                       港\n'
+          '56     return ret;\n'
+          '57 }\n'
+          '58\n'
+          '59 int main()\n'
+          '\n'
+          '                                      香\n'
+          '60 {\n'
+          '61     init();\n'
+          '62     cout << int(table[0]) << endl;\n'
+          '63\n'
+          '64     int opt;\n'
+          '65     string str;\n'
+          '66     cin >> opt >> str;\n'
+          '67     cout << (opt ? decode(str) : encode(str)) << endl;\n'
+          '68     return 0;\n'
+          '69 }\n'
+          '\n'
+          '                      CCF CSP-S 2021 第一轮 C++语言试题\n'
+          '                               第9页，共16页\n'
+          '  假设输入总是合法的(一个整数和一个不含空白字符的字符串，用空格隔开)，完成下面\n'
+          '的判断题和单选题:\n'
+          'l 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q16',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '(1 分)当输入为“abcde fg”时，输出为-1。( )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q17',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入为“abbababbbab abab”时，输出为 4。(                       )',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <string>\n'
+          '      03 #include <vector>\n'
+          '      04\n'
+          '      05 using namespace std;\n'
+          '      06\n'
+          '      07 int f(const string &s, const string &t)\n'
+          '      08 {\n'
+          '      09     int n = s.length(), m = t.length();\n'
+          '      10\n'
+          '      11     vector<int> shift(128, m + 1);\n'
+          '      12\n'
+          '      13     int i, j;\n'
+          '      14\n'
+          '      15     for (j = 0; j < m; j++)\n'
+          '      16         shift[t[j]] = m - j;\n'
+          '      17\n'
+          '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
+          '\n'
+          '                             CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                      第 5页，共 13页\n'
+          '      19         j = 0;\n'
+          '      20         while (j < m && s[i + j] == t[j]) j++;\n'
+          '      21         if (j == m) return i;\n'
+          '      22     }\n'
+          '      23\n'
+          '      24     return -1;\n'
+          '      25 }\n'
+          '      26\n'
+          '      27 int main()\n'
+          '      28 {\n'
+          '      29     string a, b;\n'
+          '      30     cin >> a >> b;\n'
+          '      31     cout << f(a, b) << endl;\n'
+          '      32     return 0;\n'
+          '      33 }\n'
+          '\n'
+          '  假设输入字符串由 ASCII 可见字符组成，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q18',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入为“GoodLuckCsp2022 22”时，第 20 行的“j++”语句执行次数为 2。(                   )\n\n    单选题',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <string>\n'
+          '      03 #include <vector>\n'
+          '      04\n'
+          '      05 using namespace std;\n'
+          '      06\n'
+          '      07 int f(const string &s, const string &t)\n'
+          '      08 {\n'
+          '      09     int n = s.length(), m = t.length();\n'
+          '      10\n'
+          '      11     vector<int> shift(128, m + 1);\n'
+          '      12\n'
+          '      13     int i, j;\n'
+          '      14\n'
+          '      15     for (j = 0; j < m; j++)\n'
+          '      16         shift[t[j]] = m - j;\n'
+          '      17\n'
+          '      18     for (i = 0; i <= n - m; i += shift[s[i + m]]) {\n'
+          '\n'
+          '                             CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                      第 5页，共 13页\n'
+          '      19         j = 0;\n'
+          '      20         while (j < m && s[i + j] == t[j]) j++;\n'
+          '      21         if (j == m) return i;\n'
+          '      22     }\n'
+          '      23\n'
+          '      24     return -1;\n'
+          '      25 }\n'
+          '      26\n'
+          '      27 int main()\n'
+          '      28 {\n'
+          '      29     string a, b;\n'
+          '      30     cin >> a >> b;\n'
+          '      31     cout << f(a, b) << endl;\n'
+          '      32     return 0;\n'
+          '      33 }\n'
+          '\n'
+          '  假设输入字符串由 ASCII 可见字符组成，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q22',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '这是一个不稳定的排序算法。( )\n'
+          '                        CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                 第 7页，共 13页',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q23',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '该算法的空间复杂度仅与 n 有关。(                      )',
+  'code': '01 #include <iostream>\n'
+          '      02\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const int MAXN = 105;\n'
+          '      06\n'
+          '      07 int n, m, k, val[MAXN];\n'
+          '      08 int temp[MAXN], cnt[MAXN];\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 6页，共 13页\n'
+          '  09\n'
+          '  10 void init()\n'
+          '  11 {\n'
+          '  12     cin >> n >> k;\n'
+          '  13     for (int i = 0; i < n; i++) cin >> val[i];\n'
+          '  14     int maximum = val[0];\n'
+          '  15     for (int i = 1; i < n; i++)\n'
+          '  16         if (val[i] > maximum) maximum = val[i];\n'
+          '  17     m = 1;\n'
+          '  18     while (maximum >= k) {\n'
+          '  19         maximum /= k;\n'
+          '  20         m++;\n'
+          '  21     }\n'
+          '  22 }\n'
+          '  23\n'
+          '  24 void solve()\n'
+          '  25 {\n'
+          '  26     int base = 1;\n'
+          '  27     for (int i = 0; i < m; i++) {\n'
+          '  28         for (int j = 0; j < k; j++) cnt[j] = 0;\n'
+          '  29         for (int j = 0; j < n; j++) cnt[val[j] / base % k]++;\n'
+          '  30         for (int j = 1; j < k; j++) cnt[j] += cnt[j - 1];\n'
+          '  31         for (int j = n - 1; j >= 0; j--) {\n'
+          '  32             temp[cnt[val[j] / base % k] - 1] = val[j];\n'
+          '  33             cnt[val[j] / base % k]--;\n'
+          '  34         }\n'
+          '  35         for (int j = 0; j < n; j++) val[j] = temp[j];\n'
+          '  36         base *= k;\n'
+          '  37     }\n'
+          '  38 }\n'
+          '  39\n'
+          '  40 int main()\n'
+          '  41 {\n'
+          '  42     init();\n'
+          '  43     solve();\n'
+          "  44     for (int i = 0; i < n; i++) cout << val[i] << ' ';\n"
+          '  45     cout << endl;\n'
+          '  46     return 0;\n'
+          '  47 }\n'
+          '\n'
+          '   假设输入的 n 为不大于 100 的正整数，k 为不小于 2 且不大于 100 的正整数，val[i]在\n'
+          'int 表示范围内，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q24',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '该算法的时间复杂度为 � �(� + �) 。(                     )\n\n   单选题',
+  'code': '01 #include <iostream>\n'
+          '      02\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const int MAXN = 105;\n'
+          '      06\n'
+          '      07 int n, m, k, val[MAXN];\n'
+          '      08 int temp[MAXN], cnt[MAXN];\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 6页，共 13页\n'
+          '  09\n'
+          '  10 void init()\n'
+          '  11 {\n'
+          '  12     cin >> n >> k;\n'
+          '  13     for (int i = 0; i < n; i++) cin >> val[i];\n'
+          '  14     int maximum = val[0];\n'
+          '  15     for (int i = 1; i < n; i++)\n'
+          '  16         if (val[i] > maximum) maximum = val[i];\n'
+          '  17     m = 1;\n'
+          '  18     while (maximum >= k) {\n'
+          '  19         maximum /= k;\n'
+          '  20         m++;\n'
+          '  21     }\n'
+          '  22 }\n'
+          '  23\n'
+          '  24 void solve()\n'
+          '  25 {\n'
+          '  26     int base = 1;\n'
+          '  27     for (int i = 0; i < m; i++) {\n'
+          '  28         for (int j = 0; j < k; j++) cnt[j] = 0;\n'
+          '  29         for (int j = 0; j < n; j++) cnt[val[j] / base % k]++;\n'
+          '  30         for (int j = 1; j < k; j++) cnt[j] += cnt[j - 1];\n'
+          '  31         for (int j = n - 1; j >= 0; j--) {\n'
+          '  32             temp[cnt[val[j] / base % k] - 1] = val[j];\n'
+          '  33             cnt[val[j] / base % k]--;\n'
+          '  34         }\n'
+          '  35         for (int j = 0; j < n; j++) val[j] = temp[j];\n'
+          '  36         base *= k;\n'
+          '  37     }\n'
+          '  38 }\n'
+          '  39\n'
+          '  40 int main()\n'
+          '  41 {\n'
+          '  42     init();\n'
+          '  43     solve();\n'
+          "  44     for (int i = 0; i < n; i++) cout << val[i] << ' ';\n"
+          '  45     cout << endl;\n'
+          '  46     return 0;\n'
+          '  47 }\n'
+          '\n'
+          '   假设输入的 n 为不大于 100 的正整数，k 为不小于 2 且不大于 100 的正整数，val[i]在\n'
+          'int 表示范围内，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q25',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入为“5 3 98 26 91 37 46”时，程序第一次执行到第 36 行，val[]数组的内\n    容依次为( )。',
+  'code': '01 #include <iostream>\n'
+          '      02\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const int MAXN = 105;\n'
+          '      06\n'
+          '      07 int n, m, k, val[MAXN];\n'
+          '      08 int temp[MAXN], cnt[MAXN];\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 6页，共 13页\n'
+          '  09\n'
+          '  10 void init()\n'
+          '  11 {\n'
+          '  12     cin >> n >> k;\n'
+          '  13     for (int i = 0; i < n; i++) cin >> val[i];\n'
+          '  14     int maximum = val[0];\n'
+          '  15     for (int i = 1; i < n; i++)\n'
+          '  16         if (val[i] > maximum) maximum = val[i];\n'
+          '  17     m = 1;\n'
+          '  18     while (maximum >= k) {\n'
+          '  19         maximum /= k;\n'
+          '  20         m++;\n'
+          '  21     }\n'
+          '  22 }\n'
+          '  23\n'
+          '  24 void solve()\n'
+          '  25 {\n'
+          '  26     int base = 1;\n'
+          '  27     for (int i = 0; i < m; i++) {\n'
+          '  28         for (int j = 0; j < k; j++) cnt[j] = 0;\n'
+          '  29         for (int j = 0; j < n; j++) cnt[val[j] / base % k]++;\n'
+          '  30         for (int j = 1; j < k; j++) cnt[j] += cnt[j - 1];\n'
+          '  31         for (int j = n - 1; j >= 0; j--) {\n'
+          '  32             temp[cnt[val[j] / base % k] - 1] = val[j];\n'
+          '  33             cnt[val[j] / base % k]--;\n'
+          '  34         }\n'
+          '  35         for (int j = 0; j < n; j++) val[j] = temp[j];\n'
+          '  36         base *= k;\n'
+          '  37     }\n'
+          '  38 }\n'
+          '  39\n'
+          '  40 int main()\n'
+          '  41 {\n'
+          '  42     init();\n'
+          '  43     solve();\n'
+          "  44     for (int i = 0; i < n; i++) cout << val[i] << ' ';\n"
+          '  45     cout << endl;\n'
+          '  46     return 0;\n'
+          '  47 }\n'
+          '\n'
+          '   假设输入的 n 为不大于 100 的正整数，k 为不小于 2 且不大于 100 的正整数，val[i]在\n'
+          'int 表示范围内，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['91 26 46 37 98', '91 46 37 26 98', '98 26 46 91 37', '91 37 46 98 26'],
+  'answer': 3},
+ {'id': 'csp_s_round1-2022-q26',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '若 val[i]的最大值为 100，k 取(             )时算法运算次数最少。',
+  'code': '01 #include <iostream>\n'
+          '      02\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const int MAXN = 105;\n'
+          '      06\n'
+          '      07 int n, m, k, val[MAXN];\n'
+          '      08 int temp[MAXN], cnt[MAXN];\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 6页，共 13页\n'
+          '  09\n'
+          '  10 void init()\n'
+          '  11 {\n'
+          '  12     cin >> n >> k;\n'
+          '  13     for (int i = 0; i < n; i++) cin >> val[i];\n'
+          '  14     int maximum = val[0];\n'
+          '  15     for (int i = 1; i < n; i++)\n'
+          '  16         if (val[i] > maximum) maximum = val[i];\n'
+          '  17     m = 1;\n'
+          '  18     while (maximum >= k) {\n'
+          '  19         maximum /= k;\n'
+          '  20         m++;\n'
+          '  21     }\n'
+          '  22 }\n'
+          '  23\n'
+          '  24 void solve()\n'
+          '  25 {\n'
+          '  26     int base = 1;\n'
+          '  27     for (int i = 0; i < m; i++) {\n'
+          '  28         for (int j = 0; j < k; j++) cnt[j] = 0;\n'
+          '  29         for (int j = 0; j < n; j++) cnt[val[j] / base % k]++;\n'
+          '  30         for (int j = 1; j < k; j++) cnt[j] += cnt[j - 1];\n'
+          '  31         for (int j = n - 1; j >= 0; j--) {\n'
+          '  32             temp[cnt[val[j] / base % k] - 1] = val[j];\n'
+          '  33             cnt[val[j] / base % k]--;\n'
+          '  34         }\n'
+          '  35         for (int j = 0; j < n; j++) val[j] = temp[j];\n'
+          '  36         base *= k;\n'
+          '  37     }\n'
+          '  38 }\n'
+          '  39\n'
+          '  40 int main()\n'
+          '  41 {\n'
+          '  42     init();\n'
+          '  43     solve();\n'
+          "  44     for (int i = 0; i < n; i++) cout << val[i] << ' ';\n"
+          '  45     cout << endl;\n'
+          '  46     return 0;\n'
+          '  47 }\n'
+          '\n'
+          '   假设输入的 n 为不大于 100 的正整数，k 为不小于 2 且不大于 100 的正整数，val[i]在\n'
+          'int 表示范围内，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['2', '3', '10', '不确定'],
+  'answer': 3},
+ {'id': 'csp_s_round1-2022-q27',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入的 k 比 val[i]的最大值还大时，该算法退化为(                                )算法。',
+  'code': '01 #include <iostream>\n'
+          '      02\n'
+          '      03 using namespace std;\n'
+          '      04\n'
+          '      05 const int MAXN = 105;\n'
+          '      06\n'
+          '      07 int n, m, k, val[MAXN];\n'
+          '      08 int temp[MAXN], cnt[MAXN];\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 6页，共 13页\n'
+          '  09\n'
+          '  10 void init()\n'
+          '  11 {\n'
+          '  12     cin >> n >> k;\n'
+          '  13     for (int i = 0; i < n; i++) cin >> val[i];\n'
+          '  14     int maximum = val[0];\n'
+          '  15     for (int i = 1; i < n; i++)\n'
+          '  16         if (val[i] > maximum) maximum = val[i];\n'
+          '  17     m = 1;\n'
+          '  18     while (maximum >= k) {\n'
+          '  19         maximum /= k;\n'
+          '  20         m++;\n'
+          '  21     }\n'
+          '  22 }\n'
+          '  23\n'
+          '  24 void solve()\n'
+          '  25 {\n'
+          '  26     int base = 1;\n'
+          '  27     for (int i = 0; i < m; i++) {\n'
+          '  28         for (int j = 0; j < k; j++) cnt[j] = 0;\n'
+          '  29         for (int j = 0; j < n; j++) cnt[val[j] / base % k]++;\n'
+          '  30         for (int j = 1; j < k; j++) cnt[j] += cnt[j - 1];\n'
+          '  31         for (int j = n - 1; j >= 0; j--) {\n'
+          '  32             temp[cnt[val[j] / base % k] - 1] = val[j];\n'
+          '  33             cnt[val[j] / base % k]--;\n'
+          '  34         }\n'
+          '  35         for (int j = 0; j < n; j++) val[j] = temp[j];\n'
+          '  36         base *= k;\n'
+          '  37     }\n'
+          '  38 }\n'
+          '  39\n'
+          '  40 int main()\n'
+          '  41 {\n'
+          '  42     init();\n'
+          '  43     solve();\n'
+          "  44     for (int i = 0; i < n; i++) cout << val[i] << ' ';\n"
+          '  45     cout << endl;\n'
+          '  46     return 0;\n'
+          '  47 }\n'
+          '\n'
+          '   假设输入的 n 为不大于 100 的正整数，k 为不小于 2 且不大于 100 的正整数，val[i]在\n'
+          'int 表示范围内，完成下面的判断题和单选题:\n'
+          ' 判断题',
+  'options': ['选择排序',
+              '冒泡排序',
+              '计数排序',
+              '桶排序\n'
+              '\n'
+              '(3)\n'
+              '      01 #include <iostream>\n'
+              '      02 #include <algorithm>\n'
+              '      03\n'
+              '      04 using namespace std;\n'
+              '      05\n'
+              '      06 const int MAXL = 1000;\n'
+              '      07\n'
+              '      08 int n, k, ans[MAXL];\n'
+              '      09\n'
+              '      10 int main(void)\n'
+              '      11 {\n'
+              '      12     cin >> n >> k;\n'
+              '      13     if (!n) cout << 0 << endl;\n'
+              '      14     else\n'
+              '      15     {\n'
+              '      16         int m = 0;\n'
+              '      17         while (n)\n'
+              '      18         {\n'
+              '      19             ans[m++] = (n % (-k) + k) % k;\n'
+              '      20             n = (ans[m - 1] - n) / k;\n'
+              '      21         }\n'
+              '      22         for (int i = m - 1; i >= 0; i--)\n'
+              '      23             cout << char(ans[i] >= 10 ?\n'
+              "      24                 ans[i] + 'A' - 10 :\n"
+              "      25                 ans[i] + '0');\n"
+              '      26         cout << endl;\n'
+              '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+              '                                          第 8页，共 13页\n'
+              '    27       }\n'
+              '    28       return 0;\n'
+              '    29 }\n'
+              '\n'
+              '  假设输入的 n 在 int 范围内，k 为不小于 2 且不大于 36 的正整数，完成下面的判断题和\n'
+              '单选题:\n'
+              ' 判断题'],
+  'answer': 2},
+ {'id': 'csp_s_round1-2022-q28',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '该算法的时间复杂度为 �( log� � )。( )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q29',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '删除第 23 行的强制类型转换，程序的行为不变。(                               )',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <algorithm>\n'
+          '      03\n'
+          '      04 using namespace std;\n'
+          '      05\n'
+          '      06 const int MAXL = 1000;\n'
+          '      07\n'
+          '      08 int n, k, ans[MAXL];\n'
+          '      09\n'
+          '      10 int main(void)\n'
+          '      11 {\n'
+          '      12     cin >> n >> k;\n'
+          '      13     if (!n) cout << 0 << endl;\n'
+          '      14     else\n'
+          '      15     {\n'
+          '      16         int m = 0;\n'
+          '      17         while (n)\n'
+          '      18         {\n'
+          '      19             ans[m++] = (n % (-k) + k) % k;\n'
+          '      20             n = (ans[m - 1] - n) / k;\n'
+          '      21         }\n'
+          '      22         for (int i = m - 1; i >= 0; i--)\n'
+          '      23             cout << char(ans[i] >= 10 ?\n'
+          "      24                 ans[i] + 'A' - 10 :\n"
+          "      25                 ans[i] + '0');\n"
+          '      26         cout << endl;\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 8页，共 13页\n'
+          '    27       }\n'
+          '    28       return 0;\n'
+          '    29 }\n'
+          '\n'
+          '  假设输入的 n 在 int 范围内，k 为不小于 2 且不大于 36 的正整数，完成下面的判断题和\n'
+          '单选题:\n'
+          ' 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q30',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '除非输入的 n 为 0，否则程序输出的字符数为 O( log� � + 1)。(                            )\n\n   单选题',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <algorithm>\n'
+          '      03\n'
+          '      04 using namespace std;\n'
+          '      05\n'
+          '      06 const int MAXL = 1000;\n'
+          '      07\n'
+          '      08 int n, k, ans[MAXL];\n'
+          '      09\n'
+          '      10 int main(void)\n'
+          '      11 {\n'
+          '      12     cin >> n >> k;\n'
+          '      13     if (!n) cout << 0 << endl;\n'
+          '      14     else\n'
+          '      15     {\n'
+          '      16         int m = 0;\n'
+          '      17         while (n)\n'
+          '      18         {\n'
+          '      19             ans[m++] = (n % (-k) + k) % k;\n'
+          '      20             n = (ans[m - 1] - n) / k;\n'
+          '      21         }\n'
+          '      22         for (int i = m - 1; i >= 0; i--)\n'
+          '      23             cout << char(ans[i] >= 10 ?\n'
+          "      24                 ans[i] + 'A' - 10 :\n"
+          "      25                 ans[i] + '0');\n"
+          '      26         cout << endl;\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 8页，共 13页\n'
+          '    27       }\n'
+          '    28       return 0;\n'
+          '    29 }\n'
+          '\n'
+          '  假设输入的 n 在 int 范围内，k 为不小于 2 且不大于 36 的正整数，完成下面的判断题和\n'
+          '单选题:\n'
+          ' 判断题',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q31',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入为“100 7”时，输出为(                   )。',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <algorithm>\n'
+          '      03\n'
+          '      04 using namespace std;\n'
+          '      05\n'
+          '      06 const int MAXL = 1000;\n'
+          '      07\n'
+          '      08 int n, k, ans[MAXL];\n'
+          '      09\n'
+          '      10 int main(void)\n'
+          '      11 {\n'
+          '      12     cin >> n >> k;\n'
+          '      13     if (!n) cout << 0 << endl;\n'
+          '      14     else\n'
+          '      15     {\n'
+          '      16         int m = 0;\n'
+          '      17         while (n)\n'
+          '      18         {\n'
+          '      19             ans[m++] = (n % (-k) + k) % k;\n'
+          '      20             n = (ans[m - 1] - n) / k;\n'
+          '      21         }\n'
+          '      22         for (int i = m - 1; i >= 0; i--)\n'
+          '      23             cout << char(ans[i] >= 10 ?\n'
+          "      24                 ans[i] + 'A' - 10 :\n"
+          "      25                 ans[i] + '0');\n"
+          '      26         cout << endl;\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 8页，共 13页\n'
+          '    27       }\n'
+          '    28       return 0;\n'
+          '    29 }\n'
+          '\n'
+          '  假设输入的 n 在 int 范围内，k 为不小于 2 且不大于 36 的正整数，完成下面的判断题和\n'
+          '单选题:\n'
+          ' 判断题',
+  'options': ['202', '1515', '244', '1754'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q32',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入为“-255 8”时，输出为“(                      )”。',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <algorithm>\n'
+          '      03\n'
+          '      04 using namespace std;\n'
+          '      05\n'
+          '      06 const int MAXL = 1000;\n'
+          '      07\n'
+          '      08 int n, k, ans[MAXL];\n'
+          '      09\n'
+          '      10 int main(void)\n'
+          '      11 {\n'
+          '      12     cin >> n >> k;\n'
+          '      13     if (!n) cout << 0 << endl;\n'
+          '      14     else\n'
+          '      15     {\n'
+          '      16         int m = 0;\n'
+          '      17         while (n)\n'
+          '      18         {\n'
+          '      19             ans[m++] = (n % (-k) + k) % k;\n'
+          '      20             n = (ans[m - 1] - n) / k;\n'
+          '      21         }\n'
+          '      22         for (int i = m - 1; i >= 0; i--)\n'
+          '      23             cout << char(ans[i] >= 10 ?\n'
+          "      24                 ans[i] + 'A' - 10 :\n"
+          "      25                 ans[i] + '0');\n"
+          '      26         cout << endl;\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 8页，共 13页\n'
+          '    27       }\n'
+          '    28       return 0;\n'
+          '    29 }\n'
+          '\n'
+          '  假设输入的 n 在 int 范围内，k 为不小于 2 且不大于 36 的正整数，完成下面的判断题和\n'
+          '单选题:\n'
+          ' 判断题',
+  'options': ['1400', '1401', '417', '400'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q33',
+  'competition': 'csp_s_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '当输入为“1000000 19”时，输出为“(                        )”。',
+  'code': '01 #include <iostream>\n'
+          '      02 #include <algorithm>\n'
+          '      03\n'
+          '      04 using namespace std;\n'
+          '      05\n'
+          '      06 const int MAXL = 1000;\n'
+          '      07\n'
+          '      08 int n, k, ans[MAXL];\n'
+          '      09\n'
+          '      10 int main(void)\n'
+          '      11 {\n'
+          '      12     cin >> n >> k;\n'
+          '      13     if (!n) cout << 0 << endl;\n'
+          '      14     else\n'
+          '      15     {\n'
+          '      16         int m = 0;\n'
+          '      17         while (n)\n'
+          '      18         {\n'
+          '      19             ans[m++] = (n % (-k) + k) % k;\n'
+          '      20             n = (ans[m - 1] - n) / k;\n'
+          '      21         }\n'
+          '      22         for (int i = m - 1; i >= 0; i--)\n'
+          '      23             cout << char(ans[i] >= 10 ?\n'
+          "      24                 ans[i] + 'A' - 10 :\n"
+          "      25                 ans[i] + '0');\n"
+          '      26         cout << endl;\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 8页，共 13页\n'
+          '    27       }\n'
+          '    28       return 0;\n'
+          '    29 }\n'
+          '\n'
+          '  假设输入的 n 在 int 范围内，k 为不小于 2 且不大于 36 的正整数，完成下面的判断题和\n'
+          '单选题:\n'
+          ' 判断题',
+  'options': ['BG939',
+              '87GIB',
+              '1CD428',
+              '7CF1B\n'
+              '\n'
+              '三、        完善程序(单选题，每小题 3 分，共计 30 分)\n'
+              '\n'
+              '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+              '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+              '    k 小的数值。\n'
+              '\n'
+              '    试补全程序。\n'
+              '\n'
+              '    01 #include <bits/stdc++.h>\n'
+              '    02 using namespace std;\n'
+              '    03\n'
+              '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+              '    05   int left1 = 0, right1 = n - 1;\n'
+              '    06   int left2 = 0, right2 = n - 1;\n'
+              '    07   while (left1 <= right1 && left2 <= right2) {\n'
+              '    08     int m1 = (left1 + right1) >> 1;\n'
+              '    09     int m2 = (left2 + right2) >> 1;\n'
+              '    10     int cnt = ①;\n'
+              '    11     if (②) {\n'
+              '\n'
+              '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+              '                                          第 9页，共 13页\n'
+              '12       if (cnt < k) left1 = m1 + 1;\n'
+              '13       else right2 = m2 - 1;\n'
+              '14     } else {\n'
+              '15       if (cnt < k) left2 = m2 + 1;\n'
+              '16       else right1 = m1 - 1;\n'
+              '17     }\n'
+              '18   }\n'
+              '19   if (③) {\n'
+              '20     if (left1 == 0) {\n'
+              '21       return a2[k - 1];\n'
+              '22     } else {\n'
+              '23       int x = a1[left1 - 1], ④;\n'
+              '24       return std::max(x, y);\n'
+              '25     }\n'
+              '26   } else {\n'
+              '27     if (left2 == 0) {\n'
+              '28       return a1[k - 1];\n'
+              '29     } else {\n'
+              '30       int x = a2[left2 - 1], ⑤;\n'
+              '31       return std::max(x, y);\n'
+              '32     }\n'
+              '33   }\n'
+              '34 }'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q34',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '①处应填(       )',
+  'code': '',
+  'options': ['(m1 + m2) * 2', '(m1 - 1) + (m2 - 1)', 'm1 + m2', '(m1 + 1) + (m2 + 1)'],
+  'answer': 3},
+ {'id': 'csp_s_round1-2022-q35',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '②处应填(       )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['a1[m1] == a2[m2]', 'a1[m1] <= a2[m2]', 'a1[m1] >= a2[m2]', 'a1[m1] != a2[m2]'],
+  'answer': 1},
+ {'id': 'csp_s_round1-2022-q36',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '③处应填(       )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['left1 == right1', 'left1 < right1', 'left1 > right1', 'left1 != right1'],
+  'answer': 2},
+ {'id': 'csp_s_round1-2022-q37',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '④处应填(       )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['y = a1[k - left2 - 1]', 'y = a1[k - left2]', 'y = a2[k - left1 - 1]', 'y = a2[k - left1]'],
+  'answer': 2},
+ {'id': 'csp_s_round1-2022-q38',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '⑤处应填(       )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['y = a1[k - left2 - 1]',
+              'y = a1[k - left2]',
+              'y = a2[k - left1 - 1]',
+              'y = a2[k - left1]\n'
+              '\n'
+              '                           CCF CSP-S 2022 第一轮 C++语言试题\n'
+              '                                   第 10页，共 13页\n'
+              '(2)(容器分水)有两个容器，容器 1 的容量为为 a 升，容器 2 的容量为 b 升；同时允许\n'
+              '下列的三种操作，分别为:\n'
+              '   1)FILL(i):用水龙头将容器 i(i∈{1,2})灌满水；\n'
+              '   2)DROP(i):将容器 i 的水倒进下水道；\n'
+              '   3)POUR(i,j):将容器 i 的水倒进容器 j(完成此操作后，要么容器 j 被灌满，要么\n'
+              '容器 i 被清空)。\n'
+              '   求只使用上述的两个容器和三种操作，获得恰好 c 升水的最少操作数和操作序列。上\n'
+              '述 a、b、c 均为不超过 100 的正整数，且 c≤max{a,b}。\n'
+              '\n'
+              '试补全程序。\n'
+              '\n'
+              '01 #include <bits/stdc++.h>\n'
+              '02 using namespace std;\n'
+              '03 const int N = 110;\n'
+              '04\n'
+              '05 int f[N][N];\n'
+              '06 int ans;\n'
+              '07 int a, b, c;\n'
+              '08 int init;\n'
+              '09\n'
+              '10 int dfs(int x, int y) {\n'
+              '11   if (f[x][y] != init)\n'
+              '12     return f[x][y];\n'
+              '13   if (x == c || y == c)\n'
+              '14     return f[x][y] = 0;\n'
+              '15   f[x][y] = init - 1;\n'
+              '16   f[x][y] = min(f[x][y], dfs(a, y) + 1);\n'
+              '17   f[x][y] = min(f[x][y], dfs(x, b) + 1);\n'
+              '18   f[x][y] = min(f[x][y], dfs(0, y) + 1);\n'
+              '19   f[x][y] = min(f[x][y], dfs(x, 0) + 1);\n'
+              '20   int t = min(a - x, y);\n'
+              '21   f[x][y] = min(f[x][y], ①);\n'
+              '22   t = min(x, b - y);\n'
+              '23   f[x][y] = min(f[x][y], ②);\n'
+              '24   return f[x][y];\n'
+              '25 }\n'
+              '26\n'
+              '27 void go(int x, int y) {\n'
+              '28   if (③)\n'
+              '29     return;\n'
+              '30   if (f[x][y] == dfs(a, y) + 1) {\n'
+              '31     cout << "FILL(1)" << endl;\n'
+              '32     go(a, y);\n'
+              '33   } else if (f[x][y] == dfs(x, b) + 1) {\n'
+              '                      CCF CSP-S 2022 第一轮 C++语言试题\n'
+              '                              第 11页，共 13页\n'
+              '34     cout << "FILL(2)" << endl;\n'
+              '35     go(x, b);\n'
+              '36   } else if (f[x][y] == dfs(0, y) + 1) {\n'
+              '37     cout << "DROP(1)" << endl;\n'
+              '38     go(0, y);\n'
+              '39   } else if (f[x][y] == dfs(x, 0) + 1) {\n'
+              '40     cout << "DROP(2)" << endl;\n'
+              '41     go(x, 0);\n'
+              '42   } else {\n'
+              '43     int t = min(a - x, y);\n'
+              '44     if (f[x][y] == ④) {\n'
+              '45       cout << "POUR(2,1)" << endl;\n'
+              '46       go(x + t, y - t);\n'
+              '47     } else {\n'
+              '48       t = min(x, b - y);\n'
+              '49       if (f[x][y] == ⑤) {\n'
+              '50         cout << "POUR(1,2)" << endl;\n'
+              '51         go(x - t, y + t);\n'
+              '52       } else\n'
+              '53         assert(0);\n'
+              '54     }\n'
+              '55   }\n'
+              '56 }\n'
+              '57\n'
+              '58 int main() {\n'
+              '59   cin >> a >> b >> c;\n'
+              '60   ans = 1 << 30;\n'
+              '61   memset(f, 127, sizeof f);\n'
+              '62   init = **f;\n'
+              '63   if ((ans = dfs(0, 0)) == init - 1)\n'
+              '64     cout << "impossible";\n'
+              '65   else {\n'
+              '66     cout << ans << endl;\n'
+              '67     go(0, 0);\n'
+              '68   }\n'
+              '69 }'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q39',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '①处应填(      )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['dfs(x + t, y - t) + 1', 'dfs(x + t, y - t) - 1', 'dfs(x - t, y + t) + 1', 'dfs(x - t, y + t) - 1'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q40',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '②处应填(      )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['dfs(x + t, y - t) + 1',
+              'dfs(x + t, y - t) - 1',
+              'dfs(x - t, y + t) + 1',
+              'dfs(x - t, y + t) - 1\n'
+              '\n'
+              '                         CCF CSP-S 2022 第一轮 C++语言试题\n'
+              '                                 第 12页，共 13页'],
+  'answer': 2},
+ {'id': 'csp_s_round1-2022-q41',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '③处应填( )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['x == c || y == c', 'x == c && y == c', 'x >= c || y >= c', 'x >= c && y >= c'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q42',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '④处应填(     )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['dfs(x + t, y - t) + 1', 'dfs(x + t, y - t) - 1', 'dfs(x - t, y + t) + 1', 'dfs(x - t, y + t) - 1'],
+  'answer': 0},
+ {'id': 'csp_s_round1-2022-q43',
+  'competition': 'csp_s_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_題目.pdf',
+  'stem': '⑤处应填(     )',
+  'code': '30 分)\n'
+          '\n'
+          '    (1)(归并第 k 小)已知两个长度均为 n 的有序数组 a1 和 a2(均为递增序，但不保证严\n'
+          '    格单调递增)，并且给定正整数 k(1≤k≤2n)，求数组 a1 和 a2 归并排序后的数组里第\n'
+          '    k 小的数值。\n'
+          '\n'
+          '    试补全程序。\n'
+          '\n'
+          '    01 #include <bits/stdc++.h>\n'
+          '    02 using namespace std;\n'
+          '    03\n'
+          '    04 int solve(int *a1, int *a2, int n, int k) {\n'
+          '    05   int left1 = 0, right1 = n - 1;\n'
+          '    06   int left2 = 0, right2 = n - 1;\n'
+          '    07   while (left1 <= right1 && left2 <= right2) {\n'
+          '    08     int m1 = (left1 + right1) >> 1;\n'
+          '    09     int m2 = (left2 + right2) >> 1;\n'
+          '    10     int cnt = ①;\n'
+          '    11     if (②) {\n'
+          '\n'
+          '                                 CCF CSP-S 2022 第一轮 C++语言试题\n'
+          '                                          第 9页，共 13页\n'
+          '12       if (cnt < k) left1 = m1 + 1;\n'
+          '13       else right2 = m2 - 1;\n'
+          '14     } else {\n'
+          '15       if (cnt < k) left2 = m2 + 1;\n'
+          '16       else right1 = m1 - 1;\n'
+          '17     }\n'
+          '18   }\n'
+          '19   if (③) {\n'
+          '20     if (left1 == 0) {\n'
+          '21       return a2[k - 1];\n'
+          '22     } else {\n'
+          '23       int x = a1[left1 - 1], ④;\n'
+          '24       return std::max(x, y);\n'
+          '25     }\n'
+          '26   } else {\n'
+          '27     if (left2 == 0) {\n'
+          '28       return a1[k - 1];\n'
+          '29     } else {\n'
+          '30       int x = a2[left2 - 1], ⑤;\n'
+          '31       return std::max(x, y);\n'
+          '32     }\n'
+          '33   }\n'
+          '34 }',
+  'options': ['dfs(x + t, y - t) + 1',
+              'dfs(x + t, y - t) - 1',
+              'dfs(x - t, y + t) + 1',
+              'dfs(x - t, y + t) - 1\n'
+              '\n'
+              '                          CCF CSP-S 2022 第一轮 C++语言试题\n'
+              '                                  第 13页，共 13页'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2023-q01',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': 'CSP-]J/S: CCF 非专业级软件能力认证(Certified Software Professional\n\nJunior/Senior, {ij CSP-J/S)创办于 ¢\n\n) 年。',
+  'code': '',
+  'options': ['2018', '2019', '2020', '2021'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q02',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '十进制数 2623 等值于二进制数 ¢\n\n)',
+  'code': '',
+  'options': ['11166666111', '11000001111', '10100010111', '11111100111'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q03',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': 'PARA TLF-(B+C/D) *EM BRIBE (\n\n)',
+  'code': '',
+  'options': ['FB-C+D/E*', 'FBC+D/-E*', 'FBCD/E*+-', 'FBCD/+E*-'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2023-q05',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '递归过程或函数调用时，处理参数和返回地址，通常使用一种称为〈\n\n) 的数据结',
+  'code': '',
+  'options': ['栈', '队列', '树', '链表'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q07',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '将两个各有 100 个元素的有序表合并成一个有序表, 最坏情况下的比较次数是《\n\n)',
+  'code': '',
+  'options': ['100',
+              '199\n\nCc. 200',
+              '99\n\n8线性链表不具有的特点是《\n\n)',
+              '随机访问',
+              '， 不必事先估计所需存储空间大小\n\n.插入与删除时不必移动元素',
+              '所需空间与线性表长度成正比'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2023-q09',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '二又树的先序遍历和中序遍历如下:\n\n先序遍历:，EFHIGJIK\n\n中序遍历: HFIEJKG\n\n该二又树根的左子树的根是〈\n\n)\n\nALE',
+  'code': '',
+  'options': ["F\n\nGs 'G", '4H'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q10',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '下面关于算法的描述不正确的是\n\n)',
+  'code': '',
+  'options': ['算法必须有输出', '算法必须在计算机上用某种语言实现', '算法不一定有输入', '算法必须在有限步执行后能结束'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q11',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '下列代码执行后，s 的值是《\n\n)\n\nint s=0;\n\nfor(int i=1;i<=100;i++)\n\nfor(int j=1;j<=i;j++) s++;\n\ncout<<s<<endl;',
+  'code': '',
+  'options': ['100', '10000', '200', '5050'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q12',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': 'BOM—PMEA ARTE 1, 25. 3\n\n..，169，其输出序列为 Pl，Pz，P3，.……，Paiee，\n\nFi Pi té 100, Jill Pi是(\n\n)',
+  'code': '',
+  'options': ['I',
+              '100-I\n\n€.: 1O1-I',
+              '不确定\n\n13 .对于给定的数字 11223344，如果每次取连续的一段(长度至少为 1)构成一个新的数字，\n\n问能构成多少个不同的数字\n\n)',
+              '14',
+              '27\n\nGe 32',
+              '36\n\n)'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2023-q14',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '以下函数的时间复杂度为《\n\nint f(int n){\n\nif(n==@||n==1) return 1;\n\nreturn f(n/2)+f(n/2)+f(n/2)+f(n/2);',
+  'code': '',
+  'options': ['O(nlogn)', 'O(n’)', 'O(n*logn)', 'O(2")'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q15',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '从6个白球和3 个黑球中选出 4 个球，至少有一个黑球的方案数是〈',
+  'code': '',
+  'options': ['111',
+              '2664\n\nCc. 68',
+              '360\n'
+              '\n'
+              '二、阅读程序 〈程序输入不超过数组或字符串定义的范围，判断题正确填V，错误填x;，除\n'
+              '\n'
+              '特殊说明外，判断题 2 分，选择题3 分，共计40 分)\n'
+              '\n'
+              '163)\n'
+              '\n'
+              '@1 #include<bits/stdc++.h>\n'
+              '\n'
+              '@2 using namespace std;\n'
+              '\n'
+              '63 int n,ans;\n'
+              '\n'
+              '04\n'
+              '\n'
+              '@5 int main(){\n'
+              '\n'
+              '06\n'
+              '\n'
+              'cin>>n;\n'
+              '\n'
+              '07\n'
+              '\n'
+              'for(int i=1;i<=n;i++){\n'
+              '\n'
+              '08\n'
+              '\n'
+              'for(int j=(i<<1) ;j<=n;j+=i){\n'
+              '\n'
+              '89\n'
+              '\n'
+              '16\n'
+              '\n'
+              'anst+=(j*i)==j-i;\n'
+              '\n'
+              '11\n'
+              '\n'
+              '12\n'
+              '\n'
+              '}\n'
+              '\n'
+              'a3\n'
+              '\n'
+              'cout<<ans;\n'
+              '\n'
+              'return @;\n'
+              '\n'
+              '14 }\n'
+              '\n'
+              '保证输入的”不超过 10°, TER THN AAA ew\n'
+              '\n'
+              '@ 判断题'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q20',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '输入“10" 时，程序的输出为 〈\n\n)\n\nA9',
+  'code': '',
+  'options': ['8\n\nCz', '6'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q21',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '程序的时间复杂度为 〈',
+  'code': '',
+  'options': ['O(n)',
+              'O(nlogn)',
+              'O(n’)',
+              '不确定\n'
+              '\n'
+              '(2)\n'
+              '\n'
+              '81\n'
+              '\n'
+              '#include<iostream>\n'
+              '\n'
+              '82\n'
+              '\n'
+              'using namespace std;\n'
+              '\n'
+              '63\n'
+              '\n'
+              'int n,top;\n'
+              '\n'
+              '84\n'
+              '\n'
+              'int a[1000],stack[1000],ans[1000];\n'
+              '\n'
+              '@5\n'
+              '\n'
+              '@6 int main(){\n'
+              '\n'
+              '87\n'
+              '\n'
+              'cin>>n;\n'
+              '\n'
+              '88\n'
+              '\n'
+              'for(int i=1;i<=n;i++){\n'
+              '\n'
+              '89\n'
+              '\n'
+              '10\n'
+              '\n'
+              'cin>>a[i];\n'
+              '\n'
+              'i\n'
+              '\n'
+              '}\n'
+              '\n'
+              '12\n'
+              '\n'
+              'for(int i=1;i<=n;i++){\n'
+              '\n'
+              'a3\n'
+              '\n'
+              'while(top && a[i]>a[stack[top]]){\n'
+              '\n'
+              '14\n'
+              '\n'
+              'ans[stack[top]] = i;\n'
+              '\n'
+              'a5\n'
+              '\n'
+              'top--;\n'
+              '\n'
+              '16\n'
+              '\n'
+              '}\n'
+              '\n'
+              'stack[++top ]=i;\n'
+              '\n'
+              'a7\n'
+              '\n'
+              '}\n'
+              '\n'
+              '18\n'
+              '\n'
+              'for(int i=1;i<=n;i++){\n'
+              '\n'
+              '19\n'
+              '\n'
+              'cout<<ans[i]<<"\n'
+              '\n'
+              '2\n'
+              '\n'
+              '20\n'
+              '\n'
+              '}\n'
+              '\n'
+              '21\n'
+              '\n'
+              'return Q;\n'
+              '\n'
+              '22 }\n'
+              '\n'
+              '完成下面的判断题和单选题:\n'
+              '\n'
+              '@ 判断题'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q27',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '程序的时间复杂度为〈《 ) 。',
+  'code': '81\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '82\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          '63\n'
+          '\n'
+          'int n,top;\n'
+          '\n'
+          '84\n'
+          '\n'
+          'int a[1000],stack[1000],ans[1000];\n'
+          '\n'
+          '@5\n'
+          '\n'
+          '@6 int main(){\n'
+          '\n'
+          '87\n'
+          '\n'
+          'cin>>n;\n'
+          '\n'
+          '88\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          '89\n'
+          '\n'
+          '10\n'
+          '\n'
+          'cin>>a[i];\n'
+          '\n'
+          'i\n'
+          '\n'
+          '}\n'
+          '\n'
+          '12\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'a3\n'
+          '\n'
+          'while(top && a[i]>a[stack[top]]){\n'
+          '\n'
+          '14\n'
+          '\n'
+          'ans[stack[top]] = i;\n'
+          '\n'
+          'a5\n'
+          '\n'
+          'top--;\n'
+          '\n'
+          '16\n'
+          '\n'
+          '}\n'
+          '\n'
+          'stack[++top ]=i;\n'
+          '\n'
+          'a7\n'
+          '\n'
+          '}\n'
+          '\n'
+          '18\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          '19\n'
+          '\n'
+          'cout<<ans[i]<<"\n'
+          '\n'
+          '2\n'
+          '\n'
+          '20\n'
+          '\n'
+          '}\n'
+          '\n'
+          '21\n'
+          '\n'
+          'return Q;\n'
+          '\n'
+          '22 }\n'
+          '\n'
+          '完成下面的判断题和单选题:\n'
+          '\n'
+          '@ 判断题',
+  'options': ['O(n)',
+              'O(nlogn)',
+              'O(n?)',
+              '不确定\n'
+              '\n'
+              '(3)\n'
+              '\n'
+              '81 #include<bits/stdc++.h>\n'
+              '\n'
+              '@2 using namespace std;\n'
+              '\n'
+              '@3 const int N=1e6+5;\n'
+              '\n'
+              '684 int n,k;\n'
+              '\n'
+              '@5 int nums[N];\n'
+              '\n'
+              '66 int partition(int left,int right){\n'
+              '\n'
+              '87\n'
+              '\n'
+              'int pivot=nums[right];\n'
+              '\n'
+              '88\n'
+              '\n'
+              'int i=left-1;\n'
+              '\n'
+              '89\n'
+              '\n'
+              'for(int j=left;j<right;j++){\n'
+              '\n'
+              '10\n'
+              '\n'
+              'if (nums[j]<=pivot){\n'
+              '\n'
+              '5\n'
+              '\n'
+              'i++;\n'
+              '\n'
+              '12\n'
+              '\n'
+              'swap(nums[i],nums[j]);\n'
+              '\n'
+              'a3\n'
+              '\n'
+              '}\n'
+              '\n'
+              '14\n'
+              '\n'
+              '}\n'
+              '\n'
+              '15\n'
+              '\n'
+              'swap(nums[i+1],nums[right]);\n'
+              '\n'
+              '16\n'
+              '\n'
+              'return i+1;\n'
+              '\n'
+              '17\n'
+              '\n'
+              '}\n'
+              '\n'
+              '18\n'
+              '\n'
+              '19\n'
+              '\n'
+              'int quickSelect(int left, int right, int k) {\n'
+              '\n'
+              '20\n'
+              '\n'
+              'if (left == right) {\n'
+              '\n'
+              '21\n'
+              '\n'
+              'return nums[ left];\n'
+              '\n'
+              '22\n'
+              '\n'
+              '}\n'
+              '\n'
+              '23\n'
+              '\n'
+              'int pivotIndex\n'
+              '\n'
+              '=\n'
+              '\n'
+              '=\n'
+              '\n'
+              'partition(left, right);\n'
+              '\n'
+              '24\n'
+              '\n'
+              'if (k == pivotIndex) {\n'
+              '\n'
+              '25\n'
+              '\n'
+              'return nums[k];\n'
+              '\n'
+              '26\n'
+              '\n'
+              '} else if (k < pivotIndex) {\n'
+              '\n'
+              '27\n'
+              '\n'
+              'return quickSelect(left, pivotIndex - 1, k);\n'
+              '\n'
+              '28\n'
+              '\n'
+              '} else {\n'
+              '\n'
+              '29\n'
+              '\n'
+              'return quickSelect(pivotIndex + 1, right, k);\n'
+              '\n'
+              '30\n'
+              '\n'
+              '}\n'
+              '\n'
+              '31\n'
+              '\n'
+              'ij\n'
+              '\n'
+              '32\n'
+              '\n'
+              '33\n'
+              '\n'
+              'int main() {\n'
+              '\n'
+              '34\n'
+              '\n'
+              'cin>>n>>k;\n'
+              '\n'
+              '35,\n'
+              '\n'
+              'for(int i=1;i<=n;i++) cin>>nums[i];\n'
+              '\n'
+              '36\n'
+              '\n'
+              'int ans=quickSelect(1, n, k);\n'
+              '\n'
+              '37\n'
+              '\n'
+              'cout<<ans<<endl;\n'
+              '\n'
+              '38\n'
+              '\n'
+              'return Q;\n'
+              '\n'
+              '39 }\n'
+              '\n'
+              '保证输入的?不超过 10“，K不超过mn，且1 < ai < 10?。完成下面的判断题和单选题。\n'
+              '\n'
+              '@ 判断题'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q31',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '对于以下输入数据，输出结果为 〈\n\n) 。\n\n| 18 6\n\n8 3 4 100 2 1 23 458 1 50',
+  'code': '81 #include<bits/stdc++.h>\n'
+          '\n'
+          '@2 using namespace std;\n'
+          '\n'
+          '@3 const int N=1e6+5;\n'
+          '\n'
+          '684 int n,k;\n'
+          '\n'
+          '@5 int nums[N];\n'
+          '\n'
+          '66 int partition(int left,int right){\n'
+          '\n'
+          '87\n'
+          '\n'
+          'int pivot=nums[right];\n'
+          '\n'
+          '88\n'
+          '\n'
+          'int i=left-1;\n'
+          '\n'
+          '89\n'
+          '\n'
+          'for(int j=left;j<right;j++){\n'
+          '\n'
+          '10\n'
+          '\n'
+          'if (nums[j]<=pivot){\n'
+          '\n'
+          '5\n'
+          '\n'
+          'i++;\n'
+          '\n'
+          '12\n'
+          '\n'
+          'swap(nums[i],nums[j]);\n'
+          '\n'
+          'a3\n'
+          '\n'
+          '}\n'
+          '\n'
+          '14\n'
+          '\n'
+          '}\n'
+          '\n'
+          '15\n'
+          '\n'
+          'swap(nums[i+1],nums[right]);\n'
+          '\n'
+          '16\n'
+          '\n'
+          'return i+1;\n'
+          '\n'
+          '17\n'
+          '\n'
+          '}\n'
+          '\n'
+          '18\n'
+          '\n'
+          '19\n'
+          '\n'
+          'int quickSelect(int left, int right, int k) {\n'
+          '\n'
+          '20\n'
+          '\n'
+          'if (left == right) {\n'
+          '\n'
+          '21\n'
+          '\n'
+          'return nums[ left];\n'
+          '\n'
+          '22\n'
+          '\n'
+          '}\n'
+          '\n'
+          '23\n'
+          '\n'
+          'int pivotIndex\n'
+          '\n'
+          '=\n'
+          '\n'
+          '=\n'
+          '\n'
+          'partition(left, right);\n'
+          '\n'
+          '24\n'
+          '\n'
+          'if (k == pivotIndex) {\n'
+          '\n'
+          '25\n'
+          '\n'
+          'return nums[k];\n'
+          '\n'
+          '26\n'
+          '\n'
+          '} else if (k < pivotIndex) {\n'
+          '\n'
+          '27\n'
+          '\n'
+          'return quickSelect(left, pivotIndex - 1, k);\n'
+          '\n'
+          '28\n'
+          '\n'
+          '} else {\n'
+          '\n'
+          '29\n'
+          '\n'
+          'return quickSelect(pivotIndex + 1, right, k);\n'
+          '\n'
+          '30\n'
+          '\n'
+          '}\n'
+          '\n'
+          '31\n'
+          '\n'
+          'ij\n'
+          '\n'
+          '32\n'
+          '\n'
+          '33\n'
+          '\n'
+          'int main() {\n'
+          '\n'
+          '34\n'
+          '\n'
+          'cin>>n>>k;\n'
+          '\n'
+          '35,\n'
+          '\n'
+          'for(int i=1;i<=n;i++) cin>>nums[i];\n'
+          '\n'
+          '36\n'
+          '\n'
+          'int ans=quickSelect(1, n, k);\n'
+          '\n'
+          '37\n'
+          '\n'
+          'cout<<ans<<endl;\n'
+          '\n'
+          '38\n'
+          '\n'
+          'return Q;\n'
+          '\n'
+          '39 }\n'
+          '\n'
+          '保证输入的?不超过 10“，K不超过mn，且1 < ai < 10?。完成下面的判断题和单选题。\n'
+          '\n'
+          '@ 判断题',
+  'options': ['4', '8\n\n€23', '45'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q32',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': "对于以下输入数据:\n\n16 4\n\ni: 2643 109 7' 85\n\n程序运行结束时， num 数组内的值为〈) 。",
+  'code': '81 #include<bits/stdc++.h>\n'
+          '\n'
+          '@2 using namespace std;\n'
+          '\n'
+          '@3 const int N=1e6+5;\n'
+          '\n'
+          '684 int n,k;\n'
+          '\n'
+          '@5 int nums[N];\n'
+          '\n'
+          '66 int partition(int left,int right){\n'
+          '\n'
+          '87\n'
+          '\n'
+          'int pivot=nums[right];\n'
+          '\n'
+          '88\n'
+          '\n'
+          'int i=left-1;\n'
+          '\n'
+          '89\n'
+          '\n'
+          'for(int j=left;j<right;j++){\n'
+          '\n'
+          '10\n'
+          '\n'
+          'if (nums[j]<=pivot){\n'
+          '\n'
+          '5\n'
+          '\n'
+          'i++;\n'
+          '\n'
+          '12\n'
+          '\n'
+          'swap(nums[i],nums[j]);\n'
+          '\n'
+          'a3\n'
+          '\n'
+          '}\n'
+          '\n'
+          '14\n'
+          '\n'
+          '}\n'
+          '\n'
+          '15\n'
+          '\n'
+          'swap(nums[i+1],nums[right]);\n'
+          '\n'
+          '16\n'
+          '\n'
+          'return i+1;\n'
+          '\n'
+          '17\n'
+          '\n'
+          '}\n'
+          '\n'
+          '18\n'
+          '\n'
+          '19\n'
+          '\n'
+          'int quickSelect(int left, int right, int k) {\n'
+          '\n'
+          '20\n'
+          '\n'
+          'if (left == right) {\n'
+          '\n'
+          '21\n'
+          '\n'
+          'return nums[ left];\n'
+          '\n'
+          '22\n'
+          '\n'
+          '}\n'
+          '\n'
+          '23\n'
+          '\n'
+          'int pivotIndex\n'
+          '\n'
+          '=\n'
+          '\n'
+          '=\n'
+          '\n'
+          'partition(left, right);\n'
+          '\n'
+          '24\n'
+          '\n'
+          'if (k == pivotIndex) {\n'
+          '\n'
+          '25\n'
+          '\n'
+          'return nums[k];\n'
+          '\n'
+          '26\n'
+          '\n'
+          '} else if (k < pivotIndex) {\n'
+          '\n'
+          '27\n'
+          '\n'
+          'return quickSelect(left, pivotIndex - 1, k);\n'
+          '\n'
+          '28\n'
+          '\n'
+          '} else {\n'
+          '\n'
+          '29\n'
+          '\n'
+          'return quickSelect(pivotIndex + 1, right, k);\n'
+          '\n'
+          '30\n'
+          '\n'
+          '}\n'
+          '\n'
+          '31\n'
+          '\n'
+          'ij\n'
+          '\n'
+          '32\n'
+          '\n'
+          '33\n'
+          '\n'
+          'int main() {\n'
+          '\n'
+          '34\n'
+          '\n'
+          'cin>>n>>k;\n'
+          '\n'
+          '35,\n'
+          '\n'
+          'for(int i=1;i<=n;i++) cin>>nums[i];\n'
+          '\n'
+          '36\n'
+          '\n'
+          'int ans=quickSelect(1, n, k);\n'
+          '\n'
+          '37\n'
+          '\n'
+          'cout<<ans<<endl;\n'
+          '\n'
+          '38\n'
+          '\n'
+          'return Q;\n'
+          '\n'
+          '39 }\n'
+          '\n'
+          '保证输入的?不超过 10“，K不超过mn，且1 < ai < 10?。完成下面的判断题和单选题。\n'
+          '\n'
+          '@ 判断题',
+  'options': ['[1,2,3,4,5,6,7,8,9,10]', '[1,2,3,4,5,10,9,8,7,6]', '[1,2,3,4,5,10,9,7,8,6]', '[3,2,1,4,5,10,9,8,7,6]'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2023-q33',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '该程序时间复杂度为〈 ) 。',
+  'code': '81 #include<bits/stdc++.h>\n'
+          '\n'
+          '@2 using namespace std;\n'
+          '\n'
+          '@3 const int N=1e6+5;\n'
+          '\n'
+          '684 int n,k;\n'
+          '\n'
+          '@5 int nums[N];\n'
+          '\n'
+          '66 int partition(int left,int right){\n'
+          '\n'
+          '87\n'
+          '\n'
+          'int pivot=nums[right];\n'
+          '\n'
+          '88\n'
+          '\n'
+          'int i=left-1;\n'
+          '\n'
+          '89\n'
+          '\n'
+          'for(int j=left;j<right;j++){\n'
+          '\n'
+          '10\n'
+          '\n'
+          'if (nums[j]<=pivot){\n'
+          '\n'
+          '5\n'
+          '\n'
+          'i++;\n'
+          '\n'
+          '12\n'
+          '\n'
+          'swap(nums[i],nums[j]);\n'
+          '\n'
+          'a3\n'
+          '\n'
+          '}\n'
+          '\n'
+          '14\n'
+          '\n'
+          '}\n'
+          '\n'
+          '15\n'
+          '\n'
+          'swap(nums[i+1],nums[right]);\n'
+          '\n'
+          '16\n'
+          '\n'
+          'return i+1;\n'
+          '\n'
+          '17\n'
+          '\n'
+          '}\n'
+          '\n'
+          '18\n'
+          '\n'
+          '19\n'
+          '\n'
+          'int quickSelect(int left, int right, int k) {\n'
+          '\n'
+          '20\n'
+          '\n'
+          'if (left == right) {\n'
+          '\n'
+          '21\n'
+          '\n'
+          'return nums[ left];\n'
+          '\n'
+          '22\n'
+          '\n'
+          '}\n'
+          '\n'
+          '23\n'
+          '\n'
+          'int pivotIndex\n'
+          '\n'
+          '=\n'
+          '\n'
+          '=\n'
+          '\n'
+          'partition(left, right);\n'
+          '\n'
+          '24\n'
+          '\n'
+          'if (k == pivotIndex) {\n'
+          '\n'
+          '25\n'
+          '\n'
+          'return nums[k];\n'
+          '\n'
+          '26\n'
+          '\n'
+          '} else if (k < pivotIndex) {\n'
+          '\n'
+          '27\n'
+          '\n'
+          'return quickSelect(left, pivotIndex - 1, k);\n'
+          '\n'
+          '28\n'
+          '\n'
+          '} else {\n'
+          '\n'
+          '29\n'
+          '\n'
+          'return quickSelect(pivotIndex + 1, right, k);\n'
+          '\n'
+          '30\n'
+          '\n'
+          '}\n'
+          '\n'
+          '31\n'
+          '\n'
+          'ij\n'
+          '\n'
+          '32\n'
+          '\n'
+          '33\n'
+          '\n'
+          'int main() {\n'
+          '\n'
+          '34\n'
+          '\n'
+          'cin>>n>>k;\n'
+          '\n'
+          '35,\n'
+          '\n'
+          'for(int i=1;i<=n;i++) cin>>nums[i];\n'
+          '\n'
+          '36\n'
+          '\n'
+          'int ans=quickSelect(1, n, k);\n'
+          '\n'
+          '37\n'
+          '\n'
+          'cout<<ans<<endl;\n'
+          '\n'
+          '38\n'
+          '\n'
+          'return Q;\n'
+          '\n'
+          '39 }\n'
+          '\n'
+          '保证输入的?不超过 10“，K不超过mn，且1 < ai < 10?。完成下面的判断题和单选题。\n'
+          '\n'
+          '@ 判断题',
+  'options': ['O(logn)',
+              'O(n)',
+              'O(mlogn)',
+              'O(n?)\n'
+              '\n'
+              '三、完善程序〈单选题，每小题 3 2, Kit 30 分\n'
+              '\n'
+              '(1) 高精度减法\n'
+              '\n'
+              '输入两个高精度数a 和b，输出 a-b 的值。\n'
+              '\n'
+              '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+              '\n'
+              '种功能，以适应不同的数据类型的运算。\n'
+              '\n'
+              '#include<cstdio>\n'
+              '\n'
+              '#include<iostream>\n'
+              '\n'
+              '#include<cstring>\n'
+              '\n'
+              'using namespace std;\n'
+              '\n'
+              'const int N=10100;\n'
+              '\n'
+              'struct big{\n'
+              '\n'
+              'int d[N];\n'
+              '\n'
+              'int len;\n'
+              '\n'
+              '5\n'
+              '\n'
+              'big a,b;\n'
+              '\n'
+              'char s[N];\n'
+              '\n'
+              'big read(){//读入大整数\n'
+              '\n'
+              'big c;\n'
+              '\n'
+              'memset(c.d,@,sizeof(c.d));\n'
+              '\n'
+              'scanf("%s",s+1);\n'
+              '\n'
+              'int n=strlen(s+1);\n'
+              '\n'
+              '加\n'
+              '\n'
+              'for(int i=1;i<=n;i++)c.d[i]=\n'
+              '\n'
+              'c.len=n;\n'
+              '\n'
+              'return c;\n'
+              '\n'
+              '}\n'
+              '\n'
+              'bool operator >=(big a,big b){//重载>=\n'
+              '\n'
+              'int n=a.len,m=b.len;\n'
+              '\n'
+              'if(n>m)return 1;\n'
+              '\n'
+              'if(n<m)return @;\n'
+              '\n'
+              'for(int i=n;i>@;i--){\n'
+              '\n'
+              'if(a.d[i]>b.d[i])return 1;\n'
+              '\n'
+              'if(a.d[i]<b.d[i])return @;\n'
+              '\n'
+              '}\n'
+              '\n'
+              'return 1;\n'
+              '\n'
+              '}\n'
+              '\n'
+              'big operator -(big a,big b){//重载-\n'
+              '\n'
+              'int n=a.len;\n'
+              '\n'
+              'for(int i=1;i<=n;i++){\n'
+              '\n'
+              'if( @\n'
+              '\n'
+              '){\n'
+              '\n'
+              'a.d[i+1]--;\n'
+              '\n'
+              '@\n'
+              '\n'
+              '2\n'
+              '\n'
+              '}\n'
+              '\n'
+              'a.d[i]-=b.d[i];\n'
+              '\n'
+              'while( @\n'
+              '\n'
+              ')n--5\n'
+              '\n'
+              'a.len=n;\n'
+              '\n'
+              'return a;\n'
+              '\n'
+              '}\n'
+              '\n'
+              'void write(big a){//输出大整数\n'
+              '\n'
+              'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+              '\n'
+              'printf("\\n");\n'
+              '\n'
+              '}\n'
+              '\n'
+              'int main(){\n'
+              '\n'
+              'a=read();\n'
+              '\n'
+              'b=read();\n'
+              '\n'
+              'if (a>=b) {\n'
+              '\n'
+              'write(a-b);\n'
+              '\n'
+              '}\n'
+              '\n'
+              'else{\n'
+              '\n'
+              'printf("-");\n'
+              '\n'
+              '®\n'
+              '\n'
+              '2\n'
+              '\n'
+              '}\n'
+              '\n'
+              'return 9;\n'
+              '\n'
+              '}\n'
+              '\n'
+              '单项选择'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q34',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应措〈\n\n)',
+  'code': '',
+  'options': ['s[n-i]', "s[n-i]-'@'\n\nCc. s[n+1-i]", "s[n+1-i]-'0'"],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q35',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应填 ¢\n\n)',
+  'code': '30 分\n'
+          '\n'
+          '(1) 高精度减法\n'
+          '\n'
+          '输入两个高精度数a 和b，输出 a-b 的值。\n'
+          '\n'
+          '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+          '\n'
+          '种功能，以适应不同的数据类型的运算。\n'
+          '\n'
+          '#include<cstdio>\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '#include<cstring>\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          'const int N=10100;\n'
+          '\n'
+          'struct big{\n'
+          '\n'
+          'int d[N];\n'
+          '\n'
+          'int len;\n'
+          '\n'
+          '5\n'
+          '\n'
+          'big a,b;\n'
+          '\n'
+          'char s[N];\n'
+          '\n'
+          'big read(){//读入大整数\n'
+          '\n'
+          'big c;\n'
+          '\n'
+          'memset(c.d,@,sizeof(c.d));\n'
+          '\n'
+          'scanf("%s",s+1);\n'
+          '\n'
+          'int n=strlen(s+1);\n'
+          '\n'
+          '加\n'
+          '\n'
+          'for(int i=1;i<=n;i++)c.d[i]=\n'
+          '\n'
+          'c.len=n;\n'
+          '\n'
+          'return c;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'bool operator >=(big a,big b){//重载>=\n'
+          '\n'
+          'int n=a.len,m=b.len;\n'
+          '\n'
+          'if(n>m)return 1;\n'
+          '\n'
+          'if(n<m)return @;\n'
+          '\n'
+          'for(int i=n;i>@;i--){\n'
+          '\n'
+          'if(a.d[i]>b.d[i])return 1;\n'
+          '\n'
+          'if(a.d[i]<b.d[i])return @;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 1;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'big operator -(big a,big b){//重载-\n'
+          '\n'
+          'int n=a.len;\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'if( @\n'
+          '\n'
+          '){\n'
+          '\n'
+          'a.d[i+1]--;\n'
+          '\n'
+          '@\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'a.d[i]-=b.d[i];\n'
+          '\n'
+          'while( @\n'
+          '\n'
+          ')n--5\n'
+          '\n'
+          'a.len=n;\n'
+          '\n'
+          'return a;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'void write(big a){//输出大整数\n'
+          '\n'
+          'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+          '\n'
+          'printf("\\n");\n'
+          '\n'
+          '}\n'
+          '\n'
+          'int main(){\n'
+          '\n'
+          'a=read();\n'
+          '\n'
+          'b=read();\n'
+          '\n'
+          'if (a>=b) {\n'
+          '\n'
+          'write(a-b);\n'
+          '\n'
+          '}\n'
+          '\n'
+          'else{\n'
+          '\n'
+          'printf("-");\n'
+          '\n'
+          '®\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 9;\n'
+          '\n'
+          '}\n'
+          '\n'
+          '单项选择',
+  'options': ['A. a.d[i]>b.d[i]\n\na.d[i]<b.d[i]', 'a.d[i]=b.d[i]', 'a.d[i]==b.d[i]'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2023-q37',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应填 (\n\n)',
+  'code': '30 分\n'
+          '\n'
+          '(1) 高精度减法\n'
+          '\n'
+          '输入两个高精度数a 和b，输出 a-b 的值。\n'
+          '\n'
+          '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+          '\n'
+          '种功能，以适应不同的数据类型的运算。\n'
+          '\n'
+          '#include<cstdio>\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '#include<cstring>\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          'const int N=10100;\n'
+          '\n'
+          'struct big{\n'
+          '\n'
+          'int d[N];\n'
+          '\n'
+          'int len;\n'
+          '\n'
+          '5\n'
+          '\n'
+          'big a,b;\n'
+          '\n'
+          'char s[N];\n'
+          '\n'
+          'big read(){//读入大整数\n'
+          '\n'
+          'big c;\n'
+          '\n'
+          'memset(c.d,@,sizeof(c.d));\n'
+          '\n'
+          'scanf("%s",s+1);\n'
+          '\n'
+          'int n=strlen(s+1);\n'
+          '\n'
+          '加\n'
+          '\n'
+          'for(int i=1;i<=n;i++)c.d[i]=\n'
+          '\n'
+          'c.len=n;\n'
+          '\n'
+          'return c;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'bool operator >=(big a,big b){//重载>=\n'
+          '\n'
+          'int n=a.len,m=b.len;\n'
+          '\n'
+          'if(n>m)return 1;\n'
+          '\n'
+          'if(n<m)return @;\n'
+          '\n'
+          'for(int i=n;i>@;i--){\n'
+          '\n'
+          'if(a.d[i]>b.d[i])return 1;\n'
+          '\n'
+          'if(a.d[i]<b.d[i])return @;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 1;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'big operator -(big a,big b){//重载-\n'
+          '\n'
+          'int n=a.len;\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'if( @\n'
+          '\n'
+          '){\n'
+          '\n'
+          'a.d[i+1]--;\n'
+          '\n'
+          '@\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'a.d[i]-=b.d[i];\n'
+          '\n'
+          'while( @\n'
+          '\n'
+          ')n--5\n'
+          '\n'
+          'a.len=n;\n'
+          '\n'
+          'return a;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'void write(big a){//输出大整数\n'
+          '\n'
+          'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+          '\n'
+          'printf("\\n");\n'
+          '\n'
+          '}\n'
+          '\n'
+          'int main(){\n'
+          '\n'
+          'a=read();\n'
+          '\n'
+          'b=read();\n'
+          '\n'
+          'if (a>=b) {\n'
+          '\n'
+          'write(a-b);\n'
+          '\n'
+          '}\n'
+          '\n'
+          'else{\n'
+          '\n'
+          'printf("-");\n'
+          '\n'
+          '®\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 9;\n'
+          '\n'
+          '}\n'
+          '\n'
+          '单项选择',
+  'options': ['a.d[n]==',
+              'n>1',
+              'a.d[n]==0&&n>1',
+              'a.d[n]==0| |n>1\n\n38 .@处应填 (\n\n)',
+              'write(b-a)',
+              'b-a',
+              'write(a-b)',
+              '-write(a-b)\n'
+              '\n'
+              '(2) 求区间最值\n'
+              '\n'
+              '给定序列 an\n'
+              '\n'
+              '你需要回答 q 次询问，每次询问一个区间 [lr] 内的最大值与最小值之\n'
+              '\n'
+              '#\n'
+              '\n'
+              'AGG n,q<=100000,1<=1<=r<=n, ai<=1000000.\n'
+              '\n'
+              '提示: 每次询问暴力去求区间最值很显然超时，因此我们采用分块算法，分块算法如下\n'
+              '\n'
+              '1、分块: 将序列分成等长的 Via块，其中每块长度也为\\Wa，预处理并记录每个元素所属\n'
+              '\n'
+              '的块以及每块的左右端点下标、最大值和最小值。'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2023-q39',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应填 (\n\n) 。',
+  'code': '30 分\n'
+          '\n'
+          '(1) 高精度减法\n'
+          '\n'
+          '输入两个高精度数a 和b，输出 a-b 的值。\n'
+          '\n'
+          '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+          '\n'
+          '种功能，以适应不同的数据类型的运算。\n'
+          '\n'
+          '#include<cstdio>\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '#include<cstring>\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          'const int N=10100;\n'
+          '\n'
+          'struct big{\n'
+          '\n'
+          'int d[N];\n'
+          '\n'
+          'int len;\n'
+          '\n'
+          '5\n'
+          '\n'
+          'big a,b;\n'
+          '\n'
+          'char s[N];\n'
+          '\n'
+          'big read(){//读入大整数\n'
+          '\n'
+          'big c;\n'
+          '\n'
+          'memset(c.d,@,sizeof(c.d));\n'
+          '\n'
+          'scanf("%s",s+1);\n'
+          '\n'
+          'int n=strlen(s+1);\n'
+          '\n'
+          '加\n'
+          '\n'
+          'for(int i=1;i<=n;i++)c.d[i]=\n'
+          '\n'
+          'c.len=n;\n'
+          '\n'
+          'return c;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'bool operator >=(big a,big b){//重载>=\n'
+          '\n'
+          'int n=a.len,m=b.len;\n'
+          '\n'
+          'if(n>m)return 1;\n'
+          '\n'
+          'if(n<m)return @;\n'
+          '\n'
+          'for(int i=n;i>@;i--){\n'
+          '\n'
+          'if(a.d[i]>b.d[i])return 1;\n'
+          '\n'
+          'if(a.d[i]<b.d[i])return @;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 1;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'big operator -(big a,big b){//重载-\n'
+          '\n'
+          'int n=a.len;\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'if( @\n'
+          '\n'
+          '){\n'
+          '\n'
+          'a.d[i+1]--;\n'
+          '\n'
+          '@\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'a.d[i]-=b.d[i];\n'
+          '\n'
+          'while( @\n'
+          '\n'
+          ')n--5\n'
+          '\n'
+          'a.len=n;\n'
+          '\n'
+          'return a;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'void write(big a){//输出大整数\n'
+          '\n'
+          'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+          '\n'
+          'printf("\\n");\n'
+          '\n'
+          '}\n'
+          '\n'
+          'int main(){\n'
+          '\n'
+          'a=read();\n'
+          '\n'
+          'b=read();\n'
+          '\n'
+          'if (a>=b) {\n'
+          '\n'
+          'write(a-b);\n'
+          '\n'
+          '}\n'
+          '\n'
+          'else{\n'
+          '\n'
+          'printf("-");\n'
+          '\n'
+          '®\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 9;\n'
+          '\n'
+          '}\n'
+          '\n'
+          '单项选择',
+  'options': ['L[i]=(i-1)*block,R[i]=i*block',
+              'L[i]=(i-1)*block+1,R[i]=i*block',
+              'L[i]=i*block+1,R[i]=(i+1) *block',
+              'L[i]=i*block,R[i]=(i+1)*block\n\nasl'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2023-q40',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应填〈\n\na',
+  'code': '30 分\n'
+          '\n'
+          '(1) 高精度减法\n'
+          '\n'
+          '输入两个高精度数a 和b，输出 a-b 的值。\n'
+          '\n'
+          '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+          '\n'
+          '种功能，以适应不同的数据类型的运算。\n'
+          '\n'
+          '#include<cstdio>\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '#include<cstring>\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          'const int N=10100;\n'
+          '\n'
+          'struct big{\n'
+          '\n'
+          'int d[N];\n'
+          '\n'
+          'int len;\n'
+          '\n'
+          '5\n'
+          '\n'
+          'big a,b;\n'
+          '\n'
+          'char s[N];\n'
+          '\n'
+          'big read(){//读入大整数\n'
+          '\n'
+          'big c;\n'
+          '\n'
+          'memset(c.d,@,sizeof(c.d));\n'
+          '\n'
+          'scanf("%s",s+1);\n'
+          '\n'
+          'int n=strlen(s+1);\n'
+          '\n'
+          '加\n'
+          '\n'
+          'for(int i=1;i<=n;i++)c.d[i]=\n'
+          '\n'
+          'c.len=n;\n'
+          '\n'
+          'return c;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'bool operator >=(big a,big b){//重载>=\n'
+          '\n'
+          'int n=a.len,m=b.len;\n'
+          '\n'
+          'if(n>m)return 1;\n'
+          '\n'
+          'if(n<m)return @;\n'
+          '\n'
+          'for(int i=n;i>@;i--){\n'
+          '\n'
+          'if(a.d[i]>b.d[i])return 1;\n'
+          '\n'
+          'if(a.d[i]<b.d[i])return @;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 1;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'big operator -(big a,big b){//重载-\n'
+          '\n'
+          'int n=a.len;\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'if( @\n'
+          '\n'
+          '){\n'
+          '\n'
+          'a.d[i+1]--;\n'
+          '\n'
+          '@\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'a.d[i]-=b.d[i];\n'
+          '\n'
+          'while( @\n'
+          '\n'
+          ')n--5\n'
+          '\n'
+          'a.len=n;\n'
+          '\n'
+          'return a;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'void write(big a){//输出大整数\n'
+          '\n'
+          'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+          '\n'
+          'printf("\\n");\n'
+          '\n'
+          '}\n'
+          '\n'
+          'int main(){\n'
+          '\n'
+          'a=read();\n'
+          '\n'
+          'b=read();\n'
+          '\n'
+          'if (a>=b) {\n'
+          '\n'
+          'write(a-b);\n'
+          '\n'
+          '}\n'
+          '\n'
+          'else{\n'
+          '\n'
+          'printf("-");\n'
+          '\n'
+          '®\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 9;\n'
+          '\n'
+          '}\n'
+          '\n'
+          '单项选择',
+  'options': ['(i-1)/block+1', '(i-1)/block', 'i/block+1', 'i/block'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2023-q41',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应填〈\n\nde',
+  'code': '30 分\n'
+          '\n'
+          '(1) 高精度减法\n'
+          '\n'
+          '输入两个高精度数a 和b，输出 a-b 的值。\n'
+          '\n'
+          '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+          '\n'
+          '种功能，以适应不同的数据类型的运算。\n'
+          '\n'
+          '#include<cstdio>\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '#include<cstring>\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          'const int N=10100;\n'
+          '\n'
+          'struct big{\n'
+          '\n'
+          'int d[N];\n'
+          '\n'
+          'int len;\n'
+          '\n'
+          '5\n'
+          '\n'
+          'big a,b;\n'
+          '\n'
+          'char s[N];\n'
+          '\n'
+          'big read(){//读入大整数\n'
+          '\n'
+          'big c;\n'
+          '\n'
+          'memset(c.d,@,sizeof(c.d));\n'
+          '\n'
+          'scanf("%s",s+1);\n'
+          '\n'
+          'int n=strlen(s+1);\n'
+          '\n'
+          '加\n'
+          '\n'
+          'for(int i=1;i<=n;i++)c.d[i]=\n'
+          '\n'
+          'c.len=n;\n'
+          '\n'
+          'return c;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'bool operator >=(big a,big b){//重载>=\n'
+          '\n'
+          'int n=a.len,m=b.len;\n'
+          '\n'
+          'if(n>m)return 1;\n'
+          '\n'
+          'if(n<m)return @;\n'
+          '\n'
+          'for(int i=n;i>@;i--){\n'
+          '\n'
+          'if(a.d[i]>b.d[i])return 1;\n'
+          '\n'
+          'if(a.d[i]<b.d[i])return @;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 1;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'big operator -(big a,big b){//重载-\n'
+          '\n'
+          'int n=a.len;\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'if( @\n'
+          '\n'
+          '){\n'
+          '\n'
+          'a.d[i+1]--;\n'
+          '\n'
+          '@\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'a.d[i]-=b.d[i];\n'
+          '\n'
+          'while( @\n'
+          '\n'
+          ')n--5\n'
+          '\n'
+          'a.len=n;\n'
+          '\n'
+          'return a;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'void write(big a){//输出大整数\n'
+          '\n'
+          'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+          '\n'
+          'printf("\\n");\n'
+          '\n'
+          '}\n'
+          '\n'
+          'int main(){\n'
+          '\n'
+          'a=read();\n'
+          '\n'
+          'b=read();\n'
+          '\n'
+          'if (a>=b) {\n'
+          '\n'
+          'write(a-b);\n'
+          '\n'
+          '}\n'
+          '\n'
+          'else{\n'
+          '\n'
+          'printf("-");\n'
+          '\n'
+          '®\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 9;\n'
+          '\n'
+          '}\n'
+          '\n'
+          '单项选择',
+  'options': ['r-14+1<block', 'belong[1]==belong[r]', '1/block==r/block', '1/block+1==r/block'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2023-q42',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round1/2023CSP-X1试题及参考答案.pdf',
+  'stem': '@处应填〈\n\n) 。',
+  'code': '30 分\n'
+          '\n'
+          '(1) 高精度减法\n'
+          '\n'
+          '输入两个高精度数a 和b，输出 a-b 的值。\n'
+          '\n'
+          '程序中使用了运算符重载: 运算符重载;”就是对已有的运算符重新进行定义，赋予其另一\n'
+          '\n'
+          '种功能，以适应不同的数据类型的运算。\n'
+          '\n'
+          '#include<cstdio>\n'
+          '\n'
+          '#include<iostream>\n'
+          '\n'
+          '#include<cstring>\n'
+          '\n'
+          'using namespace std;\n'
+          '\n'
+          'const int N=10100;\n'
+          '\n'
+          'struct big{\n'
+          '\n'
+          'int d[N];\n'
+          '\n'
+          'int len;\n'
+          '\n'
+          '5\n'
+          '\n'
+          'big a,b;\n'
+          '\n'
+          'char s[N];\n'
+          '\n'
+          'big read(){//读入大整数\n'
+          '\n'
+          'big c;\n'
+          '\n'
+          'memset(c.d,@,sizeof(c.d));\n'
+          '\n'
+          'scanf("%s",s+1);\n'
+          '\n'
+          'int n=strlen(s+1);\n'
+          '\n'
+          '加\n'
+          '\n'
+          'for(int i=1;i<=n;i++)c.d[i]=\n'
+          '\n'
+          'c.len=n;\n'
+          '\n'
+          'return c;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'bool operator >=(big a,big b){//重载>=\n'
+          '\n'
+          'int n=a.len,m=b.len;\n'
+          '\n'
+          'if(n>m)return 1;\n'
+          '\n'
+          'if(n<m)return @;\n'
+          '\n'
+          'for(int i=n;i>@;i--){\n'
+          '\n'
+          'if(a.d[i]>b.d[i])return 1;\n'
+          '\n'
+          'if(a.d[i]<b.d[i])return @;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 1;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'big operator -(big a,big b){//重载-\n'
+          '\n'
+          'int n=a.len;\n'
+          '\n'
+          'for(int i=1;i<=n;i++){\n'
+          '\n'
+          'if( @\n'
+          '\n'
+          '){\n'
+          '\n'
+          'a.d[i+1]--;\n'
+          '\n'
+          '@\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'a.d[i]-=b.d[i];\n'
+          '\n'
+          'while( @\n'
+          '\n'
+          ')n--5\n'
+          '\n'
+          'a.len=n;\n'
+          '\n'
+          'return a;\n'
+          '\n'
+          '}\n'
+          '\n'
+          'void write(big a){//输出大整数\n'
+          '\n'
+          'for(int i=a.len;ji>6;ji--)printf("%d",a.d[i]);\n'
+          '\n'
+          'printf("\\n");\n'
+          '\n'
+          '}\n'
+          '\n'
+          'int main(){\n'
+          '\n'
+          'a=read();\n'
+          '\n'
+          'b=read();\n'
+          '\n'
+          'if (a>=b) {\n'
+          '\n'
+          'write(a-b);\n'
+          '\n'
+          '}\n'
+          '\n'
+          'else{\n'
+          '\n'
+          'printf("-");\n'
+          '\n'
+          '®\n'
+          '\n'
+          '2\n'
+          '\n'
+          '}\n'
+          '\n'
+          'return 9;\n'
+          '\n'
+          '}\n'
+          '\n'
+          '单项选择',
+  'options': ['int i=belong[1]; i<x=belong[r]; i++',
+              'int i=R[belong[1]]; i<L[belong[r]]; i++\n\n全\n\nint i=1/block+1; i<=r/block+1; i++',
+              'int i=belong[1]+1; i<=belong[r]-1; i++\n\n43 。@处应填〈\n\nDi',
+              'query(1-1,r)',
+              'query(l,r)',
+              'query(1+1,r)',
+              'query(1+1,r-1)\n'
+              '\n'
+              '12\n'
+              '\n'
+              '2023 年山东省信息学小学组 〈CSP-X) 第一轮试题答案\n'
+              '\n'
+              '一、单项选择题 (共 15 题，每题 2 分，共计 30 分)\n'
+              '\n'
+              '1\n'
+              '\n'
+              '2\n'
+              '\n'
+              '3\n'
+              '\n'
+              '4\n'
+              '\n'
+              '5\n'
+              '\n'
+              '6\n'
+              '\n'
+              '7\n'
+              '\n'
+              '8\n'
+              '\n'
+              '9\n'
+              '\n'
+              '10',
+              'c',
+              '11\n\n12\n\n13\n\n14\n\n15',
+              '€',
+              '二、阅读程序判断题 2 分，选择题 3分，共计 40 分)\n'
+              '\n'
+              'FUT OAV BAX)\n'
+              '\n'
+              '单选题\n'
+              '\n'
+              '第一题\n'
+              '\n'
+              '16 (1 分)\n'
+              '\n'
+              '17\n'
+              '\n'
+              '18\n'
+              '\n'
+              '19\n'
+              '\n'
+              '20\n'
+              '\n'
+              '21\n'
+              '\n'
+              'x\n'
+              '\n'
+              '判断题(填V或X)\n'
+              '\n'
+              '单选题\n'
+              '\n'
+              '第\n'
+              '\n'
+              '题\n'
+              '\n'
+              '22 (1.47)\n'
+              '\n'
+              '23\n'
+              '\n'
+              '24\n'
+              '\n'
+              '25\n'
+              '\n'
+              '26\n'
+              '\n'
+              '27\n'
+              '\n'
+              'x\n'
+              '\n'
+              '判断题(填 V eR x)\n'
+              '\n'
+              '单选题\n'
+              '\n'
+              '28 (1 4)\n'
+              '\n'
+              '29\n'
+              '\n'
+              '30\n'
+              '\n'
+              '31\n'
+              '\n'
+              '32\n'
+              '\n'
+              '33\n'
+              '\n'
+              'x\n'
+              '\n'
+              '三、完善程序 〈单选题，每小题 3 分，共计 307)\n'
+              '\n'
+              '34\n'
+              '\n'
+              '35\n'
+              '\n'
+              '36\n'
+              '\n'
+              '37\n'
+              '\n'
+              '38\n'
+              '\n'
+              '39\n'
+              '\n'
+              '40\n'
+              '\n'
+              '41\n'
+              '\n'
+              '42\n'
+              '\n'
+              '43',
+              '@',
+              'B'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q01',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '(2024)10+(2F)16 的运算结果是(        )。',
+  'code': '',
+  'options': ['( 100000010110)2', '(816)16', '(2071)10', '(4026)8'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q02',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '执行完以下代码后，c 的值是(                    )。\nint a=9,b=6,c;\nc=a/b+0.5;',
+  'code': '',
+  'options': ['5', '2', '0', '1'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2024-q03',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '将数组{7, 20, 4, 16, 88, 0, 55, 100}中的元素按从大到小的顺序排列，每次可以交换任意两个\n元素，最少需要交换(          )次。',
+  'code': '',
+  'options': ['4', '5', '6', '7'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q04',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '若待排序对象序列在排序前已按其排序码递增顺序排序，则采用(                                   )方法比较次数最少。',
+  'code': '',
+  'options': ['直接插入排序', '快速排序', '归并排序', '直接选择排序'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q05',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '设有一个 100 阶的对称矩阵保存在二维数组 a[100][100]，满足 a[i][j]=a[j][i]，如果采用压缩\n'
+          '存储方式按行将矩阵的下三角部分的元素存入一维数组 b[ ]中，a[0][0]存入 b[0]中，则 a[10][5]在\n'
+          'b[ ]中(  )位置。',
+  'code': '',
+  'options': ['50', '60', '51', '61'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q06',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '字符串𝑎𝑏𝑐𝑎𝑏𝑐𝑎𝑏𝑐有多少不同的非空子串？(                        )。',
+  'code': '',
+  'options': ['24', '36', '45', '46'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q07',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '一个栈的输入顺序为 1、2、3、4、5、6，下列序列中可能是栈的输出序列是(                                       )。',
+  'code': '',
+  'options': ['654312', '241356', '216543', '125346'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q08',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '一棵二叉树的中序遍历序列为:DGBAECHF，后序遍历序列为:GDBEHFCA，则前序遍历的序列是(                                )。',
+  'code': '',
+  'options': ['ABCDFGHE', 'ABDGCEFH', 'ACBGDHEF', 'ACEFHBGD'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q09',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '对于下面这段代码，如果在主函数里调用 f(4,4)，在程序运行结束前，f 函数共被调用了多少次？\n'
+          '(     )\n'
+          'void f(int n,int m){\n'
+          '    if(n&&m){\n'
+          '        for(int i=1;i<=m;i++) f(n-1,i-1);\n'
+          '    }\n'
+          '}',
+  'code': '',
+  'options': ['15', '16', '26', '27'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q10',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '有 n 个相同结点并且其高度为 n 的二叉树的数目是(                          ) 。\n'
+          '                                              1 / 8',
+  'code': '',
+  'options': ['n', '2n', '2n-1', '2(n-1)'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q11',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '在有 n 个叶节点的哈夫曼树中，其节点总数为 (               )。',
+  'code': '',
+  'options': ['2n', '2n-1', '2n+1', '不确定'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q12',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': 'n 个顶点 n 条边构成的简单无向图(无重边和自环)，下列描述不正确的是(                )。',
+  'code': '',
+  'options': ['一定有环', '不一定有环', '如果是连通图有 1 个环', '如果图不连通，至少有 2 个环'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q13',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '以下哪句话与 “爱她，就请她吃哈根达斯” 等价？(                 )。',
+  'code': '',
+  'options': ['不爱她，就不请她吃哈根达斯。', '请她吃哈根达斯，就表示爱她。', '不请她吃哈根达斯就表示不爱她。', '不爱她，也可以请她吃哈根达斯。'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q14',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '5 个男生 3 个女生排成一排，3 女生都不能相邻，有多少种方案(               )。',
+  'code': '',
+  'options': ['14400', '2400', '40320', '720'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q15',
+  'competition': 'csp_x_round1',
+  'category': '单项选择题',
+  'source_question_type': '单项选择题',
+  'display_type': '单项选择题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '由 3 个 a，2 个 b 和 1 个 c 构成的所有字符串共有(            )个。',
+  'code': '',
+  'options': ['720',
+              '360',
+              '120',
+              '60\n'
+              '\n'
+              '二. 阅读程序(判断题正确填√，错误填×；除了特殊说明外，判断题 2 分,选\n'
+              '\n'
+              '择题 3 分，共 40 分)\n'
+              '(1)(共 12 分)\n'
+              '01 #include<cstdio>\n'
+              '02 #include<iostream>\n'
+              '03 #include<cstring>\n'
+              '04 using namespace std;\n'
+              '05 int x[10000];\n'
+              '06 int y[100000000];\n'
+              '07 long long s,sum;\n'
+              '08 int a,b;\n'
+              '09 int main(){\n'
+              '10    memset(x,-1,sizeof(x));\n'
+              '11    memset(y,1,sizeof(y));\n'
+              '12    a=b=200000;\n'
+              '13    s=a*b;\n'
+              '14    int cnt;\n'
+              '15    for(int i=1;i<=10000;i++){\n'
+              '16         sum+=y[i];\n'
+              '17         cnt=cnt+1;\n'
+              '18     }\n'
+              '19   cout<<sum<<endl;\n'
+              '20   cout<<cnt<<endl;\n'
+              '21   return 0;\n'
+              '22 }\n'
+              '\n'
+              '判断题'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2024-q16',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '语句 memset(x,-1,sizeof(x));执行完后，x[0]=-1。(           )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q17',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '语句 memset(y,1,sizeof(y));执行完后，y[0]= 1。 (           )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q18',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '程序运行后 sum 的值不是 10000。(               )\n                                         2 / 8',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q19',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '语句 s=a*b; 执行完后，s 的值是 40000000000。(                )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q20',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '如果内存限制 256MB，程序运行没有超内存。(                      )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q21',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '程序运行后，最后输出 cnt 的值一定是 10000(                   )\n'
+          '\n'
+          '(2)(共 13 分)\n'
+          '01 #include<bits/stdc++.h>\n'
+          '02 using namespace std;\n'
+          '03 int f(int a, int n, int m)\n'
+          '04 {\n'
+          '05    if(a==1) return 1%m;①\n'
+          '06    long long ans = 1%m;\n'
+          '07    while(n){\n'
+          '08        if(n&1)\n'
+          '09            ans = (ans * a) % m;②\n'
+          '10        a = (a * a) % m;\n'
+          '11        n >>= 1;\n'
+          '12    }\n'
+          '13    return ans;\n'
+          '14 }\n'
+          '15 int main()\n'
+          '16 {\n'
+          '17    int a, n, m;\n'
+          '18    cin >> a >> n >> m;\n'
+          '19    cout << f(a, n, m);\n'
+          '20 }\n'
+          '\n'
+          '判断题',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q22',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '程序的时间复杂度是O(logn) (          )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q23',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '删除①处语句，程序输出不受影响 (                     )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q24',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '如果输入为 1 999 2048 ，②处语句会执行 8 次 (               )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q25',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '如果输入 1 0 1，输出结果为 1 (              )\n\n单选题',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q26',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '(2 分)输入 2 13 2048 输出为(             )',
+  'code': '',
+  'options': ['0', '1', '2047', '2000'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q27',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '输入 7 11 10，输出为(       )',
+  'code': '',
+  'options': ['5',
+              '3',
+              '7',
+              '1\n'
+              '\n'
+              '(3)(共 15 分)\n'
+              '                                          3 / 8\n'
+              '01 #include<iostream>\n'
+              '02 #include<cstring>\n'
+              '03 using namespace std;\n'
+              '04 char s[10000];\n'
+              '05 int cnt[200];\n'
+              '06 int main(){\n'
+              '07 scanf("%s",s);\n'
+              '08 for(int i=0;i<strlen(s);i++){\n'
+              '09      if(s[i]>=48&&s[i]<=57&&cnt[s[i]-48]<=10){\n'
+              '10          s[strlen(s)]=s[i];\n'
+              '11      }\n'
+              '12      cnt[s[i]-48]++;\n'
+              '13 }\n'
+              '14 printf("%s\\n",s);\n'
+              '15 return 0;\n'
+              '16 }\n'
+              '\n'
+              '假设输入的字符串长度不超过 50 且只包含数字和小写字母，完成下面的判断题和单选题:\n'
+              '\n'
+              '判断题'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q28',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '因为输入字符串长度不超过 50，故第 4 行的 10000 改成 100 ，程序运行结果不变。( )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q29',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '将第 8 行改成 for(int i=0,len=strlen(s);i<len;i++){ 程序运行结果不变且运行速度提高。( )',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q30',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读判断题',
+  'source_question_type': '程序阅读判断题',
+  'display_type': '程序阅读判断题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '对于任意一个只包含数字字符且每个数字字符出现的次数不小于 10 的字符串 B，总存在一个字符串\n\nA 使得输入 A 后输出结果为 B。( )\n\n单选题',
+  'code': '',
+  'options': ['正确', '错误'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q31',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '如果输入的字符串只包含数字字符，则输出的字符串长度可能是()。',
+  'code': '',
+  'options': ['10', '11', '160', '200'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q32',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '设输入的字符串长度为 x，输出的字符串长度为 y，则以下关系正确的是()。',
+  'code': '',
+  'options': ['x=y', 'x<y', 'x<y 或者 x=y', 'x<y 或者 x=y 或者 x>y'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q33',
+  'competition': 'csp_x_round1',
+  'category': '程序阅读单选题',
+  'source_question_type': '程序阅读单选题',
+  'display_type': '程序阅读单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '设字符串 A 为 12，如果输入字符串为 AA，(A 重复 2 次)，则输出为( )。',
+  'code': '',
+  'options': ['A 重复 10 次',
+              'A 重复 11 次',
+              'A 重复 12 次',
+              'A 重复 13 次\n'
+              '\n'
+              '三.完善程序(单选题，每小题 3 分，共计 30 分)\n'
+              '\n'
+              '(1) (消灭怪兽)\n'
+              '\n'
+              '                                         4 / 8\n'
+              '有 n 个怪兽，每个怪兽血量为 ℎpi 。每次可以任意选择一个还存活的怪兽进行攻击，被选择的怪兽受到',
+              '点伤害，其他还存活的怪兽也同样会受到 B 点溅射伤害。当一个怪兽的血量降到 0 或以下时就会消\n'
+              '失。求最少需要进行多少次攻击可以消灭所有怪兽。\n'
+              '\n'
+              '数据范围满足 1 ≤ n ≤ 105 , 1 ≤ B < A ≤ 109 , 1 ≤ ℎpi ≤ 109 。\n'
+              '\n'
+              '提示: 可以采用二分答案的方法来求解。\n'
+              '\n'
+              '试补全程序。\n'
+              '\n'
+              '01 #include<bits/stdc++.h>\n'
+              '02 using namespace std;\n'
+              '03 const int N=1e5+5;\n'
+              '04 typedef long long ll;\n'
+              '05 ll hp[N];\n'
+              '06 int n;\n'
+              '07 ll a,b;\n'
+              '08 bool check(ll x){\n'
+              '09 ll cnt=x;\n'
+              '10 for(int i=1;i<=n;i++){\n'
+              '11      ll res_hp=___①___;\n'
+              '12      if(res_hp>0){\n'
+              '13          ll cnta=___②___;\n'
+              '14          if(___③___) cnta++;\n'
+              '15          cnt-=cnta;\n'
+              '16          if(cnt<0) break;\n'
+              '17      }\n'
+              '18 }\n'
+              '19 return ___④___;\n'
+              '20 }\n'
+              '21 int main(){\n'
+              '22 cin>>n>>a>>b;\n'
+              '23 for(int i=1;i<=n;i++) cin>>hp[i];\n'
+              '24 ll l=1,r=1e9;\n'
+              '25 while(l<=r){\n'
+              '26      ll mid=l+r>>1;\n'
+              '27      if(check(mid)) r=mid-1;\n'
+              '28      else l=mid+1;\n'
+              '29 }\n'
+              '30 cout<<___⑤___<<endl;\n'
+              '31 return 0;\n'
+              '32 }'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2024-q34',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '① 处应填( )。',
+  'code': '',
+  'options': ['hp[i]-a', 'hp[i]-b\n                                            5 / 8', 'hp[i]-x*a', 'hp[i]-x*b'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2024-q35',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '② 处应填( )。',
+  'code': '',
+  'options': ['hp[i]/(a-b)', 'res_hp/(a-b)', 'res_hp/a', 'hp[i]/b'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q36',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '③ 处应填( )。',
+  'code': '',
+  'options': ['res_hp%a==0', 'res_hp%b', 'res_hp%(a-b)', 'res_hp%(a-b)==0'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q37',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '④ 处应填( )。',
+  'code': '',
+  'options': ['cnt>=x', 'cnt>=0', 'cnt<=x', 'cnt<=0'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q38',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '⑤ 处应填( )。',
+  'code': '',
+  'options': ['l-1',
+              'l',
+              'r-1',
+              'r\n'
+              '\n'
+              '(2) (位运算操作)\n'
+              '\n'
+              '现有编号为 1 到 n 的 n 位同学和 n 个操作，每位同学都会进行一些操作，操作流程如下面描述。\n'
+              '\n'
+              '最开始老师手里有一个整数 x，交给 1 号同学，1 号同学执行完第 1 个操作交给 2 号同学；2 号同学\n'
+              '执行完第 1,2 个操作交给 3 号同学；......；第 i 号同学从第 i-1 号同学接过数后，依次执行前 i 个操\n'
+              '作，将最后的数交给第 i+1 号同学；依此下去直到第 n 号同学完成所有操作。\n'
+              '\n'
+              '为了方便表示，我们用二元组来描述操作，其中第 i 个操作用二元组 (op, a[i]) 表示:op 取值为 1,2,3\n'
+              '分别表示将当前数字与 a[i] 进行 AND，OR，XOR 操作(即按位与，按位或，按位异或)。\n'
+              '\n'
+              '求每个同学执行完自己的轮次后，手里的数是多少。\n'
+              '\n'
+              '                             6 / 8\n'
+              '先输入 n 和初始的整数 x，接下来 n 行每行两个数表示描述操作的二元组。\n'
+              '\n'
+              '数据范围满足 1 ≤ n ≤ 2 ∗ 105 , 0 ≤ a[i], x ≤ 109。\n'
+              '\n'
+              '提示:如果进行模拟时间复杂度为O(n2 )会超时，因此采用位运算，提前通过递推求出 x 的每一个数位\n'
+              '经过前 i 次操作后的值，设 f[i][j][k] 表示初始状态是 j，经过 k 次操作第 i 位的值。实际模拟时直接\n'
+              '读取该值即可。\n'
+              '\n'
+              '试补全程序。\n'
+              '\n'
+              '01 #include<bits/stdc++.h>\n'
+              '02 using namespace std;\n'
+              '03 const int N=2e5+5;\n'
+              '04 int op[N],a[N];\n'
+              '05 int f[35][2][N];\n'
+              '06 int n,x;\n'
+              '07 int main() {\n'
+              '08   cin>>n>>x;\n'
+              '09   for(int i=1;i<=n;i++) cin>>op[i]>>a[i];\n'
+              '10   for(int i=0;i<30;i++) {\n'
+              '11       ___①___;\n'
+              '12   }\n'
+              '13   for(int i=0; i<30;i++) {\n'
+              '14       for(int j=0;j<2;j++) {\n'
+              '15           for(int k=1; k<=n;k++) {\n'
+              '16               int bit=___②___;\n'
+              '17               if(op[k]==1) f[i][j][k]=f[i][j][k-1] & bit;\n'
+              '18               if(op[k]==2) f[i][j][k]=f[i][j][k-1] | bit;\n'
+              '19               if(op[k]==3) f[i][j][k]=___③___;\n'
+              '20           }\n'
+              '21       }\n'
+              '22   }\n'
+              '23   for(int i = 1; i <= n; ++i) {\n'
+              '24       int t=0;\n'
+              '25       for(int j=0;j<30;j++) {\n'
+              '26           int bit=(x>>j)&1;\n'
+              '27           if(___④___) t+=(___⑤___);\n'
+              '28       }\n'
+              '29       cout<<t<<endl;\n'
+              '30       x=t;\n'
+              '31   }\n'
+              '32    return 0;\n'
+              '33 }'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q39',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '① 处应填( )。',
+  'code': '',
+  'options': ['f[0][0][i]=0,f[0][1][i]=1;\n\n                                              7 / 8',
+              'f[i][0][0]=0,f[i][1][0]=1',
+              'f[i][0][0]=1,f[i][1][0]=0;',
+              'f[0][1][0]=1,f[0][1][0]=0'],
+  'answer': 1},
+ {'id': 'csp_x_round1-2024-q40',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '② 处应填( )。',
+  'code': '',
+  'options': ['a[k]>>i&1', 'a[k]>>i|1', '(a[k]>>i)|1', '(a[k]>>i)&1'],
+  'answer': 3},
+ {'id': 'csp_x_round1-2024-q41',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '③ 处应填( )。',
+  'code': '',
+  'options': ['f[i][j][k-1] ^ bit', 'f[i][j][k-1] + bit', 'f[i][j][k-1] & bit', 'f[i][j][k-1] | bit'],
+  'answer': 0},
+ {'id': 'csp_x_round1-2024-q42',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '④ 处应填( )。',
+  'code': '',
+  'options': ['f[i][bit][j]', '!f[i][bit][j]', 'f[j][bit][i]', '!f[j][bit][i]'],
+  'answer': 2},
+ {'id': 'csp_x_round1-2024-q43',
+  'competition': 'csp_x_round1',
+  'category': '完善程序单选题',
+  'source_question_type': '完善程序单选题',
+  'display_type': '完善程序单选题',
+  'difficulty': 4,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf',
+  'stem': '⑤ 处应填( )。',
+  'code': '',
+  'options': ['t+=(f[i][bit][j]<<j)',
+              't+=(f[j][bit][i]<<j)',
+              't=(f[i][bit][j]<<(j-1))',
+              't=(f[j][bit][i]<<(j-1))\n\n                                8 / 8'],
   'answer': 1}]
 
 
@@ -19836,6 +24018,1411 @@ CSP_ROUND2_PROGRAMMING_TASKS = [{'id': 'csp_j_round2-2019-2019-ccf-csp-j2',
   'hidden_tests': [{'input': '3 2\n101\n1 1 2\n2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证            提高级 员工招聘(employ)\n',
                     'output': '2\n'},
                    {'input': '10 5\n1101111011\n6 0 4 2 1 2 5 4 3 3\n', 'output': '2204128\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2020-power',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/入门级-CSP-J2/CSP-J-S 2020_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2020 优秀的拆分',
+  'description': '一般来说，一个正整数可以拆分成若干个正整数的和。例如，1 = 1，10 =\n'
+                 '1 + 2 + 3 + 4 等。\n'
+                 '    对于正整数 𝑛 的一种特定拆分，我们称它为“优秀的”，当且仅当在这种拆\n'
+                 '分下，𝑛 被分解为了若干个不同的 2 的正整数次幂。注意，一个数 𝑥 能被表\n'
+                 '示成 2 的正整数次幂，当且仅当 𝑥 能通过正整数个 2 相乘在一起得到。\n'
+                 '    例如，10 = 8 + 2 = 23 + 21 是一个优秀的拆分。但是，7 = 4 + 2 + 1 =\n'
+                 '22 + 21 + 20 就不是一个优秀的拆分，因为 1 不是 2 的正整数次幂。\n'
+                 '    现在，给定正整数 𝑛，你需要判断这个数的所有拆分中，是否存在优秀的\n'
+                 '拆分。若存在，请你给出具体的拆分方案。',
+  'input': '输入文件名为 power.in。\n     输入文件只有一行，一个正整数 𝑛，代表需要判断的数。',
+  'output': '输出文件名为 power.out。\n'
+            '  如果这个数的所有拆分中，存在优秀的拆分。那么，你需要从大到小输出\n'
+            '这个拆分中的每一个数，相邻两个数之间用一个空格隔开。可以证明，在规定\n'
+            '了拆分数字的顺序后，该拆分方案是唯一的。\n'
+            '  若不存在优秀的拆分，输出“-1”  (不包含双引号)\n'
+            '                           。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '6\n', 'output': '42\n'}, {'input': '7\n2020 年 CCF 非专业级软件能力认证入门组第二轮\n', 'output': '-1\n'}],
+  'public_tests': [{'input': '6\n', 'output': '42\n'}],
+  'hidden_tests': [{'input': '6\n', 'output': '42\n'}, {'input': '7\n2020 年 CCF 非专业级软件能力认证入门组第二轮\n', 'output': '-1\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2020-live',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/入门级-CSP-J2/CSP-J-S 2020_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2020 直播获奖',
+  'description': 'NOI2130 即将举行。为了增加观赏性，CCF 决定逐一评出每个选手的成\n'
+                 '绩，并直播即时的获奖分数线。本次竞赛的获奖率为 𝑤%，即当前排名前 𝑤%\n'
+                 '的选手的最低成绩就是即时的分数线。\n'
+                 '   更具体地，若当前已评出了 𝑝 个选手的成绩，则当前计划获奖人数为\n'
+                 'max(1, ⌊𝑝 × 𝑤%⌋)，其中 𝑤 是获奖百分比，⌊𝑥⌋ 表示对 𝑥 向下取整，\n'
+                 'max(𝑥, 𝑦) 表示 𝑥 和 𝑦 中较大的数。如有选手成绩相同，则所有成绩并列的\n'
+                 '选手都能获奖，因此实际获奖人数可能比计划中多。\n'
+                 '   作为评测组的技术人员，请你帮 CCF 写一个直播程序。',
+  'input': '输入文件名为 live.in。\n   第 1 行两个正整数 𝑛, 𝑤。分别代表选手总数与获奖率。\n   第 2 行有 𝑛 个非负整数，依次代表逐一评出的选手成绩。',
+  'output': '输出文件名为 live.out。\n  只有一行，包含 𝑛 个非负整数，依次代表选手成绩逐一评出后，即时的获\n奖分数线。相邻两个整数间用一个空格分隔。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '10 60\n200 300 400 500 600 600 0 300 200 100\n',
+             'output': '200 300 400 400 400 500 400 400 300 300\n'},
+            {'input': '10 30\n100 100 600 100 100 100 100 100 100 100\n',
+             'output': '100 100 600 600 600 600 100 100 100 100\n'}],
+  'public_tests': [{'input': '10 60\n200 300 400 500 600 600 0 300 200 100\n',
+                    'output': '200 300 400 400 400 500 400 400 300 300\n'}],
+  'hidden_tests': [{'input': '10 60\n200 300 400 500 600 600 0 300 200 100\n',
+                    'output': '200 300 400 400 400 500 400 400 300 300\n'},
+                   {'input': '10 30\n100 100 600 100 100 100 100 100 100 100\n',
+                    'output': '100 100 600 600 600 600 100 100 100 100\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2020-expr',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/入门级-CSP-J2/CSP-J-S 2020_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2020 表达式',
+  'description': '小 C 热衷于学习数理逻辑。有一天，他发现了一种特别的逻辑表达式。在\n'
+                 '这种逻辑表达式中，所有操作数都是变量，且它们的取值只能为 0 或 1，运算\n'
+                 '从左往右进行。如果表达式中有括号，则先计算括号内的子表达式的值。特别\n'
+                 '的，这种表达式有且仅有以下几种运算:\n'
+                 '  1. 与运算:𝑎 & 𝑏。当且仅当 𝑎 和 𝑏 的值都为 1 时，该表达式的值为\n'
+                 '     1。其余情况该表达式的值为 0。\n'
+                 '  2. 或运算:𝑎 | 𝑏。当且仅当 𝑎 和 𝑏 的值都为 0 时，该表达式的值为\n'
+                 '     0。其余情况该表达式的值为 1。\n'
+                 '  3. 取反运算:! 𝑎。当且仅当 𝑎 的值为 0 时，该表达式的值为 1。其余情\n'
+                 '     况该表达式的值为 0。\n'
+                 '  小 C 想知道，给定一个逻辑表达式和其中每一个操作数的初始取值后，再\n'
+                 '取反某一个操作数的值时，原表达式的值为多少。\n'
+                 '  为了化简对表达式的处理，我们有如下约定:\n'
+                 '  表达式将采用后缀表达式的方式输入。后缀表达式的定义如下:\n'
+                 '  1. 如果 𝐸 是一个操作数，则 𝐸 的后缀表达式是它本身。\n'
+                 '  2. 如果 𝐸 是 𝐸1 𝑜𝑝 𝐸2 形式的表达式，其中 𝑜𝑝 是任何二元操作符，且优\n'
+                 '     先级不高于 𝐸1 、𝐸2 中括号外的操作符，则 𝐸 的后缀式为 𝐸1′ 𝐸2′ 𝑜𝑝，\n'
+                 '     其中 𝐸1′ 、𝐸2′ 分别为 𝐸1、𝐸2 的后缀式。\n'
+                 '  3. 如果 𝐸 是 (𝐸1 ) 形式的表达式，则 𝐸1 的后缀式就是 𝐸 的后缀式。\n'
+                 '  同时为了方便，输入中:\n'
+                 '  a) 与运算符(&)     、或运算符(|) 、取反运算符(！)的左右均有一个空格，\n'
+                 '     但表达式末尾没有空格。\n'
+                 '  b) 操作数由小写字母 x 与一个正整数拼接而成，正整数表示这个变量的下\n'
+                 '     标。例如:x10，表示下标为 10 的变量 𝑥10。数据保证每个变量在表达\n'
+                 '     式中出现恰好一次。',
+  'input': '输入文件名为 expr.in。\n'
+           '  第一行包含一个字符串 𝑠，表示上文描述的表达式。\n'
+           '  第二行包含一个正整数 𝑛，表示表达式中变量的数量。表达式中变量的下\n'
+           '标为 1,2, … , 𝑛。\n'
+           '  第三行包含 𝑛 个整数，第 𝑖 个整数表示变量 𝑥𝑖 的初值。\n'
+           '  第四行包含一个正整数 𝑞，表示询问的个数。\n'
+           '  接下来 𝑞 行，每行一个正整数，表示需要取反的变量的下标。注意，每一\n'
+           '个询问的修改都是临时的，即之前询问中的修改不会对后续的询问造成影响。\n'
+           '  数据保证输入的表达式合法。变量的初值为 0 或 1。\n'
+           '\x0c'
+           '2020 年 CCF 非专业级软件能力认证入门组第二轮',
+  'output': '输出文件名为 expr.out。\n    输出一共有 𝑞 行，每行一个 0 或 1，表示该询问下表达式的值。',
+  'constraints': '见原题面。',
+  'tests': [{'input': 'x1 x2 & x3 |\n3\n101\n3\n1\n2\n3\n', 'output': '1\n1\n0\n'},
+            {'input': 'x1 ! x2 x4 | x3 x5 ! & & ! &\n5\n01011\n3\n1\n3\n5\n',
+             'output': '2020 年 CCF 非专业级软件能力认证入门组第二轮\n0\n1\n1\n'}],
+  'public_tests': [{'input': 'x1 x2 & x3 |\n3\n101\n3\n1\n2\n3\n', 'output': '1\n1\n0\n'}],
+  'hidden_tests': [{'input': 'x1 x2 & x3 |\n3\n101\n3\n1\n2\n3\n', 'output': '1\n1\n0\n'},
+                   {'input': 'x1 ! x2 x4 | x3 x5 ! & & ! &\n5\n01011\n3\n1\n3\n5\n',
+                    'output': '2020 年 CCF 非专业级软件能力认证入门组第二轮\n0\n1\n1\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2020-number',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/入门级-CSP-J2/CSP-J-S 2020_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2020 方格取数',
+  'description': '设有 𝑛 × 𝑚 的方格图，每个方格中都有一个整数。现有一只小熊，想从图\n'
+                 '的左上角走到右下角，每一步只能向上、向下或向右走一格，并且不能重复经\n'
+                 '过已经走过的方格，也不能走出边界。小熊会取走所有经过的方格中的整数，\n'
+                 '求它能取到的整数之和的最大值。',
+  'input': '输入文件名为 number.in。\n      第 1 行两个正整数 𝑛, 𝑚。\n      接下来 𝑛 行每行 𝑚 个整数，依次代表每个方格中的整数。',
+  'output': '输入文件名为 number.out。\n      一个整数，表示小熊能取到的整数之和的最大值。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '34\n1 -1 3 2\n2 -1 4 -1\n-2 2 -3 -1\n', 'output': '9\n'},
+            {'input': '25\n-1 -1 -3 -2 -7\n-2 -1 -4 -1 -2\n', 'output': '-10\n'}],
+  'public_tests': [{'input': '34\n1 -1 3 2\n2 -1 4 -1\n-2 2 -3 -1\n', 'output': '9\n'}],
+  'hidden_tests': [{'input': '34\n1 -1 3 2\n2 -1 4 -1\n-2 2 -3 -1\n', 'output': '9\n'},
+                   {'input': '25\n-1 -1 -3 -2 -7\n-2 -1 -4 -1 -2\n', 'output': '-10\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2020-julian',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/提高级-CSP-S2/CSP-J-S 2020_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2020 儒略日',
+  'description': '为了简便计算，天文学家们使用儒略日(Julian day)来表达时间。所谓儒\n'
+                 '略日，其定义为从公元前 4713 年 1 月 1 日正午 12 点到此后某一时刻间所经过\n'
+                 '的天数，不满一天者用小数表达。若利用这一天文学历法，则每一个时刻都将\n'
+                 '被均匀的映射到数轴上，从而得以很方便的计算它们的差值。\n'
+                 '   现在，给定一个不含小数部分的儒略日，请你帮忙计算出该儒略日(一定\n'
+                 '是某一天的中午 12 点)所对应的公历日期。\n'
+                 '   我们现行的公历为格里高利历(Gregorian calendar)   ，它是在公元 1582 年\n'
+                 '由教皇格里高利十三世在原有的儒略历(Julian calendar)的基础上修改得到\n'
+                 '的(注:儒略历与儒略日并无直接关系)。具体而言，现行的公历日期按照以下\n'
+                 '规则计算:\n'
+                 '1. 公元 1582 年 10 月 15 日(含)以后:适用格里高利历，每年一月 31 天、\n'
+                 '   二月 28 天或 29 天、三月 31 天、四月 30 天、五月 31 天、六月 30 天、七\n'
+                 '   月 31 天、八月 31 天、九月 30 天、十月 31 天、十一月 30 天、十二月 31\n'
+                 '   天。其中，闰年的二月为 29 天，平年为 28 天。当年份是 400 的倍数，或\n'
+                 '   日期年份是 4 的倍数但不是 100 的倍数时，该年为闰年。\n'
+                 '2. 公元 1582 年 10 月 5 日(含)至 10 月 14 日(含)\n'
+                 '                                     :不存在，这些日期被\n'
+                 '   删除，该年 10 月 4 日之后为 10 月 15 日。\n'
+                 '3. 公元 1582 年 10 月 4 日(含)以前:适用儒略历，每月天数与格里高利历\n'
+                 '   相同，但只要年份是 4 的倍数就是闰年。\n'
+                 '4. 尽管儒略历于公元前 45 年才开始实行，且初期经过若干次调整，但今天人\n'
+                 '   类习惯于按照儒略历最终的规则反推一切 1582 年 10 月 4 日之前的时间。\n'
+                 '   注意，公元零年并不存在，即公元前 1 年的下一年是公元 1 年。因此公元\n'
+                 '   前 1 年、前 5 年、前 9 年、前 13 年……以此类推的年份应视为闰年。',
+  'input': '输入文件名为 julian.in。\n  第一行一个整数 𝑄，表示询问的组数。\n  接下来 𝑄 行，每行一个非负整数 𝑟𝑖 ，表示一个儒略日。',
+  'output': '输出文件名为 julian.out。\n'
+            '   对于每一个儒略日 𝑟𝑖 ，输出一行表示日期的字符串 𝑠𝑖 。共计 𝑄 行。\n'
+            '   𝑠𝑖 的格式如下:\n'
+            '1. 若年份为公元后，输出格式为 Day Month Year。其中日(Day)、月\n'
+            '   (Month) 、年(Year)均不含前导零，中间用一个空格隔开。例如:公元\n'
+            '   2020 年 11 月 7 日正午 12 点，输出为 7 11 2020。\n'
+            '\x0c'
+            '2020 年 CCF 非专业级软件能力认证提高级第二轮\n'
+            '\n'
+            '2. 若年份为公元前，输出格式为 Day Month Year BC。其中年(Year)输出该\n'
+            '   年份的数值，其余与公元后相同。例如:公元前 841 年 2 月 1 日正午 12\n'
+            '   点，输出为 1 2 841 BC。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '3\n10\n100\n1000\n', 'output': '11 1 4713 BC\n10 4 4713 BC\n27 9 4711 BC\n'},
+            {'input': '3\n2000000\n3000000\n4000000\n', 'output': '14 9 763\n15 8 3501\n12 7 6239\n'}],
+  'public_tests': [{'input': '3\n10\n100\n1000\n', 'output': '11 1 4713 BC\n10 4 4713 BC\n27 9 4711 BC\n'}],
+  'hidden_tests': [{'input': '3\n10\n100\n1000\n', 'output': '11 1 4713 BC\n10 4 4713 BC\n27 9 4711 BC\n'},
+                   {'input': '3\n2000000\n3000000\n4000000\n', 'output': '14 9 763\n15 8 3501\n12 7 6239\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2020-zoo',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/提高级-CSP-S2/CSP-J-S 2020_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2020 动物园',
+  'description': '动物园里饲养了很多动物，饲养员小 A 会根据饲养动物的情况，按照《饲\n'
+                 '养指南》购买不同种类的饲料，并将购买清单发给采购员小 B。\n'
+                 '   具体而言，动物世界里存在 2𝑘 种不同的动物，它们被编号为 0 ∼ 2𝑘 −\n'
+                 '1。动物园里饲养了其中的 𝑛 种，其中第 𝑖 种动物的编号为 𝑎𝑖 。\n'
+                 '   《饲养指南》中共有 𝑚 条要求，第 𝑗 条要求形如“如果动物园中饲养着\n'
+                 '某种动物，满足其编号的二进制表示的第 𝑝𝑗 位为 1，则必须购买第 𝑞𝑗 种饲\n'
+                 '料”。其中饲料共有 𝑐 种，它们从 1 ∼ 𝑐 编号。本题中我们将动物编号的二进\n'
+                 '制表示视为一个 𝑘 位 01 串，第 0 位是最低位，第 𝑘 − 1 位是最高位。\n'
+                 '   根据《饲养指南》  ，小 A 将会制定饲料清单交给小 B，由小 B 购买饲料。清\n'
+                 '单形如一个 𝑐 位 01 串，第 𝑖 位为 1 时，表示需要购买第 𝑖 种饲料；第 𝑖 位\n'
+                 '为 0 时，表示不需要购买第 𝑖 种饲料。\n'
+                 '   实际上根据购买到的饲料，动物园可能可以饲养更多的动物。更具体地，\n'
+                 '如果将当前未被饲养的编号为 𝑥 的动物加入动物园饲养后，饲料清单没有变\n'
+                 '化，那么我们认为动物园当前还能饲养编号为 𝑥 的动物。\n'
+                 '   现在小 B 想请你帮忙算算，动物园目前还能饲养多少种动物。',
+  'input': '输入文件名为 zoo.in。\n'
+           '  第一行包含四个以空格分隔的整数 𝑛、𝑚、𝑐、𝑘。分别表示动物园中动物\n'
+           '数量、《饲养指南》要求数、饲料种数与动物编号的二进制表示位数。\n'
+           '. 第二行 𝑛 个以空格分隔的整数，其中第 𝑖 个整数表示 𝑎𝑖 。\n'
+           '  接下来 𝑚 行，每行两个整数 𝑝𝑖 ，𝑞𝑖 表示一条要求。\n'
+           '  数据保证所有 𝑎𝑖 互不相同，所有的 𝑞𝑖 互不相同。',
+  'output': '输出文件名为 zoo.out。\n  仅一行一个整数表示答案。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '3354\n146\n03\n24\n25\n2020 年 CCF 非专业级软件能力认证提高级第二轮\n', 'output': '13\n'},
+            {'input': '2243\n12\n13\n24\n', 'output': '2\n'}],
+  'public_tests': [{'input': '3354\n146\n03\n24\n25\n2020 年 CCF 非专业级软件能力认证提高级第二轮\n', 'output': '13\n'}],
+  'hidden_tests': [{'input': '3354\n146\n03\n24\n25\n2020 年 CCF 非专业级软件能力认证提高级第二轮\n', 'output': '13\n'},
+                   {'input': '2243\n12\n13\n24\n', 'output': '2\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2020-call',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/提高级-CSP-S2/CSP-J-S 2020_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2020 函数调用',
+  'description': '函数是各种编程语言中一项重要的概念，借助函数，我们总可以将复杂的\n'
+                 '任务分解成一个个相对简单的子任务，直到细化为十分简单的基础操作，从而\n'
+                 '使代码的组织更加严密、更加有条理。然而，过多的函数调用也会导致额外的\n'
+                 '开销，影响程序的运行效率。\n'
+                 '  某数据库应用程序提供了若干函数用以维护数据。已知这些函数的功能可\n'
+                 '分为三类:\n'
+                 '  1. 将数据中的指定元素加上一个值；\n'
+                 '  2. 将数据中的每一个元素乘以一个相同值；\n'
+                 '  3. 依次执行若干次函数调用，保证不会出现递归(即不会直接或间接地调\n'
+                 '     用本身)。\n'
+                 '  在使用该数据库应用时，用户可一次性输入要调用的函数序列(一个函数\n'
+                 '可能被调用多次)  ，在依次执行完序列中的函数后，系统中的数据被加以更新。\n'
+                 '某一天，小 A 在应用该数据库程序处理数据时遇到了困难:由于频繁而低效的\n'
+                 '函数调用，系统在执行操作时进入了无响应的状态，他只好强制结束了数据库\n'
+                 '程序。为了计算出正确数据，小 A 查阅了软件的文档，了解到每个函数的具体\n'
+                 '功能信息，现在他想请你根据这些信息帮他计算出更新后的数据应该是多少。',
+  'input': '输入文件名为 call.in。\n'
+           '  第 1 行一个正整数 𝑛，表示数据的个数。\n'
+           '  第 2 行 𝑛 个整数，第 𝑖 个整数表示下标为 𝑖 的数据的初始值为 𝑎𝑖 。\n'
+           '  第 3 行一个正整数 𝑚，表示数据库应用程序提供的函数个数。函数从 1 ∼\n'
+           '𝑚 编号。\n'
+           '  接下来 𝑚 行中，第 𝑗(1 ≤ 𝑗 ≤ 𝑚)行的第一个整数为 𝑇𝑗 ，表示 𝑗 号函数\n'
+           '的类型:\n'
+           '  1. 若 𝑇𝑗 = 1，接下来两个整数 𝑃𝑗 , 𝑉𝑗 分别表示要执行加法的元素的下标及\n'
+           '     其增加的值；\n'
+           '  2. 若 𝑇𝑗 = 2，接下来一个整数 𝑉𝑗 表示所有元素所乘的值；\n'
+           '  3. 若 𝑇𝑗 = 3，接下来一个正整数 𝐶𝑗 表示 𝑗 号函数要调用的函数个数，\n'
+           '                  (𝑗)    (𝑗)   (𝑗)\n'
+           '     随后 𝐶𝑗 个整数 𝑔1 , 𝑔2 , ⋯ , 𝑔𝐶𝑗 依次表示其所调用的函数的编号。\n'
+           '\n'
+           '  第 𝑚 + 4 行一个正整数 𝑄，表示输入的函数操作序列长度。\n'
+           '  第 𝑚 + 5 行 𝑄 个整数 𝑓𝑖 ，第 𝑖 个整数表示第 𝑖 个执行的函数的编号。',
+  'output': '输出文件名为 call.out。\n'
+            '\x0c'
+            '2020 年 CCF 非专业级软件能力认证提高级第二轮\n'
+            '\n'
+            '  一行 𝑛 个用空格隔开的整数，按照下标 1 ∼ 𝑛 的顺序，分别输出在执行\n'
+            '完输入的函数序列后，数据库中每一个元素的值。答案对 998244353 取模。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '3\n123\n3\n111\n22\n3212\n2\n23\n', 'output': '6 8 12\n'},
+            {'input': '10\n'
+                      '1 2 3 4 5 6 7 8 9 10\n'
+                      '8\n'
+                      '3223\n'
+                      '3245\n'
+                      '3258\n'
+                      '22\n'
+                      '3267\n'
+                      '125\n'
+                      '176\n'
+                      '23\n'
+                      '3\n'
+                      '123\n'
+                      '2020 年 CCF 非专业级软件能力认证提高级第二轮\n',
+             'output': '36 282 108 144 180 216 504 288 324 360\n'}],
+  'public_tests': [{'input': '3\n123\n3\n111\n22\n3212\n2\n23\n', 'output': '6 8 12\n'}],
+  'hidden_tests': [{'input': '3\n123\n3\n111\n22\n3212\n2\n23\n', 'output': '6 8 12\n'},
+                   {'input': '10\n'
+                             '1 2 3 4 5 6 7 8 9 10\n'
+                             '8\n'
+                             '3223\n'
+                             '3245\n'
+                             '3258\n'
+                             '22\n'
+                             '3267\n'
+                             '125\n'
+                             '176\n'
+                             '23\n'
+                             '3\n'
+                             '123\n'
+                             '2020 年 CCF 非专业级软件能力认证提高级第二轮\n',
+                    'output': '36 282 108 144 180 216 504 288 324 360\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2020-snakes',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/提高级-CSP-S2/CSP-J-S 2020_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2020 贪吃蛇',
+  'description': '草原上有 𝑛 条蛇，编号分别为 1,2, ⋯ , 𝑛。初始时每条蛇有一个体力值\n'
+                 '𝑎𝑖 ，我们称编号为 𝑥 的蛇实力比编号为 𝑦 的蛇强当且仅当它们当前的体力值\n'
+                 '满足 𝑎𝑥 > 𝑎𝑦 ，或者 𝑎𝑥 = 𝑎𝑦 且 𝑥 > 𝑦。\n'
+                 '    接下来这些蛇将进行决斗，决斗将持续若干轮，每一轮实力最强的蛇拥有\n'
+                 '选择权，可以选择吃或者不吃掉实力最弱的蛇:\n'
+                 '    1. 如果选择吃，那么实力最强的蛇的体力值将减去实力最弱的蛇的体力\n'
+                 '       值，实力最弱的蛇被吃掉，退出接下来的决斗。之后开始下一轮决斗。\n'
+                 '    2. 如果选择不吃，决斗立刻结束。\n'
+                 '    每条蛇希望在自己不被吃的前提下在决斗中尽可能多吃别的蛇(显然，蛇\n'
+                 '不会选择吃自己)     。\n'
+                 '    现在假设每条蛇都足够聪明，请你求出决斗结束后会剩几条蛇。\n'
+                 '    本题有多组数据，对于第一组数据，每条蛇体力会全部由输入给出，之后\n'
+                 '的每一组数据，会相对于上一组的数据，修改一部分蛇的体力作为新的输入。',
+  'input': '输入文件名为 snakes.in。\n'
+           '  第一行一个正整数 𝑇，表示数据组数。\n'
+           '  接下来有 𝑇 组数据，对于第 1 组数据，第一行一个正整数 𝑛，第二行 𝑛\n'
+           '个非负整数表示 𝑎𝑖 。\n'
+           '  对于第 2 组到第 𝑇 组数据，每组数据:\n'
+           '  第一行第一个非负整数 𝑘 表示体力修改的蛇的个数。\n'
+           '  第二行 2𝑘 个整数，每两个整数组成一个二元组 (𝑥, 𝑦)，表示依次将 𝑎𝑥\n'
+           '的值改为 𝑦。一个位置可能被修改多次，以最后一次修改为准。',
+  'output': '输入文件名为 snakes.out。\n   输出 𝑇 行，每行一个整数表示最终存活的蛇的条数。',
+  'constraints': '见原题面。',
+  'tests': [{'input': '2\n3\n11 14 14\n3\n1 5 2 6 3 25\n2020 年 CCF 非专业级软件能力认证提高级第二轮\n', 'output': '3\n1\n'},
+            {'input': '2\n5\n13 31 33 39 42\n5\n1 7 2 10 3 24 4 48 5 50\n', 'output': '5\n3\n'}],
+  'public_tests': [{'input': '2\n3\n11 14 14\n3\n1 5 2 6 3 25\n2020 年 CCF 非专业级软件能力认证提高级第二轮\n', 'output': '3\n1\n'}],
+  'hidden_tests': [{'input': '2\n3\n11 14 14\n3\n1 5 2 6 3 25\n2020 年 CCF 非专业级软件能力认证提高级第二轮\n', 'output': '3\n1\n'},
+                   {'input': '2\n5\n13 31 33 39 42\n5\n1 7 2 10 3 24 4 48 5 50\n', 'output': '5\n3\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2021-sort',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/入门级-CSP-J2/CSP-J-S 2021_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2021 插入排序',
+  'description': '插入排序是一种非常常见且简单的排序算法。小 Z 是一名大一的新生，今天 H 老\n'
+                 '师刚刚在上课的时候讲了插入排序算法。\n'
+                 '     假设比较两个元素的时间为 O(1)，则插入排序可以以 O(n2 ) 的时间复杂度完成长\n'
+                 '度为 n 的数组的排序。不妨假设这 n 个数字分别存储在 a1 , a2 , · · · , an 之中，则如下伪\n'
+                 '代码给出了插入排序算法的一种最简单的实现方式:\n'
+                 '     这下面是 C/C++ 的示范代码\n'
+                 'for (int i = 1; i <= n; i++)\n'
+                 'for (int j = i; j>=2; j‐‐)\n'
+                 'if ( a[j] < a[j‐1] ){\n'
+                 'int t = a[j‐1];\n'
+                 'a[j‐1] = a[j];\n'
+                 'a[j] = t;\n'
+                 '}\n'
+                 '\n'
+                 '     这下面是 Pascal 的示范代码\n'
+                 'for i:=1 to n do\n'
+                 'for j:=i downto 2 do\n'
+                 'if a[j]<a[j‐1] then\n'
+                 'begin\n'
+                 't:=a[i];\n'
+                 'a[i]:=a[j];\n'
+                 'a[j]:=t;\n'
+                 'end;\n'
+                 '\n'
+                 '     为了帮助小 Z 更好的理解插入排序，小 Z 的老师 H 老师留下了这么一道家庭作业:\n'
+                 '     H 老师给了一个长度为 n 的数组 a，数组下标从 1 开始，并且数组中的所有元素均\n'
+                 '为非负整数。小 Z 需要支持在数组 a 上的 Q 次操作，操作共两种，参数分别如下:\n'
+                 '     1 x v : 这是第一种操作，会将 a 的第 x 个元素，也就是 ax 的值，修改为 v。保证\n'
+                 '1 ≤ x ≤ n, 1 ≤ v ≤ 109 。注\n'
+                 '                        .意  这种\n'
+                 '                          . . .操\n'
+                 '                               .作  会改\n'
+                 '                                 . . .变 数.\n'
+                 '                                      . . 组的\n'
+                 '                                           .元  素，修\n'
+                 '                                             . . .改  得.\n'
+                 '                                                   . . 到的\n'
+                 '                                                        .数  组会\n'
+                 '                                                          . .  .保\n'
+                 '                                                              .被   留，\n'
+                 '                                                                 . .\n'
+                 '也\n'
+                 '.会.影.响.后 .续\n'
+                 '          .的.操\n'
+                 '             . 作。\n'
+                 '               .\n'
+                 '   2 x : 这是第二种操作，假设 H 老师按照上\n'
+                 '                          .面.的\n'
+                 '                             .伪.代\n'
+                 '                                . 码对\n'
+                 '                                  .  a 数组进行排序，你需要\n'
+                 '告诉 H 老师原来 a 的第 x 个元素，也就是 ax ，在排序后的新数组所处的位置。保证\n'
+                 '1 ≤ x ≤ n。注\n'
+                 '          .意.这\n'
+                 '             .种.操\n'
+                 '                .作.不\n'
+                 '                   .会.改\n'
+                 '                      .变.数\n'
+                 '                         .组.的\n'
+                 '                            .元. 素，\n'
+                 '                                . 排.序\n'
+                 '                                    .后.的\n'
+                 '                                       .数.组\n'
+                 '                                          .不.会\n'
+                 '                                             .被.保\n'
+                 '                                                . 留，\n'
+                 '                                                  . 也.不\n'
+                 '                                                      .会.影\n'
+                 '                                                         .响.\n'
+                 '后\n'
+                 '.续.的\n'
+                 '   .操. 作。\n'
+                 '       .\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证      插入排序(sort)\n'
+                 '\n'
+                 '        H 老师不喜欢过多的修改，所以他保证类型 1 的操作次数不超过 5000。\n'
+                 '        小 Z 没有学过计算机竞赛，因此小 Z 并不会做这道题。他找到了你来帮助他解决\n'
+                 '这个问题。',
+  'input': '从文件 sort.in 中读入数据。\n'
+           '        输入的第一行包含两个正整数 n, Q，表示数组长度和操作次数。保证 1 ≤ n ≤\n'
+           '8, 000, 1 ≤ Q ≤ 2 × 105 。\n'
+           '        输入的第二行包含 n 个空格分隔的非负整数，其中第 i 个非负整数表示 ai 。保证\n'
+           '1 ≤ ai ≤ 109 。\n'
+           '        接下来 Q 行，每行 2 ∼ 3 个正整数，表示一次操作，操作格式见题目描述。',
+  'output': '输出到文件 sort.out 中。\n        对于每一次类型为 2 的询问，输出一行一个正整数表示答案。',
+  'constraints': '对于所有测试数据，满足 1 ≤ n ≤ 8, 000, 1 ≤ Q ≤ 2×105 , 1 ≤ x ≤ n, 1 ≤ v, ai ≤ 109 。\n'
+                 '   对于所有测试数据，保证在所有 Q 次操作中，至多有 5000 次操作属于类型一。\n'
+                 '   各测试点的附加限制及分值如下表所示。\n'
+                 '\n'
+                 '          测试点            n          Q                 特殊性质\n'
+                 '          1,2,3,4      ≤ 10        ≤ 10\n'
+                 '         5,6,7,8,9     ≤ 300      ≤ 300                无\n'
+                 '        10,11,12,13   ≤ 1, 500   ≤ 1, 500\n'
+                 '         14,15,16                            保证所有输入的 ai , v 互不相同\n'
+                 '                                 ≤ 8, 000\n'
+                 '         17,18,19                                      无\n'
+                 '                      ≤ 8, 000\n'
+                 '         20,21,22                            保证所有输入的 ai , v 互不相同\n'
+                 '                                 ≤ 2 × 105\n'
+                 '         23,24,25                                      无\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                 网络连接(network)',
+  'tests': [{'input': '3 4\n3 2 1\n2 3\n1 3 2\n2 2\n2 3\n', 'output': '1\n1\n2\n'}],
+  'public_tests': [{'input': '3 4\n3 2 1\n2 3\n1 3 2\n2 2\n2 3\n', 'output': '1\n1\n2\n'}],
+  'hidden_tests': [{'input': '3 4\n3 2 1\n2 3\n1 3 2\n2 2\n2 3\n', 'output': '1\n1\n2\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2021-network',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/入门级-CSP-J2/CSP-J-S 2021_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2021 网络连接',
+  'description': 'TCP/IP 协议是网络通信领域的一项重要协议。今天你的任务，就是尝试利用这个\n'
+                 '协议，还原一个简化后的网络连接场景。\n'
+                 '                                        。服务机\n'
+                 '   在本问题中，计算机分为两大类:服务机(Server)和客户机(Client)\n'
+                 '负责建立连接，客户机负责加入连接。\n'
+                 '   需要进行网络连接的计算机共有 n 台，编号为 1 ∼ n ，这些机器将按编号递增的顺\n'
+                 '序，依次发起一条建立连接或加入连接的操作。\n'
+                 '   每台机器在尝试建立或加入连接时需要提供一个地址串。服务机提供的地址串表示\n'
+                 '它尝试建立连接的地址，客户机提供的地址串表示它尝试加入连接的地址。\n'
+                 '   一个符合规范的地址串应当具有以下特征:\n'
+                 '     1、必须形如 a.b.c.d:e 的格式，其中 a, b, c, d, e 均为非负整数；\n'
+                 '     2、0 ≤ a, b, c, d ≤ 255, 0 ≤ e ≤ 65535；\n'
+                 '     3、a, b, c, d, e 均不能含有多余的前导 0。\n'
+                 '   相应地，不符合规范的地址串可能具有以下特征:\n'
+                 '     1、不是形如 a.b.c.d:e 格式的字符串，例如含有多于 3 个字符 . 或多于 1 个字\n'
+                 '符 : 等情况；\n'
+                 '     2、整数 a, b, c, d, e 中某一个或多个超出上述范围；\n'
+                 '     3、整数 a, b, c, d, e 中某一个或多个含有多余的前导 0 。\n'
+                 '   例如，\n'
+                 '     地址串 192.168.0.255:80 是符合规范的，\n'
+                 '                                但 192.168.0.999:80 、\n'
+                 '                                                   192.168.00.1:10\n'
+                 '、192.168.0.1:088 、192:168:0:1.233 均是不符合规范的。\n'
+                 '   如果服务机或客户机在发起操作时提供的地址串不符合规范，这条操作将被直接忽\n'
+                 '略。\n'
+                 '   在本问题中，我们假定凡是符合上述规范的地址串均可参与正常的连接，你无需考\n'
+                 '虑每个地址串的实际意义。\n'
+                 '   由于网络阻塞等原因，不允许两台服务机使用相同的地址串，如果此类现象发生，\n'
+                 '后一台尝试建立连接的服务机将会无法成功建立连接；除此之外，凡是提供符合规范的\n'
+                 '地址串的服务机均可成功建立连接。\n'
+                 '   如果某台提供符合规范的地址的客户机在尝试加入连接时，与先前某台已经成功建\n'
+                 '立连接的服务机提供的地址串相同，这台客户机就可以成功加入连接，并称其连接到这\n'
+                 '台服务机；如果找不到这样的服务机，则认为这台客户机无法成功加入连接。\n'
+                 '   请注意，尽管不允许两台不同的服务机使用相同的地址串，但多台客户机使用同样\n'
+                 '的地址串，以及同一台服务机同时被多台客户机连接的情况是被允许的。\n'
+                 '   你的任务很简单:在给出每台计算机的类型以及地址串之后，判断这台计算机的连\n'
+                 '接情况。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           网络连接(network)',
+  'input': '从文件 network.in 中读入数据。\n'
+           '        第 1 行，一个正整数 n 。\n'
+           '        接下来 n 行，每行 2 个字符串 op, ad ，按照编号从小到大给出每台计算机的类型\n'
+           '及地址串。\n'
+           '        其中 op 保证为字符串 Server 或 Client 之一，ad 为一个长度不超过 25 的，仅\n'
+           '由数字、字符 . 和字符 : 组成的非空字符串。\n'
+           '        每行的两个字符串之间用恰好一个空格分隔开，每行的末尾没有多余的空格。',
+  'output': '输出到文件 network.out 中。\n'
+            '        输出共 n 行，每行一个正整数或字符串表示第 i 台计算机的连接状态。其中:\n'
+            '        如果第 i 台计算机为服务机，则:\n'
+            '         1. 如果其提供符合规范的地址串且成功建立连接，输出字符串 OK 。\n'
+            '         2. 如果其提供符合规范的地址串，但由于先前有相同地址串的服务机而无法成功\n'
+            '建立连接，输出字符串 FAIL 。\n'
+            '         3. 如果其提供的地址串不是符合规范的地址串，输出字符串 ERR 。\n'
+            '        如果第 i 台计算机为客户机，则:\n'
+            '         1. 如果其提供符合规范的地址串且成功加入连接，输出一个正整数表示这台客户\n'
+            '机连接到的服务机的编号。\n'
+            '         2. 如果其提供符合规范的地址串，但无法成功加入连接时，输出字符串 FAIL 。\n'
+            '         3. 如果其提供的地址串不是符合规范的地址串，输出字符串 ERR 。',
+  'constraints': '测试点编号            n≤       特殊性质\n'
+                 '10       性质 1�2�3\n'
+                 '                          2∼3            100\n'
+                 '                                                  性质 1�2�3\n'
+                 '                          4∼5\n'
+                 '                          6∼8                      性质 1�2\n'
+                 '                          9 ∼ 11                    性质 1\n'
+                 '                         12 ∼ 13     1000           性质 2\n'
+                 '                         14 ∼ 15                    性质 4\n'
+                 '                         16 ∼ 17                    性质 5\n'
+                 '                         18 ∼ 20                 无特殊性质\n'
+                 '\n'
+                 '     “性质 1 ”为:保证所有的地址串均符合规范；\n'
+                 '     “性质 2 ”为:保证对于任意两台不同的计算机，如果它们同为服务机或者同为客\n'
+                 ' 户机，则它们提供的地址串一定不同；\n'
+                 '     “性质 3 ”为:保证任意一台服务机的编号都小于所有的客户机；\n'
+                 '     “性质 4 ”为:保证所有的地址串均形如 a.b.c.d:e 的格式，其中 a, b, c, d, e 均为\n'
+                 ' 不超过 109 且不含有多余前导 0 的非负整数；\n'
+                 '     “性质 5 ”为:保证所有的地址串均形如 a.b.c.d:e 的格式，其中 a, b, c, d, e 均为\n'
+                 ' 只含有数字的非空字符串。\n'
+                 '         对于 100% 的数据，保证 1 ≤ n ≤ 1000 。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          小熊的果篮(fruit)',
+  'tests': [{'input': '5\n'
+                      'Server 192.168.1.1:8080\n'
+                      'Server 192.168.1.1:8080\n'
+                      'Client 192.168.1.1:8080\n'
+                      'Client 192.168.1.1:80\n'
+                      'Client 192.168.1.1:99999\n',
+             'output': 'OK\nFAIL\n2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n1\nFAIL\nERR\n'},
+            {'input': '10\n'
+                      'Server 192.168.1.1:80\n'
+                      'Client 192.168.1.1:80\n'
+                      'Client 192.168.1.1:8080\n'
+                      'Server 192.168.1.1:80\n'
+                      'Server 192.168.1.1:8080\n'
+                      'Server 192.168.1.999:0\n'
+                      'Client 192.168.1.1.8080\n'
+                      'Client 192.168.1.1:8080\n'
+                      'Client 192.168.1.1:80\n'
+                      'Client 192.168.1.999:0\n',
+             'output': 'OK\n'
+                       '1\n'
+                       'FAIL\n'
+                       'FAIL\n'
+                       'OK\n'
+                       'ERR\n'
+                       'ERR\n'
+                       '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                      网络连接(network)\n'
+                       '5\n'
+                       '1\n'
+                       'ERR\n'}],
+  'public_tests': [{'input': '5\n'
+                             'Server 192.168.1.1:8080\n'
+                             'Server 192.168.1.1:8080\n'
+                             'Client 192.168.1.1:8080\n'
+                             'Client 192.168.1.1:80\n'
+                             'Client 192.168.1.1:99999\n',
+                    'output': 'OK\n'
+                              'FAIL\n'
+                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n'
+                              '1\n'
+                              'FAIL\n'
+                              'ERR\n'}],
+  'hidden_tests': [{'input': '5\n'
+                             'Server 192.168.1.1:8080\n'
+                             'Server 192.168.1.1:8080\n'
+                             'Client 192.168.1.1:8080\n'
+                             'Client 192.168.1.1:80\n'
+                             'Client 192.168.1.1:99999\n',
+                    'output': 'OK\n'
+                              'FAIL\n'
+                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证          网络连接(network)\n'
+                              '1\n'
+                              'FAIL\n'
+                              'ERR\n'},
+                   {'input': '10\n'
+                             'Server 192.168.1.1:80\n'
+                             'Client 192.168.1.1:80\n'
+                             'Client 192.168.1.1:8080\n'
+                             'Server 192.168.1.1:80\n'
+                             'Server 192.168.1.1:8080\n'
+                             'Server 192.168.1.999:0\n'
+                             'Client 192.168.1.1.8080\n'
+                             'Client 192.168.1.1:8080\n'
+                             'Client 192.168.1.1:80\n'
+                             'Client 192.168.1.999:0\n',
+                    'output': 'OK\n'
+                              '1\n'
+                              'FAIL\n'
+                              'FAIL\n'
+                              'OK\n'
+                              'ERR\n'
+                              'ERR\n'
+                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                      网络连接(network)\n'
+                              '5\n'
+                              '1\n'
+                              'ERR\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_j_round2-2021-fruit',
+  'competition': 'csp_j_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/入门级-CSP-J2/CSP-J-S 2021_入门级-CSP-J2_試題.pdf',
+  'title': 'HKOI CSP-J 2021 小熊的果篮',
+  'description': '小熊的水果店里摆放着一排 n 个水果。每个水果只可能是苹果或桔子，从左到右依\n'
+                 '次用正整数 1、2、3、……、n 编号。连续排在一起的同一种水果称为一个“块”。小熊\n'
+                 '要把这一排水果挑到若干个果篮里，具体方法是:每次都把每一个“块”中最左边的水\n'
+                 '果同时挑出，组成一个果篮。重复这一操作，直至水果用完。注意，每次挑完一个果篮\n'
+                 '后，“块”可能会发生变化。比如两个苹果“块”之间的唯一桔子被挑走后，两个苹果\n'
+                 '“块”就变成了一个“块”。请帮小熊计算每个果篮里包含的水果。',
+  'input': '从文件 fruit.in 中读入数据。\n'
+           '        输入的第一行包含一个正整数 n，表示水果的数量。\n'
+           '        输入的第二行包含 n 个空格分隔的整数，其中第 i 个数表示编号为 i 的水果的种\n'
+           '类，1 代表苹果，0 代表桔子。',
+  'output': '输出到文件 fruit.out 中。\n        输出若干行。\n        第 i 行表示第 i 次挑出的水果组成的果篮。从小到大排序输出该果篮中所有水果的\n编号，每两个编号之间用一个空格分隔。',
+  'constraints': '对于 10% 的数据，n ≤ 5。\n'
+                 '     对于 30% 的数据，n ≤ 1000。\n'
+                 '     对于 70% 的数据，n ≤ 50000。\n'
+                 '     对于 100% 的数据，n ≤ 2 × 105 。',
+  'tests': [{'input': '12\n1 1 0 0 1 1 1 0 1 1 0 0\n',
+             'output': '1 3 5 8 9 11\n'
+                       '2 4 6 12\n'
+                       '7\n'
+                       '10\n'
+                       '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证             小熊的果篮(fruit)\n'},
+            {'input': '20\n1 1 1 1 0 0 0 1 1 1 0 0 1 0 1 1 0 0 0 0\n',
+             'output': '1 5 8 11 13 14 15 17\n2 6 9 12 16 18\n3 7 10 19\n4 20\n'}],
+  'public_tests': [{'input': '12\n1 1 0 0 1 1 1 0 1 1 0 0\n',
+                    'output': '1 3 5 8 9 11\n'
+                              '2 4 6 12\n'
+                              '7\n'
+                              '10\n'
+                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证             小熊的果篮(fruit)\n'}],
+  'hidden_tests': [{'input': '12\n1 1 0 0 1 1 1 0 1 1 0 0\n',
+                    'output': '1 3 5 8 9 11\n'
+                              '2 4 6 12\n'
+                              '7\n'
+                              '10\n'
+                              '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证             小熊的果篮(fruit)\n'},
+                   {'input': '20\n1 1 1 1 0 0 0 1 1 1 0 0 1 0 1 1 0 0 0 0\n',
+                    'output': '1 5 8 11 13 14 15 17\n2 6 9 12 16 18\n3 7 10 19\n4 20\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2021-airport',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/提高级-CSP-S2/CSP-J-S 2021_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2021 廊桥分配',
+  'description': '当一架飞机抵达机场时，可以停靠在航站楼旁的廊桥，也可以停靠在位于机场边缘\n'
+                 '的远机位。乘客一般更期待停靠在廊桥，因为这样省去了坐摆渡车前往航站楼的周折。\n'
+                 '然而，因为廊桥的数量有限，所以这样的愿望不总是能实现。\n'
+                 '     机场分为国内区和国际区，国内航班飞机只能停靠在国内区，国际航班飞机只能停\n'
+                 '靠在国际区。一部分廊桥属于国内区，其余的廊桥属于国际区。\n'
+                 '     L 市新建了一座机场，一共有 n 个廊桥。该机场决定，廊桥的使用遵循“先到先得”\n'
+                 '的原则，即每架飞机抵达后，如果相应的区(国内/国际)还有空闲的廊桥，就停靠在廊\n'
+                 '桥，否则停靠在远机位(假设远机位的数量充足)。该机场只有一条跑道，因此不存在\n'
+                 '两架飞机同时抵达的情况。\n'
+                 '     现给定未来一段时间飞机的抵达、离开时刻，请你负责将 n 个廊桥分配给国内区和\n'
+                 '国际区，使停靠廊桥的飞机数量最多。',
+  'input': '从文件 airport.in 中读入数据。\n'
+           '     输入的第一行包含 3 个正整数 n, m1 , m2 分别表示廊桥的个数、国内航班飞机的数\n'
+           '量、国际航班飞机的数量。\n'
+           '     接下来 m1 行是国内航班的信息，第 i 行包含 2 个正整数 a1,i , b1,i ，分别表示一架国\n'
+           '内航班飞机的抵达、离开时刻。\n'
+           '     接下来 m2 行是国际航班的信息，第 i 行包含 2 个正整数 a2,i , b2,i ，分别表示一架国\n'
+           '际航班飞机的抵达、离开时刻。\n'
+           '     每行的多个整数由空格分隔。',
+  'output': '输出到文件 airport.out 中。\n     输出一个正整数，表示能够停靠廊桥的飞机数量的最大值。',
+  'constraints': '对于 20% 的数据，1 ≤ n ≤ 100, 1 ≤ m1 + m2 ≤ 100。\n'
+                 '         对于 40% 的数据，1 ≤ n ≤ 5000, 1 ≤ m1 + m2 ≤ 5000。\n'
+                 '         对于 100% 的数据，1 ≤ n ≤ 100000, 1 ≤ m1 + m2 ≤ 100000。\n'
+                 '         所有 a1,i , b1,i , a2,i , b2,i 为数值不超过 108 的互不相同的正整数。\n'
+                 '         保证 ∀i ∈ [1, n], a1,i < b1,i , a2,i < b2,i 。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证      括号序列(bracket)',
+  'tests': [{'input': '3 5 4\n'
+                      '1 5\n'
+                      '3 8\n'
+                      '6 10\n'
+                      '9 14\n'
+                      '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
+                      '13 18\n'
+                      '2 11\n'
+                      '4 15\n'
+                      '7 17\n'
+                      '12 16\n',
+             'output': '7\n'},
+            {'input': '2 4 6\n'
+                      '20 30\n'
+                      '40 50\n'
+                      '21 22\n'
+                      '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                         廊桥分配(airport)\n'
+                      '41 42\n'
+                      '1 19\n'
+                      '2 18\n'
+                      '3 4\n'
+                      '5 6\n'
+                      '7 8\n'
+                      '9 10\n',
+             'output': '4\n'}],
+  'public_tests': [{'input': '3 5 4\n'
+                             '1 5\n'
+                             '3 8\n'
+                             '6 10\n'
+                             '9 14\n'
+                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
+                             '13 18\n'
+                             '2 11\n'
+                             '4 15\n'
+                             '7 17\n'
+                             '12 16\n',
+                    'output': '7\n'}],
+  'hidden_tests': [{'input': '3 5 4\n'
+                             '1 5\n'
+                             '3 8\n'
+                             '6 10\n'
+                             '9 14\n'
+                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证           廊桥分配(airport)\n'
+                             '13 18\n'
+                             '2 11\n'
+                             '4 15\n'
+                             '7 17\n'
+                             '12 16\n',
+                    'output': '7\n'},
+                   {'input': '2 4 6\n'
+                             '20 30\n'
+                             '40 50\n'
+                             '21 22\n'
+                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                         廊桥分配(airport)\n'
+                             '41 42\n'
+                             '1 19\n'
+                             '2 18\n'
+                             '3 4\n'
+                             '5 6\n'
+                             '7 8\n'
+                             '9 10\n',
+                    'output': '4\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2021-bracket',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/提高级-CSP-S2/CSP-J-S 2021_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2021 括号序列',
+  'description': '小 w 在赛场上遇到了这样一个题:一个长度为 n 且符合规范的括号序列，其有些\n'
+                 '位置已经确定了，有些位置尚未确定，求这样的括号序列一共有多少个。\n'
+                 '   身经百战的小 w 当然一眼就秒了这题，不仅如此，他还觉得一场正式比赛出这么\n'
+                 '简单的模板题也太小儿科了，于是他把这题进行了加强之后顺手扔给了小 c。\n'
+                 '   具体而言，小 w 定义“超级括号序列”是由字符 ( 、)、* 组成的字符串，并且对\n'
+                 '于某个给定的常数 k ，给出了“符合规范的超级括号序列”的定义如下:\n'
+                 '     1、() 、(S) 均是符合规范的超级括号序列，其中 S 表示任意一个仅由不\n'
+                 '                                          .超.过\n'
+                 '                                             . k\n'
+                 '个字符\n'
+                 '.   * 组成的非空字符串(以下两条规则中的 S 均为此含义)；\n'
+                 '  2、如果字符串 A 和 B 均为符合规范的超级括号序列，那么字符串 AB 、ASB 均为\n'
+                 '符合规范的超级括号序列，其中 AB 表示把字符串 A 和字符串 B 拼接在一起形成的字符\n'
+                 '串；\n'
+                 '     3、如果字符串 A 为符合规范的超级括号序列，那么字符串 (A) 、(SA) 、(AS) 均\n'
+                 '为符合规范的超级括号序列。\n'
+                 '     4、所有符合规范的超级括号序列均可通过上述 3 条规则得到。\n'
+                 '   例如，若 k = 3 ，则字符串 ((**()*(*))*)(***) 是符合规范的超级括号序列，但\n'
+                 '字符串 *() 、(*()*) 、((**))*) 、(****(*)) 均不是。特别地，空字符串也不被视\n'
+                 '为符合规范的超级括号序列。\n'
+                 '   现在给出一个长度为 n 的超级括号序列，其中有一些位置的字符已经确定，另外一\n'
+                 '些位置的字符尚未确定(用 ? 表示)\n'
+                 '                 。小 w 希望能计算出:有多少种将所有尚未确定的\n'
+                 '字符一一确定的方法，使得得到的字符串是一个符合规范的超级括号序列？\n'
+                 '   可怜的小 c 并不会做这道题，于是只好请求你来帮忙。',
+  'input': '从文件 bracket.in 中读入数据。\n   第 1 行，2 个正整数 n, k 。\n   第 2 行，一个长度为 n 且仅由 ( 、) 、*、? 构成的字符串 S 。',
+  'output': '输出到文件 bracket.out 中。\n   输出一个非负整数表示答案对 109 + 7 取模的结果。',
+  'constraints': '测试点编号       n≤       特殊性质\n'
+                 '                   1∼3       15\n'
+                 '                   4∼8       40             无\n'
+                 '                   9 ∼ 13    100\n'
+                 '                  14 ∼ 15          S 串中仅含有字符?\n'
+                 '16 ∼ 20                   无\n'
+                 '\n'
+                 '   对于 100% 的数据，1 ≤ k ≤ n ≤ 500 。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                             回文(palin)',
+  'tests': [{'input': '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                  括号序列(bracket)\n7 3\n(*??*??\n',
+             'output': '5\n'},
+            {'input': '10 2\n???(*??(?)\n', 'output': '19\n'}],
+  'public_tests': [{'input': '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                  括号序列(bracket)\n7 3\n(*??*??\n',
+                    'output': '5\n'}],
+  'hidden_tests': [{'input': '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                  括号序列(bracket)\n7 3\n(*??*??\n',
+                    'output': '5\n'},
+                   {'input': '10 2\n???(*??(?)\n', 'output': '19\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_s_round2-2021-palin',
+  'competition': 'csp_s_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 6,
+  'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/提高级-CSP-S2/CSP-J-S 2021_提高级-CSP-S2_試題.pdf',
+  'title': 'HKOI CSP-S 2021 回文',
+  'description': '给定正整数 n 和整数序列 a1 , a2 , . . . , a2n ，在这 2n 个数中，1, 2, . . . , n 分别各出现\n'
+                 '恰好 2 次。现在进行 2n 次操作，目标是创建一个长度同样为 2n 的序列 b1 , b2 , . . . , b2n ，\n'
+                 '初始时 b 为空序列，每次可以进行以下两种操作之一:\n'
+                 '        1. 将序列 a 的开头元素加到 b 的末尾，并从 a 中移除\n'
+                 '        2. 将序列 a 的末尾元素加到 b 的末尾，并从 a 中移除\n'
+                 '        我们的目的是让 b 成为一个回\n'
+                 '                      .文.数 . 即令其满足对所有 1 ≤ i ≤ n，有 bi = b2n+1−i 。\n'
+                 '                         . 列，\n'
+                 '请你判断该目的是否能达成，如果可以，请输出字典序最小的操作方案，具体在【输出\n'
+                 '格式】中说明。',
+  'input': '从文件 palin.in 中读入数据。\n'
+           '        每个测试点包含多组测试数据。\n'
+           '        输入的第一行包含一个整数 T ，表示测试数据的组数。\n'
+           '        每组测试数据的第一行包含一个正整数 n，第二行包含 2n 个用空格隔开的整数\n'
+           'a1 , a2 , . . . , a2n 。',
+  'output': '输出到文件 palin.out 中。\n'
+            '        对每个测试数据输出一行答案。\n'
+            '        如果无法生成出回文数列，输出一行 ‐1，否则输出一行一个长度为 2n 的、由字符\n'
+            'L 或 R 构成的字符串(不含空格)，其中 L 表示移除开头元素的操作 1，R 表示操作 2。\n'
+            '你需要输出所有方案对应的字符串中字典序最小的一个。\n'
+            '        字典序的比较规则如下:长度均为 2n 的字符串 s1..2n 比 t1..2n 字典序小，当且仅当\n'
+            '存在下标 1 ≤ k ≤ 2n 使得 ∀1 ≤ i < k 有 si = ti 且 sk < tk 。',
+  'constraints': '∑\n'
+                 '     令  n 表示所有 T 组测试数据中 n 的和。\n'
+                 '                                 ∑\n'
+                 '     对所有测试点保证 1 ≤ T ≤ 100, 1 ≤ n, n ≤ 5 × 105 。\n'
+                 '                                                      ∑\n'
+                 '                 测试点编号      T            n                n   特殊性质\n'
+                 '                  1∼7      ≤ 10      ≤ 10         ≤ 50\n'
+                 '                  8 ∼ 10             ≤ 20\n'
+                 '                                                 ≤ 1000\n'
+                 '                 11 ∼ 12   ≤ 100    ≤ 100                      无\n'
+                 '                 13 ∼ 15            ≤ 1000       ≤ 25000\n'
+                 '                 16 ∼ 17   =1\n'
+                 '                 18 ∼ 20           ≤ 5 × 105    ≤ 5 × 105      有\n'
+                 '                           ≤ 100\n'
+                 '                 21 ∼ 25                                       无\n'
+                 '\n'
+                 '     特殊性质:如果我们每次删除 a 中两个相邻且相等的数，存在一种方式将序列删空\n'
+                 '(例如 a = [1, 2, 2, 1])。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证        交通规划(traﬀic)\n'
+                 '\n'
+                 '                            交通规划(traﬀic)\n'
+                 '  【题目描述】\n'
+                 '\n'
+                 '   给定一个平面上 n 条水平直线和 m 条垂直直线，它们相交形成 n 行 m 列的网格，\n'
+                 '从上到下第 r 条水平直线和从左到右第 c 条垂直直线之间的交点称为格点 (r, c)。网格\n'
+                 '中任意两个水平或垂直相邻的格点之间的线段称为一条边，每条边有一个非负整数边\n'
+                 '权。\n'
+                 '     进行 T 次询问，每次询问形式如下:\n'
+                 '     给出 k(T 次询问的 k 可能不同)个附加点，每个附加点位于一条从网格边缘向外\n'
+                 '出发的射线上。所有从网格边缘向外出发的射线按左上-右上-右下-左下-左上的顺序依\n'
+                 '次编号为 1 到 2n + 2m，如下图:\n'
+                 '\n'
+                 '                            图 2: 射线的编号\n'
+                 '\n'
+                 '   对于每次询问，不同附加点所在的射线互不相同。每个附加点和最近的格点之间的\n'
+                 '线段也称为一条边，也有非负整数边权(注意，在角上的格点有可能和两个附加点同时\n'
+                 '相连)。\n'
+                 '   给定每个附加点的颜色(黑色或者白色)，请你将网格内每个格点的颜色染成黑白\n'
+                 '二者之一，并使得所有两端颜色不同的边的边权和最小。请输出这个最小的边权和。\n'
+                 '\n'
+                 '  【输入格式】\n'
+                 '\n'
+                 '   从文件 traﬀic.in 中读入数据。\n'
+                 '   第一行 3 个正整数 n, m, T 分别表示水平、垂直直线的数量，以及询问次数。\n'
+                 '   接下来 n − 1 行，每行 m 个非负整数。其中第 i 行的第 j 个非负整数 x1i,j 表示\n'
+                 '(i, j) 和 (i + 1, j) 间的边权。\n'
+                 '   接下来 n 行，每行 m − 1 个非负整数。其中第 i 行的第 j 个非负整数 x2i,j 表示\n'
+                 '(i, j) 和 (i, j + 1) 间的边权。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                                交通规划(traﬀic)\n'
+                 '\n'
+                 '        接下来依次输入 T 组询问。第 i 组询问开头为一行一个正整数 ki 表示这次询问附\n'
+                 '加点的总数。接下来 ki 行每行三个非负整数。其中第 j 行依次为 x3i,j , pi,j , ti,j 表示第 i\n'
+                 '个附加点和相邻格点之间的边权、所在的射线编号以及附加点颜色(0 为白色，1 为黑\n'
+                 '色)。保证同一组询问内 pi,j 互不相同。\n'
+                 '        每行的多个整数由空格分隔。\n'
+                 '\n'
+                 '    【输出格式】\n'
+                 '\n'
+                 '        输出到文件 traﬀic.out 中。\n'
+                 '        输出 T 行，第 i 行输出一个非负整数，表示第 i 次询问染色之后两端颜色不同的边\n'
+                 '权和的最小值。\n'
+                 '\n'
+                 '    【样例 1 输入】\n'
+                 '2 3 1\n'
+                 '9 4 7\n'
+                 '3 8\n'
+                 '10 5\n'
+                 '2\n'
+                 '19 3 1\n'
+                 '17 9 0\n'
+                 '\n'
+                 '    【样例 1 输出】\n'
+                 '12\n'
+                 '\n'
+                 '    【样例 1 解释】\n'
+                 '\n'
+                 '        最优方案:(1, 3), (1, 2), (2, 3) 为黑色；(1, 1), (2, 1), (2, 2) 为白色。\n'
+                 '\n'
+                 '    【样例 2】\n'
+                 '\n'
+                 '        见选手目录下的 traﬀic/traﬀic2.in 与 traﬀic/traﬀic2.ans。\n'
+                 '\n'
+                 '    【样例 3】\n'
+                 '\n'
+                 '        见选手目录下的 traﬀic/traﬀic3.in 与 traﬀic/traﬀic3.ans。\n'
+                 '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                       交通规划(traﬀic)\n'
+                 '\n'
+                 ' 【样例 4】\n'
+                 '\n'
+                 '     见选手目录下的 traﬀic/traﬀic4.in 与 traﬀic/traﬀic4.ans。\n'
+                 '\n'
+                 ' 【样例 5】\n'
+                 '\n'
+                 '     见选手目录下的 traﬀic/traﬀic5.in 与 traﬀic/traﬀic5.ans。\n'
+                 '\n'
+                 ' 【数据范围】\n'
+                 '\n'
+                 '                             测试点编号         n, m ≤     ki ≤\n'
+                 '                                 1,2          5       50\n'
+                 '                                3,4,5                  2\n'
+                 '6,7,8                 50\n'
+                 '                                 9,10                  2\n'
+                 '11,12                 50\n'
+                 '                             13,14,15,16               2\n'
+                 '17,18,19,20              50\n'
+                 '\n'
+                 '     对于所有数据，2 ≤ n, m ≤ 500, 1 ≤ T ≤ 50, 1 ≤ ki ≤ min{2(n + m), 50}, 1 ≤\n'
+                 '∑T\n'
+                 ' i=1 ki ≤ 50, 0 ≤ x ≤ 10 , 1 ≤ p ≤ 2(n + m), t ∈ {0, 1}。\n'
+                 '保证对于每个 i ∈ [1, T ]，pi,j 互不相同。',
+  'tests': [{'input': '2\n'
+                      '5\n'
+                      '4 1 2 4 5 3 1 2 3 5\n'
+                      '3\n'
+                      '3 2 1 2 1 3\n'
+                      '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
+             'output': 'LRRLLRRRRL\n‐1\n'},
+            {'input': '2 3 1\n9 4 7\n3 8\n10 5\n2\n19 3 1\n17 9 0\n', 'output': '12\n'}],
+  'public_tests': [{'input': '2\n'
+                             '5\n'
+                             '4 1 2 4 5 3 1 2 3 5\n'
+                             '3\n'
+                             '3 2 1 2 1 3\n'
+                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
+                    'output': 'LRRLLRRRRL\n‐1\n'}],
+  'hidden_tests': [{'input': '2\n'
+                             '5\n'
+                             '4 1 2 4 5 3 1 2 3 5\n'
+                             '3\n'
+                             '3 2 1 2 1 3\n'
+                             '2021 CCF 非专业级软件能力认证 CSP-J/S 2021 第二轮认证                              回文(palin)\n',
+                    'output': 'LRRLLRRRRL\n‐1\n'},
+                   {'input': '2 3 1\n9 4 7\n3 8\n10 5\n2\n19 3 1\n17 9 0\n', 'output': '12\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2015-csp-x2015山东省小学组二轮试题(上半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2015/Round2/CSP-X2015山东省小学组二轮试题(上半场).pdf',
+  'title': 'CSP-X 山东小学组 2015 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2015-csp-x2015山东省小学组二轮试题(下半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2015/Round2/CSP-X2015山东省小学组二轮试题(下半场).pdf',
+  'title': 'CSP-X 山东小学组 2015 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2018-csp-x2018山东省小学组二轮试题(上半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2018/Round2/CSP-X2018山东省小学组二轮试题(上半场).pdf',
+  'title': 'CSP-X 山东小学组 2018 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2018-csp-x2018山东省小学组二轮试题(下半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2018/Round2/CSP-X2018山东省小学组二轮试题(下半场).pdf',
+  'title': 'CSP-X 山东小学组 2018 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2019-csp-x2019山东省小学组二轮试题(上半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2019/Round2/CSP-X2019山东省小学组二轮试题(上半场).pdf',
+  'title': 'CSP-X 山东小学组 2019 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2019-csp-x2019山东省小学组二轮试题(下半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2019/Round2/CSP-X2019山东省小学组二轮试题(下半场).pdf',
+  'title': 'CSP-X 山东小学组 2019 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2020-csp-x2020山东省小学组二轮试题(上半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2020/Round2/CSP-X2020山东省小学组二轮试题(上半场).pdf',
+  'title': 'CSP-X 山东小学组 2020 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2020-csp-x2020山东省小学组二轮试题(下半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2020/Round2/CSP-X2020山东省小学组二轮试题(下半场).pdf',
+  'title': 'CSP-X 山东小学组 2020 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2021-csp-x2021二轮认证山东小学组试题（上半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2021/Round2/CSP-X2021二轮认证山东小学组试题（上半场).pdf',
+  'title': 'CSP-X 山东小学组 2021 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2021-csp-x2021二轮认证山东小学组试题（下半场)',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2021/Round2/CSP-X2021二轮认证山东小学组试题（下半场).pdf',
+  'title': 'CSP-X 山东小学组 2021 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2022-csp-x2022山东省小学组二轮补赛试题（上半场）',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2022/Round2/CSP-X2022山东省小学组二轮补赛试题（上半场）.pdf',
+  'title': 'CSP-X 山东小学组 2022 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2022-csp-x2022山东省小学组二轮补赛试题（下半场）',
+  'competition': 'csp_x_round2',
+  'category': '原始题面',
+  'problem_type': '原始题面',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2022/Round2/CSP-X2022山东省小学组二轮补赛试题（下半场）.pdf',
+  'title': 'CSP-X 山东小学组 2022 第二轮原始题面',
+  'description': '该原始资料为扫描版或暂未能自动拆分题面，请打开 source 字段对应文件查看完整题目。',
+  'input': '见原始题面。',
+  'output': '见原始题面。',
+  'constraints': '见原始题面。',
+  'tests': [],
+  'public_tests': [],
+  'hidden_tests': [],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2023-money',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（上半场).pdf',
+  'title': 'CSP-X 山东小学组 2023 赚钱',
+  'description': '小 A 很喜欢旅游，他的国家共有 n 个城市，编号依次为 1 到 n，这个暑假小 A 打算从 1 号\n'
+                 '城市开始按编号从小到大依次旅游完所有的城市，最后达到 n 号城市，而且他不走回头路，\n'
+                 '每个城市只走一次。\n'
+                 '  小 A 很聪明，在没出发之前，他已经了解到，每个城市都有他喜欢的小熊纪念品，但是\n'
+                 '每个城市的价格却不完全一样(在同一个城市买入和卖出一个小熊纪念品的价格相同)，于是\n'
+                 '小 A 打算从经过的某一个城市 x 买一个纪念品，然后在后面经过的某个城市 y 卖掉，从而赚\n'
+                 '取其中的差价。但是他必须在某个城市买 1 次，而且只能买 1 个，并且一定要在后面的某个\n'
+                 '城市卖掉(不能在同一个城市先买入后再卖出)，因为他家里已经有很多小熊纪念品了。\n'
+                 '  如，2 号城市的纪念品价格是 10 元，6 号城市的纪念品是 8 元，10 号城市的纪念品是 18\n'
+                 '元，假设小 A 在 2 号城市花 10 元钱买了一个纪念品，如果在 6 号城市卖掉他就亏了 2 元(赚\n'
+                 '-2 元)，如果在 10 号城市卖，他就会赚 8 元。\n'
+                 '  小 A 希望赚的钱越多越好。\n'
+                 '  问:小 A 最多能赚多少钱(当然也有可能亏钱)？',
+  'input': '输入文件 money.in。\n  第一行一个整数 n，表示城市的个数。\n  第二行，n 个用一个空格隔开的正整数，a1,a2,..an，依次表示小 A 要经过的城市的纪念\n品的价格。',
+  'output': '输出文件 money.out\n  输出一个整数，表示小 A 能赚到钱的最大值。',
+  'constraints': '30%的数据:n≤1000。\n  100%的数据:2≤n≤200000，0<ai≤2000000000。\n\n                             3 / 5',
+  'tests': [{'input': '5\n  2 1 6 8 4\n', 'output': '7\n'}, {'input': '6\n  10 8 7 5 3 1\n', 'output': '-1\n'}],
+  'public_tests': [{'input': '5\n  2 1 6 8 4\n', 'output': '7\n'}],
+  'hidden_tests': [{'input': '5\n  2 1 6 8 4\n', 'output': '7\n'}, {'input': '6\n  10 8 7 5 3 1\n', 'output': '-1\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2023-palindrome',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（上半场).pdf',
+  'title': 'CSP-X 山东小学组 2023 回文字符串',
+  'description': '作为一个新手，小明刚学了回文字符串，知道了一个字符串如果关于中心对称，则该字\n'
+                 '符串为回文字符串。\n'
+                 '  于是他自己就发明了属于他自己的回文字符串，即符合以下条件的字符串 S 是回文字\n'
+                 '符串:\n'
+                 '  首先把字符串 S 分割成 n 个子串 S1 , S2 , . . . Sn ，即 S1 + S2 +. . . +Sn = S (其中 + 为字\n'
+                 '符串拼接操作)。\n'
+                 '  分割成的子串数量需要大于 1，且不能为空，即 n > 1 且 Si 为非空子串。\n'
+                 '  对于所有的 i ∈ [1, n] 有:要么 Si 与 Sn−i+1 相等，要么 Si 与 Sn−i+1 互为回文。(补\n'
+                 '充说明:字符串 A 和 B 互为回文指 A 倒过来与 B 相等，反之亦然。举例说明:“abc" 与\n'
+                 '"cba" 互为回文。)\n'
+                 '  给定一个字符串 S，请你帮助小明确定该字符串是否是在上述规则下的回文字符串。\n'
+                 '  如果是，他还想将字符串 S 分成尽可能多的子串。',
+  'input': '输入文件为 palindrome.in。\n  一行一个字符串 S。',
+  'output': '输出文件为 palindrome.out。\n  如果不能满足要求，输出一行一个字符串 NO；否则，输出两行，第一行一个字符串 YES，\n第二行一个整数 n 表示最大的子串数量。',
+  'constraints': '对于 30% 的数据，1 ≤ |S| ≤ 10；(其中 |S| 为给定字符串的长度)\n'
+                 '  对于 60% 的数据，1 ≤ |S| ≤ 1000；\n'
+                 '  其中有 30% 的数据输入的字符串为回文字符串；\n'
+                 '  对于 100% 的数据，1 ≤ |S| ≤ 10000，保证输入的字符串全为小写字母。\n'
+                 '\n'
+                 '                               5 / 5',
+  'tests': [{'input': 'abcababcba\n', 'output': 'YES\n  8\n'},
+            {'input': 'goodluckhavefun\n', 'output': 'NO\n'},
+            {'input': 'wahacodewaha\n', 'output': 'YES\n  3\n'}],
+  'public_tests': [{'input': 'abcababcba\n', 'output': 'YES\n  8\n'}],
+  'hidden_tests': [{'input': 'abcababcba\n', 'output': 'YES\n  8\n'},
+                   {'input': 'goodluckhavefun\n', 'output': 'NO\n'},
+                   {'input': 'wahacodewaha\n', 'output': 'YES\n  3\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2023-clone',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（下半场).pdf',
+  'title': 'CSP-X 山东小学组 2023 克隆机',
+  'description': '有一台神奇的克隆机，可以克隆任何东西。将样品放进克隆机，可以克隆出一份一样\n'
+                 '的“复制品”。小明得到了 k 种珍贵的植物种子，依次用 A,B,C,D,...,Z 表示(1≤k≤\n'
+                 '26)。一开始，每种植物种子只有 1 粒。\n'
+                 '  小明想利用克隆机克隆出更多种子。将一粒种子作为样品放进克隆机，就可以得到一\n'
+                 '粒克隆出来的相同的种子，这样一粒种子就变成了两粒种子。小明将 k 粒不同的种子按字\n'
+                 '母先后顺序排队，从 A 开始依次放入克隆机，每次把得到的两粒相同的种子(放入的 1 粒\n'
+                 '和克隆出来的 1 粒)放到队尾，这样不断的进行克隆。\n'
+                 '  例如，一共有 7 种不同的种子，依次用 A,B,C,D,E,F,G 表示。\n'
+                 '  第 1 粒种子 A 放进克隆机之前，队列是:A,B,C,D,E,F,G。\n'
+                 '  第 1 粒种子 A 放进克隆机之后，队列是:B,C,D,E,F,G,A,A。\n'
+                 '  第 3 粒种子 C 放进克隆机之前，队列是:C,D,E,F,G,A,A,B,B 。\n'
+                 '  第 3 粒种子 C 放进克隆机之后，队列是:D,E,F,G,A,A,B,B,C,C 。\n'
+                 '  请问第 n 粒放进克隆机的是什么种子？用 A,B,...,Z 表示。',
+  'input': '输入文件名为 clone.in。\n  输入 1 行 2 个数字，k 和 n ，用空格隔开。',
+  'output': '输出文件名为 clone.out。\n  输出 1 个字符，代表第 n 粒放进克隆机的种子。',
+  'constraints': '对于 50% 的数据，1≤n≤106 ；\n  对于 100% 的数据，1≤k≤26，1≤n≤1018 。\n\n                          3 / 5',
+  'tests': [{'input': '7 10\n', 'output': 'B\n'},
+            {'input': '2 / 5\n  26 80\n', 'output': 'A\n'},
+            {'input': '15 689\n', 'output': 'G\n'}],
+  'public_tests': [{'input': '7 10\n', 'output': 'B\n'}],
+  'hidden_tests': [{'input': '7 10\n', 'output': 'B\n'},
+                   {'input': '2 / 5\n  26 80\n', 'output': 'A\n'},
+                   {'input': '15 689\n', 'output': 'G\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2023-cost',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（下半场).pdf',
+  'title': 'CSP-X 山东小学组 2023 代价',
+  'description': '因为“黑发不知勤学早”，于是小明成为了一名伟大的流水线工人，天天起早摸黑打螺\n'
+                 '丝。\n'
+                 '    这一天，小明所在的流水线生成了 n 件产品，其中第 i 号产品规格用一个正整数 ai\n'
+                 '表示。\n'
+                 '    所谓流水线，就是需要标准化。于是，小明想把这 n 件产品规格修整得全部相同。\n'
+                 '    小明手边有两种工具来进对产品进行修整，但是使用不同工具需要花费不同的代价，\n'
+                 '小明可以进行以下操作任意次:\n'
+                 '    · 使用一次第一种工具花费 A 的代价将第 i 件产品的规格 ai 修改成 ai + 1(其中\n'
+                 'i ∈ [1, n])。\n'
+                 '    · 使用一次第二种工具花费 B 的代价将第 i 件产品的规格 ai 修改成 ai − 1(其中\n'
+                 'i ∈ [1, n])。\n'
+                 '    现在小明想要花费最少的代价将所有产品的规格都变得相同，于是他找到了自幼勤学\n'
+                 '苦练的你来帮忙。\n'
+                 '    你只需要计算出把所有产品调整为相同规格的最小代价即可。',
+  'input': '输入文件为 cost.in。\n'
+           '    第一行三个正整数 n,A,B，分别表示产品数量，使用一次第一种工具的代价 A 和使用\n'
+           '一次第二种工具的代价 B。\n'
+           '    第二行 n 个正整数 a1 , a2 , . . . , an 表示每件产品的产品规格。',
+  'output': '输出文件为 cost.out。\n    一行一个整数表示最小的总代价。',
+  'constraints': '对于 30% 的数据，1 ≤ n ≤ 10,1 ≤ ai ≤ 100,1 ≤ A, B ≤ 10；\n'
+                 '  对于 60% 的数据，1 ≤ n ≤ 105 , 1 ≤ ai ≤ 105 , 1 ≤ A, B ≤ 100；\n'
+                 '  其中有 30% 的数据，A = B；\n'
+                 '  对于 100% 的数据，1 ≤ n ≤ 105 , 0 ≤ ai ≤ 109 , 1 ≤ A, B ≤ 1000。\n'
+                 '\n'
+                 '                                     5 / 5',
+  'tests': [{'input': '3 1 1\n    1 2 5\n', 'output': '4\n                               4 / 5\n'},
+            {'input': '3 1 100\n  1 2 5\n', 'output': '7\n'},
+            {'input': '3 2 5\n  9999999999 9999999999 9999999999\n', 'output': '0\n'}],
+  'public_tests': [{'input': '3 1 1\n    1 2 5\n', 'output': '4\n                               4 / 5\n'}],
+  'hidden_tests': [{'input': '3 1 1\n    1 2 5\n', 'output': '4\n                               4 / 5\n'},
+                   {'input': '3 1 100\n  1 2 5\n', 'output': '7\n'},
+                   {'input': '3 2 5\n  9999999999 9999999999 9999999999\n', 'output': '0\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2024-buy',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（上半场）.pdf',
+  'title': 'CSP-X 山东小学组 2024 购物',
+  'description': '双十一，很多人在疯狂地购物。\n'
+                 '   商家推出了各种各样的优惠活动，吸引顾客购买更多的商品。\n'
+                 '   某商家推出如下的优惠活动:\n'
+                 '   该商家共有 n 件商品，单独购买第 i 件商品的费用为 ai 。顾客也可以花费 w 购买 一\n'
+                 '张优惠券，一张优惠卷最多可兑换 m 件商品(无需额外付费)。顾客可以购买任意张优惠卷；\n'
+                 '如果最后商品不足 m 件，优惠卷也可以使用。\n'
+                 '   求顾客购买完所有 n 件商品的最小费用。',
+  'input': '输入文件为 buy.in\n   第一行有 3 个整数 n, m, w。\n   第二行有 n 个整数，第 i 个为 ai ，表示第 i 件商品的费用。',
+  'output': '输出文件为 buy.out\n   购买所有商品的最小费用。',
+  'constraints': '30% 的数据:1 ≤ n ≤ 103 ,1 ≤ m ≤ 103 ,1 ≤ w ≤ 109 ,1 ≤ ai ≤ 109 ；\n'
+                 '  100% 的数据:1 ≤ n ≤ 2 × 105 ,1 ≤ m ≤ 2 × 105 ,1 ≤ w ≤ 109 ,1 ≤ ai ≤ 109 。',
+  'tests': [{'input': '5 2 8\n   2 7 1 8 4\n',
+             'output': '15\n   样例 1 说明\n   花费 8 买一张优惠卷，兑换第 2、第 4 件商品；第 1、第 3、第 5 件商品直接购买。\n共花费 8 + 2 + 1 + 4 = 15。\n'},
+            {'input': '5 3 8\n   6 7 4 8 9\n                           2 / 4\n',
+             'output': '16\n  样例 2 说明\n  花费 16 购买两张优惠卷，能兑换所有商品。\n'}],
+  'public_tests': [{'input': '5 2 8\n   2 7 1 8 4\n',
+                    'output': '15\n'
+                              '   样例 1 说明\n'
+                              '   花费 8 买一张优惠卷，兑换第 2、第 4 件商品；第 1、第 3、第 5 件商品直接购买。\n'
+                              '共花费 8 + 2 + 1 + 4 = 15。\n'}],
+  'hidden_tests': [{'input': '5 2 8\n   2 7 1 8 4\n',
+                    'output': '15\n'
+                              '   样例 1 说明\n'
+                              '   花费 8 买一张优惠卷，兑换第 2、第 4 件商品；第 1、第 3、第 5 件商品直接购买。\n'
+                              '共花费 8 + 2 + 1 + 4 = 15。\n'},
+                   {'input': '5 3 8\n   6 7 4 8 9\n                           2 / 4\n',
+                    'output': '16\n  样例 2 说明\n  花费 16 购买两张优惠卷，能兑换所有商品。\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2024-monster',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（上半场）.pdf',
+  'title': 'CSP-X 山东小学组 2024 消灭怪兽',
+  'description': '怪兽入侵了地球！\n'
+                 '  为了抵抗入侵，人类设计出了按顺序排列好的 n 件武器，其中第 i 件武器的攻击力为\n'
+                 'ai ，可以造成 ai 的伤害。\n'
+                 '  武器已经排列好了，因此不能改变顺序。某件武器可以单独攻击，也可以与相邻的武器\n'
+                 '进行组合攻击。具体来说，每次你可以把相邻的若干个(可以为 1 个，即不进行组合)连续\n'
+                 '的武器组合起来进行攻击，则攻击力为这些连续的武器攻击力之和。\n'
+                 '  来自外星的怪兽拥有无敌护盾，不会受到任何伤害。\n'
+                 '  但是人类在交战过程中发现怪兽有个致命的弱点:每次当受到 k 或 k 的倍数的伤害\n'
+                 '时，怪兽的无敌护盾就能被打破。\n'
+                 '  请你帮助人类求出有多少种组合武器的方案，使得造成的伤害能打破怪兽的无敌护盾。',
+  'input': '输入文件为 monster.in。\n  第一行两个正整数 n, k 如题所述；\n  第二行为 n 个正整数，其中第 i 个数 ai 表示第 i 件武器的攻击力。',
+  'output': '输出文件为 monster.out。\n\n                                    3 / 4\n\x0c  一行一个整数表示答案。',
+  'constraints': '20% 的数据，n, k ≤ 100；\n'
+                 '  40% 的数据，n, k ≤ 10000,1 ≤ ai ≤ k；\n'
+                 '  另外存在10% 的数据，k = 2；\n'
+                 '\n'
+                 '  另外存在10% 的数据，所有的 ai 均相等。\n'
+                 '\n'
+                 '  100% 的数据，1 ≤ n ≤ 106 , 2 ≤ k ≤ 106 , 1 ≤ ai ≤ 109 。\n'
+                 '\n'
+                 '                                     4 / 4',
+  'tests': [{'input': '53\n  12345\n', 'output': '7\n'},
+            {'input': '10 11\n  1 4 8 10 16 19 21 25 30 43\n', 'output': '7\n'},
+            {'input': '62\n  222222\n', 'output': '21\n'}],
+  'public_tests': [{'input': '53\n  12345\n', 'output': '7\n'}],
+  'hidden_tests': [{'input': '53\n  12345\n', 'output': '7\n'},
+                   {'input': '10 11\n  1 4 8 10 16 19 21 25 30 43\n', 'output': '7\n'},
+                   {'input': '62\n  222222\n', 'output': '21\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2024-coin',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（下半场）.pdf',
+  'title': 'CSP-X 山东小学组 2024 翻硬币',
+  'description': 'n 枚硬币从左到右依次排成一排，编号依次为 1 到 n。硬币的正面朝上用 0 表\n'
+                 '示，背面朝上用 1 表示，一开始所有的硬币都是正面朝上。\n'
+                 '  现进行 m 次操作，每次操作是把一个区间内的所有硬币翻过来:原来正面朝上的\n'
+                 '变为反面朝上，原来反面朝上的变为正面朝上。\n'
+                 '  第 i 次操作的区间 [ li , ri ] :表示把从第 li 到第 ri 枚之间的所有硬币都翻过来。\n'
+                 '  求 m 次操作后所有硬币从左到右依次组成的 01 数字序列。',
+  'input': '输入文件 coin.in\n  第一行整数 n 和整数 m，表示一共有 n 枚硬币和 m 次操作。\n  以下 m 行，每行两个正数数 li , ri ，依次表示每次操作区间。',
+  'output': '输出文件 coin.out\n  m 次操作结束后 n 枚硬币从左到右依次组成的 01 数字序列。',
+  'constraints': '60% 的数据 1 ≤ n, m ≤ 1000；\n  100% 的数据 1 ≤ n, m ≤ 200000。',
+  'tests': [{'input': '5 3\n  2 4\n  1 3\n  3 5\n', 'output': '10101\n'},
+            {'input': '10 5\n  1 6\n  8 10\n  3 7\n                        2 / 4\n  4 6\n  2 5\n',
+             'output': '1010011111\n'}],
+  'public_tests': [{'input': '5 3\n  2 4\n  1 3\n  3 5\n', 'output': '10101\n'}],
+  'hidden_tests': [{'input': '5 3\n  2 4\n  1 3\n  3 5\n', 'output': '10101\n'},
+                   {'input': '10 5\n  1 6\n  8 10\n  3 7\n                        2 / 4\n  4 6\n  2 5\n',
+                    'output': '1010011111\n'}],
+  'allow_static_tests': True},
+ {'id': 'csp_x_round2-2024-question',
+  'competition': 'csp_x_round2',
+  'category': '传统型',
+  'problem_type': '传统型',
+  'difficulty': 5,
+  'source': 'CSP/题库/CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（下半场）.pdf',
+  'title': 'CSP-X 山东小学组 2024 刷题',
+  'description': '比赛之路多艰，做题方得提升。努力刷题的人在比赛中往往能取得很好的成绩，小\n'
+                 '红就是这样的人。\n'
+                 '  为了继续提升自己的编程实力，小红整理了一份刷题题单，并选中了题单中的 n\n'
+                 '道编程题，将它们从 1 到 n 编号，计划用 m 天时间按照题目编号顺序做完所有的题\n'
+                 '目(一道题目只能在同一天完成，不可以使用多天完成同一道题目)。\n'
+                 '  在小红的计划中，她完成第 i 道题目的时间为 ai 。因为题目有难有易，小红做题\n'
+                 '时可以找好朋友小明帮忙解题，通过询问小明一道题目的解法，可以省去这个题目的\n'
+                 '做题时间。当然了，小红做题是为了提升自己，而不是提升小明。因此小红决定一天最\n'
+                 '多求助小明一次。\n'
+                 '  本题 m 天中，小红做题时间最长一天的总耗时定义为 T(小明帮忙做的题目不计\n'
+                 '入小红的做题总时间)。请你帮小红求出 T 的最小值是多少？',
+  'input': '输入文件为 question.in。\n'
+           '                                3 / 4\n'
+           '\x0c'
+           '  第一行两个正整数 n, m 分别表示小红做的题目以及小红刷完这些题目计划所用\n'
+           '天数。\n'
+           '  第二行 n 个正整数，分别表示每个题目解题所用时间 ai 。',
+  'output': '输出文件为 question.out。\n  输出仅一行， m 天中耗时最长一天的总耗时 T 的最小值。',
+  'constraints': '30% 的数据，n ≤ 1000；\n'
+                 '  60% 的数据，n ≤ 10000；\n'
+                 '  100% 的数据，n ≤ 100000,0 ≤ ai ≤ 10000,1 ≤ m ≤ 1000。\n'
+                 '\n'
+                 '                              4 / 4',
+  'tests': [{'input': '42\n 1233\n', 'output': '3\n'}, {'input': '34\n 999 999 999\n', 'output': '0\n'}],
+  'public_tests': [{'input': '42\n 1233\n', 'output': '3\n'}],
+  'hidden_tests': [{'input': '42\n 1233\n', 'output': '3\n'}, {'input': '34\n 999 999 999\n', 'output': '0\n'}],
   'allow_static_tests': True}]
 
 
@@ -19852,6 +25439,20 @@ CSP_IMPORT_REPORT = ['CSP-J 2019 Round1: 11',
  'CSP-S 2023 Round1: 43',
  'CSP-S 2024 Round1: 42',
  'CSP-S 2025 Round1: 43',
+ 'HKOI CSP-J 2019 Round1: 11',
+ 'HKOI CSP-S 2019 Round1: 14',
+ 'HKOI CSP-J 2020 Round1: 16',
+ 'HKOI CSP-S 2020 Round1: 16',
+ 'HKOI CSP-J 2021 Round1: 43',
+ 'HKOI CSP-S 2021 Round1: 43',
+ 'HKOI CSP-J 2022 Round1: 44',
+ 'HKOI CSP-S 2022 Round1: 43',
+ 'HKOI CSP-J 2023 Round1: 41',
+ 'HKOI CSP-S 2023 Round1: 43',
+ 'HKOI CSP-J 2024 Round1: 42',
+ 'HKOI CSP-S 2024 Round1: 42',
+ 'CSP-X 山东小学组 2023 Round1: 25',
+ 'CSP-X 山东小学组 2024 Round1: 43',
  'CSP-J 2019 Round2 CSP/题库/CSP-J/2019/Round2/2019-CCF-CSP-J2.pdf: 1',
  'CSP-J 2020 Round2 CSP/题库/CSP-J/2020/Round2/csp-j2 2020.pdf: 1',
  'CSP-J 2021 Round2 CSP/题库/CSP-J/2021/Round2/2021 CSP-J2试题.pdf: 1',
@@ -19866,4 +25467,32 @@ CSP_IMPORT_REPORT = ['CSP-J 2019 Round1: 11',
  'CSP-S 2022 Round2 CSP/题库/CSP-S/2022/Round2/2022 CSP-S2.pdf: 4',
  'CSP-S 2023 Round2 CSP/题库/CSP-S/2023/Round2/2023-CCF-CSP-S2.pdf: 3',
  'CSP-S 2024 Round2 CSP/题库/CSP-S/2024/Round2/CSP-S2-2024.pdf: 4',
- 'CSP-S 2025 Round2 CSP/题库/CSP-S/2025/Round2/CSP-S2-2025.pdf: 4']
+ 'CSP-S 2025 Round2 CSP/题库/CSP-S/2025/Round2/CSP-S2-2025.pdf: 4',
+ 'HKOI CSP-J 2020 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/入门级-CSP-J2/CSP-J-S 2020_入门级-CSP-J2_試題.pdf: 4',
+ 'HKOI CSP-S 2020 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2020/提高级-CSP-S2/CSP-J-S 2020_提高级-CSP-S2_試題.pdf: 4',
+ 'HKOI CSP-J 2021 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/入门级-CSP-J2/CSP-J-S 2021_入门级-CSP-J2_試題.pdf: 3',
+ 'HKOI CSP-S 2021 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2021/提高级-CSP-S2/CSP-J-S 2021_提高级-CSP-S2_試題.pdf: 3',
+ 'HKOI CSP-J 2022 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2022/入门级-CSP-J2/CSP-J-S 2022_入门级-CSP-J2_試題.pdf: 4',
+ 'HKOI CSP-S 2022 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2022/提高级-CSP-S2/CSP-J-S 2022_提高级-CSP-S2_試題.pdf: 4',
+ 'HKOI CSP-J 2023 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2023/入门级-CSP-J2/CSP-J-S 2023_入门级-CSP-J2_試題.pdf: 3',
+ 'HKOI CSP-S 2023 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2023/提高级-CSP-S2/CSP-J-S 2023_提高级-CSP-S2_試題.pdf: 3',
+ 'HKOI CSP-J 2024 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2024/入门级-CSP-J2/CSP-J-S 2024_入门级-CSP-J2_試題.pdf: 4',
+ 'HKOI CSP-S 2024 Round2 CSP/题库/香港 hkoi-cspjs-past-problems/第二輪/2024/提高级-CSP-S2/CSP-J-S 2024_提高级-CSP-S2_試題.pdf: 4',
+ 'CSP-X 山东小学组 2015 Round2 CSP/题库/CSP-X(山东)/2015/Round2/CSP-X2015山东省小学组二轮试题(上半场).pdf: 1',
+ 'CSP-X 山东小学组 2015 Round2 CSP/题库/CSP-X(山东)/2015/Round2/CSP-X2015山东省小学组二轮试题(下半场).pdf: 1',
+ 'CSP-X 山东小学组 2018 Round2 CSP/题库/CSP-X(山东)/2018/Round2/CSP-X2018山东省小学组二轮试题(上半场).pdf: 1',
+ 'CSP-X 山东小学组 2018 Round2 CSP/题库/CSP-X(山东)/2018/Round2/CSP-X2018山东省小学组二轮试题(下半场).pdf: 1',
+ 'CSP-X 山东小学组 2019 Round2 CSP/题库/CSP-X(山东)/2019/Round2/CSP-X2019山东省小学组二轮试题(上半场).pdf: 1',
+ 'CSP-X 山东小学组 2019 Round2 CSP/题库/CSP-X(山东)/2019/Round2/CSP-X2019山东省小学组二轮试题(下半场).pdf: 1',
+ 'CSP-X 山东小学组 2020 Round2 CSP/题库/CSP-X(山东)/2020/Round2/CSP-X2020山东省小学组二轮试题(上半场).pdf: 1',
+ 'CSP-X 山东小学组 2020 Round2 CSP/题库/CSP-X(山东)/2020/Round2/CSP-X2020山东省小学组二轮试题(下半场).pdf: 1',
+ 'CSP-X 山东小学组 2021 Round2 CSP/题库/CSP-X(山东)/2021/Round2/CSP-X2021二轮认证山东小学组试题（上半场).pdf: 1',
+ 'CSP-X 山东小学组 2021 Round2 CSP/题库/CSP-X(山东)/2021/Round2/CSP-X2021二轮认证山东小学组试题（下半场).pdf: 1',
+ 'CSP-X 山东小学组 2022 Round2 CSP/题库/CSP-X(山东)/2022/Round2/CSP-X2022山东省小学组二轮补赛试题（上半场）.pdf: 1',
+ 'CSP-X 山东小学组 2022 Round2 CSP/题库/CSP-X(山东)/2022/Round2/CSP-X2022山东省小学组二轮补赛试题（下半场）.pdf: 1',
+ 'CSP-X 山东小学组 2023 Round2 CSP/题库/CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（上半场).pdf: 2',
+ 'CSP-X 山东小学组 2023 Round2 CSP/题库/CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（下半场).pdf: 2',
+ 'CSP-X 山东小学组 2024 Round2 CSP/题库/CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（上半场）.pdf: 2',
+ 'CSP-X 山东小学组 2024 Round2 CSP/题库/CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（下半场）.pdf: 2',
+ 'dedupe round1 skipped duplicates: 371, renamed id collisions: 0',
+ 'dedupe round2 skipped duplicates: 22, renamed id collisions: 0']

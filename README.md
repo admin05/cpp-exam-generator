@@ -47,13 +47,15 @@ type, such as `传统型`.
 
 To add a new competition source, normalize questions into the same dictionaries
 used by `online_exam/question_bank.py`. Set `competition` to a short key such as
-`"literacy"`, `"csp_j_round1"`, `"csp_j_round2"`, `"csp_s_round1"`, or
-`"csp_s_round2"` so the admin page can include the question in the matching
-profile. The CSP import module is generated with
+`"literacy"`, `"csp_j_round1"`, `"csp_j_round2"`, `"csp_s_round1"`,
+`"csp_s_round2"`, `"csp_x_round1"`, or `"csp_x_round2"` so the admin page can
+include the question in the matching profile. The CSP import module is generated with
 `python3 scripts/generate_csp_imports.py`; the generator falls back to local
 Tesseract OCR for first-round papers and answer sheets whose PDF text is not
-extractable. Large scanned second-round PDFs are kept as source references until
-they are OCR-normalized or manually split into full programming tasks.
+extractable. It scans the local CSP-J/CSP-S folders, the HKOI mirror manifest,
+and CSP-X(山东) folders, then skips duplicate question signatures or duplicate
+generated IDs. Large scanned second-round PDFs are kept as source references
+until they are OCR-normalized or manually split into full programming tasks.
 
 ## Project Structure
 

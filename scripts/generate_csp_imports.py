@@ -8,6 +8,7 @@ module consumed by the exam app.
 from __future__ import annotations
 
 import ast
+import csv
 import hashlib
 import pprint
 import re
@@ -20,6 +21,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "online_exam" / "imported_csp_questions.py"
+HKOI_ROOT = "CSP/题库/香港 hkoi-cspjs-past-problems"
+CSP_X_ROOT = "CSP/题库/CSP-X(山东)"
 
 
 def tool_path(name: str) -> Path:
@@ -94,6 +97,123 @@ ROUND2_SOURCES = [
     Round2Source("csp_s_round2", "CSP-S", 2024, "CSP/题库/CSP-S/2024/Round2/CSP-S2-2024.pdf", 6),
     Round2Source("csp_s_round2", "CSP-S", 2025, "CSP/题库/CSP-S/2025/Round2/CSP-S2-2025.pdf", 6),
 ]
+
+
+HKOI_LEVELS = {
+    "入门级-CSP-J1": ("csp_j_round1", "HKOI CSP-J", 4),
+    "提高级-CSP-S1": ("csp_s_round1", "HKOI CSP-S", 5),
+    "入门级-CSP-J2": ("csp_j_round2", "HKOI CSP-J", 5),
+    "提高级-CSP-S2": ("csp_s_round2", "HKOI CSP-S", 6),
+}
+
+
+def discover_hkoi_sources() -> tuple[list[Round1Source], list[Round2Source]]:
+    manifest = ROOT / HKOI_ROOT / "manifest.tsv"
+    if not manifest.exists():
+        return [], []
+
+    grouped: dict[tuple[str, int, str], dict[str, str]] = {}
+    with manifest.open(encoding="utf-8", newline="") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            level = row.get("level", "")
+            if level not in HKOI_LEVELS:
+                continue
+            try:
+                year = int(row.get("year", ""))
+            except ValueError:
+                continue
+            key = (row.get("section", ""), year, level)
+            label = row.get("label", "")
+            if label in {"題目", "C++", "參考答案", "試題"}:
+                grouped.setdefault(key, {})[label] = row.get("path", "")
+
+    round1_sources: list[Round1Source] = []
+    round2_sources: list[Round2Source] = []
+    for (section, year, level), files in sorted(grouped.items(), key=lambda item: item[0]):
+        competition, level_label, difficulty = HKOI_LEVELS[level]
+        if section == "第一輪":
+            question_path = files.get("題目") or files.get("C++")
+            answer_path = files.get("參考答案")
+            if question_path and answer_path:
+                round1_sources.append(
+                    Round1Source(
+                        competition,
+                        level_label,
+                        year,
+                        f"{HKOI_ROOT}/{question_path}",
+                        f"{HKOI_ROOT}/{answer_path}",
+                        difficulty,
+                    )
+                )
+        elif section == "第二輪" and files.get("試題"):
+            round2_sources.append(
+                Round2Source(
+                    competition,
+                    level_label,
+                    year,
+                    f"{HKOI_ROOT}/{files['試題']}",
+                    difficulty,
+                )
+            )
+    return round1_sources, round2_sources
+
+
+def discover_csp_x_sources() -> tuple[list[Round1Source], list[Round2Source]]:
+    base = ROOT / CSP_X_ROOT
+    if not base.exists():
+        return [], []
+
+    round1_sources: list[Round1Source] = []
+    round2_sources: list[Round2Source] = []
+    for year_dir in sorted([path for path in base.iterdir() if path.is_dir() and path.name.isdigit()]):
+        year = int(year_dir.name)
+        round1_dir = year_dir / "Round1"
+        if round1_dir.exists():
+            pdfs = sorted(round1_dir.glob("*.pdf"))
+            question_candidates = [
+                path for path in pdfs
+                if "试题" in path.name and not re.search(r"答案\.pdf$", path.name)
+            ]
+            answer_candidates = [path for path in pdfs if "答案" in path.name]
+            question = question_candidates[0] if question_candidates else (pdfs[0] if pdfs else None)
+            answer = answer_candidates[0] if answer_candidates else question
+            if question:
+                round1_sources.append(
+                    Round1Source(
+                        "csp_x_round1",
+                        "CSP-X 山东小学组",
+                        year,
+                        str(question.relative_to(ROOT)),
+                        str(answer.relative_to(ROOT)) if answer else None,
+                        4,
+                    )
+                )
+
+        round2_dir = year_dir / "Round2"
+        if round2_dir.exists():
+            for question in sorted(round2_dir.glob("*.pdf")):
+                round2_sources.append(
+                    Round2Source(
+                        "csp_x_round2",
+                        "CSP-X 山东小学组",
+                        year,
+                        str(question.relative_to(ROOT)),
+                        5,
+                    )
+                )
+    return round1_sources, round2_sources
+
+
+def all_round1_sources() -> list[Round1Source]:
+    hkoi_round1, _ = discover_hkoi_sources()
+    csp_x_round1, _ = discover_csp_x_sources()
+    return list(ROUND1_SOURCES) + hkoi_round1 + csp_x_round1
+
+
+def all_round2_sources() -> list[Round2Source]:
+    _, hkoi_round2 = discover_hkoi_sources()
+    _, csp_x_round2 = discover_csp_x_sources()
+    return list(ROUND2_SOURCES) + hkoi_round2 + csp_x_round2
 
 
 def read_source(path: str, allow_ocr: bool = True) -> str:
@@ -442,7 +562,7 @@ def parse_markdown_round1(source: Round1Source, text: str) -> list[dict]:
 def parse_round1() -> tuple[list[dict], list[str]]:
     questions: list[dict] = []
     report: list[str] = []
-    for source in ROUND1_SOURCES:
+    for source in all_round1_sources():
         text = read_source(source.question_path)
         if source.question_path.endswith(".md"):
             items = parse_markdown_round1(source, text)
@@ -559,7 +679,7 @@ def parse_round2_source(source: Round2Source, text: str) -> list[dict]:
 def parse_round2() -> tuple[list[dict], list[str]]:
     tasks: list[dict] = []
     report: list[str] = []
-    for source in ROUND2_SOURCES:
+    for source in all_round2_sources():
         text = read_source(source.question_path, allow_ocr=False)
         items = parse_round2_source(source, text)
         tasks.extend(items)
@@ -567,9 +687,86 @@ def parse_round2() -> tuple[list[dict], list[str]]:
     return tasks, report
 
 
+def normalize_signature_value(value: object) -> str:
+    if isinstance(value, list):
+        return "|".join(normalize_signature_value(item) for item in value)
+    if isinstance(value, dict):
+        return "|".join(f"{key}:{normalize_signature_value(value[key])}" for key in sorted(value))
+    text = compact_text(str(value))
+    text = re.sub(r"\s+", "", text)
+    text = text.replace("：", ":").replace("；", ";")
+    return text.lower()
+
+
+def item_signature(item: dict, item_type: str) -> str:
+    if item_type == "choice":
+        payload = {
+            "kind": item_type,
+            "stem": item.get("stem", ""),
+            "code": item.get("code", ""),
+            "options": item.get("options", []),
+            "answer": item.get("answer", ""),
+        }
+    elif item.get("problem_type") == "原始题面":
+        payload = {
+            "kind": item_type,
+            "problem_type": item.get("problem_type", ""),
+            "source": Path(str(item.get("source", ""))).name,
+        }
+    else:
+        payload = {
+            "kind": item_type,
+            "description": item.get("description", ""),
+            "input": item.get("input", ""),
+            "output": item.get("output", ""),
+            "constraints": item.get("constraints", ""),
+        }
+    normalized = normalize_signature_value(payload)
+    return hashlib.sha1(normalized.encode("utf-8")).hexdigest()
+
+
+def unique_item_id(item: dict, seen_ids: set[str]) -> str:
+    item_id = str(item.get("id", "")).strip() or "imported-csp-question"
+    if item_id not in seen_ids:
+        return item_id
+    source = str(item.get("source", item_id))
+    suffix = hashlib.sha1(source.encode("utf-8")).hexdigest()[:8]
+    candidate = f"{item_id}-{suffix}"
+    counter = 2
+    while candidate in seen_ids:
+        candidate = f"{item_id}-{suffix}-{counter}"
+        counter += 1
+    return candidate
+
+
+def dedupe_items(items: list[dict], item_type: str) -> tuple[list[dict], int, int]:
+    deduped: list[dict] = []
+    signatures: set[str] = set()
+    ids: set[str] = set()
+    skipped = 0
+    renamed = 0
+    for item in items:
+        signature = item_signature(item, item_type)
+        if signature in signatures:
+            skipped += 1
+            continue
+        if item.get("id") in ids:
+            skipped += 1
+            continue
+        item_id = unique_item_id(item, ids)
+        if item_id != item.get("id"):
+            item = dict(item)
+            item["id"] = item_id
+            renamed += 1
+        signatures.add(signature)
+        ids.add(item_id)
+        deduped.append(item)
+    return deduped, skipped, renamed
+
+
 def write_module(questions: list[dict], tasks: list[dict], report: list[str]) -> None:
     content = [
-        '"""Auto-generated CSP-J/S questions from local CSP/题库 source papers."""',
+        '"""Auto-generated CSP-J/S/CSP-X questions from local CSP/题库 source papers."""',
         "",
         "# Regenerate with: python3 scripts/generate_csp_imports.py",
         "",
@@ -590,11 +787,18 @@ def write_module(questions: list[dict], tasks: list[dict], report: list[str]) ->
 def main() -> None:
     questions, round1_report = parse_round1()
     tasks, round2_report = parse_round2()
-    report = round1_report + round2_report
+    questions, skipped_questions, renamed_questions = dedupe_items(questions, "choice")
+    tasks, skipped_tasks, renamed_tasks = dedupe_items(tasks, "programming")
+    report = round1_report + round2_report + [
+        f"dedupe round1 skipped duplicates: {skipped_questions}, renamed id collisions: {renamed_questions}",
+        f"dedupe round2 skipped duplicates: {skipped_tasks}, renamed id collisions: {renamed_tasks}",
+    ]
     write_module(questions, tasks, report)
     print(f"wrote {OUTPUT}")
     print(f"round1 questions: {len(questions)}")
     print(f"round2 tasks: {len(tasks)}")
+    print(f"round1 duplicates skipped: {skipped_questions}; id collisions renamed: {renamed_questions}")
+    print(f"round2 duplicates skipped: {skipped_tasks}; id collisions renamed: {renamed_tasks}")
     for line in report:
         print(line)
 

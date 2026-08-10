@@ -109,6 +109,8 @@ class ResultPageTest(unittest.TestCase):
         self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_j_round2", "programming")), 35)
         self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_s_round1", "choice")), 120)
         self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_s_round2", "programming")), 15)
+        self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_x_round1", "choice")), 40)
+        self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_x_round2", "programming")), 15)
 
     def test_result_answer_font_is_larger(self) -> None:
         css = (app.ROOT / "static" / "style.css").read_text(encoding="utf-8")

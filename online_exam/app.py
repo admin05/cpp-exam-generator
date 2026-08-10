@@ -74,6 +74,18 @@ QUESTION_BANK_PROFILES = {
         "item_types": {"programming"},
         "principle": "CSP-S 第二轮 C++：来自本项目 CSP/题库/CSP-S 第二轮资料，按原题面题目类型导入编程题。",
     },
+    "csp_x_round1": {
+        "label": "CSP-X(山东) 第一轮",
+        "competitions": {"csp_x_round1"},
+        "item_types": {"choice"},
+        "principle": "CSP-X(山东) 小学组第一轮：来自本项目 CSP/题库/CSP-X(山东) 第一轮资料，保留单项选择、程序阅读判断、程序阅读选择、完善程序等原始题型。",
+    },
+    "csp_x_round2": {
+        "label": "CSP-X(山东) 第二轮",
+        "competitions": {"csp_x_round2"},
+        "item_types": {"programming"},
+        "principle": "CSP-X(山东) 小学组第二轮：来自本项目 CSP/题库/CSP-X(山东) 第二轮资料，按原题面题目类型导入编程题；暂未能拆分的旧试卷保留为原始题面。",
+    },
     "gesp": {
         "label": "GESP",
         "competitions": {"general", "gesp"},
