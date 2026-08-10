@@ -62,6 +62,18 @@ QUESTION_BANK_PROFILES = {
         "item_types": {"programming"},
         "principle": "CSP-J 第二轮 C++：依据《NOI竞赛大纲_Syllabus_Edition_2025.pdf》中 CSP-J 要求，面向 C++ 程序设计、模拟、枚举、排序、字符串、基础数据结构、搜索、递推等上机编程题训练。",
     },
+    "csp_s_round1": {
+        "label": "CSP-S 第一轮",
+        "competitions": {"csp_s", "csp_s_round1"},
+        "item_types": {"choice"},
+        "principle": "CSP-S 第一轮 C++：来自本项目 CSP/题库/CSP-S 第一轮资料，保留单项选择、程序阅读判断、程序阅读选择、完善程序等原始题型。",
+    },
+    "csp_s_round2": {
+        "label": "CSP-S 第二轮",
+        "competitions": {"csp_s", "csp_s_round2"},
+        "item_types": {"programming"},
+        "principle": "CSP-S 第二轮 C++：来自本项目 CSP/题库/CSP-S 第二轮资料，按原题面题目类型导入编程题。",
+    },
     "gesp": {
         "label": "GESP",
         "competitions": {"general", "gesp"},
@@ -332,6 +344,15 @@ def build_exam(
 
 
 def run_cpp_judge(code: str, tests: list[dict]) -> dict:
+    if not tests:
+        return {
+            "status": "NO_TESTS",
+            "message": "原始资料未提供可自动测评的样例或测试数据。",
+            "passed": 0,
+            "total": 0,
+            "cases": [],
+        }
+
     if not shutil.which("g++"):
         return {
             "status": "NO_COMPILER",
@@ -477,6 +498,13 @@ def prepare_choice_question(question: dict, question_bank: str) -> dict:
 
 def is_multiple_choice(question: dict) -> bool:
     return isinstance(question.get("answer"), list) or question.get("type") == "multiple_choice"
+
+
+def objective_type_label(question: dict) -> str:
+    explicit = str(question.get("display_type", "")).strip()
+    if explicit:
+        return explicit
+    return "多选题" if is_multiple_choice(question) else "单选题"
 
 
 def objective_counts(questions: list[dict]) -> tuple[int, int]:
@@ -655,7 +683,7 @@ def admin_page(message: str = "") -> bytes:
               <input name="duration" type="number" min="1" max="240" value="{form_defaults['duration']}">
             </label>
             <button class="button primary" type="submit">生成试卷</button>
-            <p class="hint">当前题库：{'; '.join(bank_summary)}。CSP-J 已按第一轮客观题、第二轮编程题拆分；后续导入 CSP 真题时标记 competition="csp_j_round1" 或 competition="csp_j_round2" 即可进入对应题库。</p>
+            <p class="hint">当前题库：{'; '.join(bank_summary)}。CSP-J/S 已按第一轮客观题、第二轮编程题拆分；导入 CSP 真题时标记对应 competition 即可进入题库。</p>
           </form>
           <section class="panel">
             <h2>最近试卷</h2>
@@ -684,7 +712,7 @@ def exam_page(exam_id: int) -> bytes:
         opts = []
         multi = is_multiple_choice(q)
         input_type = "checkbox" if multi else "radio"
-        type_label = "多选题" if multi else "单选题"
+        type_label = objective_type_label(q)
         for oi, opt in enumerate(q["options"]):
             opts.append(
                 f"""
@@ -1014,7 +1042,7 @@ def handle_submit(exam_id: int, params: dict[str, list[str]]) -> bytes:
                 "selected": answer_label(selected),
                 "answer": answer_label(correct),
                 "ok": ok,
-                "type": "多选题" if is_multiple_choice(q) else "单选题",
+                "type": objective_type_label(q),
                 "question_id": q.get("id", ""),
             }
         )

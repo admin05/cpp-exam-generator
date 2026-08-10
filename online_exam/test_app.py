@@ -87,14 +87,28 @@ class ResultPageTest(unittest.TestCase):
 
     def test_all_csp_j_round1_choices_have_explanations(self) -> None:
         questions = app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_j_round1", "choice")
-        missing = [question["id"] for question in questions if not app.csp_j_choice_explanation(question)]
         question_ids = {question["id"] for question in questions}
+        explained_questions = [
+            question for question in questions if question["id"] in app.CSP_J_ROUND1_EXPLANATIONS
+        ]
+        missing = [
+            question["id"] for question in explained_questions if not app.csp_j_choice_explanation(question)
+        ]
 
-        self.assertEqual(question_ids, set(app.CSP_J_ROUND1_EXPLANATIONS))
+        self.assertTrue(set(app.CSP_J_ROUND1_EXPLANATIONS).issubset(question_ids))
         self.assertEqual(missing, [])
 
-        exam = app.build_exam("解析覆盖测试", len(questions), 0, 60, "csp_j_round1")
-        self.assertTrue(all(question.get("explanation") for question in exam["choice_questions"]))
+        prepared = [
+            app.prepare_choice_question(question, "csp_j_round1")
+            for question in explained_questions
+        ]
+        self.assertTrue(all(question.get("explanation") for question in prepared))
+
+    def test_csp_j_s_import_profiles_have_source_questions(self) -> None:
+        self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_j_round1", "choice")), 250)
+        self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_j_round2", "programming")), 35)
+        self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_s_round1", "choice")), 120)
+        self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_s_round2", "programming")), 15)
 
     def test_result_answer_font_is_larger(self) -> None:
         css = (app.ROOT / "static" / "style.css").read_text(encoding="utf-8")

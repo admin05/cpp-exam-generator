@@ -15,7 +15,8 @@ solutions, and the system records scores in SQLite.
 - Admin paper creation with configurable question-bank scope, objective-question
   count, programming-task count, and exam duration.
 - Built-in question-bank profiles: all questions, literacy contest, CSP-J first
-  round, CSP-J second round, GESP, and Fuzhou robot contest.
+  round, CSP-J second round, CSP-S first round, CSP-S second round, GESP, and
+  Fuzhou robot contest.
 - Objective-question bank covering C++ fundamentals, mathematical reasoning,
   simulation, enumeration, divide-and-conquer, greedy methods, recurrence,
   recursion, sorting, binary search, prefix sums, DFS/BFS, STL containers,
@@ -37,15 +38,21 @@ solutions, and the system records scores in SQLite.
   and other non-code assets.
 
 The literacy contest profile follows the C++ section of
-`素养大赛/复赛 决赛考点大纲.pdf`. CSP-J profiles follow the CSP-J C++ requirements
-in `CSP/学习资料/NOI竞赛大纲_Syllabus_Edition_2025.pdf`: first round is modeled as
-an objective-question bank, and second round is modeled as a programming-task
-bank.
+`素养大赛/复赛 决赛考点大纲.pdf`. CSP-J/S profiles include structured imports from
+`CSP/题库/CSP-J` and `CSP/题库/CSP-S`: first-round papers are modeled as objective
+questions while preserving source subtypes such as single-choice, program
+reading judgment, program reading choice, and program completion; second-round
+papers are modeled as programming tasks while preserving the paper's problem
+type, such as `传统型`.
 
 To add a new competition source, normalize questions into the same dictionaries
 used by `online_exam/question_bank.py`. Set `competition` to a short key such as
-`"literacy"`, `"csp_j_round1"`, or `"csp_j_round2"` so the admin page can include
-the question in the matching profile.
+`"literacy"`, `"csp_j_round1"`, `"csp_j_round2"`, `"csp_s_round1"`, or
+`"csp_s_round2"` so the admin page can include the question in the matching
+profile. The CSP import module is generated with
+`python3 scripts/generate_csp_imports.py`; scanned PDFs that do not expose
+Chinese text are kept as source references until OCR or manual normalization is
+available.
 
 ## Project Structure
 
@@ -102,11 +109,11 @@ isolated sandbox service or use a dedicated OJ system.
 # C++ 竞赛训练平台
 
 这是一个轻量级本地在线考试平台，面向 C++ 竞赛训练，可按不同题库范围生成试卷。
-当前已支持“全部题库”“素养大赛”“CSP-J 第一轮”“CSP-J 第二轮”“GESP”“福州
-机器人赛”等题库范围。素养大赛题库范围以 `素养大赛/复赛 决赛考点大纲.pdf`
-的 C++ 要求为准；CSP-J 题库范围以
-`CSP/学习资料/NOI竞赛大纲_Syllabus_Edition_2025.pdf` 中 CSP-J 的 C++ 要求为准，
-并拆分为第一轮客观题题库和第二轮编程题题库。
+当前已支持“全部题库”“素养大赛”“CSP-J 第一轮”“CSP-J 第二轮”“CSP-S 第一轮”
+“CSP-S 第二轮”“GESP”“福州机器人赛”等题库范围。素养大赛题库范围以
+`素养大赛/复赛 决赛考点大纲.pdf` 的 C++ 要求为准；CSP-J/S 题库来自
+`CSP/题库/CSP-J` 与 `CSP/题库/CSP-S` 的本地原始资料，并拆分为第一轮客观题题库
+和第二轮编程题题库。
 
 平台适合小规模教学和 NAS 部署。管理员可以从内置题库随机组卷，考生可以在线完成
 单选题、多选题等客观题，并提交 C++17 编程题代码；系统会将成绩和提交记录保存到
@@ -115,8 +122,8 @@ SQLite 数据库。
 ## 功能
 
 - 管理员创建试卷：可设置题库范围、客观题数量、编程题数量和考试时长。
-- 内置多题库范围：全部题库、素养大赛、CSP-J 第一轮、CSP-J 第二轮、GESP、
-  福州机器人赛。
+- 内置多题库范围：全部题库、素养大赛、CSP-J 第一轮、CSP-J 第二轮、
+  CSP-S 第一轮、CSP-S 第二轮、GESP、福州机器人赛。
 - 客观题题库覆盖 C++ 程序基础、数理知识、模拟、枚举、分治、贪心、递推、递归、
   排序、二分、前缀和、DFS/BFS、STL 容器、栈、队列、链表基础、高精度、位运算、
   进制转换等考点。
@@ -136,7 +143,9 @@ SQLite 数据库。
 
 新增竞赛题库时，优先把题目规范化为 `online_exam/question_bank.py` 中相同的数据
 结构，并设置 `competition` 字段，例如 `"literacy"`、`"csp_j_round1"`、
-`"csp_j_round2"`、`"gesp"`。
+`"csp_j_round2"`、`"csp_s_round1"`、`"csp_s_round2"`、`"gesp"`。
+`online_exam/imported_csp_questions.py` 由 `python3 scripts/generate_csp_imports.py`
+从 `CSP/题库` 生成；扫描 PDF 暂作为来源保留，待 OCR 或人工规范化后可重新生成。
 
 ## Docker Compose 部署
 
