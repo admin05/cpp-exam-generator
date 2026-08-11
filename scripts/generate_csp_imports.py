@@ -424,6 +424,8 @@ OPTION_RE = re.compile(r"(?m)^\s*([A-D])\s*[.、]\s*")
 
 
 def parse_options(block: str) -> tuple[str, list[str]] | None:
+    block = re.split(r"(?m)^\s*\(\d+\)\s*$", block, maxsplit=1)[0]
+    block = re.split(r"(?m)^\s*三、\s*完善程序", block, maxsplit=1)[0]
     block = re.sub(r"(?<![A-Za-z0-9])([A-D])\s*[.、]\s*", r"\n\1. ", block)
     block = re.sub(r"(?m)^\s*([A-D])\s+(?=\S)", r"\n\1. ", block)
     matches = list(OPTION_RE.finditer(block))

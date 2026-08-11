@@ -171,6 +171,24 @@ class ResultPageTest(unittest.TestCase):
         self.assertTrue(imported)
         self.assertTrue(all(len(question.get("options", [])) <= 4 for question in imported))
 
+    def test_imported_csp_choice_options_have_no_following_program_text(self) -> None:
+        competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}
+        imported = [
+            question
+            for question in app.CHOICE_QUESTIONS
+            if question.get("competition") in competitions
+        ]
+        polluted = [
+            question["id"]
+            for question in imported
+            if any(
+                marker in str(option)
+                for option in question.get("options", [])
+                for marker in ("#include", "\n(2)", "\n(3)", "三、完善程序")
+            )
+        ]
+        self.assertEqual(polluted, [])
+
     def test_imported_csp_questions_have_no_pdf_page_artifacts(self) -> None:
         competitions = {
             "csp_j_round1",

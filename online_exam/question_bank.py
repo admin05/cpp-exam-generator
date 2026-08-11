@@ -1,3 +1,6 @@
+import re
+
+
 CHOICE_QUESTIONS = [
     {
         "id": "c-arith-001",
@@ -3996,6 +3999,30 @@ PROGRAMMING_TASKS.extend(IMPORTED_FUZHOU_PROGRAMMING_TASKS)
 from .imported_fusai_questions import IMPORTED_FUSAI_PROGRAMMING_TASKS
 from .imported_csp_questions import CSP_ROUND1_CHOICE_QUESTIONS, CSP_ROUND2_PROGRAMMING_TASKS
 
+
+def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
+    for question in questions:
+        if question.get("competition") not in {"csp_j_round1", "csp_s_round1", "csp_x_round1"}:
+            continue
+        cleaned_options = []
+        for option in question.get("options", []):
+            value = str(option)
+            value = re.split(r"\n\s*(?:\(\d+\)|三、\s*完善程序)", value, maxsplit=1)[0]
+            include_position = value.find("#include")
+            if include_position >= 0:
+                value = value[:include_position]
+                value = value.rsplit("\n", 1)[0]
+            value = re.split(
+                r"\n\s*\(\d+\)\s*\n\s*\d+\s+#include\b",
+                value,
+                maxsplit=1,
+            )[0]
+            value = re.split(r"\n\s*三、\s*完善程序", value, maxsplit=1)[0]
+            cleaned_options.append(value.strip())
+        question["options"] = cleaned_options
+
+
+sanitize_imported_csp_choice_options(CSP_ROUND1_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(IMPORTED_FUSAI_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(CSP_ROUND1_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(CSP_ROUND2_PROGRAMMING_TASKS)
