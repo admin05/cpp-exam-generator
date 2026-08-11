@@ -88,21 +88,85 @@ class ResultPageTest(unittest.TestCase):
     def test_all_csp_j_round1_choices_have_explanations(self) -> None:
         questions = app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_j_round1", "choice")
         question_ids = {question["id"] for question in questions}
-        explained_questions = [
-            question for question in questions if question["id"] in app.CSP_J_ROUND1_EXPLANATIONS
-        ]
-        missing = [
-            question["id"] for question in explained_questions if not app.csp_j_choice_explanation(question)
-        ]
+        missing = [question["id"] for question in questions if not app.csp_j_choice_explanation(question)]
 
         self.assertTrue(set(app.CSP_J_ROUND1_EXPLANATIONS).issubset(question_ids))
         self.assertEqual(missing, [])
 
         prepared = [
             app.prepare_choice_question(question, "csp_j_round1")
-            for question in explained_questions
+            for question in questions
         ]
         self.assertTrue(all(question.get("explanation") for question in prepared))
+
+    def test_existing_csp_j_round1_papers_are_backfilled_with_explanations(self) -> None:
+        payload = {
+            "question_bank": "csp_j_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_j_round1-2022-q01",
+                    "source_question_type": "单项选择题",
+                    "stem": "以下哪种功能没有涉及 C++语言的面向对象特性支持？",
+                    "options": ["调用 printf", "调用成员函数", "构造 class", "构造派生类"],
+                    "answer": 0,
+                }
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("旧 CSP-J 试卷", 60, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+            cursor = conn.execute(
+                """
+                INSERT INTO submissions(
+                    exam_id, student_name, choice_score, choice_total,
+                    program_score, program_total, detail, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    exam_id,
+                    "旧卷考生",
+                    0,
+                    2,
+                    0,
+                    0,
+                    json.dumps(
+                        {
+                            "choices": [
+                                {
+                                    "index": 1,
+                                    "selected": "B",
+                                    "answer": "A",
+                                    "ok": False,
+                                    "type": "单项选择题",
+                                }
+                            ],
+                            "programs": [],
+                        },
+                        ensure_ascii=False,
+                    ),
+                    app.now_text(),
+                ),
+            )
+            submission_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        page = app.result_page(submission_id).decode("utf-8")
+
+        self.assertIn("explanation", saved["choice_questions"][0])
+        self.assertIn("A（调用 printf）", saved["choice_questions"][0]["explanation"])
+        self.assertIn("查看答案解析", page)
+        self.assertIn("调用 printf", page)
+        self.assertEqual(app.backfill_csp_j_round1_explanations(), 0)
+
+    def test_new_csp_j_round1_papers_store_explanations(self) -> None:
+        exam = app.build_exam("CSP-J 解析测试", 10, 4, 120, "csp_j_round1")
+
+        self.assertTrue(all(question.get("explanation") for question in exam["choice_questions"]))
 
     def test_csp_j_s_import_profiles_have_source_questions(self) -> None:
         self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_j_round1", "choice")), 250)

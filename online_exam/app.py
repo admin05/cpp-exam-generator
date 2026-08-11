@@ -153,6 +153,7 @@ def init_db() -> None:
             )
             """
         )
+    backfill_csp_j_round1_explanations()
 
 
 def now_text() -> str:
@@ -406,6 +407,10 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
         *first_questions,
         *reading_questions,
         *completion_questions,
+    ]
+    questions = [
+        prepare_choice_question(question, CSP_J_ROUND1_FORMAT)
+        for question in questions
     ]
     sections = [
         {
@@ -786,7 +791,93 @@ def csp_j_choice_explanation(question: dict) -> str:
     explicit = str(question.get("explanation", "")).strip()
     if explicit:
         return explicit
-    return CSP_J_ROUND1_EXPLANATIONS.get(str(question.get("id", "")), "")
+    curated = CSP_J_ROUND1_EXPLANATIONS.get(str(question.get("id", "")), "")
+    if curated:
+        return curated
+    return generated_csp_j_choice_explanation(question)
+
+
+def generated_csp_j_choice_explanation(question: dict) -> str:
+    """Provide a useful fallback for imported CSP-J first-round questions."""
+    options = question.get("options", [])
+    try:
+        correct_indices = answer_indices(question.get("answer"))
+    except (TypeError, ValueError):
+        return ""
+    correct_labels = answer_label(correct_indices)
+    correct_options = [
+        str(options[index]).strip()
+        for index in correct_indices
+        if 0 <= index < len(options)
+    ]
+    correct_text = "、".join(" ".join(option.split()) for option in correct_options)
+    answer_text = f"{correct_labels}（{correct_text}）" if correct_text else correct_labels
+    question_type = str(question.get("source_question_type") or question.get("type") or "")
+
+    if question_type == CSP_J_READING_JUDGMENT_TYPE:
+        return (
+            f"这是程序阅读判断题。应按代码执行顺序代入题目条件，重点核对变量取值、"
+            f"循环边界和表达式类型；题干结论应判为“{correct_text or correct_labels}”。"
+        )
+    if question_type == CSP_J_READING_CHOICE_TYPE:
+        return (
+            f"这是程序阅读单选题。逐句跟踪程序中的变量、循环和输出结果，"
+            f"可得到正确选项为 {answer_text}。"
+        )
+    if question_type == CSP_J_COMPLETION_TYPE:
+        return (
+            f"将 {answer_text} 代入空缺后，程序才能保持题目要求的控制流程和输出。"
+            "检查时可分别代入各选项，重点确认循环条件、下标范围和边界情况。"
+        )
+    return (
+        f"根据题目给出的定义与条件逐项核对，只有 {answer_text} 符合题意；"
+        "其余选项与题目条件或相关概念不符。"
+    )
+
+
+def is_csp_j_round1_payload(payload: dict) -> bool:
+    if payload.get("question_bank") == CSP_J_ROUND1_FORMAT:
+        return True
+    if payload.get("exam_format") == CSP_J_ROUND1_FORMAT:
+        return True
+    return any(
+        str(question.get("id", "")).startswith("csp_j_round1-")
+        for question in payload.get("choice_questions", [])
+    )
+
+
+def enrich_csp_j_round1_payload(payload: dict) -> bool:
+    if not is_csp_j_round1_payload(payload):
+        return False
+    changed = False
+    for question in payload.get("choice_questions", []):
+        if str(question.get("explanation", "")).strip():
+            continue
+        explanation = csp_j_choice_explanation(question)
+        if explanation:
+            question["explanation"] = explanation
+            changed = True
+    return changed
+
+
+def backfill_csp_j_round1_explanations() -> int:
+    """Persist missing explanations into existing CSP-J first-round papers."""
+    updated = 0
+    with db() as conn:
+        rows = conn.execute("SELECT id, payload FROM exams").fetchall()
+        for row in rows:
+            try:
+                payload = json.loads(row["payload"])
+            except (TypeError, json.JSONDecodeError):
+                continue
+            if not enrich_csp_j_round1_payload(payload):
+                continue
+            conn.execute(
+                "UPDATE exams SET payload = ? WHERE id = ?",
+                (json.dumps(payload, ensure_ascii=False), row["id"]),
+            )
+            updated += 1
+    return updated
 
 
 def prepare_choice_question(question: dict, question_bank: str) -> dict:
@@ -1236,7 +1327,7 @@ def result_page(submission_id: int) -> bytes:
     exam = load_exam(row["exam_id"])
     exam_payload = json.loads(exam["payload"]) if exam else {}
     exam_choices = exam_payload.get("choice_questions", [])
-    is_csp_j_round1 = exam_payload.get("question_bank") == "csp_j_round1"
+    is_csp_j_round1 = is_csp_j_round1_payload(exam_payload)
 
     choice_rows = []
     for item in detail["choices"]:
