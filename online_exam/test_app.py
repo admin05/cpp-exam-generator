@@ -112,6 +112,55 @@ class ResultPageTest(unittest.TestCase):
         self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_x_round1", "choice")), 40)
         self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_x_round2", "programming")), 15)
 
+    def test_csp_j_round1_builds_fixed_100_point_paper(self) -> None:
+        exam = app.build_exam("CSP-J 固定结构", 10, 4, 120, "csp_j_round1")
+        questions = exam["choice_questions"]
+
+        self.assertEqual(len(questions), 43)
+        self.assertEqual(exam["total_score"], 100.0)
+        self.assertEqual(
+            [len(section["question_indices"]) for section in exam["sections"]],
+            [15, 18, 10],
+        )
+        self.assertEqual(
+            [len(section.get("programs", [])) for section in exam["sections"]],
+            [0, 3, 2],
+        )
+        self.assertEqual(
+            {question["source_question_type"] for question in questions[:15]},
+            {"单项选择题"},
+        )
+        self.assertEqual(
+            sum(question["source_question_type"] == "程序阅读判断题" for question in questions),
+            12,
+        )
+        self.assertEqual(
+            sum(question["source_question_type"] == "程序阅读单选题" for question in questions),
+            6,
+        )
+        self.assertEqual(
+            sum(question["source_question_type"] == "完善程序单选题" for question in questions),
+            10,
+        )
+
+    def test_csp_j_round1_all_correct_scores_100(self) -> None:
+        exam = app.build_exam("CSP-J 全对测试", 10, 4, 120, "csp_j_round1")
+        exam_id = app.save_exam(exam)
+        params = {"student_name": ["满分考生"]}
+        for index, question in enumerate(exam["choice_questions"], 1):
+            params[f"choice_{index}"] = [
+                str(answer_index)
+                for answer_index in app.answer_indices(question["answer"])
+            ]
+
+        response = app.handle_submit(exam_id, params)
+        submission_id = int(response.decode().rsplit("/", 1)[1])
+        with app.db() as conn:
+            row = conn.execute("SELECT choice_score, choice_total FROM submissions WHERE id = ?", (submission_id,)).fetchone()
+
+        self.assertEqual(float(row["choice_score"]), 100.0)
+        self.assertEqual(float(row["choice_total"]), 100.0)
+
     def test_imported_csp_choice_options_are_not_merged(self) -> None:
         competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}
         imported = [

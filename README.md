@@ -41,7 +41,9 @@ The literacy contest profile follows the C++ section of
 `素养大赛/复赛 决赛考点大纲.pdf`. CSP-J/S profiles include structured imports from
 `CSP/题库/CSP-J` and `CSP/题库/CSP-S`: first-round papers are modeled as objective
 questions while preserving source subtypes such as single-choice, program
-reading judgment, program reading choice, and program completion; second-round
+reading judgment, program reading choice, and program completion. Selecting
+CSP-J first round creates its fixed 15 + 18 + 10, 43-question, 100-point paper;
+second-round
 papers are modeled as programming tasks while preserving the paper's problem
 type, such as `传统型`.
 
