@@ -43,6 +43,13 @@ CSP_J_ROUND1_TOTAL_SCORE = 100.0
 CSP_J_READING_JUDGMENT_TYPE = "程序阅读判断题"
 CSP_J_READING_CHOICE_TYPE = "程序阅读单选题"
 CSP_J_COMPLETION_TYPE = "完善程序单选题"
+CSP_J_CORRECTED_QUESTION_SNAPSHOTS = {
+    "csp_j_round1-2022-q13": {
+        "options": ["24.125", "24.250", "26.125", "26.250"],
+        "answer": 2,
+        "explanation": "32.1(8) = 3 * 8 + 2 + 1 / 8 = 26.125，因此选择 C。",
+    },
+}
 
 QUESTION_BANK_PROFILES = {
     "all": {
@@ -846,6 +853,20 @@ def is_csp_j_round1_payload(payload: dict) -> bool:
     )
 
 
+def sync_corrected_question_snapshots(payload: dict) -> bool:
+    """Update saved paper snapshots for questions whose source data was corrected."""
+    changed = False
+    for question in payload.get("choice_questions", []):
+        correction = CSP_J_CORRECTED_QUESTION_SNAPSHOTS.get(str(question.get("id", "")))
+        if not correction:
+            continue
+        for field, value in correction.items():
+            if question.get(field) != value:
+                question[field] = value
+                changed = True
+    return changed
+
+
 def enrich_csp_j_round1_payload(payload: dict) -> bool:
     if not is_csp_j_round1_payload(payload):
         return False
@@ -861,7 +882,7 @@ def enrich_csp_j_round1_payload(payload: dict) -> bool:
 
 
 def backfill_csp_j_round1_explanations() -> int:
-    """Persist missing explanations into existing CSP-J first-round papers."""
+    """Persist corrected question snapshots and missing explanations into saved papers."""
     updated = 0
     with db() as conn:
         rows = conn.execute("SELECT id, payload FROM exams").fetchall()
@@ -870,7 +891,10 @@ def backfill_csp_j_round1_explanations() -> int:
                 payload = json.loads(row["payload"])
             except (TypeError, json.JSONDecodeError):
                 continue
-            if not enrich_csp_j_round1_payload(payload):
+            changed = sync_corrected_question_snapshots(payload)
+            if enrich_csp_j_round1_payload(payload):
+                changed = True
+            if not changed:
                 continue
             conn.execute(
                 "UPDATE exams SET payload = ? WHERE id = ?",

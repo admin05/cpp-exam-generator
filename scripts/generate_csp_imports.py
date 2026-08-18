@@ -415,7 +415,7 @@ def clean_block(value: str) -> str:
     value = re.sub(r"\n?\s*[\f]+", "\n", value)
     value = remove_page_artifacts(value)
     value = re.sub(r"(?m)^\s*香\s*港\s*$", "", value)
-    value = re.sub(r"^\s*\d{1,2}[.)]\s*", "", value.strip())
+    value = re.sub(r"^\s*\d{1,2}[.)]\s+", "", value.strip())
     value = re.sub(r"\n{3,}", "\n\n", value)
     return value.strip()
 

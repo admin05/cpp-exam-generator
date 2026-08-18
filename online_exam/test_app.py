@@ -6,6 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from online_exam import app
+from scripts.generate_csp_imports import parse_options
 
 
 class ResultPageTest(unittest.TestCase):
@@ -162,6 +163,50 @@ class ResultPageTest(unittest.TestCase):
         self.assertIn("查看答案解析", page)
         self.assertIn("调用 printf", page)
         self.assertEqual(app.backfill_csp_j_round1_explanations(), 0)
+
+    def test_existing_papers_sync_corrected_question_snapshots(self) -> None:
+        payload = {
+            "question_bank": "csp_j_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_j_round1-2022-q13",
+                    "stem": "八进制数 32.1 对应的十进制数是(           )。",
+                    "options": ["125", "250", "125", "250"],
+                    "answer": 2,
+                    "explanation": "根据题目给出的定义与条件逐项核对，只有 C（125）符合题意。",
+                }
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("含错误八进制题目的旧试卷", 60, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        question = saved["choice_questions"][0]
+
+        self.assertEqual(question["options"], ["24.125", "24.250", "26.125", "26.250"])
+        self.assertEqual(question["answer"], 2)
+        self.assertIn("26.125", question["explanation"])
+        self.assertEqual(app.backfill_csp_j_round1_explanations(), 0)
+
+    def test_csp_import_preserves_decimal_option_prefixes(self) -> None:
+        parsed = parse_options(
+            """13. 八进制数 32.1 对应的十进制数是（ ）。
+              A. 24.125
+              B. 24.250
+              C. 26.125
+              D. 26.250"""
+        )
+
+        self.assertIsNotNone(parsed)
+        stem, options = parsed
+        self.assertEqual(stem, "八进制数 32.1 对应的十进制数是（ ）。")
+        self.assertEqual(options, ["24.125", "24.250", "26.125", "26.250"])
 
     def test_new_csp_j_round1_papers_store_explanations(self) -> None:
         exam = app.build_exam("CSP-J 解析测试", 10, 4, 120, "csp_j_round1")
