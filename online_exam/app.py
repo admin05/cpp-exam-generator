@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import os
@@ -122,6 +123,65 @@ def db() -> sqlite3.Connection:
     return conn
 
 
+class DuplicateExamError(RuntimeError):
+    """Raised when an identical question paper already exists."""
+
+
+def _question_signature(question: dict, item_type: str) -> dict:
+    fields = (
+        ("stem", "code", "content_html", "options", "answer")
+        if item_type == "choice"
+        else ("title", "description", "input", "output", "constraints", "code")
+    )
+    values = {field: question.get(field) for field in fields}
+    if not any(value not in (None, "", []) for value in values.values()):
+        values = {"id": question.get("id", "")}
+    return values
+
+
+def exam_signature(payload: dict) -> str:
+    """Return a stable signature for the question set in a generated paper."""
+    signature_data = {
+        "question_bank": payload.get("question_bank", ""),
+        "choice_questions": sorted(
+            (
+                _question_signature(question, "choice")
+                for question in payload.get("choice_questions", [])
+            ),
+            key=lambda question: json.dumps(question, ensure_ascii=False, sort_keys=True),
+        ),
+        "programming_tasks": sorted(
+            (
+                _question_signature(task, "programming")
+                for task in payload.get("programming_tasks", [])
+            ),
+            key=lambda task: json.dumps(task, ensure_ascii=False, sort_keys=True),
+        ),
+    }
+    encoded = json.dumps(signature_data, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def existing_exam_signatures(question_bank: str) -> set[str]:
+    """Load signatures for papers in the same question-bank profile."""
+    try:
+        with db() as conn:
+            rows = conn.execute("SELECT signature, payload FROM exams").fetchall()
+    except sqlite3.OperationalError:
+        return set()
+
+    signatures = set()
+    for row in rows:
+        try:
+            payload = json.loads(row["payload"])
+        except (TypeError, ValueError, json.JSONDecodeError):
+            continue
+        if payload.get("question_bank") != question_bank:
+            continue
+        signatures.add(row["signature"] or exam_signature(payload))
+    return signatures
+
+
 def init_db() -> None:
     with db() as conn:
         conn.execute(
@@ -131,10 +191,29 @@ def init_db() -> None:
                 title TEXT NOT NULL,
                 duration_minutes INTEGER NOT NULL,
                 payload TEXT NOT NULL,
-                created_at TEXT NOT NULL
+                created_at TEXT NOT NULL,
+                signature TEXT
             )
             """
         )
+        exam_columns = {
+            row["name"] for row in conn.execute("PRAGMA table_info(exams)").fetchall()
+        }
+        if "signature" not in exam_columns:
+            conn.execute("ALTER TABLE exams ADD COLUMN signature TEXT")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_exams_signature ON exams(signature)")
+        legacy_exams = conn.execute(
+            "SELECT id, payload FROM exams WHERE signature IS NULL"
+        ).fetchall()
+        for exam in legacy_exams:
+            try:
+                signature = exam_signature(json.loads(exam["payload"]))
+            except (TypeError, ValueError, json.JSONDecodeError):
+                continue
+            conn.execute(
+                "UPDATE exams SET signature = ? WHERE id = ?",
+                (signature, exam["id"]),
+            )
         conn.execute(
             """
             CREATE TABLE IF NOT EXISTS submissions (
@@ -370,7 +449,9 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
             "CSP-J 第一轮题库缺少符合 15+18+10 固定结构的完整真题模板。"
         )
 
-    source, first, reading, reading_groups, completion_groups = templates[0]
+    source, first, reading, reading_groups, completion_groups = (
+        random.SystemRandom().choice(templates)
+    )
     first = sorted(first, key=question_number)[:15]
     reading_questions = []
     reading_section_title = "二、阅读程序（12 道判断题 + 6 道单选题，共 40 分）"
@@ -627,32 +708,42 @@ def build_exam(
     program_count: int,
     duration: int,
     question_bank: str = "literacy",
+    used_signatures: set[str] | None = None,
 ) -> dict:
-    if question_bank == CSP_J_ROUND1_FORMAT:
-        return build_csp_j_round1_exam(title, duration)
-    choice_pool = filter_bank_items(CHOICE_QUESTIONS, question_bank, "choice")
-    programming_pool = filter_bank_items(PROGRAMMING_TASKS, question_bank, "programming")
-    missing_generators = missing_generator_ids(programming_pool)
-    if missing_generators:
-        raise RuntimeError("以下编程题缺少测试生成器：" + ", ".join(missing_generators))
-    choice_questions = [
-        prepare_choice_question(question, question_bank)
-        for question in balanced_pick(choice_pool, choice_count)
-    ]
-    programming_tasks = [
-        prepare_programming_task(task)
-        for task in balanced_pick(programming_pool, program_count)
-    ]
-    profile = question_bank_profile(question_bank)
-    return {
-        "title": title,
-        "duration_minutes": duration,
-        "question_bank": question_bank,
-        "question_bank_label": profile["label"],
-        "principle": profile["principle"],
-        "choice_questions": choice_questions,
-        "programming_tasks": programming_tasks,
-    }
+    if used_signatures is None:
+        used_signatures = existing_exam_signatures(question_bank)
+
+    for _ in range(100):
+        if question_bank == CSP_J_ROUND1_FORMAT:
+            exam = build_csp_j_round1_exam(title, duration)
+        else:
+            choice_pool = filter_bank_items(CHOICE_QUESTIONS, question_bank, "choice")
+            programming_pool = filter_bank_items(PROGRAMMING_TASKS, question_bank, "programming")
+            missing_generators = missing_generator_ids(programming_pool)
+            if missing_generators:
+                raise RuntimeError("以下编程题缺少测试生成器：" + ", ".join(missing_generators))
+            choice_questions = [
+                prepare_choice_question(question, question_bank)
+                for question in balanced_pick(choice_pool, choice_count)
+            ]
+            programming_tasks = [
+                prepare_programming_task(task)
+                for task in balanced_pick(programming_pool, program_count)
+            ]
+            profile = question_bank_profile(question_bank)
+            exam = {
+                "title": title,
+                "duration_minutes": duration,
+                "question_bank": question_bank,
+                "question_bank_label": profile["label"],
+                "principle": profile["principle"],
+                "choice_questions": choice_questions,
+                "programming_tasks": programming_tasks,
+            }
+        if exam_signature(exam) not in used_signatures:
+            return exam
+
+    raise RuntimeError("当前题库可生成的题目组合已与历史试卷重复，请增加题库或调整题目数量。")
 
 
 def run_cpp_judge(code: str, tests: list[dict]) -> dict:
@@ -1008,10 +1099,27 @@ def load_exam(exam_id: int) -> sqlite3.Row | None:
 
 
 def save_exam(payload: dict) -> int:
+    signature = exam_signature(payload)
     with db() as conn:
+        conn.execute("BEGIN IMMEDIATE")
+        duplicate = conn.execute(
+            "SELECT id FROM exams WHERE signature = ? LIMIT 1",
+            (signature,),
+        ).fetchone()
+        if duplicate:
+            raise DuplicateExamError(f"试卷题目组合已存在：#{duplicate['id']}")
         cur = conn.execute(
-            "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
-            (payload["title"], payload["duration_minutes"], json.dumps(payload, ensure_ascii=False), now_text()),
+            """
+            INSERT INTO exams(title, duration_minutes, payload, created_at, signature)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            (
+                payload["title"],
+                payload["duration_minutes"],
+                json.dumps(payload, ensure_ascii=False),
+                now_text(),
+                signature,
+            ),
         )
         return int(cur.lastrowid)
 
@@ -1460,15 +1568,25 @@ def handle_create_exam(params: dict[str, list[str]]) -> bytes:
             "duration": params.get("duration", [current_defaults["duration"]])[0],
         }
     )
-    exam_id = save_exam(
-        build_exam(
-            form_defaults["title"],
-            form_defaults["choice_count"],
-            form_defaults["program_count"],
-            form_defaults["duration"],
-            form_defaults["question_bank"],
-        )
-    )
+    used_signatures = existing_exam_signatures(form_defaults["question_bank"])
+    for _ in range(100):
+        try:
+            payload = build_exam(
+                form_defaults["title"],
+                form_defaults["choice_count"],
+                form_defaults["program_count"],
+                form_defaults["duration"],
+                form_defaults["question_bank"],
+                used_signatures=used_signatures,
+            )
+            exam_id = save_exam(payload)
+            break
+        except DuplicateExamError:
+            used_signatures.add(exam_signature(payload))
+        except RuntimeError as exc:
+            return admin_page(str(exc))
+    else:
+        return admin_page("当前题库可生成的题目组合已用尽，请增加题库或调整题目数量。")
     save_exam_form_defaults(form_defaults)
     return redirect(f"/admin/exams/{exam_id}")
 

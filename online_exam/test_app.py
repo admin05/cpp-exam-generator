@@ -213,6 +213,24 @@ class ResultPageTest(unittest.TestCase):
 
         self.assertTrue(all(question.get("explanation") for question in exam["choice_questions"]))
 
+    def test_new_papers_do_not_repeat_an_existing_question_set(self) -> None:
+        first = app.build_exam("去重测试 1", 10, 4, 120, "literacy")
+        first_id = app.save_exam(first)
+
+        second = app.build_exam("去重测试 2", 10, 4, 120, "literacy")
+
+        self.assertNotEqual(app.exam_signature(first), app.exam_signature(second))
+        with self.assertRaises(app.DuplicateExamError):
+            app.save_exam(first)
+        self.assertIsNotNone(app.load_exam(first_id))
+
+    def test_csp_j_round1_does_not_repeat_an_existing_template(self) -> None:
+        first = app.build_exam("CSP-J 去重测试 1", 10, 4, 120, "csp_j_round1")
+        app.save_exam(first)
+
+        with self.assertRaisesRegex(RuntimeError, "历史试卷重复"):
+            app.build_exam("CSP-J 去重测试 2", 10, 4, 120, "csp_j_round1")
+
     def test_csp_j_s_import_profiles_have_source_questions(self) -> None:
         self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_j_round1", "choice")), 250)
         self.assertGreaterEqual(len(app.filter_bank_items(app.PROGRAMMING_TASKS, "csp_j_round2", "programming")), 35)
