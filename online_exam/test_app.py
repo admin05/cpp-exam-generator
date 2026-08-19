@@ -228,8 +228,10 @@ class ResultPageTest(unittest.TestCase):
         first = app.build_exam("CSP-J 去重测试 1", 10, 4, 120, "csp_j_round1")
         app.save_exam(first)
 
-        with self.assertRaisesRegex(RuntimeError, "历史试卷重复"):
-            app.build_exam("CSP-J 去重测试 2", 10, 4, 120, "csp_j_round1")
+        second = app.build_exam("CSP-J 去重测试 2", 10, 4, 120, "csp_j_round1")
+
+        self.assertNotEqual(app.exam_signature(first), app.exam_signature(second))
+        self.assertEqual(len(second["choice_questions"]), 43)
 
     def test_csp_j_s_import_profiles_have_source_questions(self) -> None:
         self.assertGreaterEqual(len(app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_j_round1", "choice")), 250)

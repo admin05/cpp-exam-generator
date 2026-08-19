@@ -396,7 +396,7 @@ def _csp_j_reading_scores(questions: list[dict]) -> list[float]:
 
 
 def build_csp_j_round1_exam(title: str, duration: int) -> dict:
-    """Build the fixed 15 + 18 + 10 CSP-J first-round paper."""
+    """Build a fixed-format 15 + 18 + 10 CSP-J first-round paper."""
     imported = [
         question
         for question in CHOICE_QUESTIONS
@@ -406,12 +406,15 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
     for question in imported:
         by_source.setdefault(str(question.get("source", "")), []).append(question)
 
-    templates = []
+    first_pool = []
+    reading_templates = []
+    completion_templates = []
     for source, source_questions in by_source.items():
         first = [
             q for q in source_questions
             if question_number(q) <= 15 and q.get("source_question_type") == "单项选择题"
         ]
+        first_pool.extend(first)
         reading = [
             q for q in source_questions
             if 16 <= question_number(q) <= 33
@@ -435,24 +438,27 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
             for q in reading
         )
         if (
-            len(first) >= 15
-            and len(reading_groups) == 3
+            len(reading_groups) == 3
             and reading_judgments == 12
             and reading_choices == 6
-            and len(completion_groups) == 2
-            and all(len(group) == 5 for group in completion_groups)
         ):
-            templates.append((source, first, reading, reading_groups, completion_groups))
+            reading_templates.append((source, reading, reading_groups))
+        if len(completion_groups) == 2 and all(len(group) == 5 for group in completion_groups):
+            completion_templates.append((source, completion_groups))
 
-    if not templates:
+    if not first_pool or not reading_templates or not completion_templates:
         raise RuntimeError(
-            "CSP-J 第一轮题库缺少符合 15+18+10 固定结构的完整真题模板。"
+            "CSP-J 第一轮题库缺少足够的题目，无法组成 15+18+10 固定结构。"
         )
 
-    source, first, reading, reading_groups, completion_groups = (
-        random.SystemRandom().choice(templates)
+    rng = random.SystemRandom()
+    first = rng.sample(first_pool, 15)
+    reading_source, reading, reading_groups = rng.choice(reading_templates)
+    completion_source, completion_groups = rng.choice(completion_templates)
+    source = (
+        f"混合题库（单选题：{len(first_pool)} 道；"
+        f"阅读程序：{reading_source}；完善程序：{completion_source}）"
     )
-    first = sorted(first, key=question_number)[:15]
     reading_questions = []
     reading_section_title = "二、阅读程序（12 道判断题 + 6 道单选题，共 40 分）"
     reading_score_by_id = {
