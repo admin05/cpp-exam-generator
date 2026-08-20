@@ -43,6 +43,11 @@ The literacy contest profile follows the C++ section of
 questions while preserving source subtypes such as single-choice, program
 reading judgment, program reading choice, and program completion. Selecting
 CSP-J first round creates its fixed 15 + 18 + 10, 43-question, 100-point paper;
+CSP-S first round also creates a fixed-format 100-point paper: 15 basic
+single-choice questions, three program-reading blocks worth 40 points, and two
+program-completion blocks with 10 blanks worth 30 points. Depending on the
+source year, it contains 42 or 43 subquestions and preserves year-specific
+reading-program and scoring differences;
 second-round
 papers are modeled as programming tasks while preserving the paper's problem
 type, such as `传统型`.
@@ -119,6 +124,9 @@ isolated sandbox service or use a dedicated OJ system.
 `素养大赛/复赛 决赛考点大纲.pdf` 的 C++ 要求为准；CSP-J/S 题库来自
 `CSP/题库/CSP-J` 与 `CSP/题库/CSP-S` 的本地原始资料，并拆分为第一轮客观题题库
 和第二轮编程题题库。
+
+CSP-S 第一轮会按真实试卷结构生成 15 道基础单选、3 个阅读程序和 2 个完善程序，
+而不是从全部客观题中混合抽取。
 
 平台适合小规模教学和 NAS 部署。管理员可以从内置题库随机组卷，考生可以在线完成
 单选题、多选题等客观题，并提交 C++17 编程题代码；系统会将成绩和提交记录保存到

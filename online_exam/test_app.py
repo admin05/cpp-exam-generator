@@ -1,12 +1,13 @@
 import json
 import tempfile
 import unittest
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
 
 from online_exam import app
-from scripts.generate_csp_imports import parse_options
+from scripts.generate_csp_imports import Round1Source, parse_markdown_round1, parse_options
 
 
 class ResultPageTest(unittest.TestCase):
@@ -289,6 +290,59 @@ class ResultPageTest(unittest.TestCase):
 
         self.assertEqual(float(row["choice_score"]), 100.0)
         self.assertEqual(float(row["choice_total"]), 100.0)
+
+    def test_csp_s_round1_builds_realistic_fixed_paper(self) -> None:
+        exam = app.build_exam("CSP-S 固定结构", 10, 4, 120, "csp_s_round1")
+        questions = exam["choice_questions"]
+        sections = exam["sections"]
+
+        self.assertIn(len(questions), {42, 43})
+        self.assertEqual(exam["total_score"], 100.0)
+        self.assertEqual([len(section["question_indices"]) for section in sections], [15, len(questions) - 25, 10])
+        self.assertEqual([len(section.get("programs", [])) for section in sections], [0, 3, 2])
+        self.assertEqual(
+            {question["source_question_type"] for question in questions[:15]},
+            {"单项选择题"},
+        )
+        reading = questions[15 : len(questions) - 10]
+        completion = questions[-10:]
+        reading_counts = Counter(question["source_question_type"] for question in reading)
+        self.assertIn(
+            (reading_counts["程序阅读判断题"], reading_counts["程序阅读单选题"]),
+            {(10, 8), (9, 9), (9, 8)},
+        )
+        self.assertEqual(
+            Counter(question["source_question_type"] for question in completion),
+            Counter({"完善程序单选题": 10}),
+        )
+        self.assertEqual(
+            sum(len(program["question_indices"]) for program in sections[2]["programs"]),
+            10,
+        )
+        self.assertEqual(sum(float(question["score"]) for question in questions), 100.0)
+
+    def test_csp_s_markdown_import_preserves_judgment_and_completion_types(self) -> None:
+        source = Round1Source(
+            "csp_s_round1",
+            "CSP-S",
+            2025,
+            "CSP/题库/CSP-S/2025/Round1/CSP-S 2025.md",
+            None,
+            5,
+        )
+        items = parse_markdown_round1(source, Path(source.question_path).read_text(encoding="utf-8"))
+        counts = Counter(item["source_question_type"] for item in items)
+        self.assertEqual(
+            counts,
+            Counter(
+                {
+                    "单项选择题": 15,
+                    "程序阅读判断题": 9,
+                    "程序阅读单选题": 9,
+                    "完善程序单选题": 10,
+                }
+            ),
+        )
 
     def test_imported_csp_choice_options_are_not_merged(self) -> None:
         competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}

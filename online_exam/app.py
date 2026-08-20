@@ -41,6 +41,28 @@ DEFAULT_EXAM_FORM = {
 CSP_J_ROUND1_FORMAT = "csp_j_round1"
 CSP_J_ROUND1_TOTAL_QUESTIONS = 43
 CSP_J_ROUND1_TOTAL_SCORE = 100.0
+CSP_S_ROUND1_FORMAT = "csp_s_round1"
+CSP_S_ROUND1_TOTAL_SCORE = 100.0
+CSP_S_ROUND1_FIRST_COUNT = 15
+CSP_S_ROUND1_READING_TYPE_RANGES = {
+    2019: ((16, 21), (22, 27), (28, 33)),
+    2020: ((16, 21), (22, 27), (28, 33)),
+    2021: ((16, 21), (22, 27), (28, 33)),
+    2022: ((16, 21), (22, 27), (28, 33)),
+    2023: ((16, 21), (22, 27), (28, 33)),
+    2024: ((16, 20), (21, 26), (27, 32)),
+    2025: ((16, 21), (22, 27), (28, 33)),
+}
+CSP_S_ROUND1_COMPLETION_START = {
+    2019: 34,
+    2020: 34,
+    2021: 34,
+    2022: 34,
+    2023: 34,
+    2024: 33,
+    2025: 34,
+}
+CSP_FIXED_ROUND1_FORMATS = {CSP_J_ROUND1_FORMAT, CSP_S_ROUND1_FORMAT}
 CSP_J_READING_JUDGMENT_TYPE = "程序阅读判断题"
 CSP_J_READING_CHOICE_TYPE = "程序阅读单选题"
 CSP_J_COMPLETION_TYPE = "完善程序单选题"
@@ -341,7 +363,7 @@ def _completion_program_groups(questions: list[dict]) -> list[list[dict]]:
     groups: list[list[dict]] = []
     current: list[dict] = []
     for question in ordered:
-        marker = re.search(r"[①②③④⑤]", str(question.get("stem", "")))
+        marker = re.search(r"[①②③④⑤⑥⑦⑧⑨⑩]", str(question.get("stem", "")))
         if not marker:
             continue
         if marker.group(0) == "①" and current:
@@ -564,6 +586,237 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
     }
 
 
+def _csp_s_year(question: dict) -> int:
+    match = re.search(r"csp_s_round1-(\d{4})-q\d+$", str(question.get("id", "")))
+    return int(match.group(1)) if match else 0
+
+
+def _is_program_reading_judgment(question: dict) -> bool:
+    options = [str(option).strip() for option in question.get("options", [])]
+    return len(options) == 2 and set(options) == {"正确", "错误"}
+
+
+def _csp_s_normalize_question(question: dict, section_id: str) -> dict:
+    prepared = dict(question)
+    if section_id == "part1":
+        question_type = "单项选择题"
+    elif section_id == "part2":
+        question_type = (
+            CSP_J_READING_JUDGMENT_TYPE
+            if _is_program_reading_judgment(question)
+            else CSP_J_READING_CHOICE_TYPE
+        )
+    else:
+        question_type = CSP_J_COMPLETION_TYPE
+    prepared["category"] = question_type
+    prepared["source_question_type"] = question_type
+    prepared["display_type"] = question_type
+    return prepared
+
+
+def _explicit_question_score(question: dict) -> float | None:
+    match = re.match(r"^\s*[（(]\s*(\d+(?:\.\d+)?)\s*分", str(question.get("stem", "")))
+    return float(match.group(1)) if match else None
+
+
+def _csp_s_reading_score(question: dict, year: int) -> float:
+    explicit = _explicit_question_score(question)
+    if explicit is not None:
+        return explicit
+    if question.get("source_question_type") == CSP_J_READING_JUDGMENT_TYPE:
+        return 1.5
+    return 4.0 if year == 2019 else 3.0
+
+
+def _csp_s_program_ranges(year: int) -> tuple[tuple[int, int], ...]:
+    ranges = CSP_S_ROUND1_READING_TYPE_RANGES.get(year)
+    if ranges:
+        return ranges
+    raise RuntimeError(f"CSP-S 第一轮暂未配置 {year} 年阅读程序分组。")
+
+
+def _csp_s_round1_templates() -> tuple[list[dict], list[dict]]:
+    imported = [
+        question
+        for question in CHOICE_QUESTIONS
+        if question.get("competition") == CSP_S_ROUND1_FORMAT
+    ]
+    by_year: dict[int, list[dict]] = {}
+    for question in imported:
+        by_year.setdefault(_csp_s_year(question), []).append(question)
+
+    first_pool_by_id: dict[str, dict] = {}
+    templates: list[dict] = []
+    for year, year_questions in sorted(by_year.items()):
+        if year not in CSP_S_ROUND1_COMPLETION_START:
+            continue
+        ordered = sorted(year_questions, key=question_number)
+        first = [
+            _csp_s_normalize_question(question, "part1")
+            for question in ordered
+            if 1 <= question_number(question) <= CSP_S_ROUND1_FIRST_COUNT
+        ]
+        completion_start = CSP_S_ROUND1_COMPLETION_START[year]
+        reading_groups = [
+            [
+                _csp_s_normalize_question(question, "part2")
+                for question in ordered
+                if start <= question_number(question) <= end
+            ]
+            for start, end in _csp_s_program_ranges(year)
+        ]
+        completion = [
+            question
+            for question in ordered
+            if question_number(question) >= completion_start
+        ]
+        completion_groups = _completion_program_groups(completion)
+        if (
+            len(first) < CSP_S_ROUND1_FIRST_COUNT
+            or len(reading_groups) != 3
+            or any(not group for group in reading_groups)
+            or len(completion_groups) != 2
+            or sum(len(group) for group in completion_groups) != 10
+            or any(not group for group in completion_groups)
+        ):
+            continue
+
+        normalized_completion_groups = [
+            [_csp_s_normalize_question(question, "part3") for question in group]
+            for group in completion_groups
+        ]
+        reading_questions = [question for group in reading_groups for question in group]
+        reading_score = [
+            _csp_s_reading_score(question, year)
+            for question in reading_questions
+        ]
+        if round(sum(reading_score), 5) != 40.0:
+            continue
+        for question in first:
+            first_pool_by_id[str(question.get("id", ""))] = question
+        templates.append(
+            {
+                "year": year,
+                "reading_groups": reading_groups,
+                "reading_scores": reading_score,
+                "completion_groups": normalized_completion_groups,
+            }
+        )
+    return list(first_pool_by_id.values()), templates
+
+
+def _section_program_ranges(start: int, groups: list[list[dict]]) -> list[dict]:
+    programs = []
+    cursor = start
+    for index, group in enumerate(groups, 1):
+        end = cursor + len(group)
+        programs.append({"index": index, "question_indices": list(range(cursor, end))})
+        cursor = end
+    return programs
+
+
+def build_csp_s_round1_exam(title: str, duration: int) -> dict:
+    """Build a CSP-S first-round paper close to the real paper structure."""
+    first_pool, templates = _csp_s_round1_templates()
+    if len(first_pool) < CSP_S_ROUND1_FIRST_COUNT or not templates:
+        raise RuntimeError(
+            "CSP-S 第一轮题库缺少完整试卷模板，当前可用资料至少需要 15 道基础单选、"
+            "3 个阅读程序和 2 个完善程序。"
+        )
+
+    rng = random.SystemRandom()
+    first = rng.sample(first_pool, CSP_S_ROUND1_FIRST_COUNT)
+    template = rng.choice(templates)
+    reading_groups = template["reading_groups"]
+    completion_groups = template["completion_groups"]
+    reading_questions = [question for group in reading_groups for question in group]
+    reading_score_by_id = {
+        question["id"]: score
+        for question, score in zip(reading_questions, template["reading_scores"])
+    }
+
+    part1_title = "一、单项选择题（15 题，共 30 分）"
+    reading_title = "二、阅读程序（3 个程序，共 40 分）"
+    completion_title = "三、完善程序（2 个程序、10 个空，共 30 分）"
+    first_questions = _copy_program_questions(
+        first,
+        "part1",
+        part1_title,
+        None,
+        [2.0] * len(first),
+    )
+    prepared_reading = []
+    for program_index, group in enumerate(reading_groups, 1):
+        prepared_reading.extend(
+            _copy_program_questions(
+                group,
+                "part2",
+                reading_title,
+                program_index,
+                [reading_score_by_id[question["id"]] for question in group],
+            )
+        )
+    prepared_completion = []
+    for program_index, group in enumerate(completion_groups, 1):
+        prepared_completion.extend(
+            _copy_program_questions(
+                group,
+                "part3",
+                completion_title,
+                program_index,
+                [3.0] * len(group),
+            )
+        )
+
+    questions = [
+        prepare_choice_question(question, CSP_S_ROUND1_FORMAT)
+        for question in [*first_questions, *prepared_reading, *prepared_completion]
+    ]
+    reading_start = len(first_questions)
+    completion_start = reading_start + len(prepared_reading)
+    sections = [
+        {
+            "id": "part1",
+            "title": part1_title,
+            "score": 30.0,
+            "question_indices": list(range(0, reading_start)),
+        },
+        {
+            "id": "part2",
+            "title": reading_title,
+            "score": 40.0,
+            "question_indices": list(range(reading_start, completion_start)),
+            "programs": _section_program_ranges(reading_start, reading_groups),
+        },
+        {
+            "id": "part3",
+            "title": completion_title,
+            "score": 30.0,
+            "question_indices": list(range(completion_start, len(questions))),
+            "programs": _section_program_ranges(completion_start, completion_groups),
+        },
+    ]
+    total_score = sum(question_score(question) for question in questions)
+    if len(questions) not in {42, 43} or total_score != CSP_S_ROUND1_TOTAL_SCORE:
+        raise RuntimeError("CSP-S 第一轮固定结构校验失败，请检查导入题库。")
+    return {
+        "title": title,
+        "duration_minutes": duration,
+        "question_bank": CSP_S_ROUND1_FORMAT,
+        "question_bank_label": "CSP-S 第一轮",
+        "principle": (
+            "CSP-S 第一轮固定结构：15 道单选题；3 个阅读程序共 "
+            f"{len(prepared_reading)} 道小题；2 个完善程序共 10 个空；满分 100 分。"
+        ),
+        "exam_format": CSP_S_ROUND1_FORMAT,
+        "total_score": CSP_S_ROUND1_TOTAL_SCORE,
+        "sections": sections,
+        "source_template": f"混合基础单选题；阅读/完善程序模板：CSP-S {template['year']}",
+        "choice_questions": questions,
+        "programming_tasks": [],
+    }
+
+
 def question_competition(item: dict) -> str:
     explicit = item.get("competition")
     if explicit:
@@ -625,7 +878,7 @@ def normalize_exam_form_defaults(values: dict | None = None) -> dict:
         question_bank = DEFAULT_EXAM_FORM["question_bank"]
 
     choice_total, program_total = bank_counts(question_bank)
-    if question_bank == CSP_J_ROUND1_FORMAT:
+    if question_bank in CSP_FIXED_ROUND1_FORMATS:
         choice_count = CSP_J_ROUND1_TOTAL_QUESTIONS
         program_count = 0
     else:
@@ -722,6 +975,8 @@ def build_exam(
     for _ in range(100):
         if question_bank == CSP_J_ROUND1_FORMAT:
             exam = build_csp_j_round1_exam(title, duration)
+        elif question_bank == CSP_S_ROUND1_FORMAT:
+            exam = build_csp_s_round1_exam(title, duration)
         else:
             choice_pool = filter_bank_items(CHOICE_QUESTIONS, question_bank, "choice")
             programming_pool = filter_bank_items(PROGRAMMING_TASKS, question_bank, "programming")
@@ -1033,6 +1288,11 @@ def exam_total_score(payload: dict) -> float:
 def exam_summary(payload: dict) -> str:
     if payload.get("exam_format") == CSP_J_ROUND1_FORMAT:
         return "43 道小题 · 满分 100 分 · 15 单选 + 3 段阅读程序 + 2 段完善程序"
+    if payload.get("exam_format") == CSP_S_ROUND1_FORMAT:
+        return (
+            f"{len(payload.get('choice_questions', []))} 道小题 · 满分 100 分 · "
+            "15 单选 + 3 段阅读程序 + 2 段完善程序"
+        )
     single_count, multi_count = objective_counts(payload.get("choice_questions", []))
     return (
         f"{len(payload.get('choice_questions', []))} 道客观题（单选 {single_count} / 多选 {multi_count}）"
@@ -1206,6 +1466,8 @@ def admin_page(message: str = "") -> bytes:
         count_label = (
             "固定 43 题 / 100 分"
             if key == CSP_J_ROUND1_FORMAT
+            else "固定 42～43 题 / 100 分"
+            if key == CSP_S_ROUND1_FORMAT
             else f"客观 {choice_total} / 编程 {program_total}"
         )
         bank_options.append(
@@ -1229,17 +1491,17 @@ def admin_page(message: str = "") -> bytes:
             </label>
             <div class="two">
               <label>客观题数量
-                <input name="choice_count" type="number" min="0" max="{len(CHOICE_QUESTIONS)}" value="{form_defaults['choice_count']}"{' readonly' if form_defaults['question_bank'] == CSP_J_ROUND1_FORMAT else ''}>
+                <input name="choice_count" type="number" min="0" max="{len(CHOICE_QUESTIONS)}" value="{form_defaults['choice_count']}"{' readonly' if form_defaults['question_bank'] in CSP_FIXED_ROUND1_FORMATS else ''}>
               </label>
               <label>编程题数量
-                <input name="program_count" type="number" min="0" max="{len(PROGRAMMING_TASKS)}" value="{form_defaults['program_count']}"{' readonly' if form_defaults['question_bank'] == CSP_J_ROUND1_FORMAT else ''}>
+                <input name="program_count" type="number" min="0" max="{len(PROGRAMMING_TASKS)}" value="{form_defaults['program_count']}"{' readonly' if form_defaults['question_bank'] in CSP_FIXED_ROUND1_FORMATS else ''}>
               </label>
             </div>
             <label>考试时长（分钟）
               <input name="duration" type="number" min="1" max="240" value="{form_defaults['duration']}">
             </label>
             <button class="button primary" type="submit">生成试卷</button>
-            <p class="hint">当前题库：{'; '.join(bank_summary)}。选择 CSP-J 第一轮时自动生成固定 43 题、100 分结构，题目数量无需设置。</p>
+            <p class="hint">当前题库：{'; '.join(bank_summary)}。选择 CSP-J/S 第一轮时自动按真实卷面结构生成试卷，题目数量无需设置。</p>
           </form>
           <section class="panel">
             <h2>最近试卷</h2>
@@ -1259,7 +1521,7 @@ def exam_page(exam_id: int) -> bytes:
         return not_found()
     payload = json.loads(exam["payload"])
     label = payload.get("question_bank_label", "素养大赛")
-    is_csp_j_round1 = payload.get("exam_format") == CSP_J_ROUND1_FORMAT
+    is_fixed_round1 = payload.get("exam_format") in CSP_FIXED_ROUND1_FORMATS
 
     nav = []
     choice_html = []
@@ -1277,11 +1539,11 @@ def exam_page(exam_id: int) -> bytes:
             last_section_id = q.get("section_id")
             last_program_key = None
         program_key = (q.get("section_id"), q.get("program_index"))
-        if is_csp_j_round1 and q.get("program_index") and program_key != last_program_key:
+        if is_fixed_round1 and q.get("program_index") and program_key != last_program_key:
             section_html += f'<h2>程序 {q["program_index"]}</h2>'
             last_program_key = program_key
         code_html = render_code(q["code"])
-        if is_csp_j_round1 and q.get("program_index") and program_key == last_program_key and i > 1:
+        if is_fixed_round1 and q.get("program_index") and program_key == last_program_key and i > 1:
             previous = payload["choice_questions"][i - 2]
             if (
                 previous.get("section_id") == q.get("section_id")
@@ -1374,9 +1636,9 @@ int main() {{
           </aside>
           <section class="exam-main">
             <div class="principle">{h(payload["principle"])}</div>
-            {'' if is_csp_j_round1 else '<h1>一、客观题</h1>'}
+            {'' if is_fixed_round1 else '<h1>一、客观题</h1>'}
             {''.join(choice_html)}
-            {'' if is_csp_j_round1 else '<h1>二、编程题</h1>'}
+            {'' if is_fixed_round1 else '<h1>二、编程题</h1>'}
             {''.join(program_html)}
           </section>
         </form>

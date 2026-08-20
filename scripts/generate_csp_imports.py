@@ -535,11 +535,25 @@ def parse_markdown_round1(source: Round1Source, text: str) -> list[dict]:
         })
 
     current_number = 16
-    for section_title, qtype_base in (("## 二、程序阅读", "程序阅读"), ("## 三、程序填空", "程序填空")):
+    markdown_sections = (
+        ("## 二、程序阅读", "程序阅读"),
+        ("## 三、程序填空", "完善程序"),
+        ("## 程序填空", "完善程序"),
+    )
+    for section_title, qtype_base in markdown_sections:
+        if body.find(section_title) < 0:
+            continue
         section = split_section(body, section_title, "## " if section_title.startswith("## 二") else None)
         if section_title.startswith("## 二"):
-            next_start = body.find("## 三、", body.find(section_title))
-            section = body[body.find(section_title): next_start if next_start >= 0 else len(body)]
+            section_start = body.find(section_title)
+            next_starts = [
+                index
+                for marker in ("## 三、", "## 程序填空")
+                for index in [body.find(marker, section_start + len(section_title))]
+                if index >= 0
+            ]
+            next_start = min(next_starts) if next_starts else -1
+            section = body[section_start: next_start if next_start >= 0 else len(body)]
         code_blocks = list(re.finditer(r"```(?:cpp)?\n(.*?)```", section, flags=re.S))
         for sub in re.finditer(r"(?ms)^####\s+\((\d+)\)\.\s+(.*?)(?=^####\s+\(|^#{2,4}\s+|\Z)", section):
             code = ""
@@ -557,7 +571,8 @@ def parse_markdown_round1(source: Round1Source, text: str) -> list[dict]:
             else:
                 current_number += 1
                 continue
-            qtype = f"{qtype_base}{'判断题' if answer in {'√', '×'} and not parsed else '单选题'}"
+            is_judgment = len(options) == 2 and set(options) == {"正确", "错误"}
+            qtype = f"{qtype_base}{'判断题' if is_judgment else '单选题'}"
             items.append({
                 "id": f"{source.competition}-{source.year}-q{current_number:02d}",
                 "competition": source.competition,
