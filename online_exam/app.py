@@ -654,8 +654,16 @@ def _csp_s_round1_templates() -> tuple[list[dict], list[dict]]:
         first = [
             _csp_s_normalize_question(question, "part1")
             for question in ordered
-            if 1 <= question_number(question) <= CSP_S_ROUND1_FIRST_COUNT
+            if (
+                1 <= question_number(question) <= CSP_S_ROUND1_FIRST_COUNT
+                and question.get("source_question_type") == "单项选择题"
+            )
         ]
+        # The first section is made of independent questions.  A year may have
+        # incomplete program blocks but still contribute its parsed first-section
+        # questions to the common pool.
+        for question in first:
+            first_pool_by_id[str(question.get("id", ""))] = question
         completion_start = CSP_S_ROUND1_COMPLETION_START[year]
         reading_groups = [
             [
@@ -692,8 +700,6 @@ def _csp_s_round1_templates() -> tuple[list[dict], list[dict]]:
         ]
         if round(sum(reading_score), 5) != 40.0:
             continue
-        for question in first:
-            first_pool_by_id[str(question.get("id", ""))] = question
         templates.append(
             {
                 "year": year,

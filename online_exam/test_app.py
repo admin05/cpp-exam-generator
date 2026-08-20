@@ -321,6 +321,40 @@ class ResultPageTest(unittest.TestCase):
         )
         self.assertEqual(sum(float(question["score"]) for question in questions), 100.0)
 
+    def test_csp_s_round1_keeps_independent_questions_from_partial_years(self) -> None:
+        first_pool, templates = app._csp_s_round1_templates()
+        first_ids = {question["id"] for question in first_pool}
+        used_ids = set(first_ids)
+        for template in templates:
+            used_ids.update(
+                question["id"]
+                for group in template["reading_groups"] + template["completion_groups"]
+                for question in group
+            )
+        imported_ids = {
+            question["id"]
+            for question in app.CHOICE_QUESTIONS
+            if question.get("competition") == app.CSP_S_ROUND1_FORMAT
+        }
+
+        self.assertEqual(len(first_pool), 90)
+        self.assertEqual(
+            imported_ids - used_ids,
+            {"csp_s_round1-2019-q22", "csp_s_round1-2019-q23"},
+        )
+        self.assertTrue(
+            {
+                "csp_s_round1-2019-q10",
+                "csp_s_round1-2019-q15",
+                "csp_s_round1-2020-q01",
+                "csp_s_round1-2020-q15",
+            }.issubset(first_ids)
+        )
+        self.assertEqual(
+            [template["year"] for template in templates],
+            [2021, 2022, 2023, 2024, 2025],
+        )
+
     def test_csp_s_markdown_import_preserves_judgment_and_completion_types(self) -> None:
         source = Round1Source(
             "csp_s_round1",
