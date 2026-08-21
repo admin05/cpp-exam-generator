@@ -214,6 +214,93 @@ class ResultPageTest(unittest.TestCase):
 
         self.assertTrue(all(question.get("explanation") for question in exam["choice_questions"]))
 
+    def test_all_csp_s_round1_choices_have_explanations(self) -> None:
+        questions = app.filter_bank_items(app.CHOICE_QUESTIONS, "csp_s_round1", "choice")
+
+        missing = [
+            question["id"]
+            for question in questions
+            if not app.csp_s_choice_explanation(question)
+        ]
+
+        self.assertEqual(missing, [])
+        prepared = [
+            app.prepare_choice_question(question, "csp_s_round1")
+            for question in questions
+        ]
+        self.assertTrue(all(question.get("explanation") for question in prepared))
+
+    def test_existing_csp_s_round1_papers_are_backfilled_with_explanations(self) -> None:
+        payload = {
+            "question_bank": "csp_s_round1",
+            "exam_format": "csp_s_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_s_round1-2025-q01",
+                    "source_question_type": "单项选择题",
+                    "stem": "在一个最小堆中连续删除最小值后堆顶是什么？",
+                    "options": ["10", "12", "15", "20"],
+                    "answer": 0,
+                }
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("旧 CSP-S 试卷", 120, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+            cursor = conn.execute(
+                """
+                INSERT INTO submissions(
+                    exam_id, student_name, choice_score, choice_total,
+                    program_score, program_total, detail, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    exam_id,
+                    "旧卷考生",
+                    0,
+                    2,
+                    0,
+                    0,
+                    json.dumps(
+                        {
+                            "choices": [
+                                {
+                                    "index": 1,
+                                    "selected": "B",
+                                    "answer": "A",
+                                    "ok": False,
+                                    "type": "单选题",
+                                }
+                            ],
+                            "programs": [],
+                        },
+                        ensure_ascii=False,
+                    ),
+                    app.now_text(),
+                ),
+            )
+            submission_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        page = app.result_page(submission_id).decode("utf-8")
+
+        explanation = saved["choice_questions"][0].get("explanation", "")
+        self.assertTrue(explanation)
+        self.assertIn("A（10）", explanation)
+        self.assertIn("查看答案解析", page)
+        self.assertIn("最小堆", page)
+        self.assertEqual(app.backfill_csp_s_round1_explanations(), 0)
+
+    def test_new_csp_s_round1_papers_store_explanations(self) -> None:
+        exam = app.build_exam("CSP-S 解析测试", 10, 4, 120, "csp_s_round1")
+
+        self.assertTrue(all(question.get("explanation") for question in exam["choice_questions"]))
+
     def test_new_papers_do_not_repeat_an_existing_question_set(self) -> None:
         first = app.build_exam("去重测试 1", 10, 4, 120, "literacy")
         first_id = app.save_exam(first)

@@ -261,7 +261,7 @@ def init_db() -> None:
             )
             """
         )
-    backfill_csp_j_round1_explanations()
+    backfill_round1_explanations()
 
 
 def now_text() -> str:
@@ -1162,6 +1162,80 @@ def csp_j_choice_explanation(question: dict) -> str:
     return generated_csp_j_choice_explanation(question)
 
 
+def generated_csp_s_choice_explanation(question: dict) -> str:
+    """Provide a structured explanation for imported CSP-S round-one questions.
+
+    The source bank contains official answers but not a consistent solution
+    paragraph for every imported question.  Keep the explanation useful and
+    honest: identify the question type, show the correct option, and give the
+    appropriate verification method for the question's algorithm or code.
+    """
+    options = question.get("options", [])
+    try:
+        correct_indices = answer_indices(question.get("answer"))
+    except (TypeError, ValueError):
+        return ""
+    correct_labels = answer_label(correct_indices)
+    correct_options = [
+        " ".join(str(options[index]).split())
+        for index in correct_indices
+        if 0 <= index < len(options)
+    ]
+    correct_text = "、".join(correct_options)
+    answer_text = f"{correct_labels}（{correct_text}）" if correct_text else correct_labels
+    question_type = str(question.get("source_question_type") or question.get("type") or "")
+    stem = str(question.get("stem", ""))
+    code = str(question.get("code", ""))
+    searchable = f"{stem} {code}".lower()
+
+    hints = [
+        (("kmp", "next", "前后缀"), "逐个位置求模式串的最长相等真前缀和真后缀，并按定义核对 next 数组。"),
+        (("线段树", "区间"), "把查询区间按线段树结点区间拆分，分别统计完全包含的结点和沿途访问的父结点。"),
+        (("trie", "前缀树"), "按字符逐层插入并合并公共前缀，最后把根结点和所有不同前缀结点相加。"),
+        (("拓扑", "dag"), "拓扑序数量取决于当前入度为零结点的选择，不能只由顶点数和边数决定。"),
+        (("哈希", "hash", "闭散列", "线性探查"), "先计算哈希地址，再按线性探查顺序跳过已占位置，直到找到第一个空槽。"),
+        (("最小生成树", "kruskal", "prim"), "生成树必须连通全部顶点且不形成环，按边权从小到大或按 Prim 的最小切边逐步累加。"),
+        (("二叉搜索树", "后序遍历", "前序遍历"), "后序序列最后一个元素是根；利用二叉搜索树的大小关系递归划分左右子树，再得到前序序列。"),
+        (("背包", "动态规划"), "设容量状态并逐件转移，比较选择当前物品和不选择当前物品的最优值，同时检查总重量不超过容量。"),
+        (("lca", "最近公共祖先"), "公共祖先必须同时位于所有指定结点的祖先链上，并取其中最深的结点逐项排除不可能情况。"),
+        (("递归关系", "主定理", "时间复杂度"), "按递归树或主定理比较各层的子问题规模与合并代价，取总量的最高阶。"),
+        (("最小堆", "delete-min", "堆顶"), "每次删除堆顶后把末尾元素移到堆顶并向下调整，重复两次即可得到新的最小元素。"),
+        (("斐波那契", "重叠子问题"), "朴素递归会重复计算相同子问题；记忆化或自底向上保存已算结果后，每个状态只需计算一次。"),
+        (("最短路径", "dijkstra", "bellman"), "从起点开始维护当前最短距离，每次选取可确定的最小距离并松弛相关边，最后核对目标距离。"),
+        (("二叉树", "遍历", "前序", "中序", "后序"), "按照遍历定义记录访问顺序，并结合左右子树的结构逐项重建或验证序列。"),
+        (("贪心", "greedy"), "每一步选择当前满足条件且最有利的方案，再检查该选择是否保持后续可行性和题目要求的最优性。"),
+        (("容斥", "整除", "集合"), "先分别计数，再减去两两交集、加回三者交集，避免同一个对象被重复统计。"),
+        (("二分", "binary search"), "维护有序区间和循环不变量，根据中点与目标的关系排除一半区间，并检查边界是否包含答案。"),
+        (("动态规划", "dp", "状态转移"), "明确状态含义、初始值和转移来源，按依赖顺序计算后再核对目标状态。"),
+        (("深度优先", "dfs", "回溯"), "沿当前分支继续搜索，返回时撤销选择和标记，保证每种状态只在正确的路径上计数。"),
+        (("广度优先", "bfs"), "使用队列按层扩展状态；在无权图中第一次到达某点时的层数就是最短距离。"),
+        (("排序", "稳定", "插入排序", "冒泡", "归并"), "根据算法的比较和交换方式判断复杂度或稳定性，等值元素是否保持原相对顺序是稳定性的关键。"),
+    ]
+    method = ""
+    for keywords, description in hints:
+        if any(keyword.lower() in searchable for keyword in keywords):
+            method = description
+            break
+    if not method:
+        method = (
+            "把题目条件逐项代入定义或程序执行过程，核对边界、下标、循环次数和数据类型，"
+            "再比较各选项，排除与条件不符的结果。"
+        )
+
+    if question_type == CSP_J_READING_JUDGMENT_TYPE:
+        return f"正确答案为 {answer_text}。{method}本题结论应判为“{correct_text or correct_labels}”。"
+    if question_type == CSP_J_READING_CHOICE_TYPE:
+        return f"正确答案为 {answer_text}。{method}按程序的实际执行顺序计算，得到的结果与该选项一致。"
+    if question_type == CSP_J_COMPLETION_TYPE:
+        return f"正确答案为 {answer_text}。{method}将该选项代入空缺后，程序的控制流程、边界和输出满足题目要求。"
+    return f"正确答案为 {answer_text}。{method}其余选项不满足题目给出的定义、数据条件或计算结果。"
+
+
+def csp_s_choice_explanation(question: dict) -> str:
+    explicit = str(question.get("explanation", "")).strip()
+    return explicit or generated_csp_s_choice_explanation(question)
+
+
 def generated_csp_j_choice_explanation(question: dict) -> str:
     """Provide a useful fallback for imported CSP-J first-round questions."""
     options = question.get("options", [])
@@ -1211,6 +1285,17 @@ def is_csp_j_round1_payload(payload: dict) -> bool:
     )
 
 
+def is_csp_s_round1_payload(payload: dict) -> bool:
+    if payload.get("question_bank") == CSP_S_ROUND1_FORMAT:
+        return True
+    if payload.get("exam_format") == CSP_S_ROUND1_FORMAT:
+        return True
+    return any(
+        str(question.get("id", "")).startswith("csp_s_round1-")
+        for question in payload.get("choice_questions", [])
+    )
+
+
 def sync_corrected_question_snapshots(payload: dict) -> bool:
     """Update saved paper snapshots for questions whose source data was corrected."""
     changed = False
@@ -1233,6 +1318,20 @@ def enrich_csp_j_round1_payload(payload: dict) -> bool:
         if str(question.get("explanation", "")).strip():
             continue
         explanation = csp_j_choice_explanation(question)
+        if explanation:
+            question["explanation"] = explanation
+            changed = True
+    return changed
+
+
+def enrich_csp_s_round1_payload(payload: dict) -> bool:
+    if not is_csp_s_round1_payload(payload):
+        return False
+    changed = False
+    for question in payload.get("choice_questions", []):
+        if str(question.get("explanation", "")).strip():
+            continue
+        explanation = csp_s_choice_explanation(question)
         if explanation:
             question["explanation"] = explanation
             changed = True
@@ -1262,10 +1361,37 @@ def backfill_csp_j_round1_explanations() -> int:
     return updated
 
 
+def backfill_csp_s_round1_explanations() -> int:
+    """Persist missing explanations into existing CSP-S first-round papers."""
+    updated = 0
+    with db() as conn:
+        rows = conn.execute("SELECT id, payload FROM exams").fetchall()
+        for row in rows:
+            try:
+                payload = json.loads(row["payload"])
+            except (TypeError, json.JSONDecodeError):
+                continue
+            if not enrich_csp_s_round1_payload(payload):
+                continue
+            conn.execute(
+                "UPDATE exams SET payload = ? WHERE id = ?",
+                (json.dumps(payload, ensure_ascii=False), row["id"]),
+            )
+            updated += 1
+    return updated
+
+
+def backfill_round1_explanations() -> int:
+    """Backfill explanations for every supported fixed-format first-round paper."""
+    return backfill_csp_j_round1_explanations() + backfill_csp_s_round1_explanations()
+
+
 def prepare_choice_question(question: dict, question_bank: str) -> dict:
     prepared = dict(question)
     if question_bank == "csp_j_round1":
         prepared["explanation"] = csp_j_choice_explanation(question)
+    elif question_bank == CSP_S_ROUND1_FORMAT:
+        prepared["explanation"] = csp_s_choice_explanation(question)
     return prepared
 
 
@@ -1733,7 +1859,10 @@ def result_page(submission_id: int) -> bytes:
     exam = load_exam(row["exam_id"])
     exam_payload = json.loads(exam["payload"]) if exam else {}
     exam_choices = exam_payload.get("choice_questions", [])
-    is_csp_j_round1 = is_csp_j_round1_payload(exam_payload)
+    has_round1_explanations = (
+        is_csp_j_round1_payload(exam_payload)
+        or is_csp_s_round1_payload(exam_payload)
+    )
 
     choice_rows = []
     for item in detail["choices"]:
@@ -1741,9 +1870,14 @@ def result_page(submission_id: int) -> bytes:
         result_class = "correct" if item["ok"] else "wrong"
         question_index = int(item["index"]) - 1
         question = exam_choices[question_index] if 0 <= question_index < len(exam_choices) else {}
-        explanation = csp_j_choice_explanation(question) if is_csp_j_round1 else ""
+        if is_csp_j_round1_payload(exam_payload):
+            explanation = csp_j_choice_explanation(question)
+        elif is_csp_s_round1_payload(exam_payload):
+            explanation = csp_s_choice_explanation(question)
+        else:
+            explanation = ""
         explanation_cell = '<span class="muted">—</span>'
-        if not item["ok"] and explanation:
+        if not item["ok"] and has_round1_explanations and explanation:
             explanation_cell = (
                 '<details class="answer-explanation">'
                 '<summary>查看答案解析</summary>'
