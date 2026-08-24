@@ -66,12 +66,21 @@ CSP_FIXED_ROUND1_FORMATS = {CSP_J_ROUND1_FORMAT, CSP_S_ROUND1_FORMAT}
 CSP_J_READING_JUDGMENT_TYPE = "程序阅读判断题"
 CSP_J_READING_CHOICE_TYPE = "程序阅读单选题"
 CSP_J_COMPLETION_TYPE = "完善程序单选题"
-CSP_J_CORRECTED_QUESTION_SNAPSHOTS = {
+CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
+    "csp_j_round1-2020-q05": {
+        "target_id": "csp_j_round1-2020-q06",
+        "stem_contains": "else return A[n]",
+    },
     "csp_j_round1-2022-q13": {
-        "options": ["24.125", "24.250", "26.125", "26.250"],
-        "answer": 2,
+        "target_id": "csp_j_round1-2022-q13",
         "explanation": "32.1(8) = 3 * 8 + 2 + 1 / 8 = 26.125，因此选择 C。",
     },
+    "csp_s_round1-2023-q15": {"target_id": "csp_s_round1-2023-q15"},
+    "csp_s_round1-2024-q06": {"target_id": "csp_s_round1-2024-q06"},
+}
+CORRECTED_QUESTION_SNAPSHOT_FIELDS = ("id", "stem", "code", "options", "answer")
+CHOICE_QUESTIONS_BY_ID = {
+    str(question.get("id", "")): question for question in CHOICE_QUESTIONS
 }
 
 QUESTION_BANK_PROFILES = {
@@ -1300,13 +1309,30 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
     """Update saved paper snapshots for questions whose source data was corrected."""
     changed = False
     for question in payload.get("choice_questions", []):
-        correction = CSP_J_CORRECTED_QUESTION_SNAPSHOTS.get(str(question.get("id", "")))
-        if not correction:
+        rule = CSP_CORRECTED_QUESTION_SNAPSHOT_RULES.get(str(question.get("id", "")))
+        if not rule:
             continue
-        for field, value in correction.items():
+        stem_marker = str(rule.get("stem_contains", ""))
+        if stem_marker and stem_marker not in str(question.get("stem", "")):
+            continue
+        canonical = CHOICE_QUESTIONS_BY_ID.get(str(rule["target_id"]))
+        if not canonical:
+            continue
+        for field in CORRECTED_QUESTION_SNAPSHOT_FIELDS:
+            value = canonical.get(field, "")
             if question.get(field) != value:
                 question[field] = value
                 changed = True
+        explanation = str(rule.get("explanation", ""))
+        explanation_source = dict(question)
+        explanation_source.pop("explanation", None)
+        if not explanation and str(question.get("id", "")).startswith("csp_j_round1-"):
+            explanation = csp_j_choice_explanation(explanation_source)
+        elif not explanation:
+            explanation = csp_s_choice_explanation(explanation_source)
+        if explanation and question.get("explanation") != explanation:
+            question["explanation"] = explanation
+            changed = True
     return changed
 
 
@@ -1348,21 +1374,23 @@ def backfill_csp_j_round1_explanations() -> int:
                 payload = json.loads(row["payload"])
             except (TypeError, json.JSONDecodeError):
                 continue
+            if not is_csp_j_round1_payload(payload):
+                continue
             changed = sync_corrected_question_snapshots(payload)
             if enrich_csp_j_round1_payload(payload):
                 changed = True
             if not changed:
                 continue
             conn.execute(
-                "UPDATE exams SET payload = ? WHERE id = ?",
-                (json.dumps(payload, ensure_ascii=False), row["id"]),
+                "UPDATE exams SET payload = ?, signature = ? WHERE id = ?",
+                (json.dumps(payload, ensure_ascii=False), exam_signature(payload), row["id"]),
             )
             updated += 1
     return updated
 
 
 def backfill_csp_s_round1_explanations() -> int:
-    """Persist missing explanations into existing CSP-S first-round papers."""
+    """Persist corrected question snapshots and missing explanations into saved papers."""
     updated = 0
     with db() as conn:
         rows = conn.execute("SELECT id, payload FROM exams").fetchall()
@@ -1371,11 +1399,16 @@ def backfill_csp_s_round1_explanations() -> int:
                 payload = json.loads(row["payload"])
             except (TypeError, json.JSONDecodeError):
                 continue
-            if not enrich_csp_s_round1_payload(payload):
+            if not is_csp_s_round1_payload(payload):
+                continue
+            changed = sync_corrected_question_snapshots(payload)
+            if enrich_csp_s_round1_payload(payload):
+                changed = True
+            if not changed:
                 continue
             conn.execute(
-                "UPDATE exams SET payload = ? WHERE id = ?",
-                (json.dumps(payload, ensure_ascii=False), row["id"]),
+                "UPDATE exams SET payload = ?, signature = ? WHERE id = ?",
+                (json.dumps(payload, ensure_ascii=False), exam_signature(payload), row["id"]),
             )
             updated += 1
     return updated

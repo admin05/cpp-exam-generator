@@ -198,7 +198,74 @@ class ResultPageTest(unittest.TestCase):
         self.assertEqual(question["options"], ["24.125", "24.250", "26.125", "26.250"])
         self.assertEqual(question["answer"], 2)
         self.assertIn("26.125", question["explanation"])
+        self.assertEqual(app.load_exam(exam_id)["signature"], app.exam_signature(saved))
         self.assertEqual(app.backfill_csp_j_round1_explanations(), 0)
+
+    def test_existing_papers_sync_ocr_question_corrections(self) -> None:
+        j_payload = {
+            "question_bank": "csp_j_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_j_round1-2020-q05",
+                    "stem": "else return A[n]\n请问算法 XYZ eA? CD.\nAL A数组的平均",
+                    "code": "",
+                    "options": ["A BAAS Se MEL", "A数组的中值", "， A数组的最大值"],
+                    "answer": 2,
+                    "score": 2.0,
+                    "section_id": "part1",
+                    "explanation": "旧的错误解析",
+                }
+            ],
+            "programming_tasks": [],
+        }
+        s_payload = {
+            "question_bank": "csp_s_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_s_round1-2023-q15",
+                    "stem": "现在用如下代码来计算xn ，其时间复杂度为( )。",
+                    "code": "",
+                    "options": ["O(�)", "O(1)", "O(log �)", "O(� log �)\n二、阅读程序"],
+                    "answer": 0,
+                },
+                {
+                    "id": "csp_s_round1-2024-q06",
+                    "stem": "已知�(1) = 1，且对于� ≥ 2 有�(�) = �(� − 1) + �(⌊�/2⌋)。",
+                    "code": "",
+                    "options": ["4", "5", "6", "7"],
+                    "answer": 1,
+                },
+            ],
+            "programming_tasks": [],
+        }
+        exam_ids = []
+        with app.db() as conn:
+            for title, payload in (("旧 CSP-J 乱码卷", j_payload), ("旧 CSP-S 乱码卷", s_payload)):
+                cursor = conn.execute(
+                    "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                    (title, 120, json.dumps(payload, ensure_ascii=False), app.now_text()),
+                )
+                exam_ids.append(int(cursor.lastrowid))
+
+        app.init_db()
+        saved_j = json.loads(app.load_exam(exam_ids[0])["payload"])
+        saved_s = json.loads(app.load_exam(exam_ids[1])["payload"])
+        minimum = saved_j["choice_questions"][0]
+        quick_power, recurrence = saved_s["choice_questions"]
+
+        self.assertEqual(minimum["id"], "csp_j_round1-2020-q06")
+        self.assertEqual(minimum["options"][1], "A 数组的最小值")
+        self.assertEqual(minimum["answer"], 1)
+        self.assertEqual(minimum["score"], 2.0)
+        self.assertEqual(minimum["section_id"], "part1")
+        self.assertNotEqual(minimum["explanation"], "旧的错误解析")
+        self.assertEqual(quick_power["options"], ["O(n)", "O(1)", "O(log n)", "O(n log n)"])
+        self.assertNotIn("�", recurrence["stem"])
+        self.assertEqual(recurrence["answer"], 1)
+        for exam_id, payload in zip(exam_ids, (saved_j, saved_s)):
+            self.assertEqual(app.load_exam(exam_id)["signature"], app.exam_signature(payload))
+
+        self.assertEqual(app.backfill_round1_explanations(), 0)
 
     def test_csp_import_preserves_decimal_option_prefixes(self) -> None:
         parsed = parse_options(
