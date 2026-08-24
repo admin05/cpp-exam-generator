@@ -17,7 +17,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from .csp_j_explanations import CSP_J_ROUND1_EXPLANATIONS
-from .question_bank import CHOICE_QUESTIONS, PROGRAMMING_TASKS
+from .question_bank import CHOICE_QUESTIONS, PROGRAMMING_TASKS, sanitize_csp_imported_text
 from .question_generators import build_generated_tests, has_generator, missing_generator_ids
 
 
@@ -75,6 +75,9 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
         "target_id": "csp_j_round1-2022-q13",
         "explanation": "32.1(8) = 3 * 8 + 2 + 1 / 8 = 26.125，因此选择 C。",
     },
+    "csp_s_round1-2020-q15": {"target_id": "csp_s_round1-2020-q15"},
+    "csp_s_round1-2021-q18": {"target_id": "csp_s_round1-2021-q18"},
+    "csp_s_round1-2021-q19": {"target_id": "csp_s_round1-2021-q19"},
     "csp_s_round1-2023-q15": {"target_id": "csp_s_round1-2023-q15"},
     "csp_s_round1-2024-q06": {"target_id": "csp_s_round1-2024-q06"},
 }
@@ -1336,6 +1339,22 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
     return changed
 
 
+def sanitize_saved_question_artifacts(payload: dict) -> bool:
+    """Remove standalone OCR watermark and section-label lines from saved papers."""
+    changed = False
+    for question in payload.get("choice_questions", []):
+        for field in ("stem", "code"):
+            value = sanitize_csp_imported_text(question.get(field, ""))
+            if question.get(field, "") != value:
+                question[field] = value
+                changed = True
+        options = [sanitize_csp_imported_text(option) for option in question.get("options", [])]
+        if question.get("options", []) != options:
+            question["options"] = options
+            changed = True
+    return changed
+
+
 def enrich_csp_j_round1_payload(payload: dict) -> bool:
     if not is_csp_j_round1_payload(payload):
         return False
@@ -1376,7 +1395,9 @@ def backfill_csp_j_round1_explanations() -> int:
                 continue
             if not is_csp_j_round1_payload(payload):
                 continue
-            changed = sync_corrected_question_snapshots(payload)
+            changed = sanitize_saved_question_artifacts(payload)
+            if sync_corrected_question_snapshots(payload):
+                changed = True
             if enrich_csp_j_round1_payload(payload):
                 changed = True
             if not changed:
@@ -1401,7 +1422,9 @@ def backfill_csp_s_round1_explanations() -> int:
                 continue
             if not is_csp_s_round1_payload(payload):
                 continue
-            changed = sync_corrected_question_snapshots(payload)
+            changed = sanitize_saved_question_artifacts(payload)
+            if sync_corrected_question_snapshots(payload):
+                changed = True
             if enrich_csp_s_round1_payload(payload):
                 changed = True
             if not changed:

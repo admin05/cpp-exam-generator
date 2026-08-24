@@ -4000,13 +4000,24 @@ from .imported_fusai_questions import IMPORTED_FUSAI_PROGRAMMING_TASKS
 from .imported_csp_questions import CSP_ROUND1_CHOICE_QUESTIONS, CSP_ROUND2_PROGRAMMING_TASKS
 
 
+def sanitize_csp_imported_text(value: object) -> str:
+    cleaned = re.sub(
+        r"(?mi)^\s*(?:香\s*港|[香港]|[l|]\s*(?:判断题|单选题))\s*$\n?",
+        "",
+        str(value),
+    )
+    return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
+
+
 def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
     for question in questions:
         if question.get("competition") not in {"csp_j_round1", "csp_s_round1", "csp_x_round1"}:
             continue
+        question["stem"] = sanitize_csp_imported_text(question.get("stem", ""))
+        question["code"] = sanitize_csp_imported_text(question.get("code", ""))
         cleaned_options = []
         for option in question.get("options", []):
-            value = str(option)
+            value = sanitize_csp_imported_text(option)
             value = re.split(r"\n\s*(?:\(\d+\)|三、\s*完善程序)", value, maxsplit=1)[0]
             include_position = value.find("#include")
             if include_position >= 0:
@@ -4018,7 +4029,7 @@ def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
                 maxsplit=1,
             )[0]
             value = re.split(r"\n\s*三、\s*完善程序", value, maxsplit=1)[0]
-            cleaned_options.append(value.strip())
+            cleaned_options.append(sanitize_csp_imported_text(value))
         question["options"] = cleaned_options
 
 

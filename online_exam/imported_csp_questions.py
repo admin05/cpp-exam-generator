@@ -5920,20 +5920,12 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2020/Round1/cspjs2020hs_cpp.pdf',
-  'stem': '1948 4F, ( ) REIS] fa SR, ee I)\n开端。',
+  'stem': '1948 年，（ ）将热力学中的熵引入信息通信领域，标志着信息论研究的开端。',
   'code': '',
-  'options': ['BE CLeonhard Euler)',
-              '(+ Wf (John von Neumann)',
-              '下劳德。香农 《Claude Shannon)',
-              '(AR (Alan Turing)\n'
-              'UALS\n'
-              'Zaps\n'
-              'Se oF\n'
-              'CcE\n'
-              '\n'
-              '=. WR CERO Se Es UTE,\n'
-              '\n'
-              '错误填x，除特殊说明外，判断题 1.5 分，选择题 3 分，共计 405)'],
+  'options': ['欧拉（Leonhard Euler）',
+              '冯·诺伊曼（John von Neumann）',
+              '克劳德·香农（Claude Shannon）',
+              '图灵（Alan Turing）'],
   'answer': 2},
  {'id': 'csp_s_round1-2021-q01',
   'competition': 'csp_s_round1',
@@ -13569,7 +13561,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读判断题',
   'difficulty': 5,
   'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
-  'stem': '将第 28 行中的“x * x”改成“sq(x)”、“y * y”改成“sq(y)” ，不会影响程\n     序运行的结果。( )\n\n              香',
+  'stem': '将第 28 行中的“x * x”改成“sq(x)”、“y * y”改成“sq(y)”，不会影响程序运行的结果。（ ）',
   'code': '01 #include <iostream>\n'
           '      02 #include <cmath>\n'
           '      03 using namespace std;\n'
@@ -13617,7 +13609,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '程序阅读判断题',
   'difficulty': 5,
   'source': 'CSP/题库/香港 hkoi-cspjs-past-problems/第一輪/2021/提高级-CSP-S1/CSP-J-S 2021_提高级-CSP-S1_C++.pdf',
-  'stem': '(2 分)当输入为“0 0 0 1 1 0 0 1”时，输出为“1.3090”。(                 )\n\nl    单选题',
+  'stem': '（2 分）当输入为“0 0 0 1 1 0 0 1”时，输出为“1.3090”。（ ）',
   'code': '01 #include <iostream>\n'
           '      02 #include <cmath>\n'
           '      03 using namespace std;\n'

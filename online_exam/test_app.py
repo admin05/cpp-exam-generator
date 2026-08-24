@@ -222,6 +222,27 @@ class ResultPageTest(unittest.TestCase):
             "question_bank": "csp_s_round1",
             "choice_questions": [
                 {
+                    "id": "csp_s_round1-2020-q15",
+                    "stem": "1948 4F, ( ) REIS] fa SR, ee I)\n开端。",
+                    "code": "",
+                    "options": ["BE CLeonhard Euler)", "(+ Wf (John von Neumann)", "乱码香农", "图灵\nl 单选题"],
+                    "answer": 2,
+                },
+                {
+                    "id": "csp_s_round1-2021-q18",
+                    "stem": "将第 28 行中的 x * x 改成 sq(x)，不会影响程序运行的结果。\n\n香",
+                    "code": "05 int n, a[1005];\n\n港\n07 struct Node\n\n香",
+                    "options": ["正确", "错误"],
+                    "answer": 1,
+                },
+                {
+                    "id": "csp_s_round1-2021-q19",
+                    "stem": "输出为 1.3090。（ ）\n\nl 单选题",
+                    "code": "",
+                    "options": ["正确", "错误"],
+                    "answer": 0,
+                },
+                {
                     "id": "csp_s_round1-2023-q15",
                     "stem": "现在用如下代码来计算xn ，其时间复杂度为( )。",
                     "code": "",
@@ -234,6 +255,13 @@ class ResultPageTest(unittest.TestCase):
                     "code": "",
                     "options": ["4", "5", "6", "7"],
                     "answer": 1,
+                },
+                {
+                    "id": "csp_s_round1-watermark-only",
+                    "stem": "一条不在人工校正规则中的历史题目",
+                    "code": "05 int n, a[1005];\n\n港\n07 struct Node\n\n香",
+                    "options": ["A\n港", "B", "C", "D"],
+                    "answer": 0,
                 },
             ],
             "programming_tasks": [],
@@ -251,7 +279,9 @@ class ResultPageTest(unittest.TestCase):
         saved_j = json.loads(app.load_exam(exam_ids[0])["payload"])
         saved_s = json.loads(app.load_exam(exam_ids[1])["payload"])
         minimum = saved_j["choice_questions"][0]
-        quick_power, recurrence = saved_s["choice_questions"]
+        information, sq_replacement, numeric_output, quick_power, recurrence, watermark = (
+            saved_s["choice_questions"]
+        )
 
         self.assertEqual(minimum["id"], "csp_j_round1-2020-q06")
         self.assertEqual(minimum["options"][1], "A 数组的最小值")
@@ -259,9 +289,16 @@ class ResultPageTest(unittest.TestCase):
         self.assertEqual(minimum["score"], 2.0)
         self.assertEqual(minimum["section_id"], "part1")
         self.assertNotEqual(minimum["explanation"], "旧的错误解析")
+        self.assertIn("热力学中的熵", information["stem"])
+        self.assertEqual(information["options"][2], "克劳德·香农（Claude Shannon）")
+        self.assertEqual(information["answer"], 2)
+        self.assertNotIn("香\n", sq_replacement["stem"])
+        self.assertNotIn("l 单选题", numeric_output["stem"])
         self.assertEqual(quick_power["options"], ["O(n)", "O(1)", "O(log n)", "O(n log n)"])
         self.assertNotIn("�", recurrence["stem"])
         self.assertEqual(recurrence["answer"], 1)
+        watermark_text = "\n".join([watermark["stem"], watermark["code"], *watermark["options"]])
+        self.assertFalse(any(line.strip() in {"香", "港"} for line in watermark_text.splitlines()))
         for exam_id, payload in zip(exam_ids, (saved_j, saved_s)):
             self.assertEqual(app.load_exam(exam_id)["signature"], app.exam_signature(payload))
 
@@ -575,19 +612,50 @@ class ResultPageTest(unittest.TestCase):
         self.assertEqual(quick_power["answer"], 0)
         self.assertNotIn("二、阅读程序", quick_power["options"][-1])
 
-        for question in (minimum, recurrence, quick_power):
+        information = questions["csp_s_round1-2020-q15"]
+        self.assertEqual(
+            information["stem"],
+            "1948 年，（ ）将热力学中的熵引入信息通信领域，标志着信息论研究的开端。",
+        )
+        self.assertEqual(information["options"][2], "克劳德·香农（Claude Shannon）")
+        self.assertEqual(information["answer"], 2)
+
+        sq_replacement = questions["csp_s_round1-2021-q18"]
+        self.assertNotIn("香", sq_replacement["stem"])
+        numeric_output = questions["csp_s_round1-2021-q19"]
+        self.assertNotIn("l 单选题", numeric_output["stem"])
+
+        for question in (minimum, recurrence, quick_power, information, sq_replacement, numeric_output):
             text = "\n".join(
                 [question.get("stem", ""), question.get("code", ""), *question.get("options", [])]
             )
             self.assertNotIn("�", text)
 
+    def test_imported_csp_questions_have_no_standalone_watermark_lines(self) -> None:
+        competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}
+        polluted = []
+        for question in app.CHOICE_QUESTIONS:
+            if question.get("competition") not in competitions:
+                continue
+            text = "\n".join(
+                [question.get("stem", ""), question.get("code", ""), *question.get("options", [])]
+            )
+            if any(
+                line.strip() in {"香", "港", "香 港", "l 判断题", "l 单选题"}
+                for line in text.splitlines()
+            ):
+                polluted.append(question["id"])
+        self.assertEqual(polluted, [])
+
     def test_round1_source_corrections_only_replace_matching_bad_text(self) -> None:
-        bad = {
-            "id": "csp_s_round1-2024-q06",
-            "stem": "已知�(1) = 1，乱码",
-            "options": ["4", "5", "6", "7"],
-            "answer": 1,
-        }
+        bad_questions = [
+            {"id": "csp_j_round1-2020-q05", "stem": "else return A[n]，乱码"},
+            {"id": "csp_s_round1-2020-q15", "stem": "1948 4F, OCR 乱码"},
+            {"id": "csp_s_round1-2021-q18", "stem": "程序运行的结果。（ ）\n香"},
+            {"id": "csp_s_round1-2021-q19", "stem": "输出为 1.3090。（ ）\nl 单选题"},
+            {"id": "csp_s_round1-2023-q15", "stem": "现在用如下代码来计算xn，乱码"},
+            {"id": "csp_s_round1-2024-q06", "stem": "已知�(1) = 1，乱码"},
+        ]
         already_clean = {
             "id": "csp_s_round1-2024-q06",
             "stem": "一条已经修正的题目",
@@ -595,11 +663,17 @@ class ResultPageTest(unittest.TestCase):
             "answer": 0,
         }
 
-        corrected, count = apply_round1_question_corrections([bad, already_clean])
+        corrected, count = apply_round1_question_corrections([*bad_questions, already_clean])
 
-        self.assertEqual(count, 1)
-        self.assertIn("f(1)", corrected[0]["stem"])
-        self.assertEqual(corrected[1], already_clean)
+        self.assertEqual(count, 6)
+        corrected_by_id = {question["id"]: question for question in corrected[:-1]}
+        self.assertIn("A 数组的最小值", corrected_by_id["csp_j_round1-2020-q06"]["options"])
+        self.assertIn("热力学中的熵", corrected_by_id["csp_s_round1-2020-q15"]["stem"])
+        self.assertNotIn("香", corrected_by_id["csp_s_round1-2021-q18"]["stem"])
+        self.assertNotIn("l 单选题", corrected_by_id["csp_s_round1-2021-q19"]["stem"])
+        self.assertEqual(corrected_by_id["csp_s_round1-2023-q15"]["options"][0], "O(n)")
+        self.assertIn("f(1)", corrected_by_id["csp_s_round1-2024-q06"]["stem"])
+        self.assertEqual(corrected[-1], already_clean)
 
     def test_imported_csp_choice_options_have_no_following_program_text(self) -> None:
         competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}

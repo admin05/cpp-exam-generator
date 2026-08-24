@@ -117,6 +117,35 @@ ROUND1_QUESTION_CORRECTIONS = {
             "answer": 1,
         },
     },
+    "csp_s_round1-2020-q15": {
+        "bad_stem_contains": "1948 4F",
+        "updates": {
+            "stem": "1948 年，（ ）将热力学中的熵引入信息通信领域，标志着信息论研究的开端。",
+            "options": [
+                "欧拉（Leonhard Euler）",
+                "冯·诺伊曼（John von Neumann）",
+                "克劳德·香农（Claude Shannon）",
+                "图灵（Alan Turing）",
+            ],
+            "answer": 2,
+        },
+    },
+    "csp_s_round1-2021-q18": {
+        "bad_stem_contains": "程序运行的结果",
+        "updates": {
+            "stem": "将第 28 行中的“x * x”改成“sq(x)”、“y * y”改成“sq(y)”，不会影响程序运行的结果。（ ）",
+            "options": ["正确", "错误"],
+            "answer": 1,
+        },
+    },
+    "csp_s_round1-2021-q19": {
+        "bad_stem_contains": "1.3090",
+        "updates": {
+            "stem": "（2 分）当输入为“0 0 0 1 1 0 0 1”时，输出为“1.3090”。（ ）",
+            "options": ["正确", "错误"],
+            "answer": 0,
+        },
+    },
     "csp_s_round1-2023-q15": {
         "bad_stem_contains": "现在用如下代码来计算xn",
         "updates": {
@@ -359,6 +388,11 @@ def remove_page_artifacts(value: str) -> str:
         "",
         value,
     )
+    value = re.sub(
+        r"(?mi)^\s*(?:香\s*港|[香港]|[l|]\s*(?:判断题|单选题))\s*$\n?",
+        "",
+        value,
+    )
     return value
 
 
@@ -367,7 +401,6 @@ def compact_text(value: str) -> str:
     value = value.replace("（", "(").replace("）", ")")
     value = value.replace("．", ".").replace("：", ":")
     value = remove_page_artifacts(value)
-    value = re.sub(r"(?m)^\s*香\s*港\s*$", "", value)
     value = re.sub(r"[ \t]+\n", "\n", value)
     return value
 
@@ -460,7 +493,6 @@ def option_index(answer: str) -> int:
 def clean_block(value: str) -> str:
     value = re.sub(r"\n?\s*[\f]+", "\n", value)
     value = remove_page_artifacts(value)
-    value = re.sub(r"(?m)^\s*香\s*港\s*$", "", value)
     value = re.sub(r"^\s*\d{1,2}[.)]\s+", "", value.strip())
     value = re.sub(r"\n{3,}", "\n\n", value)
     return value.strip()
