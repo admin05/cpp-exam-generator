@@ -98,17 +98,22 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'code': '',
   'options': ['16MB', '4MB', '8MB', '， 32MB'],
   'answer': 2},
- {'id': 'csp_j_round1-2020-q05',
+ {'id': 'csp_j_round1-2020-q06',
   'competition': 'csp_j_round1',
   'category': '单项选择题',
   'source_question_type': '单项选择题',
   'display_type': '单项选择题',
   'difficulty': 4,
   'source': 'CSP/题库/CSP-J/2020/Round1/cspjs2020hj_cpp.pdf',
-  'stem': 'else return A[n]\n请问算法 XYZ eA? CD.\nAL A数组的平均',
-  'code': '',
-  'options': ['A BAAS Se MEL', 'A数组的中值', '， A数组的最大值'],
-  'answer': 2},
+  'stem': '设 A 是 n 个实数的数组，考虑下面的递归算法。请问算法 XYZ 的输出是什么？（ ）',
+  'code': 'XYZ(A[1..n])\n'
+          '1. if n = 1 then return A[1]\n'
+          '2. else temp <- XYZ(A[1..n-1])\n'
+          '3.     if temp < A[n]\n'
+          '4.         then return temp\n'
+          '5.         else return A[n]',
+  'options': ['A 数组的平均值', 'A 数组的最小值', 'A 数组的中值', 'A 数组的最大值'],
+  'answer': 1},
  {'id': 'csp_j_round1-2020-q07',
   'competition': 'csp_j_round1',
   'category': '单项选择题',
@@ -7960,19 +7965,15 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2023/Round1/CSP-S1-2023.pdf',
-  'stem': '现在用如下代码来计算xn ，其时间复杂度为(                          )。\n'
-          '                    double quick_power(double x, unsigned n) {\n'
-          '                        if (n == 0) return 1;\n'
-          '                        if (n == 1) return x;\n'
-          '                        return quick_power(x, n / 2)\n'
-          '                             * quick_power(x, n / 2)\n'
-          '                             * ((n & 1) ? x : 1);\n'
-          '                    }',
-  'code': '',
-  'options': ['O(�)',
-              'O(1)',
-              'O(log �)',
-              'O(� log �)\n\n二、阅读程序(程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特\n殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分)'],
+  'stem': '现在用如下代码来计算 x^n，其时间复杂度为（ ）。',
+  'code': 'double quick_power(double x, unsigned n) {\n'
+          '    if (n == 0) return 1;\n'
+          '    if (n == 1) return x;\n'
+          '    return quick_power(x, n / 2)\n'
+          '         * quick_power(x, n / 2)\n'
+          '         * ((n & 1) ? x : 1);\n'
+          '}',
+  'options': ['O(n)', 'O(1)', 'O(log n)', 'O(n log n)'],
   'answer': 0},
  {'id': 'csp_s_round1-2023-q16',
   'competition': 'csp_s_round1',
@@ -9569,7 +9570,7 @@ CSP_ROUND1_CHOICE_QUESTIONS = [{'id': 'csp_j_round1-2019-q03',
   'display_type': '单项选择题',
   'difficulty': 5,
   'source': 'CSP/题库/CSP-S/2024/Round1/CSP-S1-2024.pdf',
-  'stem': '已知�(1) = 1，且对于� ≥ 2 有�(�) = �(� − 1) + �(⌊�/2⌋)，则�(4)的值为:( )',
+  'stem': '已知 f(1) = 1，且对于 n ≥ 2 有 f(n) = f(n − 1) + f(⌊n / 2⌋)，则 f(4) 的值为（ ）。',
   'code': '',
   'options': ['4', '5', '6', '7'],
   'answer': 1},

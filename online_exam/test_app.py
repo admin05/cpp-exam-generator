@@ -7,7 +7,12 @@ from pathlib import Path
 from unittest.mock import patch
 
 from online_exam import app
-from scripts.generate_csp_imports import Round1Source, parse_markdown_round1, parse_options
+from scripts.generate_csp_imports import (
+    Round1Source,
+    apply_round1_question_corrections,
+    parse_markdown_round1,
+    parse_options,
+)
 
 
 class ResultPageTest(unittest.TestCase):
@@ -474,6 +479,60 @@ class ResultPageTest(unittest.TestCase):
         ]
         self.assertTrue(imported)
         self.assertTrue(all(len(question.get("options", [])) <= 4 for question in imported))
+
+    def test_known_csp_round1_source_corruptions_are_corrected(self) -> None:
+        questions = {
+            question["id"]: question
+            for question in app.CHOICE_QUESTIONS
+            if question.get("competition") in {"csp_j_round1", "csp_s_round1"}
+        }
+
+        minimum = questions["csp_j_round1-2020-q06"]
+        self.assertEqual(
+            minimum["options"],
+            ["A 数组的平均值", "A 数组的最小值", "A 数组的中值", "A 数组的最大值"],
+        )
+        self.assertEqual(minimum["answer"], 1)
+        self.assertIn("else return A[n]", minimum["code"])
+        self.assertNotIn("csp_j_round1-2020-q05", questions)
+
+        recurrence = questions["csp_s_round1-2024-q06"]
+        self.assertEqual(
+            recurrence["stem"],
+            "已知 f(1) = 1，且对于 n ≥ 2 有 f(n) = f(n − 1) + f(⌊n / 2⌋)，则 f(4) 的值为（ ）。",
+        )
+        self.assertEqual(recurrence["answer"], 1)
+
+        quick_power = questions["csp_s_round1-2023-q15"]
+        self.assertEqual(quick_power["options"], ["O(n)", "O(1)", "O(log n)", "O(n log n)"])
+        self.assertEqual(quick_power["answer"], 0)
+        self.assertNotIn("二、阅读程序", quick_power["options"][-1])
+
+        for question in (minimum, recurrence, quick_power):
+            text = "\n".join(
+                [question.get("stem", ""), question.get("code", ""), *question.get("options", [])]
+            )
+            self.assertNotIn("�", text)
+
+    def test_round1_source_corrections_only_replace_matching_bad_text(self) -> None:
+        bad = {
+            "id": "csp_s_round1-2024-q06",
+            "stem": "已知�(1) = 1，乱码",
+            "options": ["4", "5", "6", "7"],
+            "answer": 1,
+        }
+        already_clean = {
+            "id": "csp_s_round1-2024-q06",
+            "stem": "一条已经修正的题目",
+            "options": ["A", "B", "C", "D"],
+            "answer": 0,
+        }
+
+        corrected, count = apply_round1_question_corrections([bad, already_clean])
+
+        self.assertEqual(count, 1)
+        self.assertIn("f(1)", corrected[0]["stem"])
+        self.assertEqual(corrected[1], already_clean)
 
     def test_imported_csp_choice_options_have_no_following_program_text(self) -> None:
         competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}

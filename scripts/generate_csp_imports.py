@@ -99,6 +99,52 @@ ROUND2_SOURCES = [
 ]
 
 
+ROUND1_QUESTION_CORRECTIONS = {
+    "csp_j_round1-2020-q05": {
+        "bad_stem_contains": "else return A[n]",
+        "updates": {
+            "id": "csp_j_round1-2020-q06",
+            "stem": "设 A 是 n 个实数的数组，考虑下面的递归算法。请问算法 XYZ 的输出是什么？（ ）",
+            "code": (
+                "XYZ(A[1..n])\n"
+                "1. if n = 1 then return A[1]\n"
+                "2. else temp <- XYZ(A[1..n-1])\n"
+                "3.     if temp < A[n]\n"
+                "4.         then return temp\n"
+                "5.         else return A[n]"
+            ),
+            "options": ["A 数组的平均值", "A 数组的最小值", "A 数组的中值", "A 数组的最大值"],
+            "answer": 1,
+        },
+    },
+    "csp_s_round1-2023-q15": {
+        "bad_stem_contains": "现在用如下代码来计算xn",
+        "updates": {
+            "stem": "现在用如下代码来计算 x^n，其时间复杂度为（ ）。",
+            "code": (
+                "double quick_power(double x, unsigned n) {\n"
+                "    if (n == 0) return 1;\n"
+                "    if (n == 1) return x;\n"
+                "    return quick_power(x, n / 2)\n"
+                "         * quick_power(x, n / 2)\n"
+                "         * ((n & 1) ? x : 1);\n"
+                "}"
+            ),
+            "options": ["O(n)", "O(1)", "O(log n)", "O(n log n)"],
+            "answer": 0,
+        },
+    },
+    "csp_s_round1-2024-q06": {
+        "bad_stem_contains": "已知�(1) = 1",
+        "updates": {
+            "stem": "已知 f(1) = 1，且对于 n ≥ 2 有 f(n) = f(n − 1) + f(⌊n / 2⌋)，则 f(4) 的值为（ ）。",
+            "options": ["4", "5", "6", "7"],
+            "answer": 1,
+        },
+    },
+}
+
+
 HKOI_LEVELS = {
     "入门级-CSP-J1": ("csp_j_round1", "HKOI CSP-J", 4),
     "提高级-CSP-S1": ("csp_s_round1", "HKOI CSP-S", 5),
@@ -623,6 +669,19 @@ def filter_unreadable_round1_questions(questions: list[dict]) -> tuple[list[dict
     return filtered, skipped
 
 
+def apply_round1_question_corrections(questions: list[dict]) -> tuple[list[dict], int]:
+    """Apply verified source corrections that PDF/OCR extraction cannot preserve."""
+    corrected = []
+    correction_count = 0
+    for question in questions:
+        rule = ROUND1_QUESTION_CORRECTIONS.get(str(question.get("id", "")))
+        if rule and rule["bad_stem_contains"] in str(question.get("stem", "")):
+            question = {**question, **rule["updates"]}
+            correction_count += 1
+        corrected.append(question)
+    return corrected, correction_count
+
+
 def clean_statement(value: str) -> str:
     value = remove_page_artifacts(value)
     value = re.sub(r"^\s*\d+\s{2,}", "", value, flags=re.M)
@@ -836,10 +895,12 @@ def write_module(questions: list[dict], tasks: list[dict], report: list[str]) ->
 def main() -> None:
     questions, round1_report = parse_round1()
     tasks, round2_report = parse_round2()
+    questions, corrected_questions = apply_round1_question_corrections(questions)
     questions, unreadable_questions = filter_unreadable_round1_questions(questions)
     questions, skipped_questions, renamed_questions = dedupe_items(questions, "choice")
     tasks, skipped_tasks, renamed_tasks = dedupe_items(tasks, "programming")
     report = round1_report + round2_report + [
+        f"applied round1 source corrections: {corrected_questions}",
         f"dedupe round1 skipped duplicates: {skipped_questions}, renamed id collisions: {renamed_questions}",
         f"filtered unreadable round1 OCR records: {unreadable_questions}",
         f"dedupe round2 skipped duplicates: {skipped_tasks}, renamed id collisions: {renamed_tasks}",
@@ -848,6 +909,7 @@ def main() -> None:
     print(f"wrote {OUTPUT}")
     print(f"round1 questions: {len(questions)}")
     print(f"round2 tasks: {len(tasks)}")
+    print(f"applied round1 source corrections: {corrected_questions}")
     print(f"filtered unreadable round1 OCR records: {unreadable_questions}")
     print(f"round1 duplicates skipped: {skipped_questions}; id collisions renamed: {renamed_questions}")
     print(f"round2 duplicates skipped: {skipped_tasks}; id collisions renamed: {renamed_tasks}")
