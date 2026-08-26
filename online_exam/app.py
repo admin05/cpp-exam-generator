@@ -80,6 +80,16 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
     "csp_s_round1-2021-q19": {"target_id": "csp_s_round1-2021-q19"},
     "csp_s_round1-2023-q15": {"target_id": "csp_s_round1-2023-q15"},
     "csp_s_round1-2024-q06": {"target_id": "csp_s_round1-2024-q06"},
+    "csp_s_round1-2021-q34": {"target_id": "csp_s_round1-2021-q34", "stem_contains": "①处"},
+    "csp_s_round1-2021-q35": {"target_id": "csp_s_round1-2021-q35", "stem_contains": "②处"},
+    "csp_s_round1-2021-q36": {"target_id": "csp_s_round1-2021-q36", "stem_contains": "③处"},
+    "csp_s_round1-2021-q37": {"target_id": "csp_s_round1-2021-q37", "stem_contains": "④处"},
+    "csp_s_round1-2021-q38": {"target_id": "csp_s_round1-2021-q38", "stem_contains": "①处"},
+    "csp_s_round1-2021-q39": {"target_id": "csp_s_round1-2021-q39", "stem_contains": "②处"},
+    "csp_s_round1-2021-q40": {"target_id": "csp_s_round1-2021-q40", "stem_contains": "③处"},
+    "csp_s_round1-2021-q41": {"target_id": "csp_s_round1-2021-q41", "stem_contains": "④处"},
+    "csp_s_round1-2021-q42": {"target_id": "csp_s_round1-2021-q42", "stem_contains": "⑤处"},
+    "csp_s_round1-2021-q43": {"target_id": "csp_s_round1-2021-q43", "stem_contains": "⑥处"},
 }
 CORRECTED_QUESTION_SNAPSHOT_FIELDS = ("id", "stem", "code", "options", "answer")
 CHOICE_QUESTIONS_BY_ID = {

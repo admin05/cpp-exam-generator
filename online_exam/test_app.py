@@ -10,6 +10,7 @@ from online_exam import app
 from scripts.generate_csp_imports import (
     Round1Source,
     apply_round1_question_corrections,
+    code_context_before,
     parse_markdown_round1,
     parse_options,
 )
@@ -303,6 +304,62 @@ class ResultPageTest(unittest.TestCase):
             self.assertEqual(app.load_exam(exam_id)["signature"], app.exam_signature(payload))
 
         self.assertEqual(app.backfill_round1_explanations(), 0)
+
+    def test_completion_import_tracks_inline_second_program_heading(self) -> None:
+        text = """三、完善程序
+(1)(魔法数字)
+01 #include <iostream>
+34. ①处应填( )
+A. F[4] = 0
+(2)(RMQ 区间最值问题)
+001 #include <cmath>
+38. ①处应填( )
+A. p->son[0] = S[top--]
+"""
+
+        first = text.index("34.")
+        second = text.index("38.")
+        self.assertIn("<iostream>", code_context_before(text, first))
+        self.assertIn("<cmath>", code_context_before(text, second))
+        self.assertNotIn("<iostream>", code_context_before(text, second))
+
+    def test_existing_papers_sync_completion_program_code(self) -> None:
+        old_code = "01 #include <iostream>\nint main() { return 0; }"
+        payload = {
+            "question_bank": "csp_s_round1",
+            "exam_format": "csp_s_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_s_round1-2021-q38",
+                    "stem": "①处应填(        )",
+                    "code": old_code,
+                    "options": ["旧选项 A", "旧选项 B", "旧选项 C", "旧选项 D"],
+                    "answer": 0,
+                },
+                {
+                    "id": "csp_s_round1-2021-q42",
+                    "stem": "⑤处应填(     )",
+                    "code": old_code,
+                    "options": ["旧选项 A", "旧选项 B", "旧选项 C", "旧选项 D"],
+                    "answer": 0,
+                },
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("含错误完善程序代码的旧试卷", 90, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        q38, q42 = saved["choice_questions"]
+        self.assertIn("MAXN = 100000", q38["code"])
+        self.assertIn("⑤;", q42["code"])
+        self.assertEqual(q38["options"][0], "p->son[0] = S[top--]")
+        self.assertEqual(q42["options"][0], "v += (S >> i & 1) ? -1 : 1")
 
     def test_csp_import_preserves_decimal_option_prefixes(self) -> None:
         parsed = parse_options(

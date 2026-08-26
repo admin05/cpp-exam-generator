@@ -532,18 +532,25 @@ def question_type_for(number: int, answer: str, has_options: bool) -> str:
 
 
 def code_context_before(text: str, position: int) -> str:
-    starts = [m.start() for m in re.finditer(r"(?m)^\s*[(]\d+[)]\s*$", text[:position])]
     section_three = text.rfind("三、", 0, position)
-    if section_three >= 0:
-        starts.append(section_three)
-    if not starts:
+    if section_three < 0:
         return ""
-    start = max(starts)
+
+    # Some completion headings keep the title on the same line, such as
+    # ``(2)(RMQ ...)``. Use the nearest numbered heading as the code boundary.
+    heading_matches = list(
+        re.finditer(r"(?m)^\s*\(\d+\)[^\n]*", text[section_three:position])
+    )
+    start = section_three + heading_matches[-1].start() if heading_matches else section_three
     first_question = re.search(r"(?m)^\s*\d{1,2}[.]\s*", text[start:position])
-    if not first_question:
-        return ""
-    context = text[start : start + first_question.start()]
-    context = re.sub(r"^[\s\S]*?(\d{2}\s+|#include|using namespace|int main|bool |void |long long |const )", r"\1", context, count=1)
+    context_end = start + first_question.start() if first_question else position
+    context = text[start:context_end]
+    code_start = re.search(
+        r"(?m)^\s*(?:\d{2,3}\s+)?#include\b|^\s*(?:using namespace|int main|bool |void |long long |const )",
+        context,
+    )
+    if code_start:
+        context = context[code_start.start() :]
     return clean_block(context)
 
 
