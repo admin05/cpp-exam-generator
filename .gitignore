@@ -5,8 +5,7 @@ rendered_*/
 data/
 2025年资料/
 2026年资料/
-CSP/*
-!CSP/
+CSP/**
 !CSP/**/
 !CSP/**/*.pdf
 素养大赛/
