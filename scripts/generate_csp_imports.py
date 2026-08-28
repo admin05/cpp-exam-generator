@@ -130,6 +130,14 @@ ROUND1_QUESTION_CORRECTIONS = {
             "answer": 2,
         },
     },
+    "csp_j_round1-2019-q12": {
+        "bad_stem_contains": "13 SKA",
+        "updates": {
+            "stem": "一副纸牌除掉大小王有 52 张牌，四种花色，每种花色 13 张。假设从这 52 张牌中随机抽取 13 张牌，至少有 4 张牌的花色一致。（ ）",
+            "options": ["4", "2", "5", "3"],
+            "answer": 0,
+        },
+    },
     "csp_s_round1-2021-q18": {
         "bad_stem_contains": "程序运行的结果",
         "updates": {

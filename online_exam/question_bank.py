@@ -4009,6 +4009,237 @@ def sanitize_csp_imported_text(value: object) -> str:
     return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
 
 
+CSP_J_2021_RECTANGLE_CODE = """01 #include <iostream>
+ 02
+ 03 using namespace std;
+ 04
+ 05 struct point {
+ 06     int x, y, id;
+ 07 };
+ 08
+ 09 bool equals(point a, point b) {
+ 10     return a.x == b.x && a.y == b.y;
+ 11 }
+ 12
+ 13 bool cmp(point a, point b) {
+ 14     return ①;
+ 15 }
+ 16
+ 17 void sort(point A[], int n) {
+ 18     for (int i = 0; i < n; i++)
+ 19         for (int j = 1; j < n; j++)
+ 20             if (cmp(A[j], A[j - 1])) {
+ 21                 point t = A[j];
+ 22                 A[j] = A[j - 1];
+ 23                 A[j - 1] = t;
+ 24             }
+ 25 }
+ 26
+27 int unique(point A[], int n) {
+28     int t = 0;
+29     for (int i = 0; i < n; i++)
+30         if (②)
+31             A[t++] = A[i];
+32     return t;
+33 }
+34
+35 bool binary_search(point A[], int n, int x, int y) {
+36     point p;
+37     p.x = x;
+38     p.y = y;
+39     p.id = n;
+40     int a = 0, b = n - 1;
+41     while (a < b) {
+42         int mid = ③;
+43         if (④)
+44             a = mid + 1;
+45         else
+46             b = mid;
+47     }
+48     return equals(A[a], p);
+49 }
+50
+51 const int MAXN = 1000;
+52 point A[MAXN];
+53
+54 int main() {
+55     int n;
+56     cin >> n;
+57     for (int i = 0; i < n; i++) {
+58         cin >> A[i].x >> A[i].y;
+59         A[i].id = i;
+60     }
+61     sort(A, n);
+62     n = unique(A, n);
+63     int ans = 0;
+64     for (int i = 0; i < n; i++)
+65         for (int j = 0; j < n; j++)
+66             if (⑤ && binary_search(A, n, A[i].x, A[j].y) &&
+                        binary_search(A, n, A[j].x, A[i].y)) {
+67                 ans++;
+68             }
+69     cout << ans << endl;
+70          return 0;
+71 }"""
+
+
+CSP_J_2023_EDIT_DISTANCE_CODE = """01 #include <iostream>
+ 02 #include <string>
+ 03 #include <vector>
+ 04 using namespace std;
+ 05
+ 06 int min(int x, int y, int z) {
+ 07     return min(min(x, y), z);
+ 08 }
+ 09
+ 10 int edit_dist_dp(string str1, string str2) {
+ 11     int m = str1.length();
+ 12     int n = str2.length();
+ 13     vector<vector<int>> dp(m + 1, vector<int>(n + 1));
+ 14
+ 15     for (int i = 0; i <= m; i++) {
+ 16         for (int j = 0; j <= n; j++) {
+ 17             if (i == 0)
+ 18                 dp[i][j] = ①;
+ 19             else if (j == 0)
+ 20                 dp[i][j] = ②;
+ 21             else if (③)
+ 22                 dp[i][j] = ④;
+ 23             else
+   24                dp[i][j]=1+min(dp[i][j - 1],dp[i - 1][j], ⑤);
+   25          }
+   26      }
+   27     return dp[m][n];
+   28 }
+   29
+   30 int main() {
+   31     string str1, str2;
+   32     cin >> str1 >> str2;
+   33     cout << "Mininum number of operation:"
+   34           << edit_dist_dp(str1, str2) << endl;
+   35     return 0;
+   35 }"""
+
+
+CSP_J_2024_HANOI_CODE = """01 #include <iostream>
+ 02 #include <vector>
+ 03 using namespace std;
+ 04
+ 05 void move(char src, char tgt) {
+ 06    cout << "从柱子" << src << "挪到柱子" << tgt << endl;
+ 07 }
+ 08 void dfs(int i, char src, char tmp, char tgt) {
+ 09    if (i ==     ①     ) {
+ 10       move(    ②     );
+ 11       return;
+ 12    }
+ 13    dfs(i - 1,     ③     );
+ 14    move(src, tgt);
+ 15    dfs(    ⑤    ,      ④   );
+ 16 }
+ 17
+ 18 int main() {
+ 19    int n;
+ 20    cin >> n;
+ 21    dfs(n, 'A', 'B', 'C');
+ 22 }"""
+
+
+CSP_S_2024_SECOND_SHORTEST_CODE = """01   #include <cstdio>
+02   #include <queue>
+03   #include <utility>
+04   #include <cstring>
+05   using namespace std;
+06
+07   const int maxn = 2e5+10, maxm = 1e6+10, inf = 522133279;
+08
+09   int n, m, s, t;
+10   int head[maxn], nxt[maxm], to[maxm], w[maxm], tot = 1;
+11   int dis[maxn<<1], *dis2;
+12   int pre[maxn<<1], *pre2;
+13   bool vis[maxn<<1];
+14
+15   void add(int a, int b, int c) {
+16       ++tot;
+17       nxt[tot] = head[a];
+18       to[tot] = b;
+19       w[tot] = c;
+20       head[a] = tot;
+21   }
+22
+23   bool upd(int a, int b, int d, priority_queue<pair<int, int>> &q) {
+24       if (d >= dis[b]) return false;
+25       if (b < n)     ①    ;
+26       q.push(    ②    );
+27       dis[b] = d;
+28       pre[b] = a;
+29       return true;
+30   }
+31
+32   void solve() {
+33       priority_queue<pair<int, int> > q;
+34       q.push(make_pair(0, s));
+35       memset(dis,     ③    , sizeof(dis));
+36       memset(pre, -1, sizeof(pre));
+37       dis2 = dis+n;
+38       pre2 = pre+n;
+39       dis[s] = 0;
+40       while (!q.empty()) {
+41           int aa = q.top().second; q.pop();
+42           if (vis[aa]) continue;
+43           vis[aa] = true;
+44           int a = aa % n;
+45           for (int e = head[a]; e; e = nxt[e]) {
+46               int b = to[e], c = w[e];
+47               if (aa < n) {
+48                   if (!upd(a, b, dis[a]+c, q))
+49                          ④     ;
+50               } else {
+51                   upd(n+a, n+b, dis2[a]+c, q);
+52               }
+53           }
+54       }
+55   }
+56
+57   void out(int a) {
+58       if (a != s) {
+59       if (a < n) out(pre[a]);
+60       else out(    ⑤    );
+61       }
+62       printf("%d%c", a%n+1, " \\n"[a == n+t]);
+63   }
+64
+65   int main() {
+66       scanf("%d%d%d%d", &n, &m, &s, &t);
+67       s--, t--;
+68       for (int i = 0; i < m; ++i) {
+69           int a, b, c;
+70           scanf("%d%d%d", &a, &b, &c);
+71           add(a-1, b-1, c);
+72       }
+73       solve();
+74       if (dis2[t] == inf) puts("-1");
+75       else {
+76           printf("%d\\n", dis2[t]);
+77           out(n+t);
+78       }
+79   }"""
+
+
+def repair_known_csp_completion_code(questions: list[dict]) -> None:
+    """Repair generated snapshots whose second block used the first block."""
+    code_by_ids = {
+        **{f"csp_j_round1-2021-q{number:02d}": CSP_J_2021_RECTANGLE_CODE for number in range(39, 44)},
+        **{f"csp_j_round1-2023-q{number:02d}": CSP_J_2023_EDIT_DISTANCE_CODE for number in range(38, 43)},
+        **{f"csp_j_round1-2024-q{number:02d}": CSP_J_2024_HANOI_CODE for number in range(38, 43)},
+        **{f"csp_s_round1-2024-q{number:02d}": CSP_S_2024_SECOND_SHORTEST_CODE for number in range(38, 43)},
+    }
+    for question in questions:
+        code = code_by_ids.get(question.get("id"))
+        if code:
+            question["code"] = code
+
+
 def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
     for question in questions:
         if question.get("competition") not in {"csp_j_round1", "csp_s_round1", "csp_x_round1"}:
@@ -4034,6 +4265,7 @@ def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
 
 
 sanitize_imported_csp_choice_options(CSP_ROUND1_CHOICE_QUESTIONS)
+repair_known_csp_completion_code(CSP_ROUND1_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(IMPORTED_FUSAI_PROGRAMMING_TASKS)
 CHOICE_QUESTIONS.extend(CSP_ROUND1_CHOICE_QUESTIONS)
 PROGRAMMING_TASKS.extend(CSP_ROUND2_PROGRAMMING_TASKS)

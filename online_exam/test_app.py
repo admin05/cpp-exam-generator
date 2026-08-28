@@ -677,6 +677,14 @@ A. p->son[0] = S[top--]
         self.assertEqual(information["options"][2], "克劳德·香农（Claude Shannon）")
         self.assertEqual(information["answer"], 2)
 
+        cards = questions["csp_j_round1-2019-q12"]
+        self.assertEqual(
+            cards["stem"],
+            "一副纸牌除掉大小王有 52 张牌，四种花色，每种花色 13 张。假设从这 52 张牌中随机抽取 13 张牌，至少有 4 张牌的花色一致。（ ）",
+        )
+        self.assertEqual(cards["options"], ["4", "2", "5", "3"])
+        self.assertEqual(cards["answer"], 0)
+
         sq_replacement = questions["csp_s_round1-2021-q18"]
         self.assertNotIn("香", sq_replacement["stem"])
         numeric_output = questions["csp_s_round1-2021-q19"]
@@ -687,6 +695,30 @@ A. p->son[0] = S[top--]
                 [question.get("stem", ""), question.get("code", ""), *question.get("options", [])]
             )
             self.assertNotIn("�", text)
+
+    def test_completion_programs_keep_separate_code_contexts(self) -> None:
+        for competition in ("csp_j_round1", "csp_s_round1"):
+            for source in {
+                question["source"]
+                for question in app.CHOICE_QUESTIONS
+                if question.get("competition") == competition
+                and question.get("source_question_type") == "完善程序单选题"
+            }:
+                questions = [
+                    question
+                    for question in app.CHOICE_QUESTIONS
+                    if question.get("competition") == competition
+                    and question.get("source") == source
+                    and question.get("source_question_type") == "完善程序单选题"
+                ]
+                groups = app._completion_program_groups(questions)
+                if len(groups) != 2:
+                    continue
+                self.assertNotEqual(
+                    {question.get("code", "") for question in groups[0]},
+                    {question.get("code", "") for question in groups[1]},
+                    f"完善程序代码上下文未按程序分开: {source}",
+                )
 
     def test_imported_csp_questions_have_no_standalone_watermark_lines(self) -> None:
         competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}

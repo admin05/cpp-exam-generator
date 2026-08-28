@@ -75,6 +75,10 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
         "target_id": "csp_j_round1-2022-q13",
         "explanation": "32.1(8) = 3 * 8 + 2 + 1 / 8 = 26.125，因此选择 C。",
     },
+    "csp_j_round1-2019-q12": {
+        "target_id": "csp_j_round1-2019-q12",
+        "stem_contains": "13 SKA",
+    },
     "csp_s_round1-2020-q15": {"target_id": "csp_s_round1-2020-q15"},
     "csp_s_round1-2021-q18": {"target_id": "csp_s_round1-2021-q18"},
     "csp_s_round1-2021-q19": {"target_id": "csp_s_round1-2021-q19"},
@@ -90,6 +94,18 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
     "csp_s_round1-2021-q41": {"target_id": "csp_s_round1-2021-q41", "stem_contains": "④处"},
     "csp_s_round1-2021-q42": {"target_id": "csp_s_round1-2021-q42", "stem_contains": "⑤处"},
     "csp_s_round1-2021-q43": {"target_id": "csp_s_round1-2021-q43", "stem_contains": "⑥处"},
+    **{
+        f"csp_j_round1-2023-q{number:02d}": {"target_id": f"csp_j_round1-2023-q{number:02d}"}
+        for number in range(38, 43)
+    },
+    **{
+        f"csp_j_round1-2024-q{number:02d}": {"target_id": f"csp_j_round1-2024-q{number:02d}"}
+        for number in range(38, 43)
+    },
+    **{
+        f"csp_s_round1-2024-q{number:02d}": {"target_id": f"csp_s_round1-2024-q{number:02d}"}
+        for number in range(38, 43)
+    },
 }
 CORRECTED_QUESTION_SNAPSHOT_FIELDS = ("id", "stem", "code", "options", "answer")
 CHOICE_QUESTIONS_BY_ID = {
