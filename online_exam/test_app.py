@@ -361,6 +361,44 @@ A. p->son[0] = S[top--]
         self.assertEqual(q38["options"][0], "p->son[0] = S[top--]")
         self.assertEqual(q42["options"][0], "v += (S >> i & 1) ? -1 : 1")
 
+    def test_existing_csp_j_paper_syncs_second_completion_program_code(self) -> None:
+        old_code = "01 #include <iostream>\nint main() { return 0; }"
+        payload = {
+            "question_bank": "csp_j_round1",
+            "exam_format": "csp_j_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_j_round1-2021-q35",
+                    "stem": "②处应填(        )",
+                    "code": app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2021-q35"]["code"],
+                    "options": ["旧选项 A", "旧选项 B", "旧选项 C", "旧选项 D"],
+                    "answer": 0,
+                },
+                {
+                    "id": "csp_j_round1-2021-q39",
+                    "stem": "①处应填(        )",
+                    "code": old_code,
+                    "options": ["旧选项 A", "旧选项 B", "旧选项 C", "旧选项 D"],
+                    "answer": 0,
+                },
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("含错误第二段完善程序代码的旧 CSP-J 试卷", 90, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        q35, q39 = saved["choice_questions"]
+
+        self.assertIn("Josephus", q35["code"])
+        self.assertIn("struct point", q39["code"])
+        self.assertNotIn("Josephus", q39["code"])
+
     def test_csp_import_preserves_decimal_option_prefixes(self) -> None:
         parsed = parse_options(
             """13. 八进制数 32.1 对应的十进制数是（ ）。

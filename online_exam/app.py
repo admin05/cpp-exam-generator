@@ -95,6 +95,10 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
     "csp_s_round1-2021-q42": {"target_id": "csp_s_round1-2021-q42", "stem_contains": "⑤处"},
     "csp_s_round1-2021-q43": {"target_id": "csp_s_round1-2021-q43", "stem_contains": "⑥处"},
     **{
+        f"csp_j_round1-2021-q{number:02d}": {"target_id": f"csp_j_round1-2021-q{number:02d}"}
+        for number in range(39, 44)
+    },
+    **{
         f"csp_j_round1-2023-q{number:02d}": {"target_id": f"csp_j_round1-2023-q{number:02d}"}
         for number in range(38, 43)
     },
