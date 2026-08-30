@@ -763,7 +763,7 @@ A. p->son[0] = S[top--]
         cards = questions["csp_j_round1-2019-q12"]
         self.assertEqual(
             cards["stem"],
-            "一副纸牌除掉大小王有 52 张牌，四种花色，每种花色 13 张。假设从这 52 张牌中随机抽取 13 张牌，至少有 4 张牌的花色一致。（ ）",
+            "一副纸牌除掉大小王有 52 张牌，四种花色，每种花色 13 张。假设从这 52 张牌中随机抽取 13 张牌，至少有（ ）张牌的花色一致。（ ）",
         )
         self.assertEqual(cards["options"], ["4", "2", "5", "3"])
         self.assertEqual(cards["answer"], 0)

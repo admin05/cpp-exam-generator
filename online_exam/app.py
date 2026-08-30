@@ -72,6 +72,7 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
     # need the canonical snapshot backfilled as well.
     "csp_j_round1-2022-q22": {"target_id": "csp_j_round1-2022-q22"},
     "csp_j_round1-2024-q15": {"target_id": "csp_j_round1-2024-q15"},
+    "csp_j_round1-2019-q12": {"target_id": "csp_j_round1-2019-q12"},
     "csp_j_round1-2020-q05": {
         "target_id": "csp_j_round1-2020-q06",
         "stem_contains": "else return A[n]",
@@ -80,10 +81,7 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
         "target_id": "csp_j_round1-2022-q13",
         "explanation": "32.1(8) = 3 * 8 + 2 + 1 / 8 = 26.125，因此选择 C。",
     },
-    "csp_j_round1-2019-q12": {
-        "target_id": "csp_j_round1-2019-q12",
-        "stem_contains": "13 SKA",
-    },
+    "csp_j_round1-2019-q12": {"target_id": "csp_j_round1-2019-q12"},
     "csp_s_round1-2020-q15": {"target_id": "csp_s_round1-2020-q15"},
     "csp_s_round1-2021-q18": {"target_id": "csp_s_round1-2021-q18"},
     "csp_s_round1-2021-q19": {"target_id": "csp_s_round1-2021-q19"},
