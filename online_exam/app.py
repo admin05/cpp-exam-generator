@@ -71,6 +71,7 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
     # before question 22. Older OCR output left q22 blank, so saved papers
     # need the canonical snapshot backfilled as well.
     "csp_j_round1-2022-q22": {"target_id": "csp_j_round1-2022-q22"},
+    "csp_j_round1-2024-q15": {"target_id": "csp_j_round1-2024-q15"},
     "csp_j_round1-2020-q05": {
         "target_id": "csp_j_round1-2020-q06",
         "stem_contains": "else return A[n]",
