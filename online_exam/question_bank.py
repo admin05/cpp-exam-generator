@@ -4239,6 +4239,22 @@ def repair_known_csp_completion_code(questions: list[dict]) -> None:
         if code:
             question["code"] = code
 
+    # The 2022 CSP-J PDF starts program (2) immediately before question 22.
+    # OCR previously failed to associate that code with q22, leaving the
+    # question without its referenced line 19. Reuse the canonical code that
+    # was successfully extracted for q23–27.
+    second_program_code = next(
+        (
+            str(question.get("code", ""))
+            for question in questions
+            if question.get("id") == "csp_j_round1-2022-q23" and question.get("code")
+        ),
+        "",
+    )
+    for question in questions:
+        if question.get("id") == "csp_j_round1-2022-q22" and second_program_code:
+            question["code"] = second_program_code
+
 
 def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
     for question in questions:

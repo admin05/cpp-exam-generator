@@ -399,6 +399,26 @@ A. p->son[0] = S[top--]
         self.assertIn("struct point", q39["code"])
         self.assertNotIn("Josephus", q39["code"])
 
+    def test_csp_j_2022_reading_question_22_has_program_code(self) -> None:
+        question = app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2022-q22"]
+        self.assertIn("int f(int n, int m)", question["code"])
+        self.assertIn("ret = min", question["code"])
+
+        payload = {
+            "question_bank": "csp_j_round1",
+            "exam_format": "csp_j_round1",
+            "choice_questions": [{
+                "id": "csp_j_round1-2022-q22",
+                "stem": question["stem"],
+                "code": "",
+                "options": ["正确", "错误"],
+                "answer": 1,
+            }],
+            "programming_tasks": [],
+        }
+        self.assertTrue(app.sync_corrected_question_snapshots(payload))
+        self.assertIn("int f(int n, int m)", payload["choice_questions"][0]["code"])
+
     def test_csp_import_preserves_decimal_option_prefixes(self) -> None:
         parsed = parse_options(
             """13. 八进制数 32.1 对应的十进制数是（ ）。

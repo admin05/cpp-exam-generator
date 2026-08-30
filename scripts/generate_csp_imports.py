@@ -540,16 +540,24 @@ def question_type_for(number: int, answer: str, has_options: bool) -> str:
 
 
 def code_context_before(text: str, position: int) -> str:
-    section_three = text.rfind("三、", 0, position)
-    if section_three < 0:
+    # Reading-program questions live under ``二、阅读程序`` while completion
+    # questions live under ``三、完善程序``.  The old implementation only
+    # looked for the latter, which left the first question in each reading
+    # block without code and caused it to be grouped with the previous block.
+    section_starts = [
+        text.rfind("二、阅读程序", 0, position),
+        text.rfind("三、完善程序", 0, position),
+    ]
+    section_start = max(section_starts)
+    if section_start < 0:
         return ""
 
     # Some completion headings keep the title on the same line, such as
     # ``(2)(RMQ ...)``. Use the nearest numbered heading as the code boundary.
     heading_matches = list(
-        re.finditer(r"(?m)^\s*\(\d+\)[^\n]*", text[section_three:position])
+        re.finditer(r"(?m)^\s*\(\d+\)[^\n]*", text[section_start:position])
     )
-    start = section_three + heading_matches[-1].start() if heading_matches else section_three
+    start = section_start + heading_matches[-1].start() if heading_matches else section_start
     first_question = re.search(r"(?m)^\s*\d{1,2}[.]\s*", text[start:position])
     context_end = start + first_question.start() if first_question else position
     context = text[start:context_end]
