@@ -4265,7 +4265,14 @@ def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
         cleaned_options = []
         for option in question.get("options", []):
             value = sanitize_csp_imported_text(option)
-            value = re.split(r"\n\s*(?:\(\d+\)|三、\s*完善程序)", value, maxsplit=1)[0]
+            # OCR can append the next section heading to the final option
+            # (for example, ``HTML 二、阅读程序`` in CSP-J 2023). Keep only
+            # the option text so it cannot leak into the exam page.
+            value = re.split(
+                r"\n?\s*(?:\(\d+\)|一、\s*|二、\s*|三、\s*|四、\s*)",
+                value,
+                maxsplit=1,
+            )[0]
             include_position = value.find("#include")
             if include_position >= 0:
                 value = value[:include_position]

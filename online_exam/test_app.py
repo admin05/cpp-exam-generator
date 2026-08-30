@@ -419,6 +419,11 @@ A. p->son[0] = S[top--]
         self.assertTrue(app.sync_corrected_question_snapshots(payload))
         self.assertIn("int f(int n, int m)", payload["choice_questions"][0]["code"])
 
+    def test_imported_csp_option_does_not_include_next_section_heading(self) -> None:
+        question = app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2023-q15"]
+        self.assertEqual(question["options"][3], "HTML")
+        self.assertNotIn("二、阅读程序", question["options"][3])
+
     def test_csp_import_preserves_decimal_option_prefixes(self) -> None:
         parsed = parse_options(
             """13. 八进制数 32.1 对应的十进制数是（ ）。
