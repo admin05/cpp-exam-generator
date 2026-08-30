@@ -72,6 +72,7 @@ CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
     # need the canonical snapshot backfilled as well.
     "csp_j_round1-2022-q22": {"target_id": "csp_j_round1-2022-q22"},
     "csp_j_round1-2024-q15": {"target_id": "csp_j_round1-2024-q15"},
+    "csp_j_round1-2023-q15": {"target_id": "csp_j_round1-2023-q15"},
     "csp_j_round1-2019-q12": {"target_id": "csp_j_round1-2019-q12"},
     "csp_j_round1-2020-q05": {
         "target_id": "csp_j_round1-2020-q06",

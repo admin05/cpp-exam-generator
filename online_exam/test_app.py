@@ -424,6 +424,21 @@ A. p->son[0] = S[top--]
         self.assertEqual(question["options"][3], "HTML")
         self.assertNotIn("二、阅读程序", question["options"][3])
 
+        payload = {
+            "question_bank": "csp_j_round1",
+            "exam_format": "csp_j_round1",
+            "choice_questions": [{
+                "id": "csp_j_round1-2023-q15",
+                "stem": question["stem"],
+                "code": "",
+                "options": ["Linux", "Windows", "Android", "HTML\n二、阅读程序"],
+                "answer": 3,
+            }],
+            "programming_tasks": [],
+        }
+        self.assertTrue(app.sync_corrected_question_snapshots(payload))
+        self.assertEqual(payload["choice_questions"][0]["options"][3], "HTML")
+
     def test_csp_j_2024_compiler_option_does_not_include_next_section_heading(self) -> None:
         question = app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2024-q15"]
         self.assertEqual(question["options"][3], "管理程序运行时的内存")
