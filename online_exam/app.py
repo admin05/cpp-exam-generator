@@ -1346,7 +1346,13 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
     """Update saved paper snapshots for questions whose source data was corrected."""
     changed = False
     for question in payload.get("choice_questions", []):
-        rule = CSP_CORRECTED_QUESTION_SNAPSHOT_RULES.get(str(question.get("id", "")))
+        question_id = str(question.get("id", ""))
+        rule = CSP_CORRECTED_QUESTION_SNAPSHOT_RULES.get(question_id)
+        # Legacy saved papers may have lost or rewritten imported IDs. Match
+        # the distinctive stem as a fallback so the correction still reaches
+        # the persisted exam snapshot (not only newly generated papers).
+        if not rule and "449 次" in str(question.get("stem", "")):
+            rule = CSP_CORRECTED_QUESTION_SNAPSHOT_RULES["csp_j_round1-2022-q22"]
         if not rule:
             continue
         stem_marker = str(rule.get("stem_contains", ""))
@@ -1360,6 +1366,18 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
             if question.get(field) != value:
                 question[field] = value
                 changed = True
+        if str(rule["target_id"]) == "csp_j_round1-2022-q22":
+            # Before the code-context fix q22 was attached to program 1 in
+            # persisted exams. Move it to program 2 so the rendered heading
+            # and the referenced line 19 agree with the source paper.
+            for field, value in {
+                "section_id": "part2",
+                "section_title": "二、阅读程序（12 道判断题 + 6 道单选题，共 40 分）",
+                "program_index": 2,
+            }.items():
+                if question.get(field) != value:
+                    question[field] = value
+                    changed = True
         explanation = str(rule.get("explanation", ""))
         explanation_source = dict(question)
         explanation_source.pop("explanation", None)

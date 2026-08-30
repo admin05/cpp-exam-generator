@@ -413,11 +413,32 @@ A. p->son[0] = S[top--]
                 "code": "",
                 "options": ["正确", "错误"],
                 "answer": 1,
+                "section_id": "part2",
+                "section_title": "二、阅读程序（12 道判断题 + 6 道单选题，共 40 分）",
+                "program_index": 1,
             }],
             "programming_tasks": [],
         }
         self.assertTrue(app.sync_corrected_question_snapshots(payload))
         self.assertIn("int f(int n, int m)", payload["choice_questions"][0]["code"])
+        self.assertEqual(payload["choice_questions"][0]["program_index"], 2)
+
+        legacy_payload = {
+            "question_bank": "csp_j_round1",
+            "exam_format": "csp_j_round1",
+            "choice_questions": [{
+                "id": "legacy-q22",
+                "stem": "当输入为“7 3”时，第 19 行用来取最小值的 min 函数执行了 449 次。( )",
+                "code": "",
+                "options": ["正确", "错误"],
+                "answer": 1,
+                "program_index": 1,
+            }],
+            "programming_tasks": [],
+        }
+        self.assertTrue(app.sync_corrected_question_snapshots(legacy_payload))
+        self.assertIn("int f(int n, int m)", legacy_payload["choice_questions"][0]["code"])
+        self.assertEqual(legacy_payload["choice_questions"][0]["program_index"], 2)
 
     def test_imported_csp_option_does_not_include_next_section_heading(self) -> None:
         question = app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2023-q15"]
