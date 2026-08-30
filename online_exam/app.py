@@ -1353,6 +1353,24 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
         # the persisted exam snapshot (not only newly generated papers).
         if not rule and "449 次" in str(question.get("stem", "")):
             rule = CSP_CORRECTED_QUESTION_SNAPSHOT_RULES["csp_j_round1-2022-q22"]
+        reading_match = re.fullmatch(r"csp_j_round1-\d{4}-q(\d+)", question_id)
+        if reading_match:
+            number = int(reading_match.group(1))
+            if 16 <= number <= 33:
+                canonical_reading = CHOICE_QUESTIONS_BY_ID.get(question_id)
+                if canonical_reading and canonical_reading.get("code"):
+                    if question.get("code") != canonical_reading["code"]:
+                        question["code"] = canonical_reading["code"]
+                        changed = True
+                    program_index = 1 if number <= 21 else (2 if number <= 27 else 3)
+                    for field, value in {
+                        "section_id": "part2",
+                        "section_title": "二、阅读程序（12 道判断题 + 6 道单选题，共 40 分）",
+                        "program_index": program_index,
+                    }.items():
+                        if question.get(field) != value:
+                            question[field] = value
+                            changed = True
         if not rule:
             continue
         stem_marker = str(rule.get("stem_contains", ""))

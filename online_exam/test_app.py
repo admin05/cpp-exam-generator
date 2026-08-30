@@ -440,6 +440,15 @@ A. p->son[0] = S[top--]
         self.assertIn("int f(int n, int m)", legacy_payload["choice_questions"][0]["code"])
         self.assertEqual(legacy_payload["choice_questions"][0]["program_index"], 2)
 
+    def test_all_csp_j_reading_questions_have_code_and_program_index(self) -> None:
+        reading = [
+            q for q in app.CHOICE_QUESTIONS
+            if q.get("competition") == "csp_j_round1"
+            and 16 <= int(str(q["id"]).rsplit("q", 1)[1]) <= 33
+        ]
+        missing = [q["id"] for q in reading if not q.get("code")]
+        self.assertEqual(missing, [])
+
     def test_imported_csp_option_does_not_include_next_section_heading(self) -> None:
         question = app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2023-q15"]
         self.assertEqual(question["options"][3], "HTML")

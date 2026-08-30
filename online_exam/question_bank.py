@@ -4255,6 +4255,34 @@ def repair_known_csp_completion_code(questions: list[dict]) -> None:
         if question.get("id") == "csp_j_round1-2022-q22" and second_program_code:
             question["code"] = second_program_code
 
+    # Fill the first (and any otherwise missing) question in each six-question
+    # reading block. OCR often captures the code only on the second question;
+    # without this repair the grouping logic assigns the first question to the
+    # preceding program.
+    by_source: dict[str, list[dict]] = {}
+    for question in questions:
+        if question.get("competition") != "csp_j_round1":
+            continue
+        match = re.search(r"-q(\d+)$", str(question.get("id", "")))
+        if not match or not 16 <= int(match.group(1)) <= 33:
+            continue
+        by_source.setdefault(str(question.get("source", "")), []).append(question)
+    for source_questions in by_source.values():
+        by_number = {
+            int(re.search(r"-q(\d+)$", str(question["id"])).group(1)): question
+            for question in source_questions
+        }
+        for start in (16, 22, 28):
+            code = next(
+                (by_number[n].get("code", "") for n in range(start, start + 6) if by_number.get(n, {}).get("code")),
+                "",
+            )
+            if not code:
+                continue
+            for n in range(start, start + 6):
+                if n in by_number and not by_number[n].get("code"):
+                    by_number[n]["code"] = code
+
 
 def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
     for question in questions:
