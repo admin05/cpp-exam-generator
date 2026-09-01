@@ -4297,7 +4297,7 @@ def sanitize_imported_csp_choice_options(questions: list[dict]) -> None:
             # (for example, ``HTML 二、阅读程序`` in CSP-J 2023). Keep only
             # the option text so it cannot leak into the exam page.
             value = re.split(
-                r"\n?\s*(?:\(\d+\)|一、\s*|二、\s*|三、\s*|四、\s*)",
+                r"(?:^|\n)\s*(?:\(\d+\)|一、\s*|二、\s*|三、\s*|四、\s*)",
                 value,
                 maxsplit=1,
             )[0]
