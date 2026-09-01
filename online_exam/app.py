@@ -427,9 +427,14 @@ def _copy_program_questions(
     section_title: str,
     program_index: int | None,
     scores: list[float],
+    inherit_code: bool = False,
 ) -> list[dict]:
     prepared = []
-    fallback_code = next((str(q.get("code", "")) for q in questions if q.get("code")), "")
+    fallback_code = (
+        next((str(q.get("code", "")) for q in questions if q.get("code")), "")
+        if inherit_code
+        else ""
+    )
     for offset, question in enumerate(sorted(questions, key=question_number)):
         item = dict(question)
         if not item.get("code") and fallback_code:
@@ -541,6 +546,7 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
                 reading_section_title,
                 program_index,
                 [reading_score_by_id[question["id"]] for question in group],
+                inherit_code=True,
             )
         )
 
@@ -554,6 +560,7 @@ def build_csp_j_round1_exam(title: str, duration: int) -> dict:
                 completion_section_title,
                 program_index,
                 [3.0] * len(group),
+                inherit_code=True,
             )
         )
 
@@ -806,6 +813,7 @@ def build_csp_s_round1_exam(title: str, duration: int) -> dict:
                 reading_title,
                 program_index,
                 [reading_score_by_id[question["id"]] for question in group],
+                inherit_code=True,
             )
         )
     prepared_completion = []
@@ -817,6 +825,7 @@ def build_csp_s_round1_exam(title: str, duration: int) -> dict:
                 completion_title,
                 program_index,
                 [3.0] * len(group),
+                inherit_code=True,
             )
         )
 
@@ -1409,6 +1418,25 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
     return changed
 
 
+def sync_round1_code_contexts(payload: dict) -> bool:
+    """Restore first-section code from the canonical question snapshot."""
+    if not (is_csp_j_round1_payload(payload) or is_csp_s_round1_payload(payload)):
+        return False
+    changed = False
+    for question in payload.get("choice_questions", []):
+        if question.get("section_id") != "part1":
+            continue
+        canonical = CHOICE_QUESTIONS_BY_ID.get(str(question.get("id", "")))
+        if not canonical:
+            continue
+        code = canonical.get("code", "")
+        if question.get("code", "") == code:
+            continue
+        question["code"] = code
+        changed = True
+    return changed
+
+
 def sanitize_saved_question_artifacts(payload: dict) -> bool:
     """Remove standalone OCR watermark and section-label lines from saved papers."""
     changed = False
@@ -1466,6 +1494,8 @@ def backfill_csp_j_round1_explanations() -> int:
             if not is_csp_j_round1_payload(payload):
                 continue
             changed = sanitize_saved_question_artifacts(payload)
+            if sync_round1_code_contexts(payload):
+                changed = True
             if sync_corrected_question_snapshots(payload):
                 changed = True
             if enrich_csp_j_round1_payload(payload):
@@ -1493,6 +1523,8 @@ def backfill_csp_s_round1_explanations() -> int:
             if not is_csp_s_round1_payload(payload):
                 continue
             changed = sanitize_saved_question_artifacts(payload)
+            if sync_round1_code_contexts(payload):
+                changed = True
             if sync_corrected_question_snapshots(payload):
                 changed = True
             if enrich_csp_s_round1_payload(payload):

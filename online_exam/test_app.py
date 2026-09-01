@@ -641,6 +641,9 @@ A. p->son[0] = S[top--]
             {question["source_question_type"] for question in questions[:15]},
             {"单项选择题"},
         )
+        for question in questions[:15]:
+            canonical = app.CHOICE_QUESTIONS_BY_ID[question["id"]]
+            self.assertEqual(question.get("code", ""), canonical.get("code", ""))
         self.assertEqual(
             sum(question["source_question_type"] == "程序阅读判断题" for question in questions),
             12,
@@ -847,6 +850,74 @@ A. p->son[0] = S[top--]
                     {question.get("code", "") for question in groups[1]},
                     f"完善程序代码上下文未按程序分开: {source}",
                 )
+
+    def test_first_section_questions_do_not_inherit_program_code(self) -> None:
+        questions = [
+            {"id": "ordinary-1", "code": "shared program context"},
+            {"id": "ordinary-2"},
+        ]
+
+        copied = app._copy_program_questions(
+            questions,
+            "part1",
+            "一、单项选择题",
+            None,
+            [2.0, 2.0],
+        )
+
+        self.assertEqual(copied[0]["code"], "shared program context")
+        self.assertEqual(copied[1].get("code", ""), "")
+
+        program_copied = app._copy_program_questions(
+            questions,
+            "part2",
+            "二、阅读程序",
+            1,
+            [2.0, 2.0],
+            inherit_code=True,
+        )
+        self.assertEqual(program_copied[1]["code"], "shared program context")
+
+    def test_existing_round1_paper_clears_inherited_first_section_code(self) -> None:
+        polluted_code = app.CHOICE_QUESTIONS_BY_ID["csp_j_round1-2020-q06"]["code"]
+        payload = {
+            "question_bank": "csp_j_round1",
+            "exam_format": "csp_j_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_j_round1-2020-q01",
+                    "section_id": "part1",
+                    "program_index": None,
+                    "stem": "旧题干",
+                    "code": polluted_code,
+                    "options": ["A", "B", "C", "D"],
+                    "answer": 0,
+                },
+                {
+                    "id": "csp_j_round1-2020-q06",
+                    "section_id": "part1",
+                    "program_index": None,
+                    "stem": "旧题干",
+                    "code": polluted_code,
+                    "options": ["A", "B", "C", "D"],
+                    "answer": 0,
+                },
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("含错误普通单选代码的旧试卷", 90, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        q01, q06 = saved["choice_questions"]
+
+        self.assertEqual(q01.get("code", ""), "")
+        self.assertEqual(q06["code"], polluted_code)
 
     def test_imported_csp_questions_have_no_standalone_watermark_lines(self) -> None:
         competitions = {"csp_j_round1", "csp_s_round1", "csp_x_round1"}
