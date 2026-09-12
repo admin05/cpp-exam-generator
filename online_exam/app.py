@@ -67,6 +67,7 @@ CSP_J_READING_JUDGMENT_TYPE = "程序阅读判断题"
 CSP_J_READING_CHOICE_TYPE = "程序阅读单选题"
 CSP_J_COMPLETION_TYPE = "完善程序单选题"
 CSP_CORRECTED_QUESTION_SNAPSHOT_RULES = {
+    "csp_s_round1-2020-q11": {"target_id": "csp_s_round1-2020-q11"},
     # The 2022 CSP-J PDF places the second reading-program code immediately
     # before question 22. Older OCR output left q22 blank, so saved papers
     # need the canonical snapshot backfilled as well.

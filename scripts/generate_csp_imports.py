@@ -100,6 +100,17 @@ ROUND2_SOURCES = [
 
 
 ROUND1_QUESTION_CORRECTIONS = {
+    "csp_s_round1-2020-q11": {
+        "bad_stem_contains": "从工层开始",
+        "updates": {
+            "stem": (
+                "小明想通过走楼梯来锻炼身体，假设从第 1 层走到第 2 层消耗 16 卡热量，\n"
+                "接着从第 2 层走到第 3 层消耗 20 卡热量，再从第 3 层走到第 4 层消耗 30 卡热量，\n"
+                "依此类推，从第 k 层走到第 k+1 层消耗 10k 卡热量（k>1）。如果小明想从第 1 层开始，\n"
+                "通过连续向上爬楼梯消耗 1000 卡热量，至少要爬到第几层楼？（ ）"
+            ),
+        },
+    },
     "csp_j_round1-2020-q05": {
         "bad_stem_contains": "else return A[n]",
         "updates": {

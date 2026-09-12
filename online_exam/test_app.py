@@ -202,6 +202,38 @@ class ResultPageTest(unittest.TestCase):
         self.assertEqual(app.load_exam(exam_id)["signature"], app.exam_signature(saved))
         self.assertEqual(app.backfill_csp_j_round1_explanations(), 0)
 
+    def test_existing_papers_sync_stair_question_correction(self) -> None:
+        payload = {
+            "question_bank": "csp_s_round1",
+            "choice_questions": [
+                {
+                    "id": "csp_s_round1-2020-q11",
+                    "stem": "如果小明想从工层开始，通过连续向上怜楼梯消耗 1000 卡热量，至少要忠到第几层楼?",
+                    "options": ["14", "16", "15", "13"],
+                    "answer": 2,
+                }
+            ],
+            "programming_tasks": [],
+        }
+        with app.db() as conn:
+            cursor = conn.execute(
+                "INSERT INTO exams(title, duration_minutes, payload, created_at) VALUES (?, ?, ?, ?)",
+                ("含错别字楼梯题的旧试卷", 60, json.dumps(payload, ensure_ascii=False), app.now_text()),
+            )
+            exam_id = int(cursor.lastrowid)
+
+        app.init_db()
+        saved = json.loads(app.load_exam(exam_id)["payload"])
+        question = saved["choice_questions"][0]
+
+        self.assertIn("从第 1 层开始", question["stem"])
+        self.assertIn("连续向上爬楼梯", question["stem"])
+        self.assertIn("至少要爬到第几层楼", question["stem"])
+        self.assertNotIn("工层", question["stem"])
+        self.assertNotIn("怜楼梯", question["stem"])
+        self.assertNotIn("忠到", question["stem"])
+        self.assertEqual(app.load_exam(exam_id)["signature"], app.exam_signature(saved))
+
     def test_existing_papers_sync_ocr_question_corrections(self) -> None:
         j_payload = {
             "question_bank": "csp_j_round1",
@@ -808,6 +840,12 @@ A. p->son[0] = S[top--]
         self.assertEqual(information["options"][2], "克劳德·香农（Claude Shannon）")
         self.assertEqual(information["answer"], 2)
 
+        stair = questions["csp_s_round1-2020-q11"]
+        self.assertIn("从第 1 层开始", stair["stem"])
+        self.assertIn("连续向上爬楼梯", stair["stem"])
+        self.assertIn("至少要爬到第几层楼", stair["stem"])
+        self.assertEqual(stair["answer"], 2)
+
         cards = questions["csp_j_round1-2019-q12"]
         self.assertEqual(
             cards["stem"],
@@ -937,6 +975,10 @@ A. p->son[0] = S[top--]
 
     def test_round1_source_corrections_only_replace_matching_bad_text(self) -> None:
         bad_questions = [
+            {
+                "id": "csp_s_round1-2020-q11",
+                "stem": "如果小明想从工层开始，通过连续向上怜楼梯消耗 1000 卡热量，至少要忠到第几层楼?",
+            },
             {"id": "csp_j_round1-2020-q05", "stem": "else return A[n]，乱码"},
             {"id": "csp_s_round1-2020-q15", "stem": "1948 4F, OCR 乱码"},
             {"id": "csp_s_round1-2021-q18", "stem": "程序运行的结果。（ ）\n香"},
@@ -953,8 +995,10 @@ A. p->son[0] = S[top--]
 
         corrected, count = apply_round1_question_corrections([*bad_questions, already_clean])
 
-        self.assertEqual(count, 6)
+        self.assertEqual(count, 7)
         corrected_by_id = {question["id"]: question for question in corrected[:-1]}
+        self.assertIn("连续向上爬楼梯", corrected_by_id["csp_s_round1-2020-q11"]["stem"])
+        self.assertIn("至少要爬到第几层楼", corrected_by_id["csp_s_round1-2020-q11"]["stem"])
         self.assertIn("A 数组的最小值", corrected_by_id["csp_j_round1-2020-q06"]["options"])
         self.assertIn("热力学中的熵", corrected_by_id["csp_s_round1-2020-q15"]["stem"])
         self.assertNotIn("香", corrected_by_id["csp_s_round1-2021-q18"]["stem"])
