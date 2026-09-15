@@ -64,6 +64,46 @@ and CSP-X(山东) folders, then skips duplicate question signatures or duplicate
 generated IDs. Large scanned second-round PDFs are kept as source references
 until they are OCR-normalized or manually split into full programming tasks.
 
+### Datalab PDF OCR
+
+`scripts/datalab_ocr.py` uses Datalab's official Convert API in `balanced` mode
+with Markdown output and pagination. It only scans PDFs under `CSP/题库`; it
+does not scan `CSP/学习资料`, `CSP/题库OCR`, or other directories.
+
+Create the API key file at `CSP/题库OCR/OCR_KEY` with only the key and no other
+configuration. Restrict it to the owner, for example:
+
+```bash
+chmod 600 CSP/题库OCR/OCR_KEY
+```
+
+Process one PDF first:
+
+```bash
+python3 scripts/datalab_ocr.py \
+  --file "CSP/题库/CSP-J/2019/Round1/cspjs2019hj_cpp.pdf"
+```
+
+Process all PDFs in the question bank with the default retry and polling
+settings:
+
+```bash
+python3 scripts/datalab_ocr.py
+```
+
+Use `--force` to process files whose successful `.md` and `.json` outputs
+already exist. Results are written under `CSP/题库OCR` with the same relative
+directory structure as `CSP/题库`. OCR output and temporary failure records are
+ignored by Git; `OCR_KEY` is never included in source code or logs.
+
+The Convert API is asynchronous: the script submits a PDF, polls the returned
+`request_check_url` until `status=complete`, and fetches `result_url` when one
+is provided. API quota and charges depend on the current Datalab account and
+service limits; each submitted PDF may consume quota, so avoid unnecessary
+batch or forced runs. The public API does not guarantee a fixed Chandra version
+or a stable `model=chandra` parameter, so this script does not send that
+parameter and uses the official `balanced` Convert API mode.
+
 ## Project Structure
 
 - `online_exam/`: application code, static styles, and bundled structured bank.
@@ -160,6 +200,42 @@ SQLite 数据库。
 `online_exam/imported_csp_questions.py` 由 `python3 scripts/generate_csp_imports.py`
 从 `CSP/题库` 生成；生成器会对第一轮题面和答案 PDF 自动尝试本机 Tesseract OCR。
 大型扫描版第二轮 PDF 暂作为来源保留，待 OCR 规范化或人工拆题后可重新生成。
+
+### Datalab PDF OCR
+
+`scripts/datalab_ocr.py` 使用 Datalab 官方 Convert API，以 `balanced` 模式输出
+Markdown 并启用分页。脚本只会递归处理 `CSP/题库` 及其子目录中的 PDF，不会扫描
+`CSP/学习资料`、`CSP/题库OCR` 或其他目录。
+
+请在 `CSP/题库OCR/OCR_KEY` 中保存纯文本 API Key（文件中只放 Key），并限制权限：
+
+```bash
+chmod 600 CSP/题库OCR/OCR_KEY
+```
+
+先处理一个 PDF：
+
+```bash
+python3 scripts/datalab_ocr.py \
+  --file "CSP/题库/CSP-J/2019/Round1/cspjs2019hj_cpp.pdf"
+```
+
+批量处理题库目录：
+
+```bash
+python3 scripts/datalab_ocr.py
+```
+
+如果要重新处理已有成功结果，使用 `--force`。结果会写入 `CSP/题库OCR`，并保持
+与 `CSP/题库` 相同的相对目录结构；成功时每个 PDF 生成同名 `.md` 和 `.json`。
+OCR 结果、临时失败记录和临时文件均被 Git 忽略，`OCR_KEY` 不会写入源码或日志。
+
+Convert API 是异步接口：脚本先提交 PDF，再轮询返回的 `request_check_url` 直到
+`status=complete`，如果存在 `result_url` 还会继续读取结果。额度和费用以当前
+Datalab 账户及服务限制为准，每提交一个 PDF 都可能消耗额度，请避免不必要的批量或
+`--force` 操作。当前公开 API 没有保证可以固定调用某个 Chandra 版本，也没有稳定的
+`model=chandra` 参数，因此脚本不会发送该参数，而是使用官方 Convert API 的
+`balanced` 模式。
 
 ## Docker Compose 部署
 

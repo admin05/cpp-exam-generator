@@ -8,5 +8,8 @@ data/
 CSP/**
 !CSP/**/
 !CSP/**/*.pdf
+CSP/题库OCR/*
+!CSP/题库OCR/.gitkeep
+!CSP/题库OCR/OCR_KEY
 素养大赛/
 zero-parsed-fusai-sources.zip
