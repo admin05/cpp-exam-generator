@@ -222,6 +222,24 @@ def extract_markdown(*payloads: Any) -> str | None:
     return None
 
 
+def normalize_display_math(markdown: str) -> str:
+    """Put one-line $$...$$ blocks into the form Mark Text recognizes reliably."""
+    normalized: list[str] = []
+    for line in markdown.splitlines():
+        stripped = line.strip()
+        if (
+            stripped.startswith("$$")
+            and stripped.endswith("$$")
+            and stripped != "$$"
+            and stripped.count("$$") == 2
+        ):
+            content = stripped[2:-2].strip()
+            normalized.extend(["$$", content, "$$"])
+        else:
+            normalized.append(line)
+    return "\n".join(normalized)
+
+
 def _find_images(payload: Any) -> dict[str, Any] | None:
     if isinstance(payload, dict):
         images = payload.get("images")
@@ -491,6 +509,14 @@ def process_pdf(pdf_path: Path, output_dir: Path, api_key: str, poll_interval: f
     markdown_path, json_path = output_paths(pdf_path, output_dir)
     if not force and is_successful_output(markdown_path, json_path):
         try:
+            markdown = markdown_path.read_text(encoding="utf-8")
+            normalized = normalize_display_math(markdown)
+            if normalized != markdown:
+                atomic_write(markdown_path, normalized)
+                print("已规范化块级公式格式")
+        except (OSError, UnicodeError) as exc:
+            print(f"警告: 无法规范化已有 Markdown 公式: {exc}", file=sys.stderr)
+        try:
             image_files = restore_images_from_json(json_path, markdown_path)
             if image_files:
                 print(f"恢复图片资源: {len(image_files)} 个")
@@ -502,6 +528,7 @@ def process_pdf(pdf_path: Path, output_dir: Path, api_key: str, poll_interval: f
     print(f"处理: {pdf_path.relative_to(QUESTION_BANK_DIR)}")
     try:
         markdown, metadata = submit_and_poll(pdf_path, api_key, poll_interval)
+        markdown = normalize_display_math(markdown)
         metadata["source"] = str(pdf_path.relative_to(QUESTION_BANK_DIR))
         metadata["output_format"] = "markdown"
         metadata["mode"] = "balanced"
