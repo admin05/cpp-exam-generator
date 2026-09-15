@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import base64
+import binascii
 import json
 import mimetypes
 import os
@@ -220,6 +222,62 @@ def extract_markdown(*payloads: Any) -> str | None:
     return None
 
 
+def _find_images(payload: Any) -> dict[str, Any] | None:
+    if isinstance(payload, dict):
+        images = payload.get("images")
+        if isinstance(images, dict):
+            return images
+        for value in payload.values():
+            found = _find_images(value)
+            if found is not None:
+                return found
+    elif isinstance(payload, list):
+        for value in payload:
+            found = _find_images(value)
+            if found is not None:
+                return found
+    return None
+
+
+def _decode_image(value: Any) -> bytes | None:
+    if isinstance(value, dict):
+        for key in ("data", "base64", "content"):
+            decoded = _decode_image(value.get(key))
+            if decoded is not None:
+                return decoded
+        return None
+    if not isinstance(value, str):
+        return None
+    encoded = value.strip()
+    if encoded.startswith("data:"):
+        try:
+            encoded = encoded.split(",", 1)[1]
+        except IndexError:
+            return None
+    encoded = "".join(encoded.split())
+    try:
+        return base64.b64decode(encoded, validate=True)
+    except (binascii.Error, ValueError):
+        return None
+
+
+def extract_images(*payloads: Any) -> dict[str, bytes]:
+    for payload in payloads:
+        images = _find_images(payload)
+        if images is None:
+            continue
+        decoded: dict[str, bytes] = {}
+        for name, value in images.items():
+            if not isinstance(name, str) or not name.strip():
+                raise DatalabError("Datalab 返回了无效的图片文件名")
+            content = _decode_image(value)
+            if content is None:
+                raise DatalabError(f"无法解码图片资源: {name}")
+            decoded[name] = content
+        return decoded
+    return {}
+
+
 def extract_metadata(*payloads: Any) -> dict[str, Any]:
     metadata: dict[str, Any] = {}
     fields = (
@@ -366,6 +424,51 @@ def atomic_write(path: Path, content: str) -> None:
                 pass
 
 
+def atomic_write_bytes(path: Path, content: bytes) -> None:
+    if path.resolve() == API_KEY_PATH.resolve():
+        raise DatalabError("拒绝覆盖 OCR_KEY")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary: str | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="wb", dir=path.parent, prefix=f".{path.name}.", suffix=".tmp", delete=False
+        ) as handle:
+            temporary = handle.name
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+        temporary = None
+    finally:
+        if temporary:
+            try:
+                os.unlink(temporary)
+            except FileNotFoundError:
+                pass
+
+
+def materialize_images(images: dict[str, bytes], markdown_path: Path) -> list[str]:
+    written: list[str] = []
+    output_root = markdown_path.parent.resolve()
+    for name, content in images.items():
+        image_path = (markdown_path.parent / name).resolve()
+        try:
+            image_path.relative_to(output_root)
+        except ValueError as exc:
+            raise DatalabError(f"图片路径超出 OCR 输出目录: {name}") from exc
+        atomic_write_bytes(image_path, content)
+        written.append(name)
+    return written
+
+
+def restore_images_from_json(json_path: Path, markdown_path: Path) -> list[str]:
+    try:
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise DatalabError(f"无法读取已有 OCR JSON: {json_path} ({exc})") from exc
+    return materialize_images(extract_images(data), markdown_path)
+
+
 def output_paths(pdf_path: Path, output_dir: Path) -> tuple[Path, Path]:
     relative = pdf_path.resolve().relative_to(QUESTION_BANK_DIR.resolve())
     output_base = (output_dir / relative).with_suffix("")
@@ -387,6 +490,12 @@ def write_error_metadata(pdf_path: Path, output_dir: Path, error: str, secret: s
 def process_pdf(pdf_path: Path, output_dir: Path, api_key: str, poll_interval: float, force: bool) -> bool:
     markdown_path, json_path = output_paths(pdf_path, output_dir)
     if not force and is_successful_output(markdown_path, json_path):
+        try:
+            image_files = restore_images_from_json(json_path, markdown_path)
+            if image_files:
+                print(f"恢复图片资源: {len(image_files)} 个")
+        except DatalabError as exc:
+            print(f"警告: 无法恢复已有图片资源: {exc}", file=sys.stderr)
         print(f"跳过（已完成）: {pdf_path.relative_to(QUESTION_BANK_DIR)}")
         return True
 
@@ -397,6 +506,7 @@ def process_pdf(pdf_path: Path, output_dir: Path, api_key: str, poll_interval: f
         metadata["output_format"] = "markdown"
         metadata["mode"] = "balanced"
         metadata["paginate"] = True
+        metadata["image_files"] = materialize_images(extract_images(metadata), markdown_path)
         safe_metadata = _redact(metadata, api_key)
         atomic_write(markdown_path, markdown)
         atomic_write(json_path, json.dumps(safe_metadata, ensure_ascii=False, indent=2) + "\n")

@@ -94,7 +94,9 @@ python3 scripts/datalab_ocr.py
 Use `--force` to process files whose successful `.md` and `.json` outputs
 already exist. Results are written under `CSP/题库OCR` with the same relative
 directory structure as `CSP/题库`. OCR output and temporary failure records are
-ignored by Git; `OCR_KEY` is never included in source code or logs.
+ignored by Git. Embedded image resources returned by the API are also saved
+beside the Markdown file so its relative image links remain usable. `OCR_KEY`
+is never included in source code or logs.
 
 The Convert API is asynchronous: the script submits a PDF, polls the returned
 `request_check_url` until `status=complete`, and fetches `result_url` when one
@@ -228,7 +230,8 @@ python3 scripts/datalab_ocr.py
 
 如果要重新处理已有成功结果，使用 `--force`。结果会写入 `CSP/题库OCR`，并保持
 与 `CSP/题库` 相同的相对目录结构；成功时每个 PDF 生成同名 `.md` 和 `.json`。
-OCR 结果、临时失败记录和临时文件均被 Git 忽略，`OCR_KEY` 不会写入源码或日志。
+如果 API 返回图片资源，脚本也会将图片保存到 Markdown 同目录，以保证相对图片链接
+可用。OCR 结果、临时失败记录和临时文件均被 Git 忽略，`OCR_KEY` 不会写入源码或日志。
 
 Convert API 是异步接口：脚本先提交 PDF，再轮询返回的 `request_check_url` 直到
 `status=complete`，如果存在 `result_url` 还会继续读取结果。额度和费用以当前
