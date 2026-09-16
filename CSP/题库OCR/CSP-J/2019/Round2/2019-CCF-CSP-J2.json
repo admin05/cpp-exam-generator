@@ -1,0 +1,377 @@
+{
+  "request_id": "WKOYy10trJc2IN50vs-2Yw",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:02:58.450364+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "WKOYy10trJc2IN50vs-2Yw",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/WKOYy10trJc2IN50vs-2Yw",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2019 年 CCF 非专业级软件能力认证第二轮 入门级\n\n## 2019 CCF CSP-J2\n\n时间：2019 年 11 月 16 日 14: 30 - 18: 00\n\n## 一. 题目概况\n\n|           |                   |              |              |          |\n|-----------|-------------------|--------------|--------------|----------|\n| 中文题目名称    | 数字游戏              | 交通换乘         | 纪念品          | 零件加工     |\n| 英文题目与子目录名 | number            | transfer     | souvenir     | work     |\n| 可执行文件名    | number            | transfer     | souvenir     | work     |\n| 输入文件名     | number.in         | transfer.in  | souvenir.in  | work.in  |\n| 输出文件名     | number.out        | transfer.out | souvenir.out | work.out |\n| 每个测试点时限   | 1 秒               | 1 秒          | 1 秒          | 1 秒      |\n| 测试点数目     | 20                | 20           | 20           | 20       |\n| 每个测试点分值   | 5                 | 5            | 5            | 5        |\n| 附加样例文件    | 有                 | 有            | 有            | 有        |\n| 结果比较方式    | 全文比较（过滤行末空格及文末回车） |              |              |          |\n| 题目类型      | 传统                | 传统           | 传统           | 传统       |\n| 运行内存上限    | 256M              | 256M         | 256M         | 256M     |\n\n## 二. 提交源程序文件名\n\n|              |            |              |              |          |\n|--------------|------------|--------------|--------------|----------|\n| 对于 C++语言     | number.cpp | transfer.cpp | souvenir.cpp | work.cpp |\n| 对于 C 语言      | number.c   | transfer.c   | souvenir.c   | work.c   |\n| 对于 pascal 语言 | number.pas | transfer.pas | souvenir.pas | work.pas |\n\n## 三. 编译命令（不包含任何优化开关）\n\n|           |                                 |                                        |                                           |                             |\n|-----------|---------------------------------|----------------------------------------|-------------------------------------------|-----------------------------|\n| C++语言     | g++ -o number<br>number.cpp -lm | g++ -o transfer<br>transfer.cpp<br>-lm | g++ -o<br>souvenir<br>souvenir.cpp<br>-lm | g++ -o work<br>work.cpp -lm |\n| C 语言      | gcc -o number<br>number.c -lm   | gcc -o transfer<br>transfer.c -lm      | gcc -o<br>souvenir<br>souvenir.c -lm      | gcc -o work<br>work.c -lm   |\n| Pascal 语言 | fpc number.pas                  | fpc<br>transfer.pas                    | fpc<br>souvenir.pas                       | fpc work.pas                |\n\n### 注意事项:\n\n1. 文件名（程序名和输入输出文件名）必须使用英文小写。\n2. C/C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n3. 提交的程序代码文件的放置位置请参照各省的具体要求。\n4. 因违反以上三点而出现的错误或问题，申诉时一律不予受理。\n\n{1}------------------------------------------------\n\n- \n5. 程序可使用的栈内存空间限制与题目的内存限制一致。\n6. 全国统一评测时采用的机器配置为: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz, 内存 32GB。上述时限以此配置为准。\n7. 只提供 Linux 格式附加样例文件。\n8. 评测在当前最新公布的 NOI Linux 下进行, 各语言的编译器版本以其为准。\n9. 最终评测时所用的编译命令中不含任何优化开关。\n\n{2}------------------------------------------------\n\n## --- 数字游戏\n\n(number.cpp/c/pas)\n\n### 【问题描述】\n\n小 K 同学向小 P 同学发送了一个长度为 8 的 01 字符串来玩数字游戏，小 P 同学想要知道字符串中究竟有多少个 1。\n\n注意：01 字符串为每一个字符是 0 或者 1 的字符串，如 “101”（不含双引号）为一个长度为 3 的 01 字符串。\n\n### 【输入格式】\n\n输入文件名为 number.in。\n\n输入文件只有一行，一个长度为 8 的 01 字符串 s。\n\n#### 【输出格式】\n\n输出文件名为 number.out。\n\n输出文件只有一行，包含一个整数，即 01 字符串中字符 1 的个数。\n\n#### 【输入输出样例 1】\n\n| number.in | number.out |\n|-----------|------------|\n| 00010100  | 2          |\n\n见选手目录下的 number/number1.in 和 number/number1.ans。\n\n#### 【输入输出样例 1 说明】\n\n该 01 字符串中有 2 个字符 1。\n\n#### 【输入输出样例 2】\n\n| number.in | number.out |\n|-----------|------------|\n| 11111111  | 8          |\n\n见选手目录下的 number/number2.in 和 number/number2.ans。\n\n#### 【输入输出样例 2 说明】\n\n该 01 字符串中有 8 个字符 1。\n\n#### 【输入输出样例 3】\n\n见选手目录下的 number/number3.in 和 number/number3.ans。\n\n### 【数据规模与约定】\n\n对于 20% 的数据，保证输入的字符全部为 0。\n\n对于 100% 的数据，输入只可能包含字符 0 和字符 1，字符串长度固定为 8。\n\n{3}------------------------------------------------\n\n## 公交换乘\n\n(transfer.cpp/c/pas)\n\n#### 【问题描述】\n\n著名旅游城市 B 市为了鼓励大家采用公共交通方式出行,推出了一种地铁换乘公交车的优惠方案:\n\n1. 在搭乘一次地铁后可以获得一张优惠票,有效期为 45 分钟,在有效期内可以消耗这张优惠票,免费搭乘一次票价不超过地铁票价的公交车。在有效期内指开始乘公交车的时间与开始乘地铁的时间之差小于等于 45 分钟,即:\n\n$$t_{bus} - t_{subway} \\leq 45$$\n\n2. 搭乘地铁获得的优惠票可以累积,即可以连续搭乘若干次地铁后再连续使用优惠票搭乘公交车。\n3. 搭乘公交车时,如果可以使用优惠票一定会使用优惠票;如果有多张优惠票满足条件,则优先消耗获得最早的优惠票。\n\n现在你得到了小轩最近的公共交通出行记录,你能帮他算算他的花费吗?\n\n#### 【输入格式】\n\n输入文件名为 transfer.in。\n\n输入文件的第一行包含一个正整数  $n$ ,代表乘车记录的数量。\n\n接下来的  $n$  行,每行包含 3 个整数,相邻两数之间以一个空格分隔。第  $i$  行的第 1 个整数代表第  $i$  条记录乘坐的交通工具,0 代表地铁,1 代表公交车;第 2 个整数代表第  $i$  条记录乘车的票价  $price_i$ ;第三个整数代表第  $i$  条记录开始乘车的时间  $t_i$  (距 0 时刻的分钟数)。\n\n我们保证出行记录是按照开始乘车的时间顺序给出的,且不会有两次乘车记录出现在同一分钟。\n\n#### 【输出格式】\n\n输出文件名为 transfer.out。\n\n输出文件有一行,包含一个正整数,代表小轩出行的总花费\n\n#### 【输入输出样例 1】\n\n| transfer.in                                                      | transfer.out |\n|------------------------------------------------------------------|--------------|\n| 6<br>0 10 3<br>1 5 46<br>0 12 50<br>1 3 96<br>0 5 110<br>1 6 135 | 36           |\n\n见选手目录下的 transfer/transfer1.in 和 transfer/transfer1.ans。\n\n#### 【输入输出样例 1 说明】\n\n第一条记录,在第 3 分钟花费 10 元乘坐地铁。\n\n第二条记录,在第 46 分钟乘坐公交车,可以使用第一条记录中乘坐地铁获得的优惠票,因此没有花费。\n\n{4}------------------------------------------------\n\n第三条记录，在第 50 分钟花费 12 元乘坐地铁。\n\n第四条记录，在第 96 分钟乘坐公交车，由于距离第三条记录中乘坐地铁已超过 45 分钟，所以优惠票已失效，花费 3 元乘坐公交车。\n\n第五条记录，在第 110 分钟花费 5 元乘坐地铁。\n\n第六条记录，在第 135 分钟乘坐公交车，由于此时手中只有第五条记录中乘坐地铁获得的优惠票有效，而本次公交车的票价为 6 元，高于第五条记录中地铁的票价 5 元，所以不能使用优惠票，花费 6 元乘坐公交车。\n\n总共花费 36 元。\n\n#### **【输入输出样例 2】**\n\n| transfer.in | transfer.out |\n|-------------|--------------|\n| 6           | 32           |\n| 0 5 1       |              |\n| 0 20 16     |              |\n| 0 7 23      |              |\n| 1 18 31     |              |\n| 1 4 38      |              |\n| 1 7 68      |              |\n\n见选手目录下的 transfer/transfer2.in 和 transfer/transfer2.ans。\n\n#### **【输入输出样例 2 说明】**\n\n第一条记录，在第 1 分钟花费 5 元乘坐地铁。\n\n第二条记录，在第 16 分钟花费 20 元乘坐地铁。\n\n第三条记录，在第 23 分钟花费 7 元乘坐地铁。\n\n第四条记录，在第 31 分钟乘坐公交车，此时只有第二条记录中乘坐的地铁票价高于本次公交车票价，所以使用第二条记录中乘坐地铁获得的优惠票。\n\n第五条记录，在第 38 分钟乘坐公交车，此时第一条和第三条记录中乘坐地铁获得的优惠票都可以使用，使用获得最早的优惠票，即第一条记录中乘坐地铁获得的优惠票。\n\n第六条记录，在第 68 分钟乘坐公交车，使用第三条记录中乘坐地铁获得的优惠票。\n\n总共花费 32 元。\n\n#### **【输入输出样例 3】**\n\n见选手目录下的 transfer/transfer3.in 和 transfer/transfer3.ans。\n\n### **【数据规模与约定】**\n\n对于 30% 的数据， $n \\leq 1,000$ ， $t_i \\leq 10^6$ 。\n\n另有 15% 的数据， $t_i \\leq 10^7$ ， $price_i$  都相等。\n\n另有 15% 的数据， $t_i \\leq 10^9$ ， $price_i$  都相等。\n\n对于 100% 的数据， $n \\leq 10^5$ ， $t_i \\leq 10^9$ ， $1 \\leq price_i \\leq 1,000$ 。\n\n{5}------------------------------------------------\n\n## --- 纪念品\n\n(souvenir.cpp/c/pas)\n\n### 【问题描述】\n\n小伟突然获得一种超能力，他知道未来  $T$  天  $N$  种纪念品每天的价格。某个纪念品的价格是指购买一个该纪念品所需的金币数量，以及卖出一个该纪念品换回的金币数量。\n\n每天，小伟可以进行以下两种交易无限次：\n\n1. 任选一个纪念品，若手上有足够金币，以当日价格购买该纪念品；\n2. 卖出持有的任意一个纪念品，以当日价格换回金币。\n\n每天卖出纪念品换回的金币可以立即用于购买纪念品，当日购买的纪念品也可以当日卖出换回金币。当然，一直持有纪念品也是可以的。\n\n$T$  天之后，小伟的超能力消失。因此他一定会在第  $T$  天卖出所有纪念品换回金币。\n\n小伟现在有  $M$  枚金币，他想要在超能力消失后拥有尽可能多的金币。\n\n#### 【输入格式】\n\n输入文件名为 souvenir.in。\n\n第一行包含三个正整数  $T, N, M$ ，相邻两数之间以一个空格分开，分别代表未来天数  $T$ ，纪念品数量  $N$ ，小伟现在拥有的金币数量  $M$ 。\n\n接下来  $T$  行，每行包含  $N$  个正整数，相邻两数之间以一个空格分隔。第  $i$  行的  $N$  个正整数分别为  $P_{i,1}, P_{i,2}, \\dots, P_{i,N}$ ，其中  $P_{i,j}$  表示第  $i$  天第  $j$  种纪念品的价格。\n\n#### 【输出格式】\n\n输出文件名为 souvenir.out。\n\n输出仅一行，包含一个正整数，表示小伟在超能力消失后最多能拥有的金币数量。\n\n#### 【输入输出样例 1】\n\n| souvenir.in | souvenir.out |\n|-------------|--------------|\n| 6 1 100     | 305          |\n| 50          |              |\n| 20          |              |\n| 25          |              |\n| 20          |              |\n| 25          |              |\n| 50          |              |\n\n见选手目录下的 souvenir/souvenir1.in 和 souvenir/souvenir1.ans。\n\n#### 【输入输出样例 1 说明】\n\n最佳策略是：\n\n第二天花光所有 100 枚金币买入 5 个纪念品 1；\n\n第三天卖出 5 个纪念品 1，获得金币 125 枚；\n\n第四天买入 6 个纪念品 1，剩余 5 枚金币；\n\n第六天必须卖出所有纪念品换回 300 枚金币，第四天剩余 5 枚金币，共 305 枚金币。\n\n超能力消失后，小伟最多拥有 305 枚金币。\n\n#### 【输入输出样例 2】\n\n{6}------------------------------------------------\n\n| <b>souvenir.in</b>                          | <b>souvenir.out</b> |\n|---------------------------------------------|---------------------|\n| 3 3 100<br>10 20 15<br>15 17 13<br>15 25 16 | 217                 |\n\n见选手目录下的 souvenir/souvenir2.in 和 souvenir/souvenir2.ans。\n\n#### **【输入输出样例 2 说明】**\n\n最佳策略是：\n\n第一天花光所有金币买入 10 个纪念品 1；\n\n第二天卖出全部纪念品 1 得到 150 枚金币并买入 8 个纪念品 2 和 1 个纪念品 3，剩余 1 枚金币；\n\n第三天必须卖出所有纪念品换回 216 枚金币，第二天剩余 1 枚金币，共 217 枚金币。\n\n超能力消失后，小伟最多拥有 217 枚金币。\n\n#### **【输入输出样例 3】**\n\n见选手目录下的 souvenir/souvenir3.in 和 souvenir/souvenir3.ans。\n\n### **【数据规模与约定】**\n\n对于 10% 的数据， $T = 1$ 。\n\n对于 30% 的数据， $T \\leq 4$ ,  $N \\leq 4$ ,  $M \\leq 100$ ，所有价格  $10 \\leq P_{i,j} \\leq 100$ 。\n\n另有 15% 的数据， $T \\leq 100$ ,  $N = 1$ 。\n\n另有 15% 的数据， $T = 2$ ,  $N \\leq 100$ 。\n\n对于 100% 的数据， $T \\leq 100$ ,  $N \\leq 100$ ,  $M \\leq 10^3$ ，所有价格  $1 \\leq P_{i,j} \\leq 10^4$ ，数据保证任意时刻，小明手上的金币数不可能超过 $10^4$ 。\n\n{7}------------------------------------------------\n\n## --- 加工零件\n\n(work.cpp/c/pas)\n\n### 【问题描述】\n\n凯凯的工厂正在有条不紊地生产一种神奇的零件，神奇的零件的生产过程自然也很神奇。工厂里有  $n$  位工人，工人们从  $1 \\sim n$  编号。某些工人之间存在双向的零件传送带。保证每两名工人之间最多只存在一条传送带。\n\n如果  $x$  号工人想生产一个被加工到第  $L(L > 1)$  阶段的零件，则所有与  $x$  号工人有传送带直接相连的工人，都需要生产一个被加工到第  $L - 1$  阶段的零件（但  $x$  号工人自己无需生产第  $L - 1$  阶段的零件）。\n\n如果  $x$  号工人想生产一个被加工到第 1 阶段的零件，则所有与  $x$  号工人有传送带直接相连的工人，都需要为  $x$  号工人提供一个原材料。\n\n轩轩是 1 号工人。现在给出  $q$  张工单，第  $i$  张工单表示编号为  $a_i$  的工人想生产一个第  $L_i$  阶段的零件。轩轩想知道对于每张工单，他是否需要给别人提供原材料。他知道聪明的你一定可以帮他计算出来！\n\n#### 【输入格式】\n\n输入文件名为 work.in。\n\n第一行三个正整数  $n, m$  和  $q$ ，分别表示工人的数目、传送带的数目和工单的数目。\n\n接下来  $m$  行，每行两个正整数  $u$  和  $v$ ，表示编号为  $u$  和  $v$  的工人之间存在一条零件传输带。保证  $u \\neq v$ 。\n\n接下来  $q$  行，每行两个正整数  $a$  和  $L$ ，表示编号为  $a$  的工人想生产一个第  $L$  阶段的零件。\n\n#### 【输出格式】\n\n输出文件名为 work.out。\n\n共  $q$  行，每行一个字符串 “Yes” 或者 “No”。如果按照第  $i$  张工单生产，需要编号为 1 的轩轩提供原材料，则在第  $i$  行输出 “Yes”；否则在第  $i$  行输出 “No”。注意输出不含引号。\n\n#### 【输入输出样例 1】\n\n| work.in | work.out |\n|---------|----------|\n| 3 2 6   | No       |\n| 1 2     | Yes      |\n| 2 3     | No       |\n| 1 1     | Yes      |\n| 2 1     | No       |\n| 3 1     | Yes      |\n| 1 2     |          |\n| 2 2     |          |\n| 3 2     |          |\n\n见选手目录下的 work/work1.in 和 work/work1.ans。\n\n{8}------------------------------------------------\n\n#### 【输入输出样例 1 说明】\n\n![A graph with 3 nodes labeled 1, 2, and 3. Node 2 is at the top, connected to nodes 1 and 3 below it.](acfc53eca625d62b38aa2563efa95c3e_img.jpg)\n\n```\ngraph TD; 2((2)) --- 1((1)); 2 --- 3((3));\n```\n\nA graph with 3 nodes labeled 1, 2, and 3. Node 2 is at the top, connected to nodes 1 and 3 below it.\n\n编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。\n\n编号为 2 的工人想生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n\n编号为 3 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。\n\n编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n\n编号为 2 的工人想生产第 2 阶段的零件，需要编号为 1 和 3 的工人生产第 1 阶段的零件，他/她们都需要编号为 2 的工人提供原材料。\n\n编号为 3 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n\n#### 【输入输出样例 2】\n\n| work.in | work.out |\n|---------|----------|\n| 5 5 5   | No       |\n| 1 2     | Yes      |\n| 2 3     | No       |\n| 3 4     | Yes      |\n| 4 5     | Yes      |\n| 1 5     |          |\n| 1 1     |          |\n| 1 2     |          |\n| 1 3     |          |\n| 1 4     |          |\n| 1 5     |          |\n\n见选手目录下的 work/work2.in 和 work/work2.ans。\n\n#### 【输入输出样例 2 说明】\n\n![A graph with 5 nodes labeled 1, 2, 3, 4, and 5. Node 2 is at the top, connected to nodes 1 and 3. Node 1 is connected to node 5, and node 3 is connected to node 4. Node 5 is connected to node 4.](2ba086df3506f81bae3a9b53725dcfea_img.jpg)\n\n```\ngraph TD; 2((2)) --- 1((1)); 2 --- 3((3)); 1 --- 5((5)); 3 --- 4((4)); 5 --- 4;\n```\n\nA graph with 5 nodes labeled 1, 2, 3, 4, and 5. Node 2 is at the top, connected to nodes 1 and 3. Node 1 is connected to node 5, and node 3 is connected to node 4. Node 5 is connected to node 4.\n\n编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 和 5 的工人提供原材料。\n\n编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 和 5 的工人生产第 1 阶段的零件，需要编号为 1,3,4 的工人提供原材料。\n\n编号为 1 的工人想生产第 3 阶段的零件，需要编号为 2 和 5 的工人生产第 2 阶段\n\n{9}------------------------------------------------\n\n---\n\n的零件，需要编号为 1,3,4 的工人生产第 1 阶段的零件，需要编号为 2,3,4,5 的工人提供原材料。\n\n编号为 1 的工人想生产第 4 阶段的零件，需要编号为 2 和 5 的工人生产第 3 阶段的零件，需要编号为 1,3,4 的工人生产第 2 阶段的零件，需要编号为 2,3,4,5 的工人生产第 1 阶段的零件，需要全部工人提供原材料。\n\n编号为 1 的工人想生产第 5 阶段的零件，需要编号为 2 和 5 的工人生产第 4 阶段的零件，需要编号为 1,3,4 的工人生产第 3 阶段的零件，需要编号为 2,3,4,5 的工人生产第 2 阶段的零件，需要全部工人生产第 1 阶段的零件，需要全部工人提供原材料。\n\n#### 【输入输出样例 3】\n\n见选手目录下的 work/work3.in 和 work/work3.ans。\n\n### 【数据规模与约定】\n\n共 20 个测试点。\n\n$1 \\leq u, v, a \\leq n$ 。\n\n测试点 1~4,  $1 \\leq n, m \\leq 1000$ ,  $q = 3$ ,  $L = 1$ 。\n\n测试点 5~8,  $1 \\leq n, m \\leq 1000$ ,  $q = 3$ ,  $1 \\leq L \\leq 10$ 。\n\n测试点 9~12,  $1 \\leq n, m, L \\leq 1000$ ,  $1 \\leq q \\leq 100$ 。\n\n测试点 13~16,  $1 \\leq n, m, L \\leq 1000$ ,  $1 \\leq q \\leq 10^5$ 。\n\n测试点 17~20,  $1 \\leq n, m, q \\leq 10^5$ ,  $1 \\leq L \\leq 10^9$ 。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "acfc53eca625d62b38aa2563efa95c3e_img.jpg": "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",
+        "2ba086df3506f81bae3a9b53725dcfea_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 27
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 23
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 24
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 28
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 17
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 17
+          },
+          {
+            "page_id": 9,
+            "num_blocks": 14
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.767,
+      "page_count": 10,
+      "total_cost": 3.0,
+      "cost_breakdown": {
+        "final_cost_cents": 3.0
+      },
+      "runtime": 61.0493643283844,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2019 年 CCF 非专业级软件能力认证第二轮 入门级\n\n## 2019 CCF CSP-J2\n\n时间：2019 年 11 月 16 日 14: 30 - 18: 00\n\n## 一. 题目概况\n\n|           |                   |              |              |          |\n|-----------|-------------------|--------------|--------------|----------|\n| 中文题目名称    | 数字游戏              | 交通换乘         | 纪念品          | 零件加工     |\n| 英文题目与子目录名 | number            | transfer     | souvenir     | work     |\n| 可执行文件名    | number            | transfer     | souvenir     | work     |\n| 输入文件名     | number.in         | transfer.in  | souvenir.in  | work.in  |\n| 输出文件名     | number.out        | transfer.out | souvenir.out | work.out |\n| 每个测试点时限   | 1 秒               | 1 秒          | 1 秒          | 1 秒      |\n| 测试点数目     | 20                | 20           | 20           | 20       |\n| 每个测试点分值   | 5                 | 5            | 5            | 5        |\n| 附加样例文件    | 有                 | 有            | 有            | 有        |\n| 结果比较方式    | 全文比较（过滤行末空格及文末回车） |              |              |          |\n| 题目类型      | 传统                | 传统           | 传统           | 传统       |\n| 运行内存上限    | 256M              | 256M         | 256M         | 256M     |\n\n## 二. 提交源程序文件名\n\n|              |            |              |              |          |\n|--------------|------------|--------------|--------------|----------|\n| 对于 C++语言     | number.cpp | transfer.cpp | souvenir.cpp | work.cpp |\n| 对于 C 语言      | number.c   | transfer.c   | souvenir.c   | work.c   |\n| 对于 pascal 语言 | number.pas | transfer.pas | souvenir.pas | work.pas |\n\n## 三. 编译命令（不包含任何优化开关）\n\n|           |                                 |                                        |                                           |                             |\n|-----------|---------------------------------|----------------------------------------|-------------------------------------------|-----------------------------|\n| C++语言     | g++ -o number<br>number.cpp -lm | g++ -o transfer<br>transfer.cpp<br>-lm | g++ -o<br>souvenir<br>souvenir.cpp<br>-lm | g++ -o work<br>work.cpp -lm |\n| C 语言      | gcc -o number<br>number.c -lm   | gcc -o transfer<br>transfer.c -lm      | gcc -o<br>souvenir<br>souvenir.c -lm      | gcc -o work<br>work.c -lm   |\n| Pascal 语言 | fpc number.pas                  | fpc<br>transfer.pas                    | fpc<br>souvenir.pas                       | fpc work.pas                |\n\n### 注意事项:\n\n1. 文件名（程序名和输入输出文件名）必须使用英文小写。\n2. C/C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n3. 提交的程序代码文件的放置位置请参照各省的具体要求。\n4. 因违反以上三点而出现的错误或问题，申诉时一律不予受理。\n\n{1}------------------------------------------------\n\n- \n5. 程序可使用的栈内存空间限制与题目的内存限制一致。\n6. 全国统一评测时采用的机器配置为: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz, 内存 32GB。上述时限以此配置为准。\n7. 只提供 Linux 格式附加样例文件。\n8. 评测在当前最新公布的 NOI Linux 下进行, 各语言的编译器版本以其为准。\n9. 最终评测时所用的编译命令中不含任何优化开关。\n\n{2}------------------------------------------------\n\n## --- 数字游戏\n\n(number.cpp/c/pas)\n\n### 【问题描述】\n\n小 K 同学向小 P 同学发送了一个长度为 8 的 01 字符串来玩数字游戏，小 P 同学想要知道字符串中究竟有多少个 1。\n\n注意：01 字符串为每一个字符是 0 或者 1 的字符串，如 “101”（不含双引号）为一个长度为 3 的 01 字符串。\n\n### 【输入格式】\n\n输入文件名为 number.in。\n\n输入文件只有一行，一个长度为 8 的 01 字符串 s。\n\n#### 【输出格式】\n\n输出文件名为 number.out。\n\n输出文件只有一行，包含一个整数，即 01 字符串中字符 1 的个数。\n\n#### 【输入输出样例 1】\n\n| number.in | number.out |\n|-----------|------------|\n| 00010100  | 2          |\n\n见选手目录下的 number/number1.in 和 number/number1.ans。\n\n#### 【输入输出样例 1 说明】\n\n该 01 字符串中有 2 个字符 1。\n\n#### 【输入输出样例 2】\n\n| number.in | number.out |\n|-----------|------------|\n| 11111111  | 8          |\n\n见选手目录下的 number/number2.in 和 number/number2.ans。\n\n#### 【输入输出样例 2 说明】\n\n该 01 字符串中有 8 个字符 1。\n\n#### 【输入输出样例 3】\n\n见选手目录下的 number/number3.in 和 number/number3.ans。\n\n### 【数据规模与约定】\n\n对于 20% 的数据，保证输入的字符全部为 0。\n\n对于 100% 的数据，输入只可能包含字符 0 和字符 1，字符串长度固定为 8。\n\n{3}------------------------------------------------\n\n## 公交换乘\n\n(transfer.cpp/c/pas)\n\n#### 【问题描述】\n\n著名旅游城市 B 市为了鼓励大家采用公共交通方式出行,推出了一种地铁换乘公交车的优惠方案:\n\n1. 在搭乘一次地铁后可以获得一张优惠票,有效期为 45 分钟,在有效期内可以消耗这张优惠票,免费搭乘一次票价不超过地铁票价的公交车。在有效期内指开始乘公交车的时间与开始乘地铁的时间之差小于等于 45 分钟,即:\n\n$$t_{bus} - t_{subway} \\leq 45$$\n\n2. 搭乘地铁获得的优惠票可以累积,即可以连续搭乘若干次地铁后再连续使用优惠票搭乘公交车。\n3. 搭乘公交车时,如果可以使用优惠票一定会使用优惠票;如果有多张优惠票满足条件,则优先消耗获得最早的优惠票。\n\n现在你得到了小轩最近的公共交通出行记录,你能帮他算算他的花费吗?\n\n#### 【输入格式】\n\n输入文件名为 transfer.in。\n\n输入文件的第一行包含一个正整数  $n$ ,代表乘车记录的数量。\n\n接下来的  $n$  行,每行包含 3 个整数,相邻两数之间以一个空格分隔。第  $i$  行的第 1 个整数代表第  $i$  条记录乘坐的交通工具,0 代表地铁,1 代表公交车;第 2 个整数代表第  $i$  条记录乘车的票价  $price_i$ ;第三个整数代表第  $i$  条记录开始乘车的时间  $t_i$  (距 0 时刻的分钟数)。\n\n我们保证出行记录是按照开始乘车的时间顺序给出的,且不会有两次乘车记录出现在同一分钟。\n\n#### 【输出格式】\n\n输出文件名为 transfer.out。\n\n输出文件有一行,包含一个正整数,代表小轩出行的总花费\n\n#### 【输入输出样例 1】\n\n| transfer.in                                                      | transfer.out |\n|------------------------------------------------------------------|--------------|\n| 6<br>0 10 3<br>1 5 46<br>0 12 50<br>1 3 96<br>0 5 110<br>1 6 135 | 36           |\n\n见选手目录下的 transfer/transfer1.in 和 transfer/transfer1.ans。\n\n#### 【输入输出样例 1 说明】\n\n第一条记录,在第 3 分钟花费 10 元乘坐地铁。\n\n第二条记录,在第 46 分钟乘坐公交车,可以使用第一条记录中乘坐地铁获得的优惠票,因此没有花费。\n\n{4}------------------------------------------------\n\n第三条记录，在第 50 分钟花费 12 元乘坐地铁。\n\n第四条记录，在第 96 分钟乘坐公交车，由于距离第三条记录中乘坐地铁已超过 45 分钟，所以优惠票已失效，花费 3 元乘坐公交车。\n\n第五条记录，在第 110 分钟花费 5 元乘坐地铁。\n\n第六条记录，在第 135 分钟乘坐公交车，由于此时手中只有第五条记录中乘坐地铁获得的优惠票有效，而本次公交车的票价为 6 元，高于第五条记录中地铁的票价 5 元，所以不能使用优惠票，花费 6 元乘坐公交车。\n\n总共花费 36 元。\n\n#### **【输入输出样例 2】**\n\n| transfer.in | transfer.out |\n|-------------|--------------|\n| 6           | 32           |\n| 0 5 1       |              |\n| 0 20 16     |              |\n| 0 7 23      |              |\n| 1 18 31     |              |\n| 1 4 38      |              |\n| 1 7 68      |              |\n\n见选手目录下的 transfer/transfer2.in 和 transfer/transfer2.ans。\n\n#### **【输入输出样例 2 说明】**\n\n第一条记录，在第 1 分钟花费 5 元乘坐地铁。\n\n第二条记录，在第 16 分钟花费 20 元乘坐地铁。\n\n第三条记录，在第 23 分钟花费 7 元乘坐地铁。\n\n第四条记录，在第 31 分钟乘坐公交车，此时只有第二条记录中乘坐的地铁票价高于本次公交车票价，所以使用第二条记录中乘坐地铁获得的优惠票。\n\n第五条记录，在第 38 分钟乘坐公交车，此时第一条和第三条记录中乘坐地铁获得的优惠票都可以使用，使用获得最早的优惠票，即第一条记录中乘坐地铁获得的优惠票。\n\n第六条记录，在第 68 分钟乘坐公交车，使用第三条记录中乘坐地铁获得的优惠票。\n\n总共花费 32 元。\n\n#### **【输入输出样例 3】**\n\n见选手目录下的 transfer/transfer3.in 和 transfer/transfer3.ans。\n\n### **【数据规模与约定】**\n\n对于 30% 的数据， $n \\leq 1,000$ ， $t_i \\leq 10^6$ 。\n\n另有 15% 的数据， $t_i \\leq 10^7$ ， $price_i$  都相等。\n\n另有 15% 的数据， $t_i \\leq 10^9$ ， $price_i$  都相等。\n\n对于 100% 的数据， $n \\leq 10^5$ ， $t_i \\leq 10^9$ ， $1 \\leq price_i \\leq 1,000$ 。\n\n{5}------------------------------------------------\n\n## --- 纪念品\n\n(souvenir.cpp/c/pas)\n\n### 【问题描述】\n\n小伟突然获得一种超能力，他知道未来  $T$  天  $N$  种纪念品每天的价格。某个纪念品的价格是指购买一个该纪念品所需的金币数量，以及卖出一个该纪念品换回的金币数量。\n\n每天，小伟可以进行以下两种交易无限次：\n\n1. 任选一个纪念品，若手上有足够金币，以当日价格购买该纪念品；\n2. 卖出持有的任意一个纪念品，以当日价格换回金币。\n\n每天卖出纪念品换回的金币可以立即用于购买纪念品，当日购买的纪念品也可以当日卖出换回金币。当然，一直持有纪念品也是可以的。\n\n$T$  天之后，小伟的超能力消失。因此他一定会在第  $T$  天卖出所有纪念品换回金币。\n\n小伟现在有  $M$  枚金币，他想要在超能力消失后拥有尽可能多的金币。\n\n#### 【输入格式】\n\n输入文件名为 souvenir.in。\n\n第一行包含三个正整数  $T, N, M$ ，相邻两数之间以一个空格分开，分别代表未来天数  $T$ ，纪念品数量  $N$ ，小伟现在拥有的金币数量  $M$ 。\n\n接下来  $T$  行，每行包含  $N$  个正整数，相邻两数之间以一个空格分隔。第  $i$  行的  $N$  个正整数分别为  $P_{i,1}, P_{i,2}, \\dots, P_{i,N}$ ，其中  $P_{i,j}$  表示第  $i$  天第  $j$  种纪念品的价格。\n\n#### 【输出格式】\n\n输出文件名为 souvenir.out。\n\n输出仅一行，包含一个正整数，表示小伟在超能力消失后最多能拥有的金币数量。\n\n#### 【输入输出样例 1】\n\n| souvenir.in | souvenir.out |\n|-------------|--------------|\n| 6 1 100     | 305          |\n| 50          |              |\n| 20          |              |\n| 25          |              |\n| 20          |              |\n| 25          |              |\n| 50          |              |\n\n见选手目录下的 souvenir/souvenir1.in 和 souvenir/souvenir1.ans。\n\n#### 【输入输出样例 1 说明】\n\n最佳策略是：\n\n第二天花光所有 100 枚金币买入 5 个纪念品 1；\n\n第三天卖出 5 个纪念品 1，获得金币 125 枚；\n\n第四天买入 6 个纪念品 1，剩余 5 枚金币；\n\n第六天必须卖出所有纪念品换回 300 枚金币，第四天剩余 5 枚金币，共 305 枚金币。\n\n超能力消失后，小伟最多拥有 305 枚金币。\n\n#### 【输入输出样例 2】\n\n{6}------------------------------------------------\n\n| <b>souvenir.in</b>                          | <b>souvenir.out</b> |\n|---------------------------------------------|---------------------|\n| 3 3 100<br>10 20 15<br>15 17 13<br>15 25 16 | 217                 |\n\n见选手目录下的 souvenir/souvenir2.in 和 souvenir/souvenir2.ans。\n\n#### **【输入输出样例 2 说明】**\n\n最佳策略是：\n\n第一天花光所有金币买入 10 个纪念品 1；\n\n第二天卖出全部纪念品 1 得到 150 枚金币并买入 8 个纪念品 2 和 1 个纪念品 3，剩余 1 枚金币；\n\n第三天必须卖出所有纪念品换回 216 枚金币，第二天剩余 1 枚金币，共 217 枚金币。\n\n超能力消失后，小伟最多拥有 217 枚金币。\n\n#### **【输入输出样例 3】**\n\n见选手目录下的 souvenir/souvenir3.in 和 souvenir/souvenir3.ans。\n\n### **【数据规模与约定】**\n\n对于 10% 的数据， $T = 1$ 。\n\n对于 30% 的数据， $T \\leq 4$ ,  $N \\leq 4$ ,  $M \\leq 100$ ，所有价格  $10 \\leq P_{i,j} \\leq 100$ 。\n\n另有 15% 的数据， $T \\leq 100$ ,  $N = 1$ 。\n\n另有 15% 的数据， $T = 2$ ,  $N \\leq 100$ 。\n\n对于 100% 的数据， $T \\leq 100$ ,  $N \\leq 100$ ,  $M \\leq 10^3$ ，所有价格  $1 \\leq P_{i,j} \\leq 10^4$ ，数据保证任意时刻，小明手上的金币数不可能超过 $10^4$ 。\n\n{7}------------------------------------------------\n\n## --- 加工零件\n\n(work.cpp/c/pas)\n\n### 【问题描述】\n\n凯凯的工厂正在有条不紊地生产一种神奇的零件，神奇的零件的生产过程自然也很神奇。工厂里有  $n$  位工人，工人们从  $1 \\sim n$  编号。某些工人之间存在双向的零件传送带。保证每两名工人之间最多只存在一条传送带。\n\n如果  $x$  号工人想生产一个被加工到第  $L(L > 1)$  阶段的零件，则所有与  $x$  号工人有传送带直接相连的工人，都需要生产一个被加工到第  $L - 1$  阶段的零件（但  $x$  号工人自己无需生产第  $L - 1$  阶段的零件）。\n\n如果  $x$  号工人想生产一个被加工到第 1 阶段的零件，则所有与  $x$  号工人有传送带直接相连的工人，都需要为  $x$  号工人提供一个原材料。\n\n轩轩是 1 号工人。现在给出  $q$  张工单，第  $i$  张工单表示编号为  $a_i$  的工人想生产一个第  $L_i$  阶段的零件。轩轩想知道对于每张工单，他是否需要给别人提供原材料。他知道聪明的你一定可以帮他计算出来！\n\n#### 【输入格式】\n\n输入文件名为 work.in。\n\n第一行三个正整数  $n, m$  和  $q$ ，分别表示工人的数目、传送带的数目和工单的数目。\n\n接下来  $m$  行，每行两个正整数  $u$  和  $v$ ，表示编号为  $u$  和  $v$  的工人之间存在一条零件传输带。保证  $u \\neq v$ 。\n\n接下来  $q$  行，每行两个正整数  $a$  和  $L$ ，表示编号为  $a$  的工人想生产一个第  $L$  阶段的零件。\n\n#### 【输出格式】\n\n输出文件名为 work.out。\n\n共  $q$  行，每行一个字符串 “Yes” 或者 “No”。如果按照第  $i$  张工单生产，需要编号为 1 的轩轩提供原材料，则在第  $i$  行输出 “Yes”；否则在第  $i$  行输出 “No”。注意输出不含引号。\n\n#### 【输入输出样例 1】\n\n| work.in | work.out |\n|---------|----------|\n| 3 2 6   | No       |\n| 1 2     | Yes      |\n| 2 3     | No       |\n| 1 1     | Yes      |\n| 2 1     | No       |\n| 3 1     | Yes      |\n| 1 2     |          |\n| 2 2     |          |\n| 3 2     |          |\n\n见选手目录下的 work/work1.in 和 work/work1.ans。\n\n{8}------------------------------------------------\n\n#### 【输入输出样例 1 说明】\n\n![A graph with 3 nodes labeled 1, 2, and 3. Node 2 is at the top, connected to nodes 1 and 3 below it.](acfc53eca625d62b38aa2563efa95c3e_img.jpg)\n\n```\ngraph TD; 2((2)) --- 1((1)); 2 --- 3((3));\n```\n\nA graph with 3 nodes labeled 1, 2, and 3. Node 2 is at the top, connected to nodes 1 and 3 below it.\n\n编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。\n\n编号为 2 的工人想生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n\n编号为 3 的工人想生产第 1 阶段的零件，需要编号为 2 的工人提供原材料。\n\n编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n\n编号为 2 的工人想生产第 2 阶段的零件，需要编号为 1 和 3 的工人生产第 1 阶段的零件，他/她们都需要编号为 2 的工人提供原材料。\n\n编号为 3 的工人想生产第 2 阶段的零件，需要编号为 2 的工人生产第 1 阶段的零件，需要编号为 1 和 3 的工人提供原材料。\n\n#### 【输入输出样例 2】\n\n| work.in | work.out |\n|---------|----------|\n| 5 5 5   | No       |\n| 1 2     | Yes      |\n| 2 3     | No       |\n| 3 4     | Yes      |\n| 4 5     | Yes      |\n| 1 5     |          |\n| 1 1     |          |\n| 1 2     |          |\n| 1 3     |          |\n| 1 4     |          |\n| 1 5     |          |\n\n见选手目录下的 work/work2.in 和 work/work2.ans。\n\n#### 【输入输出样例 2 说明】\n\n![A graph with 5 nodes labeled 1, 2, 3, 4, and 5. Node 2 is at the top, connected to nodes 1 and 3. Node 1 is connected to node 5, and node 3 is connected to node 4. Node 5 is connected to node 4.](2ba086df3506f81bae3a9b53725dcfea_img.jpg)\n\n```\ngraph TD; 2((2)) --- 1((1)); 2 --- 3((3)); 1 --- 5((5)); 3 --- 4((4)); 5 --- 4;\n```\n\nA graph with 5 nodes labeled 1, 2, 3, 4, and 5. Node 2 is at the top, connected to nodes 1 and 3. Node 1 is connected to node 5, and node 3 is connected to node 4. Node 5 is connected to node 4.\n\n编号为 1 的工人想生产第 1 阶段的零件，需要编号为 2 和 5 的工人提供原材料。\n\n编号为 1 的工人想生产第 2 阶段的零件，需要编号为 2 和 5 的工人生产第 1 阶段的零件，需要编号为 1,3,4 的工人提供原材料。\n\n编号为 1 的工人想生产第 3 阶段的零件，需要编号为 2 和 5 的工人生产第 2 阶段\n\n{9}------------------------------------------------\n\n---\n\n的零件，需要编号为 1,3,4 的工人生产第 1 阶段的零件，需要编号为 2,3,4,5 的工人提供原材料。\n\n编号为 1 的工人想生产第 4 阶段的零件，需要编号为 2 和 5 的工人生产第 3 阶段的零件，需要编号为 1,3,4 的工人生产第 2 阶段的零件，需要编号为 2,3,4,5 的工人生产第 1 阶段的零件，需要全部工人提供原材料。\n\n编号为 1 的工人想生产第 5 阶段的零件，需要编号为 2 和 5 的工人生产第 4 阶段的零件，需要编号为 1,3,4 的工人生产第 3 阶段的零件，需要编号为 2,3,4,5 的工人生产第 2 阶段的零件，需要全部工人生产第 1 阶段的零件，需要全部工人提供原材料。\n\n#### 【输入输出样例 3】\n\n见选手目录下的 work/work3.in 和 work/work3.ans。\n\n### 【数据规模与约定】\n\n共 20 个测试点。\n\n$1 \\leq u, v, a \\leq n$ 。\n\n测试点 1~4,  $1 \\leq n, m \\leq 1000$ ,  $q = 3$ ,  $L = 1$ 。\n\n测试点 5~8,  $1 \\leq n, m \\leq 1000$ ,  $q = 3$ ,  $1 \\leq L \\leq 10$ 。\n\n测试点 9~12,  $1 \\leq n, m, L \\leq 1000$ ,  $1 \\leq q \\leq 100$ 。\n\n测试点 13~16,  $1 \\leq n, m, L \\leq 1000$ ,  $1 \\leq q \\leq 10^5$ 。\n\n测试点 17~20,  $1 \\leq n, m, q \\leq 10^5$ ,  $1 \\leq L \\leq 10^9$ 。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "acfc53eca625d62b38aa2563efa95c3e_img.jpg": "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",
+      "2ba086df3506f81bae3a9b53725dcfea_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 27
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 23
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 24
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 28
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 17
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 17
+        },
+        {
+          "page_id": 9,
+          "num_blocks": 14
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.767,
+    "page_count": 10,
+    "total_cost": 3.0,
+    "cost_breakdown": {
+      "final_cost_cents": 3.0
+    },
+    "runtime": 61.0493643283844,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.767,
+  "cost_breakdown": {
+    "final_cost_cents": 3.0
+  },
+  "page_count": 10,
+  "success": true,
+  "error": null,
+  "source": "CSP-J/2019/Round2/2019-CCF-CSP-J2.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "acfc53eca625d62b38aa2563efa95c3e_img.jpg",
+    "2ba086df3506f81bae3a9b53725dcfea_img.jpg"
+  ]
+}
