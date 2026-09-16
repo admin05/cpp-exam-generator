@@ -342,6 +342,77 @@ def h(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
+def question_source_label(question: dict) -> str:
+    competition = str(question.get("competition", ""))
+    source = str(question.get("source", ""))
+    match = re.search(r"CSP-(J|S)/(\d{4})/Round([12])", source)
+    if not match:
+        match = re.search(r"csp_([js])_round([12])-(\d{4})", str(question.get("id", "")), re.IGNORECASE)
+        if match:
+            level, round_number, year = match.groups()
+        else:
+            return "来源：CSP-J/S 题库"
+    else:
+        level, year, round_number = match.groups()
+    return f"来源：CSP-{level.upper()} 第{round_number}轮 · {year} 年"
+
+
+def _render_math(value: str) -> str:
+    value = h(value)
+    value = re.sub(
+        r"\\frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}",
+        lambda match: (
+            '<span class="math-frac"><span>'
+            f"{match.group(1)}</span><span>{match.group(2)}</span></span>"
+        ),
+        value,
+    )
+    replacements = {
+        r"\sim": "&sim;",
+        r"\times": "&times;",
+        r"\cdot": "&middot;",
+        r"\leq": "&le;",
+        r"\le": "&le;",
+        r"\geq": "&ge;",
+        r"\ge": "&ge;",
+        r"\neq": "&ne;",
+        r"\in": "&isin;",
+        r"\sqrt": "&radic;",
+        r"\pm": "&plusmn;",
+        r"\,": " ",
+    }
+    for source, target in replacements.items():
+        value = value.replace(source, target)
+    value = re.sub(r"\^\{([^{}]+)\}", r"<sup>\1</sup>", value)
+    value = re.sub(r"_\{([^{}]+)\}", r"<sub>\1</sub>", value)
+    value = re.sub(r"\^([A-Za-z0-9])", r"<sup>\1</sup>", value)
+    value = re.sub(r"_([A-Za-z0-9])", r"<sub>\1</sub>", value)
+    return value
+
+
+def render_markdown_text(value: object) -> str:
+    """Render the small Markdown/LaTeX subset used by the OCR question bank."""
+    text = str(value or "")
+    placeholders: list[str] = []
+
+    def capture(rendered: str) -> str:
+        placeholders.append(rendered)
+        return f"\x00{len(placeholders) - 1}\x00"
+
+    text = re.sub(
+        r"\$(.+?)\$|\\\((.+?)\\\)",
+        lambda match: capture(f'<span class="math">{_render_math(match.group(1) or match.group(2))}</span>'),
+        text,
+        flags=re.DOTALL,
+    )
+    text = re.sub(r"`([^`]+)`", lambda match: capture(f"<code>{h(match.group(1))}</code>"), text)
+    text = h(text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
+    for index, rendered in enumerate(placeholders):
+        text = text.replace(f"\x00{index}\x00", rendered)
+    return text.replace("\n", "<br>")
+
+
 def normalize_output(value: str) -> str:
     lines = value.replace("\r\n", "\n").replace("\r", "\n").strip().split("\n")
     return "\n".join(line.rstrip() for line in lines).strip()
@@ -1871,7 +1942,7 @@ def exam_page(exam_id: int) -> bytes:
                 f"""
                 <label class="option">
                   <input type="{input_type}" name="choice_{i}" value="{oi}">
-                  <span>{LETTERS[oi]}. {h(opt)}</span>
+                  <span>{LETTERS[oi]}. {render_markdown_text(opt)}</span>
                 </label>
                 """
             )
@@ -1880,7 +1951,8 @@ def exam_page(exam_id: int) -> bytes:
             {section_html}
             <section class="question-card" id="q{i}">
               <div class="q-head"><span>{type_label} {i}</span><small>{h(q["category"])} · {format_score(question_score(q))} 分</small></div>
-              <p>{h(q["stem"])}</p>
+              <div class="question-source">{h(question_source_label(q))}</div>
+              <p>{render_markdown_text(q["stem"])}</p>
               {render_question_html(q.get("content_html", ""))}
               {code_html}
               <div class="options">{''.join(opts)}</div>
@@ -1907,12 +1979,13 @@ def exam_page(exam_id: int) -> bytes:
             f"""
             <section class="question-card" id="p{pi}">
               <div class="q-head"><span>编程题 {pi}. {h(task["title"])}</span><small>{h(task["category"])} · {h(test_label)}</small></div>
-              <p>{h(task["description"])}</p>
+              <div class="question-source">{h(question_source_label(task))}</div>
+              <p>{render_markdown_text(task["description"])}</p>
               <div class="io-grid">
-                <div><b>输入格式</b><p>{h(task["input"])}</p></div>
-                <div><b>输出格式</b><p>{h(task["output"])}</p></div>
+                <div><b>输入格式</b><p>{render_markdown_text(task["input"])}</p></div>
+                <div><b>输出格式</b><p>{render_markdown_text(task["output"])}</p></div>
               </div>
-              <p class="hint">数据范围：{h(task["constraints"])}</p>
+              <p class="hint">数据范围：{render_markdown_text(task["constraints"])}</p>
               <p class="hint">{h(sample_note)}</p>
               <table class="samples"><thead><tr><th>#</th><th>公开输入</th><th>公开输出</th></tr></thead><tbody>{samples}</tbody></table>
               <label class="code-label">提交 C++17 代码
