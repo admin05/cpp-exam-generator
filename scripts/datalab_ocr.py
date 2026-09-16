@@ -52,6 +52,13 @@ def _redact(value: Any, secret: str) -> Any:
 
 
 def read_api_key(path: Path) -> str:
+    environment_key = os.environ.get("DATALAB_API_KEY")
+    if environment_key is not None:
+        key = environment_key.strip()
+        if not key:
+            raise DatalabError("环境变量 DATALAB_API_KEY 为空")
+        return key
+
     if not path.exists():
         raise DatalabError(f"OCR_KEY 不存在: {path}")
     if not path.is_file():

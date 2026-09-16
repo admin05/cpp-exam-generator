@@ -246,6 +246,39 @@ Datalab 账户及服务限制为准，每提交一个 PDF 都可能消耗额度�
 `model=chandra` 参数，因此脚本不会发送该参数，而是使用官方 Convert API 的
 `balanced` 模式。
 
+### GitHub Actions OCR
+
+仓库还提供了 `.github/workflows/datalab-ocr.yml`，用于在 GitHub Actions
+运行 OCR，不依赖本机。该工作流只有 `workflow_dispatch`，不会因 push、PR 或
+定时任务自动启动。使用前在 GitHub 仓库的 Settings → Secrets and variables →
+Actions 中新增名为 `DATALAB_API_KEY` 的 Secret；不要把 Key 写入仓库文件。
+手动运行时工作流固定从默认分支（当前为 `main`）读取题库 PDF。
+
+在 Actions 页面手动运行 `Datalab OCR` 时：
+
+1. 首次选择 `single`，在 `file` 中填写一个 PDF 的仓库相对路径，建议先使用默认的
+   `CSP/题库/CSP-J/2019/Round1/cspjs2019hj_cpp.pdf`。
+2. 如果该 PDF 已经有成功的 OCR 结果，勾选 `force` 才会真正重新调用 API；这会产生
+   新费用。确认单文件链路正常后，再选择 `batch` 处理全部 `CSP/题库` 子目录。
+3. `retry` 控制失败重试次数，`poll_interval` 控制异步状态轮询间隔。工作流会检查
+   Secret 是否存在，并且不会将 Secret 打印到日志。
+
+结果会按原 PDF 的相对目录写入单独的 `ocr-results` 分支，例如：
+
+```text
+CSP/题库/CSP-J/2019/Round1/cspjs2019hj_cpp.pdf
+ocr-results: CSP/题库OCR/CSP-J/2019/Round1/cspjs2019hj_cpp.md
+ocr-results: CSP/题库OCR/CSP-J/2019/Round1/cspjs2019hj_cpp.json
+```
+
+工作流会先恢复 `ocr-results` 分支已有结果，因此重复运行默认跳过已经成功的 PDF，
+并保留已完成文件。OCR 失败时不会写入误导性的成功 JSON；工作流仍会尽量发布本次
+运行中已经成功生成的结果，最后以失败状态结束，方便从失败处重跑。工作流需要仓库
+`contents: write` 权限，且 GitHub Actions 的运行时、Artifact/仓库大小限制与
+Datalab 的额度和速率限制是两套独立限制。Datalab Convert API 是异步处理，费用和
+额度以当前账户页面及官方服务限制为准；批量运行前请先用单文件验证，并谨慎使用
+`force`。
+
 ## Docker Compose 部署
 
 推荐本地构建部署：

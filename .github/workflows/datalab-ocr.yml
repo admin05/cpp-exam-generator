@@ -1,0 +1,145 @@
+name: Datalab OCR
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "处理一个 PDF 进行测试，或处理全部题库 PDF"
+        required: true
+        default: single
+        type: choice
+        options:
+          - single
+          - batch
+      file:
+        description: "single 模式下的仓库相对路径"
+        required: false
+        default: "CSP/题库/CSP-J/2019/Round1/cspjs2019hj_cpp.pdf"
+        type: string
+      retry:
+        description: "每个 PDF 失败后的重试次数"
+        required: true
+        default: "1"
+        type: number
+      poll_interval:
+        description: "Datalab 状态轮询间隔（秒）"
+        required: true
+        default: "10"
+        type: number
+      force:
+        description: "重新处理已经有成功结果的 PDF（会产生新的 API 费用）"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: datalab-ocr
+  cancel-in-progress: false
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      DATALAB_API_KEY: ${{ secrets.DATALAB_API_KEY }}
+      OCR_MODE: ${{ inputs.run_mode }}
+      OCR_FILE: ${{ inputs.file }}
+      OCR_RETRY: ${{ inputs.retry }}
+      OCR_POLL_INTERVAL: ${{ inputs.poll_interval }}
+      OCR_FORCE: ${{ inputs.force }}
+
+    steps:
+      - name: Check out source PDFs
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Restore existing OCR results
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin ocr-results >/dev/null 2>&1; then
+            git fetch --no-tags origin ocr-results
+            if git ls-tree -r --name-only origin/ocr-results -- CSP/题库OCR | grep -q .; then
+              git archive origin/ocr-results -- CSP/题库OCR | tar -xf -
+            fi
+          fi
+
+      - name: Run Datalab OCR
+        id: run-ocr
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATALAB_API_KEY:-}" ]]; then
+            echo "错误: GitHub 仓库 Secret DATALAB_API_KEY 未设置或为空。" >&2
+            exit 2
+          fi
+          args=(scripts/datalab_ocr.py --retry "$OCR_RETRY" --poll-interval "$OCR_POLL_INTERVAL")
+          if [[ "$OCR_MODE" == "single" ]]; then
+            if [[ -z "$OCR_FILE" ]]; then
+              echo "错误: single 模式必须填写 file。" >&2
+              exit 2
+            fi
+            args+=(--file "$OCR_FILE")
+          elif [[ "$OCR_MODE" == "batch" ]]; then
+            args+=(--input-dir "CSP/题库")
+          else
+            echo "错误: 未知的 run_mode: $OCR_MODE" >&2
+            exit 2
+          fi
+          if [[ "$OCR_FORCE" == "true" ]]; then
+            args+=(--force)
+          fi
+          python3 "${args[@]}"
+
+      - name: Publish results to ocr-results branch
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p CSP/题库OCR
+          if find CSP/题库OCR -type f -name 'OCR_KEY' -print -quit | grep -q .; then
+            echo "错误: 检测到 OCR_KEY，拒绝将其发布到 ocr-results 分支。" >&2
+            exit 1
+          fi
+
+          publish_index="${RUNNER_TEMP}/datalab-ocr-index"
+          base_commit=""
+          base_tree=""
+          if git show-ref --verify --quiet refs/remotes/origin/ocr-results; then
+            base_commit="$(git rev-parse refs/remotes/origin/ocr-results)"
+            base_tree="$(git rev-parse "${base_commit}^{tree}")"
+            GIT_INDEX_FILE="$publish_index" git read-tree "$base_commit"
+          else
+            GIT_INDEX_FILE="$publish_index" git read-tree --empty
+          fi
+
+          GIT_INDEX_FILE="$publish_index" git add -f CSP/题库OCR
+          result_tree="$(GIT_INDEX_FILE="$publish_index" git write-tree)"
+          if [[ -n "$base_tree" && "$result_tree" == "$base_tree" ]]; then
+            echo "没有新的 OCR 结果需要提交。"
+          else
+            commit_args=()
+            if [[ -n "$base_commit" ]]; then
+              commit_args=(-p "$base_commit")
+            fi
+            result_commit="$(git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit-tree "$result_tree" "${commit_args[@]}" <<< 'chore: publish Datalab OCR results')"
+            git push origin "$result_commit:refs/heads/ocr-results"
+          fi
+
+      - name: Fail if OCR failed
+        if: ${{ steps.run-ocr.outcome != 'success' }}
+        shell: bash
+        run: |
+          echo "Datalab OCR 失败；已发布本次运行中已有的成功结果（如果有）。" >&2
+          exit 1
