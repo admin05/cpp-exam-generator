@@ -1,0 +1,201 @@
+{
+  "request_id": "Chys13Iu3p02REWh6VQBhg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:01:22.440058+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "Chys13Iu3p02REWh6VQBhg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/Chys13Iu3p02REWh6VQBhg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第八届全国青少年信息学奥林匹克联赛(NOIP2002)初赛试题\n\n(提高组 BASIC 语言 二小时完成)\n\n●● 全部试题答案均要求写在答卷纸上,写在试卷纸上一律无效 ●●\n\n一. 选择一个正确答案代码(A/B/C/D),填入每题的括号内(每题 1.5 分,多选无分,共 30 分)\n\n- 微型计算机的问世是由于( )的出现。  \nA)中小规模集成电路 B)晶体管电路 C)(超)大规模集成电路 D)电子管电路\n- 中央处理器(CPU)能访问的最大存储器容量取决于( )。  \nA)地址总线 B)数据总线 C)控制总线 D)实际内存容量\n- 十进制数 11/128 可用二进制数码序列表示为:( )。  \nA)1011/1000000 B)1011/100000000 C)0.001011 D)0.0001011\n- 算式  $(2047)_{10} - (3FF)_{16} + (2000)_8$  的结果是( )。  \nA)(2048)<sub>10</sub> B)(2049)<sub>10</sub> C)(3746)<sub>8</sub> D)(1AF7)<sub>16</sub>\n- 已知  $x = (0.1011010)_2$ , 则  $[x/2]_{\\text{补}} = ( )_2$ 。  \nA)0.1011101 B)11110110 C)0.0101101 D)0.0100110\n- Ip v4 地址是由( )位二进制数码表示的。  \nA)16 B)32 C)24 D)8\n- 计算机病毒传染的必要条件是:( )。  \nA)在内存中运行病毒程序 B)对磁盘进行读写操作  \nC)在内存中运行含有病毒的可执行程序 D)复制文件\n- 在磁盘上建立子目录有许多优点,下列描述中不属于建立子目录优点的是( )。  \nA)便于文件管理 B)解决根目录中目录项个数有限问题  \nC)加快文件查找速度 D)节省磁盘使用空间\n- 在使用 E-mail 前,需要对 Outlook 进行设置,其中 ISP 接收电子邮件的服务器称为( )服务器。  \nA)POP3 B)SMTP C)DNS D)FTP\n- 多媒体计算机是指( )计算机。  \nA)专供家庭使用的 B)装有 CD-ROM 的  \nB)连接在网络上的高级 D)具有处理文字、图形、声音、影像等信息的\n- 微型计算机中,( )的存取速度最快。  \nA)高速缓存 B)外存储器 C)寄存器 D)内存储器\n- 资源管理器的目录前图标中增加“+”号,这个符号的意思是( )。  \nA)该目录下的子目录已经展开 B)该目录下还有子目录未展开\n\n{1}------------------------------------------------\n\n- C)该目录下没有子目录 D)该目录为空目录\n- 13. 在 WORD 文档编辑中实现图文混合排版时,关于文本框的下列叙述正确的是( )。  \nA)文本框中的图形没有办法和文档中输入文字叠加在一起,只能放在文档的不同位置  \nB)文本框中的图形不可以衬于文档中输入的文字的下方。  \nC)通过文本框,可以实现图形和文档中输入的文字的叠加,也可实现文字环绕。  \nD)将图形放入文本框后,文档中输入的文字不能环绕图形。\n- 14. 一个向量第一个元素的存储地址是 100,每个元素的长度是 2,则第 5 个元素的地址是( )。  \nA)110 B)108 C)100 D)109\n- 15. 已知  $A=35H$ ,则  $A \\wedge 05H \\vee A \\wedge 30H$  的结果是:( )。  \nA)30H B)05H C)35H D)53H\n- 16. 设有一个含有 13 个元素的 Hash 表(0~12),Hash 函数是: $H(key) = key \\% 13$ ;其中%是求余数运算。用线性探查法解决冲突,则对于序列(2、8、31、20、19、18、53、27),18 应放在第几号格中( )。  \nA)5 B)9 C)4 D)0\n- 17. 按照二叉树的定义,具有 3 个结点的二叉树有( )种。  \nA)3 B)4 C)5 D)6\n- 18. 在一个有向图中,所有顶点的入度之和等于所有顶点的出度之和的( )倍。  \nA)1/2 B)1 C)2 D)4\n- 19. 要使 1...8 号格子的访问顺序为:8、2、6、5、7、3、1、4,则下图中的空格中应填入( )。\n\n|   |   |   |    |   |   |   |   |\n|---|---|---|----|---|---|---|---|\n| 1 | 2 | 3 | 4  | 5 | 6 | 7 | 8 |\n| 4 | 6 | 1 | -1 | 7 |   | 3 | 2 |\n\n- A)6 B)0 C)5 D)3\n- 20. 设栈 S 和队列 Q 的初始状态为空,元素  $e_1, e_2, e_3, e_4, e_5, e_6$  依次通过栈 S,一个元素出栈后即进入队列 Q,若出队的顺序为  $e_2, e_4, e_3, e_6, e_5, e_1$ ,则栈 S 的容量至少应该为( )。  \nA)2 B)3 C)4 D)5\n\n## 二. 问题求解:(6+8=14 分)\n\n- 1. 在书架上放有编号为 1,2,...,n 的 n 本书。现将 n 本书全部取下然后再放回去,当放回去时要求每本书都不能放在原来的位置上。例如:n=3 时:  \n原来位置为: 1 2 3  \n放回去时只能为: 3 1 2 或 2 3 1 这两种  \n问题:求当 n=5 时满足以上条件的放法共有多少种?(不用列出每种放法)\n- 2. 设有一棵 k 叉树,其中只有度为 0 和 k 两种结点,设  $n_0, n_k$  分别表示度为 0 和度为 k 的结点个数,试求出  $n_0$  和  $n_k$  之间的关系( $n_0$ =数学表达式,数学表达式仅含  $n_k, k$  和数字)。\n\n{2}------------------------------------------------\n\n## 三. 阅读程序, 写出正确的程序运行结果:\n\n1. 10 DIM CH\\$ (20)\n\n20 INPUT N\n\n30 FOR I = 1 TO N: READ CH\\$ (I): NEXT I\n\n40 JR = 1: JW = N: JB = N\n\n50 IF JR > JW THEN 160\n\n60 IF CH\\$ (JW) <> \"R\" THEN 100\n\n70 CH1\\$ = CH\\$ (JR): CH\\$ (JR) = CH\\$ (JW)\n\n80 CH\\$ (JW) = CH1\\$: JR = JR + 1\n\n90 GOTO 150\n\n100 IF CH\\$ (JW) <> \"W\" THEN 130\n\n110 JW = JW - 1\n\n120 GOTO 150\n\n130 CH1\\$ = CH\\$ (JW): CH\\$ (JW) = CH\\$ (JB)\n\n140 CH\\$ (JB) = CH1\\$: JW = JW - 1: JB = JB - 1\n\n150 GOTO 50\n\n160 FOR I = 1 TO N\n\n170 PRINT CH\\$ (I);\n\n180 NEXT I\n\n190 DATA R,B,R,B,W,W,R,B,B,R\n\n输入: 10\n\n输出:\n\n2. 10 DIM A(10)\n\n20 SP1 = 1: A(1) = 2: J = 2\n\n30 IF SP1 >= 10 THEN 120\n\n40 J = J + 1: P = 1\n\n50 FOR I = 2 TO J - 1\n\n60 IF J MOD I <> 0 THEN 80\n\n70 P = 0\n\n80 NEXT I\n\n90 IF P = 0 THEN 110\n\n100 SP1 = SP1 + 1: A(SP1) = J\n\n110 GOTO 30\n\n120 J = 2: P = 1\n\n130 IF P = 0 THEN 220\n\n140 S = 1\n\n150 FOR I = 1 TO J: S = S \\* A(I): NEXT I\n\n{3}------------------------------------------------\n\n```\n160 S = S + 1\n170 FOR I = 2 TO S - 1\n180 IF S MOD I <> 0 THEN 195\n190 P = 0\n195 NEXT I\n200 J = J + 1\n210 GOTO 130\n220 PRINT S\n230 END\n```\n\n输出:\n\n```\n3. 10 MIN = 10000; X = 0\n20 IF X >= 15 THEN 90\n30 D1 = SQR(9 + (X - 3) * (X - 3))\n40 D2 = SQR(36 + (15 - X) * (15 - X))\n50 IF (D1 + D2) >= MIN THEN 70\n60 MIN = D1 + D2\n70 X = X + 0.001\n80 GOTO 20\n90 PRINT MIN\n100 END\n```\n\n输出:\n\n## 四. 完善程序: (15 分 + 15 分 共 30 分)\n\n1. 问题描述: 工厂在每天的生产中, 需要一定数量的零件, 同时也可以知道每天生产一个零件的生产单价。在 N 天的生产中, 当天生产的零件可以满足当天的需要, 若当天用不完, 可以放到下一天去使用, 但要收取每个零件的保管费, 不同的天收取的费用也不相同。\n\n问题求解: 求得一个 N 天的生产计划(即 N 天中每天应生产零件个数), 使总的费用最少。\n\n输入: N (天数  $N \\leq 29$ )  \n 每天的需求量 (N 个整数)  \n 每天生产零件的单价(N 个整数)  \n 每天保管零件的单价(N 个整数)\n\n输出: 每天的生产零件个数(N 个整数)\n\n例如: 当 N=3 时, 其需要量与费用如下:\n\n{4}------------------------------------------------\n\n|      | 第一天 | 第二天 | 第三天 |\n|------|-----|-----|-----|\n| 需要量  | 25  | 15  | 30  |\n| 生产单价 | 20  | 30  | 32  |\n| 保管单价 | 5   | 10  | 0   |\n\n生产计划的安排可以有许多方案,如下面的三种:\n\n| 第一天 | 第二天 | 第三天 | 总的费用                                 |\n|-----|-----|-----|--------------------------------------|\n| 25  | 15  | 30  | $25 * 20 + 15 * 30 + 30 * 32 = 1910$ |\n| 40  | 0   | 30  | $40 * 20 + 15 * 5 + 30 * 32 = 1835$  |\n| 70  | 0   | 0   | $70 * 20 + 45 * 5 + 30 * 10 = 1925$  |\n\n程序说明:\n\n- b(n): 存放每天的需求量\n- c(n): 每天生产零件的单价\n- d(n): 每天保管零件的单价\n- e(n): 生产计划\n\n程序:\n\n```\n\n10 DIM B(30), C(30), D(30), E(30)\n20 INPUT N\n30 FOR I = 1 TO N: INPUT B(I), C(I), D(I): NEXT I\n40 FOR I = 1 TO N: E(I) = 0: NEXT I\n50 ① = 10000: C(N + 2) = 0: B(N + 1) = 0: J0 = 1\n60 IF J0 > N THEN 130\n70 YU = C(J0): J1 = J0: S = B(J0)\n80 IF ② THEN 110\n90 ③: J1 = J1 + 1: S = S + B(J1)\n100 GOTO 80\n110 ④: J0 = J1 + 1\n120 GOTO 60\n130 FOR I = 1 TO N\n140 ⑤\n150 NEXT I\n160 END\n    \n```\n\n2. 问题描述:有 n 种基本物质(n≤10),分别记为 P<sub>1</sub>, P<sub>2</sub>, …, P<sub>n</sub>,用 n 种基本物质构造物品,这些物品使用在 k 个不同地区(k≤20),每个地区对物品提出自己的要求,这些要求用一个 n 位的数表示:α<sub>1</sub>α<sub>2</sub>…α<sub>n</sub>,其中:\n\n- α<sub>i</sub> = 1 表示所需物质中必须有第 i 种基本物质\n- = -1 表示所需物质中必须不能有第 i 种基本物质\n- = 0 无所谓\n\n问题求解:当 k 个不同地区要求给出之后,给出一种方案,指出哪些物质被使用,哪些物质不被\n\n{5}------------------------------------------------\n\n使用。\n\n### 程序说明:\n\n|                              |                            |\n|------------------------------|----------------------------|\n| 数组 $b(1), b(2), \\dots, b(n)$ | 表示某种物品                     |\n| $a(1..k, 1..n)$              | 记录 $k$ 个地区对物品的要求,其中:       |\n| $a(i,j) = 1$                 | 表示第 $i$ 个地区对第 $j$ 种物品是需要的  |\n| $a(i,j) = 0$                 | 表示第 $i$ 个地区对第 $j$ 种物品是无所谓的 |\n| $a(i,j) = -1$                | 表示第 $i$ 个地区对第 $j$ 种物品是不需要的 |\n\n### 程序:\n\n```\n\n10 DIM B(20), A(20, 10)\n20 INPUT N, K\n30 FOR I = 1 TO K\n40 FOR J = 1 TO N\n50 INPUT A(I, J)\n60 NEXT J\n65 NEXT I\n70 FOR I = 0 TO N\n74 B(I) = 0\n76 NEXT I\n80 P = 1\n90 IF ① THEN 220\n100 J = N\n110 IF B(J) = 0 THEN 140\n120 J = J - 1\n130 GOTO 110\n140 ②\n150 FOR I = J + 1 TO N\n152 B(I) = 0\n155 NEXT I\n160 ③\n170 FOR I = 1 TO K\n180 FOR J = 1 TO N\n190 IF (A(I, J) = 1) AND (B(J) = 0) OR ④ THEN P = 1\n200 NEXT J\n205 NEXT I\n210 GOTO 90\n220 IF ⑤ THEN 270\n230 FOR I = 1 TO N\n240 IF B(I) = 1 THEN PRINT \"YES\", I ELSE PRINT \"NO\", I\n250 NEXT I\n260 GOTO 280\n270 PRINT \"NO FIND\"\n280 END\n  \n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 43
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 15
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 11
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.467,
+      "page_count": 6,
+      "total_cost": 1.8,
+      "cost_breakdown": {
+        "final_cost_cents": 1.8
+      },
+      "runtime": 11.963981628417969,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第八届全国青少年信息学奥林匹克联赛(NOIP2002)初赛试题\n\n(提高组 BASIC 语言 二小时完成)\n\n●● 全部试题答案均要求写在答卷纸上,写在试卷纸上一律无效 ●●\n\n一. 选择一个正确答案代码(A/B/C/D),填入每题的括号内(每题 1.5 分,多选无分,共 30 分)\n\n- 微型计算机的问世是由于( )的出现。  \nA)中小规模集成电路 B)晶体管电路 C)(超)大规模集成电路 D)电子管电路\n- 中央处理器(CPU)能访问的最大存储器容量取决于( )。  \nA)地址总线 B)数据总线 C)控制总线 D)实际内存容量\n- 十进制数 11/128 可用二进制数码序列表示为:( )。  \nA)1011/1000000 B)1011/100000000 C)0.001011 D)0.0001011\n- 算式  $(2047)_{10} - (3FF)_{16} + (2000)_8$  的结果是( )。  \nA)(2048)<sub>10</sub> B)(2049)<sub>10</sub> C)(3746)<sub>8</sub> D)(1AF7)<sub>16</sub>\n- 已知  $x = (0.1011010)_2$ , 则  $[x/2]_{\\text{补}} = ( )_2$ 。  \nA)0.1011101 B)11110110 C)0.0101101 D)0.0100110\n- Ip v4 地址是由( )位二进制数码表示的。  \nA)16 B)32 C)24 D)8\n- 计算机病毒传染的必要条件是:( )。  \nA)在内存中运行病毒程序 B)对磁盘进行读写操作  \nC)在内存中运行含有病毒的可执行程序 D)复制文件\n- 在磁盘上建立子目录有许多优点,下列描述中不属于建立子目录优点的是( )。  \nA)便于文件管理 B)解决根目录中目录项个数有限问题  \nC)加快文件查找速度 D)节省磁盘使用空间\n- 在使用 E-mail 前,需要对 Outlook 进行设置,其中 ISP 接收电子邮件的服务器称为( )服务器。  \nA)POP3 B)SMTP C)DNS D)FTP\n- 多媒体计算机是指( )计算机。  \nA)专供家庭使用的 B)装有 CD-ROM 的  \nB)连接在网络上的高级 D)具有处理文字、图形、声音、影像等信息的\n- 微型计算机中,( )的存取速度最快。  \nA)高速缓存 B)外存储器 C)寄存器 D)内存储器\n- 资源管理器的目录前图标中增加“+”号,这个符号的意思是( )。  \nA)该目录下的子目录已经展开 B)该目录下还有子目录未展开\n\n{1}------------------------------------------------\n\n- C)该目录下没有子目录 D)该目录为空目录\n- 13. 在 WORD 文档编辑中实现图文混合排版时,关于文本框的下列叙述正确的是( )。  \nA)文本框中的图形没有办法和文档中输入文字叠加在一起,只能放在文档的不同位置  \nB)文本框中的图形不可以衬于文档中输入的文字的下方。  \nC)通过文本框,可以实现图形和文档中输入的文字的叠加,也可实现文字环绕。  \nD)将图形放入文本框后,文档中输入的文字不能环绕图形。\n- 14. 一个向量第一个元素的存储地址是 100,每个元素的长度是 2,则第 5 个元素的地址是( )。  \nA)110 B)108 C)100 D)109\n- 15. 已知  $A=35H$ ,则  $A \\wedge 05H \\vee A \\wedge 30H$  的结果是:( )。  \nA)30H B)05H C)35H D)53H\n- 16. 设有一个含有 13 个元素的 Hash 表(0~12),Hash 函数是: $H(key) = key \\% 13$ ;其中%是求余数运算。用线性探查法解决冲突,则对于序列(2、8、31、20、19、18、53、27),18 应放在第几号格中( )。  \nA)5 B)9 C)4 D)0\n- 17. 按照二叉树的定义,具有 3 个结点的二叉树有( )种。  \nA)3 B)4 C)5 D)6\n- 18. 在一个有向图中,所有顶点的入度之和等于所有顶点的出度之和的( )倍。  \nA)1/2 B)1 C)2 D)4\n- 19. 要使 1...8 号格子的访问顺序为:8、2、6、5、7、3、1、4,则下图中的空格中应填入( )。\n\n|   |   |   |    |   |   |   |   |\n|---|---|---|----|---|---|---|---|\n| 1 | 2 | 3 | 4  | 5 | 6 | 7 | 8 |\n| 4 | 6 | 1 | -1 | 7 |   | 3 | 2 |\n\n- A)6 B)0 C)5 D)3\n- 20. 设栈 S 和队列 Q 的初始状态为空,元素  $e_1, e_2, e_3, e_4, e_5, e_6$  依次通过栈 S,一个元素出栈后即进入队列 Q,若出队的顺序为  $e_2, e_4, e_3, e_6, e_5, e_1$ ,则栈 S 的容量至少应该为( )。  \nA)2 B)3 C)4 D)5\n\n## 二. 问题求解:(6+8=14 分)\n\n- 1. 在书架上放有编号为 1,2,...,n 的 n 本书。现将 n 本书全部取下然后再放回去,当放回去时要求每本书都不能放在原来的位置上。例如:n=3 时:  \n原来位置为: 1 2 3  \n放回去时只能为: 3 1 2 或 2 3 1 这两种  \n问题:求当 n=5 时满足以上条件的放法共有多少种?(不用列出每种放法)\n- 2. 设有一棵 k 叉树,其中只有度为 0 和 k 两种结点,设  $n_0, n_k$  分别表示度为 0 和度为 k 的结点个数,试求出  $n_0$  和  $n_k$  之间的关系( $n_0$ =数学表达式,数学表达式仅含  $n_k, k$  和数字)。\n\n{2}------------------------------------------------\n\n## 三. 阅读程序, 写出正确的程序运行结果:\n\n1. 10 DIM CH\\$ (20)\n\n20 INPUT N\n\n30 FOR I = 1 TO N: READ CH\\$ (I): NEXT I\n\n40 JR = 1: JW = N: JB = N\n\n50 IF JR > JW THEN 160\n\n60 IF CH\\$ (JW) <> \"R\" THEN 100\n\n70 CH1\\$ = CH\\$ (JR): CH\\$ (JR) = CH\\$ (JW)\n\n80 CH\\$ (JW) = CH1\\$: JR = JR + 1\n\n90 GOTO 150\n\n100 IF CH\\$ (JW) <> \"W\" THEN 130\n\n110 JW = JW - 1\n\n120 GOTO 150\n\n130 CH1\\$ = CH\\$ (JW): CH\\$ (JW) = CH\\$ (JB)\n\n140 CH\\$ (JB) = CH1\\$: JW = JW - 1: JB = JB - 1\n\n150 GOTO 50\n\n160 FOR I = 1 TO N\n\n170 PRINT CH\\$ (I);\n\n180 NEXT I\n\n190 DATA R,B,R,B,W,W,R,B,B,R\n\n输入: 10\n\n输出:\n\n2. 10 DIM A(10)\n\n20 SP1 = 1: A(1) = 2: J = 2\n\n30 IF SP1 >= 10 THEN 120\n\n40 J = J + 1: P = 1\n\n50 FOR I = 2 TO J - 1\n\n60 IF J MOD I <> 0 THEN 80\n\n70 P = 0\n\n80 NEXT I\n\n90 IF P = 0 THEN 110\n\n100 SP1 = SP1 + 1: A(SP1) = J\n\n110 GOTO 30\n\n120 J = 2: P = 1\n\n130 IF P = 0 THEN 220\n\n140 S = 1\n\n150 FOR I = 1 TO J: S = S \\* A(I): NEXT I\n\n{3}------------------------------------------------\n\n```\n160 S = S + 1\n170 FOR I = 2 TO S - 1\n180 IF S MOD I <> 0 THEN 195\n190 P = 0\n195 NEXT I\n200 J = J + 1\n210 GOTO 130\n220 PRINT S\n230 END\n```\n\n输出:\n\n```\n3. 10 MIN = 10000; X = 0\n20 IF X >= 15 THEN 90\n30 D1 = SQR(9 + (X - 3) * (X - 3))\n40 D2 = SQR(36 + (15 - X) * (15 - X))\n50 IF (D1 + D2) >= MIN THEN 70\n60 MIN = D1 + D2\n70 X = X + 0.001\n80 GOTO 20\n90 PRINT MIN\n100 END\n```\n\n输出:\n\n## 四. 完善程序: (15 分 + 15 分 共 30 分)\n\n1. 问题描述: 工厂在每天的生产中, 需要一定数量的零件, 同时也可以知道每天生产一个零件的生产单价。在 N 天的生产中, 当天生产的零件可以满足当天的需要, 若当天用不完, 可以放到下一天去使用, 但要收取每个零件的保管费, 不同的天收取的费用也不相同。\n\n问题求解: 求得一个 N 天的生产计划(即 N 天中每天应生产零件个数), 使总的费用最少。\n\n输入: N (天数  $N \\leq 29$ )  \n 每天的需求量 (N 个整数)  \n 每天生产零件的单价(N 个整数)  \n 每天保管零件的单价(N 个整数)\n\n输出: 每天的生产零件个数(N 个整数)\n\n例如: 当 N=3 时, 其需要量与费用如下:\n\n{4}------------------------------------------------\n\n|      | 第一天 | 第二天 | 第三天 |\n|------|-----|-----|-----|\n| 需要量  | 25  | 15  | 30  |\n| 生产单价 | 20  | 30  | 32  |\n| 保管单价 | 5   | 10  | 0   |\n\n生产计划的安排可以有许多方案,如下面的三种:\n\n| 第一天 | 第二天 | 第三天 | 总的费用                                 |\n|-----|-----|-----|--------------------------------------|\n| 25  | 15  | 30  | $25 * 20 + 15 * 30 + 30 * 32 = 1910$ |\n| 40  | 0   | 30  | $40 * 20 + 15 * 5 + 30 * 32 = 1835$  |\n| 70  | 0   | 0   | $70 * 20 + 45 * 5 + 30 * 10 = 1925$  |\n\n程序说明:\n\n- b(n): 存放每天的需求量\n- c(n): 每天生产零件的单价\n- d(n): 每天保管零件的单价\n- e(n): 生产计划\n\n程序:\n\n```\n\n10 DIM B(30), C(30), D(30), E(30)\n20 INPUT N\n30 FOR I = 1 TO N: INPUT B(I), C(I), D(I): NEXT I\n40 FOR I = 1 TO N: E(I) = 0: NEXT I\n50 ① = 10000: C(N + 2) = 0: B(N + 1) = 0: J0 = 1\n60 IF J0 > N THEN 130\n70 YU = C(J0): J1 = J0: S = B(J0)\n80 IF ② THEN 110\n90 ③: J1 = J1 + 1: S = S + B(J1)\n100 GOTO 80\n110 ④: J0 = J1 + 1\n120 GOTO 60\n130 FOR I = 1 TO N\n140 ⑤\n150 NEXT I\n160 END\n    \n```\n\n2. 问题描述:有 n 种基本物质(n≤10),分别记为 P<sub>1</sub>, P<sub>2</sub>, …, P<sub>n</sub>,用 n 种基本物质构造物品,这些物品使用在 k 个不同地区(k≤20),每个地区对物品提出自己的要求,这些要求用一个 n 位的数表示:α<sub>1</sub>α<sub>2</sub>…α<sub>n</sub>,其中:\n\n- α<sub>i</sub> = 1 表示所需物质中必须有第 i 种基本物质\n- = -1 表示所需物质中必须不能有第 i 种基本物质\n- = 0 无所谓\n\n问题求解:当 k 个不同地区要求给出之后,给出一种方案,指出哪些物质被使用,哪些物质不被\n\n{5}------------------------------------------------\n\n使用。\n\n### 程序说明:\n\n|                              |                            |\n|------------------------------|----------------------------|\n| 数组 $b(1), b(2), \\dots, b(n)$ | 表示某种物品                     |\n| $a(1..k, 1..n)$              | 记录 $k$ 个地区对物品的要求,其中:       |\n| $a(i,j) = 1$                 | 表示第 $i$ 个地区对第 $j$ 种物品是需要的  |\n| $a(i,j) = 0$                 | 表示第 $i$ 个地区对第 $j$ 种物品是无所谓的 |\n| $a(i,j) = -1$                | 表示第 $i$ 个地区对第 $j$ 种物品是不需要的 |\n\n### 程序:\n\n```\n\n10 DIM B(20), A(20, 10)\n20 INPUT N, K\n30 FOR I = 1 TO K\n40 FOR J = 1 TO N\n50 INPUT A(I, J)\n60 NEXT J\n65 NEXT I\n70 FOR I = 0 TO N\n74 B(I) = 0\n76 NEXT I\n80 P = 1\n90 IF ① THEN 220\n100 J = N\n110 IF B(J) = 0 THEN 140\n120 J = J - 1\n130 GOTO 110\n140 ②\n150 FOR I = J + 1 TO N\n152 B(I) = 0\n155 NEXT I\n160 ③\n170 FOR I = 1 TO K\n180 FOR J = 1 TO N\n190 IF (A(I, J) = 1) AND (B(J) = 0) OR ④ THEN P = 1\n200 NEXT J\n205 NEXT I\n210 GOTO 90\n220 IF ⑤ THEN 270\n230 FOR I = 1 TO N\n240 IF B(I) = 1 THEN PRINT \"YES\", I ELSE PRINT \"NO\", I\n250 NEXT I\n260 GOTO 280\n270 PRINT \"NO FIND\"\n280 END\n  \n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 43
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 15
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 11
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.467,
+    "page_count": 6,
+    "total_cost": 1.8,
+    "cost_breakdown": {
+      "final_cost_cents": 1.8
+    },
+    "runtime": 11.963981628417969,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.467,
+  "cost_breakdown": {
+    "final_cost_cents": 1.8
+  },
+  "page_count": 6,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2002/NOIP2002提高组初赛(Basic).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

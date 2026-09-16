@@ -1,0 +1,204 @@
+{
+  "request_id": "orymfEJZHei736lu2eS9tg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:35:05.083784+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "orymfEJZHei736lu2eS9tg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/orymfEJZHei736lu2eS9tg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 智破连环阵\n\n## 【问题描述】\n\nB 国在耗资百亿元之后终于研究出了新式武器——连环阵（Zenith Protected Linked Hybrid Zone）。传说中，连环阵是一种永不停滞的自发性智能武器。但经过 A 国间谍的侦察发现，连环阵其实是由  $M$  个编号为 1, 2, ...,  $M$  的独立武器组成的。最初，1 号武器发挥着攻击作用，其他武器都处在**无敌自卫**状态。以后，一旦第  $i$ （ $1 \\le i < M$ ）号武器被消灭，1 秒种以后第  $i+1$  号武器就自动从**无敌自卫**状态变成攻击状态。当第  $M$  号武器被消灭以后，这个造价昂贵的连环阵就被摧毁了。\n\n为了彻底打击 B 国科学家，A 国军事部长打算用最廉价的武器——炸弹来消灭连环阵。经过长时间的精密探测，A 国科学家们掌握了连环阵中  $M$  个武器的平面坐标，然后确定了  $n$  个炸弹的平面坐标并且安放了炸弹。每个炸弹持续爆炸时间为 5 分钟。在引爆时间内，每枚炸弹都可以在**瞬间**消灭离它平面距离不超过  $k$  的、处在攻击状态的 B 国武器。和连环阵类似，最初  $a_1$  号炸弹持续引爆 5 分钟时间，然后  $a_2$  号炸弹持续引爆 5 分钟时间，接着  $a_3$  号炸弹引爆……以此类推，直到连环阵被摧毁。\n\n显然，不同的序列  $a_1, a_2, a_3 \\dots$  消灭连环阵的效果也不同。好的序列可以在仅使用较少炸弹的情况下就将连环阵摧毁；坏的序列可能在使用完所有炸弹后仍无法将连环阵摧毁。现在，请你决定一个最优序列  $a_1, a_2, a_3 \\dots$  使得在第  $a_x$  号炸弹引爆的时间内连环阵被摧毁。这里的  $x$  应当尽量小。\n\n## 【输入文件】\n\n输入文件 zplhz.in 第一行包含三个整数： $M$ 、 $n$  和  $k$ （ $1 \\le M, n \\le 100,\\ 1 \\le k \\le 1000$ ），分别表示 B 国连环阵由  $M$  个武器组成，A 国有  $n$  个炸弹可以使用，炸弹攻击范围为  $k$ 。以下  $M$  行，每行由一对整数  $x_i, y_i$ （ $0 \\le x_i, y_i \\le 10000$ ）组成，表示第  $i$ （ $1 \\le i \\le M$ ）号武器的平面坐标。再接下来  $n$  行，每行由一对整数  $u_i, v_i$ （ $0 \\le u_i, v_i \\le 10000$ ）组成，表示第  $i$ （ $1 \\le i \\le n$ ）号炸弹的平面坐标。输入数据保证随机并且无误。\n\n## 【输出文件】\n\n输出文件 chain.out 的第一行包含一个整数  $x$ ，表示实际使用的炸弹数。第二行包括  $x$  个整数，依次表示  $a_1, a_2, \\dots, a_x$ 。输入数据保证有解。\n\n## 【样例输入 1】\n\n{1}------------------------------------------------\n\n```\n0 6\n6 6\n6 0\n0 0\n1 5\n0 3\n1 1\n0 0\n```\n\n## **【样例输出 1】**\n\n```\n2\n1 3\n```\n\n## **【样例输入 2】**\n\n```\n10 10 45\n41 67\n34 0\n69 24\n78 58\n62 64\n5 45\n81 27\n61 91\n95 42\n27 36\n91 4\n2 53\n92 82\n21 16\n18 95\n47 26\n71 38\n69 12\n67 99\n35 94\n```\n\n## **【样例输出 2】**\n\n```\n5\n6 2 1 3 4\n```\n\n{2}------------------------------------------------\n\n## 【评分标准】\n\n如果你的输出不合法，则只能得 0 分。否则设已知最优解为  $best$ ，你的答案为  $ans$ ，则你的得分取决于二者之差  $ans-best$ ：\n\n$$score = \\begin{cases} 18, & ans - best < -32 \\\\ 17, & -32 \\leq ans - best \\leq -16 \\\\ 15, & -15 \\leq ans - best \\leq -7 \\\\ 13, & -6 \\leq ans - best \\leq -4 \\\\ 12, & -3 \\leq ans - best \\leq -2 \\\\ 11, & ans - best = -1 \\\\ 10, & ans - best = 0 \\\\ 9, & ans - best = 1 \\\\ 8, & 2 \\leq ans - best \\leq 3 \\\\ 7, & 4 \\leq ans - best \\leq 6 \\\\ 5, & 7 \\leq ans - best \\leq 15 \\\\ 3, & 16 \\leq ans - best \\leq 32 \\\\ 2, & ans - best > 32 \\end{cases}$$\n\n注意如果按照上面的计算方法，你在一个测试点中的得分可能超过 10。但如果你在这道题目中的得分如果计算出来大于 100 分，我们将会按照 100 分来算。所以该题目的最大的分还是 100 分。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 7
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 3,
+      "total_cost": 1.0,
+      "cost_breakdown": {
+        "final_cost_cents": 1.0
+      },
+      "runtime": 24.61072540283203,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 智破连环阵\n\n## 【问题描述】\n\nB 国在耗资百亿元之后终于研究出了新式武器——连环阵（Zenith Protected Linked Hybrid Zone）。传说中，连环阵是一种永不停滞的自发性智能武器。但经过 A 国间谍的侦察发现，连环阵其实是由  $M$  个编号为 1, 2, ...,  $M$  的独立武器组成的。最初，1 号武器发挥着攻击作用，其他武器都处在**无敌自卫**状态。以后，一旦第  $i$ （ $1 \\le i < M$ ）号武器被消灭，1 秒种以后第  $i+1$  号武器就自动从**无敌自卫**状态变成攻击状态。当第  $M$  号武器被消灭以后，这个造价昂贵的连环阵就被摧毁了。\n\n为了彻底打击 B 国科学家，A 国军事部长打算用最廉价的武器——炸弹来消灭连环阵。经过长时间的精密探测，A 国科学家们掌握了连环阵中  $M$  个武器的平面坐标，然后确定了  $n$  个炸弹的平面坐标并且安放了炸弹。每个炸弹持续爆炸时间为 5 分钟。在引爆时间内，每枚炸弹都可以在**瞬间**消灭离它平面距离不超过  $k$  的、处在攻击状态的 B 国武器。和连环阵类似，最初  $a_1$  号炸弹持续引爆 5 分钟时间，然后  $a_2$  号炸弹持续引爆 5 分钟时间，接着  $a_3$  号炸弹引爆……以此类推，直到连环阵被摧毁。\n\n显然，不同的序列  $a_1, a_2, a_3 \\dots$  消灭连环阵的效果也不同。好的序列可以在仅使用较少炸弹的情况下就将连环阵摧毁；坏的序列可能在使用完所有炸弹后仍无法将连环阵摧毁。现在，请你决定一个最优序列  $a_1, a_2, a_3 \\dots$  使得在第  $a_x$  号炸弹引爆的时间内连环阵被摧毁。这里的  $x$  应当尽量小。\n\n## 【输入文件】\n\n输入文件 zplhz.in 第一行包含三个整数： $M$ 、 $n$  和  $k$ （ $1 \\le M, n \\le 100,\\ 1 \\le k \\le 1000$ ），分别表示 B 国连环阵由  $M$  个武器组成，A 国有  $n$  个炸弹可以使用，炸弹攻击范围为  $k$ 。以下  $M$  行，每行由一对整数  $x_i, y_i$ （ $0 \\le x_i, y_i \\le 10000$ ）组成，表示第  $i$ （ $1 \\le i \\le M$ ）号武器的平面坐标。再接下来  $n$  行，每行由一对整数  $u_i, v_i$ （ $0 \\le u_i, v_i \\le 10000$ ）组成，表示第  $i$ （ $1 \\le i \\le n$ ）号炸弹的平面坐标。输入数据保证随机并且无误。\n\n## 【输出文件】\n\n输出文件 chain.out 的第一行包含一个整数  $x$ ，表示实际使用的炸弹数。第二行包括  $x$  个整数，依次表示  $a_1, a_2, \\dots, a_x$ 。输入数据保证有解。\n\n## 【样例输入 1】\n\n{1}------------------------------------------------\n\n```\n0 6\n6 6\n6 0\n0 0\n1 5\n0 3\n1 1\n0 0\n```\n\n## **【样例输出 1】**\n\n```\n2\n1 3\n```\n\n## **【样例输入 2】**\n\n```\n10 10 45\n41 67\n34 0\n69 24\n78 58\n62 64\n5 45\n81 27\n61 91\n95 42\n27 36\n91 4\n2 53\n92 82\n21 16\n18 95\n47 26\n71 38\n69 12\n67 99\n35 94\n```\n\n## **【样例输出 2】**\n\n```\n5\n6 2 1 3 4\n```\n\n{2}------------------------------------------------\n\n## 【评分标准】\n\n如果你的输出不合法，则只能得 0 分。否则设已知最优解为  $best$ ，你的答案为  $ans$ ，则你的得分取决于二者之差  $ans-best$ ：\n\n$$score = \\begin{cases} 18, & ans - best < -32 \\\\ 17, & -32 \\leq ans - best \\leq -16 \\\\ 15, & -15 \\leq ans - best \\leq -7 \\\\ 13, & -6 \\leq ans - best \\leq -4 \\\\ 12, & -3 \\leq ans - best \\leq -2 \\\\ 11, & ans - best = -1 \\\\ 10, & ans - best = 0 \\\\ 9, & ans - best = 1 \\\\ 8, & 2 \\leq ans - best \\leq 3 \\\\ 7, & 4 \\leq ans - best \\leq 6 \\\\ 5, & 7 \\leq ans - best \\leq 15 \\\\ 3, & 16 \\leq ans - best \\leq 32 \\\\ 2, & ans - best > 32 \\end{cases}$$\n\n注意如果按照上面的计算方法，你在一个测试点中的得分可能超过 10。但如果你在这道题目中的得分如果计算出来大于 100 分，我们将会按照 100 分来算。所以该题目的最大的分还是 100 分。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 7
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 3,
+    "total_cost": 1.0,
+    "cost_breakdown": {
+      "final_cost_cents": 1.0
+    },
+    "runtime": 24.61072540283203,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 1.0
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "NOI/2003/day2/zplhz.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,158 @@
+{
+  "request_id": "Tqv03_8_9J8lBtnCam30ew",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:57:48.961069+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "Tqv03_8_9J8lBtnCam30ew",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/Tqv03_8_9J8lBtnCam30ew",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2021 山东省小学组二轮试题(上半场)\n\n考试时间：2021 年 10 月 24 日上午 8：30—10：00\n\n## 题目一览\n\n| 题目名称   | 疯狂的数列 (crazy) | 发送快递(express) |\n|--------|---------------|---------------|\n| 程序名称   | Crazy. cpp    | Express. cpp  |\n| 输入文件名  | crazy. in     | express. in   |\n| 输出文件名  | crazy. out    | express. out  |\n| 测试点数量  | 10            | 10            |\n| 每测试点时限 | 1 秒           | 1 秒           |\n| 每测试点分值 | 10            | 10            |\n| 内存上限   | 256M          | 256M          |\n\n## 注意事项：\n\n- 1、文件名（程序名和输入输出文件名）必须使用英文小写\n- 2、c/c++中函数 main()的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n\n{1}------------------------------------------------\n\n## 1、疯狂的数列（crazy）\n\n### 【问题描述】\n\n在你的帮助下，达克终于打开了石门，进去后发现里面有个面目狰狞的妖怪。这只妖怪正怒视着轩轩，然后一言不发的在地上写了一串数字：1，12，123，1234，12345，……，12345678910，1234567891011，……。然后告诉达克：“你要是能知道这个数列的前  $n$  项里有多少项能被 3 整除，我就放你过去，否则，嘿嘿……吃了你！”。看来这个妖怪的数学不错。不过数学更是达克的强项，很快就算出了答案。你知道怎么算吗？\n\n#### 【输入】\n\n输入文件名为 crazy.in\n\n一个整数  $n$ 。\n\n### 【输出】\n\n输出文件名为 crazy.out\n\n一个整数，表示这个数列的前  $n$  项里有多少项能被 3 整除。\n\n### 【输入输出样例】\n\n|          |           |\n|----------|-----------|\n| crazy.in | crazy.out |\n| 5        | 3         |\n\n### 【数据范围和限制】\n\n对于 30% 的数据，满足  $n \\leq 10$ 。\n\n对于 100% 的数据，满足  $n \\leq 2^{31}-1$ 。\n\n{2}------------------------------------------------\n\n## 2、发送快递(express)\n\n### 【问题描述】\n\n小华有  $n$  本不同的书（编号为 1, 2, 3, ...,  $n$ ），重量分别是  $a_1$ 、 $a_2$ 、……、 $a_n$  公斤（重量可以相同）。他想把这些书以快递的方式发给自己的好朋友，要求每个包裹的重量不能超过  $m$  公斤（可以等于  $m$  公斤），并且小华想把其中一些书（一组书，用书的编号给出来）放在一个包裹里，应该如何打包才能使得快递件数最少。\n\n#### 【输入】\n\n输入文件名为 express.in\n\n第一行，包含两个整数  $n$ 、 $m$ ，之间用一个空格隔开，分别表示书的数量和快递包裹的最大重量。\n\n第二行  $n$  个整数  $a_i$ ，表示  $n$  本书的重量，每两个整数之间用一个空格隔开。\n\n第三行一个整数  $s$ ，表示一共有  $s$  组书（每组书需要打包在一起）。如果  $s=0$ ，则无此限制。数据保证每组书的重量不超过  $m$ 。\n\n第四行开始共  $s$  行，每行若干个整数，表示必须放在一个包裹里的书的编号，每两个整数之间用一个空格隔开。\n\n#### 【输出】\n\n输出文件名为 express.out\n\n输出文件一行，一个整数，即快递最少件数。\n\n{3}------------------------------------------------\n\n### 【输入输出样例 1】\n\n| express.in             | express.out |\n|------------------------|-------------|\n| 5 10<br>8 4 8 2 5<br>0 | 3           |\n\n#### 【输入输出样例 1 说明】\n\n第 1 本和第 4 本打包，重量是 10 公斤。第 2 本和第 5 本打包，重量是 9 公斤。第 3 本单独打包，重量是 8 公斤。所以一共 3 件快递。\n\n### 【输入输出样例 2】\n\n| express.in                                                  | express.out |\n|-------------------------------------------------------------|-------------|\n| 10 80<br>49 11 44 18 28 24 19 10 27 29<br>2<br>1 5<br>4 8 2 | 4           |\n\n#### 【输入输出样例 2 说明】\n\n第 1 本和第 5 本打包，第 2 本、第 4 本、第 8 本和第 10 本打包，第 3 本和第 7 本打包，第 6 本和第 9 本打包。所以一共 4 件快递。\n\n### 【数据范围和限制】\n\n对于 40% 的数据， $1 \\leq n \\leq 10^5$ ， $1 \\leq a_i \\leq 100$ ， $s=0$ ， $m$  的值保证有解。\n\n对于 100% 的数据， $1 \\leq n \\leq 10^5$ ， $1 \\leq a_i \\leq 100$ ， $0 \\leq s \\leq 100$ ， $m$  的值保证有解。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 15
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 12
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 4,
+      "total_cost": 1.2,
+      "cost_breakdown": {
+        "final_cost_cents": 1.2
+      },
+      "runtime": 5.4503114223480225,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2021 山东省小学组二轮试题(上半场)\n\n考试时间：2021 年 10 月 24 日上午 8：30—10：00\n\n## 题目一览\n\n| 题目名称   | 疯狂的数列 (crazy) | 发送快递(express) |\n|--------|---------------|---------------|\n| 程序名称   | Crazy. cpp    | Express. cpp  |\n| 输入文件名  | crazy. in     | express. in   |\n| 输出文件名  | crazy. out    | express. out  |\n| 测试点数量  | 10            | 10            |\n| 每测试点时限 | 1 秒           | 1 秒           |\n| 每测试点分值 | 10            | 10            |\n| 内存上限   | 256M          | 256M          |\n\n## 注意事项：\n\n- 1、文件名（程序名和输入输出文件名）必须使用英文小写\n- 2、c/c++中函数 main()的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n\n{1}------------------------------------------------\n\n## 1、疯狂的数列（crazy）\n\n### 【问题描述】\n\n在你的帮助下，达克终于打开了石门，进去后发现里面有个面目狰狞的妖怪。这只妖怪正怒视着轩轩，然后一言不发的在地上写了一串数字：1，12，123，1234，12345，……，12345678910，1234567891011，……。然后告诉达克：“你要是能知道这个数列的前  $n$  项里有多少项能被 3 整除，我就放你过去，否则，嘿嘿……吃了你！”。看来这个妖怪的数学不错。不过数学更是达克的强项，很快就算出了答案。你知道怎么算吗？\n\n#### 【输入】\n\n输入文件名为 crazy.in\n\n一个整数  $n$ 。\n\n### 【输出】\n\n输出文件名为 crazy.out\n\n一个整数，表示这个数列的前  $n$  项里有多少项能被 3 整除。\n\n### 【输入输出样例】\n\n|          |           |\n|----------|-----------|\n| crazy.in | crazy.out |\n| 5        | 3         |\n\n### 【数据范围和限制】\n\n对于 30% 的数据，满足  $n \\leq 10$ 。\n\n对于 100% 的数据，满足  $n \\leq 2^{31}-1$ 。\n\n{2}------------------------------------------------\n\n## 2、发送快递(express)\n\n### 【问题描述】\n\n小华有  $n$  本不同的书（编号为 1, 2, 3, ...,  $n$ ），重量分别是  $a_1$ 、 $a_2$ 、……、 $a_n$  公斤（重量可以相同）。他想把这些书以快递的方式发给自己的好朋友，要求每个包裹的重量不能超过  $m$  公斤（可以等于  $m$  公斤），并且小华想把其中一些书（一组书，用书的编号给出来）放在一个包裹里，应该如何打包才能使得快递件数最少。\n\n#### 【输入】\n\n输入文件名为 express.in\n\n第一行，包含两个整数  $n$ 、 $m$ ，之间用一个空格隔开，分别表示书的数量和快递包裹的最大重量。\n\n第二行  $n$  个整数  $a_i$ ，表示  $n$  本书的重量，每两个整数之间用一个空格隔开。\n\n第三行一个整数  $s$ ，表示一共有  $s$  组书（每组书需要打包在一起）。如果  $s=0$ ，则无此限制。数据保证每组书的重量不超过  $m$ 。\n\n第四行开始共  $s$  行，每行若干个整数，表示必须放在一个包裹里的书的编号，每两个整数之间用一个空格隔开。\n\n#### 【输出】\n\n输出文件名为 express.out\n\n输出文件一行，一个整数，即快递最少件数。\n\n{3}------------------------------------------------\n\n### 【输入输出样例 1】\n\n| express.in             | express.out |\n|------------------------|-------------|\n| 5 10<br>8 4 8 2 5<br>0 | 3           |\n\n#### 【输入输出样例 1 说明】\n\n第 1 本和第 4 本打包，重量是 10 公斤。第 2 本和第 5 本打包，重量是 9 公斤。第 3 本单独打包，重量是 8 公斤。所以一共 3 件快递。\n\n### 【输入输出样例 2】\n\n| express.in                                                  | express.out |\n|-------------------------------------------------------------|-------------|\n| 10 80<br>49 11 44 18 28 24 19 10 27 29<br>2<br>1 5<br>4 8 2 | 4           |\n\n#### 【输入输出样例 2 说明】\n\n第 1 本和第 5 本打包，第 2 本、第 4 本、第 8 本和第 10 本打包，第 3 本和第 7 本打包，第 6 本和第 9 本打包。所以一共 4 件快递。\n\n### 【数据范围和限制】\n\n对于 40% 的数据， $1 \\leq n \\leq 10^5$ ， $1 \\leq a_i \\leq 100$ ， $s=0$ ， $m$  的值保证有解。\n\n对于 100% 的数据， $1 \\leq n \\leq 10^5$ ， $1 \\leq a_i \\leq 100$ ， $0 \\leq s \\leq 100$ ， $m$  的值保证有解。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 15
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 12
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 4,
+    "total_cost": 1.2,
+    "cost_breakdown": {
+      "final_cost_cents": 1.2
+    },
+    "runtime": 5.4503114223480225,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.2
+  },
+  "page_count": 4,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2021/Round2/CSP-X2021二轮认证山东小学组试题（上半场).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

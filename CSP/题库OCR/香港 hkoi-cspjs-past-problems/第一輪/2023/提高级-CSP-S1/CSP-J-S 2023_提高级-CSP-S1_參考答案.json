@@ -1,0 +1,134 @@
+{
+  "request_id": "oaMZAX2A0d6niH-_SEY9mA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T04:13:09.454320+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "oaMZAX2A0d6niH-_SEY9mA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/oaMZAX2A0d6niH-_SEY9mA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-S 2023 第一轮认证答案\n\nB A A C B A C B\n\nA C A C C B A\n\n✓ × ✓ × B D\n\n× × ✓ D B B\n\n✓ ✓ ✓ C B B\n\nB A A D C\n\nD B A C A",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 8
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 2.9303300380706787,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-S 2023 第一轮认证答案\n\nB A A C B A C B\n\nA C A C C B A\n\n✓ × ✓ × B D\n\n× × ✓ D B B\n\n✓ ✓ ✓ C B B\n\nB A A D C\n\nD B A C A",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 8
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 2.9303300380706787,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2023/提高级-CSP-S1/CSP-J-S 2023_提高级-CSP-S1_參考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

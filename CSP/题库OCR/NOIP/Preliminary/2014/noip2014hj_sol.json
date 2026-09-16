@@ -1,0 +1,188 @@
+{
+  "request_id": "yXqMuGRr-tPPvhgWFIoFDg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:27:33.423573+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "yXqMuGRr-tPPvhgWFIoFDg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/yXqMuGRr-tPPvhgWFIoFDg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十届全国青少年信息学奥林匹克联赛初赛普及组参考答案\n\n## 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分）\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| B  | D  | D  | D  | C  | B  | A  | A  | B  | B  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| D  | C  | C  | C  | B  | A  | C  | B  | B  | C  |\n\n## 二、问题求解（共 2 题，每题 5 分，共计 10 分；每题全部答对得 5 分，没有部分分）\n\n- 18\n- 11\n\n## 三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- Ans = 9\n- 11\n- HELLO, MY NAME IS LOSTMONKEY.\n- 10\n\n## 四、完善程序（共计 28 分，以下各程序填空可能还有一些等价的写法，由各省赛区组织本省专家审定及上机验证，可以不上报 CCF NOI 科学委员会复核）\n\n|    |     | Pascal 语言                        | C++语言                              | C 语言 | 分值 |\n|----|-----|----------------------------------|------------------------------------|------|----|\n| 1. | (1) | or                               |                                    |      | 3  |\n|    | (2) | j:=j+1 或 inc(j)                  | j++ 或 j=j+1 或 ++j                  |      | 3  |\n|    | (3) | j                                |                                    |      | 3  |\n|    | (4) | s[i]                             |                                    |      | 3  |\n| 2. | (1) | [1,1]                            | [1][1]                             |      | 3  |\n|    | (2) | rowsum[i,0]:=0                   | rowsum[i][0]=0                     |      | 3  |\n|    | (3) | rowsum[i,j-1]+matrix[i,j]        | rowsum[i][j-1]+matrix[i][j]        |      | 3  |\n|    | (4) | area:=0                          | area=0                             |      | 3  |\n|    | (5) | rowsum[i,last]-rowsum[i,first-1] | rowsum[i][last]-rowsum[i][first-1] |      | 4  |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 9
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.667,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 22.01773715019226,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十届全国青少年信息学奥林匹克联赛初赛普及组参考答案\n\n## 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分）\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| B  | D  | D  | D  | C  | B  | A  | A  | B  | B  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| D  | C  | C  | C  | B  | A  | C  | B  | B  | C  |\n\n## 二、问题求解（共 2 题，每题 5 分，共计 10 分；每题全部答对得 5 分，没有部分分）\n\n- 18\n- 11\n\n## 三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- Ans = 9\n- 11\n- HELLO, MY NAME IS LOSTMONKEY.\n- 10\n\n## 四、完善程序（共计 28 分，以下各程序填空可能还有一些等价的写法，由各省赛区组织本省专家审定及上机验证，可以不上报 CCF NOI 科学委员会复核）\n\n|    |     | Pascal 语言                        | C++语言                              | C 语言 | 分值 |\n|----|-----|----------------------------------|------------------------------------|------|----|\n| 1. | (1) | or                               |                                    |      | 3  |\n|    | (2) | j:=j+1 或 inc(j)                  | j++ 或 j=j+1 或 ++j                  |      | 3  |\n|    | (3) | j                                |                                    |      | 3  |\n|    | (4) | s[i]                             |                                    |      | 3  |\n| 2. | (1) | [1,1]                            | [1][1]                             |      | 3  |\n|    | (2) | rowsum[i,0]:=0                   | rowsum[i][0]=0                     |      | 3  |\n|    | (3) | rowsum[i,j-1]+matrix[i,j]        | rowsum[i][j-1]+matrix[i][j]        |      | 3  |\n|    | (4) | area:=0                          | area=0                             |      | 3  |\n|    | (5) | rowsum[i,last]-rowsum[i,first-1] | rowsum[i][last]-rowsum[i][first-1] |      | 4  |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 9
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.667,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 22.01773715019226,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.667,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2014/noip2014hj_sol.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

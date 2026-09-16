@@ -1,0 +1,379 @@
+{
+  "request_id": "iKcYU3WUFATTMrjuJBD6-A",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:04:06.584806+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "iKcYU3WUFATTMrjuJBD6-A",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/iKcYU3WUFATTMrjuJBD6-A",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十一届全国青少年信息学奥林匹克联赛初赛试题\n\n( 普及组 C 语言 二小时完成 )\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n## 一. 选择一个正确答案代码 (A/B/C/D/E), 填入每题的括号内 (每题1.5分, 共30分)\n\n- 在字符串 “ababacbabcbdecced” 中出现次数最多的字母出现了 ( ) 次。  \nA. 6    B. 5    C. 4    D. 3    E. 2\n- 设全集  $I = \\{a, b, c, d, e, f, g, h\\}$ , 集合  $A = \\{a, b, c, d, e, f\\}$ ,  $B = \\{c, d, e\\}$ ,  $C = \\{a, d\\}$ , 那么集合  $A \\ll B \\ll \\sim C$  为 ( )。  \nA.  $\\{c, e\\}$     B.  $\\{d, e\\}$     C.  $\\{e\\}$     D.  $\\{c, d, e\\}$     E.  $\\{d, f\\}$\n- 和十进制数 23 的值相等的二进制数是 ( )。  \nA. 10110    B. 11011    C. 11011    D. 10111    E. 10011\n- 完全二叉树的结点个数为 11, 则它的叶结点个数为 ( )。  \nA. 4    B. 3    C. 5    D. 2    E. 6\n- 平面上有五个点  $A(5, 3)$ ,  $B(3, 5)$ ,  $C(2, 1)$ ,  $D(3, 3)$ ,  $E(5, 1)$ 。以这五点作为完全图  $G$  的顶点, 每两点之间的直线距离是图  $G$  中对应边的权值。以下哪条边不是图  $G$  的最小生成树中的边 ( )。  \nA. AD    B. BD    C. CD    D. DE    E. EA\n- Intel 的首颗 16 位处理器是 ( )。  \nA. 8088    B. 80386    C. 80486    D. 8086    E. Pentium\n- 处理器 A 每秒处理的指令数是处理器 B 的 2 倍。某一特定程序 P 分别编译为处理器 A 和处理器 B 的指令, 编译结果处理器 A 的指令数是处理器 B 的 4 倍。已知程序 P 在处理器 A 上执行需要 1 个小时, 那么在输入相同的情况下, 程序 P 在处理器 B 上执行需要 ( ) 小时。  \nA. 4    B. 2    C. 1    D. 1/2    E. 1/4\n- 以下哪个不是计算机的输出设备 ( )。  \nA. 音箱    B. 显示器    C. 打印机    D. 扫描仪    E. 绘图仪\n- 下列活动中不属于信息学奥赛的系列活动的是 ( )。  \nA. NOIP    B. NOI    C. IOI    D. 冬令营    E. 程序员等级考试\n- 以下断电之后仍能保存数据的是 ( )。\n\n{1}------------------------------------------------\n\n- A. 硬盘 B. 寄存器 C. 显存 D. 内存 E. 高速缓存\n- 11. 以下哪个软件不是即时通信软件（ ）。  \nA. 网易泡泡 B. MSN Messenger C. Google Talk D. 3DS Max E. QQ\n- 12. 下列关于高级语言的说法错误的是（ ）。  \nA. Fortran 是历史上的第一个面向科学计算的高级语言  \nB. Pascal 和 C 都是编译执行的高级语言  \nC. C++ 是历史上的第一个支持面向对象的语言  \nD. 编译器将高级语言程序转变为目标代码  \nE. 高级语言程序比汇编语言程序更容易从一种计算机移植到另一种计算机上\n- 13. 下列设备不具有计算功能的是（ ）。  \nA. 笔记本电脑 B. 掌上电脑 C. 智能手机  \nD. 电子计算器 E. 液晶显示器\n- 14. 常见的邮件传输服务器使用（ ）协议接收邮件。  \nA. HTTP B. SMTP C. TCP D. FTP E. POP3\n- 15. 下列浏览器中，由微软公司开发的浏览器是（ ）。  \nA. Internet Explore B. Netscape C. Opera D. Firefox E. Mozilla\n- 16. 一位艺术史学家有 20000 幅真彩色图像，每幅图像约占 3M 空间。如果将这些图像以位图形式保存在 CD 光盘上（一张 CD 光盘的容量按 600M 计算），大约需要（ ）张 CD 光盘。  \nA. 1 B. 10 C. 100 D. 1000 E. 10000\n- 17. 设  $A = \\text{true}$ ,  $B = \\text{false}$ ,  $C = \\text{false}$ ,  $D = \\text{true}$ ，以下逻辑运算表达式值为真的是（ ）。  \nA.  $(A \\wedge B) \\vee (C \\wedge D)$  B.  $((A \\wedge B) \\vee C) \\wedge D$  C.  $A \\wedge ((B \\vee C) \\wedge D)$   \nD.  $(A \\wedge (B \\vee C)) \\vee D$  E.  $(A \\vee B) \\wedge (C \\wedge D)$\n- 18.  $(3725)_8 + (B)_{16}$  的运算结果是（ ）。  \nA.  $(3736)_8$  B.  $(2016)_{10}$  C.  $(1111110000)_2$  D.  $(3006)_{10}$  E.  $(7B0)_{16}$\n- 19. 二叉树 T 的宽度优先遍历序列为 A B C D E F G H I，已知 A 是 C 的父结点，D 是 G 的父结点，F 是 I 的父结点，树中所有结点的最大深度为 3（根结点深度设为 0），可知 F 的父结点是（ ）。  \nA. 无法确定 B. B C. C D. D E. E\n- 20. 设栈 S 的初始状态为空，元素 a, b, c, d, e, f, g 依次入栈，以下出栈序列不可能出现的是（ ）。  \nA. a, b, c, e, d, f, g B. b, c, a, f, e, g, d C. a, e, d, c, b, f, g  \nD. d, c, f, e, b, a, g E. g, e, f, d, c, b, a\n\n{2}------------------------------------------------\n\n## 二. 问题求解 （请在空格处填上答案，每空5分，共10分）\n\n1. 将数组{32, 74, 25, 53, 28, 43, 86, 47}中的元素按从小到大的顺序排列，每次可以交换任意两个元素，最少需要交换\\_\\_\\_\\_\\_次。\n2. 有3个课外小组：物理组，化学组和生物组。今有张、王、李、赵、陈5名同学，已知张、王为物理组成员，张、李、赵为化学组成员，李、赵、陈为生物组成员。如果要在3个小组中分别选出3位组长，一位同学最多只能担任一个小组的组长，共有\\_\\_\\_\\_\\_种选择方案。\n\n## 三. 阅读程序（共4题，每题8分，共计32分）\n\n```\n1. #include <stdio.h>\nint main() {\n    int a, b;\n    scanf(\"%d\", &a);\n    b = (a * (a * a)) + 1;\n    if (b%3 == 0) b = b / 3;\n    if (b%5 == 0) b = b / 5;\n    if (b%7 == 0) b = b / 7;\n    if (b%9 == 0) b = b / 9;\n    if (b%11 == 0) b = b / 11;\n    if (b%13 == 0) b = b / 13;\n    if (b%15 == 0) b = b / 15;\n    printf(\"%d \\n\", (100 * a - b) / 2);\n    return 0;\n}\n```\n\n输入: 10\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include <stdio.h>\nint main() {\n    char str[20] = \"Today-is-terrible!\";\n    int i;\n    for (i = 6; i <= 10; i++)\n        if (str[i] == '-') str[i - 1] = 'x';\n    for (i = 12; i >= 0; i--)\n        if (str[i] == 't') str[i + 1] = 'e';\n    printf(\"%s\\n\", str);\n    return 0;\n}\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n3. #include <stdio.h>\n```\n\n{3}------------------------------------------------\n\n```\n\nint main() {\n    int a, b, c, p, q, r[3];\n    scanf(\"%d%d%d\", &a, &b, &c);\n    p = a / b / c;\n    q = b - c + a + p;\n    r[0] = a * p / q * q;\n    r[1] = r[0] * (r[0] - 300);\n    if (3 * q - p % 3 <= r[0] && r[2] == r[2])\n        r[1] = r[r[0] / p % 2];\n    else\n        r[1] = q % p;\n    printf(\"%d\\n\", r[0] - r[1]);\n    return 0;\n}\n\n```\n\n输入: 100 7 3\n\n输出: \\_\\_\\_\\_\\_\n\n```\n\n4. #include<stdio.h>\n   #include<string.h>\n   int main(){\n       char str[60];\n       int len, i, j, chr[26];\n       char mmin = 'z';\n       scanf(\"%s\", str);\n       len = strlen(str);\n       for (i = len - 1; i >= 1; i--)\n           if (str[i - 1] < str[i]) break;\n       if (i == 0) {\n           printf(\"No result!\\n\"); return 0;\n       }\n       for (j = 0; j < i - 1; j++) putchar(str[j]);\n       memset(chr, 0, sizeof(chr));\n       for (j = i; j < len; j++) {\n           if (str[j] > str[i - 1] && str[j] < mmin)\n               mmin = str[j];\n           chr[str[j] - 'a']++;\n       }\n       chr[mmin - 'a']--;\n       chr[str[i - 1] - 'a']++;\n       putchar(mmin);\n       for(i = 0; i < 26; i++)\n           for(j = 0; j < chr[i]; j++)\n               putchar(i + 'a');\n       putchar('\\n');\n   }\n\n```\n\n{4}------------------------------------------------\n\n```\n\n    return 0;\n}\n输入: zzyzcccbbbaaa\n输出: _____\n\n```\n\n## 四. 完善程序 (前 4 空, 每空 2 分, 后 5 空, 每空 4 分, 共 28 分)\n\n### 1. 判断质数\n\n#### 题目描述:\n\n给出一个正整数, 判断这个数是否是质数。\n\n#### 输入:\n\n一个正整数  $n$  ( $1 \\leq n \\leq 10000$ )。\n\n#### 输出:\n\n如果  $n$  是质数, 输出 \"YES\"; 否则, 输出 \"NO\"。\n\n##### 输入样例:\n\n10\n\n##### 输出样例:\n\nNO\n\n#### 程序:\n\n```\n\n#include <stdio.h>\nint main() {\n    int ①;\n    scanf(\"%d\", &n);\n    if (n == 2) puts(②);\n    else if (③ || n % 2 == 0) puts(\"NO\");\n    else {\n        i = 3;\n        while (i * i <= n) {\n            if (④) {\n                puts(\"NO\"); return 0;\n            }\n            i = i + 2;\n        }\n        puts(\"YES\");\n    }\n    return 0;\n}\n\n```\n\n### 2. 木材加工\n\n#### 题目描述:\n\n木材厂有一些原木, 现在想把这些木头切割成一些长度相同的小段木头, 需要得到的小段的数目是给定的。当然, 我们希望得到的小段越长越好, 你的任务是计算能够得到的小段木头的最大长度。\n\n木头长度的单位是 cm。原木的长度都是正整数, 我们要求切割得到的小段木头的长度\n\n{5}------------------------------------------------\n\n也是正整数。\n\n输入：\n\n第一行是两个正整数 $N$ 和 $K$ ( $1 \\leq N \\leq 10000$ ,  $1 \\leq K \\leq 10000$ )， $N$ 是原木的数目， $K$ 是需要得到的小段的数目。\n\n接下来的 $N$ 行，每行有一个1到10000之间的正整数，表示一根原木的长度。\n\n输出：\n\n输出能够切割得到的小段的最大长度。如果连1cm长的小段都切不出来，输出“0”。\n\n输入样例：\n\n```\n3 7\n232\n124\n456\n```\n\n输出样例：\n\n```\n114\n```\n\n程序：\n\n```\n#include <stdio.h>\nint n, k, len[10000];\nint isok(int t) {\n    int num = 0, i;\n    for (i = 0; i < n; i++) {\n        if (num >= k) break;\n        num = ①;\n    }\n    if (②) return 1;\n    else return 0;\n}\nint main() {\n    int i, left, right, mid;\n    scanf(\"%d%d\", &n, &k);\n    right = 0;\n    for (i = 0; i < n; i++) {\n        scanf(\"%d\", &(len[i]));\n        if (right < len[i]) right = len[i];\n    }\n    right++;\n    ③;\n    while (④ < right) {\n        mid = (left + right) / 2;\n        if (⑤) right = mid;\n        else left = mid;\n    }\n    printf (\"%d\\n\", left);\n    return 0;\n}\n```\n\n{6}------------------------------------------------\n\n赛区 市 学校 姓名\n\n密 封 线\n\n# 第十一届全国青少年信息学奥林匹克联赛初赛试题普及组答卷纸\n\n| 阅 卷 记 录 |    |    |    |    |    |    |     |    |    |    |        |    |     |    |\n|---------|----|----|----|----|----|----|-----|----|----|----|--------|----|-----|----|\n| 总阅卷人    |    |    |    |    |    |    |     |    |    |    | 总 得 分  |    |     |    |\n| 第 一 大 题 |    |    |    |    |    |    | 得 分 |    |    |    | 第二大题得分 |    |     |    |\n| 题号      | 1  | 2  | 3  | 4  | 5  | 6  | 7   | 8  | 9  | 10 | 第三大题得分 |    |     |    |\n| 得分      |    |    |    |    |    |    |     |    |    |    | 1)     | 2) | 3)  | 4) |\n| 题号      | 11 | 12 | 13 | 14 | 15 | 16 | 17  | 18 | 19 | 20 | 第四大题得分 |    |     |    |\n| 得分      |    |    |    |    |    |    |     |    |    |    | (1)    |    | (2) |    |\n\n以下由考生填写\n\n## 答卷部分\n\n一. 选择一个正确答案代码 (A/B/C/D), 填入每题的括号内 (每题 1.5 分, 多选无分, 共 30 分)\n\n|    |    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|----|\n| 题号 | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| 选择 |    |    |    |    |    |    |    |    |    |    |\n| 题号 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| 选择 |    |    |    |    |    |    |    |    |    |    |\n\n二. 问题解答 (每题 5 分, 共 10 分)\n\n- 1. 答:\n- 2. 答:\n\n三. 阅读程序, 并写出程序的正确运行结果: (每题 8 分, 共 32 分)\n\n- (1) 程序的运行结果是:\n- (2) 程序的运行结果是:\n\n{7}------------------------------------------------\n\n\\_\\_\\_\\_\\_赛区\\_\\_\\_\\_\\_市\\_\\_\\_\\_\\_学校 姓名\\_\\_\\_\\_\\_\n\n===== 密 封 线 =====\n\n(3) 程序的运行结果是：\n\n(4) 程序的运行结果是：\n\n## 四.根据题意，将程序补充完整 (前 4 空，每空 2 分，后 5 空，每空 4 分，共 28 分)\n\nC 语言\n\n=====\n\n1.\n\n①\\_\\_\\_\\_\\_\n\n②\\_\\_\\_\\_\\_\n\n③\\_\\_\\_\\_\\_\n\n④\\_\\_\\_\\_\\_\n\n2.\n\n①\\_\\_\\_\\_\\_\n\n②\\_\\_\\_\\_\\_\n\n③\\_\\_\\_\\_\\_\n\n④\\_\\_\\_\\_\\_\n\n⑤\\_\\_\\_\\_\\_",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 22
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 15
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 15
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 21
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 8,
+      "total_cost": 2.4,
+      "cost_breakdown": {
+        "final_cost_cents": 2.4
+      },
+      "runtime": 80.36688208580017,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十一届全国青少年信息学奥林匹克联赛初赛试题\n\n( 普及组 C 语言 二小时完成 )\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n## 一. 选择一个正确答案代码 (A/B/C/D/E), 填入每题的括号内 (每题1.5分, 共30分)\n\n- 在字符串 “ababacbabcbdecced” 中出现次数最多的字母出现了 ( ) 次。  \nA. 6    B. 5    C. 4    D. 3    E. 2\n- 设全集  $I = \\{a, b, c, d, e, f, g, h\\}$ , 集合  $A = \\{a, b, c, d, e, f\\}$ ,  $B = \\{c, d, e\\}$ ,  $C = \\{a, d\\}$ , 那么集合  $A \\ll B \\ll \\sim C$  为 ( )。  \nA.  $\\{c, e\\}$     B.  $\\{d, e\\}$     C.  $\\{e\\}$     D.  $\\{c, d, e\\}$     E.  $\\{d, f\\}$\n- 和十进制数 23 的值相等的二进制数是 ( )。  \nA. 10110    B. 11011    C. 11011    D. 10111    E. 10011\n- 完全二叉树的结点个数为 11, 则它的叶结点个数为 ( )。  \nA. 4    B. 3    C. 5    D. 2    E. 6\n- 平面上有五个点  $A(5, 3)$ ,  $B(3, 5)$ ,  $C(2, 1)$ ,  $D(3, 3)$ ,  $E(5, 1)$ 。以这五点作为完全图  $G$  的顶点, 每两点之间的直线距离是图  $G$  中对应边的权值。以下哪条边不是图  $G$  的最小生成树中的边 ( )。  \nA. AD    B. BD    C. CD    D. DE    E. EA\n- Intel 的首颗 16 位处理器是 ( )。  \nA. 8088    B. 80386    C. 80486    D. 8086    E. Pentium\n- 处理器 A 每秒处理的指令数是处理器 B 的 2 倍。某一特定程序 P 分别编译为处理器 A 和处理器 B 的指令, 编译结果处理器 A 的指令数是处理器 B 的 4 倍。已知程序 P 在处理器 A 上执行需要 1 个小时, 那么在输入相同的情况下, 程序 P 在处理器 B 上执行需要 ( ) 小时。  \nA. 4    B. 2    C. 1    D. 1/2    E. 1/4\n- 以下哪个不是计算机的输出设备 ( )。  \nA. 音箱    B. 显示器    C. 打印机    D. 扫描仪    E. 绘图仪\n- 下列活动中不属于信息学奥赛的系列活动的是 ( )。  \nA. NOIP    B. NOI    C. IOI    D. 冬令营    E. 程序员等级考试\n- 以下断电之后仍能保存数据的是 ( )。\n\n{1}------------------------------------------------\n\n- A. 硬盘 B. 寄存器 C. 显存 D. 内存 E. 高速缓存\n- 11. 以下哪个软件不是即时通信软件（ ）。  \nA. 网易泡泡 B. MSN Messenger C. Google Talk D. 3DS Max E. QQ\n- 12. 下列关于高级语言的说法错误的是（ ）。  \nA. Fortran 是历史上的第一个面向科学计算的高级语言  \nB. Pascal 和 C 都是编译执行的高级语言  \nC. C++ 是历史上的第一个支持面向对象的语言  \nD. 编译器将高级语言程序转变为目标代码  \nE. 高级语言程序比汇编语言程序更容易从一种计算机移植到另一种计算机上\n- 13. 下列设备不具有计算功能的是（ ）。  \nA. 笔记本电脑 B. 掌上电脑 C. 智能手机  \nD. 电子计算器 E. 液晶显示器\n- 14. 常见的邮件传输服务器使用（ ）协议接收邮件。  \nA. HTTP B. SMTP C. TCP D. FTP E. POP3\n- 15. 下列浏览器中，由微软公司开发的浏览器是（ ）。  \nA. Internet Explore B. Netscape C. Opera D. Firefox E. Mozilla\n- 16. 一位艺术史学家有 20000 幅真彩色图像，每幅图像约占 3M 空间。如果将这些图像以位图形式保存在 CD 光盘上（一张 CD 光盘的容量按 600M 计算），大约需要（ ）张 CD 光盘。  \nA. 1 B. 10 C. 100 D. 1000 E. 10000\n- 17. 设  $A = \\text{true}$ ,  $B = \\text{false}$ ,  $C = \\text{false}$ ,  $D = \\text{true}$ ，以下逻辑运算表达式值为真的是（ ）。  \nA.  $(A \\wedge B) \\vee (C \\wedge D)$  B.  $((A \\wedge B) \\vee C) \\wedge D$  C.  $A \\wedge ((B \\vee C) \\wedge D)$   \nD.  $(A \\wedge (B \\vee C)) \\vee D$  E.  $(A \\vee B) \\wedge (C \\wedge D)$\n- 18.  $(3725)_8 + (B)_{16}$  的运算结果是（ ）。  \nA.  $(3736)_8$  B.  $(2016)_{10}$  C.  $(1111110000)_2$  D.  $(3006)_{10}$  E.  $(7B0)_{16}$\n- 19. 二叉树 T 的宽度优先遍历序列为 A B C D E F G H I，已知 A 是 C 的父结点，D 是 G 的父结点，F 是 I 的父结点，树中所有结点的最大深度为 3（根结点深度设为 0），可知 F 的父结点是（ ）。  \nA. 无法确定 B. B C. C D. D E. E\n- 20. 设栈 S 的初始状态为空，元素 a, b, c, d, e, f, g 依次入栈，以下出栈序列不可能出现的是（ ）。  \nA. a, b, c, e, d, f, g B. b, c, a, f, e, g, d C. a, e, d, c, b, f, g  \nD. d, c, f, e, b, a, g E. g, e, f, d, c, b, a\n\n{2}------------------------------------------------\n\n## 二. 问题求解 （请在空格处填上答案，每空5分，共10分）\n\n1. 将数组{32, 74, 25, 53, 28, 43, 86, 47}中的元素按从小到大的顺序排列，每次可以交换任意两个元素，最少需要交换\\_\\_\\_\\_\\_次。\n2. 有3个课外小组：物理组，化学组和生物组。今有张、王、李、赵、陈5名同学，已知张、王为物理组成员，张、李、赵为化学组成员，李、赵、陈为生物组成员。如果要在3个小组中分别选出3位组长，一位同学最多只能担任一个小组的组长，共有\\_\\_\\_\\_\\_种选择方案。\n\n## 三. 阅读程序（共4题，每题8分，共计32分）\n\n```\n1. #include <stdio.h>\nint main() {\n    int a, b;\n    scanf(\"%d\", &a);\n    b = (a * (a * a)) + 1;\n    if (b%3 == 0) b = b / 3;\n    if (b%5 == 0) b = b / 5;\n    if (b%7 == 0) b = b / 7;\n    if (b%9 == 0) b = b / 9;\n    if (b%11 == 0) b = b / 11;\n    if (b%13 == 0) b = b / 13;\n    if (b%15 == 0) b = b / 15;\n    printf(\"%d \\n\", (100 * a - b) / 2);\n    return 0;\n}\n```\n\n输入: 10\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include <stdio.h>\nint main() {\n    char str[20] = \"Today-is-terrible!\";\n    int i;\n    for (i = 6; i <= 10; i++)\n        if (str[i] == '-') str[i - 1] = 'x';\n    for (i = 12; i >= 0; i--)\n        if (str[i] == 't') str[i + 1] = 'e';\n    printf(\"%s\\n\", str);\n    return 0;\n}\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n3. #include <stdio.h>\n```\n\n{3}------------------------------------------------\n\n```\n\nint main() {\n    int a, b, c, p, q, r[3];\n    scanf(\"%d%d%d\", &a, &b, &c);\n    p = a / b / c;\n    q = b - c + a + p;\n    r[0] = a * p / q * q;\n    r[1] = r[0] * (r[0] - 300);\n    if (3 * q - p % 3 <= r[0] && r[2] == r[2])\n        r[1] = r[r[0] / p % 2];\n    else\n        r[1] = q % p;\n    printf(\"%d\\n\", r[0] - r[1]);\n    return 0;\n}\n\n```\n\n输入: 100 7 3\n\n输出: \\_\\_\\_\\_\\_\n\n```\n\n4. #include<stdio.h>\n   #include<string.h>\n   int main(){\n       char str[60];\n       int len, i, j, chr[26];\n       char mmin = 'z';\n       scanf(\"%s\", str);\n       len = strlen(str);\n       for (i = len - 1; i >= 1; i--)\n           if (str[i - 1] < str[i]) break;\n       if (i == 0) {\n           printf(\"No result!\\n\"); return 0;\n       }\n       for (j = 0; j < i - 1; j++) putchar(str[j]);\n       memset(chr, 0, sizeof(chr));\n       for (j = i; j < len; j++) {\n           if (str[j] > str[i - 1] && str[j] < mmin)\n               mmin = str[j];\n           chr[str[j] - 'a']++;\n       }\n       chr[mmin - 'a']--;\n       chr[str[i - 1] - 'a']++;\n       putchar(mmin);\n       for(i = 0; i < 26; i++)\n           for(j = 0; j < chr[i]; j++)\n               putchar(i + 'a');\n       putchar('\\n');\n   }\n\n```\n\n{4}------------------------------------------------\n\n```\n\n    return 0;\n}\n输入: zzyzcccbbbaaa\n输出: _____\n\n```\n\n## 四. 完善程序 (前 4 空, 每空 2 分, 后 5 空, 每空 4 分, 共 28 分)\n\n### 1. 判断质数\n\n#### 题目描述:\n\n给出一个正整数, 判断这个数是否是质数。\n\n#### 输入:\n\n一个正整数  $n$  ( $1 \\leq n \\leq 10000$ )。\n\n#### 输出:\n\n如果  $n$  是质数, 输出 \"YES\"; 否则, 输出 \"NO\"。\n\n##### 输入样例:\n\n10\n\n##### 输出样例:\n\nNO\n\n#### 程序:\n\n```\n\n#include <stdio.h>\nint main() {\n    int ①;\n    scanf(\"%d\", &n);\n    if (n == 2) puts(②);\n    else if (③ || n % 2 == 0) puts(\"NO\");\n    else {\n        i = 3;\n        while (i * i <= n) {\n            if (④) {\n                puts(\"NO\"); return 0;\n            }\n            i = i + 2;\n        }\n        puts(\"YES\");\n    }\n    return 0;\n}\n\n```\n\n### 2. 木材加工\n\n#### 题目描述:\n\n木材厂有一些原木, 现在想把这些木头切割成一些长度相同的小段木头, 需要得到的小段的数目是给定的。当然, 我们希望得到的小段越长越好, 你的任务是计算能够得到的小段木头的最大长度。\n\n木头长度的单位是 cm。原木的长度都是正整数, 我们要求切割得到的小段木头的长度\n\n{5}------------------------------------------------\n\n也是正整数。\n\n输入：\n\n第一行是两个正整数 $N$ 和 $K$ ( $1 \\leq N \\leq 10000$ ,  $1 \\leq K \\leq 10000$ )， $N$ 是原木的数目， $K$ 是需要得到的小段的数目。\n\n接下来的 $N$ 行，每行有一个1到10000之间的正整数，表示一根原木的长度。\n\n输出：\n\n输出能够切割得到的小段的最大长度。如果连1cm长的小段都切不出来，输出“0”。\n\n输入样例：\n\n```\n3 7\n232\n124\n456\n```\n\n输出样例：\n\n```\n114\n```\n\n程序：\n\n```\n#include <stdio.h>\nint n, k, len[10000];\nint isok(int t) {\n    int num = 0, i;\n    for (i = 0; i < n; i++) {\n        if (num >= k) break;\n        num = ①;\n    }\n    if (②) return 1;\n    else return 0;\n}\nint main() {\n    int i, left, right, mid;\n    scanf(\"%d%d\", &n, &k);\n    right = 0;\n    for (i = 0; i < n; i++) {\n        scanf(\"%d\", &(len[i]));\n        if (right < len[i]) right = len[i];\n    }\n    right++;\n    ③;\n    while (④ < right) {\n        mid = (left + right) / 2;\n        if (⑤) right = mid;\n        else left = mid;\n    }\n    printf (\"%d\\n\", left);\n    return 0;\n}\n```\n\n{6}------------------------------------------------\n\n赛区 市 学校 姓名\n\n密 封 线\n\n# 第十一届全国青少年信息学奥林匹克联赛初赛试题普及组答卷纸\n\n| 阅 卷 记 录 |    |    |    |    |    |    |     |    |    |    |        |    |     |    |\n|---------|----|----|----|----|----|----|-----|----|----|----|--------|----|-----|----|\n| 总阅卷人    |    |    |    |    |    |    |     |    |    |    | 总 得 分  |    |     |    |\n| 第 一 大 题 |    |    |    |    |    |    | 得 分 |    |    |    | 第二大题得分 |    |     |    |\n| 题号      | 1  | 2  | 3  | 4  | 5  | 6  | 7   | 8  | 9  | 10 | 第三大题得分 |    |     |    |\n| 得分      |    |    |    |    |    |    |     |    |    |    | 1)     | 2) | 3)  | 4) |\n| 题号      | 11 | 12 | 13 | 14 | 15 | 16 | 17  | 18 | 19 | 20 | 第四大题得分 |    |     |    |\n| 得分      |    |    |    |    |    |    |     |    |    |    | (1)    |    | (2) |    |\n\n以下由考生填写\n\n## 答卷部分\n\n一. 选择一个正确答案代码 (A/B/C/D), 填入每题的括号内 (每题 1.5 分, 多选无分, 共 30 分)\n\n|    |    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|----|\n| 题号 | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| 选择 |    |    |    |    |    |    |    |    |    |    |\n| 题号 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| 选择 |    |    |    |    |    |    |    |    |    |    |\n\n二. 问题解答 (每题 5 分, 共 10 分)\n\n- 1. 答:\n- 2. 答:\n\n三. 阅读程序, 并写出程序的正确运行结果: (每题 8 分, 共 32 分)\n\n- (1) 程序的运行结果是:\n- (2) 程序的运行结果是:\n\n{7}------------------------------------------------\n\n\\_\\_\\_\\_\\_赛区\\_\\_\\_\\_\\_市\\_\\_\\_\\_\\_学校 姓名\\_\\_\\_\\_\\_\n\n===== 密 封 线 =====\n\n(3) 程序的运行结果是：\n\n(4) 程序的运行结果是：\n\n## 四.根据题意，将程序补充完整 (前 4 空，每空 2 分，后 5 空，每空 4 分，共 28 分)\n\nC 语言\n\n=====\n\n1.\n\n①\\_\\_\\_\\_\\_\n\n②\\_\\_\\_\\_\\_\n\n③\\_\\_\\_\\_\\_\n\n④\\_\\_\\_\\_\\_\n\n2.\n\n①\\_\\_\\_\\_\\_\n\n②\\_\\_\\_\\_\\_\n\n③\\_\\_\\_\\_\\_\n\n④\\_\\_\\_\\_\\_\n\n⑤\\_\\_\\_\\_\\_",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 22
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 15
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 15
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 21
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 8,
+    "total_cost": 2.4,
+    "cost_breakdown": {
+      "final_cost_cents": 2.4
+    },
+    "runtime": 80.36688208580017,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 2.4
+  },
+  "page_count": 8,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2005_C_Pascal/NOIP2005PreliminaryJunior(C).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

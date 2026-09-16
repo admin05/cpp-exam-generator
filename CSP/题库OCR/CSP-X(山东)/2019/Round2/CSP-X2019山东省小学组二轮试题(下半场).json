@@ -1,0 +1,150 @@
+{
+  "request_id": "9X34uyTWLBGUeWCCY3m6gQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:57:12.059592+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "9X34uyTWLBGUeWCCY3m6gQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/9X34uyTWLBGUeWCCY3m6gQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP2019 第二轮认证山东省考区小学组试题 (二)(2019 年 11 月 16 日 16:30~18:00)\n\n(请选手务必仔细阅读本页内容)\n\n## 一. 题目概况\n\n|           |           |          |\n|-----------|-----------|----------|\n| 中文题目名称    | 统计成绩      | 金币       |\n| 英文题目与子目录名 | count     | coin     |\n| 输入文件名     | count.in  | coin.in  |\n| 输出文件名     | count.out | coin.out |\n| 每个测试点时限   | 1 秒       | 1 秒      |\n| 测试点数目     | 10        | 10       |\n| 每个测试点分值   | 10        | 10       |\n| 附加样例文件    | 有         | 有        |\n| 运行内存上限    | 128M      | 128M     |\n\n## 二. 提交源程序文件名\n\n|              |           |          |\n|--------------|-----------|----------|\n| 对于 C++ 语言    | count.cpp | coin.cpp |\n| 对于 C 语言      | count.c   | coin.c   |\n| 对于 Pascal 语言 | count.pas | coin.pas |\n\n### 注意事项:\n\n1. 文件名 (程序名和输入输出文件名) 必须使用英文小写。\n2. C/C++中函数 main() 的返回值类型必须是 int, 程序正常结束时的返回值必须是 0。\n\n## 三. 参考文件输入输出操作\n\n以第一题为例:\n\n| C++语言:                                                                                                                                                                                                      | Pascal 语言:                                                                                                                         |\n|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|\n| <pre>#include&lt;cstdio&gt; #include&lt;iostream&gt; using namespace std; int main() { freopen(\"count.in\",\"r\",stdin); freopen(\"count.out\",\"w\",stdout); ... fclose(stdin); fclose(stdout); return 0; }</pre> | <pre>assign(input, 'count.in'); reset(input); assign(output, 'count.out'); rewrite(output); ... close(input); close(output);</pre> |\n\n{1}------------------------------------------------\n\n### 一. 统计成绩\n\n#### 【问题描述】\n\nn 位同学参加了期中考试，考试共有 m 门课程。\n\n考试结束之后，老师想知道：每位同学有几门课程达到或超过了课程的班级平均分？\n\n现在，请你帮忙统计一下。\n\n#### 【输入】\n\n输入文件名为 count.in。\n\n第一行，两个正整数 n, m，n 表示学生总人数，m 表示课程数量。\n\n接下来 n 行，每行 m 个整数，表示一位同学的成绩。\n\n#### 【输出】\n\n输出文件名为 count.out。\n\n共 n 行，每行一个整数，表示该同学达到或超过平均分的课程数量。\n\n#### 【输入输出样例】\n\n| count.in | count.out |\n|----------|-----------|\n| 5 3      | 3         |\n| 81 80 86 | 2         |\n| 55 74 79 | 2         |\n| 92 47 99 | 0         |\n| 50 65 41 | 0         |\n| 42 61 74 |           |\n\n#### 【样例说明】\n\n3 门课程的平均分依次为：64, 65.4, 75.79；\n\n5 位同学分别有 3, 2, 2, 0, 0 门课程达到或超过了课程平均分。\n\n#### 【数据规模】\n\n对于 100% 的数据： $1 \\leq n \\leq 100$ ,  $1 \\leq m \\leq 20$ ,  $0 \\leq \\text{成绩} \\leq 100$ 。\n\n{2}------------------------------------------------\n\n### 二. 金币\n\n#### 【问题描述】\n\n乔治在梦中来到了一个神奇部落，这个部落的神树具有奇特的功能：对于每一位新朋友，都会获赠金币，而且金币的数量会随时间的延续而增加：\n\n第 1 周，每天 1 枚金币；\n\n第 2 周，每天 2 枚金币；\n\n第 3 周，每天 3 枚金币；……\n\n请问：至少多少天，乔治的金币数量达到  $n$  枚？\n\n#### 【输入】\n\n输入文件名为 `coin.in`。\n\n一行，只有一个正整数  $n$ 。\n\n#### 【输出】\n\n输出文件名为 `coin.out`。\n\n一行，一个整数，表示金币达到  $n$  枚所需的最少天数。\n\n#### 【输入输出样例】\n\n| coin.in | coin.out |\n|---------|----------|\n| 30      | 17       |\n\n#### 【样例说明】\n\n第 1 周：每天 1 枚，共 7 枚；\n\n第 2 周：每天 2 枚，共 14 枚；\n\n第 3 周：每天 3 枚，3 天即可： $7+14+3\\times 3=30$ 。\n\n共计： $7+7+3 = 17$  天。\n\n#### 【数据规模】\n\n对于 30% 的数据， $n$  不超过 2147483647；\n\n对于 100% 的数据， $n$  的位数不超过 18。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 11
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 23
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 0.9,
+      "cost_breakdown": {
+        "final_cost_cents": 0.9
+      },
+      "runtime": 6.953874111175537,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP2019 第二轮认证山东省考区小学组试题 (二)(2019 年 11 月 16 日 16:30~18:00)\n\n(请选手务必仔细阅读本页内容)\n\n## 一. 题目概况\n\n|           |           |          |\n|-----------|-----------|----------|\n| 中文题目名称    | 统计成绩      | 金币       |\n| 英文题目与子目录名 | count     | coin     |\n| 输入文件名     | count.in  | coin.in  |\n| 输出文件名     | count.out | coin.out |\n| 每个测试点时限   | 1 秒       | 1 秒      |\n| 测试点数目     | 10        | 10       |\n| 每个测试点分值   | 10        | 10       |\n| 附加样例文件    | 有         | 有        |\n| 运行内存上限    | 128M      | 128M     |\n\n## 二. 提交源程序文件名\n\n|              |           |          |\n|--------------|-----------|----------|\n| 对于 C++ 语言    | count.cpp | coin.cpp |\n| 对于 C 语言      | count.c   | coin.c   |\n| 对于 Pascal 语言 | count.pas | coin.pas |\n\n### 注意事项:\n\n1. 文件名 (程序名和输入输出文件名) 必须使用英文小写。\n2. C/C++中函数 main() 的返回值类型必须是 int, 程序正常结束时的返回值必须是 0。\n\n## 三. 参考文件输入输出操作\n\n以第一题为例:\n\n| C++语言:                                                                                                                                                                                                      | Pascal 语言:                                                                                                                         |\n|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|\n| <pre>#include&lt;cstdio&gt; #include&lt;iostream&gt; using namespace std; int main() { freopen(\"count.in\",\"r\",stdin); freopen(\"count.out\",\"w\",stdout); ... fclose(stdin); fclose(stdout); return 0; }</pre> | <pre>assign(input, 'count.in'); reset(input); assign(output, 'count.out'); rewrite(output); ... close(input); close(output);</pre> |\n\n{1}------------------------------------------------\n\n### 一. 统计成绩\n\n#### 【问题描述】\n\nn 位同学参加了期中考试，考试共有 m 门课程。\n\n考试结束之后，老师想知道：每位同学有几门课程达到或超过了课程的班级平均分？\n\n现在，请你帮忙统计一下。\n\n#### 【输入】\n\n输入文件名为 count.in。\n\n第一行，两个正整数 n, m，n 表示学生总人数，m 表示课程数量。\n\n接下来 n 行，每行 m 个整数，表示一位同学的成绩。\n\n#### 【输出】\n\n输出文件名为 count.out。\n\n共 n 行，每行一个整数，表示该同学达到或超过平均分的课程数量。\n\n#### 【输入输出样例】\n\n| count.in | count.out |\n|----------|-----------|\n| 5 3      | 3         |\n| 81 80 86 | 2         |\n| 55 74 79 | 2         |\n| 92 47 99 | 0         |\n| 50 65 41 | 0         |\n| 42 61 74 |           |\n\n#### 【样例说明】\n\n3 门课程的平均分依次为：64, 65.4, 75.79；\n\n5 位同学分别有 3, 2, 2, 0, 0 门课程达到或超过了课程平均分。\n\n#### 【数据规模】\n\n对于 100% 的数据： $1 \\leq n \\leq 100$ ,  $1 \\leq m \\leq 20$ ,  $0 \\leq \\text{成绩} \\leq 100$ 。\n\n{2}------------------------------------------------\n\n### 二. 金币\n\n#### 【问题描述】\n\n乔治在梦中来到了一个神奇部落，这个部落的神树具有奇特的功能：对于每一位新朋友，都会获赠金币，而且金币的数量会随时间的延续而增加：\n\n第 1 周，每天 1 枚金币；\n\n第 2 周，每天 2 枚金币；\n\n第 3 周，每天 3 枚金币；……\n\n请问：至少多少天，乔治的金币数量达到  $n$  枚？\n\n#### 【输入】\n\n输入文件名为 `coin.in`。\n\n一行，只有一个正整数  $n$ 。\n\n#### 【输出】\n\n输出文件名为 `coin.out`。\n\n一行，一个整数，表示金币达到  $n$  枚所需的最少天数。\n\n#### 【输入输出样例】\n\n| coin.in | coin.out |\n|---------|----------|\n| 30      | 17       |\n\n#### 【样例说明】\n\n第 1 周：每天 1 枚，共 7 枚；\n\n第 2 周：每天 2 枚，共 14 枚；\n\n第 3 周：每天 3 枚，3 天即可： $7+14+3\\times 3=30$ 。\n\n共计： $7+7+3 = 17$  天。\n\n#### 【数据规模】\n\n对于 30% 的数据， $n$  不超过 2147483647；\n\n对于 100% 的数据， $n$  的位数不超过 18。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 11
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 23
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 0.9,
+    "cost_breakdown": {
+      "final_cost_cents": 0.9
+    },
+    "runtime": 6.953874111175537,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.9
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2019/Round2/CSP-X2019山东省小学组二轮试题(下半场).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

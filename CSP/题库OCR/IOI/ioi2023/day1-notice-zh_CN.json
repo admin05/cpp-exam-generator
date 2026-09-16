@@ -1,0 +1,140 @@
+{
+  "request_id": "gSfrhe0j3Dww3og9jS6G0Q",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:28:06.187640+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "gSfrhe0j3Dww3og9jS6G0Q",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/gSfrhe0j3Dww3og9jS6G0Q",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2023 logo](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI 2023 logo\n\n# 注意事项\n\n对于所有题目：\n\n- 比赛系统的“竞赛概况”页面中可以查到相应的时间和内存限制。\n- 比赛系统中可下载附件包，其中包含评测程序示例、实现示例、测试用例示例、编译和运行脚本。\n- 每道题目有一个编号为 0 的子任务，分值也为 0。这个子任务的测试用例与附件包中的测试用例示例是一样的。\n- 每道题目最多可以提交 50 次，每次只能提交一个文件。\n- 在使用评测程序示例来评测你的程序时，输入数据应当符合题面所给定的格式和约束条件，否则可能会导致不确定的结果。除非明确指定了其他格式，否则在评测程序示例的输入中，每一行里连续两项之间用一个空格分隔。\n- 在本地机器测试你的代码时，建议使用附件包中的脚本。注意评测系统使用了 `-std=gnu++17` 编译选项。\n- 如果出现无法提交到 CMS 的情况，可以使用 `ioisubmit` 工具来保存你的代码，以便在比赛结束后进行评测。\n  - 在 `<源代码文件>`，也就是你想提交的文件所在的目录下运行：\n\n```\nioisubmit <题目简称> <源代码文件>\n```\n\n- 请工作人员对 `ioisubmit` 的输出拍照。如果不这样做，你的提交将不会被处理。\n- 如果使用方法提交代码，必须请你的领队也提交一个相应的申诉请求。\n\n# 约定\n\n题面在给出函数接口时，会使用一般性的类型名称 `bool`、`int`、`int64`、`int[]`（数组）和 `int[][]`（数组的数组）。\n\n在 C++ 中，评测程序会采用适当的数据类型或实现，如下表所示：\n\n| <code>bool</code> | <code>int</code> | <code>int64</code>     | <code>int[]</code>                  |\n|-------------------|------------------|------------------------|-------------------------------------|\n| <code>bool</code> | <code>int</code> | <code>long long</code> | <code>std::vector&lt;int&gt;</code> |\n\n| <code>int[][]</code>                                   | 数组 <code>a</code> 的长度 |\n|--------------------------------------------------------|-----------------------|\n| <code>std::vector&lt;std::vector&lt;int&gt;&gt;</code> | <code>a.size()</code> |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 14
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 5.807033538818359,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2023 logo](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI 2023 logo\n\n# 注意事项\n\n对于所有题目：\n\n- 比赛系统的“竞赛概况”页面中可以查到相应的时间和内存限制。\n- 比赛系统中可下载附件包，其中包含评测程序示例、实现示例、测试用例示例、编译和运行脚本。\n- 每道题目有一个编号为 0 的子任务，分值也为 0。这个子任务的测试用例与附件包中的测试用例示例是一样的。\n- 每道题目最多可以提交 50 次，每次只能提交一个文件。\n- 在使用评测程序示例来评测你的程序时，输入数据应当符合题面所给定的格式和约束条件，否则可能会导致不确定的结果。除非明确指定了其他格式，否则在评测程序示例的输入中，每一行里连续两项之间用一个空格分隔。\n- 在本地机器测试你的代码时，建议使用附件包中的脚本。注意评测系统使用了 `-std=gnu++17` 编译选项。\n- 如果出现无法提交到 CMS 的情况，可以使用 `ioisubmit` 工具来保存你的代码，以便在比赛结束后进行评测。\n  - 在 `<源代码文件>`，也就是你想提交的文件所在的目录下运行：\n\n```\nioisubmit <题目简称> <源代码文件>\n```\n\n- 请工作人员对 `ioisubmit` 的输出拍照。如果不这样做，你的提交将不会被处理。\n- 如果使用方法提交代码，必须请你的领队也提交一个相应的申诉请求。\n\n# 约定\n\n题面在给出函数接口时，会使用一般性的类型名称 `bool`、`int`、`int64`、`int[]`（数组）和 `int[][]`（数组的数组）。\n\n在 C++ 中，评测程序会采用适当的数据类型或实现，如下表所示：\n\n| <code>bool</code> | <code>int</code> | <code>int64</code>     | <code>int[]</code>                  |\n|-------------------|------------------|------------------------|-------------------------------------|\n| <code>bool</code> | <code>int</code> | <code>long long</code> | <code>std::vector&lt;int&gt;</code> |\n\n| <code>int[][]</code>                                   | 数组 <code>a</code> 的长度 |\n|--------------------------------------------------------|-----------------------|\n| <code>std::vector&lt;std::vector&lt;int&gt;&gt;</code> | <code>a.size()</code> |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 14
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 5.807033538818359,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2023/day1-notice-zh_CN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg"
+  ]
+}

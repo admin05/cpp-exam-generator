@@ -1,0 +1,150 @@
+{
+  "request_id": "llGwp9WTOkJmLvaOEVtfWQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:30:30.736941+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "llGwp9WTOkJmLvaOEVtfWQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/llGwp9WTOkJmLvaOEVtfWQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 象形文字序列 (hieroglyphs)\n\n一个研究团队正在研究象形文字序列之间的相似性。他们将每个象形文字表示成一个非负整数。为了开展研究，他们采用了关于序列的如下概念。\n\n对于一个给定的序列  $A$ ，某个序列  $S$  被称为是  $A$  的**子序列**，当且仅当  $S$  能够通过移除  $A$  中的某些（也可能零个）元素而得到。\n\n下表给出了序列  $A = [3, 2, 1, 2]$  的子序列的一部分例子。\n\n| 子序列            | 由 $A$ 得到子序列的方式                                                       |\n|----------------|----------------------------------------------------------------------|\n| $[3, 2, 1, 2]$ | 不移除任何元素。                                                             |\n| $[2, 1, 2]$    | $[3, 2, 1, 2]$                                                       |\n| $[3, 2, 2]$    | $[3, 2, \\cancel{1}, 2]$                                              |\n| $[3, 2]$       | $[3, \\cancel{2}, \\cancel{1}, 2]$ 或者 $[3, 2, \\cancel{1}, \\cancel{2}]$ |\n| $[3]$          | $[3, \\cancel{2}, \\cancel{1}, \\cancel{2}]$                            |\n| $[]$           | $[\\cancel{3}, \\cancel{2}, \\cancel{1}, \\cancel{2}]$                   |\n\n另一方面， $[3, 3]$  或  $[1, 3]$  不是  $A$  的子序列。\n\n考虑有两个象形文字序列  $A$  和  $B$ 。某个序列  $S$  被称为是  $A$  和  $B$  的**公共子序列**，当且仅当  $S$  同时是  $A$  和  $B$  的子序列。此外，我们说某个序列  $U$  是  $A$  和  $B$  的一个**最全公共子序列**，当且仅当如下两个条件成立：\n\n- $U$  是  $A$  和  $B$  的一个公共子序列。\n- $A$  和  $B$  的任意公共子序列，都是  $U$  的一个子序列。\n\n可以证明，任意两个序列  $A$  和  $B$  都至多有一个最全公共子序列。\n\n研究人员发现了两个象形文字序列  $A$  和  $B$ 。序列  $A$  包含  $N$  个象形文字，而序列  $B$  包含  $M$  个象形文字。请帮助研究人员为序列  $A$  和  $B$  找到一个最全公共子序列，或者判定这样的序列并不存在。\n\n## 实现细节\n\n你要实现以下函数。\n\n```\nstd::vector<int> ucs(std::vector<int> A, std::vector<int> B)\n```\n\n{1}------------------------------------------------\n\n- $A$ : 长度为  $N$  的数组，给出第一个序列。\n- $B$ : 长度为  $M$  的数组，给出第二个序列。\n- 如果  $A$  和  $B$  有一个最全公共子序列，该函数应当返回一个包含该序列的数组。否则，该函数应当返回  $[-1]$ （一个长度为 1 的数组，其唯一元素为  $-1$ ）。\n- 对每个测试用例，该函数恰好被调用一次。\n\n## 约束条件\n\n- $1 \\leq N \\leq 100\\,000$\n- $1 \\leq M \\leq 100\\,000$\n- 对所有满足  $0 \\leq i < N$  的  $i$ ，都有  $0 \\leq A[i] \\leq 200\\,000$\n- 对所有满足  $0 \\leq j < M$  的  $j$ ，都有  $0 \\leq B[j] \\leq 200\\,000$\n\n## 子任务\n\n| 子任务 | 分数 | 额外的约束条件                                                                                 |\n|-----|----|-----------------------------------------------------------------------------------------|\n| 1   | 3  | $N = M$; $A$ 和 $B$ 均由 $N$ 个<b>不同</b>的整数构成，取自 0 到 $N - 1$（包括这两个值）                        |\n| 2   | 15 | 对任意整数 $k$，$k$ 在 $A$ 和 $B$ 中的出现次数，加起来至多等于 3。                                             |\n| 3   | 10 | 对所有满足 $0 \\leq i < N$ 的 $i$，都有 $A[i] \\leq 1$；对所有满足 $0 \\leq j < M$ 的 $j$，都有 $B[j] \\leq 1$ |\n| 4   | 16 | $A$ 和 $B$ 存在最全公共子序列。                                                                    |\n| 5   | 14 | $N \\leq 3000$; $M \\leq 3000$                                                            |\n| 6   | 42 | 没有额外的约束条件。                                                                              |\n\n## 例子\n\n### 例 1\n\n考虑以下函数调用。\n\n```\nucs([0, 0, 1, 0, 1, 2], [2, 0, 1, 0, 2])\n```\n\n此时， $A$  和  $B$  的公共子序列为： $[\\ ]$ ， $[0]$ ， $[1]$ ， $[2]$ ， $[0,0]$ ， $[0,1]$ ， $[0,2]$ ， $[1,0]$ ， $[1,2]$ ， $[0,0,2]$ ， $[0,1,0]$ ， $[0,1,2]$ ， $[1,0,2]$  和  $[0,1,0,2]$ 。\n\n由于  $[0,1,0,2]$  是  $A$  和  $B$  的一个公共子序列，而  $A$  和  $B$  的所有公共子序列又都是  $[0,1,0,2]$  的子序列，因此函数应该返回  $[0,1,0,2]$ 。\n\n{2}------------------------------------------------\n\n### 例 2\n\n考虑以下函数调用。\n\n```\nucs([0, 0, 2], [1, 1])\n```\n\n此时， $A$  和  $B$  唯一的公共子序列为空序列  $[]$ 。因此函数应该返回一个空数组  $[]$ 。\n\n### 例 3\n\n考虑以下函数调用。\n\n```\nucs([0, 1, 0], [1, 0, 1])\n```\n\n此时， $A$  和  $B$  的公共子序列为  $[]$ ,  $[0]$ ,  $[1]$ ,  $[0, 1]$  和  $[1, 0]$ ，可以看出两者并不存在最长公共子序列。因此，函数应该返回  $[-1]$ 。\n\n## 评测程序示例\n\n输入格式：\n\n```\nN  M\nA[0]  A[1]  ...  A[N-1]\nB[0]  B[1]  ...  B[M-1]\n```\n\n输出格式：\n\n```\nT\nR[0]  R[1]  ...  R[T-1]\n```\n\n这里  $R$  是  $ucs$  所返回的数组，而  $T$  为其长度。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 15
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 0.9,
+      "cost_breakdown": {
+        "final_cost_cents": 0.9
+      },
+      "runtime": 8.312804222106934,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 象形文字序列 (hieroglyphs)\n\n一个研究团队正在研究象形文字序列之间的相似性。他们将每个象形文字表示成一个非负整数。为了开展研究，他们采用了关于序列的如下概念。\n\n对于一个给定的序列  $A$ ，某个序列  $S$  被称为是  $A$  的**子序列**，当且仅当  $S$  能够通过移除  $A$  中的某些（也可能零个）元素而得到。\n\n下表给出了序列  $A = [3, 2, 1, 2]$  的子序列的一部分例子。\n\n| 子序列            | 由 $A$ 得到子序列的方式                                                       |\n|----------------|----------------------------------------------------------------------|\n| $[3, 2, 1, 2]$ | 不移除任何元素。                                                             |\n| $[2, 1, 2]$    | $[3, 2, 1, 2]$                                                       |\n| $[3, 2, 2]$    | $[3, 2, \\cancel{1}, 2]$                                              |\n| $[3, 2]$       | $[3, \\cancel{2}, \\cancel{1}, 2]$ 或者 $[3, 2, \\cancel{1}, \\cancel{2}]$ |\n| $[3]$          | $[3, \\cancel{2}, \\cancel{1}, \\cancel{2}]$                            |\n| $[]$           | $[\\cancel{3}, \\cancel{2}, \\cancel{1}, \\cancel{2}]$                   |\n\n另一方面， $[3, 3]$  或  $[1, 3]$  不是  $A$  的子序列。\n\n考虑有两个象形文字序列  $A$  和  $B$ 。某个序列  $S$  被称为是  $A$  和  $B$  的**公共子序列**，当且仅当  $S$  同时是  $A$  和  $B$  的子序列。此外，我们说某个序列  $U$  是  $A$  和  $B$  的一个**最全公共子序列**，当且仅当如下两个条件成立：\n\n- $U$  是  $A$  和  $B$  的一个公共子序列。\n- $A$  和  $B$  的任意公共子序列，都是  $U$  的一个子序列。\n\n可以证明，任意两个序列  $A$  和  $B$  都至多有一个最全公共子序列。\n\n研究人员发现了两个象形文字序列  $A$  和  $B$ 。序列  $A$  包含  $N$  个象形文字，而序列  $B$  包含  $M$  个象形文字。请帮助研究人员为序列  $A$  和  $B$  找到一个最全公共子序列，或者判定这样的序列并不存在。\n\n## 实现细节\n\n你要实现以下函数。\n\n```\nstd::vector<int> ucs(std::vector<int> A, std::vector<int> B)\n```\n\n{1}------------------------------------------------\n\n- $A$ : 长度为  $N$  的数组，给出第一个序列。\n- $B$ : 长度为  $M$  的数组，给出第二个序列。\n- 如果  $A$  和  $B$  有一个最全公共子序列，该函数应当返回一个包含该序列的数组。否则，该函数应当返回  $[-1]$ （一个长度为 1 的数组，其唯一元素为  $-1$ ）。\n- 对每个测试用例，该函数恰好被调用一次。\n\n## 约束条件\n\n- $1 \\leq N \\leq 100\\,000$\n- $1 \\leq M \\leq 100\\,000$\n- 对所有满足  $0 \\leq i < N$  的  $i$ ，都有  $0 \\leq A[i] \\leq 200\\,000$\n- 对所有满足  $0 \\leq j < M$  的  $j$ ，都有  $0 \\leq B[j] \\leq 200\\,000$\n\n## 子任务\n\n| 子任务 | 分数 | 额外的约束条件                                                                                 |\n|-----|----|-----------------------------------------------------------------------------------------|\n| 1   | 3  | $N = M$; $A$ 和 $B$ 均由 $N$ 个<b>不同</b>的整数构成，取自 0 到 $N - 1$（包括这两个值）                        |\n| 2   | 15 | 对任意整数 $k$，$k$ 在 $A$ 和 $B$ 中的出现次数，加起来至多等于 3。                                             |\n| 3   | 10 | 对所有满足 $0 \\leq i < N$ 的 $i$，都有 $A[i] \\leq 1$；对所有满足 $0 \\leq j < M$ 的 $j$，都有 $B[j] \\leq 1$ |\n| 4   | 16 | $A$ 和 $B$ 存在最全公共子序列。                                                                    |\n| 5   | 14 | $N \\leq 3000$; $M \\leq 3000$                                                            |\n| 6   | 42 | 没有额外的约束条件。                                                                              |\n\n## 例子\n\n### 例 1\n\n考虑以下函数调用。\n\n```\nucs([0, 0, 1, 0, 1, 2], [2, 0, 1, 0, 2])\n```\n\n此时， $A$  和  $B$  的公共子序列为： $[\\ ]$ ， $[0]$ ， $[1]$ ， $[2]$ ， $[0,0]$ ， $[0,1]$ ， $[0,2]$ ， $[1,0]$ ， $[1,2]$ ， $[0,0,2]$ ， $[0,1,0]$ ， $[0,1,2]$ ， $[1,0,2]$  和  $[0,1,0,2]$ 。\n\n由于  $[0,1,0,2]$  是  $A$  和  $B$  的一个公共子序列，而  $A$  和  $B$  的所有公共子序列又都是  $[0,1,0,2]$  的子序列，因此函数应该返回  $[0,1,0,2]$ 。\n\n{2}------------------------------------------------\n\n### 例 2\n\n考虑以下函数调用。\n\n```\nucs([0, 0, 2], [1, 1])\n```\n\n此时， $A$  和  $B$  唯一的公共子序列为空序列  $[]$ 。因此函数应该返回一个空数组  $[]$ 。\n\n### 例 3\n\n考虑以下函数调用。\n\n```\nucs([0, 1, 0], [1, 0, 1])\n```\n\n此时， $A$  和  $B$  的公共子序列为  $[]$ ,  $[0]$ ,  $[1]$ ,  $[0, 1]$  和  $[1, 0]$ ，可以看出两者并不存在最长公共子序列。因此，函数应该返回  $[-1]$ 。\n\n## 评测程序示例\n\n输入格式：\n\n```\nN  M\nA[0]  A[1]  ...  A[N-1]\nB[0]  B[1]  ...  B[M-1]\n```\n\n输出格式：\n\n```\nT\nR[0]  R[1]  ...  R[T-1]\n```\n\n这里  $R$  是  $ucs$  所返回的数组，而  $T$  为其长度。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 15
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 0.9,
+    "cost_breakdown": {
+      "final_cost_cents": 0.9
+    },
+    "runtime": 8.312804222106934,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.9
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2024/day2-A-hieroglyphs -zh_Hans_CN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

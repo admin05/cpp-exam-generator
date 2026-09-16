@@ -1,0 +1,174 @@
+{
+  "request_id": "iNYdPYssr-DmXcv1HlqSGA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:24:41.559606+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "iNYdPYssr-DmXcv1HlqSGA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/iNYdPYssr-DmXcv1HlqSGA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 位移寄存器 (registers)\n\n工程师 Christopher 在开发一款新的计算机处理器。\n\n这个处理器可以访问  $m$  个不同的  $b$  位存储单元（本题中  $m = 100$  且  $b = 2000$ ）。它们被称作**寄存器**，编号从 0 到  $m - 1$ 。我们把这些寄存器记为  $r[0], r[1], \\dots, r[m - 1]$ 。每个寄存器都是  $b$  个比特的数组，这些比特从 0（最右的比特）到  $b - 1$ （最左的比特）编号。对所有的  $i$  ( $0 \\leq i \\leq m - 1$ ) 和  $j$  ( $0 \\leq j \\leq b - 1$ )，我们将寄存器  $i$  的第  $j$  个比特记为  $r[i][j]$ 。\n\n对所有的比特序列  $d_0, d_1, \\dots, d_{l-1}$ （具有某个长度  $l$ ），该序列的**整数值**等于  $2^0 \\cdot d_0 + 2^1 \\cdot d_1 + \\dots + 2^{l-1} \\cdot d_{l-1}$ 。我们说**存储在某个寄存器中的整数值**就是寄存器中比特序列的整数值，也就是说，该整数值为  $2^0 \\cdot r[i][0] + 2^1 \\cdot r[i][1] + \\dots + 2^{b-1} \\cdot r[i][b - 1]$ 。\n\n该处理器有 9 种类型的**指令**，可以用来修改寄存器中的比特。每条指令操作一个或多个寄存器，并将其输出存储到其中的一个寄存器。下面我们用  $x := y$  表示一个修改  $x$  的值并将其变成  $y$  的操作。每种类型的指令所做的操作描述如下：\n\n- **move**( $t, y$ )：将寄存器  $y$  中的比特数组拷贝到寄存器  $t$ 。对所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，设置  $r[t][j] := r[y][j]$ 。\n- **store**( $t, v$ )：设置寄存器  $t$  等于  $v$ ，这里  $v$  是某个  $b$  个比特的数组。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，设置  $r[t][j] := v[j]$ 。\n- **and**( $t, x, y$ )：取寄存器  $x$  和  $y$  的按位与，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果  $r[x][j]$  和  $r[y][j]$  同时为 1 则设置  $r[t][j] := 1$ ，否则设置  $r[t][j] := 0$ 。\n- **or**( $t, x, y$ )：取寄存器  $x$  和  $y$  的按位或，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果  $r[x][j]$  和  $r[y][j]$  至少有一个为 1 则设置  $r[t][j] := 1$ ，否则设置  $r[t][j] := 0$ 。\n- **xor**( $t, x, y$ )：取寄存器  $x$  和  $y$  的按位异或，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果  $r[x][j]$  和  $r[y][j]$  恰好有一个为 1 则设置  $r[t][j] := 1$ ，否则设置  $r[t][j] := 0$ 。\n- **not**( $t, x$ )：取寄存器  $x$  的按位非，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，设置  $r[t][j] := 1 - r[x][j]$ 。\n- **left**( $t, x, p$ )：左移寄存器  $x$  中的所有比特  $p$  位，并将结果存到寄存器  $t$  中。将寄存器  $x$  中的比特左移  $p$  位的结果，是一个包含  $b$  个比特的数组  $v$ 。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果\n\n{1}------------------------------------------------\n\n$j \\geq p$  则  $v[j] = r[x][j - p]$ , 否则  $v[j] = 0$ 。对所有的  $j$  ( $0 \\leq j \\leq b - 1$ ), 设置  $r[t][j] := v[j]$ 。\n\n- $right(t, x, p)$ : 右移寄存器  $x$  中的所有比特  $p$  位, 并将结果存到寄存器  $t$  中。将寄存器  $x$  中的比特右移  $p$  位的结果, 是一个包含  $b$  个比特的数组  $v$ 。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ ), 如果  $j \\leq b - 1 - p$  则  $v[j] = r[x][j + p]$ , 否则  $v[j] = 0$ 。对所有的  $j$  ( $0 \\leq j \\leq b - 1$ ), 设置  $r[t][j] := v[j]$ 。\n- $add(t, x, y)$ : 将寄存器  $x$  和  $y$  中的整数值加起来, 并将结果存到寄存器  $t$  中。加法是在模  $2^b$  下做的。正式一些来说, 设  $X$  是操作前存在寄存器  $x$  中的整数值, 而  $Y$  是操作前存在寄存器  $y$  中的整数值。设  $T$  为操作后存在寄存器  $t$  中的整数值。如果  $X + Y < 2^b$ , 设置  $t$  中的比特使得  $T = X + Y$ 。否则, 设置  $t$  中的比特使得  $T = X + Y - 2^b$ 。\n\nChristopher 希望你用这个新处理器解决两种任务。任务的类型用整数  $s$  来表示。对所有类型的任务, 你需要创建一个**程序**, 其为上文所定义的指令构成的序列。\n\n程序的**输入**包括  $n$  个整数  $a[0], a[1], \\dots, a[n - 1]$ , 而每个整数都有  $k$  个比特, 也就是说,  $a[i] < 2^k$  ( $0 \\leq i \\leq n - 1$ )。在程序执行前, 输入的所有的数都依次存储在寄存器 0 中, 使得对所有的  $i$  ( $0 \\leq i \\leq n - 1$ ),  $k$  比特序列  $r[0][i \\cdot k], r[0][i \\cdot k + 1], \\dots, r[0][(i + 1) \\cdot k - 1]$  的整数值等于  $a[i]$ 。注意  $n \\cdot k \\leq b$ 。寄存器 0 中所有其他的比特 (其下标在  $n \\cdot k$  和  $b - 1$  之间, 包括  $n \\cdot k$  和  $b - 1$ ), 以及其他所有寄存器中的所有比特, 都初始化为 0。\n\n执行某个程序就是按序执行其所包含的指令。在最后一条指令执行完毕后, 程序的**输出**将根据寄存器 0 中比特最终的值计算出来。具体来说, 输出是  $n$  个整数  $c[0], c[1], \\dots, c[n - 1]$  的序列, 这里对所有  $i$  ( $0 \\leq i \\leq n - 1$ ) 来说,  $c[i]$  都是寄存器 0 中比特  $i \\cdot k$  到  $(i + 1) \\cdot k - 1$  所构成的序列的整数值。注意, 在程序运行结束后, 寄存器 0 中其余的比特 (下标不小于  $n \\cdot k$ ), 以及其他寄存器中的所有比特, 可能是任意值。\n\n- 第一个任务 ( $s = 0$ ) 是要找出输入整数  $a[0], a[1], \\dots, a[n - 1]$  中的最小值。具体来说,  $c[0]$  必须是  $a[0], a[1], \\dots, a[n - 1]$  中的最小值。  $c[1], c[2], \\dots, c[n - 1]$  的值可以是任意的。\n- 第二个任务 ( $s = 1$ ) 是要将输入整数  $a[0], a[1], \\dots, a[n - 1]$  进行非降序排序。具体来说, 对于所有的  $i$  ( $0 \\leq i \\leq n - 1$ ),  $c[i]$  应当等于  $a[0], a[1], \\dots, a[n - 1]$  中第  $1 + i$  小的整数 (也就是说,  $c[0]$  是输入整数中的最小整数)。\n\n请帮 Christopher 写一下解决这些任务的程序。每个程序至多只能包含  $q$  条指令。\n\n## 实现细节\n\n你要实现如下函数:\n\n```\nvoid construct_instructions(int s, int n, int k, int q)\n```\n\n- $s$ : 任务类型。\n- $n$ : 输入中的整数的数量。\n\n{2}------------------------------------------------\n\n- $k$ : 输入中的每个整数的比特数。\n- $q$ : 允许的最大的指令数。\n- 该函数将被恰好调用一次, 并应当为所要解决的任务创建一个指令序列。\n\n该函数应当调用以下函数中的一或多个, 以创建指令序列:\n\n```\nvoid append_move(int t, int y)\nvoid append_store(int t, bool[] v)\nvoid append_and(int t, int x, int y)\nvoid append_or(int t, int x, int y)\nvoid append_xor(int t, int x, int y)\nvoid append_not(int t, int x)\nvoid append_left(int t, int x, int p)\nvoid append_right(int t, int x, int p)\nvoid append_add(int t, int x, int y)\n```\n\n- 每个函数分别往程序追加一条  $move(t, y)$ 、 $store(t, v)$ 、 $and(t, x, y)$ 、 $or(t, x, y)$ 、 $xor(t, x, y)$ 、 $not(t, x)$ 、 $left(t, x, p)$ 、 $right(t, x, p)$  或  $add(t, x, y)$  指令。\n- 对于所有相关的指令,  $t$ 、 $x$ 、 $y$  必须至少为 0 且至多为  $m - 1$ 。\n- 对于所有相关的指令,  $t$ 、 $x$ 、 $y$  不必是两两之间不同的。\n- 对于指令  $left$  和  $right$ ,  $p$  必须至少为 0 且至多为  $b$ 。\n- 对于指令  $store$ ,  $v$  的长度必须为  $b$ 。\n\n你还可以调用以下函数, 以帮助测试你的答案:\n\n```\nvoid append_print(int t)\n```\n\n- 在评测你的答案时, 对该函数的所有调用都将被忽略。\n- 在评测程序示例中, 该函数将往程序追加一个  $print(t)$  操作。\n- 当评测程序示例在执行某个程序过程中遇到一个  $print(t)$  操作时, 它会打印出由寄存器  $t$  中前  $n \\cdot k$  比特构成的  $n$  个  $k$ -比特整数 (细节可参见“评测程序示例”部分)。\n- $t$  必须满足  $0 \\leq t \\leq m - 1$ 。\n- 对该函数的任何调用, 都不会算到你所创建的指令的数量里面。\n\n在追加最后一条指令之后, `construct_instructions` 应当返回。随后你创建的程序将在一定数量的测试用例上评测, 其中每个测试用例给出的输入数据为  $n$  个  $k$ -比特整数  $a[0], a[1], \\dots, a[n - 1]$ 。如果程序对给定输入数据的输出结果  $c[0], c[1], \\dots, c[n - 1]$  满足如下条件, 你的答案就将被视为通过了对应的样例:\n\n- 如果  $s = 0$ ,  $c[0]$  应当为  $a[0], a[1], \\dots, a[n - 1]$  中的最小值。\n- 如果  $s = 1$ , 对所有  $i$  ( $0 \\leq i \\leq n - 1$ ) 来说,  $c[i]$  应当是  $a[0], a[1], \\dots, a[n - 1]$  中第  $1 + i$  小的整数。\n\n在评测你的答案时, 可能会给出下面的错误信息之一:\n\n{3}------------------------------------------------\n\n- Invalid index: 在调用某些函数时的参数  $t$ ,  $x$  或  $y$  所给出的寄存器下标是不正确的（可能是负数）。\n- Value to store is not  $b$  bits long: 提供给 `append_store` 的  $v$  的长度不等于  $b$ 。\n- Invalid shift value: 提供给 `append_left` 或 `append_right` 的  $p$  的值不在 0 和  $b$  之间（包括 0 和  $b$ ）。\n- Too many instructions: 你的函数试图追加超过  $q$  条指令。\n\n## 例子\n\n### 例 1\n\n设  $s = 0$ ,  $n = 2$ ,  $k = 1$ ,  $q = 1000$ 。有两个输入的整数  $a[0]$  和  $a[1]$ , 每个都有  $k = 1$  个比特。在程序执行前,  $r[0][0] = a[0]$  且  $r[0][1] = a[1]$ 。处理器中的其他所有比特都被设置为 0。在程序中的指令全部执行完毕后, 我们想要得到  $c[0] = r[0][0] = \\min(a[0], a[1])$ , 其为  $a[0]$  和  $a[1]$  中的最小值。\n\n提供给程序的输入, 总共有四种可能情形:\n\n- 情形 1:  $a[0] = 0, a[1] = 0$\n- 情形 2:  $a[0] = 0, a[1] = 1$\n- 情形 3:  $a[0] = 1, a[1] = 0$\n- 情形 4:  $a[0] = 1, a[1] = 1$\n\n我们可以注意到, 对于所有 4 种情形,  $\\min(a[0], a[1])$  等于  $a[0]$  和  $a[1]$  的按位与。因此, 一种可能的答案是通过做如下调用而创建的程序:\n\n1. `append_move(1, 0)`, 追加一条指令, 将  $r[0]$  拷贝到  $r[1]$ 。\n2. `append_right(1, 1, 1)`, 追加一条指令, 将  $r[1]$  中的所有比特右移 1 位, 接着将结果存回到  $r[1]$  中。由于每个整数都是 1-比特长的, 这将使得  $r[1][0]$  等于  $a[1]$ 。\n3. `append_and(0, 0, 1)`, 追加一条指令, 将  $r[0]$  和  $r[1]$  做按位与, 接着将结果存到  $r[0]$  中。在本指令执行完毕后,  $r[0][0]$  被设置成  $r[0][0]$  和  $r[1][0]$  的按位与, 其值等于  $a[0]$  和  $a[1]$  的按位与, 也就是所要求的结果。\n\n### 例 2\n\n设  $s = 1$ ,  $n = 2$ ,  $k = 1$ ,  $q = 1000$ 。与前面的例子一样, 这里程序的输入数据也只有 4 种可能的情形。对于所有 4 种情形,  $\\min(a[0], a[1])$  是  $a[0]$  和  $a[1]$  的按位与, 而  $\\max(a[0], a[1])$  是  $a[0]$  和  $a[1]$  的按位或。一个可能的答案是做如下调用:\n\n1. `append_move(1, 0)`\n2. `append_right(1, 1, 1)`\n3. `append_and(2, 0, 1)`\n4. `append_or(3, 0, 1)`\n5. `append_left(3, 3, 1)`\n\n{4}------------------------------------------------\n\n6. append\\_or(0, 2, 3)\n\n在执行完这些指令后,  $c[0] = r[0][0]$  存有  $\\min(a[0], a[1])$ , 而  $c[1] = r[0][1]$  则存有  $\\max(a[0], a[1])$ , 也就对输入数据做好了排序。\n\n## 约束条件\n\n- $m = 100$\n- $b = 2000$\n- $0 \\leq s \\leq 1$\n- $2 \\leq n \\leq 100$\n- $1 \\leq k \\leq 10$\n- $q \\leq 4000$\n- $0 \\leq a[i] \\leq 2^k - 1$  (对于所有  $0 \\leq i \\leq n - 1$ )\n\n## 子任务\n\n1. (10 分)  $s = 0, n = 2, k \\leq 2, q = 1000$\n2. (11 分)  $s = 0, n = 2, k \\leq 2, q = 20$\n3. (12 分)  $s = 0, q = 4000$\n4. (25 分)  $s = 0, q = 150$\n5. (13 分)  $s = 1, n \\leq 10, q = 4000$\n6. (29 分)  $s = 1, q = 4000$\n\n## 评测程序示例\n\n评测程序示例按以下格式读取输入:\n\n- 第 1 行:  $s \\ n \\ k \\ q$\n\n接下来还有若干行, 每行描述一个单独的测试用例。每个测试用例将以如下格式给出:\n\n- $a[0] \\ a[1] \\ \\dots \\ a[n - 1]$\n\n这样, 就描述出了一个包含  $n$  个整数  $a[0], a[1], \\dots, a[n - 1]$  的测试用例。在所有测试用例的描述之后, 将跟着仅包含  $-1$  的单独一行。\n\n评测程序示例首先调用 `construct_instructions(s, n, k, q)`。如果该调用违反了在程序说明中的某些限制, 评测程序示例将打印出在“实现细节”部分列出的错误信息之一, 并且退出。否则, 评测程序示例首先依次打印出 `construct_instructions(s, n, k, q)` 所追加的指令。对于 *store* 指令, 将把  $v$  从下标 0 到  $b - 1$  依次打印出来。\n\n随后, 评测程序示例将依次处理测试用例。对于每个测试用例, 评测程序示例将在该测试用例中的输入数据上运行所创建的程序。\n\n{5}------------------------------------------------\n\n对于每个  $print(t)$  操作，设  $d[0], d[1], \\dots, d[n-1]$  为一个整数序列，使得对于所有  $i$  ( $0 \\leq i \\leq n-1$ )， $d[i]$  为（在执行该操作时）寄存器  $t$  中比特序列  $i \\cdot k$  到  $(i+1) \\cdot k - 1$  的整数值。评测程序按照如下格式打印出该序列：register  $t$ :  $d[0] \\ d[1] \\ \\dots \\ d[n-1]$ 。\n\n如果所有指令都被执行完毕，评测程序示例将打印出程序的输出结果。\n\n如果  $s = 0$ ，评测程序示例在每个测试用例上的输出结果为如下格式：\n\n- $c[0]$ 。\n\n如果  $s = 1$ ，评测程序示例在每个测试用例上的输出结果为如下格式：\n\n- $c[0] \\ c[1] \\ \\dots \\ c[n-1]$ 。\n\n在处理完所有测试用例后，评测程序打印出 number of instructions:  $X$ ，这里  $X$  是你的程序的指令数量。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 11
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 15
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 8
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 6,
+      "total_cost": 1.8,
+      "cost_breakdown": {
+        "final_cost_cents": 1.8
+      },
+      "runtime": 9.267154216766357,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 位移寄存器 (registers)\n\n工程师 Christopher 在开发一款新的计算机处理器。\n\n这个处理器可以访问  $m$  个不同的  $b$  位存储单元（本题中  $m = 100$  且  $b = 2000$ ）。它们被称作**寄存器**，编号从 0 到  $m - 1$ 。我们把这些寄存器记为  $r[0], r[1], \\dots, r[m - 1]$ 。每个寄存器都是  $b$  个比特的数组，这些比特从 0（最右的比特）到  $b - 1$ （最左的比特）编号。对所有的  $i$  ( $0 \\leq i \\leq m - 1$ ) 和  $j$  ( $0 \\leq j \\leq b - 1$ )，我们将寄存器  $i$  的第  $j$  个比特记为  $r[i][j]$ 。\n\n对所有的比特序列  $d_0, d_1, \\dots, d_{l-1}$ （具有某个长度  $l$ ），该序列的**整数值**等于  $2^0 \\cdot d_0 + 2^1 \\cdot d_1 + \\dots + 2^{l-1} \\cdot d_{l-1}$ 。我们说**存储在某个寄存器中的整数值**就是寄存器中比特序列的整数值，也就是说，该整数值为  $2^0 \\cdot r[i][0] + 2^1 \\cdot r[i][1] + \\dots + 2^{b-1} \\cdot r[i][b - 1]$ 。\n\n该处理器有 9 种类型的**指令**，可以用来修改寄存器中的比特。每条指令操作一个或多个寄存器，并将其输出存储到其中的一个寄存器。下面我们用  $x := y$  表示一个修改  $x$  的值并将其变成  $y$  的操作。每种类型的指令所做的操作描述如下：\n\n- **move**( $t, y$ )：将寄存器  $y$  中的比特数组拷贝到寄存器  $t$ 。对所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，设置  $r[t][j] := r[y][j]$ 。\n- **store**( $t, v$ )：设置寄存器  $t$  等于  $v$ ，这里  $v$  是某个  $b$  个比特的数组。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，设置  $r[t][j] := v[j]$ 。\n- **and**( $t, x, y$ )：取寄存器  $x$  和  $y$  的按位与，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果  $r[x][j]$  和  $r[y][j]$  同时为 1 则设置  $r[t][j] := 1$ ，否则设置  $r[t][j] := 0$ 。\n- **or**( $t, x, y$ )：取寄存器  $x$  和  $y$  的按位或，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果  $r[x][j]$  和  $r[y][j]$  至少有一个为 1 则设置  $r[t][j] := 1$ ，否则设置  $r[t][j] := 0$ 。\n- **xor**( $t, x, y$ )：取寄存器  $x$  和  $y$  的按位异或，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果  $r[x][j]$  和  $r[y][j]$  恰好有一个为 1 则设置  $r[t][j] := 1$ ，否则设置  $r[t][j] := 0$ 。\n- **not**( $t, x$ )：取寄存器  $x$  的按位非，并将结果存到寄存器  $t$  中。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，设置  $r[t][j] := 1 - r[x][j]$ 。\n- **left**( $t, x, p$ )：左移寄存器  $x$  中的所有比特  $p$  位，并将结果存到寄存器  $t$  中。将寄存器  $x$  中的比特左移  $p$  位的结果，是一个包含  $b$  个比特的数组  $v$ 。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ )，如果\n\n{1}------------------------------------------------\n\n$j \\geq p$  则  $v[j] = r[x][j - p]$ , 否则  $v[j] = 0$ 。对所有的  $j$  ( $0 \\leq j \\leq b - 1$ ), 设置  $r[t][j] := v[j]$ 。\n\n- $right(t, x, p)$ : 右移寄存器  $x$  中的所有比特  $p$  位, 并将结果存到寄存器  $t$  中。将寄存器  $x$  中的比特右移  $p$  位的结果, 是一个包含  $b$  个比特的数组  $v$ 。对于所有的  $j$  ( $0 \\leq j \\leq b - 1$ ), 如果  $j \\leq b - 1 - p$  则  $v[j] = r[x][j + p]$ , 否则  $v[j] = 0$ 。对所有的  $j$  ( $0 \\leq j \\leq b - 1$ ), 设置  $r[t][j] := v[j]$ 。\n- $add(t, x, y)$ : 将寄存器  $x$  和  $y$  中的整数值加起来, 并将结果存到寄存器  $t$  中。加法是在模  $2^b$  下做的。正式一些来说, 设  $X$  是操作前存在寄存器  $x$  中的整数值, 而  $Y$  是操作前存在寄存器  $y$  中的整数值。设  $T$  为操作后存在寄存器  $t$  中的整数值。如果  $X + Y < 2^b$ , 设置  $t$  中的比特使得  $T = X + Y$ 。否则, 设置  $t$  中的比特使得  $T = X + Y - 2^b$ 。\n\nChristopher 希望你用这个新处理器解决两种任务。任务的类型用整数  $s$  来表示。对所有类型的任务, 你需要创建一个**程序**, 其为上文所定义的指令构成的序列。\n\n程序的**输入**包括  $n$  个整数  $a[0], a[1], \\dots, a[n - 1]$ , 而每个整数都有  $k$  个比特, 也就是说,  $a[i] < 2^k$  ( $0 \\leq i \\leq n - 1$ )。在程序执行前, 输入的所有的数都依次存储在寄存器 0 中, 使得对所有的  $i$  ( $0 \\leq i \\leq n - 1$ ),  $k$  比特序列  $r[0][i \\cdot k], r[0][i \\cdot k + 1], \\dots, r[0][(i + 1) \\cdot k - 1]$  的整数值等于  $a[i]$ 。注意  $n \\cdot k \\leq b$ 。寄存器 0 中所有其他的比特 (其下标在  $n \\cdot k$  和  $b - 1$  之间, 包括  $n \\cdot k$  和  $b - 1$ ), 以及其他所有寄存器中的所有比特, 都初始化为 0。\n\n执行某个程序就是按序执行其所包含的指令。在最后一条指令执行完毕后, 程序的**输出**将根据寄存器 0 中比特最终的值计算出来。具体来说, 输出是  $n$  个整数  $c[0], c[1], \\dots, c[n - 1]$  的序列, 这里对所有  $i$  ( $0 \\leq i \\leq n - 1$ ) 来说,  $c[i]$  都是寄存器 0 中比特  $i \\cdot k$  到  $(i + 1) \\cdot k - 1$  所构成的序列的整数值。注意, 在程序运行结束后, 寄存器 0 中其余的比特 (下标不小于  $n \\cdot k$ ), 以及其他寄存器中的所有比特, 可能是任意值。\n\n- 第一个任务 ( $s = 0$ ) 是要找出输入整数  $a[0], a[1], \\dots, a[n - 1]$  中的最小值。具体来说,  $c[0]$  必须是  $a[0], a[1], \\dots, a[n - 1]$  中的最小值。  $c[1], c[2], \\dots, c[n - 1]$  的值可以是任意的。\n- 第二个任务 ( $s = 1$ ) 是要将输入整数  $a[0], a[1], \\dots, a[n - 1]$  进行非降序排序。具体来说, 对于所有的  $i$  ( $0 \\leq i \\leq n - 1$ ),  $c[i]$  应当等于  $a[0], a[1], \\dots, a[n - 1]$  中第  $1 + i$  小的整数 (也就是说,  $c[0]$  是输入整数中的最小整数)。\n\n请帮 Christopher 写一下解决这些任务的程序。每个程序至多只能包含  $q$  条指令。\n\n## 实现细节\n\n你要实现如下函数:\n\n```\nvoid construct_instructions(int s, int n, int k, int q)\n```\n\n- $s$ : 任务类型。\n- $n$ : 输入中的整数的数量。\n\n{2}------------------------------------------------\n\n- $k$ : 输入中的每个整数的比特数。\n- $q$ : 允许的最大的指令数。\n- 该函数将被恰好调用一次, 并应当为所要解决的任务创建一个指令序列。\n\n该函数应当调用以下函数中的一或多个, 以创建指令序列:\n\n```\nvoid append_move(int t, int y)\nvoid append_store(int t, bool[] v)\nvoid append_and(int t, int x, int y)\nvoid append_or(int t, int x, int y)\nvoid append_xor(int t, int x, int y)\nvoid append_not(int t, int x)\nvoid append_left(int t, int x, int p)\nvoid append_right(int t, int x, int p)\nvoid append_add(int t, int x, int y)\n```\n\n- 每个函数分别往程序追加一条  $move(t, y)$ 、 $store(t, v)$ 、 $and(t, x, y)$ 、 $or(t, x, y)$ 、 $xor(t, x, y)$ 、 $not(t, x)$ 、 $left(t, x, p)$ 、 $right(t, x, p)$  或  $add(t, x, y)$  指令。\n- 对于所有相关的指令,  $t$ 、 $x$ 、 $y$  必须至少为 0 且至多为  $m - 1$ 。\n- 对于所有相关的指令,  $t$ 、 $x$ 、 $y$  不必是两两之间不同的。\n- 对于指令  $left$  和  $right$ ,  $p$  必须至少为 0 且至多为  $b$ 。\n- 对于指令  $store$ ,  $v$  的长度必须为  $b$ 。\n\n你还可以调用以下函数, 以帮助测试你的答案:\n\n```\nvoid append_print(int t)\n```\n\n- 在评测你的答案时, 对该函数的所有调用都将被忽略。\n- 在评测程序示例中, 该函数将往程序追加一个  $print(t)$  操作。\n- 当评测程序示例在执行某个程序过程中遇到一个  $print(t)$  操作时, 它会打印出由寄存器  $t$  中前  $n \\cdot k$  比特构成的  $n$  个  $k$ -比特整数 (细节可参见“评测程序示例”部分)。\n- $t$  必须满足  $0 \\leq t \\leq m - 1$ 。\n- 对该函数的任何调用, 都不会算到你所创建的指令的数量里面。\n\n在追加最后一条指令之后, `construct_instructions` 应当返回。随后你创建的程序将在一定数量的测试用例上评测, 其中每个测试用例给出的输入数据为  $n$  个  $k$ -比特整数  $a[0], a[1], \\dots, a[n - 1]$ 。如果程序对给定输入数据的输出结果  $c[0], c[1], \\dots, c[n - 1]$  满足如下条件, 你的答案就将被视为通过了对应的样例:\n\n- 如果  $s = 0$ ,  $c[0]$  应当为  $a[0], a[1], \\dots, a[n - 1]$  中的最小值。\n- 如果  $s = 1$ , 对所有  $i$  ( $0 \\leq i \\leq n - 1$ ) 来说,  $c[i]$  应当是  $a[0], a[1], \\dots, a[n - 1]$  中第  $1 + i$  小的整数。\n\n在评测你的答案时, 可能会给出下面的错误信息之一:\n\n{3}------------------------------------------------\n\n- Invalid index: 在调用某些函数时的参数  $t$ ,  $x$  或  $y$  所给出的寄存器下标是不正确的（可能是负数）。\n- Value to store is not  $b$  bits long: 提供给 `append_store` 的  $v$  的长度不等于  $b$ 。\n- Invalid shift value: 提供给 `append_left` 或 `append_right` 的  $p$  的值不在 0 和  $b$  之间（包括 0 和  $b$ ）。\n- Too many instructions: 你的函数试图追加超过  $q$  条指令。\n\n## 例子\n\n### 例 1\n\n设  $s = 0$ ,  $n = 2$ ,  $k = 1$ ,  $q = 1000$ 。有两个输入的整数  $a[0]$  和  $a[1]$ , 每个都有  $k = 1$  个比特。在程序执行前,  $r[0][0] = a[0]$  且  $r[0][1] = a[1]$ 。处理器中的其他所有比特都被设置为 0。在程序中的指令全部执行完毕后, 我们想要得到  $c[0] = r[0][0] = \\min(a[0], a[1])$ , 其为  $a[0]$  和  $a[1]$  中的最小值。\n\n提供给程序的输入, 总共有四种可能情形:\n\n- 情形 1:  $a[0] = 0, a[1] = 0$\n- 情形 2:  $a[0] = 0, a[1] = 1$\n- 情形 3:  $a[0] = 1, a[1] = 0$\n- 情形 4:  $a[0] = 1, a[1] = 1$\n\n我们可以注意到, 对于所有 4 种情形,  $\\min(a[0], a[1])$  等于  $a[0]$  和  $a[1]$  的按位与。因此, 一种可能的答案是通过做如下调用而创建的程序:\n\n1. `append_move(1, 0)`, 追加一条指令, 将  $r[0]$  拷贝到  $r[1]$ 。\n2. `append_right(1, 1, 1)`, 追加一条指令, 将  $r[1]$  中的所有比特右移 1 位, 接着将结果存回到  $r[1]$  中。由于每个整数都是 1-比特长的, 这将使得  $r[1][0]$  等于  $a[1]$ 。\n3. `append_and(0, 0, 1)`, 追加一条指令, 将  $r[0]$  和  $r[1]$  做按位与, 接着将结果存到  $r[0]$  中。在本指令执行完毕后,  $r[0][0]$  被设置成  $r[0][0]$  和  $r[1][0]$  的按位与, 其值等于  $a[0]$  和  $a[1]$  的按位与, 也就是所要求的结果。\n\n### 例 2\n\n设  $s = 1$ ,  $n = 2$ ,  $k = 1$ ,  $q = 1000$ 。与前面的例子一样, 这里程序的输入数据也只有 4 种可能的情形。对于所有 4 种情形,  $\\min(a[0], a[1])$  是  $a[0]$  和  $a[1]$  的按位与, 而  $\\max(a[0], a[1])$  是  $a[0]$  和  $a[1]$  的按位或。一个可能的答案是做如下调用:\n\n1. `append_move(1, 0)`\n2. `append_right(1, 1, 1)`\n3. `append_and(2, 0, 1)`\n4. `append_or(3, 0, 1)`\n5. `append_left(3, 3, 1)`\n\n{4}------------------------------------------------\n\n6. append\\_or(0, 2, 3)\n\n在执行完这些指令后,  $c[0] = r[0][0]$  存有  $\\min(a[0], a[1])$ , 而  $c[1] = r[0][1]$  则存有  $\\max(a[0], a[1])$ , 也就对输入数据做好了排序。\n\n## 约束条件\n\n- $m = 100$\n- $b = 2000$\n- $0 \\leq s \\leq 1$\n- $2 \\leq n \\leq 100$\n- $1 \\leq k \\leq 10$\n- $q \\leq 4000$\n- $0 \\leq a[i] \\leq 2^k - 1$  (对于所有  $0 \\leq i \\leq n - 1$ )\n\n## 子任务\n\n1. (10 分)  $s = 0, n = 2, k \\leq 2, q = 1000$\n2. (11 分)  $s = 0, n = 2, k \\leq 2, q = 20$\n3. (12 分)  $s = 0, q = 4000$\n4. (25 分)  $s = 0, q = 150$\n5. (13 分)  $s = 1, n \\leq 10, q = 4000$\n6. (29 分)  $s = 1, q = 4000$\n\n## 评测程序示例\n\n评测程序示例按以下格式读取输入:\n\n- 第 1 行:  $s \\ n \\ k \\ q$\n\n接下来还有若干行, 每行描述一个单独的测试用例。每个测试用例将以如下格式给出:\n\n- $a[0] \\ a[1] \\ \\dots \\ a[n - 1]$\n\n这样, 就描述出了一个包含  $n$  个整数  $a[0], a[1], \\dots, a[n - 1]$  的测试用例。在所有测试用例的描述之后, 将跟着仅包含  $-1$  的单独一行。\n\n评测程序示例首先调用 `construct_instructions(s, n, k, q)`。如果该调用违反了在程序说明中的某些限制, 评测程序示例将打印出在“实现细节”部分列出的错误信息之一, 并且退出。否则, 评测程序示例首先依次打印出 `construct_instructions(s, n, k, q)` 所追加的指令。对于 *store* 指令, 将把  $v$  从下标 0 到  $b - 1$  依次打印出来。\n\n随后, 评测程序示例将依次处理测试用例。对于每个测试用例, 评测程序示例将在该测试用例中的输入数据上运行所创建的程序。\n\n{5}------------------------------------------------\n\n对于每个  $print(t)$  操作，设  $d[0], d[1], \\dots, d[n-1]$  为一个整数序列，使得对于所有  $i$  ( $0 \\leq i \\leq n-1$ )， $d[i]$  为（在执行该操作时）寄存器  $t$  中比特序列  $i \\cdot k$  到  $(i+1) \\cdot k - 1$  的整数值。评测程序按照如下格式打印出该序列：register  $t$ :  $d[0] \\ d[1] \\ \\dots \\ d[n-1]$ 。\n\n如果所有指令都被执行完毕，评测程序示例将打印出程序的输出结果。\n\n如果  $s = 0$ ，评测程序示例在每个测试用例上的输出结果为如下格式：\n\n- $c[0]$ 。\n\n如果  $s = 1$ ，评测程序示例在每个测试用例上的输出结果为如下格式：\n\n- $c[0] \\ c[1] \\ \\dots \\ c[n-1]$ 。\n\n在处理完所有测试用例后，评测程序打印出 number of instructions:  $X$ ，这里  $X$  是你的程序的指令数量。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 11
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 15
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 8
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 6,
+    "total_cost": 1.8,
+    "cost_breakdown": {
+      "final_cost_cents": 1.8
+    },
+    "runtime": 9.267154216766357,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.8
+  },
+  "page_count": 6,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2021/day2-C-registers-zh_CN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

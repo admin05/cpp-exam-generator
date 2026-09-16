@@ -1,0 +1,209 @@
+{
+  "request_id": "ZcET-wZST4pze4vXP5sIpg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:10:23.753071+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "ZcET-wZST4pze4vXP5sIpg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/ZcET-wZST4pze4vXP5sIpg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十二届全国青少年信息学奥林匹克联赛初赛试题\n\n（普及组 C 语言 二小时完成）\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n## 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分。每题有且仅有一个正确答案。）\n\n1. 在下面各世界顶级的奖项中，为计算机科学与技术领域做出杰出贡献的科学家设立的奖项是（ ）。\n\n- A. 沃尔夫奖      B. 诺贝尔奖      C. 菲尔兹奖      D. 图灵奖\n\n2. 在下列各软件中，不属于 NOIP 竞赛（复赛）推荐使用的语言环境有（ ）。\n\n- A. gcc/g++                      B. Turbo Pascal  \nC. RHIDE                      D. free pascal\n\n3. 以下断电之后仍能保存数据的有（ ）。\n\n- A. 寄存器      B. ROM      C. RAM      D. 高速缓存\n\n4. Linux 是一种（ ）。\n\n- A. 绘图软件      B. 程序设计语言      C. 操作系统      D. 网络浏览器\n\n5. CPU 是（ ）的简称。\n\n- A. 硬盘      B. 中央处理器      C. 高级程序语言      D. 核心寄存器\n\n6. 在计算机中，防火墙的作用是（ ）。\n\n- A. 防止火灾蔓延      B. 防止网络攻击  \nC. 防止计算机死机      D. 防止使用者误删除数据\n\n7. 在下列关于计算机语言的说法中，不正确的是（ ）。\n\n- A. Pascal 和 C 都是编译执行的高级语言  \nB. 高级语言程序比汇编语言程序更容易从一种计算机移植到另一种计算机上  \nC. C++ 是历史上的第一个支持面向对象的计算机语言  \nD. 与汇编语言相比，高级语言程序更容易阅读\n\n8. 在下列关于计算机算法的说法中，不正确的是（ ）。\n\n- A. 一个正确的算法至少要有个输入  \nB. 算法的改进，在很大程度上推动了计算机科学与技术的进步  \nC. 判断一个算法的好坏的主要标准是算法的时间复杂性与空间复杂性\n\n{1}------------------------------------------------\n\nD. 目前仍然存在许多涉及到国计民生的重大课题，还没有找到能够在计算机上实施的有效算法\n\n9. 在下列各种排序算法中，不是以“比较”作为主要操作的算法是（ ）。\n\n- A. 选择排序\n- B. 冒泡排序\n- C. 插入排序\n- D. 基数排序\n\n10. 在编程时（使用任一种高级语言，不一定是 C），如果需要从磁盘文件中输入一个很大的二维数组（例如 1000\\*1000 的 double 型数组），按行读（即外层循环是关于行的）与按列读（即外层循环是关于列的）相比，在输入效率上（ ）。\n\n- A. 没有区别\n- B. 按行读的方式要高一些\n- C. 按列读的方式要高一些\n- D. 取决于数组的存储方式。\n\n11. 在 C 语言中，表达式  $21^2$  的值是（ ）\n\n- A. 441\n- B. 42\n- C. 23\n- D. 24\n\n12. 在 C 语言中，判断 a 不等于 0 且 b 不等于 0 的正确的条件表达式是（ ）\n\n- A.  $!a==0 \\ || \\ !b==0$\n- B.  $!((a==0) \\ \\&\\& \\ (b==0))$\n- C.  $!(a==0 \\ \\&\\& \\ b==0)$\n- D.  $a \\ \\&\\& \\ b$\n\n13. 某个车站呈狭长形，宽度只能容下一台车，并且只有一个出入口。已知某时刻该车站状态为空，从这一时刻开始的出入记录为：“进，出，进，进，进，出，出，进，进，进，出，出”。假设车辆入站的顺序为 1, 2, 3, ……，则车辆出站的顺序为（ ）。\n\n- A. 1, 2, 3, 4, 5\n- B. 1, 2, 4, 5, 7\n- C. 1, 4, 3, 7, 6\n- D. 1, 4, 3, 7, 2\n\n14. 高度为 n 的均衡的二叉树是指：如果去掉叶结点及相应的树枝，它应该是高度为 n-1 的满二叉树。在这里，树高等于叶结点的最大深度，根结点的深度为 0，如果某个均衡的二叉树共有 2381 个结点，则该树的树高为（ ）。\n\n- A. 10\n- B. 11\n- C. 12\n- D. 13\n\n15. 与十进制数 1770 对应的八进制数是（ ）。\n\n- A. 3350\n- B. 3351\n- C. 3352\n- D. 3540\n\n16. 将 5 个数的序列排序，不论原先的顺序如何，最少都可以通过（ ）次比较，完成从小到大的排序。\n\n- A. 6\n- B. 7\n- C. 8\n- D. 9\n\n17. 设 A=B=D=true, C=false，以下逻辑运算表达式值为真的（ ）。\n\n- A.  $(\\neg A \\wedge B) \\vee (C \\wedge D)$\n- B.  $\\neg((A \\vee B \\vee D) \\wedge C)$\n\n{2}------------------------------------------------\n\nC.  $\\neg A \\wedge (B \\vee C \\vee D)$  D.  $(A \\wedge B \\wedge C) \\vee \\neg D$\n\n18.  $(2010)_{16} + (32)_8$  的结果是 ( )。\n\n- A.  $(8234)_{10}$  B.  $(202B)_{16}$\n- C.  $(20056)_8$  D.  $(100000000110)_2$\n\n19. 设栈S的初始状态为空, 元素a, b, c, d, e 依次入栈, 以下出栈序列不可能出现的有 ( )。\n\n- A. a, b, c, e, d B. b, c, a, e, d\n- C. a, e, c, b, d D. d, c, e, b, a\n\n20. 已知 6 个结点的二叉树的先根遍历是 1 2 3 4 5 6 (数字为结点的编号, 以下同), 后根遍历是 3 2 5 6 4 1, 则该二叉树的可能的中根遍历是 ( )\n\n- A. 3 2 1 4 6 5 B. 3 2 1 5 4 6\n- C. 2 1 3 5 4 6 D. 2 3 1 4 6 5\n\n## **二. 问题求解 (共 2 题, 每题 5 分, 共计 10 分)**\n\n**1. (寻找假币)** 现有 80 枚硬币, 其中有一枚是假币, 其重量稍轻, 所有真币的重量都相同, 如果使用不带砝码的天平称重, 最少需要称几次, 就可以找出假币? 你还要指出第 1 次的称重方法。请写出你的结果: \\_\\_\\_\\_\\_。\n\n**2. (取石子游戏)** 现有 5 堆石子, 石子数依次为 3, 5, 7, 19, 50, 甲乙两人轮流从任一堆中任取 (每次只能取自一堆, 不能不取), 取最后一颗石子的一方获胜。甲先取, 问甲有没有获胜策略 (即无论乙怎样取, 甲只要不失误, 都能获胜)? 如果有, 甲第一步应该在哪一堆里取多少? 请写出你的结果: \\_\\_\\_\\_\\_。\n\n## **三. 阅读程序写结果 (共 4 题, 每题 8 分, 共计 32 分)**\n\n```\n1. #include <stdio.h>\nint main()\n{int i,u[4],a,b,x,y=10;\nfor(i=0;i<=3;i++)\nscanf(\"%d\", &u[i]);\na=(u[0]+u[1]+u[2]+u[3])/7;\nb=u[0]/((u[1]-u[2])/u[3]);\nx=(u[0]+a+2)-u[(u[3]+3)%4];\nif(x>10)\ny+= (b*100-u[3])/(u[u[0]%3]*5);\n```\n\n{3}------------------------------------------------\n\n```\n\nelse\n    y+=20+(b*100-u[3])/(u[u[0]%3]*5);\nprintf(\"%d,%d\\n\", x,y);\nreturn 0;\n} /*注: 本例中, 给定的输入数据可以避免分母为 0 或下标越界。 */\n输入: 9 3 9 4\n输出: _____\n\n```\n\n```\n\n2. #include <stdio.h>\nmain()\n{int i,j,m[]={2,3,5,7,13};\nlong t;\nfor (i=0;i<=4;i++)\n    {t=1;\n    for(j=1;j<m[i];j++)    t*=2;\n    printf(\"%ld  \", (t*2-1)*t);\n    }\nprintf(\"\\n\");\n}\n输出: _____\n\n```\n\n```\n\n3. #include \"stdio.h\"\n#define N 7\nint fun(char s[],char a,int n)\n{int j;\nj=n;\nwhile(a<s[j] && j>0) j--;\nreturn j;\n}\nint main()\n{char s[N+1];\nint k,p;\nfor(k=1;k<=N;k++)\n    s[k]='A'+2*k+1;\nprintf(\"%d\\n\", fun(s, 'M', N));\n}\n输出: _____\n\n```\n\n{4}------------------------------------------------\n\n```\n\n4.#include <stdio.h>\nvoid digit(long n,long m)\n{if(m>0)\n    printf(\"%2ld\",n%10);\n    if(m>1)\n        digit(n/10,m/10);\n    printf(\"%2ld\",n%10);\n}\nmain()\n{long x,x2;\n    printf(\"Input a number:\\n\"); scanf(\"%ld\",&x);\n    x2=1;\n    while(x2<x) x2*=10;\n    x2/=10;\n    digit(x,x2);\n    printf(\"\\n\");\n}\n\n```\n\n输入: 9734526\n\n输出: \\_\\_\\_\\_\\_\n\n## 四. 完善程序 (前 4 空, 每空 2.5 分, 后 6 空, 每空 3 分, 共 28 分)\n\n1. (全排列) 下面程序的功能是利用递归方法生成从 1 到 n (n<10) 的 n 个数的全部可能的排列 (不一定按升序输出)。例如, 输入 3, 则应该输出 (每行输出 5 个排列):\n\n```\n\n123 132 213 231 321\n312\n\n```\n\n程序:\n\n```\n\n#include<stdio.h>\nint n,a[10]; /* a[1],a[2],...,a[n] 构成 n 个数的一个排列 */\nlong count=0; /* 变量 count 记录不同排列的个数, 这里用于控制换行 */\nvoid perm(int k)\n{int j,p,t;\n    if( ① )\n    {count++;\n        for(p=1;p<=n;p++) printf(\"%1d\",a[p]); /* \"%1d\"中是数字 1, 不是字母 l */\n        printf(\" \");\n        if( ② ) printf(\"\\n\");\n        return;\n    }\n}\n\n```\n\n{5}------------------------------------------------\n\n```\n\n    }\n    for(j=k;j<=n;j++)\n    {t=a[k];a[k]=a[j];a[j]=t;\n      ③ ;\n      t=a[k]; ④ ;\n    }\n  }\n  main()\n  {int i;\n    printf(\"Entry n:\\n\"); scanf(\"%d\",&n);\n    for(i=1;i<=n;i++) a[i]=i;\n    ⑤ ;\n  }\n\n```\n\n2. 由键盘输入一个奇数  $P$  ( $P < 100,000,000$ )，其个位数字不是 5，求一个整数  $S$ ，使  $P \\times S = 1111\\dots 1$ （在给定的条件下，解  $S$  必存在）。要求在屏幕上依次输出以下结果：\n\n(1)  $S$  的全部数字。除最后一行外，每行输出 50 位数字。 (2) 乘积的数字位数。\n\n例 1: 输入  $p=13$ ，由于  $13 \\times 8547 = 111111$ ，则应输出 (1) 8547，(2) 6\n\n例 2: 输入  $p=147$ ，则输出结果应为 (1) 755857898715041572184429327286470143613\n\n(2) 42，即等式的右端有 42 个 1。\n\n程序:\n\n```\n\n#include <stdio.h>\nmain()\n{long p,a,b,c,t,n;\n  int bl;\n  while (1)\n  { printf(\"输入 p, 最后一位为 1 或 3 或 7 或 9:\\n\");\n    scanf(\"%ld\",&p);\n    if ((p%2!=0) && (p%5!=0)) /*如果输入的数符合要求，结束循环 */\n      ⑥ ;\n  }\n  a=0; n=0;\n  while (a<p)\n  {a=a*10+1; n++; /* 变量 a 存放部分右端项，n 为右端项的位数 */\n  }\n  t=0;\n  do\n\n```\n\n{6}------------------------------------------------\n\n```\n{b=a/p;  \nprintf(\"%11d\",b);  \nt++;  \nif ( ⑦ )  \n    printf(\"\\n\");  \nc= ⑧ ; a= ⑨ ; n++;  \n} while (c>0);  \nprintf(\"\\nn=%ld\\n\", ⑩ );  \n}\n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 21
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 2
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 7,
+      "total_cost": 2.1,
+      "cost_breakdown": {
+        "final_cost_cents": 2.1
+      },
+      "runtime": 18.725855588912964,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十二届全国青少年信息学奥林匹克联赛初赛试题\n\n（普及组 C 语言 二小时完成）\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n## 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分。每题有且仅有一个正确答案。）\n\n1. 在下面各世界顶级的奖项中，为计算机科学与技术领域做出杰出贡献的科学家设立的奖项是（ ）。\n\n- A. 沃尔夫奖      B. 诺贝尔奖      C. 菲尔兹奖      D. 图灵奖\n\n2. 在下列各软件中，不属于 NOIP 竞赛（复赛）推荐使用的语言环境有（ ）。\n\n- A. gcc/g++                      B. Turbo Pascal  \nC. RHIDE                      D. free pascal\n\n3. 以下断电之后仍能保存数据的有（ ）。\n\n- A. 寄存器      B. ROM      C. RAM      D. 高速缓存\n\n4. Linux 是一种（ ）。\n\n- A. 绘图软件      B. 程序设计语言      C. 操作系统      D. 网络浏览器\n\n5. CPU 是（ ）的简称。\n\n- A. 硬盘      B. 中央处理器      C. 高级程序语言      D. 核心寄存器\n\n6. 在计算机中，防火墙的作用是（ ）。\n\n- A. 防止火灾蔓延      B. 防止网络攻击  \nC. 防止计算机死机      D. 防止使用者误删除数据\n\n7. 在下列关于计算机语言的说法中，不正确的是（ ）。\n\n- A. Pascal 和 C 都是编译执行的高级语言  \nB. 高级语言程序比汇编语言程序更容易从一种计算机移植到另一种计算机上  \nC. C++ 是历史上的第一个支持面向对象的计算机语言  \nD. 与汇编语言相比，高级语言程序更容易阅读\n\n8. 在下列关于计算机算法的说法中，不正确的是（ ）。\n\n- A. 一个正确的算法至少要有个输入  \nB. 算法的改进，在很大程度上推动了计算机科学与技术的进步  \nC. 判断一个算法的好坏的主要标准是算法的时间复杂性与空间复杂性\n\n{1}------------------------------------------------\n\nD. 目前仍然存在许多涉及到国计民生的重大课题，还没有找到能够在计算机上实施的有效算法\n\n9. 在下列各种排序算法中，不是以“比较”作为主要操作的算法是（ ）。\n\n- A. 选择排序\n- B. 冒泡排序\n- C. 插入排序\n- D. 基数排序\n\n10. 在编程时（使用任一种高级语言，不一定是 C），如果需要从磁盘文件中输入一个很大的二维数组（例如 1000\\*1000 的 double 型数组），按行读（即外层循环是关于行的）与按列读（即外层循环是关于列的）相比，在输入效率上（ ）。\n\n- A. 没有区别\n- B. 按行读的方式要高一些\n- C. 按列读的方式要高一些\n- D. 取决于数组的存储方式。\n\n11. 在 C 语言中，表达式  $21^2$  的值是（ ）\n\n- A. 441\n- B. 42\n- C. 23\n- D. 24\n\n12. 在 C 语言中，判断 a 不等于 0 且 b 不等于 0 的正确的条件表达式是（ ）\n\n- A.  $!a==0 \\ || \\ !b==0$\n- B.  $!((a==0) \\ \\&\\& \\ (b==0))$\n- C.  $!(a==0 \\ \\&\\& \\ b==0)$\n- D.  $a \\ \\&\\& \\ b$\n\n13. 某个车站呈狭长形，宽度只能容下一台车，并且只有一个出入口。已知某时刻该车站状态为空，从这一时刻开始的出入记录为：“进，出，进，进，进，出，出，进，进，进，出，出”。假设车辆入站的顺序为 1, 2, 3, ……，则车辆出站的顺序为（ ）。\n\n- A. 1, 2, 3, 4, 5\n- B. 1, 2, 4, 5, 7\n- C. 1, 4, 3, 7, 6\n- D. 1, 4, 3, 7, 2\n\n14. 高度为 n 的均衡的二叉树是指：如果去掉叶结点及相应的树枝，它应该是高度为 n-1 的满二叉树。在这里，树高等于叶结点的最大深度，根结点的深度为 0，如果某个均衡的二叉树共有 2381 个结点，则该树的树高为（ ）。\n\n- A. 10\n- B. 11\n- C. 12\n- D. 13\n\n15. 与十进制数 1770 对应的八进制数是（ ）。\n\n- A. 3350\n- B. 3351\n- C. 3352\n- D. 3540\n\n16. 将 5 个数的序列排序，不论原先的顺序如何，最少都可以通过（ ）次比较，完成从小到大的排序。\n\n- A. 6\n- B. 7\n- C. 8\n- D. 9\n\n17. 设 A=B=D=true, C=false，以下逻辑运算表达式值为真的（ ）。\n\n- A.  $(\\neg A \\wedge B) \\vee (C \\wedge D)$\n- B.  $\\neg((A \\vee B \\vee D) \\wedge C)$\n\n{2}------------------------------------------------\n\nC.  $\\neg A \\wedge (B \\vee C \\vee D)$  D.  $(A \\wedge B \\wedge C) \\vee \\neg D$\n\n18.  $(2010)_{16} + (32)_8$  的结果是 ( )。\n\n- A.  $(8234)_{10}$  B.  $(202B)_{16}$\n- C.  $(20056)_8$  D.  $(100000000110)_2$\n\n19. 设栈S的初始状态为空, 元素a, b, c, d, e 依次入栈, 以下出栈序列不可能出现的有 ( )。\n\n- A. a, b, c, e, d B. b, c, a, e, d\n- C. a, e, c, b, d D. d, c, e, b, a\n\n20. 已知 6 个结点的二叉树的先根遍历是 1 2 3 4 5 6 (数字为结点的编号, 以下同), 后根遍历是 3 2 5 6 4 1, 则该二叉树的可能的中根遍历是 ( )\n\n- A. 3 2 1 4 6 5 B. 3 2 1 5 4 6\n- C. 2 1 3 5 4 6 D. 2 3 1 4 6 5\n\n## **二. 问题求解 (共 2 题, 每题 5 分, 共计 10 分)**\n\n**1. (寻找假币)** 现有 80 枚硬币, 其中有一枚是假币, 其重量稍轻, 所有真币的重量都相同, 如果使用不带砝码的天平称重, 最少需要称几次, 就可以找出假币? 你还要指出第 1 次的称重方法。请写出你的结果: \\_\\_\\_\\_\\_。\n\n**2. (取石子游戏)** 现有 5 堆石子, 石子数依次为 3, 5, 7, 19, 50, 甲乙两人轮流从任一堆中任取 (每次只能取自一堆, 不能不取), 取最后一颗石子的一方获胜。甲先取, 问甲有没有获胜策略 (即无论乙怎样取, 甲只要不失误, 都能获胜)? 如果有, 甲第一步应该在哪一堆里取多少? 请写出你的结果: \\_\\_\\_\\_\\_。\n\n## **三. 阅读程序写结果 (共 4 题, 每题 8 分, 共计 32 分)**\n\n```\n1. #include <stdio.h>\nint main()\n{int i,u[4],a,b,x,y=10;\nfor(i=0;i<=3;i++)\nscanf(\"%d\", &u[i]);\na=(u[0]+u[1]+u[2]+u[3])/7;\nb=u[0]/((u[1]-u[2])/u[3]);\nx=(u[0]+a+2)-u[(u[3]+3)%4];\nif(x>10)\ny+= (b*100-u[3])/(u[u[0]%3]*5);\n```\n\n{3}------------------------------------------------\n\n```\n\nelse\n    y+=20+(b*100-u[3])/(u[u[0]%3]*5);\nprintf(\"%d,%d\\n\", x,y);\nreturn 0;\n} /*注: 本例中, 给定的输入数据可以避免分母为 0 或下标越界。 */\n输入: 9 3 9 4\n输出: _____\n\n```\n\n```\n\n2. #include <stdio.h>\nmain()\n{int i,j,m[]={2,3,5,7,13};\nlong t;\nfor (i=0;i<=4;i++)\n    {t=1;\n    for(j=1;j<m[i];j++)    t*=2;\n    printf(\"%ld  \", (t*2-1)*t);\n    }\nprintf(\"\\n\");\n}\n输出: _____\n\n```\n\n```\n\n3. #include \"stdio.h\"\n#define N 7\nint fun(char s[],char a,int n)\n{int j;\nj=n;\nwhile(a<s[j] && j>0) j--;\nreturn j;\n}\nint main()\n{char s[N+1];\nint k,p;\nfor(k=1;k<=N;k++)\n    s[k]='A'+2*k+1;\nprintf(\"%d\\n\", fun(s, 'M', N));\n}\n输出: _____\n\n```\n\n{4}------------------------------------------------\n\n```\n\n4.#include <stdio.h>\nvoid digit(long n,long m)\n{if(m>0)\n    printf(\"%2ld\",n%10);\n    if(m>1)\n        digit(n/10,m/10);\n    printf(\"%2ld\",n%10);\n}\nmain()\n{long x,x2;\n    printf(\"Input a number:\\n\"); scanf(\"%ld\",&x);\n    x2=1;\n    while(x2<x) x2*=10;\n    x2/=10;\n    digit(x,x2);\n    printf(\"\\n\");\n}\n\n```\n\n输入: 9734526\n\n输出: \\_\\_\\_\\_\\_\n\n## 四. 完善程序 (前 4 空, 每空 2.5 分, 后 6 空, 每空 3 分, 共 28 分)\n\n1. (全排列) 下面程序的功能是利用递归方法生成从 1 到 n (n<10) 的 n 个数的全部可能的排列 (不一定按升序输出)。例如, 输入 3, 则应该输出 (每行输出 5 个排列):\n\n```\n\n123 132 213 231 321\n312\n\n```\n\n程序:\n\n```\n\n#include<stdio.h>\nint n,a[10]; /* a[1],a[2],...,a[n] 构成 n 个数的一个排列 */\nlong count=0; /* 变量 count 记录不同排列的个数, 这里用于控制换行 */\nvoid perm(int k)\n{int j,p,t;\n    if( ① )\n    {count++;\n        for(p=1;p<=n;p++) printf(\"%1d\",a[p]); /* \"%1d\"中是数字 1, 不是字母 l */\n        printf(\" \");\n        if( ② ) printf(\"\\n\");\n        return;\n    }\n}\n\n```\n\n{5}------------------------------------------------\n\n```\n\n    }\n    for(j=k;j<=n;j++)\n    {t=a[k];a[k]=a[j];a[j]=t;\n      ③ ;\n      t=a[k]; ④ ;\n    }\n  }\n  main()\n  {int i;\n    printf(\"Entry n:\\n\"); scanf(\"%d\",&n);\n    for(i=1;i<=n;i++) a[i]=i;\n    ⑤ ;\n  }\n\n```\n\n2. 由键盘输入一个奇数  $P$  ( $P < 100,000,000$ )，其个位数字不是 5，求一个整数  $S$ ，使  $P \\times S = 1111\\dots 1$ （在给定的条件下，解  $S$  必存在）。要求在屏幕上依次输出以下结果：\n\n(1)  $S$  的全部数字。除最后一行外，每行输出 50 位数字。 (2) 乘积的数字位数。\n\n例 1: 输入  $p=13$ ，由于  $13 \\times 8547 = 111111$ ，则应输出 (1) 8547，(2) 6\n\n例 2: 输入  $p=147$ ，则输出结果应为 (1) 755857898715041572184429327286470143613\n\n(2) 42，即等式的右端有 42 个 1。\n\n程序:\n\n```\n\n#include <stdio.h>\nmain()\n{long p,a,b,c,t,n;\n  int bl;\n  while (1)\n  { printf(\"输入 p, 最后一位为 1 或 3 或 7 或 9:\\n\");\n    scanf(\"%ld\",&p);\n    if ((p%2!=0) && (p%5!=0)) /*如果输入的数符合要求，结束循环 */\n      ⑥ ;\n  }\n  a=0; n=0;\n  while (a<p)\n  {a=a*10+1; n++; /* 变量 a 存放部分右端项，n 为右端项的位数 */\n  }\n  t=0;\n  do\n\n```\n\n{6}------------------------------------------------\n\n```\n{b=a/p;  \nprintf(\"%11d\",b);  \nt++;  \nif ( ⑦ )  \n    printf(\"\\n\");  \nc= ⑧ ; a= ⑨ ; n++;  \n} while (c>0);  \nprintf(\"\\nn=%ld\\n\", ⑩ );  \n}\n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 21
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 2
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 7,
+    "total_cost": 2.1,
+    "cost_breakdown": {
+      "final_cost_cents": 2.1
+    },
+    "runtime": 18.725855588912964,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 2.1
+  },
+  "page_count": 7,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2006_C_CPP_Pascal/NOIP2006PreliminaryJunior(C)TestPaper.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

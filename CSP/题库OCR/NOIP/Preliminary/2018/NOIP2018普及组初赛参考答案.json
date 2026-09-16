@@ -1,0 +1,161 @@
+{
+  "request_id": "qZDqEwlQExbu7sItrIcu1Q",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:46:41.610123+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "qZDqEwlQExbu7sItrIcu1Q",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/qZDqEwlQExbu7sItrIcu1Q",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十四届全国青少年信息学奥林匹克联赛初赛 普及组参考答案\n\n一、单项选择题（共 15 题，每题 2 分，共计 30 分）\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| D  | D  | D  | B  | B  | A | A | A | A | B  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| A  | B  | B  | B  | B  |   |   |   |   |    |\n\n二、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 去了 没去 没去 没下雨（第 4 空 2 分，其余 1 分）\n- 544\n\n三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- RuanHuoMianTai\n- 4\n- 8\n- 6\n\n四、完善程序（共计 28 分，以下各程序填空可能还有一些等价的写法，由各省赛区组织本省专家审定及上机验证，可以不上报 CCF NOI 科学委员会复核）\n\n|    | Pascal 语言 | C++语言                                 | C 语言               | 分值 |\n|----|-----------|---------------------------------------|--------------------|----|\n| 1. | (1)       | $i * i$                               |                    | 2  |\n|    | (2)       | $n \\text{ div } i$                    | $n / i$            | 3  |\n|    | (3)       | $\\text{exit}(a)$                      | $\\text{return } a$ | 3  |\n|    | (4)       | $a \\text{ mod } b$                    | $a \\% b$           | 3  |\n|    | (5)       | $\\text{ans} + \\text{gcd}(a[i], a[j])$ |                    | 3  |\n| 2. | (1)       | $a[x] := i$                           | $a[x] = i$         | 3  |\n|    | (2)       | $i + 1$                               |                    | 2  |\n|    | (3)       | $R[a[i]]$                             |                    | 3  |\n|    | (4)       | $a[i]$                                |                    | 3  |\n|    | (5)       | $R[i]$                                |                    | 3  |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.167,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 18.737730503082275,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十四届全国青少年信息学奥林匹克联赛初赛 普及组参考答案\n\n一、单项选择题（共 15 题，每题 2 分，共计 30 分）\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| D  | D  | D  | B  | B  | A | A | A | A | B  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| A  | B  | B  | B  | B  |   |   |   |   |    |\n\n二、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 去了 没去 没去 没下雨（第 4 空 2 分，其余 1 分）\n- 544\n\n三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- RuanHuoMianTai\n- 4\n- 8\n- 6\n\n四、完善程序（共计 28 分，以下各程序填空可能还有一些等价的写法，由各省赛区组织本省专家审定及上机验证，可以不上报 CCF NOI 科学委员会复核）\n\n|    | Pascal 语言 | C++语言                                 | C 语言               | 分值 |\n|----|-----------|---------------------------------------|--------------------|----|\n| 1. | (1)       | $i * i$                               |                    | 2  |\n|    | (2)       | $n \\text{ div } i$                    | $n / i$            | 3  |\n|    | (3)       | $\\text{exit}(a)$                      | $\\text{return } a$ | 3  |\n|    | (4)       | $a \\text{ mod } b$                    | $a \\% b$           | 3  |\n|    | (5)       | $\\text{ans} + \\text{gcd}(a[i], a[j])$ |                    | 3  |\n| 2. | (1)       | $a[x] := i$                           | $a[x] = i$         | 3  |\n|    | (2)       | $i + 1$                               |                    | 2  |\n|    | (3)       | $R[a[i]]$                             |                    | 3  |\n|    | (4)       | $a[i]$                                |                    | 3  |\n|    | (5)       | $R[i]$                                |                    | 3  |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.167,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 18.737730503082275,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.167,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2018/NOIP2018普及组初赛参考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,158 @@
+{
+  "request_id": "FN3WmIfDZgwc9ogErcR-Ug",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:58:27.376252+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "FN3WmIfDZgwc9ogErcR-Ug",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/FN3WmIfDZgwc9ogErcR-Ug",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2022 小学组二轮补赛试题（下半场）\n\n考试时间：2023 年 3 月 4 日下午 16: 30--18: 00\n\n|        |         |             |\n|--------|---------|-------------|\n| 题目名称   | 动物园     | 摧毁          |\n| 题目类型   | 传统型     | 传统型         |\n| 目录     | zoo     | destroy     |\n| 程序名称   | zoo.cpp | destroy.cpp |\n| 输入文件名  | zoo.in  | destroy.in  |\n| 输出文件名  | zoo.out | destroy.out |\n| 测试点数量  | 10      | 10          |\n| 每测试点时限 | 1 秒     | 2 秒         |\n| 每测试点分值 | 10      | 10          |\n| 内存限制   | 512M    | 512M        |\n\n## 注意事项\n\n1、代码必须放在子文件夹内，子文件夹名与题目英文名一致。文件名（包括程序名和输入输出文件名）必须使用英文小写。\n\n2、C++编译选项：-O2 -std=c++14。C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0\n\n3、若无特殊说明，输入文件中同一行内的多个整数、浮点数、字符串等均使用一个空格分隔。若无特殊说明，结果比较方式为忽略行末空格、文末回车后的全文比较。\n\n{1}------------------------------------------------\n\n## 第一题 动物园 (zoo)\n\n### 题目描述\n\n某动物园里有  $n$  个场馆和  $m$  种动物 ( $m \\leq n$ )。\n\n$n$  个场馆的编号分别用  $1, 2, 3, \\dots, n$  表示;  $m$  种动物的编号分别用  $1, 2, 3, \\dots, m$  表示。每一个场馆中只饲养了一只动物, 不同的场馆可能饲养着相同种类的动物。\n\n这个动物园的门票比较特殊, 游客在购买门票时必须说明要参观的场馆的起止编号  $a$  和  $b$  (起止编号会打印到游客购买的门票上), 代表游客只能参观动物园的第  $a$  个场馆至第  $b$  个场馆 (包含  $a, b$ ) 里的动物, 其他的场馆不能去。门票按一个场馆十元收费。\n\n如果你购买的门票的起止场馆编号是 3 到 8, 那么你需要花 60 元钱购买门票, 只能观看 3, 4, 5, 6, 7, 8 号场馆的动物。\n\n小明希望看到动物园内所有种类的动物, 同时小明是个非常节约的孩子, 他希望花最少的钱买门票。请你帮小明计算: 他最少需要花费多少钱买门票才能看到所有种类的动物 (同一种动物他可能不止看一个)。注意: 小明只能买一张门票。\n\n#### 输入格式 (输入文件为 zoo.in)\n\n第一行两个整数  $n, m$ , 分别表示动物园内的场馆数量及动物种类数量。\n\n第二行是  $x_1, x_2, \\dots, x_n$ , 其中  $x_i$  表示第  $i$  个场馆中的动物种类编号。\n\n#### 输出格式 (输出文件为 zoo.out)\n\n一行一个整数  $p$ , 表示小明的门票费用。\n\n### 输入输出样例\n\n#### 样例 1 输入\n\n```\n12 5\n2 5 3 1 3 2 4 1 1 5 4 3\n```\n\n#### 样例 1 输出\n\n```\n60\n```\n\n样例 1 说明: 花费最少的其中一种购票方案选择是  $a = 2, b = 7$ , 表示购买场馆 2, 3, 4, 5, 6, 7 的门票, 分别看到的动物是 5, 3, 1, 3, 2, 4, 其中动物 3 小明看了两个。\n\n### 数据范围\n\n- 对于 30% 的数据, 有  $n \\leq 200, m \\leq 20$ 。\n- 对于 60% 的数据, 有  $n \\leq 1000, m \\leq 1000$ 。\n- 对于 100% 的数据, 有  $1 \\leq n \\leq 10^6, 1 \\leq x_i \\leq m \\leq 2 \\times 10^3$ 。\n\n{2}------------------------------------------------\n\n## 第二题 摧毁 (destroy)\n\n### 题目描述\n\n坐地日行八万里，巡天遥看一千河。\n\n2077 年，人类不仅仅是赛博科技得到了发展，太空技术也已经得到了极大的发展。地球的不同外轨道上已经充斥着各种功能用途的人造卫星。因为一个轨道上的卫星数量是有上限的，且卫星更新换代速度很快，如果想要发射新的卫星，需要把所有旧的卫星摧毁。\n\n人类有两种不同的武器可以摧毁卫星，具体如下（其中 PW 为新的能量单位）：\n\n(1) 使用定点激光武器花费 1 PW 的代价摧毁任意轨道上指定的一个卫星。\n\n(2) 使用脉冲轨道武器花费 c PW 的代价把某一轨道上的所有卫星摧毁。\n\n现在有 n 个旧卫星分布在不同的外轨道上，你的任务是摧毁这些旧卫星。给出这 n 个卫星的轨道编号，求将这些卫星全部摧毁的最小代价是多少？\n\n#### 输入格式（输入文件名为 destroy.in）\n\n第一行一个正整数 T，表示测试数据组数。\n\n接下来对于每组测试数据（注意：每组测试数据有 2 行数据，以下共 2\\*T 行数据）：\n\n第一行两个正整数 n 和 c 表示需要摧毁的卫星数量和使用脉冲轨道武器的代价。\n\n第二行是  $x_1, x_2, \\dots, x_n$ ，其中  $x_i$  表示第 i 个卫星的轨道编号。\n\n#### 输出格式（输出文件名为 destroy.out）\n\n输出 T 行答案，对于每组测试数据，输出一行一个整数表示摧毁所有卫星的代价。\n\n### 输入输出样例\n\n#### 样例 1 输入\n\n```\n4\n10 1\n2 1 4 5 2 4 5 5 1 2\n5 2\n3 2 1 2 2\n2 2\n1 1\n2 2\n1 2\n```\n\n#### 样例 1 输出\n\n```\n4\n4\n```\n\n{3}------------------------------------------------\n\n2  \n2\n\n**样例说明：**对于第一组测试数据，使用脉冲武器的代价为 1 PW。轨道 1 上有 2 个卫星，轨道 2 上有 3 个卫星，轨道 4 上有 2 个卫星，轨道 5 上有 3 个卫星。因此对于轨道 1、2、4、5，均使用脉冲武器各花费 1PW 的代价可全部摧毁，总的代价为 4 PW，很显然该方案为总代价最小方案。\n\n对于第二组测试数据，使用脉冲武器的代价为 2 PW。轨道 1 上有 1 个卫星，轨道 2 上有 3 个卫星，轨道 3 上有 1 个卫星。因此，对于轨道 1 采用激光武器，轨道 2 采用脉冲武器，轨道 3 采用激光武器可全部摧毁所有卫星，总的代价为 4 PW，很显然该方案使得总代价最小。\n\n### 数据范围\n\n对于 30% 的数据， $T = 1, 1 \\leq n \\leq 10, 1 \\leq a_i \\leq 10, 1 \\leq c \\leq 10$ ;\n\n对于 60% 的数据， $1 \\leq n \\leq 10^3, 1 \\leq a_i \\leq 1000, 1 \\leq c \\leq 100$ ;\n\n对于 100% 的数据， $1 \\leq T \\leq 10, 1 \\leq n \\leq 10^6, 1 \\leq a_i \\leq 10^6, 1 \\leq c \\leq 100$ , 且所有测试数据的  $n$  加起来不超过  $10^6$ 。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 7
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 4,
+      "total_cost": 1.2,
+      "cost_breakdown": {
+        "final_cost_cents": 1.2
+      },
+      "runtime": 6.313331604003906,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2022 小学组二轮补赛试题（下半场）\n\n考试时间：2023 年 3 月 4 日下午 16: 30--18: 00\n\n|        |         |             |\n|--------|---------|-------------|\n| 题目名称   | 动物园     | 摧毁          |\n| 题目类型   | 传统型     | 传统型         |\n| 目录     | zoo     | destroy     |\n| 程序名称   | zoo.cpp | destroy.cpp |\n| 输入文件名  | zoo.in  | destroy.in  |\n| 输出文件名  | zoo.out | destroy.out |\n| 测试点数量  | 10      | 10          |\n| 每测试点时限 | 1 秒     | 2 秒         |\n| 每测试点分值 | 10      | 10          |\n| 内存限制   | 512M    | 512M        |\n\n## 注意事项\n\n1、代码必须放在子文件夹内，子文件夹名与题目英文名一致。文件名（包括程序名和输入输出文件名）必须使用英文小写。\n\n2、C++编译选项：-O2 -std=c++14。C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0\n\n3、若无特殊说明，输入文件中同一行内的多个整数、浮点数、字符串等均使用一个空格分隔。若无特殊说明，结果比较方式为忽略行末空格、文末回车后的全文比较。\n\n{1}------------------------------------------------\n\n## 第一题 动物园 (zoo)\n\n### 题目描述\n\n某动物园里有  $n$  个场馆和  $m$  种动物 ( $m \\leq n$ )。\n\n$n$  个场馆的编号分别用  $1, 2, 3, \\dots, n$  表示;  $m$  种动物的编号分别用  $1, 2, 3, \\dots, m$  表示。每一个场馆中只饲养了一只动物, 不同的场馆可能饲养着相同种类的动物。\n\n这个动物园的门票比较特殊, 游客在购买门票时必须说明要参观的场馆的起止编号  $a$  和  $b$  (起止编号会打印到游客购买的门票上), 代表游客只能参观动物园的第  $a$  个场馆至第  $b$  个场馆 (包含  $a, b$ ) 里的动物, 其他的场馆不能去。门票按一个场馆十元收费。\n\n如果你购买的门票的起止场馆编号是 3 到 8, 那么你需要花 60 元钱购买门票, 只能观看 3, 4, 5, 6, 7, 8 号场馆的动物。\n\n小明希望看到动物园内所有种类的动物, 同时小明是个非常节约的孩子, 他希望花最少的钱买门票。请你帮小明计算: 他最少需要花费多少钱买门票才能看到所有种类的动物 (同一种动物他可能不止看一个)。注意: 小明只能买一张门票。\n\n#### 输入格式 (输入文件为 zoo.in)\n\n第一行两个整数  $n, m$ , 分别表示动物园内的场馆数量及动物种类数量。\n\n第二行是  $x_1, x_2, \\dots, x_n$ , 其中  $x_i$  表示第  $i$  个场馆中的动物种类编号。\n\n#### 输出格式 (输出文件为 zoo.out)\n\n一行一个整数  $p$ , 表示小明的门票费用。\n\n### 输入输出样例\n\n#### 样例 1 输入\n\n```\n12 5\n2 5 3 1 3 2 4 1 1 5 4 3\n```\n\n#### 样例 1 输出\n\n```\n60\n```\n\n样例 1 说明: 花费最少的其中一种购票方案选择是  $a = 2, b = 7$ , 表示购买场馆 2, 3, 4, 5, 6, 7 的门票, 分别看到的动物是 5, 3, 1, 3, 2, 4, 其中动物 3 小明看了两个。\n\n### 数据范围\n\n- 对于 30% 的数据, 有  $n \\leq 200, m \\leq 20$ 。\n- 对于 60% 的数据, 有  $n \\leq 1000, m \\leq 1000$ 。\n- 对于 100% 的数据, 有  $1 \\leq n \\leq 10^6, 1 \\leq x_i \\leq m \\leq 2 \\times 10^3$ 。\n\n{2}------------------------------------------------\n\n## 第二题 摧毁 (destroy)\n\n### 题目描述\n\n坐地日行八万里，巡天遥看一千河。\n\n2077 年，人类不仅仅是赛博科技得到了发展，太空技术也已经得到了极大的发展。地球的不同外轨道上已经充斥着各种功能用途的人造卫星。因为一个轨道上的卫星数量是有上限的，且卫星更新换代速度很快，如果想要发射新的卫星，需要把所有旧的卫星摧毁。\n\n人类有两种不同的武器可以摧毁卫星，具体如下（其中 PW 为新的能量单位）：\n\n(1) 使用定点激光武器花费 1 PW 的代价摧毁任意轨道上指定的一个卫星。\n\n(2) 使用脉冲轨道武器花费 c PW 的代价把某一轨道上的所有卫星摧毁。\n\n现在有 n 个旧卫星分布在不同的外轨道上，你的任务是摧毁这些旧卫星。给出这 n 个卫星的轨道编号，求将这些卫星全部摧毁的最小代价是多少？\n\n#### 输入格式（输入文件名为 destroy.in）\n\n第一行一个正整数 T，表示测试数据组数。\n\n接下来对于每组测试数据（注意：每组测试数据有 2 行数据，以下共 2\\*T 行数据）：\n\n第一行两个正整数 n 和 c 表示需要摧毁的卫星数量和使用脉冲轨道武器的代价。\n\n第二行是  $x_1, x_2, \\dots, x_n$ ，其中  $x_i$  表示第 i 个卫星的轨道编号。\n\n#### 输出格式（输出文件名为 destroy.out）\n\n输出 T 行答案，对于每组测试数据，输出一行一个整数表示摧毁所有卫星的代价。\n\n### 输入输出样例\n\n#### 样例 1 输入\n\n```\n4\n10 1\n2 1 4 5 2 4 5 5 1 2\n5 2\n3 2 1 2 2\n2 2\n1 1\n2 2\n1 2\n```\n\n#### 样例 1 输出\n\n```\n4\n4\n```\n\n{3}------------------------------------------------\n\n2  \n2\n\n**样例说明：**对于第一组测试数据，使用脉冲武器的代价为 1 PW。轨道 1 上有 2 个卫星，轨道 2 上有 3 个卫星，轨道 4 上有 2 个卫星，轨道 5 上有 3 个卫星。因此对于轨道 1、2、4、5，均使用脉冲武器各花费 1PW 的代价可全部摧毁，总的代价为 4 PW，很显然该方案为总代价最小方案。\n\n对于第二组测试数据，使用脉冲武器的代价为 2 PW。轨道 1 上有 1 个卫星，轨道 2 上有 3 个卫星，轨道 3 上有 1 个卫星。因此，对于轨道 1 采用激光武器，轨道 2 采用脉冲武器，轨道 3 采用激光武器可全部摧毁所有卫星，总的代价为 4 PW，很显然该方案使得总代价最小。\n\n### 数据范围\n\n对于 30% 的数据， $T = 1, 1 \\leq n \\leq 10, 1 \\leq a_i \\leq 10, 1 \\leq c \\leq 10$ ;\n\n对于 60% 的数据， $1 \\leq n \\leq 10^3, 1 \\leq a_i \\leq 1000, 1 \\leq c \\leq 100$ ;\n\n对于 100% 的数据， $1 \\leq T \\leq 10, 1 \\leq n \\leq 10^6, 1 \\leq a_i \\leq 10^6, 1 \\leq c \\leq 100$ , 且所有测试数据的  $n$  加起来不超过  $10^6$ 。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 7
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 4,
+    "total_cost": 1.2,
+    "cost_breakdown": {
+      "final_cost_cents": 1.2
+    },
+    "runtime": 6.313331604003906,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.2
+  },
+  "page_count": 4,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2022/Round2/CSP-X2022山东省小学组二轮补赛试题（下半场）.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

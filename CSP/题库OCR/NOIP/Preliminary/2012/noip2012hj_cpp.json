@@ -1,0 +1,239 @@
+{
+  "request_id": "_FKTTOLfg1fCXl2J3GY8zw",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:23:04.758619+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "_FKTTOLfg1fCXl2J3GY8zw",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/_FKTTOLfg1fCXl2J3GY8zw",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十八届全国青少年信息学奥林匹克联赛初赛\n\n## 普及组 C++语言试题\n\n竞赛时间：2012 年 10 月 13 日 14:30~16:30\n\n### 选手注意：\n\n- 试题纸共有 10 页，答题纸共有 2 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n### 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分；每题有且仅有一个正确选项）\n\n1. 计算机如果缺少（ ），将无法正常启动。  \nA. 内存                      B. 鼠标                      C. U 盘                      D. 摄像头\n2. （ ）是一种先进先出的线性表。  \nA. 栈                              B. 队列  \nC. 哈希表（散列表）              D. 二叉树\n3. 目前计算机芯片（集成电路）制造的主要原料是（ ），它是一种可以在沙子中提炼出的物质。  \nA. 硅                              B. 铜                              C. 锗                              D. 铝\n4. 十六进制数 9A 在（ ）进制下是 232。  \nA. 四                              B. 八                              C. 十                              D. 十二\n5. （ ）不属于操作系统。  \nA. Windows                      B. DOS                              C. PhotoShop                      D. NOI Linux\n6. 如果一棵二叉树的中序遍历是 BAC，那么它的先序遍历不可能是（ ）。  \nA. ABC                              B. CBA                              C. ACB                              D. BAC\n7. 目前个人电脑的（ ）市场占有率最靠前的厂商包括 Intel、AMD 等公司。  \nA. 显示器                      B. CPU                              C. 内存                              D. 鼠标\n\n{1}------------------------------------------------\n\n- 8. 使用冒泡排序对序列进行升序排序，每执行一次交换操作将会减少 1 个逆序对，因此序列\n\n5, 4, 3, 2, 1\n\n需要执行（ ）次交换操作，才能完成冒泡排序。\n\n- A. 0                      B. 5                      C. 10                      D. 15\n- 9. 1946 年诞生于美国宾夕法尼亚大学的 ENIAC 属于（ ）计算机。\n- A. 电子管                      B. 晶体管  \nC. 集成电路                      D. 超大规模集成电路\n- 10. 无论是 TCP/IP 模型还是 OSI 模型，都可以视为网络的分层模型，每个网络协议都会被归入某一层中。如果用现实生活中的例子来比喻这些“层”，以下最恰当的是（ ）。\n\nA. 中国公司的经理与朝鲜公司的经理交互商业文件\n\n|       |          |     |          |\n|-------|----------|-----|----------|\n| 第 4 层 | 中国公司经理   |     | 朝鲜公司经理   |\n|       | ↑ ↓      |     | ↑ ↓      |\n| 第 3 层 | 中国公司经理秘书 |     | 朝鲜公司经理秘书 |\n|       | ↑ ↓      |     | ↑ ↓      |\n| 第 2 层 | 中国公司翻译   |     | 朝鲜公司翻译   |\n|       | ↑ ↓      |     | ↑ ↓      |\n| 第 1 层 | 中国邮递员    | ← → | 朝鲜邮递员    |\n\nB. 军队发布命令\n\n|       |      |      |      |      |      |      |      |      |\n|-------|------|------|------|------|------|------|------|------|\n| 第 4 层 | 司令   |      |      |      |      |      |      |      |\n|       | ↓    |      |      |      |      |      |      |      |\n| 第 3 层 | 军长 1 |      |      |      | 军长 2 |      |      |      |\n|       | ↓    |      |      |      | ↓    |      |      |      |\n| 第 2 层 | 师长 1 |      | 师长 2 |      | 师长 3 |      | 师长 4 |      |\n|       | ↓    |      | ↓    |      | ↓    |      | ↓    |      |\n| 第 1 层 | 团长 1 | 团长 2 | 团长 3 | 团长 4 | 团长 5 | 团长 6 | 团长 7 | 团长 8 |\n\n{2}------------------------------------------------\n\nC. 国际会议中，每个人都与他国地位对等的人直接进行会谈\n\n|       |         |   |         |\n|-------|---------|---|---------|\n| 第 4 层 | 英国女王    | ↔ | 瑞典国王    |\n| 第 3 层 | 英国首相    | ↔ | 瑞典首相    |\n| 第 2 层 | 英国外交大臣  | ↔ | 瑞典外交大臣  |\n| 第 1 层 | 英国驻瑞典大使 | ↔ | 瑞典驻英国大使 |\n\nD. 体育比赛中，每一级比赛的优胜者晋级上一级比赛\n\n|       |     |\n|-------|-----|\n| 第 4 层 | 奥运会 |\n|       | ↑   |\n| 第 3 层 | 全运会 |\n|       | ↑   |\n| 第 2 层 | 省运会 |\n|       | ↑   |\n| 第 1 层 | 市运会 |\n\n11. 矢量图（Vector Image）图形文件所占的存储空间较小，并且不论如何放大、缩小或旋转等都不会失真，是因为它（ ）。\n\n- A. 记录了大量像素块的色彩值来表示图像\n- B. 用点、直线或者多边形等基于数学方程的几何图元来表示图像\n- C. 每个像素点的颜色信息均用矢量表示\n- D. 把文件保存在互联网，采用在线浏览的方式查看图像\n\n12. 如果一个栈初始时为空，且当前栈中的元素从栈底到栈顶依次为 a, b, c（如右图所示），另有元素 d 已经出栈，则可能的入栈顺序是（ ）。\n\n- A. a, d, c, b\n- B. b, a, c, d\n- C. a, c, b, d\n- D. d, a, b, c\n\n![Diagram of a stack with elements a, b, c from bottom to top. The top is labeled '栈顶' and the bottom is labeled '栈底'.](b612b838f94982799a69461ffb078a73_img.jpg)\n\n栈顶\n\n|   |\n|---|\n| c |\n| b |\n| a |\n\n栈底\n\nDiagram of a stack with elements a, b, c from bottom to top. The top is labeled '栈顶' and the bottom is labeled '栈底'.\n\n13. （ ）是主要用于显示网页服务器或者文件系统的 HTML 文件内容，并让用户与这些文件交互的一种软件。\n\n- A. 资源管理器\n- B. 浏览器\n- C. 电子邮件\n- D. 编译器\n\n14. （ ）是目前互联网上常用的 E-mail 服务协议。\n\n- A. HTTP\n- B. FTP\n- C. POP3\n- D. Telnet\n\n{3}------------------------------------------------\n\n- 15. ( ) 就是把一个复杂的问题分成两个或者更多的相同或相似的子问题，再把子问题分成更小的子问题……直到最后的子问题可以简单的直接求解。而原问题的解就是子问题解的并。\n- A. 动态规划                      B. 贪心                      C. 分治                      D. 搜索\n- 16. 地址总线的位数决定了 CPU 可直接寻址的内存空间大小，例如地址总线为 16 位，其最大的可寻址空间为 64KB。如果地址总线是 32 位，则理论上最大可寻址的内存空间为 ( )。\n- A. 128KB                      B. 1MB                      C. 1GB                      D. 4GB\n- 17. 蓝牙和 Wi-Fi 都是 ( ) 设备。\n- A. 无线广域网                      B. 无线城域网                      C. 无线局域网                      D. 无线路由器\n- 18. 在程序运行过程中，如果递归调用的层数过多，会因为 ( ) 引发错误。\n- A. 系统分配的栈空间溢出                      B. 系统分配的堆空间溢出  \nC. 系统分配的队列空间溢出                      D. 系统分配的链表空间溢出\n- 19. 原字符串中任意一段连续的字符组成的新字符串称为子串。则字符串“AAABBBCCC”共有 ( ) 个不同的非空子串。\n- A. 3                      B. 12                      C. 36                      D. 45\n- 20. 仿生学的问世开辟了独特的科学技术发展道路。人们研究生物体的结构、功能和工作原理，并将这些原理移植于新兴的工程技术之中。以下关于仿生学的叙述，错误的是 ( )。\n- A. 由研究蝙蝠，发明雷达                      B. 由研究蜘蛛网，发明因特网  \nC. 由研究海豚，发明声纳                      D. 由研究电鱼，发明伏特电池\n\n### 二、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 1. 如果平面上任取  $n$  个整点（横纵坐标都是整数），其中一定存在两个点，它们连线的中点也是整点，那么  $n$  至少是\\_\\_\\_\\_\\_。\n- 2. 在 NOI 期间，主办单位为了欢迎来自全国各地的选手，举行了盛大的晚宴。在第十八桌，有 5 名大陆选手和 5 名港澳选手共同进膳。为了增进交流，他们决定相隔而坐，即每个大陆选手左右相邻的都是港澳选手、每个港澳选手左右相邻的都是大陆选手。那么，这一桌共有\\_\\_\\_\\_\\_种不同的就坐方案。注意：如果在两个方案中，每个选手左边相邻的选手均相同，则视为同一个方案。\n\n{4}------------------------------------------------\n\n### 三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n```\n1. #include <iostream>\nusing namespace std;\n\nint a, b, c, d, e, ans;\n\nint main()\n{\n    cin>>a>>b>>c;\n    d = a+b;\n    e = b+c;\n    ans = d+e;\n    cout<<ans<<endl;\n}\n```\n\n输入: 1 2 5\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include<iostream>\nusing namespace std;\n\nint n, i, ans;\n\nint main()\n{\n    cin>>n;\n    ans = 0;\n    for (i = 1; i <= n; i++)\n        if (n % i == 0)\n            ans++;\n    cout<<ans<<endl;\n}\n```\n\n输入: 18\n\n输出: \\_\\_\\_\\_\\_\n\n```\n3. #include <iostream>\n```\n\n{5}------------------------------------------------\n\n```\nusing namespace std;\n\nint n, i, j, a[100][100];\n\nint solve(int x, int y)\n{\n    int u, v;\n\n    if (x == n)\n        return a[x][y];\n    u = solve(x + 1, y);\n    v = solve(x + 1, y + 1);\n    if (u > v)\n        return a[x][y] + u;\n    else\n        return a[x][y] + v;\n}\n\nint main()\n{\n    cin>>n;\n    for (i = 1; i <= n; i++)\n        for (j = 1; j <= i; j++)\n            cin>>a[i][j];\n    cout<<solve(1, 1)<<endl;\n    return 0;\n}\n```\n\n输入:\n\n```\n5\n2\n-1 4\n2 -1 -2\n-1 6 4 0\n3 2 -1 5 8\n```\n\n输出: \\_\\_\\_\\_\\_\n\n4. #include <iostream>\n\n{6}------------------------------------------------\n\n```\n\n#include <string>\nusing namespace std;\n\nint n, ans, i, j;\nstring s;\n\nchar get(int i)\n{\n    if (i < n)\n        return s[i];\n    else\n        return s[i-n];\n}\n\nint main()\n{\n    cin>>s;\n    n = s.size();\n    ans = 0;\n    for (i = 1; i <= n-1; i++)\n    {\n        for (j = 0; j <= n-1; j++) if (get(i+j) < get(ans+j))\n        {\n            ans = i;\n            break;\n        }\n        else if (get(i+j) > get(ans+j))\n            break;\n    }\n    for (j = 0; j <= n-1; j++)\n        cout<<get(ans+j);\n    cout<<endl;\n}\n\n```\n\n输入: CBBADADA\n\n输出: \\_\\_\\_\\_\\_\n\n四、完善程序（前 2 空每空 2 分，后 8 空每空 3 分，共计 28 分）\n\n{7}------------------------------------------------\n\n- 1. （坐标统计）输入  $n$  个整点在平面上的坐标。对于每个点，可以控制所有位于它左下方的点（即  $x$ 、 $y$  坐标都比它小），它可以控制的点的数目称为“战斗力”。依次输出每个点的战斗力，最后输出战斗力最高的点的编号（如果若干个点的战斗力并列最高，输出其中最大的编号）。\n\n```\n#include<iostream>\nusing namespace std;\n\nconst int SIZE = 100;\n\nint x[SIZE], y[SIZE], f[SIZE];\nint n, i, j, max_f, ans;\n\nint main()\n{\n    cin>>n;\n    for (i = 1; i <= n; i++)\n        cin>>x[i]>>y[i];\n    max_f = 0;\n    for (i = 1; i <= n; i++)\n    {\n        f[i] = ①;\n        for (j = 1; j <= n; j++)\n        {\n            if (x[j] < x[i] && ②)\n                ③;\n        }\n        if (④)\n        {\n            max_f = f[i];\n            ⑤;\n        }\n    }\n    for (i = 1; i <= n; i++)\n        cout<<f[i]<<endl;\n    cout<<ans<<endl;\n}\n```\n\n{8}------------------------------------------------\n\n- 2. （排列数）输入两个正整数  $n, m$  ( $1 \\leq n \\leq 20, 1 \\leq m \\leq n$ )，在  $1 \\sim n$  中任取  $m$  个数，按字典序从小到大输出所有这样的排列。例如\n\n输入：3 2\n\n输出：1 2\n\n1 3\n\n2 1\n\n2 3\n\n3 1\n\n3 2\n\n```\n#include<iostream>\n#include<cstring>\nusing namespace std;\n\nconst int SIZE = 25;\n\nbool used[SIZE];\nint data[SIZE];\nint n, m, i, j, k;\nbool flag;\n\nint main()\n{\n    cin>>n>>m;\n    memset(used, false, sizeof(used));\n    for (i = 1; i <= m; i++)\n    {\n        data[i] = i;\n        used[i] = true;\n    }\n    flag = true;\n    while (flag)\n    {\n        for (i = 1; i <= m-1; i++) cout<<data[i]<<\" \";\n        cout<<data[m]<<endl;\n        flag = _____①_____;\n        for (i = m; i >= 1; i--)\n        {\n\n```\n\n{9}------------------------------------------------\n\n```\n\n    _____②_____ ;\nfor (j = data[i]+1; j <= n; j++) if (!used[j])\n{\n    used[j] = true;\n    data[i] = _____③_____ ;\n    flag = true;\n    break;\n}\nif (flag)\n{\n    for (k = i+1; k <= m; k++)\n        for (j = 1; j <= _____④_____ ; j++) if (!used[j])\n        {\n            data[k] = j;\n            used[j] = true;\n            break;\n        }\n    _____⑤_____ ;\n}\n}\n}\n}\n}\n}\n\n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "b612b838f94982799a69461ffb078a73_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 5
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 3
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 9,
+            "num_blocks": 2
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 10,
+      "total_cost": 3.0,
+      "cost_breakdown": {
+        "final_cost_cents": 3.0
+      },
+      "runtime": 7.452088832855225,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十八届全国青少年信息学奥林匹克联赛初赛\n\n## 普及组 C++语言试题\n\n竞赛时间：2012 年 10 月 13 日 14:30~16:30\n\n### 选手注意：\n\n- 试题纸共有 10 页，答题纸共有 2 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n### 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分；每题有且仅有一个正确选项）\n\n1. 计算机如果缺少（ ），将无法正常启动。  \nA. 内存                      B. 鼠标                      C. U 盘                      D. 摄像头\n2. （ ）是一种先进先出的线性表。  \nA. 栈                              B. 队列  \nC. 哈希表（散列表）              D. 二叉树\n3. 目前计算机芯片（集成电路）制造的主要原料是（ ），它是一种可以在沙子中提炼出的物质。  \nA. 硅                              B. 铜                              C. 锗                              D. 铝\n4. 十六进制数 9A 在（ ）进制下是 232。  \nA. 四                              B. 八                              C. 十                              D. 十二\n5. （ ）不属于操作系统。  \nA. Windows                      B. DOS                              C. PhotoShop                      D. NOI Linux\n6. 如果一棵二叉树的中序遍历是 BAC，那么它的先序遍历不可能是（ ）。  \nA. ABC                              B. CBA                              C. ACB                              D. BAC\n7. 目前个人电脑的（ ）市场占有率最靠前的厂商包括 Intel、AMD 等公司。  \nA. 显示器                      B. CPU                              C. 内存                              D. 鼠标\n\n{1}------------------------------------------------\n\n- 8. 使用冒泡排序对序列进行升序排序，每执行一次交换操作将会减少 1 个逆序对，因此序列\n\n5, 4, 3, 2, 1\n\n需要执行（ ）次交换操作，才能完成冒泡排序。\n\n- A. 0                      B. 5                      C. 10                      D. 15\n- 9. 1946 年诞生于美国宾夕法尼亚大学的 ENIAC 属于（ ）计算机。\n- A. 电子管                      B. 晶体管  \nC. 集成电路                      D. 超大规模集成电路\n- 10. 无论是 TCP/IP 模型还是 OSI 模型，都可以视为网络的分层模型，每个网络协议都会被归入某一层中。如果用现实生活中的例子来比喻这些“层”，以下最恰当的是（ ）。\n\nA. 中国公司的经理与朝鲜公司的经理交互商业文件\n\n|       |          |     |          |\n|-------|----------|-----|----------|\n| 第 4 层 | 中国公司经理   |     | 朝鲜公司经理   |\n|       | ↑ ↓      |     | ↑ ↓      |\n| 第 3 层 | 中国公司经理秘书 |     | 朝鲜公司经理秘书 |\n|       | ↑ ↓      |     | ↑ ↓      |\n| 第 2 层 | 中国公司翻译   |     | 朝鲜公司翻译   |\n|       | ↑ ↓      |     | ↑ ↓      |\n| 第 1 层 | 中国邮递员    | ← → | 朝鲜邮递员    |\n\nB. 军队发布命令\n\n|       |      |      |      |      |      |      |      |      |\n|-------|------|------|------|------|------|------|------|------|\n| 第 4 层 | 司令   |      |      |      |      |      |      |      |\n|       | ↓    |      |      |      |      |      |      |      |\n| 第 3 层 | 军长 1 |      |      |      | 军长 2 |      |      |      |\n|       | ↓    |      |      |      | ↓    |      |      |      |\n| 第 2 层 | 师长 1 |      | 师长 2 |      | 师长 3 |      | 师长 4 |      |\n|       | ↓    |      | ↓    |      | ↓    |      | ↓    |      |\n| 第 1 层 | 团长 1 | 团长 2 | 团长 3 | 团长 4 | 团长 5 | 团长 6 | 团长 7 | 团长 8 |\n\n{2}------------------------------------------------\n\nC. 国际会议中，每个人都与他国地位对等的人直接进行会谈\n\n|       |         |   |         |\n|-------|---------|---|---------|\n| 第 4 层 | 英国女王    | ↔ | 瑞典国王    |\n| 第 3 层 | 英国首相    | ↔ | 瑞典首相    |\n| 第 2 层 | 英国外交大臣  | ↔ | 瑞典外交大臣  |\n| 第 1 层 | 英国驻瑞典大使 | ↔ | 瑞典驻英国大使 |\n\nD. 体育比赛中，每一级比赛的优胜者晋级上一级比赛\n\n|       |     |\n|-------|-----|\n| 第 4 层 | 奥运会 |\n|       | ↑   |\n| 第 3 层 | 全运会 |\n|       | ↑   |\n| 第 2 层 | 省运会 |\n|       | ↑   |\n| 第 1 层 | 市运会 |\n\n11. 矢量图（Vector Image）图形文件所占的存储空间较小，并且不论如何放大、缩小或旋转等都不会失真，是因为它（ ）。\n\n- A. 记录了大量像素块的色彩值来表示图像\n- B. 用点、直线或者多边形等基于数学方程的几何图元来表示图像\n- C. 每个像素点的颜色信息均用矢量表示\n- D. 把文件保存在互联网，采用在线浏览的方式查看图像\n\n12. 如果一个栈初始时为空，且当前栈中的元素从栈底到栈顶依次为 a, b, c（如右图所示），另有元素 d 已经出栈，则可能的入栈顺序是（ ）。\n\n- A. a, d, c, b\n- B. b, a, c, d\n- C. a, c, b, d\n- D. d, a, b, c\n\n![Diagram of a stack with elements a, b, c from bottom to top. The top is labeled '栈顶' and the bottom is labeled '栈底'.](b612b838f94982799a69461ffb078a73_img.jpg)\n\n栈顶\n\n|   |\n|---|\n| c |\n| b |\n| a |\n\n栈底\n\nDiagram of a stack with elements a, b, c from bottom to top. The top is labeled '栈顶' and the bottom is labeled '栈底'.\n\n13. （ ）是主要用于显示网页服务器或者文件系统的 HTML 文件内容，并让用户与这些文件交互的一种软件。\n\n- A. 资源管理器\n- B. 浏览器\n- C. 电子邮件\n- D. 编译器\n\n14. （ ）是目前互联网上常用的 E-mail 服务协议。\n\n- A. HTTP\n- B. FTP\n- C. POP3\n- D. Telnet\n\n{3}------------------------------------------------\n\n- 15. ( ) 就是把一个复杂的问题分成两个或者更多的相同或相似的子问题，再把子问题分成更小的子问题……直到最后的子问题可以简单的直接求解。而原问题的解就是子问题解的并。\n- A. 动态规划                      B. 贪心                      C. 分治                      D. 搜索\n- 16. 地址总线的位数决定了 CPU 可直接寻址的内存空间大小，例如地址总线为 16 位，其最大的可寻址空间为 64KB。如果地址总线是 32 位，则理论上最大可寻址的内存空间为 ( )。\n- A. 128KB                      B. 1MB                      C. 1GB                      D. 4GB\n- 17. 蓝牙和 Wi-Fi 都是 ( ) 设备。\n- A. 无线广域网                      B. 无线城域网                      C. 无线局域网                      D. 无线路由器\n- 18. 在程序运行过程中，如果递归调用的层数过多，会因为 ( ) 引发错误。\n- A. 系统分配的栈空间溢出                      B. 系统分配的堆空间溢出  \nC. 系统分配的队列空间溢出                      D. 系统分配的链表空间溢出\n- 19. 原字符串中任意一段连续的字符组成的新字符串称为子串。则字符串“AAABBBCCC”共有 ( ) 个不同的非空子串。\n- A. 3                      B. 12                      C. 36                      D. 45\n- 20. 仿生学的问世开辟了独特的科学技术发展道路。人们研究生物体的结构、功能和工作原理，并将这些原理移植于新兴的工程技术之中。以下关于仿生学的叙述，错误的是 ( )。\n- A. 由研究蝙蝠，发明雷达                      B. 由研究蜘蛛网，发明因特网  \nC. 由研究海豚，发明声纳                      D. 由研究电鱼，发明伏特电池\n\n### 二、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 1. 如果平面上任取  $n$  个整点（横纵坐标都是整数），其中一定存在两个点，它们连线的中点也是整点，那么  $n$  至少是\\_\\_\\_\\_\\_。\n- 2. 在 NOI 期间，主办单位为了欢迎来自全国各地的选手，举行了盛大的晚宴。在第十八桌，有 5 名大陆选手和 5 名港澳选手共同进膳。为了增进交流，他们决定相隔而坐，即每个大陆选手左右相邻的都是港澳选手、每个港澳选手左右相邻的都是大陆选手。那么，这一桌共有\\_\\_\\_\\_\\_种不同的就坐方案。注意：如果在两个方案中，每个选手左边相邻的选手均相同，则视为同一个方案。\n\n{4}------------------------------------------------\n\n### 三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n```\n1. #include <iostream>\nusing namespace std;\n\nint a, b, c, d, e, ans;\n\nint main()\n{\n    cin>>a>>b>>c;\n    d = a+b;\n    e = b+c;\n    ans = d+e;\n    cout<<ans<<endl;\n}\n```\n\n输入: 1 2 5\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include<iostream>\nusing namespace std;\n\nint n, i, ans;\n\nint main()\n{\n    cin>>n;\n    ans = 0;\n    for (i = 1; i <= n; i++)\n        if (n % i == 0)\n            ans++;\n    cout<<ans<<endl;\n}\n```\n\n输入: 18\n\n输出: \\_\\_\\_\\_\\_\n\n```\n3. #include <iostream>\n```\n\n{5}------------------------------------------------\n\n```\nusing namespace std;\n\nint n, i, j, a[100][100];\n\nint solve(int x, int y)\n{\n    int u, v;\n\n    if (x == n)\n        return a[x][y];\n    u = solve(x + 1, y);\n    v = solve(x + 1, y + 1);\n    if (u > v)\n        return a[x][y] + u;\n    else\n        return a[x][y] + v;\n}\n\nint main()\n{\n    cin>>n;\n    for (i = 1; i <= n; i++)\n        for (j = 1; j <= i; j++)\n            cin>>a[i][j];\n    cout<<solve(1, 1)<<endl;\n    return 0;\n}\n```\n\n输入:\n\n```\n5\n2\n-1 4\n2 -1 -2\n-1 6 4 0\n3 2 -1 5 8\n```\n\n输出: \\_\\_\\_\\_\\_\n\n4. #include <iostream>\n\n{6}------------------------------------------------\n\n```\n\n#include <string>\nusing namespace std;\n\nint n, ans, i, j;\nstring s;\n\nchar get(int i)\n{\n    if (i < n)\n        return s[i];\n    else\n        return s[i-n];\n}\n\nint main()\n{\n    cin>>s;\n    n = s.size();\n    ans = 0;\n    for (i = 1; i <= n-1; i++)\n    {\n        for (j = 0; j <= n-1; j++) if (get(i+j) < get(ans+j))\n        {\n            ans = i;\n            break;\n        }\n        else if (get(i+j) > get(ans+j))\n            break;\n    }\n    for (j = 0; j <= n-1; j++)\n        cout<<get(ans+j);\n    cout<<endl;\n}\n\n```\n\n输入: CBBADADA\n\n输出: \\_\\_\\_\\_\\_\n\n四、完善程序（前 2 空每空 2 分，后 8 空每空 3 分，共计 28 分）\n\n{7}------------------------------------------------\n\n- 1. （坐标统计）输入  $n$  个整点在平面上的坐标。对于每个点，可以控制所有位于它左下方的点（即  $x$ 、 $y$  坐标都比它小），它可以控制的点的数目称为“战斗力”。依次输出每个点的战斗力，最后输出战斗力最高的点的编号（如果若干个点的战斗力并列最高，输出其中最大的编号）。\n\n```\n#include<iostream>\nusing namespace std;\n\nconst int SIZE = 100;\n\nint x[SIZE], y[SIZE], f[SIZE];\nint n, i, j, max_f, ans;\n\nint main()\n{\n    cin>>n;\n    for (i = 1; i <= n; i++)\n        cin>>x[i]>>y[i];\n    max_f = 0;\n    for (i = 1; i <= n; i++)\n    {\n        f[i] = ①;\n        for (j = 1; j <= n; j++)\n        {\n            if (x[j] < x[i] && ②)\n                ③;\n        }\n        if (④)\n        {\n            max_f = f[i];\n            ⑤;\n        }\n    }\n    for (i = 1; i <= n; i++)\n        cout<<f[i]<<endl;\n    cout<<ans<<endl;\n}\n```\n\n{8}------------------------------------------------\n\n- 2. （排列数）输入两个正整数  $n, m$  ( $1 \\leq n \\leq 20, 1 \\leq m \\leq n$ )，在  $1 \\sim n$  中任取  $m$  个数，按字典序从小到大输出所有这样的排列。例如\n\n输入：3 2\n\n输出：1 2\n\n1 3\n\n2 1\n\n2 3\n\n3 1\n\n3 2\n\n```\n#include<iostream>\n#include<cstring>\nusing namespace std;\n\nconst int SIZE = 25;\n\nbool used[SIZE];\nint data[SIZE];\nint n, m, i, j, k;\nbool flag;\n\nint main()\n{\n    cin>>n>>m;\n    memset(used, false, sizeof(used));\n    for (i = 1; i <= m; i++)\n    {\n        data[i] = i;\n        used[i] = true;\n    }\n    flag = true;\n    while (flag)\n    {\n        for (i = 1; i <= m-1; i++) cout<<data[i]<<\" \";\n        cout<<data[m]<<endl;\n        flag = _____①_____;\n        for (i = m; i >= 1; i--)\n        {\n\n```\n\n{9}------------------------------------------------\n\n```\n\n    _____②_____ ;\nfor (j = data[i]+1; j <= n; j++) if (!used[j])\n{\n    used[j] = true;\n    data[i] = _____③_____ ;\n    flag = true;\n    break;\n}\nif (flag)\n{\n    for (k = i+1; k <= m; k++)\n        for (j = 1; j <= _____④_____ ; j++) if (!used[j])\n        {\n            data[k] = j;\n            used[j] = true;\n            break;\n        }\n    _____⑤_____ ;\n}\n}\n}\n}\n}\n}\n\n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "b612b838f94982799a69461ffb078a73_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 5
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 3
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 9,
+          "num_blocks": 2
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 10,
+    "total_cost": 3.0,
+    "cost_breakdown": {
+      "final_cost_cents": 3.0
+    },
+    "runtime": 7.452088832855225,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 3.0
+  },
+  "page_count": 10,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2012/noip2012hj_cpp.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "b612b838f94982799a69461ffb078a73_img.jpg"
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "request_id": "X8BYYq3syVJAOfAwC5kqVg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:59:41.524984+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "X8BYYq3syVJAOfAwC5kqVg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/X8BYYq3syVJAOfAwC5kqVg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2024 年山东省信息学小学组 (CSP-X) 第一轮试题\n\n考试时间: 2024 年 9 月 21 日 14:30-16:30\n\n## 考生注意事项:\n\n- (1) 试题纸共有 8 页, 答题纸共有 1 页, 满分 100 分。请在答题纸上作答, 写在试题纸上的一律无效。\n- (2) 不得使用任何电子设备 (如计算器、手机、电子词典等) 或查阅任何书籍资料。\n\n## 一. 选择题(共 15 题, 每题 2 分, 共计 30 分; 每题有且仅有一个正确选项)\n\n1.  $(2024)_{10} + (2F)_{16}$  的运算结果是 ( )。\n\n- A.  $(100000010110)_2$  B.  $(816)_{16}$  C.  $(2071)_{10}$  D.  $(4026)_8$\n\n2. 执行完以下代码后, c 的值是 ( )。\n\n```\nint a=9,b=6,c;  \nc=a/b+0.5;\n```\n\n- A. 1.5 B. 2 C. 2.0 D. 1\n\n3. 将数组 {7, 20, 4, 16, 88, 0, 55, 100} 中的元素按从大到小的顺序排列, 每次可以交换任意两个元素, 最少需要交换 ( ) 次。\n\n- A. 4 B. 5 C. 6 D. 7\n\n4. 若待排序对象序列在排序前已按其排序码递增顺序排序, 则采用 ( ) 方法比较次数最少。\n\n- A. 直接插入排序 B. 快速排序 C. 归并排序 D. 直接选择排序\n\n5. 设有一个 100 阶的对称矩阵保存在二维数组  $a[100][100]$ , 满足  $a[i][j]=a[j][i]$ , 如果采用压缩存储方式按行将矩阵的下三角部分的元素存入一维数组  $b[ ]$  中,  $a[0][0]$  存入  $b[0]$  中, 则  $a[10][5]$  在  $b[ ]$  中 ( ) 位置。\n\n- A. 50 B. 60 C. 51 D. 61\n\n6. 字符串 *abcabcabc* 有多少不同的非空子串? ( )。\n\n- A. 24 B. 36 C. 45 D. 46\n\n7. 一个栈的输入顺序为 1、2、3、4、5、6, 下列序列中可能是栈的输出序列是 ( )。\n\n- A. 654312 B. 241356 C. 216543 D. 125346\n\n8. 一棵二叉树的中序遍历序列为: DGBAECHF, 后序遍历序列为: GDBEHFCA, 则前序遍历的序列是 ( )。\n\n- A. ABCDFGHE B. ABDGCEFH C. ACBGDHEF D. ACEFHBGD\n\n9. 对于下面这段代码, 如果在主函数里调用  $f(4,4)$ , 在程序运行结束前, f 函数共被调用了多少次? ( )\n\n```\nvoid f(int n,int m){  \n    if(n&&m){  \n        for(int i=1;i<=m;i++) f(n-1,i-1);  \n    }  \n}\n```\n\n- A. 15 B. 16 C. 26 D. 27\n\n10. 有 n 个相同结点并且其高度为 n 的二叉树的数目是 ( )。\n\n{1}------------------------------------------------\n\nA. n      B. 2n      C.  $2^{n-1}$       D.  $2(n-1)$\n\n11. 在有  $n$  个叶节点的哈夫曼树中，其节点总数为（    ）。\n\nA.  $2n$       B.  $2n-1$       C.  $2n+1$       D. 不确定\n\n12.  $n$  个顶点  $n$  条边构成的简单无向图（无重边和自环），下列描述不正确的是（    ）。\n\nA. 一定有环      B. 不一定有环      C. 如果是连通图有 1 个环      D. 如果图不连通，至少有 2 个环\n\n13. 以下哪句话与“爱她，就请她吃哈根达斯”等价？（    ）。\n\nA. 不爱她，就不请她吃哈根达斯。      B. 请她吃哈根达斯，就表示爱她。  \nC. 不请她吃哈根达斯就表示不爱她。      D. 不爱她，也可以请她吃哈根达斯。\n\n14. 5 个男生 3 个女生排成一排，3 女生都不能相邻，有多少种方案（    ）。\n\nA. 14400      B. 2400      C. 40320      D. 720\n\n15. 由 3 个 a，2 个 b 和 1 个 c 构成的所有字符串共有（    ）个。\n\nA. 720      B. 360      C. 120      D. 60\n\n## 二. 阅读程序（判断题正确填 $\\checkmark$ ，错误填 $\\times$ ；除了特殊说明外，判断题 2 分，选择题 3 分，共 40 分）\n\n(1) (共 12 分)\n\n```\n01 #include<cstdio>\n02 #include<iostream>\n03 #include<cstring>\n04 using namespace std;\n05 int x[10000];\n06 int y[100000000];\n07 long long s,sum;\n08 int a,b;\n09 int main(){\n10     memset(x,-1,sizeof(x));\n11     memset(y,1,sizeof(y));\n12     a=b=200000;\n13     s=a*b;\n14     int cnt;\n15     for(int i=1;i<=10000;i++){\n16         sum+=y[i];\n17         cnt=cnt+1;\n18     }\n19     cout<<sum<<endl;\n20     cout<<cnt<<endl;\n21     return 0;\n22 }\n```\n\n### 判断题\n\n16. 语句 `memset(x,-1,sizeof(x));` 执行完后，`x[0]=-1`。（    ）\n\n17. 语句 `memset(y,1,sizeof(y));` 执行完后，`y[0]= 1`。（    ）\n\n18. 程序运行后 `sum` 的值不是 10000。（    ）\n\n{2}------------------------------------------------\n\n- 19. 语句 `s=a*b;` 执行完后, `s` 的值是 40000000000。 ( )\n- 20. 如果内存限制 256MB, 程序运行没有超内存。 ( )\n- 21. 程序运行后, 最后输出 `cnt` 的值一定是 10000 ( )\n\n#### (2) (共 13 分)\n\n```\n01 #include<bits/stdc++.h>\n02 using namespace std;\n03 int f(int a, int n, int m)\n04 {\n05     if(a==1) return 1%m;①\n06     long long ans = 1%m;\n07     while(n){\n08         if(n&1)\n09             ans = (ans * a) % m;②\n10         a = (a * a) % m;\n11         n >>= 1;\n12     }\n13     return ans;\n14 }\n15 int main()\n16 {\n17     int a, n, m;\n18     cin >> a >> n >> m;\n19     cout << f(a, n, m);\n20 }\n```\n\n### 判断题\n\n- 22. 程序的时间复杂度是 $O(\\log n)$  ( )\n- 23. 删除①处语句, 程序输出不受影响 ( )\n- 24. 如果输入为 1 999 2048, ②处语句会执行 8 次 ( )\n- 25. 如果输入 1 0 1, 输出结果为 1 ( )\n\n### 单选题\n\n- 26. (2 分) 输入 2 13 2048 输出为( )\n- A.0      B.1      C.2047      D.2000\n- 27. 输入 7 11 10, 输出为( )\n- A.5      B.3      C.7      D.1\n\n### (3) (共 15 分)\n\n{3}------------------------------------------------\n\n```\n01 #include<iostream>\n02 #include<cstring>\n03 using namespace std;\n04 char s[10000];\n05 int cnt[200];\n06 int main(){\n07     scanf(\"%s\",s);\n08     for(int i=0;i<strlen(s);i++){\n09         if(s[i]>=48&&s[i]<=57&&cnt[s[i]-48]<=10){\n10             s[strlen(s)]=s[i];\n11         }\n12         cnt[s[i]-48]++;\n13     }\n14     printf(\"%s\\n\",s);\n15     return 0;\n16 }\n```\n\n假设输入的字符串长度不超过 50 且只包含数字和小写字母，完成下面的判断题和单选题：\n\n### 判断题\n\n- 28. 因为输入字符串长度不超过 50，故第 4 行的 10000 改成 100，程序运行结果不变。（ ）\n- 29. 将第 8 行改成 `for(int i=0,len=strlen(s);i<len;i++){` 程序运行结果不变且运行速度提高。（ ）\n- 30. 对于任意一个只包含数字字符且每个数字字符出现的次数不小于 10 的字符串 B，总存在一个字符串 A 使得输入 A 后输出结果为 B。（ ）\n\n### 单选题\n\n- 31. 如果输入的字符串只包含数字字符，则输出的字符串长度可能是（）。\n- A. 10      B. 11      C. 160      D. 200\n- 32. 设输入的字符串长度为  $x$ ，输出的字符串长度为  $y$ ，则以下关系正确的是（）。\n- A.  $x=y$       B.  $x<y$       C.  $x<y$  或者  $x=y$       D.  $x<y$  或者  $x=y$  或者  $x>y$\n- 33. 设字符串 A 为 12，如果输入字符串为 AA，（A 重复 2 次），则输出为（）。\n- A. A 重复 10 次      B. A 重复 11 次      C. A 重复 12 次      D. A 重复 13 次\n\n## 三.完善程序（单选题，每小题 3 分，共计 30 分）\n\n### (1) (消灭怪兽)\n\n{4}------------------------------------------------\n\n有  $n$  个怪兽，每个怪兽血量为  $hp_i$ 。每次可以任意选择一个还存活的怪兽进行攻击，被选择的怪兽受到  $A$  点伤害，其他还存活的怪兽也同样会受到  $B$  点溅射伤害。当一个怪兽的血量降到 0 或以下时就会消失。求最少需要进行多少次攻击可以消灭所有怪兽。\n\n数据范围满足  $1 \\leq n \\leq 10^5, 1 \\leq B < A \\leq 10^9, 1 \\leq hp_i \\leq 10^9$ 。\n\n提示：可以采用二分答案的方法来求解。\n\n试补全程序。\n\n```\n01 #include<bits/stdc++.h>\n02 using namespace std;\n03 const int N=1e5+5;\n04 typedef long long ll;\n05 ll hp[N];\n06 int n;\n07 ll a,b;\n08 bool check(ll x){\n09     ll cnt=x;\n10     for(int i=1;i<=n;i++){\n11         ll res_hp=__①__;\n12         if(res_hp>0){\n13             ll cnta=__②__;\n14             if(__③__) cnta++;\n15             cnt-=cnta;\n16             if(cnt<0) break;\n17         }\n18     }\n19     return __④__;\n20 }\n21 int main(){\n22     cin>>n>>a>>b;\n23     for(int i=1;i<=n;i++) cin>>hp[i];\n24     ll l=1,r=1e9;\n25     while(l<=r){\n26         ll mid=l+r>>1;\n27         if(check(mid)) r=mid-1;\n28         else l=mid+1;\n29     }\n30     cout<<__⑤__<<endl;\n31     return 0;\n32 }\n```\n\n34. ① 处应填（ ）。\n\nA.  $hp[i]-a$\n\nB.  $hp[i]-b$\n\n{5}------------------------------------------------\n\nC.  $hp[i]-x*a$\n\nD.  $hp[i]-x*b$\n\n35. ② 处应填（ ）。\n\nA.  $hp[i]/(a-b)$\n\nB.  $res\\_hp/(a-b)$\n\nC.  $res\\_hp/a$\n\nD.  $hp[i]/b$\n\n36. ③ 处应填（ ）。\n\nA.  $res\\_hp \\% a == 0$\n\nB.  $res\\_hp \\% b$\n\nC.  $res\\_hp \\% (a-b)$\n\nD.  $res\\_hp \\% (a-b) == 0$\n\n37. ④ 处应填（ ）。\n\nA.  $cnt >= x$\n\nB.  $cnt >= 0$\n\nC.  $cnt <= x$\n\nD.  $cnt <= 0$\n\n38. ⑤ 处应填（ ）。\n\nA.  $l-1$\n\nB.  $l$\n\nC.  $r-1$\n\nD.  $r$\n\n### (2) (位运算操作)\n\n现有编号为 1 到  $n$  的  $n$  位同学和  $n$  个操作，每位同学都会进行一些操作，操作流程如下描述。\n\n最开始老师手里有一个整数  $x$ ，交给 1 号同学，1 号同学执行完第 1 个操作交给 2 号同学；2 号同学执行完第 1,2 个操作交给 3 号同学；……；第  $i$  号同学从第  $i-1$  号同学接过数后，依次执行前  $i$  个操作，将最后的数交给第  $i+1$  号同学；依此下去直到第  $n$  号同学完成所有操作。\n\n为了方便表示，我们用二元组来描述操作，其中第  $i$  个操作用二元组  $(op, a[i])$  表示： $op$  取值为 1,2,3 分别表示将当前数字与  $a[i]$  进行 AND，OR，XOR 操作（即按位与，按位或，按位异或）。\n\n求每个同学执行完自己的轮次后，手里的数是多少。\n\n{6}------------------------------------------------\n\n先输入  $n$  和初始的整数  $x$ ，接下来  $n$  行每行两个数表示描述操作的二元组。\n\n数据范围满足  $1 \\leq n \\leq 2 * 10^5, 0 \\leq a[i], x \\leq 10^9$ 。\n\n**提示：**如果进行模拟时间复杂度为 $O(n^2)$ 会超时，因此采用位运算，提前通过递推求出  $x$  的每一个数位经过前  $i$  次操作后的值，设  $f[i][j][k]$  表示初始状态是  $j$ ，经过  $k$  次操作第  $i$  位的值。实际模拟时直接读取该值即可。\n\n试补全程序。\n\n```\n01 #include<bits/stdc++.h>\n02 using namespace std;\n03 const int N=2e5+5;\n04 int op[N],a[N];\n05 int f[35][2][N];\n06 int n,x;\n07 int main() {\n08     cin>>n>>x;\n09     for(int i=1;i<=n;i++) cin>>op[i]>>a[i];\n10     for(int i=0;i<30;i++) {\n11         ___①___;\n12     }\n13     for(int i=0; i<30;i++) {\n14         for(int j=0;j<2;j++) {\n15             for(int k=1; k<=n;k++) {\n16                 int bit=___②___;\n17                 if(op[k]==1) f[i][j][k]=f[i][j][k-1] & bit;\n18                 if(op[k]==2) f[i][j][k]=f[i][j][k-1] | bit;\n19                 if(op[k]==3) f[i][j][k]=___③___;\n20             }\n21         }\n22     }\n23     for(int i = 1; i <= n; ++i) {\n24         int t=0;\n25         for(int j=0;j<30;j++) {\n26             int bit=(x>>j)&1;\n27             if(___④___) t+=(___⑤___);\n28         }\n29         cout<<t<<endl;\n30         x=t;\n31     }\n32     return 0;\n33 }\n```\n\n39. ① 处应填（ ）。\n\nA.  $f[0][0][i]=0, f[0][1][i]=1;$\n\n{7}------------------------------------------------\n\nB.  $f[i][0][0]=0, f[i][1][0]=1$\n\nC.  $f[i][0][0]=1, f[i][1][0]=0;$\n\nD.  $f[0][1][0]=1, f[0][1][0]=0$\n\n40. ② 处应填 ( )。\n\nA.  $a[k] \\gg i \\& 1$\n\nB.  $a[k] \\gg i | 1$\n\nC.  $(a[k] \\gg i) | 1$\n\nD.  $(a[k] \\gg i) \\& 1$\n\n41. ③ 处应填 ( )。\n\nA.  $f[i][j][k-1] \\wedge \\text{bit}$\n\nB.  $f[i][j][k-1] + \\text{bit}$\n\nC.  $f[i][j][k-1] \\& \\text{bit}$\n\nD.  $f[i][j][k-1] | \\text{bit}$\n\n42. ④ 处应填 ( )。\n\nA.  $f[i][\\text{bit}][j]$\n\nB.  $!f[i][\\text{bit}][j]$\n\nC.  $f[j][\\text{bit}][i]$\n\nD.  $!f[j][\\text{bit}][i]$\n\n43. ⑤ 处应填 ( )。\n\nA.  $t += (f[i][\\text{bit}][j] \\ll j)$\n\nB.  $t += (f[j][\\text{bit}][i] \\ll j)$\n\nC.  $t = (f[i][\\text{bit}][j] \\ll (j-1))$\n\nD.  $t = (f[j][\\text{bit}][i] \\ll (j-1))$",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 27
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 28
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 24
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 8,
+      "total_cost": 2.4,
+      "cost_breakdown": {
+        "final_cost_cents": 2.4
+      },
+      "runtime": 10.681401252746582,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2024 年山东省信息学小学组 (CSP-X) 第一轮试题\n\n考试时间: 2024 年 9 月 21 日 14:30-16:30\n\n## 考生注意事项:\n\n- (1) 试题纸共有 8 页, 答题纸共有 1 页, 满分 100 分。请在答题纸上作答, 写在试题纸上的一律无效。\n- (2) 不得使用任何电子设备 (如计算器、手机、电子词典等) 或查阅任何书籍资料。\n\n## 一. 选择题(共 15 题, 每题 2 分, 共计 30 分; 每题有且仅有一个正确选项)\n\n1.  $(2024)_{10} + (2F)_{16}$  的运算结果是 ( )。\n\n- A.  $(100000010110)_2$  B.  $(816)_{16}$  C.  $(2071)_{10}$  D.  $(4026)_8$\n\n2. 执行完以下代码后, c 的值是 ( )。\n\n```\nint a=9,b=6,c;  \nc=a/b+0.5;\n```\n\n- A. 1.5 B. 2 C. 2.0 D. 1\n\n3. 将数组 {7, 20, 4, 16, 88, 0, 55, 100} 中的元素按从大到小的顺序排列, 每次可以交换任意两个元素, 最少需要交换 ( ) 次。\n\n- A. 4 B. 5 C. 6 D. 7\n\n4. 若待排序对象序列在排序前已按其排序码递增顺序排序, 则采用 ( ) 方法比较次数最少。\n\n- A. 直接插入排序 B. 快速排序 C. 归并排序 D. 直接选择排序\n\n5. 设有一个 100 阶的对称矩阵保存在二维数组  $a[100][100]$ , 满足  $a[i][j]=a[j][i]$ , 如果采用压缩存储方式按行将矩阵的下三角部分的元素存入一维数组  $b[ ]$  中,  $a[0][0]$  存入  $b[0]$  中, 则  $a[10][5]$  在  $b[ ]$  中 ( ) 位置。\n\n- A. 50 B. 60 C. 51 D. 61\n\n6. 字符串 *abcabcabc* 有多少不同的非空子串? ( )。\n\n- A. 24 B. 36 C. 45 D. 46\n\n7. 一个栈的输入顺序为 1、2、3、4、5、6, 下列序列中可能是栈的输出序列是 ( )。\n\n- A. 654312 B. 241356 C. 216543 D. 125346\n\n8. 一棵二叉树的中序遍历序列为: DGBAECHF, 后序遍历序列为: GDBEHFCA, 则前序遍历的序列是 ( )。\n\n- A. ABCDFGHE B. ABDGCEFH C. ACBGDHEF D. ACEFHBGD\n\n9. 对于下面这段代码, 如果在主函数里调用  $f(4,4)$ , 在程序运行结束前, f 函数共被调用了多少次? ( )\n\n```\nvoid f(int n,int m){  \n    if(n&&m){  \n        for(int i=1;i<=m;i++) f(n-1,i-1);  \n    }  \n}\n```\n\n- A. 15 B. 16 C. 26 D. 27\n\n10. 有 n 个相同结点并且其高度为 n 的二叉树的数目是 ( )。\n\n{1}------------------------------------------------\n\nA. n      B. 2n      C.  $2^{n-1}$       D.  $2(n-1)$\n\n11. 在有  $n$  个叶节点的哈夫曼树中，其节点总数为（    ）。\n\nA.  $2n$       B.  $2n-1$       C.  $2n+1$       D. 不确定\n\n12.  $n$  个顶点  $n$  条边构成的简单无向图（无重边和自环），下列描述不正确的是（    ）。\n\nA. 一定有环      B. 不一定有环      C. 如果是连通图有 1 个环      D. 如果图不连通，至少有 2 个环\n\n13. 以下哪句话与“爱她，就请她吃哈根达斯”等价？（    ）。\n\nA. 不爱她，就不请她吃哈根达斯。      B. 请她吃哈根达斯，就表示爱她。  \nC. 不请她吃哈根达斯就表示不爱她。      D. 不爱她，也可以请她吃哈根达斯。\n\n14. 5 个男生 3 个女生排成一排，3 女生都不能相邻，有多少种方案（    ）。\n\nA. 14400      B. 2400      C. 40320      D. 720\n\n15. 由 3 个 a，2 个 b 和 1 个 c 构成的所有字符串共有（    ）个。\n\nA. 720      B. 360      C. 120      D. 60\n\n## 二. 阅读程序（判断题正确填 $\\checkmark$ ，错误填 $\\times$ ；除了特殊说明外，判断题 2 分，选择题 3 分，共 40 分）\n\n(1) (共 12 分)\n\n```\n01 #include<cstdio>\n02 #include<iostream>\n03 #include<cstring>\n04 using namespace std;\n05 int x[10000];\n06 int y[100000000];\n07 long long s,sum;\n08 int a,b;\n09 int main(){\n10     memset(x,-1,sizeof(x));\n11     memset(y,1,sizeof(y));\n12     a=b=200000;\n13     s=a*b;\n14     int cnt;\n15     for(int i=1;i<=10000;i++){\n16         sum+=y[i];\n17         cnt=cnt+1;\n18     }\n19     cout<<sum<<endl;\n20     cout<<cnt<<endl;\n21     return 0;\n22 }\n```\n\n### 判断题\n\n16. 语句 `memset(x,-1,sizeof(x));` 执行完后，`x[0]=-1`。（    ）\n\n17. 语句 `memset(y,1,sizeof(y));` 执行完后，`y[0]= 1`。（    ）\n\n18. 程序运行后 `sum` 的值不是 10000。（    ）\n\n{2}------------------------------------------------\n\n- 19. 语句 `s=a*b;` 执行完后, `s` 的值是 40000000000。 ( )\n- 20. 如果内存限制 256MB, 程序运行没有超内存。 ( )\n- 21. 程序运行后, 最后输出 `cnt` 的值一定是 10000 ( )\n\n#### (2) (共 13 分)\n\n```\n01 #include<bits/stdc++.h>\n02 using namespace std;\n03 int f(int a, int n, int m)\n04 {\n05     if(a==1) return 1%m;①\n06     long long ans = 1%m;\n07     while(n){\n08         if(n&1)\n09             ans = (ans * a) % m;②\n10         a = (a * a) % m;\n11         n >>= 1;\n12     }\n13     return ans;\n14 }\n15 int main()\n16 {\n17     int a, n, m;\n18     cin >> a >> n >> m;\n19     cout << f(a, n, m);\n20 }\n```\n\n### 判断题\n\n- 22. 程序的时间复杂度是 $O(\\log n)$  ( )\n- 23. 删除①处语句, 程序输出不受影响 ( )\n- 24. 如果输入为 1 999 2048, ②处语句会执行 8 次 ( )\n- 25. 如果输入 1 0 1, 输出结果为 1 ( )\n\n### 单选题\n\n- 26. (2 分) 输入 2 13 2048 输出为( )\n- A.0      B.1      C.2047      D.2000\n- 27. 输入 7 11 10, 输出为( )\n- A.5      B.3      C.7      D.1\n\n### (3) (共 15 分)\n\n{3}------------------------------------------------\n\n```\n01 #include<iostream>\n02 #include<cstring>\n03 using namespace std;\n04 char s[10000];\n05 int cnt[200];\n06 int main(){\n07     scanf(\"%s\",s);\n08     for(int i=0;i<strlen(s);i++){\n09         if(s[i]>=48&&s[i]<=57&&cnt[s[i]-48]<=10){\n10             s[strlen(s)]=s[i];\n11         }\n12         cnt[s[i]-48]++;\n13     }\n14     printf(\"%s\\n\",s);\n15     return 0;\n16 }\n```\n\n假设输入的字符串长度不超过 50 且只包含数字和小写字母，完成下面的判断题和单选题：\n\n### 判断题\n\n- 28. 因为输入字符串长度不超过 50，故第 4 行的 10000 改成 100，程序运行结果不变。（ ）\n- 29. 将第 8 行改成 `for(int i=0,len=strlen(s);i<len;i++){` 程序运行结果不变且运行速度提高。（ ）\n- 30. 对于任意一个只包含数字字符且每个数字字符出现的次数不小于 10 的字符串 B，总存在一个字符串 A 使得输入 A 后输出结果为 B。（ ）\n\n### 单选题\n\n- 31. 如果输入的字符串只包含数字字符，则输出的字符串长度可能是（）。\n- A. 10      B. 11      C. 160      D. 200\n- 32. 设输入的字符串长度为  $x$ ，输出的字符串长度为  $y$ ，则以下关系正确的是（）。\n- A.  $x=y$       B.  $x<y$       C.  $x<y$  或者  $x=y$       D.  $x<y$  或者  $x=y$  或者  $x>y$\n- 33. 设字符串 A 为 12，如果输入字符串为 AA，（A 重复 2 次），则输出为（）。\n- A. A 重复 10 次      B. A 重复 11 次      C. A 重复 12 次      D. A 重复 13 次\n\n## 三.完善程序（单选题，每小题 3 分，共计 30 分）\n\n### (1) (消灭怪兽)\n\n{4}------------------------------------------------\n\n有  $n$  个怪兽，每个怪兽血量为  $hp_i$ 。每次可以任意选择一个还存活的怪兽进行攻击，被选择的怪兽受到  $A$  点伤害，其他还存活的怪兽也同样会受到  $B$  点溅射伤害。当一个怪兽的血量降到 0 或以下时就会消失。求最少需要进行多少次攻击可以消灭所有怪兽。\n\n数据范围满足  $1 \\leq n \\leq 10^5, 1 \\leq B < A \\leq 10^9, 1 \\leq hp_i \\leq 10^9$ 。\n\n提示：可以采用二分答案的方法来求解。\n\n试补全程序。\n\n```\n01 #include<bits/stdc++.h>\n02 using namespace std;\n03 const int N=1e5+5;\n04 typedef long long ll;\n05 ll hp[N];\n06 int n;\n07 ll a,b;\n08 bool check(ll x){\n09     ll cnt=x;\n10     for(int i=1;i<=n;i++){\n11         ll res_hp=__①__;\n12         if(res_hp>0){\n13             ll cnta=__②__;\n14             if(__③__) cnta++;\n15             cnt-=cnta;\n16             if(cnt<0) break;\n17         }\n18     }\n19     return __④__;\n20 }\n21 int main(){\n22     cin>>n>>a>>b;\n23     for(int i=1;i<=n;i++) cin>>hp[i];\n24     ll l=1,r=1e9;\n25     while(l<=r){\n26         ll mid=l+r>>1;\n27         if(check(mid)) r=mid-1;\n28         else l=mid+1;\n29     }\n30     cout<<__⑤__<<endl;\n31     return 0;\n32 }\n```\n\n34. ① 处应填（ ）。\n\nA.  $hp[i]-a$\n\nB.  $hp[i]-b$\n\n{5}------------------------------------------------\n\nC.  $hp[i]-x*a$\n\nD.  $hp[i]-x*b$\n\n35. ② 处应填（ ）。\n\nA.  $hp[i]/(a-b)$\n\nB.  $res\\_hp/(a-b)$\n\nC.  $res\\_hp/a$\n\nD.  $hp[i]/b$\n\n36. ③ 处应填（ ）。\n\nA.  $res\\_hp \\% a == 0$\n\nB.  $res\\_hp \\% b$\n\nC.  $res\\_hp \\% (a-b)$\n\nD.  $res\\_hp \\% (a-b) == 0$\n\n37. ④ 处应填（ ）。\n\nA.  $cnt >= x$\n\nB.  $cnt >= 0$\n\nC.  $cnt <= x$\n\nD.  $cnt <= 0$\n\n38. ⑤ 处应填（ ）。\n\nA.  $l-1$\n\nB.  $l$\n\nC.  $r-1$\n\nD.  $r$\n\n### (2) (位运算操作)\n\n现有编号为 1 到  $n$  的  $n$  位同学和  $n$  个操作，每位同学都会进行一些操作，操作流程如下描述。\n\n最开始老师手里有一个整数  $x$ ，交给 1 号同学，1 号同学执行完第 1 个操作交给 2 号同学；2 号同学执行完第 1,2 个操作交给 3 号同学；……；第  $i$  号同学从第  $i-1$  号同学接过数后，依次执行前  $i$  个操作，将最后的数交给第  $i+1$  号同学；依此下去直到第  $n$  号同学完成所有操作。\n\n为了方便表示，我们用二元组来描述操作，其中第  $i$  个操作用二元组  $(op, a[i])$  表示： $op$  取值为 1,2,3 分别表示将当前数字与  $a[i]$  进行 AND，OR，XOR 操作（即按位与，按位或，按位异或）。\n\n求每个同学执行完自己的轮次后，手里的数是多少。\n\n{6}------------------------------------------------\n\n先输入  $n$  和初始的整数  $x$ ，接下来  $n$  行每行两个数表示描述操作的二元组。\n\n数据范围满足  $1 \\leq n \\leq 2 * 10^5, 0 \\leq a[i], x \\leq 10^9$ 。\n\n**提示：**如果进行模拟时间复杂度为 $O(n^2)$ 会超时，因此采用位运算，提前通过递推求出  $x$  的每一个数位经过前  $i$  次操作后的值，设  $f[i][j][k]$  表示初始状态是  $j$ ，经过  $k$  次操作第  $i$  位的值。实际模拟时直接读取该值即可。\n\n试补全程序。\n\n```\n01 #include<bits/stdc++.h>\n02 using namespace std;\n03 const int N=2e5+5;\n04 int op[N],a[N];\n05 int f[35][2][N];\n06 int n,x;\n07 int main() {\n08     cin>>n>>x;\n09     for(int i=1;i<=n;i++) cin>>op[i]>>a[i];\n10     for(int i=0;i<30;i++) {\n11         ___①___;\n12     }\n13     for(int i=0; i<30;i++) {\n14         for(int j=0;j<2;j++) {\n15             for(int k=1; k<=n;k++) {\n16                 int bit=___②___;\n17                 if(op[k]==1) f[i][j][k]=f[i][j][k-1] & bit;\n18                 if(op[k]==2) f[i][j][k]=f[i][j][k-1] | bit;\n19                 if(op[k]==3) f[i][j][k]=___③___;\n20             }\n21         }\n22     }\n23     for(int i = 1; i <= n; ++i) {\n24         int t=0;\n25         for(int j=0;j<30;j++) {\n26             int bit=(x>>j)&1;\n27             if(___④___) t+=(___⑤___);\n28         }\n29         cout<<t<<endl;\n30         x=t;\n31     }\n32     return 0;\n33 }\n```\n\n39. ① 处应填（ ）。\n\nA.  $f[0][0][i]=0, f[0][1][i]=1;$\n\n{7}------------------------------------------------\n\nB.  $f[i][0][0]=0, f[i][1][0]=1$\n\nC.  $f[i][0][0]=1, f[i][1][0]=0;$\n\nD.  $f[0][1][0]=1, f[0][1][0]=0$\n\n40. ② 处应填 ( )。\n\nA.  $a[k] \\gg i \\& 1$\n\nB.  $a[k] \\gg i | 1$\n\nC.  $(a[k] \\gg i) | 1$\n\nD.  $(a[k] \\gg i) \\& 1$\n\n41. ③ 处应填 ( )。\n\nA.  $f[i][j][k-1] \\wedge \\text{bit}$\n\nB.  $f[i][j][k-1] + \\text{bit}$\n\nC.  $f[i][j][k-1] \\& \\text{bit}$\n\nD.  $f[i][j][k-1] | \\text{bit}$\n\n42. ④ 处应填 ( )。\n\nA.  $f[i][\\text{bit}][j]$\n\nB.  $!f[i][\\text{bit}][j]$\n\nC.  $f[j][\\text{bit}][i]$\n\nD.  $!f[j][\\text{bit}][i]$\n\n43. ⑤ 处应填 ( )。\n\nA.  $t += (f[i][\\text{bit}][j] \\ll j)$\n\nB.  $t += (f[j][\\text{bit}][i] \\ll j)$\n\nC.  $t = (f[i][\\text{bit}][j] \\ll (j-1))$\n\nD.  $t = (f[j][\\text{bit}][i] \\ll (j-1))$",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 27
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 28
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 24
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 8,
+    "total_cost": 2.4,
+    "cost_breakdown": {
+      "final_cost_cents": 2.4
+    },
+    "runtime": 10.681401252746582,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 2.4
+  },
+  "page_count": 8,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题（山东）.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

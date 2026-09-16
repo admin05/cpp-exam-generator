@@ -1,0 +1,158 @@
+{
+  "request_id": "7OS3xx26NEnlmWZ3g20UzQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:59:54.432263+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "7OS3xx26NEnlmWZ3g20UzQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/7OS3xx26NEnlmWZ3g20UzQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2024 山东小学组二轮试题（上半场）\n\n考试时间：2024 年 10 月 27 日上午 8:30-10:00\n\n|         |         |             |\n|---------|---------|-------------|\n| 题目名称    | 购物      | 消灭怪兽        |\n| 题目类型    | 传统型     | 传统型         |\n| 目录      | buy     | monster     |\n| 程序名称    | buy.cpp | monster.cpp |\n| 输入文件名   | buy.in  | monster.in  |\n| 输出文件名   | buy.out | monster.out |\n| 测试点数量   | 20      | 20          |\n| 每测试点时限  | 1 秒     | 1 秒         |\n| 测试点是否等分 | 是       | 是           |\n| 内存限制    | 512M    | 512M        |\n\n## 注意事项\n\n- 1、代码必须放在子文件夹内，子文件夹名与题目英文名一致。文件名（包括程序名和输入输出文件名）必须使用英文小写。\n- 2、C++编译选项：-O2 -std=c++14。C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n- 3、若无特殊说明，输入文件中同一行内的多个整数、浮点数、字符串等均使用一个空格分隔。若无特殊说明，结果比较方式为忽略行末空格、文末回车后的全文比较。\n- 4、选手提交的程序源文件不能大于 100KB。\n- 5、程序使用的栈空间内存限制与题目的内存限制要求一致。\n\n{1}------------------------------------------------\n\n## --- 购物（buy）\n\n### 【题目描述】\n\n双十一，很多人在疯狂地购物。\n\n商家推出了各种各样的优惠活动，吸引顾客购买更多的商品。\n\n某商家推出如下的优惠活动：\n\n该商家共有  $n$  件商品，单独购买第  $i$  件商品的费用为  $a_i$ 。顾客也可以花费  $w$  购买一张优惠券，一张优惠卷最多可兑换  $m$  件商品（无需额外付费）。顾客可以购买任意张优惠卷；如果最后商品不足  $m$  件，优惠卷也可以使用。\n\n求顾客购买完所有  $n$  件商品的最小费用。\n\n### 【输入格式】\n\n输入文件为 buy.in\n\n第一行有 3 个整数  $n, m, w$ 。\n\n第二行有  $n$  个整数，第  $i$  个为  $a_i$ ，表示第  $i$  件商品的费用。\n\n### 【输出格式】\n\n输出文件为 buy.out\n\n购买所有商品的最小费用。\n\n### 【样例 1 输入】\n\n5 2 8  \n2 7 1 8 4\n\n### 【样例 1 输出】\n\n15\n\n样例 1 说明\n\n花费 8 买一张优惠卷，兑换第 2、第 4 件商品；第 1、第 3、第 5 件商品直接购买。\n\n共花费  $8 + 2 + 1 + 4 = 15$ 。\n\n### 【样例 2 输入】\n\n5 3 8  \n6 7 4 8 9\n\n{2}------------------------------------------------\n\n### --- 【样例 2 输出】\n\n16\n\n样例 2 说明\n\n花费 16 购买两张优惠卷，能兑换所有商品。\n\n### 【数据范围】\n\n30% 的数据： $1 \\leq n \\leq 10^3, 1 \\leq m \\leq 10^3, 1 \\leq w \\leq 10^9, 1 \\leq a_i \\leq 10^9$ ;\n\n100% 的数据： $1 \\leq n \\leq 2 \\times 10^5, 1 \\leq m \\leq 2 \\times 10^5, 1 \\leq w \\leq 10^9, 1 \\leq a_i \\leq 10^9$ 。\n\n## 消灭怪兽 (monster)\n\n### 【题目描述】\n\n怪兽入侵了地球！\n\n为了抵抗入侵，人类设计出了按顺序排列好的  $n$  件武器，其中第  $i$  件武器的攻击力为  $a_i$ ，可以造成  $a_i$  的伤害。\n\n武器已经排列好了，因此不能改变顺序。某件武器可以单独攻击，也可以与相邻的武器进行组合攻击。具体来说，每次你可以把相邻的若干个（可以为 1 个，即不进行组合）连续的武器组合起来进行攻击，则攻击力为这些连续的武器攻击力之和。\n\n来自外星的怪兽拥有无敌护盾，不会受到任何伤害。\n\n但是人类在交战过程中发现怪兽有个致命的弱点：每次当受到  $k$  或  $k$  的倍数的伤害时，怪兽的无敌护盾就能被打破。\n\n请你帮助人类求出有多少种组合武器的方案，使得造成的伤害能打破怪兽的无敌护盾。\n\n### 【输入格式】\n\n输入文件为 `monster.in`。\n\n第一行两个正整数  $n, k$  如题所述；\n\n第二行为  $n$  个正整数，其中第  $i$  个数  $a_i$  表示第  $i$  件武器的攻击力。\n\n### 【输出格式】\n\n输出文件为 `monster.out`。\n\n{3}------------------------------------------------\n\n---\n\n一行一个整数表示答案。\n\n### **【样例 1 输入】**\n\n5 3\n\n1 2 3 4 5\n\n### **【样例 1 输出】**\n\n7\n\n### **【样例 2 输入】**\n\n10 11\n\n1 4 8 10 16 19 21 25 30 43\n\n### **【样例 2 输出】**\n\n7\n\n### **【样例 3 输入】**\n\n6 2\n\n2 2 2 2 2 2\n\n### **【样例 3 输出】**\n\n21\n\n### **【样例解释】**\n\n样例 1 解释：\n\n$k=3$ ，而区间  $[1, 2]$ ， $[1, 3]$ ， $[1, 5]$ ， $[2, 4]$ ， $[3, 3]$ ， $[3, 5]$ ， $[4, 5]$  的区间和均为 3 或 3 的倍数，故一共有 7 种方案。\n\n### **【数据范围】**\n\n20% 的数据， $n, k \\leq 100$ ；\n\n40% 的数据， $n, k \\leq 10000, 1 \\leq a_i \\leq k$ ；\n\n另外存在10% 的数据， $k = 2$ ；\n\n另外存在10% 的数据，所有的  $a_i$  均相等。\n\n100% 的数据， $1 \\leq n \\leq 10^6, 2 \\leq k \\leq 10^6, 1 \\leq a_i \\leq 10^9$ 。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 24
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 22
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 26
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 4,
+      "total_cost": 1.2,
+      "cost_breakdown": {
+        "final_cost_cents": 1.2
+      },
+      "runtime": 6.28617525100708,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2024 山东小学组二轮试题（上半场）\n\n考试时间：2024 年 10 月 27 日上午 8:30-10:00\n\n|         |         |             |\n|---------|---------|-------------|\n| 题目名称    | 购物      | 消灭怪兽        |\n| 题目类型    | 传统型     | 传统型         |\n| 目录      | buy     | monster     |\n| 程序名称    | buy.cpp | monster.cpp |\n| 输入文件名   | buy.in  | monster.in  |\n| 输出文件名   | buy.out | monster.out |\n| 测试点数量   | 20      | 20          |\n| 每测试点时限  | 1 秒     | 1 秒         |\n| 测试点是否等分 | 是       | 是           |\n| 内存限制    | 512M    | 512M        |\n\n## 注意事项\n\n- 1、代码必须放在子文件夹内，子文件夹名与题目英文名一致。文件名（包括程序名和输入输出文件名）必须使用英文小写。\n- 2、C++编译选项：-O2 -std=c++14。C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n- 3、若无特殊说明，输入文件中同一行内的多个整数、浮点数、字符串等均使用一个空格分隔。若无特殊说明，结果比较方式为忽略行末空格、文末回车后的全文比较。\n- 4、选手提交的程序源文件不能大于 100KB。\n- 5、程序使用的栈空间内存限制与题目的内存限制要求一致。\n\n{1}------------------------------------------------\n\n## --- 购物（buy）\n\n### 【题目描述】\n\n双十一，很多人在疯狂地购物。\n\n商家推出了各种各样的优惠活动，吸引顾客购买更多的商品。\n\n某商家推出如下的优惠活动：\n\n该商家共有  $n$  件商品，单独购买第  $i$  件商品的费用为  $a_i$ 。顾客也可以花费  $w$  购买一张优惠券，一张优惠卷最多可兑换  $m$  件商品（无需额外付费）。顾客可以购买任意张优惠卷；如果最后商品不足  $m$  件，优惠卷也可以使用。\n\n求顾客购买完所有  $n$  件商品的最小费用。\n\n### 【输入格式】\n\n输入文件为 buy.in\n\n第一行有 3 个整数  $n, m, w$ 。\n\n第二行有  $n$  个整数，第  $i$  个为  $a_i$ ，表示第  $i$  件商品的费用。\n\n### 【输出格式】\n\n输出文件为 buy.out\n\n购买所有商品的最小费用。\n\n### 【样例 1 输入】\n\n5 2 8  \n2 7 1 8 4\n\n### 【样例 1 输出】\n\n15\n\n样例 1 说明\n\n花费 8 买一张优惠卷，兑换第 2、第 4 件商品；第 1、第 3、第 5 件商品直接购买。\n\n共花费  $8 + 2 + 1 + 4 = 15$ 。\n\n### 【样例 2 输入】\n\n5 3 8  \n6 7 4 8 9\n\n{2}------------------------------------------------\n\n### --- 【样例 2 输出】\n\n16\n\n样例 2 说明\n\n花费 16 购买两张优惠卷，能兑换所有商品。\n\n### 【数据范围】\n\n30% 的数据： $1 \\leq n \\leq 10^3, 1 \\leq m \\leq 10^3, 1 \\leq w \\leq 10^9, 1 \\leq a_i \\leq 10^9$ ;\n\n100% 的数据： $1 \\leq n \\leq 2 \\times 10^5, 1 \\leq m \\leq 2 \\times 10^5, 1 \\leq w \\leq 10^9, 1 \\leq a_i \\leq 10^9$ 。\n\n## 消灭怪兽 (monster)\n\n### 【题目描述】\n\n怪兽入侵了地球！\n\n为了抵抗入侵，人类设计出了按顺序排列好的  $n$  件武器，其中第  $i$  件武器的攻击力为  $a_i$ ，可以造成  $a_i$  的伤害。\n\n武器已经排列好了，因此不能改变顺序。某件武器可以单独攻击，也可以与相邻的武器进行组合攻击。具体来说，每次你可以把相邻的若干个（可以为 1 个，即不进行组合）连续的武器组合起来进行攻击，则攻击力为这些连续的武器攻击力之和。\n\n来自外星的怪兽拥有无敌护盾，不会受到任何伤害。\n\n但是人类在交战过程中发现怪兽有个致命的弱点：每次当受到  $k$  或  $k$  的倍数的伤害时，怪兽的无敌护盾就能被打破。\n\n请你帮助人类求出有多少种组合武器的方案，使得造成的伤害能打破怪兽的无敌护盾。\n\n### 【输入格式】\n\n输入文件为 `monster.in`。\n\n第一行两个正整数  $n, k$  如题所述；\n\n第二行为  $n$  个正整数，其中第  $i$  个数  $a_i$  表示第  $i$  件武器的攻击力。\n\n### 【输出格式】\n\n输出文件为 `monster.out`。\n\n{3}------------------------------------------------\n\n---\n\n一行一个整数表示答案。\n\n### **【样例 1 输入】**\n\n5 3\n\n1 2 3 4 5\n\n### **【样例 1 输出】**\n\n7\n\n### **【样例 2 输入】**\n\n10 11\n\n1 4 8 10 16 19 21 25 30 43\n\n### **【样例 2 输出】**\n\n7\n\n### **【样例 3 输入】**\n\n6 2\n\n2 2 2 2 2 2\n\n### **【样例 3 输出】**\n\n21\n\n### **【样例解释】**\n\n样例 1 解释：\n\n$k=3$ ，而区间  $[1, 2]$ ， $[1, 3]$ ， $[1, 5]$ ， $[2, 4]$ ， $[3, 3]$ ， $[3, 5]$ ， $[4, 5]$  的区间和均为 3 或 3 的倍数，故一共有 7 种方案。\n\n### **【数据范围】**\n\n20% 的数据， $n, k \\leq 100$ ；\n\n40% 的数据， $n, k \\leq 10000, 1 \\leq a_i \\leq k$ ；\n\n另外存在10% 的数据， $k = 2$ ；\n\n另外存在10% 的数据，所有的  $a_i$  均相等。\n\n100% 的数据， $1 \\leq n \\leq 10^6, 2 \\leq k \\leq 10^6, 1 \\leq a_i \\leq 10^9$ 。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 24
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 22
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 26
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 4,
+    "total_cost": 1.2,
+    "cost_breakdown": {
+      "final_cost_cents": 1.2
+    },
+    "runtime": 6.28617525100708,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.2
+  },
+  "page_count": 4,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（上半场）.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

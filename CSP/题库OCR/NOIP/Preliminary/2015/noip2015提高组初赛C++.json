@@ -1,0 +1,285 @@
+{
+  "request_id": "DCuVdQ_sC7XmsXeTYvtNFQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:31:19.057721+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "DCuVdQ_sC7XmsXeTYvtNFQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/DCuVdQ_sC7XmsXeTYvtNFQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十一届全国青少年信息学奥林匹克联赛初赛\n\n## 提高组 C++语言试题\n\n竞赛时间：2015 年 10 月 11 日 14:30~16:30\n\n## 选手注意：\n\n- 试题纸共有 9 页，答题纸共有 2 页，满分 100 分。请在答题纸上作答，写在试题纸上的  \n一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n## 一、单项选择题（共 15 题，每题 1.5 分，共计 22.5 分；每题有且仅有一个正确选项）\n\n1. 在计算机内部用来传送、存贮、加工处理的数据或指令都是以（ ）形式进行的。  \nA. 二进制码            B. 八进制码            C. 十进制码            D. 智能拼音码\n2. 下列说法正确的是（ ）。  \nA. CPU 的主要任务是执行数据运算和程序控制  \nB. 存储器具有记忆能力，其中信息任何时候都不会丢失  \nC. 两个显示器屏幕尺寸相同，则它们的分辨率必定相同  \nD. 个人用户只能使用 Wifi 的方式连接到 Internet\n3. 与二进制小数 0.1 相等的十六进制数是（ ）。  \nA. 0.8                B. 0.4                C. 0.2                D. 0.1\n4. 下面有四个数据组，每个组各有三个数据，其中第一个数据为八进制数，第二个数据为十进制数，第三个数据为十六进制数。这四个数据组中三个数据相同的是（ ）。  \nA. 120 82 50            B. 144 100 68            C. 300 200 C8            D. 1762 1010 3F2\n5. 线性表若采用链表存储结构，要求内存中可用存储单元地址（ ）。  \nA. 必须连续                                    B. 部分地址必须连续  \nC. 一定不连续                                    D. 连续不连续均可\n6. 今有一空栈 S，对下列待进栈的数据元素序列 a,b,c,d,e,f 依次进行进栈，进栈，出栈，进栈，进栈，出栈的操作，则此操作完成后，栈 S 的栈顶元素为（ ）。  \nA. f                    B. c                    C. a                    D. b\n\n{1}------------------------------------------------\n\n- 7. 前序遍历序列与后序遍历序列相同的二叉树为（ ）。  \nA. 非叶子结点只有左子树的二叉树      B. 只有根结点的二叉树  \nC. 根结点无右子树的二叉树      D. 非叶子结点只有右子树的二叉树\n- 8. 如果根的高度为 1，具有 61 个结点的完全二叉树的高度为（ ）。  \nA. 5      B. 6      C. 7      D. 8\n- 9. 6 个顶点的连通图的最小生成树，其边数为（ ）。  \nA. 6      B. 5      C. 7      D. 4\n- 10. 设某算法的计算时间表示为递推关系式  $T(n) = T(n - 1) + n$ （ $n$  为正整数）及  $T(0) = 1$ ，则该算法的时间复杂度为（ ）。  \nA.  $O(\\log n)$       B.  $O(n \\log n)$       C.  $O(n)$       D.  $O(n^2)$\n- 11. 具有  $n$  个顶点， $e$  条边的图采用邻接表存储结构，进行深度优先遍历和广度优先遍历运算的时间复杂度均为（ ）。  \nA.  $\\Theta(n^2)$       B.  $\\Theta(e^2)$       C.  $\\Theta(ne)$       D.  $\\Theta(n + e)$\n- 12. 在数据压缩编码的应用中，哈夫曼（Huffman）算法是一种采用了（ ）思想的算法。  \nA. 贪心      B. 分治      C. 递推      D. 回溯\n- 13. 双向链表中有两个指针域，`llink` 和 `rlink`，分别指回前驱及后继，设 `p` 指向链表中的一个结点，`q` 指向一待插入结点，现要求在 `p` 前插入 `q`，则正确的插入为（ ）。  \nA. `p->llink = q; q->rlink = p;`  \n`p->llink->rlink = q; q->llink = p->llink;`  \nB. `q->llink = p->llink; p->llink->rlink = q;`  \n`q->rlink = p; p->llink = q->rlink;`  \nC. `q->rlink = p; p->rlink = q;`  \n`p->llink->rlink = q; q->rlink = p;`  \nD. `p->llink->rlink = q; q->rlink = p;`  \n`q->llink = p->llink; p->llink = q;`\n- 14. 对图  $G$  中各个结点分别指定一种颜色，使相邻结点颜色不同，则称为图  $G$  的一个正常着色。正常着色图  $G$  所必需的最少颜色数，称为  $G$  的色数。那么下图的色数是（ ）。\n\n{2}------------------------------------------------\n\n![A graph with 8 vertices and 13 edges. The vertices are arranged in a square-like pattern with internal connections. It is a bipartite graph with 4 vertices in each of two sets, and every vertex in one set is connected to every vertex in the other set, forming a complete bipartite graph K_{4,4}.](b230b8f21d8e82d55c0d311c8c32ef73_img.jpg)\n\nA graph with 8 vertices and 13 edges. The vertices are arranged in a square-like pattern with internal connections. It is a bipartite graph with 4 vertices in each of two sets, and every vertex in one set is connected to every vertex in the other set, forming a complete bipartite graph K\\_{4,4}.\n\n- A. 3                      B. 4                      C. 5                      D. 6\n\n15. 在 NOI 系列赛事中参赛选手必须使用由承办单位统一提供的设备。下列物品中不允许选手自带的是（ ）。\n\n- A. 鼠标                      B. 笔                      C. 身份证                      D. 准考证\n\n## 二、不定项选择题（共 5 题，每题 1.5 分，共计 7.5 分；每题有一个或多个正确选项，多选或少选均不得分）\n\n1. 以下属于操作系统的有（ ）。\n\n- A. Windows XP              B. UNIX                      C. Linux                      D. Mac OS\n\n2. 下列属于视频文件格式的有（ ）。\n\n- A. AVI                      B. MPEG                      C. WMV                      D. JPEG\n\n3. 下列选项不是正确的 IP 地址的有（ ）。\n\n- A. 202.300.12.4              B. 192.168.0.3              C. 100:128:35:91              D. 111-132-35-21\n\n4. 下列有关树的叙述中，叙述正确的有（ ）。\n\n- A. 在含有  $n$  个结点的树中，边数只能是  $(n-1)$  条\n- B. 在哈夫曼树中，叶结点的个数比非叶结点个数多 1\n- C. 完全二叉树一定是满二叉树\n- D. 在二叉树的前序序列中，若结点  $u$  在结点  $v$  之前，则  $u$  一定是  $v$  的祖先\n\n5. 以下图中一定可以进行黑白染色的有（ ）。（黑白染色：为各个结点分别指定黑白两种颜色之一，使相邻结点颜色不同。）\n\n- A. 二分图                      B. 完全图                      C. 树                      D. 连通图\n\n{3}------------------------------------------------\n\n## 三、问题求解（共 2 题，每题 5 分，共计 10 分；每题全部答对得 5 分，没有部分分）\n\n1. 在 1 和 2015 之间（包括 1 和 2015 在内）不能被 4、5、6 三个数任意一个数整除的数有\\_\\_\\_\\_\\_个。\n2. 结点数为 5 的不同形态的二叉树一共有\\_\\_\\_\\_\\_种。（结点数为 2 的二叉树一共有 2 种：一种是根结点和左儿子，另一种是根结点和右儿子。）\n\n## 四、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n```\n1. #include <iostream>\nusing namespace std;\nstruct point {\n    int x;\n    int y;\n};\nint main() {\n    struct EX{\n        int a;\n        int b;\n        point c;\n    } e;\n    e.a = 1;\n    e.b = 2;\n    e.c.x = e.a + e.b;\n    e.c.y = e.a * e.b;\n    cout << e.c.x << ',' << e.c.y << endl;\n    return 0;\n}\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include <iostream>\nusing namespace std;\n```\n\n{4}------------------------------------------------\n\n```\n\nvoid fun(char *a, char *b) {\n    a = b;\n    (*a)++;\n}\nint main() {\n    char c1, c2, *p1, *p2;\n    c1 = 'A';\n    c2 = 'a';\n    p1 = &c1;\n    p2 = &c2;\n    fun(p1, p2);\n    cout << c1 << c2 << endl;\n    return 0;\n}\n\n```\n\n输出: \\_\\_\\_\\_\\_\n\n3. #include <iostream>  \n#include <string>  \nusing namespace std;  \nint main() {  \n int len, maxlen;  \n string s, ss;  \n maxlen = 0;  \n do {  \n cin >> ss;  \n len = ss.length();  \n if (ss[0] == '#')  \n break;  \n if (len > maxlen) {  \n s = ss;  \n maxlen = len;  \n }  \n } while (true);  \n cout << s << endl;  \n return 0;  \n}\n\n{5}------------------------------------------------\n\n输入:  \nI  \nam  \na  \ncitizen  \nof  \nChina  \n#\n\n输出: \\_\\_\\_\\_\\_\n\n```\n4. #include <iostream>\nusing namespace std;\nint fun(int n, int fromPos, int toPos) {\n    int t, tot;\n    if (n == 0)\n        return 0;\n    for (t = 1; t <= 3; t++)\n        if (t != fromPos && t != toPos)\n            break;\n    tot = 0;\n    tot += fun(n - 1, fromPos, t);\n    tot++;\n    tot += fun(n - 1, t, toPos);\n    return tot;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << fun(n, 1, 3) << endl;\n    return 0;\n}\n```\n\n输入: 5\n\n输出: \\_\\_\\_\\_\\_\n\n{6}------------------------------------------------\n\n## 五、完善程序（共 2 题，每题 14 分，共计 28 分）\n\n- 1. （双子序列最大和）给定一个长度为  $n$  ( $3 \\leq n \\leq 1000$ ) 的整数序列，要求从中选出两个连续子序列，使得这两个连续子序列的序列和之和最大，最终只需输出这个最大和。一个连续子序列的序列和为该连续子序列中所有数之和。要求：每个连续子序列长度至少为 1，且两个连续子序列之间至少间隔 1 个数。（第五空 4 分，其余 2.5 分）\n\n```\n#include <iostream>\nusing namespace std;\n\nconst int MAXN = 1000;\nint n, i, ans, sum;\nint x[MAXN];\nint lmax[MAXN];\n// lmax[i]为仅含 x[i]及 x[i]左侧整数的连续子序列的序列和中，最大的序列和\nint rmax[MAXN];\n// rmax[i]为仅含 x[i]及 x[i]右侧整数的连续子序列的序列和中，最大的序列和\n\nint main() {\n    cin >> n;\n    for (i = 0; i < n; i++)\n        cin >> x[i];\n    lmax[0] = x[0];\n    for (i = 1; i < n; i++)\n        if (lmax[i - 1] <= 0)\n            lmax[i] = x[i];\n        else\n            lmax[i] = lmax[i - 1] + x[i];\n    for (i = 1; i < n; i++)\n        if (lmax[i] < lmax[i - 1])\n            lmax[i] = lmax[i - 1];\n    (1);\n    for (i = n - 2; i >= 0; i--)\n        if (rmax[i + 1] <= 0)\n            (2);\n        else\n            (3);\n}\n```\n\n{7}------------------------------------------------\n\n```\n\nfor (i = n - 2; i >= 0; i--)\n    if (rmax[i] < rmax[i + 1])\n        (4);\nans = x[0] + x[2];\nfor (i = 1; i < n - 1; i++) {\n    sum = (5);\n    if (sum > ans)\n        ans = sum;\n}\ncout << ans << endl;\nreturn 0;\n}\n\n```\n\n- 2. （**最短路径问题**）无向连通图 G 有 n 个结点，依次编号为 0,1,2,...,(n-1)。用邻接矩阵的形式给出每条边的边长，要求输出以结点 0 为起点出发，到各结点的最短路径长度。\n\n使用 Dijkstra 算法解决该问题：利用 dist 数组记录当前各结点与起点的已找到的最短路径长度；每次从未扩展的结点中选取 dist 值最小的结点 v 进行扩展，更新与 v 相邻的结点的 dist 值；不断进行上述操作直至所有结点均被扩展，此时 dist 数据中记录的值即为各结点与起点的最短路径长度。（第五空 2 分，其余 3 分）\n\n```\n\n#include <iostream>\nusing namespace std;\n\nconst int MAXV = 100;\nint n, i, j, v;\nint w[MAXV][MAXV]; // 邻接矩阵，记录边长\n// 其中 w[i][j] 为连接结点 i 和结点 j 的无向边长度，若无边则为 -1\nint dist[MAXV];\nint used[MAXV]; // 记录结点是否已扩展（0：未扩展；1：已扩展）\n\nint main() {\n    cin >> n;\n    for (i = 0; i < n; i++)\n        for (j = 0; j < n; j++)\n            cin >> w[i][j];\n    dist[0] = 0;\n\n```\n\n{8}------------------------------------------------\n\n```\n\nfor (i = 1; i < n; i++)\n    dist[i] = -1;\nfor (i = 0; i < n; i++)\n    used[i] = 0;\nwhile (true) {\n    (1);\n    for (i = 0; i < n; i++)\n        if (used[i] != 1 && dist[i] != -1 && (v == -1 || (2)))\n            (3);\n    if (v == -1)\n        break;\n    (4);\n    for (i = 0; i < n; i++)\n        if (w[v][i] != -1 && (dist[i] == -1 || (5)))\n            dist[i] = dist[v] + w[v][i];\n}\nfor (i = 0; i < n; i++)\n    cout << dist[i] << endl;\nreturn 0;\n}\n\n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "b230b8f21d8e82d55c0d311c8c32ef73_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 5
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 2
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.7,
+      "page_count": 9,
+      "total_cost": 2.7,
+      "cost_breakdown": {
+        "final_cost_cents": 2.7
+      },
+      "runtime": 30.502788543701172,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十一届全国青少年信息学奥林匹克联赛初赛\n\n## 提高组 C++语言试题\n\n竞赛时间：2015 年 10 月 11 日 14:30~16:30\n\n## 选手注意：\n\n- 试题纸共有 9 页，答题纸共有 2 页，满分 100 分。请在答题纸上作答，写在试题纸上的  \n一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n## 一、单项选择题（共 15 题，每题 1.5 分，共计 22.5 分；每题有且仅有一个正确选项）\n\n1. 在计算机内部用来传送、存贮、加工处理的数据或指令都是以（ ）形式进行的。  \nA. 二进制码            B. 八进制码            C. 十进制码            D. 智能拼音码\n2. 下列说法正确的是（ ）。  \nA. CPU 的主要任务是执行数据运算和程序控制  \nB. 存储器具有记忆能力，其中信息任何时候都不会丢失  \nC. 两个显示器屏幕尺寸相同，则它们的分辨率必定相同  \nD. 个人用户只能使用 Wifi 的方式连接到 Internet\n3. 与二进制小数 0.1 相等的十六进制数是（ ）。  \nA. 0.8                B. 0.4                C. 0.2                D. 0.1\n4. 下面有四个数据组，每个组各有三个数据，其中第一个数据为八进制数，第二个数据为十进制数，第三个数据为十六进制数。这四个数据组中三个数据相同的是（ ）。  \nA. 120 82 50            B. 144 100 68            C. 300 200 C8            D. 1762 1010 3F2\n5. 线性表若采用链表存储结构，要求内存中可用存储单元地址（ ）。  \nA. 必须连续                                    B. 部分地址必须连续  \nC. 一定不连续                                    D. 连续不连续均可\n6. 今有一空栈 S，对下列待进栈的数据元素序列 a,b,c,d,e,f 依次进行进栈，进栈，出栈，进栈，进栈，出栈的操作，则此操作完成后，栈 S 的栈顶元素为（ ）。  \nA. f                    B. c                    C. a                    D. b\n\n{1}------------------------------------------------\n\n- 7. 前序遍历序列与后序遍历序列相同的二叉树为（ ）。  \nA. 非叶子结点只有左子树的二叉树      B. 只有根结点的二叉树  \nC. 根结点无右子树的二叉树      D. 非叶子结点只有右子树的二叉树\n- 8. 如果根的高度为 1，具有 61 个结点的完全二叉树的高度为（ ）。  \nA. 5      B. 6      C. 7      D. 8\n- 9. 6 个顶点的连通图的最小生成树，其边数为（ ）。  \nA. 6      B. 5      C. 7      D. 4\n- 10. 设某算法的计算时间表示为递推关系式  $T(n) = T(n - 1) + n$ （ $n$  为正整数）及  $T(0) = 1$ ，则该算法的时间复杂度为（ ）。  \nA.  $O(\\log n)$       B.  $O(n \\log n)$       C.  $O(n)$       D.  $O(n^2)$\n- 11. 具有  $n$  个顶点， $e$  条边的图采用邻接表存储结构，进行深度优先遍历和广度优先遍历运算的时间复杂度均为（ ）。  \nA.  $\\Theta(n^2)$       B.  $\\Theta(e^2)$       C.  $\\Theta(ne)$       D.  $\\Theta(n + e)$\n- 12. 在数据压缩编码的应用中，哈夫曼（Huffman）算法是一种采用了（ ）思想的算法。  \nA. 贪心      B. 分治      C. 递推      D. 回溯\n- 13. 双向链表中有两个指针域，`llink` 和 `rlink`，分别指回前驱及后继，设 `p` 指向链表中的一个结点，`q` 指向一待插入结点，现要求在 `p` 前插入 `q`，则正确的插入为（ ）。  \nA. `p->llink = q; q->rlink = p;`  \n`p->llink->rlink = q; q->llink = p->llink;`  \nB. `q->llink = p->llink; p->llink->rlink = q;`  \n`q->rlink = p; p->llink = q->rlink;`  \nC. `q->rlink = p; p->rlink = q;`  \n`p->llink->rlink = q; q->rlink = p;`  \nD. `p->llink->rlink = q; q->rlink = p;`  \n`q->llink = p->llink; p->llink = q;`\n- 14. 对图  $G$  中各个结点分别指定一种颜色，使相邻结点颜色不同，则称为图  $G$  的一个正常着色。正常着色图  $G$  所必需的最少颜色数，称为  $G$  的色数。那么下图的色数是（ ）。\n\n{2}------------------------------------------------\n\n![A graph with 8 vertices and 13 edges. The vertices are arranged in a square-like pattern with internal connections. It is a bipartite graph with 4 vertices in each of two sets, and every vertex in one set is connected to every vertex in the other set, forming a complete bipartite graph K_{4,4}.](b230b8f21d8e82d55c0d311c8c32ef73_img.jpg)\n\nA graph with 8 vertices and 13 edges. The vertices are arranged in a square-like pattern with internal connections. It is a bipartite graph with 4 vertices in each of two sets, and every vertex in one set is connected to every vertex in the other set, forming a complete bipartite graph K\\_{4,4}.\n\n- A. 3                      B. 4                      C. 5                      D. 6\n\n15. 在 NOI 系列赛事中参赛选手必须使用由承办单位统一提供的设备。下列物品中不允许选手自带的是（ ）。\n\n- A. 鼠标                      B. 笔                      C. 身份证                      D. 准考证\n\n## 二、不定项选择题（共 5 题，每题 1.5 分，共计 7.5 分；每题有一个或多个正确选项，多选或少选均不得分）\n\n1. 以下属于操作系统的有（ ）。\n\n- A. Windows XP              B. UNIX                      C. Linux                      D. Mac OS\n\n2. 下列属于视频文件格式的有（ ）。\n\n- A. AVI                      B. MPEG                      C. WMV                      D. JPEG\n\n3. 下列选项不是正确的 IP 地址的有（ ）。\n\n- A. 202.300.12.4              B. 192.168.0.3              C. 100:128:35:91              D. 111-132-35-21\n\n4. 下列有关树的叙述中，叙述正确的有（ ）。\n\n- A. 在含有  $n$  个结点的树中，边数只能是  $(n-1)$  条\n- B. 在哈夫曼树中，叶结点的个数比非叶结点个数多 1\n- C. 完全二叉树一定是满二叉树\n- D. 在二叉树的前序序列中，若结点  $u$  在结点  $v$  之前，则  $u$  一定是  $v$  的祖先\n\n5. 以下图中一定可以进行黑白染色的有（ ）。（黑白染色：为各个结点分别指定黑白两种颜色之一，使相邻结点颜色不同。）\n\n- A. 二分图                      B. 完全图                      C. 树                      D. 连通图\n\n{3}------------------------------------------------\n\n## 三、问题求解（共 2 题，每题 5 分，共计 10 分；每题全部答对得 5 分，没有部分分）\n\n1. 在 1 和 2015 之间（包括 1 和 2015 在内）不能被 4、5、6 三个数任意一个数整除的数有\\_\\_\\_\\_\\_个。\n2. 结点数为 5 的不同形态的二叉树一共有\\_\\_\\_\\_\\_种。（结点数为 2 的二叉树一共有 2 种：一种是根结点和左儿子，另一种是根结点和右儿子。）\n\n## 四、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n```\n1. #include <iostream>\nusing namespace std;\nstruct point {\n    int x;\n    int y;\n};\nint main() {\n    struct EX{\n        int a;\n        int b;\n        point c;\n    } e;\n    e.a = 1;\n    e.b = 2;\n    e.c.x = e.a + e.b;\n    e.c.y = e.a * e.b;\n    cout << e.c.x << ',' << e.c.y << endl;\n    return 0;\n}\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include <iostream>\nusing namespace std;\n```\n\n{4}------------------------------------------------\n\n```\n\nvoid fun(char *a, char *b) {\n    a = b;\n    (*a)++;\n}\nint main() {\n    char c1, c2, *p1, *p2;\n    c1 = 'A';\n    c2 = 'a';\n    p1 = &c1;\n    p2 = &c2;\n    fun(p1, p2);\n    cout << c1 << c2 << endl;\n    return 0;\n}\n\n```\n\n输出: \\_\\_\\_\\_\\_\n\n3. #include <iostream>  \n#include <string>  \nusing namespace std;  \nint main() {  \n int len, maxlen;  \n string s, ss;  \n maxlen = 0;  \n do {  \n cin >> ss;  \n len = ss.length();  \n if (ss[0] == '#')  \n break;  \n if (len > maxlen) {  \n s = ss;  \n maxlen = len;  \n }  \n } while (true);  \n cout << s << endl;  \n return 0;  \n}\n\n{5}------------------------------------------------\n\n输入:  \nI  \nam  \na  \ncitizen  \nof  \nChina  \n#\n\n输出: \\_\\_\\_\\_\\_\n\n```\n4. #include <iostream>\nusing namespace std;\nint fun(int n, int fromPos, int toPos) {\n    int t, tot;\n    if (n == 0)\n        return 0;\n    for (t = 1; t <= 3; t++)\n        if (t != fromPos && t != toPos)\n            break;\n    tot = 0;\n    tot += fun(n - 1, fromPos, t);\n    tot++;\n    tot += fun(n - 1, t, toPos);\n    return tot;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << fun(n, 1, 3) << endl;\n    return 0;\n}\n```\n\n输入: 5\n\n输出: \\_\\_\\_\\_\\_\n\n{6}------------------------------------------------\n\n## 五、完善程序（共 2 题，每题 14 分，共计 28 分）\n\n- 1. （双子序列最大和）给定一个长度为  $n$  ( $3 \\leq n \\leq 1000$ ) 的整数序列，要求从中选出两个连续子序列，使得这两个连续子序列的序列和之和最大，最终只需输出这个最大和。一个连续子序列的序列和为该连续子序列中所有数之和。要求：每个连续子序列长度至少为 1，且两个连续子序列之间至少间隔 1 个数。（第五空 4 分，其余 2.5 分）\n\n```\n#include <iostream>\nusing namespace std;\n\nconst int MAXN = 1000;\nint n, i, ans, sum;\nint x[MAXN];\nint lmax[MAXN];\n// lmax[i]为仅含 x[i]及 x[i]左侧整数的连续子序列的序列和中，最大的序列和\nint rmax[MAXN];\n// rmax[i]为仅含 x[i]及 x[i]右侧整数的连续子序列的序列和中，最大的序列和\n\nint main() {\n    cin >> n;\n    for (i = 0; i < n; i++)\n        cin >> x[i];\n    lmax[0] = x[0];\n    for (i = 1; i < n; i++)\n        if (lmax[i - 1] <= 0)\n            lmax[i] = x[i];\n        else\n            lmax[i] = lmax[i - 1] + x[i];\n    for (i = 1; i < n; i++)\n        if (lmax[i] < lmax[i - 1])\n            lmax[i] = lmax[i - 1];\n    (1);\n    for (i = n - 2; i >= 0; i--)\n        if (rmax[i + 1] <= 0)\n            (2);\n        else\n            (3);\n}\n```\n\n{7}------------------------------------------------\n\n```\n\nfor (i = n - 2; i >= 0; i--)\n    if (rmax[i] < rmax[i + 1])\n        (4);\nans = x[0] + x[2];\nfor (i = 1; i < n - 1; i++) {\n    sum = (5);\n    if (sum > ans)\n        ans = sum;\n}\ncout << ans << endl;\nreturn 0;\n}\n\n```\n\n- 2. （**最短路径问题**）无向连通图 G 有 n 个结点，依次编号为 0,1,2,...,(n-1)。用邻接矩阵的形式给出每条边的边长，要求输出以结点 0 为起点出发，到各结点的最短路径长度。\n\n使用 Dijkstra 算法解决该问题：利用 dist 数组记录当前各结点与起点的已找到的最短路径长度；每次从未扩展的结点中选取 dist 值最小的结点 v 进行扩展，更新与 v 相邻的结点的 dist 值；不断进行上述操作直至所有结点均被扩展，此时 dist 数据中记录的值即为各结点与起点的最短路径长度。（第五空 2 分，其余 3 分）\n\n```\n\n#include <iostream>\nusing namespace std;\n\nconst int MAXV = 100;\nint n, i, j, v;\nint w[MAXV][MAXV]; // 邻接矩阵，记录边长\n// 其中 w[i][j] 为连接结点 i 和结点 j 的无向边长度，若无边则为 -1\nint dist[MAXV];\nint used[MAXV]; // 记录结点是否已扩展（0：未扩展；1：已扩展）\n\nint main() {\n    cin >> n;\n    for (i = 0; i < n; i++)\n        for (j = 0; j < n; j++)\n            cin >> w[i][j];\n    dist[0] = 0;\n\n```\n\n{8}------------------------------------------------\n\n```\n\nfor (i = 1; i < n; i++)\n    dist[i] = -1;\nfor (i = 0; i < n; i++)\n    used[i] = 0;\nwhile (true) {\n    (1);\n    for (i = 0; i < n; i++)\n        if (used[i] != 1 && dist[i] != -1 && (v == -1 || (2)))\n            (3);\n    if (v == -1)\n        break;\n    (4);\n    for (i = 0; i < n; i++)\n        if (w[v][i] != -1 && (dist[i] == -1 || (5)))\n            dist[i] = dist[v] + w[v][i];\n}\nfor (i = 0; i < n; i++)\n    cout << dist[i] << endl;\nreturn 0;\n}\n\n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "b230b8f21d8e82d55c0d311c8c32ef73_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 5
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 2
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.7,
+    "page_count": 9,
+    "total_cost": 2.7,
+    "cost_breakdown": {
+      "final_cost_cents": 2.7
+    },
+    "runtime": 30.502788543701172,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.7,
+  "cost_breakdown": {
+    "final_cost_cents": 2.7
+  },
+  "page_count": 9,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2015/noip2015提高组初赛C++.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "b230b8f21d8e82d55c0d311c8c32ef73_img.jpg"
+  ]
+}

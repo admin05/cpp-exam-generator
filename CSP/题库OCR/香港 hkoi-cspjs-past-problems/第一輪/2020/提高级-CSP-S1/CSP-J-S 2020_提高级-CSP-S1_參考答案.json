@@ -1,0 +1,188 @@
+{
+  "request_id": "07igrQBVvJGVonFQoAffOQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T04:03:00.563117+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "07igrQBVvJGVonFQoAffOQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/07igrQBVvJGVonFQoAffOQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2020 CCF 非专业级别软件能力认证第一轮 (CSP-S) 提高级 A 卷参考答案\n\n### 一、单项选择题（共 10 题，每题 2 分，共计 30 分）\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| C  | B  | B  | B  | D  | B | A | A | C | C  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| C  | D  | B  | D  | C  |   |   |   |   |    |\n\n### 二、阅读程序（除特殊说明外，判断题 1.5 分，单选题 3 分，共计 40 分）\n\n|       |           |    |                |            |            |            |\n|-------|-----------|----|----------------|------------|------------|------------|\n| 第 1 题 | 判断题（填√或×） |    |                |            | 单选题        |            |\n|       | 1)        | 2) | 3)             | 4)         | 5)         | 6)         |\n|       | ×         | ×  | √              | √          | C          | C          |\n| 第 2 题 | 判断题（填√或×） |    | 单选题            |            |            |            |\n|       | 1)        | 2) | 3) (2.5 分)     | 4) (2.5 分) | 5) (2.5 分) | 6) (2.5 分) |\n|       | ×         | √  | 均对<sup>1</sup> | B          | A          | D          |\n| 第 3 题 | 判断题（填√或×） |    |                | 单选题        |            |            |\n|       | 1)        | 2) | 3)             | 4) (2.5 分) | 5) (4 分)   | 6) (4 分)   |\n|       | √         | ×  | ×              | D          | D          | C          |\n\n### 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n|       |    |    |    |    |       |    |    |    |    |\n|-------|----|----|----|----|-------|----|----|----|----|\n| 第 1 题 |    |    |    |    | 第 2 题 |    |    |    |    |\n| 1)    | 2) | 3) | 4) | 5) | 1)    | 2) | 3) | 4) | 5) |\n| D     | B  | D  | D  | B  | D     | B  | C  | A  | B  |\n\n<sup>1</sup> 答案为 $\\Theta((\\log n)^2)$ ，无正确选项，因此无论选择哪个选项都算对。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 8
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 24.210986375808716,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2020 CCF 非专业级别软件能力认证第一轮 (CSP-S) 提高级 A 卷参考答案\n\n### 一、单项选择题（共 10 题，每题 2 分，共计 30 分）\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| C  | B  | B  | B  | D  | B | A | A | C | C  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| C  | D  | B  | D  | C  |   |   |   |   |    |\n\n### 二、阅读程序（除特殊说明外，判断题 1.5 分，单选题 3 分，共计 40 分）\n\n|       |           |    |                |            |            |            |\n|-------|-----------|----|----------------|------------|------------|------------|\n| 第 1 题 | 判断题（填√或×） |    |                |            | 单选题        |            |\n|       | 1)        | 2) | 3)             | 4)         | 5)         | 6)         |\n|       | ×         | ×  | √              | √          | C          | C          |\n| 第 2 题 | 判断题（填√或×） |    | 单选题            |            |            |            |\n|       | 1)        | 2) | 3) (2.5 分)     | 4) (2.5 分) | 5) (2.5 分) | 6) (2.5 分) |\n|       | ×         | √  | 均对<sup>1</sup> | B          | A          | D          |\n| 第 3 题 | 判断题（填√或×） |    |                | 单选题        |            |            |\n|       | 1)        | 2) | 3)             | 4) (2.5 分) | 5) (4 分)   | 6) (4 分)   |\n|       | √         | ×  | ×              | D          | D          | C          |\n\n### 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n|       |    |    |    |    |       |    |    |    |    |\n|-------|----|----|----|----|-------|----|----|----|----|\n| 第 1 题 |    |    |    |    | 第 2 题 |    |    |    |    |\n| 1)    | 2) | 3) | 4) | 5) | 1)    | 2) | 3) | 4) | 5) |\n| D     | B  | D  | D  | B  | D     | B  | C  | A  | B  |\n\n<sup>1</sup> 答案为 $\\Theta((\\log n)^2)$ ，无正确选项，因此无论选择哪个选项都算对。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 8
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 24.210986375808716,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2020/提高级-CSP-S1/CSP-J-S 2020_提高级-CSP-S1_參考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

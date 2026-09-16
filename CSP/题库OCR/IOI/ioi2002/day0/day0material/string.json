@@ -1,0 +1,175 @@
+{
+  "request_id": "GSKx0INM-Iwpgwuwc--99Q",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:12:10.317807+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "GSKx0INM-Iwpgwuwc--99Q",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/GSKx0INM-Iwpgwuwc--99Q",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# String from Substrings\n\n## PROBLEM\n\nEvery DNA string consists of only 4 letters, A, T, G and C. You have an unknown DNA string and must determine the string. The only way you can access information about the hidden string is through an oracle. The oracle, when given a query string  $S$ , answers whether the hidden string contains  $S$  as a substring. For example, let the hidden string be  $S_0 = \\text{\"ATTGCGCGATCG\"}$ . Then \"ATTG\" and \"CGCG\", \"T\", \"AT\" are substrings of  $S_0$ . But neither of \"TGG\" or \"GCGATG\" is not a substring of  $S_0$ . When a string  $S_0$  is represented as  $S_0 = (s[1], s[2], s[3], \\dots, s[N])$ , where  $s[i]$  is the  $i$ -th character of  $S_0$ , then a substring of  $S_0$  is a consecutive subsequence represented as  $(s[i], s[i+1], s[i+2], \\dots, s[j])$ , where  $1 \\leq i \\leq j \\leq N \\leq 255$ .\n\nYou are to write a program, which determines the hidden string using as few oracle queries as possible.\n\n## LIBRARY\n\nYou are given a library in the following.\n\n**GNU C/C++ Library:** (oracle.h, oracle.o)\n\nThe C/C++ library has the following three functions:\n\n`void start_string()`: The call to start. It should be called only once at the beginning.  \n`int oracle_call(char *S)`: If  $S$  is a substring of the hidden string, this function returns 1. Otherwise, this function returns 0. The query string  $S$  should not be an empty string, and the length of  $S$  should be equal or less than 255.  \n`void answer_string(char *S)`: This function will terminate your program. Your program passes the string  $S$  as an answer. This should be called only once at the end of the program.\n\n**Instruction:** To compile your string.c or string.cpp, use the include statement\n\n```\n#include \"oracle.h\"\n```\n\nin the source code and compile it as:\n\n```\ngcc -O2 -static string.c oracle.o -lm\n```\n\n```\ng++ -O2 -static string.cpp oracle.o -lm\n```\n\nlib\\_test.c shows how to use the GNU C/C++ library.\n\n{1}------------------------------------------------\n\n![IOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'](c803f6f6e2c49429d2951832bd0f208d_img.jpg)\n\nIOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'\n\n**FreePascal Library:** (oracle.ppu, oracle.o)\n\nThe corresponding pascal library functions are\n\n```\nprocedure start_string;  \nfunction oracle_call(S: string): integer;  \nprocedure answer_string(S: string);\n```\n\n**Instruction:** To compile your string.pas, include the import statement\n\n```\nuses oracle;\n```\n\nin the source code and compile it as\n\n```\nfpc -So -O2 -XS string.pas\n```\n\nlib\\_test.pas shows how to use the FreePascal library.\n\nThe library generates a file named string.out automatically in a call to answer\\_string. The file string.out has two lines. The integer in the first line shows the number of calls to oracle\\_call made by your program and the second line contains the hidden string your program has given as a solution.\n\n## EXAMPLE INPUTS AND OUTPUTS\n\nThe length  $L$  of the hidden string satisfies  $1 \\leq L \\leq 255$ . You can experiment with the library by creating a text file string.in with a single line which contains the hidden DNA string. Note that the string.out in the following example is not necessarily optimal. It merely shows the file format of input and output.\n\nExample1: string.in\n\n```\nATTGCGCGATCG\n```\n\nstring.out\n\n```\n41  \nATTGCGCGATCG\n```\n\n## SCORING\n\nIf your program violates one of constraints (e.g. calling too many function calls), then you get 0 point.\n\nIf your solution is not correct, then the score is 0. When the output solution is correct, then your score depends on the number of library function calls for each testing data. For each data if the number of function calls is less than a bound  $B$  (that is fixed independently for each data), then you get full score. Otherwise you will get 0 points.",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "c803f6f6e2c49429d2951832bd0f208d_img.jpg": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACCAKwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiorm4jtbd5pDhVGTQBLRXn+o+JLy7lYQyGKLoFHeqEWqXsL7o7lwevrTsRzo9Porn9A1/7f/o9xgTjof71dBSKTuFFFRXFzDaQtNPIscajJZj0obtuUk27IlqKa4ht0LzSKijqWNeWeKPiyI2ktdFQEg4M7f0rzPUNd1PVJzNd3ksjH/ax/KuGrjox0jqfSYLhnE1489V8i/H7j6Dn8c+G7eQxvq1vuHUBxVdPiH4ZYkf2lEPckV85kknJOTRXM8dU6WPZXCeGtrN/gfT1h4o0XU222mowSt/dV+a1+tfJiSyRnKOyn/ZOK6XQfHmtaE6BLhpoB1ikOQfx61rDH/zo4sVwnJJvDzv5P/M+jqK5Lwp4+07xIgiYi3vMcxMev0rra74TjNXiz5Svh6uHm6dWNmFFFMllSCJpJGCooySasxH0VwmqeJ7m5kKWzGGIccdTWWmp3kcm9bhw31p2Ic0en0VzWg+IzdyC2useYfut610tIpO4Vzni+V0sERWIVm5ro6y9e0/+0NOZVH7xfmWhA9jzminOjRuUcEMDgg02rMC3pkrw6jA8ZO4N2r05eVB9q4Hw5pr3l+kzKfKjOSfWu/HAxUs1hsRXNxFaW7zzMFjQZJNeCeOvGV34hvntoN6WEbYVR/H7mvTvGj3N6i6fBuER5kI7+1cR/wAIs/8AdevLxdVyfItj6rI1hcP+/r6y6eXn6nmvlv8A3G/Kjy3/ALjflXpX/CLP/dej/hFn/uvXDyn1H9t4buea+W/9xvyo8t/7jflXpX/CLP8A3Xo/4RZ/7r0cof23hu55r5b/ANxvyo8t/wC435V6V/wiz/3Xo/4RZ/7r0cof23hu55zBJcW0yzQF45FOQyjkV7d8PfHB1mAafqJ23sYwrHjzB/jXL/8ACLP/AHXqS38Oz2l3HdQqwmiO5DWtGbpS5kedmeJwOPpOEvi6Pt/wD2WsTxTIyaOwU43Ng/StDTbo3djFIww+0Bh71HrFidQ06SFfv9V+te3GSkk0fBTi03FnmlFPlieCVo5FKspwQaZWhzEts7R3UTL1Dj+depQuZIUdhgkZIrzzQ9Ne/wBQj4IjQ7mbHHFejAADA6VLNYbBTXkSNdzsFX1Jp1YHi1mXShtJHzjoaRTdkTX2naRfktI0Yf8AvK2KpR+HtHRwzThgO2+uQBmK7gX2+uab5sn99vzqrMz5l2PTbZrOFVht2jA7KpHNTyyLFE0jkBVGSTXnOktL/alqSz7S/rXRePtR/szwbezgsG2gDb16iiMW5Jdy1K6uMk8RWLuWMKkk9d1N/wCEgsP+eC/99V4DL4llgYCWOZCRkZJ6Ukfid5XCRpKzHoATXZ/Z6tewe3e1z3//AISCw/54L/31R/wkFh/zwX/vqvAJPE0kLlJElVh1BJp0PiSW4fZDFM7YzhSaP7OVr2D277nvv/CQWH/PBf8Avqj/AISCw/54L/31Xz8fFRViCsoI6jJqSLxFPMrNFFO6r1IJ4oeXJK7Qe3fc99/4SCw/54L/AN9Uf8JBYf8APBf++q+fv+Er9pP++jUg8RTtAZxFMYgcF8nFH9nJfZ/APbvue+/8JBYf88F/76o/4SCw/wCeC/8AfVfP3/CV+0n/AH0alfxFPHEJXhnWM9GJODQ8uS3Qe3fc+jdJ1m0upzBEoRiM9etbLusa7nYKPU186+B/Fv8AxV1hGd4EsgjO4+pr3XxG3/EllZSRx2rnrUHRko2BT5tRb6y0rUMmZo9/95Wwaz08O6OrZafcPTfiuODyscB3J+tKzTIcMzg+5rOzI5l2PSbT7BaRiK3eNR04Iyau15jp5eTUIF3OfnHGfevTqTRcXcKw/E8YksEVjhd4yfbNblc/4tJGlDBx8woVr6hO/K7GN/a9tDcJbRxIbQDaxx19TVFYLZdS3lwLYHdn+lZlLvYrtycelaJrqczi1sdDa64j3u1okEYP7vjpVzxP4i0y20Ce5uIxMkSbtrDgHt+uK57SBnVrYH+/XUeL9Dhv/COpWsMKK8sWcgdcEH+lODjzLmK5Z/Zeh5Bb6/Z/EHSrvTdVigtdQQb7aVBjP+yPyqvo8UHgDRLrVLpYp9Vm/dQRNzsHTd+v6V5uC8b5GVZT9CKfPcTXL75pGdumWNfQ/VvsxfuvoYtts9FvbiL4g+GfP8uCLXLM4Kpx5y/48VNHqlp8PPDUUNqkE+uXJDylhny19P1FeZw3EttJvhkZG6ZU0TTy3Ehkmdnc9yaPqv2b+72/T0HzO97noviHTrbxrZWWtaTHFDdONl1AvGD/AHv0/WrV34qsvBKafo2kJDOYsG+kZQS554P4EdPSvMoLu4ts+RM8eeu01ESWJJOSepNJYW65JO8VshXd7npPiDwrZ61rtpqmkPGNOvcSTAH/AFXr+HFXrnx3pulaxFodjZwS6GiiCQ7eWJ4LZ/KvL4b66t4zHFO6IeoBqvT+rX0m7pbApM9Ii8EWMXitrl54/wCw0BuA+eMDkL+mKv2vjjTNe1W50S+tYU0qUeVbHbjYRwpz715eby5aDyDM5i/u54qCl9Vctaju+gXZ6v4F8IQ6d4tFzqUiLGku22XOd5J+U17LrluP7MZd+FYYye1eDfCeC61XxxbPKXljtoywLHhcEV754l/5A0v0rycc2qtpO7NYU7xuzkbGWHT4pJpFDTHiMenvUlxdQ6nY5dVS6TpjuKx2Zm+8SaASpyDg1yXV/IVpW8zd0y4islhjTDXErjd/siu8ry/TyTqMBJyd4/nXqFRLyN6SdtQrn/F3/IKH++K6Cuf8Xf8AIKH++KlFy2OFoooqzAu6R/yFrb/fr0tlDxlGGQwwa800j/kLW3+/Xpo6CpZrDY+V/iJ4fk0TxndwiIpbzyb4DjjaTwKyTo8cBxK0sjFQcJGePxr6Q8feEU8T6UjxKPttrmSE46nHQ+tfOYXU/wC3JIrt5IpYWJlXkAY5IxXpvE1qtK8JqKitfM0oRoxnapByvstiAaVHdMVs5gZOP3bjb9eTStpUNvIEnuN8mOY41zg/UVPbf6VqrzhvLRSZMgY4HNLu8nTLy7UAu8uxW7gHOa4YY/FzkqSlvbor6+f9M9zEZXg6ClVknZLa5WOmW8vyxTmOXHCSKRk/U9KSPRZFR5LuRbeNehPJb6CrEmbnRo7mQ5kR9gPqOaZbPJf30Ec7FxnGCauWPxdLmg5bdeunb/gk0cqwuIhGvG6j1QxrCzKZWSVRjhzGcVImgEo85uVNuvRkXcW9sCrFtevNrctsUXyZAUCdlAGeKXTLmUB9PI+Uh2yOucf/AFqmti8bQ91z3SfR6P8AUxo4PB4mnKpTg1yva+5TeysEOGeZM9GZDVG7tGtWU7g8bjKuO9aEheLTEjnJaaQ7sMclR2/Out8G+DJ/E1zaQSLi1hbzJn9icgD610YfHVadblnPmjr+HVGeKwNB4NV4R5W+l7nffBbw5JpuhTancIVkumHl56hRkf4V3fiX/kDTfStK2t4rS2jt4VCxxqFUD0FZviX/AJA030rkq1HUm5vqeZa0bHnlFFFIxLWnf8hCD/fFeoV5fp3/ACEIP98V6hSZrDYK5vxhMq2McRPzO2QPpXSdq5nUvDt7qV200l1GF/hXnikipbHF0V1P/CGT/wDPzH+tH/CGT/8APzH+tMy5GYGmyrDqMEjHCq3NenqcqD6iuP8A+EMnHS5j/Wuk0y2urW1WG5lWQrwGXNJlwTW5cJCgk9BXzx8UNYsr7xHJaadAiyZCyyr1c56V71q9pc32nS21rMIXkG3eewryt/ggZJTK+rsXJyWPXP5VjJvmt0PVy6VCnP2lV6rY84k0qS0tJLBopFvHVZc44IxkAVXNhMNLmsXZfPJEqRjqcA8frXq4+Dlw0iNJrUjhex9PTpVjWvg9b3qLLaXjR3CgAk9DgfSsoOrCakumvzX6HdPF0asJUqs7qXW2x4xOPsujw2bhhOzb2Uj7vXio7ZJNP1CCS4jMYzkbvSu3vvhr4j03Js9NN7IPuyZ5H5msu18EeM5CY7nw/NNGzZy5X5fpg12+wqVYzqNrXW19Xft6EU8zw+HjHDwTcerMS3s5LbU5r6X5YUyyv2fIxxSaQSlxJfSkBYlJOf4ieMV3+m/B/U7sq905th1MchyPpxXQ3vwdW5hSCO/EMS/wqOv6Vz4mdWq/fXRL5L/MeFrYTDQdOEr82rf6HmvhTQZ/FviNdwCwK26Qk8BRzivoKyuNF0NIdOtGjEhwoRPvH3Nefw/Baa3GIdakj/3eP6V0nhH4e/8ACN6k97PfNdyEYUuc4rO00/dMsdWoV9VPRbKx3Q6Vh+KZlj0lkJGXOAK3K53VtCvtVut73MSxL91eeK6UeK9jh6K6n/hDJ/8An5j/AFo/4Qyf/n5j/WqMuRnOWknk3cUnZWB/WvUYpBNEki9GGRXI/wDCGT/8/Mf61sWFhqdlaiD7TC4U8E56UMuKaNmvPbT4grYzXiamGk23MiRCNScKrY5r0KuDPw9drm4n+2jdN5+Pk6eZ+PaiNupTEh+JNvE99JeREQRtGIdo5YMCeasTfEvSIZ3iEU77NoLKhxkjIHTrVIfDh0O8XcchDwuFePKnYMEEZ71ebwO7ebtukQSXcdzhU4G1SuOvvVe4LUsP4+077Ja3CI5W5BC+zc8H8qx9K8dRzBdQ1G4eFvs4P2Rfusd+Mj3qsnwvvY7mEjVt0COX8soeCc9Ofepx8M5XgVJb1GaKARRHy+hDbs9afuLQNTUm+JGkQXK27pL5mQrjB+Qk454qp4j8YbytpYSywTx3MG5lP30ZwP1GarzfDSS4N5K9+BPdhTIwT+IHJI5qG2+Gl9HPvn1UTYljcMyZOEbOOtFob3DU2NY1PVdQ8SDQtLm+zGKHzZJ/UkZUfSuc0zx5dr4gibU53+zwxyxTpGDt3hgA2PwNdfrHhu9n1ZNU0q8S2ufKMUm5NwYYwD17VgXPgBNPt7i4+0eaZLaWN12ZLSPg7v50Rcbahqa178RdIsrlYSkrlhkFVP8AhUMvxK0gLbhUlKzqSXH/ACyHIyeKYfACz3Frci82LHGAE285xXMW3gG6HiSfShdH7I0JaSTyyAw3dB70JQDU6Wx8bWemWED3tzNcwzSlPtD/AMJAzjGMmo9I8WSa34pv2gmmTT47QNGrdD975wP89Kz734V3dwVhXV82inKxMhO0+3NbHh7wNc6RPcvPfJKrW32aLCY2rzgnn3py5LaArkOn/EPTbfy7Saaa5kaQAykHjccDPFXdZ8WNpHiWCKQ5sWtnlYAckgAisqL4YeSHC34O5o2J2d1OfWtXXPBL6vqEFyt6IxHAYSCmewGevtSahfQNTGvfiDb3up2Qt5p7e0RWluNuQ2ARx06EGtib4jaRAoVllMxcIIgDuORkHp6VlyfDEzXMsj34w8BhGE6cDnr7VNB8Om/tS31O4vA11G4L4XggDA7+mKLQDUl/4WlpJmjQW9wVY8vg4UevT14pmsfEaK1Z4La2fz0l2ODzhePm/WoZPhtO1q0S6ioJtzCD5fQ792etQWvw0vIluGuNTWaaQAbynJwc88017PqGpsad4ttreN4XmmvJjK5PrGoGfy61tWHiK21K2+0QITGWIBz1rnbDwJdaVqT31reo0kxYTK6ZBUjgdfc1NYeBZLWKVRqMsQeVpNkJKqM+gqWo9wVztK8l8TeItb8H+NYGubkyaTO2cFegJ5/LNetV5t8Z7ZZfCayiPdIkq4IHIGea5qsU7M78BZ1lCSupaFO68eXMcOoeIkctp0eIbSLGBI5B5J9iKsaRpHiTxJo/9sXGsyW1xKC0UKL8qjtnkVmar4dm1H4Q2kVhCS8ZEpRRyepNbfhTx3o1n4Uiivrhbe5t0KvC33siueMU/jO2okqd6EdU7bX0X+ZQ8MeNdUu7XV9J1F1Oo2aEpIoAyBj/ABql8P8A4jXUmpvpuuy8zN+5kYY/CqXhbTby9uvEPiSSF4YJoysWR97kc/pUt74L/tfwHY6pYR7dRt03ZGQXAJpKTTNZww6coSVr2+TsdJD4vuNN1XxPJeSF7azciFcdDnAFZ2gL4r8a2smqnV/sMDMRFGkYOcevSua8L2V94m0DX4GB+3OAxDdSQc1oeHvFtvongy90HUDJaX8KOE3DGSRgY/Kpi29H5kyocqappcyaXfS256pYyto2iodYvI9ycNM5wDTH1/TL+3nhsb6CecRlgqMCa4DwBp8vizwTdWWq3ExDyZ3k5I5Nbul/Dux8LNcaha3c8kohZcOOK2vUULJaHFOjShOUZy95PtocNY+Mtem0DW52uyZreUrFheldP8PfHbaxaTafqTKupRodrEYL968+0lJh4b8QkI25pyV469a6Xxp4RuLCysfEejRlZY4wZ1T6dazTtJ2PTr0qEm6TSV3o/OyO8+H+o3epaTcyXkxldZyoJ9MCuW8aeJdQ0v4gWdrHdGO0KKzr2xk5rX+EcjzeFpZJBhmmJP5CuP8AiRZ/bviNaW/IEkQXI9803pRV/M46VOP1ycZLSzOmg17UNc1S71UTtb6FYBtpHHnMue/4Cqfh+6174hXF3eHUXsNPifbCsS8t16nj0rmtBkutDv8AVPCN/uWC5V1hdum7Bx+ZxW98N9dsvC1rdaNrMn2SeORmVpBgOMnpSik3aTNqlFU6cnTSb0tp07+pYsfEmseGvF58O6tci5tph+5nK4YdP8awrPxFr1/b65c/2x5K2JYxgoMNjtVm4ik8cfERNRskf+zrPH74jgkY/wAK46LQ72/i1ue0Z82spdkGfnA7Y70nb5f8E2pU6b1lZSsr6eZ2134412f4dw6jvWG587y/M2/fGOuK6PwfHqdy1ne3fiFLgSJua2CgHPp1ri9e1211z4aWkcMaxT2soWaIDGOOtb3hfUvCNhpsN3DcD+0o4CzLvY/Ng9ulTfW/9dDGrTtSajCzu+lyXx949vdF8Q2lnYkCGN1NwcZ4Jxj2r0qwvI7+xhuojlJUDD8a8ZPhjWvE/h+91lpIxHe5n2MPmwORjirXgr4gHSfDkdjdxM0sLsmfYYxWsKvK3KRjWwsZ0UqXxR0Z7JVLUY0liCyIrjPRhmiit6/wM82j/ERLZoi2qqFUL6AcVy9/ZWp1DJtoSc/88xRRXPV+CJ0Yf45HSiKNdO2BFC7fugcVJaoi2qqqqFx0A4ooraPxL0MJfC/UpafBFHqV2Y4kQnqVUDPNUNctLaSZS9vCxyOSgNFFYS/hr1Omn/F+RraZFHFZqI0VB6KMVbkAMbAjIxRRXRT/AIRy1P4jMcW0AjcCCMAtyNg5rVZFa22lQV29COKKKwodTavuvUo6LFHFbyLGioN/RRioL2CF9YjdokZwBhioJoopy/hIcf40hNWt4HvInaGNmyPmKgmqWu2ltJLEz28THb1KA0UVE95GlP7Poa+jwxRacojjRB6KoFVtLt4UkuNsMa7ic4UDNFFX/KZv7Zmz2dr50g+zQ4J5GwVELK1HS2hH0jFFFcvc7eh01nGiaYiKihfLxtA46VylxZ2v2h/9Gh6/88xRRXRW2ictDeXqf//Z"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 23
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 2,
+      "total_cost": 0.6,
+      "cost_breakdown": {
+        "final_cost_cents": 0.6
+      },
+      "runtime": 18.128509998321533,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# String from Substrings\n\n## PROBLEM\n\nEvery DNA string consists of only 4 letters, A, T, G and C. You have an unknown DNA string and must determine the string. The only way you can access information about the hidden string is through an oracle. The oracle, when given a query string  $S$ , answers whether the hidden string contains  $S$  as a substring. For example, let the hidden string be  $S_0 = \\text{\"ATTGCGCGATCG\"}$ . Then \"ATTG\" and \"CGCG\", \"T\", \"AT\" are substrings of  $S_0$ . But neither of \"TGG\" or \"GCGATG\" is not a substring of  $S_0$ . When a string  $S_0$  is represented as  $S_0 = (s[1], s[2], s[3], \\dots, s[N])$ , where  $s[i]$  is the  $i$ -th character of  $S_0$ , then a substring of  $S_0$  is a consecutive subsequence represented as  $(s[i], s[i+1], s[i+2], \\dots, s[j])$ , where  $1 \\leq i \\leq j \\leq N \\leq 255$ .\n\nYou are to write a program, which determines the hidden string using as few oracle queries as possible.\n\n## LIBRARY\n\nYou are given a library in the following.\n\n**GNU C/C++ Library:** (oracle.h, oracle.o)\n\nThe C/C++ library has the following three functions:\n\n`void start_string()`: The call to start. It should be called only once at the beginning.  \n`int oracle_call(char *S)`: If  $S$  is a substring of the hidden string, this function returns 1. Otherwise, this function returns 0. The query string  $S$  should not be an empty string, and the length of  $S$  should be equal or less than 255.  \n`void answer_string(char *S)`: This function will terminate your program. Your program passes the string  $S$  as an answer. This should be called only once at the end of the program.\n\n**Instruction:** To compile your string.c or string.cpp, use the include statement\n\n```\n#include \"oracle.h\"\n```\n\nin the source code and compile it as:\n\n```\ngcc -O2 -static string.c oracle.o -lm\n```\n\n```\ng++ -O2 -static string.cpp oracle.o -lm\n```\n\nlib\\_test.c shows how to use the GNU C/C++ library.\n\n{1}------------------------------------------------\n\n![IOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'](c803f6f6e2c49429d2951832bd0f208d_img.jpg)\n\nIOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'\n\n**FreePascal Library:** (oracle.ppu, oracle.o)\n\nThe corresponding pascal library functions are\n\n```\nprocedure start_string;  \nfunction oracle_call(S: string): integer;  \nprocedure answer_string(S: string);\n```\n\n**Instruction:** To compile your string.pas, include the import statement\n\n```\nuses oracle;\n```\n\nin the source code and compile it as\n\n```\nfpc -So -O2 -XS string.pas\n```\n\nlib\\_test.pas shows how to use the FreePascal library.\n\nThe library generates a file named string.out automatically in a call to answer\\_string. The file string.out has two lines. The integer in the first line shows the number of calls to oracle\\_call made by your program and the second line contains the hidden string your program has given as a solution.\n\n## EXAMPLE INPUTS AND OUTPUTS\n\nThe length  $L$  of the hidden string satisfies  $1 \\leq L \\leq 255$ . You can experiment with the library by creating a text file string.in with a single line which contains the hidden DNA string. Note that the string.out in the following example is not necessarily optimal. It merely shows the file format of input and output.\n\nExample1: string.in\n\n```\nATTGCGCGATCG\n```\n\nstring.out\n\n```\n41  \nATTGCGCGATCG\n```\n\n## SCORING\n\nIf your program violates one of constraints (e.g. calling too many function calls), then you get 0 point.\n\nIf your solution is not correct, then the score is 0. When the output solution is correct, then your score depends on the number of library function calls for each testing data. For each data if the number of function calls is less than a bound  $B$  (that is fixed independently for each data), then you get full score. Otherwise you will get 0 points.",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "c803f6f6e2c49429d2951832bd0f208d_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 23
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 2,
+    "total_cost": 0.6,
+    "cost_breakdown": {
+      "final_cost_cents": 0.6
+    },
+    "runtime": 18.128509998321533,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.6
+  },
+  "page_count": 2,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2002/day0/day0material/string.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "c803f6f6e2c49429d2951832bd0f208d_img.jpg"
+  ]
+}

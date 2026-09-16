@@ -1,0 +1,142 @@
+{
+  "request_id": "hXpNWmPdhfUjobH34xvJXA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T04:14:35.520680+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "hXpNWmPdhfUjobH34xvJXA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/hXpNWmPdhfUjobH34xvJXA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n1. A\n2. A\n3. C\n4. B\n5. B\n6. B\n7. D\n8. A\n9. B\n10. D\n11. A\n12. C\n13. B\n14. C\n15. D\n  \n16. √\n17. ×\n18. ×\n19. B\n20. C\n  \n21. √\n22. √\n23. √\n24. B\n25. C\n26. C\n  \n27. √\n28. ×\n29. √\n30. A\n31. C\n32. C\n\n{1}------------------------------------------------\n\n33. A\n\n34. A\n\n35. A\n\n36. A\n\n37. A\n\n38. A\n\n39. A\n\n40. B\n\n41. A\n\n42. A",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 1
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.0,
+      "page_count": 2,
+      "total_cost": 0.6,
+      "cost_breakdown": {
+        "final_cost_cents": 0.6
+      },
+      "runtime": 2.872156858444214,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n1. A\n2. A\n3. C\n4. B\n5. B\n6. B\n7. D\n8. A\n9. B\n10. D\n11. A\n12. C\n13. B\n14. C\n15. D\n  \n16. √\n17. ×\n18. ×\n19. B\n20. C\n  \n21. √\n22. √\n23. √\n24. B\n25. C\n26. C\n  \n27. √\n28. ×\n29. √\n30. A\n31. C\n32. C\n\n{1}------------------------------------------------\n\n33. A\n\n34. A\n\n35. A\n\n36. A\n\n37. A\n\n38. A\n\n39. A\n\n40. B\n\n41. A\n\n42. A",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 1
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.0,
+    "page_count": 2,
+    "total_cost": 0.6,
+    "cost_breakdown": {
+      "final_cost_cents": 0.6
+    },
+    "runtime": 2.872156858444214,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.6
+  },
+  "page_count": 2,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2024/提高级-CSP-S1/CSP-J-S 2024_提高级-CSP-S1_參考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

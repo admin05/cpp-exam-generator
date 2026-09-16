@@ -1,0 +1,258 @@
+{
+  "request_id": "UFSQuKtkA13mRSOjXhJwFQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:21:23.659051+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "UFSQuKtkA13mRSOjXhJwFQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/UFSQuKtkA13mRSOjXhJwFQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2019CCF 非专业级别软件能力认证第一轮\n\n## (CSP-J) 入门级 C 语言试题 B 卷\n\n认证时间：2019 年 10 月 19 日 14:30~16:30\n\n考生注意事项：\n\n- 试题纸共有 9 页，答题纸共有 1 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n一、单项选择题（共 15 题，每题 2 分，共计 30 分；每题有且仅有一个正确选项）\n\n1. 中国的国家顶级域名是（ ）  \nA. .ch                      B. .china                      C. .cn                      D. .chn\n2. 二进制数 11 1011 1001 0111 和 01 0110 1110 1011 进行逻辑与运算的结果是（ ）。  \nA. 01 0010 1000 1011                      B. 01 0010 1000 0001  \nC. 01 0010 1000 0011                      D. 01 0010 1001 0011\n3. 一个 32 位整型变量占用（ ）个字节。  \nA. 32                      B. 4                      C. 128                      D. 8\n4. 若有如下程序段，其中 s、a、b、c 均已定义为整型变量，且 a、c 均已赋值（c 大于 0）  \n\n```\ns = a;  \nfor (b = 1; b <= c; b++) s = s - 1;\n```\n\n则与上述程序段功能等价的赋值语句是（ ）  \nA. s = a - c;      B. s = b - c;      C. s = a - b;      D. s = s - c;\n5. 设有 100 个已排好序的数据元素，采用折半查找时，最大比较次数为（ ）  \nA. 10                      B. 6                      C. 8                      D. 7\n6. 链表不具有的特点是（ ）  \nA. 所需空间与线性表长度成正比                      B. 插入删除不需要移动元素  \nC. 可随机访问任一元素                      D. 不必事先估计存储空间\n7. 把 8 个同样的球放在 5 个同样的袋子里，允许有的袋子空着不放，问共有多少种不同的分法？（ ）提示：如果 8 个球都放在一个袋子里，无论是哪个袋子，都只算同一种分法  \nA. 24                      B. 18                      C. 20                      D. 22\n\n{1}------------------------------------------------\n\n8. 一棵二叉树如右图所示，若采用顺序存储结构，即用一维数组元素存储该二叉树中的结点（根结点的下标为 1，若某结点的下标为  $i$ ，则其左孩子位于下标  $2i$  处、右孩子位于下标  $2i+1$  处），则该数组的最大下标至少为（ ）。\n\n![A binary tree diagram with 6 nodes. The root node has a left child and a right child. The left child has a left child. The right child has a right child, which in turn has a right child. All nodes are represented by small circles.](9ba3dc91984c80b96f217fb1bddd5c06_img.jpg)\n\nA binary tree diagram with 6 nodes. The root node has a left child and a right child. The left child has a left child. The right child has a right child, which in turn has a right child. All nodes are represented by small circles.\n\n- A. 15                      B. 12                      C. 10                      D. 6\n\n9. 100 以内最大的素数是（ ）。\n\n- A. 89                      B. 93                      C. 91                      D. 97\n\n10. 319 和 377 的最大公约数是（ ）。\n\n- A. 29                      B. 33                      C. 31                      D. 27\n\n11. 新学期开学了，小胖想减肥，健身教练给小胖制定了两个训练方案。方案一：每次连续跑 3 公里可以消耗 300 千卡（耗时半小时）；方案二：每次连续跑 5 公里可以消耗 600 千卡（耗时 1 小时）。小胖每周周一到周四能抽出半小时跑步，周五到周日能抽出一小时跑步。另外，教练建议小胖每周最多跑 21 公里，否则会损伤膝盖。请问如果小胖想严格执行教练的训练方案，并且不想损伤膝盖，每周最多通过跑步消耗多少千卡？（ ）\n\n- A. 3000                      B. 2400                      C. 2500                      D. 2520\n\n12. 一副纸牌除掉大小王有 52 张牌，四种花色，每种花色 13 张。假设从这 52 张牌中随机抽取 13 张纸牌，则至少（ ）张牌的花色一致。\n\n- A. 4                      B. 2                      C. 5                      D. 3\n\n13. 一些数字可以颠倒过来看，例如 0、1、8 颠倒过来还是本身，6 颠倒过来是 9，9 颠倒过来看还是 6，其他数字颠倒过来都不构成数字。类似的，一些多位数也可以颠倒过来看，比如 106 颠倒过来是 901。假设某个城市的车牌只由 5 位数字组成，每一位都可以取 0 到 9。请问这个城市最多有多少个车牌倒过来恰好还是原来的车牌？（ ）\n\n- A. 60                      B. 125                      C. 100                      D. 75\n\n14. 假设一棵二叉树的后序遍历序列为 DGJHEBIFCA，中序遍历序列为 DBGEHJACIF，则其前序遍历序列为（ ）。\n\n- A. ABDEGJHCFI      B. ABDEGHJFIC      C. ABCDEFGHIJ      D. ABDEGHJCFI\n\n15. 以下哪个奖项是计算机科学领域的最高奖？（ ）\n\n- A. 鲁班奖                      B. 普利策奖                      C. 图灵奖                      D. 诺贝尔奖\n\n{2}------------------------------------------------\n\n二、阅读程序（程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分）\n\n1.\n\n```\n1 #include <stdio.h>\n2 #include <string.h>\n3\n4 char st[100];\n5 int main() {\n6     scanf(\"%s\", st);\n7     int n = strlen(st);\n8     for (int i = 1; i <= n; ++i) {\n9         if (n % i == 0) {\n10            char c = st[i - 1];\n11            if (c >= 'a')\n12                st[i - 1] = c - 'a' + 'A';\n13        }\n14    }\n15    printf(\"%s\", st);\n16    return 0;\n17 }\n```\n\n### ● 判断题\n\n- 1) 输入的字符串只能由小写字母或大写字母组成。（    ）\n- 2) 若将第 8 行的 “ $i = 1$ ” 改为 “ $i = 0$ ”，程序运行时会发生错误。（    ）\n- 3) 若将第 8 行的 “ $i <= n$ ” 改为 “ $i * i <= n$ ”，程序运行结果不会改变。（    ）\n- 4) 若输入的字符串全部由大写字母组成，那么输出的字符串就跟输入的字符串一样。（    ）\n\n### ● 选择题\n\n- 5) 若输入的字符串长度为 18，那么输入的字符串跟输出的字符串相比，至多有（    ）个字符不同。  \nA. 18                      B. 10                      C. 6                      D. 1\n- 6) 若输入的字符串长度为（    ），那么输入的字符串跟输出的字符串相比，至多有 36 个字符不同。  \nA. 36                      B. 1                      C. 128                      D. 100000\n\n{3}------------------------------------------------\n\n2.\n\n```\n1 #include <stdio.h>\n2\n3 int n, m;\n4 int a[100], b[100];\n5\n6 int main() {\n7     scanf(\"%d%d\", &n, &m);\n8     for (int i = 1; i <= n; ++i)\n9         a[i] = b[i] = 0;\n10    for (int i = 1; i <= m; ++i) {\n11        int x, y;\n12        scanf(\"%d%d\", &x, &y);\n13        if (a[x] < y && b[y] < x) {\n14            if (a[x] > 0)\n15                b[a[x]] = 0;\n16            if (b[y] > 0)\n17                a[b[y]] = 0;\n18            a[x] = y;\n19            b[y] = x;\n20        }\n21    }\n22    int ans = 0;\n23    for (int i = 1; i <= n; ++i) {\n24        if (a[i] == 0)\n25            ++ans;\n26        if (b[i] == 0)\n27            ++ans;\n28    }\n29    printf(\"%d\\n\", ans);\n30    return 0;\n31 }\n```\n\n假设输入的  $n$  和  $m$  都是正整数， $x$  和  $y$  都是在  $[1, n]$  的范围内的整数，完成下面的判断题和单选题：\n\n### ● 判断题\n\n- 1) 当  $m > 0$  时，输出的值一定小于  $2n$ 。 ( )\n- 2) 执行完第 27 行的 “ $++ans$ ” 时， $ans$  一定是偶数。 ( )\n- 3)  $a[i]$  和  $b[i]$  不可能同时大于 0。 ( )\n\n{4}------------------------------------------------\n\n4) 若程序执行到第 13 行时, x 总是小于 y, 那么第 15 行不会被执行。  \n( )\n\n### ● 选择题\n\n- 5) 若 m 个 x 两两不同, 且 m 个 y 两两不同, 则输出的值为 ( )  \nA.  $2n+2$                       B.  $2n$                       C.  $2n-2m$                       D.  $2n-2$\n- 6) 若 m 个 x 两两不同, 且 m 个 y 都相等, 则输出的值为 ( )  \nA.  $2n-2$                       B.  $2m$                       C.  $2n-2m$                       D.  $2n$\n\n### 3.\n\n```\n1 #include <stdio.h>\n2\n3 #define maxn 10000\n4 int n;\n5 int a[maxn];\n6 int b[maxn];\n7 int f(int l, int r, int depth) {\n8     if (l > r)\n9         return 0;\n10    int min = maxn, mink;\n11    for (int i = l; i <= r; ++i) {\n12        if (min > a[i]) {\n13            min = a[i];\n14            mink = i;\n15        }\n16    }\n17    int lres = f(l, mink - 1, depth + 1);\n18    int rres = f(mink + 1, r, depth + 1);\n19    return lres + rres + depth * b[mink];\n20 }\n21 int main() {\n22     scanf(\"%d\", &n);\n23     for (int i = 0; i < n; ++i)\n24         scanf(\"%d\", &a[i]);\n25     for (int i = 0; i < n; ++i)\n26         scanf(\"%d\", &b[i]);\n27     printf(\"%d\\n\", f(0, n - 1, 1));\n28     return 0;\n29 }\n```\n\n#### ● 判断题\n\n- 1) 如果 a 数组有重复的数字, 则程序运行时会发生错误。 ( )\n\n{5}------------------------------------------------\n\n2) 如果 b 数组全为 0，则输出为 0。（ ）\n\n#### ● 选择题\n\n3) 当 n=100 时，最坏情况下，与第 12 行的比较运算执行的次数最接近的是：（ ）。\n\n- A. 6\n- B. 100\n- C. 5000\n- D. 600\n\n4) 当 n=100 时，最好情况下，与第 12 行的比较运算执行的次数最接近的是：（ ）。\n\n- A. 5000\n- B. 6\n- C. 100\n- D. 600\n\n5) 当 n=10 时，若 b 数组满足，对任意  $0 \\leq i < n$ ，都有  $b[i] = i + 1$ ，那么输出最大为（ ）。\n\n- A. 385\n- B. 383\n- C. 384\n- D. 386\n\n6) （4 分）当 n=100 时，若 b 数组满足，对任意  $0 \\leq i < n$ ，都有  $b[i] = 1$ ，那么输出最小为（ ）。\n\n- A. 582\n- B. 579\n- C. 581\n- D. 580\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n1. （矩阵变幻）有一个奇幻的矩阵，在不停的变幻，其变幻方式为：数字 0 变成矩阵  $\\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$ ，数字 1 变成矩阵  $\\begin{bmatrix} 1 & 1 \\\\ 1 & 0 \\end{bmatrix}$ 。最初该矩阵只有一个元素 0，变幻 n 次后，矩阵会变成什么样？\n\n例如，矩阵最初为：[0]；矩阵变幻 1 次后： $\\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$ ；矩阵变幻 2 次后：\n\n$$\\begin{bmatrix} 0 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 1 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 1 & 1 & 0 \\end{bmatrix}.$$\n\n输入一行一个不超过 10 的正整数 n。输出变幻 n 次后的矩阵。\n\n试补全程序。\n\n提示：\n\n“<<” 表示二进制左移运算符，例如  $(11)_2 << 2 = (1100)_2$ ；\n\n而 “^” 表示二进制异或运算符，它将两个参与运算的数中的每个对应的二进制位一一进行比较，若两个二进制位相同，则运算结果的对应二进制位为 0，反之为 1。\n\n{6}------------------------------------------------\n\n```\n\n1 #include <stdio.h>\n2\n3 int n;\n4 #define max_size (1 << 10)\n5\n6 int res[max_size][max_size];\n7\n8 void recursive(int x, int y, int n, int t) {\n9     if (n == 0) {\n10        res[x][y] = ①;\n11        return;\n12    }\n13    int step = 1 << (n - 1);\n14    recursive(②, n - 1, t);\n15    recursive(x, y + step, n - 1, t);\n16    recursive(x + step, y, n - 1, t);\n17    recursive(③, n - 1, t ^ 1);\n18 }\n19\n20 int main() {\n21     scanf(\"%d\", &n);\n22     recursive(0, 0, ④);\n23     int size = ⑤;\n24     for (int i = 0; i < size; ++i) {\n25         for (int j = 0; j < size; ++j)\n26             printf(\"%d\", res[i][j]);\n27         puts(\"\");\n28     }\n29     return 0;\n30 }\n\n```\n\n1) ①处应填 ( )\n\n- A. 1                      B.  $n \\% 2$                       C.  $t$                       D. 0\n\n2) ②处应填 ( )\n\n- A.  $x - \\text{step}, y$                       B.  $x, y - \\text{step}$   \n C.  $x - \\text{step}, y - \\text{step}$                       D.  $x, y$\n\n3) ③处应填 ( )\n\n- A.  $x + \\text{step}, y + \\text{step}$                       B.  $x, y - \\text{step}$   \n C.  $x - \\text{step}, y$                       D.  $x - \\text{step}, y - \\text{step}$\n\n4) ④处应填 ( )\n\n{7}------------------------------------------------\n\n- |               |                    |\n|---------------|--------------------|\n| A. $n - 1, 0$ | B. $n - 1, n \\% 2$ |\n| C. $n, 0$     | D. $n, n \\% 2$     |\n\n5) ⑤处应填 ( )\n\n- |                    |                    |\n|--------------------|--------------------|\n| A. $n + 1$         | B. $1 \\ll n$       |\n| C. $1 \\ll (n - 1)$ | D. $1 \\ll (n + 1)$ |\n\n- 2. (计数排序) 计数排序是一个广泛使用的排序方法。下面的程序使用双关键字计数排序，将  $n$  对 10000 以内的整数，从小到大排序。\n\n例如有三对整数 (3, 4)、(2, 4)、(3, 3)，那么排序之后应该是 (2, 4)、(3, 3)、(3, 4)。\n\n输入第一行为  $n$ ，接下来  $n$  行，第  $i$  行有两个数  $a[i]$  和  $b[i]$ ，分别表示第  $i$  对整数的第一关键字和第二关键字。\n\n从小到大排序后输出。\n\n数据范围  $1 \\leq n \\leq 10^7, 1 \\leq a[i], b[i] \\leq 10^4$ 。\n\n提示：应先对第二关键字排序，再对第一关键字排序。数组  $ord[]$  存储第二关键字排序的结果，数组  $res[]$  存储双关键字排序的结果。试补全程序。\n\n```\n1 #include <stdio.h>\n2 #include <string.h>\n3\n4 #define maxn 10000000\n5 #define maxs 10000\n6\n7 int n;\n8 unsigned a[maxn], b[maxn], res[maxn], ord[maxn];\n9 unsigned cnt[maxs + 1];\n10\n11 int main() {\n12     scanf(\"%d\", &n);\n13     for (int i = 0; i < n; ++i)\n14         scanf(\"%d%d\", &a[i], &b[i]);\n15     memset(cnt, 0, sizeof(cnt));\n16     for (int i = 0; i < n; ++i)\n17         ①;    // 利用 cnt 数组统计数量\n18     for (int i = 0; i < maxs; ++i)\n19         cnt[i + 1] += cnt[i];\n20     for (int i = 0; i < n; ++i)\n21         ②;    // 记录初步排序结果\n```\n\n{8}------------------------------------------------\n\n```\n22 memset(cnt, 0, sizeof(cnt));\n23 for (int i = 0; i < n; ++i)\n24     ③; // 利用 cnt 数组统计数量\n25 for (int i = 0; i < maxs; ++i)\n26     cnt[i + 1] += cnt[i];\n27 for (int i = n - 1; i >= 0; --i)\n28     ④; // 记录最终排序结果\n29 for (int i = 0; i < n; ++i)\n30     printf(\"%d %d\\n\", ⑤);\n31 return 0;\n32 }\n```\n\n1) ①处应填 ( )\n\n- A. ++cnt[a[i]]\n- B. ++cnt[i]\n- C. ++cnt[a[i] \\* maxs + b[i]]\n- D. ++cnt[b[i]]\n\n2) ②处应填 ( )\n\n- A. ord[--cnt[b[i]]] = a[i]\n- B. ord[--cnt[a[i]]] = b[i]\n- C. ord[--cnt[b[i]]] = i\n- D. ord[--cnt[a[i]]] = i\n\n3) ③处应填 ( )\n\n- A. ++cnt[a[i] \\* maxs + b[i]]\n- B. ++cnt[a[i]]\n- C. ++cnt[b[i]]\n- D. ++cnt[i]\n\n4) ④处应填 ( )\n\n- A. res[--cnt[a[ord[i]]]] = ord[i]\n- B. res[--cnt[b[ord[i]]]] = ord[i]\n- C. res[--cnt[a[i]]] = ord[i]\n- D. res[--cnt[b[i]]] = ord[i]\n\n5) ⑤处应填 ( )\n\n- A. a[res[ord[i]]], b[res[ord[i]]]\n- B. a[res[i]], b[res[i]]\n- C. a[ord[res[i]]], b[ord[res[i]]]\n- D. a[i], b[i]",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "9ba3dc91984c80b96f217fb1bddd5c06_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 18
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 11
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 12
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 9,
+      "total_cost": 2.7,
+      "cost_breakdown": {
+        "final_cost_cents": 2.7
+      },
+      "runtime": 22.520957708358765,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2019CCF 非专业级别软件能力认证第一轮\n\n## (CSP-J) 入门级 C 语言试题 B 卷\n\n认证时间：2019 年 10 月 19 日 14:30~16:30\n\n考生注意事项：\n\n- 试题纸共有 9 页，答题纸共有 1 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n一、单项选择题（共 15 题，每题 2 分，共计 30 分；每题有且仅有一个正确选项）\n\n1. 中国的国家顶级域名是（ ）  \nA. .ch                      B. .china                      C. .cn                      D. .chn\n2. 二进制数 11 1011 1001 0111 和 01 0110 1110 1011 进行逻辑与运算的结果是（ ）。  \nA. 01 0010 1000 1011                      B. 01 0010 1000 0001  \nC. 01 0010 1000 0011                      D. 01 0010 1001 0011\n3. 一个 32 位整型变量占用（ ）个字节。  \nA. 32                      B. 4                      C. 128                      D. 8\n4. 若有如下程序段，其中 s、a、b、c 均已定义为整型变量，且 a、c 均已赋值（c 大于 0）  \n\n```\ns = a;  \nfor (b = 1; b <= c; b++) s = s - 1;\n```\n\n则与上述程序段功能等价的赋值语句是（ ）  \nA. s = a - c;      B. s = b - c;      C. s = a - b;      D. s = s - c;\n5. 设有 100 个已排好序的数据元素，采用折半查找时，最大比较次数为（ ）  \nA. 10                      B. 6                      C. 8                      D. 7\n6. 链表不具有的特点是（ ）  \nA. 所需空间与线性表长度成正比                      B. 插入删除不需要移动元素  \nC. 可随机访问任一元素                      D. 不必事先估计存储空间\n7. 把 8 个同样的球放在 5 个同样的袋子里，允许有的袋子空着不放，问共有多少种不同的分法？（ ）提示：如果 8 个球都放在一个袋子里，无论是哪个袋子，都只算同一种分法  \nA. 24                      B. 18                      C. 20                      D. 22\n\n{1}------------------------------------------------\n\n8. 一棵二叉树如右图所示，若采用顺序存储结构，即用一维数组元素存储该二叉树中的结点（根结点的下标为 1，若某结点的下标为  $i$ ，则其左孩子位于下标  $2i$  处、右孩子位于下标  $2i+1$  处），则该数组的最大下标至少为（ ）。\n\n![A binary tree diagram with 6 nodes. The root node has a left child and a right child. The left child has a left child. The right child has a right child, which in turn has a right child. All nodes are represented by small circles.](9ba3dc91984c80b96f217fb1bddd5c06_img.jpg)\n\nA binary tree diagram with 6 nodes. The root node has a left child and a right child. The left child has a left child. The right child has a right child, which in turn has a right child. All nodes are represented by small circles.\n\n- A. 15                      B. 12                      C. 10                      D. 6\n\n9. 100 以内最大的素数是（ ）。\n\n- A. 89                      B. 93                      C. 91                      D. 97\n\n10. 319 和 377 的最大公约数是（ ）。\n\n- A. 29                      B. 33                      C. 31                      D. 27\n\n11. 新学期开学了，小胖想减肥，健身教练给小胖制定了两个训练方案。方案一：每次连续跑 3 公里可以消耗 300 千卡（耗时半小时）；方案二：每次连续跑 5 公里可以消耗 600 千卡（耗时 1 小时）。小胖每周周一到周四能抽出半小时跑步，周五到周日能抽出一小时跑步。另外，教练建议小胖每周最多跑 21 公里，否则会损伤膝盖。请问如果小胖想严格执行教练的训练方案，并且不想损伤膝盖，每周最多通过跑步消耗多少千卡？（ ）\n\n- A. 3000                      B. 2400                      C. 2500                      D. 2520\n\n12. 一副纸牌除掉大小王有 52 张牌，四种花色，每种花色 13 张。假设从这 52 张牌中随机抽取 13 张纸牌，则至少（ ）张牌的花色一致。\n\n- A. 4                      B. 2                      C. 5                      D. 3\n\n13. 一些数字可以颠倒过来看，例如 0、1、8 颠倒过来还是本身，6 颠倒过来是 9，9 颠倒过来看还是 6，其他数字颠倒过来都不构成数字。类似的，一些多位数也可以颠倒过来看，比如 106 颠倒过来是 901。假设某个城市的车牌只由 5 位数字组成，每一位都可以取 0 到 9。请问这个城市最多有多少个车牌倒过来恰好还是原来的车牌？（ ）\n\n- A. 60                      B. 125                      C. 100                      D. 75\n\n14. 假设一棵二叉树的后序遍历序列为 DGJHEBIFCA，中序遍历序列为 DBGEHJACIF，则其前序遍历序列为（ ）。\n\n- A. ABDEGJHCFI      B. ABDEGHJFIC      C. ABCDEFGHIJ      D. ABDEGHJCFI\n\n15. 以下哪个奖项是计算机科学领域的最高奖？（ ）\n\n- A. 鲁班奖                      B. 普利策奖                      C. 图灵奖                      D. 诺贝尔奖\n\n{2}------------------------------------------------\n\n二、阅读程序（程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分）\n\n1.\n\n```\n1 #include <stdio.h>\n2 #include <string.h>\n3\n4 char st[100];\n5 int main() {\n6     scanf(\"%s\", st);\n7     int n = strlen(st);\n8     for (int i = 1; i <= n; ++i) {\n9         if (n % i == 0) {\n10            char c = st[i - 1];\n11            if (c >= 'a')\n12                st[i - 1] = c - 'a' + 'A';\n13        }\n14    }\n15    printf(\"%s\", st);\n16    return 0;\n17 }\n```\n\n### ● 判断题\n\n- 1) 输入的字符串只能由小写字母或大写字母组成。（    ）\n- 2) 若将第 8 行的 “ $i = 1$ ” 改为 “ $i = 0$ ”，程序运行时会发生错误。（    ）\n- 3) 若将第 8 行的 “ $i <= n$ ” 改为 “ $i * i <= n$ ”，程序运行结果不会改变。（    ）\n- 4) 若输入的字符串全部由大写字母组成，那么输出的字符串就跟输入的字符串一样。（    ）\n\n### ● 选择题\n\n- 5) 若输入的字符串长度为 18，那么输入的字符串跟输出的字符串相比，至多有（    ）个字符不同。  \nA. 18                      B. 10                      C. 6                      D. 1\n- 6) 若输入的字符串长度为（    ），那么输入的字符串跟输出的字符串相比，至多有 36 个字符不同。  \nA. 36                      B. 1                      C. 128                      D. 100000\n\n{3}------------------------------------------------\n\n2.\n\n```\n1 #include <stdio.h>\n2\n3 int n, m;\n4 int a[100], b[100];\n5\n6 int main() {\n7     scanf(\"%d%d\", &n, &m);\n8     for (int i = 1; i <= n; ++i)\n9         a[i] = b[i] = 0;\n10    for (int i = 1; i <= m; ++i) {\n11        int x, y;\n12        scanf(\"%d%d\", &x, &y);\n13        if (a[x] < y && b[y] < x) {\n14            if (a[x] > 0)\n15                b[a[x]] = 0;\n16            if (b[y] > 0)\n17                a[b[y]] = 0;\n18            a[x] = y;\n19            b[y] = x;\n20        }\n21    }\n22    int ans = 0;\n23    for (int i = 1; i <= n; ++i) {\n24        if (a[i] == 0)\n25            ++ans;\n26        if (b[i] == 0)\n27            ++ans;\n28    }\n29    printf(\"%d\\n\", ans);\n30    return 0;\n31 }\n```\n\n假设输入的  $n$  和  $m$  都是正整数， $x$  和  $y$  都是在  $[1, n]$  的范围内的整数，完成下面的判断题和单选题：\n\n### ● 判断题\n\n- 1) 当  $m > 0$  时，输出的值一定小于  $2n$ 。 ( )\n- 2) 执行完第 27 行的 “ $++ans$ ” 时， $ans$  一定是偶数。 ( )\n- 3)  $a[i]$  和  $b[i]$  不可能同时大于 0。 ( )\n\n{4}------------------------------------------------\n\n4) 若程序执行到第 13 行时, x 总是小于 y, 那么第 15 行不会被执行。  \n( )\n\n### ● 选择题\n\n- 5) 若 m 个 x 两两不同, 且 m 个 y 两两不同, 则输出的值为 ( )  \nA.  $2n+2$                       B.  $2n$                       C.  $2n-2m$                       D.  $2n-2$\n- 6) 若 m 个 x 两两不同, 且 m 个 y 都相等, 则输出的值为 ( )  \nA.  $2n-2$                       B.  $2m$                       C.  $2n-2m$                       D.  $2n$\n\n### 3.\n\n```\n1 #include <stdio.h>\n2\n3 #define maxn 10000\n4 int n;\n5 int a[maxn];\n6 int b[maxn];\n7 int f(int l, int r, int depth) {\n8     if (l > r)\n9         return 0;\n10    int min = maxn, mink;\n11    for (int i = l; i <= r; ++i) {\n12        if (min > a[i]) {\n13            min = a[i];\n14            mink = i;\n15        }\n16    }\n17    int lres = f(l, mink - 1, depth + 1);\n18    int rres = f(mink + 1, r, depth + 1);\n19    return lres + rres + depth * b[mink];\n20 }\n21 int main() {\n22     scanf(\"%d\", &n);\n23     for (int i = 0; i < n; ++i)\n24         scanf(\"%d\", &a[i]);\n25     for (int i = 0; i < n; ++i)\n26         scanf(\"%d\", &b[i]);\n27     printf(\"%d\\n\", f(0, n - 1, 1));\n28     return 0;\n29 }\n```\n\n#### ● 判断题\n\n- 1) 如果 a 数组有重复的数字, 则程序运行时会发生错误。 ( )\n\n{5}------------------------------------------------\n\n2) 如果 b 数组全为 0，则输出为 0。（ ）\n\n#### ● 选择题\n\n3) 当 n=100 时，最坏情况下，与第 12 行的比较运算执行的次数最接近的是：（ ）。\n\n- A. 6\n- B. 100\n- C. 5000\n- D. 600\n\n4) 当 n=100 时，最好情况下，与第 12 行的比较运算执行的次数最接近的是：（ ）。\n\n- A. 5000\n- B. 6\n- C. 100\n- D. 600\n\n5) 当 n=10 时，若 b 数组满足，对任意  $0 \\leq i < n$ ，都有  $b[i] = i + 1$ ，那么输出最大为（ ）。\n\n- A. 385\n- B. 383\n- C. 384\n- D. 386\n\n6) （4 分）当 n=100 时，若 b 数组满足，对任意  $0 \\leq i < n$ ，都有  $b[i] = 1$ ，那么输出最小为（ ）。\n\n- A. 582\n- B. 579\n- C. 581\n- D. 580\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n1. （矩阵变幻）有一个奇幻的矩阵，在不停的变幻，其变幻方式为：数字 0 变成矩阵  $\\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$ ，数字 1 变成矩阵  $\\begin{bmatrix} 1 & 1 \\\\ 1 & 0 \\end{bmatrix}$ 。最初该矩阵只有一个元素 0，变幻 n 次后，矩阵会变成什么样？\n\n例如，矩阵最初为：[0]；矩阵变幻 1 次后： $\\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$ ；矩阵变幻 2 次后：\n\n$$\\begin{bmatrix} 0 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 1 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 1 & 1 & 0 \\end{bmatrix}.$$\n\n输入一行一个不超过 10 的正整数 n。输出变幻 n 次后的矩阵。\n\n试补全程序。\n\n提示：\n\n“<<” 表示二进制左移运算符，例如  $(11)_2 << 2 = (1100)_2$ ；\n\n而 “^” 表示二进制异或运算符，它将两个参与运算的数中的每个对应的二进制位一一进行比较，若两个二进制位相同，则运算结果的对应二进制位为 0，反之为 1。\n\n{6}------------------------------------------------\n\n```\n\n1 #include <stdio.h>\n2\n3 int n;\n4 #define max_size (1 << 10)\n5\n6 int res[max_size][max_size];\n7\n8 void recursive(int x, int y, int n, int t) {\n9     if (n == 0) {\n10        res[x][y] = ①;\n11        return;\n12    }\n13    int step = 1 << (n - 1);\n14    recursive(②, n - 1, t);\n15    recursive(x, y + step, n - 1, t);\n16    recursive(x + step, y, n - 1, t);\n17    recursive(③, n - 1, t ^ 1);\n18 }\n19\n20 int main() {\n21     scanf(\"%d\", &n);\n22     recursive(0, 0, ④);\n23     int size = ⑤;\n24     for (int i = 0; i < size; ++i) {\n25         for (int j = 0; j < size; ++j)\n26             printf(\"%d\", res[i][j]);\n27         puts(\"\");\n28     }\n29     return 0;\n30 }\n\n```\n\n1) ①处应填 ( )\n\n- A. 1                      B.  $n \\% 2$                       C.  $t$                       D. 0\n\n2) ②处应填 ( )\n\n- A.  $x - \\text{step}, y$                       B.  $x, y - \\text{step}$   \n C.  $x - \\text{step}, y - \\text{step}$                       D.  $x, y$\n\n3) ③处应填 ( )\n\n- A.  $x + \\text{step}, y + \\text{step}$                       B.  $x, y - \\text{step}$   \n C.  $x - \\text{step}, y$                       D.  $x - \\text{step}, y - \\text{step}$\n\n4) ④处应填 ( )\n\n{7}------------------------------------------------\n\n- |               |                    |\n|---------------|--------------------|\n| A. $n - 1, 0$ | B. $n - 1, n \\% 2$ |\n| C. $n, 0$     | D. $n, n \\% 2$     |\n\n5) ⑤处应填 ( )\n\n- |                    |                    |\n|--------------------|--------------------|\n| A. $n + 1$         | B. $1 \\ll n$       |\n| C. $1 \\ll (n - 1)$ | D. $1 \\ll (n + 1)$ |\n\n- 2. (计数排序) 计数排序是一个广泛使用的排序方法。下面的程序使用双关键字计数排序，将  $n$  对 10000 以内的整数，从小到大排序。\n\n例如有三对整数 (3, 4)、(2, 4)、(3, 3)，那么排序之后应该是 (2, 4)、(3, 3)、(3, 4)。\n\n输入第一行为  $n$ ，接下来  $n$  行，第  $i$  行有两个数  $a[i]$  和  $b[i]$ ，分别表示第  $i$  对整数的第一关键字和第二关键字。\n\n从小到大排序后输出。\n\n数据范围  $1 \\leq n \\leq 10^7, 1 \\leq a[i], b[i] \\leq 10^4$ 。\n\n提示：应先对第二关键字排序，再对第一关键字排序。数组  $ord[]$  存储第二关键字排序的结果，数组  $res[]$  存储双关键字排序的结果。试补全程序。\n\n```\n1 #include <stdio.h>\n2 #include <string.h>\n3\n4 #define maxn 10000000\n5 #define maxs 10000\n6\n7 int n;\n8 unsigned a[maxn], b[maxn], res[maxn], ord[maxn];\n9 unsigned cnt[maxs + 1];\n10\n11 int main() {\n12     scanf(\"%d\", &n);\n13     for (int i = 0; i < n; ++i)\n14         scanf(\"%d%d\", &a[i], &b[i]);\n15     memset(cnt, 0, sizeof(cnt));\n16     for (int i = 0; i < n; ++i)\n17         ①;    // 利用 cnt 数组统计数量\n18     for (int i = 0; i < maxs; ++i)\n19         cnt[i + 1] += cnt[i];\n20     for (int i = 0; i < n; ++i)\n21         ②;    // 记录初步排序结果\n```\n\n{8}------------------------------------------------\n\n```\n22 memset(cnt, 0, sizeof(cnt));\n23 for (int i = 0; i < n; ++i)\n24     ③; // 利用 cnt 数组统计数量\n25 for (int i = 0; i < maxs; ++i)\n26     cnt[i + 1] += cnt[i];\n27 for (int i = n - 1; i >= 0; --i)\n28     ④; // 记录最终排序结果\n29 for (int i = 0; i < n; ++i)\n30     printf(\"%d %d\\n\", ⑤);\n31 return 0;\n32 }\n```\n\n1) ①处应填 ( )\n\n- A. ++cnt[a[i]]\n- B. ++cnt[i]\n- C. ++cnt[a[i] \\* maxs + b[i]]\n- D. ++cnt[b[i]]\n\n2) ②处应填 ( )\n\n- A. ord[--cnt[b[i]]] = a[i]\n- B. ord[--cnt[a[i]]] = b[i]\n- C. ord[--cnt[b[i]]] = i\n- D. ord[--cnt[a[i]]] = i\n\n3) ③处应填 ( )\n\n- A. ++cnt[a[i] \\* maxs + b[i]]\n- B. ++cnt[a[i]]\n- C. ++cnt[b[i]]\n- D. ++cnt[i]\n\n4) ④处应填 ( )\n\n- A. res[--cnt[a[ord[i]]]] = ord[i]\n- B. res[--cnt[b[ord[i]]]] = ord[i]\n- C. res[--cnt[a[i]]] = ord[i]\n- D. res[--cnt[b[i]]] = ord[i]\n\n5) ⑤处应填 ( )\n\n- A. a[res[ord[i]]], b[res[ord[i]]]\n- B. a[res[i]], b[res[i]]\n- C. a[ord[res[i]]], b[ord[res[i]]]\n- D. a[i], b[i]",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "9ba3dc91984c80b96f217fb1bddd5c06_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 18
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 11
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 12
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 9,
+    "total_cost": 2.7,
+    "cost_breakdown": {
+      "final_cost_cents": 2.7
+    },
+    "runtime": 22.520957708358765,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 2.7
+  },
+  "page_count": 9,
+  "success": true,
+  "error": null,
+  "source": "CSP-J/2019/Round1/cspjs2019hj_c.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "9ba3dc91984c80b96f217fb1bddd5c06_img.jpg"
+  ]
+}

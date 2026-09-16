@@ -8,8 +8,10 @@ data/
 CSP/**
 !CSP/**/
 !CSP/**/*.pdf
-CSP/题库OCR/*
-!CSP/题库OCR/.gitkeep
-!CSP/题库OCR/OCR_KEY
+# Keep regenerated OCR data available on every clone, but never commit the API key.
+!CSP/题库OCR/
+!CSP/题库OCR/**
+CSP/题库OCR/OCR_KEY
+CSP/题库OCR/**/.DS_Store
 素养大赛/
 zero-parsed-fusai-sources.zip

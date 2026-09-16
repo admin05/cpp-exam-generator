@@ -1,0 +1,217 @@
+{
+  "request_id": "w03u55bY_d9I2XYMsrJtPg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:02:08.448505+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "w03u55bY_d9I2XYMsrJtPg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/w03u55bY_d9I2XYMsrJtPg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第九届全国青少年信息学奥林匹克联赛初赛试题\n\n(提高组 BASIC 语言 二小时完成)\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n一、单项选择题 (共 10 题，每题 1.5 分，共计 15 分。每题有且仅有一个正确答案)。\n\n- 图灵 (Alan Turing) 是 ( )。  \n A) 美国人      B) 英国人      C) 德国人      D) 匈牙利人      E) 法国人\n- 第一个给计算机写程序的人是 ( )。  \n A) Alan Mathison Turing      B) Ada Lovelace      C) John von Neumann  \n D) John Mc-Carthy      E) Edsger Wybe Dijkstra\n- 十进制数 2003 等值于二进制数 ( )。  \n A) 0100000111      B) 10000011      C) 110000111      D) 11111010011      E) 1111010011\n- 假设  $A = \\text{true}$ ,  $B = \\text{false}$ ,  $C = \\text{true}$ ,  $D = \\text{true}$ , 逻辑运算表达式  $A \\wedge B \\vee C \\wedge D$  的值是 ( )。  \n A) true      B) false      C) 0      D) 1      E) NULL\n- 一个高度为  $h$  的二叉树最小元素数目是 ( )。  \n A)  $2h+1$       B)  $h$       C)  $2h-1$       D)  $2h$       E)  $2^h-1$\n- 已知队列 (13, 2, 11, 34, 41, 77, 5, 7, 18, 26, 15), 第一个进入队列的元素是 13, 则第五个出队列的元素是 ( )。  \n A) 5      B) 41      C) 77      D) 13      E) 18\n- 下面一段程序是用 ( ) 语言书写的。  \n\n```\n\nint func1 (int n) {\n    int i, sum = 0;\n    for (i = 1; i <= n; i++)\n        sum += i*i;\n    return sum;\n}\n            \n```\n\n A) FORTRAN      B) PASCAL      C) C      D) PROLOG      E) BASIC\n- 设全集  $E = \\{1, 2, 3, 4, 5\\}$ , 集合  $A = \\{1, 4\\}$ ,  $B = \\{1, 2, 5\\}$ ,  $C = \\{2, 4\\}$ , 则集合  $(A \\cap B) \\cup \\sim C$  为 ( )。  \n A) 空集      B)  $\\{1\\}$       C)  $\\{3, 5\\}$       D)  $\\{1, 5\\}$       E)  $\\{1, 3, 5\\}$\n- 表达式  $(1+34)*5-56/7$  的后缀表达式为 ( )  \n A)  $1 + 34 * 5 - 56 / 7$       B)  $- * + 1 34 5 / 56 7$       C)  $1 34 + 5 * 56 7 / -$   \n D)  $1 34 5 * + 56 7 / -$       E)  $1 34 + 5 56 7 - * /$\n\n{1}------------------------------------------------\n\n- 10. 下列计算机设备，既是输入设备，又是输出设备的是（ ）。  \n A) 键盘 B) 触摸屏 C) 扫描仪 D) 投影仪 E) 数字化仪\n\n## 二、不定项选择题（共 10 题，每题 1.5 分，共计 15 分。多选或少选均不得分）。\n\n- 11. 下列分辨率的显示器所显示出的图像，最清晰的是（ ）。  \n A) 800\\*600 B) 1024\\*768 C) 640\\*480 D) 1280\\*1024 E) 800\\*1000\n- 12. 下列说法中，哪个（些）是错误的（ ）。  \n A) 程序是指令的序列，它有三种结构：顺序、分支和循环。  \n B) 数据总线决定了中央处理器 CPU 所能访问的最大内存空间的大小。  \n C) 中央处理器 CPU 内部有寄存器组，用来存储数据。  \n D) 不同厂家生产的 CPU 所能处理的指令集是相同的。  \n E) 数据传输过程中可能会出错，奇偶校验法可以检测出数据中那一位在传输中出了差错。\n- 13. CPU 访问内存的速度比访问下列哪个（些）存储设备要慢（ ）。  \n A) 寄存器 B) 硬盘 C) 软盘 D) 高速缓存 E) 光盘\n- 14. 下列电子邮件地址，哪个（些）是正确的（ ）。  \n A) wang@hotmail.com B) cai@icc.pc.tool.rf.edu.jp C) 162.105.111.22  \n D) ccf.edu.cn E) http://www.sina.com\n- 15. 数字图像文件可以用下列哪个（些）软件来编辑（ ）。  \n A) 画笔 (Paintbrush) B) 记事簿 (Notepad) C) Photoshop D) WinRAR E) MidiSoft\n- 16. 下列哪个（些）软件不是操作系统软件的名字（ ）。  \n A) Windows XP B) DOS C) Linux D) OS/2 E) Arch/Info\n- 17. 下列哪个（些）不是个人计算机的硬件组成部分（ ）。  \n A) 主板 B) 虚拟内存 C) 电源 D) 硬盘 E) 总线\n- 18. 运算式  $(2008)_{10} - (3723)_8$  的结果是（ ）。  \n A)  $(-1715)_{10}$  B)  $(5)_{10}$  C)  $(5)_{16}$  D)  $(101)_2$  E)  $(3263)_8$\n- 19. 已知元素 (8, 25, 14, 87, 51, 90, 6, 19, 20)，问这些元素以怎样的顺序进入栈，才能使出栈的顺序满足：8 在 51 前面；90 在 87 后面；20 在 14 后面；25 在 6 前面；19 在 90 后面。（ ）  \n A) 20, 6, 8, 51, 90, 25, 14, 19, 87  \n B) 51, 6, 19, 20, 14, 8, 87, 90, 25  \n C) 19, 20, 90, 7, 6, 25, 51, 14, 87  \n D) 6, 25, 51, 8, 20, 19, 90, 87, 14  \n E) 25, 6, 8, 51, 87, 90, 19, 14, 20\n- 20. 假设我们用  $d = (a_1, a_2, \\dots, a_5)$ ，表示无向图 G 的 5 个顶点的度数，下面给出的哪(些)\n\n{2}------------------------------------------------\n\n组 d 值合理的 ( )。\n\n- A) {5, 4, 4, 3, 1}      B) {4, 2, 2, 1, 1}      C) {3, 3, 3, 2, 2}  \n D) {5, 4, 3, 2, 1}      E) {2, 2, 2, 2, 2}\n\n## **三. 问题求解 (共 2 题, 每题 5 分, 共计 10 分)**\n\n1. 无向图 G 有 16 条边, 有 3 个 4 度顶点、4 个 3 度顶点, 其余顶点的度均小于 3, 则 G 至少 \\_\\_\\_\\_\\_ 个顶点。\n\n2. 某年级学生共选修 6 门课程, 期末考试前, 必须提前将这 6 门课程考完, 每人每天只在下午至多考一门课程, 设 6 门课程分别为  $c_1, c_2, c_3, c_4, c_5, c_6$ ,  $S(c_i)$  为学习  $c_i$  的学生集合。已知  $S(c_i) \\cap S(c_6) \\neq \\emptyset, i=1,2,\\dots,5, S(c_i) \\cap S(c_{i+1}) \\neq \\emptyset, i=1,2,3,4, S(c_5) \\cap S(c_1) \\neq \\emptyset$ , 问至少安排 \\_\\_\\_\\_\\_ 天才能考完这 6 门课程。\n\n## **四. 阅读程序 (共 4 题, 每题 8 分, 共计 32 分)**\n\n```\n1.  DIM a, b, c, d, sum AS LONG\n    INPUT a, b, c, d\n    a = a MOD 23 : b = b MOD 28 : c = c MOD 33\n    sum = a * 5544 + b * 14421 + c * 1288 - d\n    sum = sum + 21252 : sum = sum MOD 21252\n    IF sum = 0 THEN\n        sum = 21252\n    END IF\n    PRINT sum\nEND\n```\n\n输入: 283,102,23,320\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2.  DIM a, b, c, d, e, f, i, x, y, z AS INTEGER\n    DIM u%(4), v%(4)\n    i = 0\n    FOR i = 0 TO 3 : READ u%(i) : NEXT i\n    FOR i = 0 TO 3 : READ v%(i) : NEXT i\n    INPUT a, b, c, d, e, f\n    z = f + e + d + (c + 3) \\ 4 : y = 5 * d + u%(c MOD 4)\n    IF b > y THEN\n        z = z + (b - y + 8) \\ 9\n        x = ((b - y + 8) \\ 9 * 9 - (b - y)) * 4 + 11 * e + v%(c MOD 4)\n    ELSE\n        x = (y - b) * 4 + 11 * e + v%(c MOD 4)\n    END IF\n    IF a > x THEN\n        z = z + (a - x + 35) \\ 36\n    END IF\n```\n\n{3}------------------------------------------------\n\nPRINT z : DATA 0,5,3,1,0,7,6,5 : END\n\n输入: 4,7,9,20,56,47\n\n输出: \\_\\_\\_\\_\\_\n\n```\n\n3.  DECLARE FUNCTION test (m, n)\n    DIM m, n, r AS INTEGER\n    INPUT n : m = 1\n    DO\n    r = test(m, n)\n    IF (r = 1) THEN\n        PRINT m\n        EXIT DO\n    END IF\n    m = m + 1\n    LOOP\nEND\n\nFUNCTION test (m, n)\n    DIM i, p, a, b AS INTEGER\n    a = m - 1 : b = n : i = 0 : p = 2 * b : test = 1\n    FOR p = 2 * b TO b + 1 STEP -1\n        i = (i + a) MOD p\n        IF i < b THEN\n            test = 0\n            EXIT FOR\n        END IF\n    NEXT p\nEND FUNCTION\n\n```\n\n输入: 7\n\n输出: \\_\\_\\_\\_\\_\n\n```\n\n4.  DIM n, m, i, j AS INTEGER\n    DIM p%(20), w%(20), a%(20), b%(20)\n    INPUT n : m = 0\n    FOR i = 0 TO n - 1\n        b%(i) = 1 : INPUT p%(i)\n    NEXT i\n    FOR i = 0 TO n - 1\n        IF i > 0 THEN\n            a%(m) = p%(i) - p%(i - 1)\n        ELSE\n            a%(m) = p%(i)\n        END IF\n        m = m + 1\n    DO WHILE m > 1 AND a%(m - 1) = 0\n        m = m - 1 : b%(m) = 1\n    LOOP\n\n```\n\n{4}------------------------------------------------\n\n```\n\nLOOP\nIF m >= 1 THEN\nw%(i) = b%(m - 1)\nELSE\nw%(i) = b%(0)\nEND IF\na%(m - 1) = a%(m - 1) - 1\nFOR j = 0 TO m - 1 : b%(j) = b%(j) + 1 : NEXT j\nDO WHILE m > 1 AND a%(m - 1) = 0\n  m = m - 1 : b%(m) = 1\nLOOP\nNEXT i\nFOR i = 0 TO n - 1 : PRINT w%(i); : NEXT i\nPRINT\nEND\n\n```\n\n输入: 9\n\n4, 6, 6, 6, 6, 8, 9, 9, 9\n\n输出: \\_\\_\\_\\_\\_\n\n## 五. 完善程序 (共2题, 第1题每空3分; 第2题每空2分。共计28分)\n\n### 1. 翻硬币\n\n题目描述:\n\n一摞硬币共有  $m$  枚, 每一枚都是正面朝上。取下最上面的一枚硬币, 将它翻面后放回原处。然后取下最上面的 2 枚硬币, 将他们一起翻面后再放回原处。再取 3 枚, 取 4 枚……直至  $m$  枚。然后再从这摞硬币最上面的一枚开始, 重复刚才的做法。这样一直做下去, 直到这摞硬币中的每一枚又都是正面朝上为止。例如,  $m$  为 1 时, 翻两次即可。\n\n输入: 仅有的一个数字是这摞硬币的枚数  $m$ ,  $0 < m < 1000$ 。\n\n输出: 为了使这摞硬币中的每一枚又都是正面朝上所必需翻的次数。\n\n输入样例: 30\n\n输出样例: 899\n\n程序:\n\n```\n\nDECLARE FUNCTION solve (m)\nDIM m, n AS INTEGER\nINPUT m\nIF (1) AND m < 1000 THEN\n  n = (2)\n  PRINT n\nEND IF\nEND\n\n```\n\n{5}------------------------------------------------\n\n```\n\nFUNCTION solve (m)\n  DIM i, t, d AS INTEGER\n  IF m = 1 THEN solve = (3)\n  ELSE\n    d = 2 * m + 1\n    t = 2: i = 1\n    DO\n      IF t = 1 THEN\n        solve = (4)\n        EXIT DO\n      END IF\n      IF (5) THEN\n        solve = i * m - 1\n        EXIT DO\n      END IF\n      t = (6)\n      i = i + 1\n    LOOP\n  END IF\nEND FUNCTION\n  \n```\n\n### 2. OIM 地形\n\n题目描述:\n\n二维离散世界有一种地形叫 OIM(OI Mountain)。这种山的坡度只能上升(' / ')或下降(' \\ '), 而且两边的山脚都与地平线等高, 山上所有地方都不低于地平线。例如:\n\n/ \\                      / \\  \n / \\ \\ 是一座 OIM; 而 / \\    不是。  \n                           \\\n\n这个世界的地理学家们为了方便记录, 给 OIM 所有可能的形状用正整数编好号, 而且每个正整数恰好对应一种山形。他们规定, 若两座山的宽度不同, 则较宽的编号较大; 若宽度相同, 则比较从左边开始第 1 个坡度不同的地方, 坡度上升的编号较大。以下三座 OIM 的编号由小到大递增:\n\n/ \\    / \\    / \\ / \\  \n / \\ \\ / \\ \\ / \\ / \\ \\。显然 / \\ 的编号为 1。但是地理学家在整理记录时发觉, 查找编号与山形的对应关系不是很方便。他们希望能快速地由编号得到山的形状。你自告奋勇答应给他们写一个程序, 输入编号, 能马上输出山形。\n\n输 入:\n\n一个编号(编号大小不超过 600,000,000),\n\n输 出:\n\n输入编号所对应的山形, 1 座山所占行数恰为它的高度, 即山顶上不能有多余空行。\n\n{6}------------------------------------------------\n\n输入样例：\n\n15\n\n输出样例：\n\n```\n\n  \\  /\n /  \\\n\n```\n\n程 序：\n\n```\n\nDECLARE SUB init ()\nDECLARE SUB drawn (k1 AS INTEGER, s1 AS INTEGER, nth AS INTEGER)\nCONST L% = 15 : CONST SZ% = 50 : CONST UP = \"/\" : CONST DN = \"\\\"\nDIM i, j AS INTEGER\nDIM SHARED k1 AS INTEGER\nDIM SHARED s1 AS INTEGER\nDIM SHARED x AS INTEGER\nDIM SHARED y AS INTEGER\nDIM SHARED h AS INTEGER\nDIM SHARED nth AS INTEGER\nDIM SHARED m&(0 TO 1, 0 TO 39, 0 TO 20)\nDIM SHARED pic$(0 TO SZ, 0 TO SZ)\nCALL init\nINPUT nth\nFOR i = 0 TO 49 : FOR j = 0 TO 49\n  pic$(i, j) = \" \"\nNEXT j : NEXT i\nx = 0 : y = 0 : h = 0 : i = 0\nDO WHILE (nth - m&(0, 2 * i, 0)) >= 0\n  nth = nth - m&(0, 2 * i, 0)\n  (1)\nLOOP\nk1 = 2 * I : s1 = 0\nCALL drawn( (2) )\nFOR i = h TO 0 STEP -1 : FOR j = 0 TO x - 1\n  PRINT pic$(i,j);\nNEXT j : PRINT : NEXT i\nEND\n\nSUB drawn (k1 AS INTEGER, s1 AS INTEGER, nth AS INTEGER)\nIF k1 = 0 THEN\n  EXIT SUB\nEND IF\n\nIF (nth - m&(1, k1, s1)) >= 0 THEN\n  nth = nth - m&(1, k1, s1)\n  IF (y > h) THEN\n\n```\n\n{7}------------------------------------------------\n\n(3)\n\nEND IF\n\npic\\$(y, x) = UP\n\ny = y + 1 : x = x + 1\n\nCALL drawn( (4) )\n\nELSE\n\ny = y - 1\n\npic\\$(y, x) = DN : x = x + 1\n\nCALL drawn(k1-1,s1-1,nth)\n\nEND IF\n\nEND SUB\n\nSUB init\n\nDIM a, b, c, k, s AS INTEGER\n\nFOR a = 0 TO 1 : FOR b = 0 TO 2 \\* L : FOR c = 0 TO L + 1\n\nm&(a, b, c) = 0\n\nNEXT c : NEXT b : NEXT a\n\nm&(0, 0, 0) = 1\n\nFOR k = 0 TO 2 \\* L - 1 : FOR s = 1 TO L\n\nm&(0, k + 1, s) = m&(0,k,s+1)+m&(1,k,s+1)\n\nm&(1, k + 1, s) = (5)\n\nNEXT s\n\nm&(0, k + 1, 0) = m&(0, k, 1) + m&(1, k, 1)\n\nNEXT k\n\nEND SUB",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 27
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 8,
+      "total_cost": 2.4,
+      "cost_breakdown": {
+        "final_cost_cents": 2.4
+      },
+      "runtime": 15.103056907653809,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第九届全国青少年信息学奥林匹克联赛初赛试题\n\n(提高组 BASIC 语言 二小时完成)\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n一、单项选择题 (共 10 题，每题 1.5 分，共计 15 分。每题有且仅有一个正确答案)。\n\n- 图灵 (Alan Turing) 是 ( )。  \n A) 美国人      B) 英国人      C) 德国人      D) 匈牙利人      E) 法国人\n- 第一个给计算机写程序的人是 ( )。  \n A) Alan Mathison Turing      B) Ada Lovelace      C) John von Neumann  \n D) John Mc-Carthy      E) Edsger Wybe Dijkstra\n- 十进制数 2003 等值于二进制数 ( )。  \n A) 0100000111      B) 10000011      C) 110000111      D) 11111010011      E) 1111010011\n- 假设  $A = \\text{true}$ ,  $B = \\text{false}$ ,  $C = \\text{true}$ ,  $D = \\text{true}$ , 逻辑运算表达式  $A \\wedge B \\vee C \\wedge D$  的值是 ( )。  \n A) true      B) false      C) 0      D) 1      E) NULL\n- 一个高度为  $h$  的二叉树最小元素数目是 ( )。  \n A)  $2h+1$       B)  $h$       C)  $2h-1$       D)  $2h$       E)  $2^h-1$\n- 已知队列 (13, 2, 11, 34, 41, 77, 5, 7, 18, 26, 15), 第一个进入队列的元素是 13, 则第五个出队列的元素是 ( )。  \n A) 5      B) 41      C) 77      D) 13      E) 18\n- 下面一段程序是用 ( ) 语言书写的。  \n\n```\n\nint func1 (int n) {\n    int i, sum = 0;\n    for (i = 1; i <= n; i++)\n        sum += i*i;\n    return sum;\n}\n            \n```\n\n A) FORTRAN      B) PASCAL      C) C      D) PROLOG      E) BASIC\n- 设全集  $E = \\{1, 2, 3, 4, 5\\}$ , 集合  $A = \\{1, 4\\}$ ,  $B = \\{1, 2, 5\\}$ ,  $C = \\{2, 4\\}$ , 则集合  $(A \\cap B) \\cup \\sim C$  为 ( )。  \n A) 空集      B)  $\\{1\\}$       C)  $\\{3, 5\\}$       D)  $\\{1, 5\\}$       E)  $\\{1, 3, 5\\}$\n- 表达式  $(1+34)*5-56/7$  的后缀表达式为 ( )  \n A)  $1 + 34 * 5 - 56 / 7$       B)  $- * + 1 34 5 / 56 7$       C)  $1 34 + 5 * 56 7 / -$   \n D)  $1 34 5 * + 56 7 / -$       E)  $1 34 + 5 56 7 - * /$\n\n{1}------------------------------------------------\n\n- 10. 下列计算机设备，既是输入设备，又是输出设备的是（ ）。  \n A) 键盘 B) 触摸屏 C) 扫描仪 D) 投影仪 E) 数字化仪\n\n## 二、不定项选择题（共 10 题，每题 1.5 分，共计 15 分。多选或少选均不得分）。\n\n- 11. 下列分辨率的显示器所显示出的图像，最清晰的是（ ）。  \n A) 800\\*600 B) 1024\\*768 C) 640\\*480 D) 1280\\*1024 E) 800\\*1000\n- 12. 下列说法中，哪个（些）是错误的（ ）。  \n A) 程序是指令的序列，它有三种结构：顺序、分支和循环。  \n B) 数据总线决定了中央处理器 CPU 所能访问的最大内存空间的大小。  \n C) 中央处理器 CPU 内部有寄存器组，用来存储数据。  \n D) 不同厂家生产的 CPU 所能处理的指令集是相同的。  \n E) 数据传输过程中可能会出错，奇偶校验法可以检测出数据中那一位在传输中出了差错。\n- 13. CPU 访问内存的速度比访问下列哪个（些）存储设备要慢（ ）。  \n A) 寄存器 B) 硬盘 C) 软盘 D) 高速缓存 E) 光盘\n- 14. 下列电子邮件地址，哪个（些）是正确的（ ）。  \n A) wang@hotmail.com B) cai@icc.pc.tool.rf.edu.jp C) 162.105.111.22  \n D) ccf.edu.cn E) http://www.sina.com\n- 15. 数字图像文件可以用下列哪个（些）软件来编辑（ ）。  \n A) 画笔 (Paintbrush) B) 记事簿 (Notepad) C) Photoshop D) WinRAR E) MidiSoft\n- 16. 下列哪个（些）软件不是操作系统软件的名字（ ）。  \n A) Windows XP B) DOS C) Linux D) OS/2 E) Arch/Info\n- 17. 下列哪个（些）不是个人计算机的硬件组成部分（ ）。  \n A) 主板 B) 虚拟内存 C) 电源 D) 硬盘 E) 总线\n- 18. 运算式  $(2008)_{10} - (3723)_8$  的结果是（ ）。  \n A)  $(-1715)_{10}$  B)  $(5)_{10}$  C)  $(5)_{16}$  D)  $(101)_2$  E)  $(3263)_8$\n- 19. 已知元素 (8, 25, 14, 87, 51, 90, 6, 19, 20)，问这些元素以怎样的顺序进入栈，才能使出栈的顺序满足：8 在 51 前面；90 在 87 后面；20 在 14 后面；25 在 6 前面；19 在 90 后面。（ ）  \n A) 20, 6, 8, 51, 90, 25, 14, 19, 87  \n B) 51, 6, 19, 20, 14, 8, 87, 90, 25  \n C) 19, 20, 90, 7, 6, 25, 51, 14, 87  \n D) 6, 25, 51, 8, 20, 19, 90, 87, 14  \n E) 25, 6, 8, 51, 87, 90, 19, 14, 20\n- 20. 假设我们用  $d = (a_1, a_2, \\dots, a_5)$ ，表示无向图 G 的 5 个顶点的度数，下面给出的哪(些)\n\n{2}------------------------------------------------\n\n组 d 值合理的 ( )。\n\n- A) {5, 4, 4, 3, 1}      B) {4, 2, 2, 1, 1}      C) {3, 3, 3, 2, 2}  \n D) {5, 4, 3, 2, 1}      E) {2, 2, 2, 2, 2}\n\n## **三. 问题求解 (共 2 题, 每题 5 分, 共计 10 分)**\n\n1. 无向图 G 有 16 条边, 有 3 个 4 度顶点、4 个 3 度顶点, 其余顶点的度均小于 3, 则 G 至少 \\_\\_\\_\\_\\_ 个顶点。\n\n2. 某年级学生共选修 6 门课程, 期末考试前, 必须提前将这 6 门课程考完, 每人每天只在下午至多考一门课程, 设 6 门课程分别为  $c_1, c_2, c_3, c_4, c_5, c_6$ ,  $S(c_i)$  为学习  $c_i$  的学生集合。已知  $S(c_i) \\cap S(c_6) \\neq \\emptyset, i=1,2,\\dots,5, S(c_i) \\cap S(c_{i+1}) \\neq \\emptyset, i=1,2,3,4, S(c_5) \\cap S(c_1) \\neq \\emptyset$ , 问至少安排 \\_\\_\\_\\_\\_ 天才能考完这 6 门课程。\n\n## **四. 阅读程序 (共 4 题, 每题 8 分, 共计 32 分)**\n\n```\n1.  DIM a, b, c, d, sum AS LONG\n    INPUT a, b, c, d\n    a = a MOD 23 : b = b MOD 28 : c = c MOD 33\n    sum = a * 5544 + b * 14421 + c * 1288 - d\n    sum = sum + 21252 : sum = sum MOD 21252\n    IF sum = 0 THEN\n        sum = 21252\n    END IF\n    PRINT sum\nEND\n```\n\n输入: 283,102,23,320\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2.  DIM a, b, c, d, e, f, i, x, y, z AS INTEGER\n    DIM u%(4), v%(4)\n    i = 0\n    FOR i = 0 TO 3 : READ u%(i) : NEXT i\n    FOR i = 0 TO 3 : READ v%(i) : NEXT i\n    INPUT a, b, c, d, e, f\n    z = f + e + d + (c + 3) \\ 4 : y = 5 * d + u%(c MOD 4)\n    IF b > y THEN\n        z = z + (b - y + 8) \\ 9\n        x = ((b - y + 8) \\ 9 * 9 - (b - y)) * 4 + 11 * e + v%(c MOD 4)\n    ELSE\n        x = (y - b) * 4 + 11 * e + v%(c MOD 4)\n    END IF\n    IF a > x THEN\n        z = z + (a - x + 35) \\ 36\n    END IF\n```\n\n{3}------------------------------------------------\n\nPRINT z : DATA 0,5,3,1,0,7,6,5 : END\n\n输入: 4,7,9,20,56,47\n\n输出: \\_\\_\\_\\_\\_\n\n```\n\n3.  DECLARE FUNCTION test (m, n)\n    DIM m, n, r AS INTEGER\n    INPUT n : m = 1\n    DO\n    r = test(m, n)\n    IF (r = 1) THEN\n        PRINT m\n        EXIT DO\n    END IF\n    m = m + 1\n    LOOP\nEND\n\nFUNCTION test (m, n)\n    DIM i, p, a, b AS INTEGER\n    a = m - 1 : b = n : i = 0 : p = 2 * b : test = 1\n    FOR p = 2 * b TO b + 1 STEP -1\n        i = (i + a) MOD p\n        IF i < b THEN\n            test = 0\n            EXIT FOR\n        END IF\n    NEXT p\nEND FUNCTION\n\n```\n\n输入: 7\n\n输出: \\_\\_\\_\\_\\_\n\n```\n\n4.  DIM n, m, i, j AS INTEGER\n    DIM p%(20), w%(20), a%(20), b%(20)\n    INPUT n : m = 0\n    FOR i = 0 TO n - 1\n        b%(i) = 1 : INPUT p%(i)\n    NEXT i\n    FOR i = 0 TO n - 1\n        IF i > 0 THEN\n            a%(m) = p%(i) - p%(i - 1)\n        ELSE\n            a%(m) = p%(i)\n        END IF\n        m = m + 1\n    DO WHILE m > 1 AND a%(m - 1) = 0\n        m = m - 1 : b%(m) = 1\n    LOOP\n\n```\n\n{4}------------------------------------------------\n\n```\n\nLOOP\nIF m >= 1 THEN\nw%(i) = b%(m - 1)\nELSE\nw%(i) = b%(0)\nEND IF\na%(m - 1) = a%(m - 1) - 1\nFOR j = 0 TO m - 1 : b%(j) = b%(j) + 1 : NEXT j\nDO WHILE m > 1 AND a%(m - 1) = 0\n  m = m - 1 : b%(m) = 1\nLOOP\nNEXT i\nFOR i = 0 TO n - 1 : PRINT w%(i); : NEXT i\nPRINT\nEND\n\n```\n\n输入: 9\n\n4, 6, 6, 6, 6, 8, 9, 9, 9\n\n输出: \\_\\_\\_\\_\\_\n\n## 五. 完善程序 (共2题, 第1题每空3分; 第2题每空2分。共计28分)\n\n### 1. 翻硬币\n\n题目描述:\n\n一摞硬币共有  $m$  枚, 每一枚都是正面朝上。取下最上面的一枚硬币, 将它翻面后放回原处。然后取下最上面的 2 枚硬币, 将他们一起翻面后再放回原处。再取 3 枚, 取 4 枚……直至  $m$  枚。然后再从这摞硬币最上面的一枚开始, 重复刚才的做法。这样一直做下去, 直到这摞硬币中的每一枚又都是正面朝上为止。例如,  $m$  为 1 时, 翻两次即可。\n\n输入: 仅有的一个数字是这摞硬币的枚数  $m$ ,  $0 < m < 1000$ 。\n\n输出: 为了使这摞硬币中的每一枚又都是正面朝上所必需翻的次数。\n\n输入样例: 30\n\n输出样例: 899\n\n程序:\n\n```\n\nDECLARE FUNCTION solve (m)\nDIM m, n AS INTEGER\nINPUT m\nIF (1) AND m < 1000 THEN\n  n = (2)\n  PRINT n\nEND IF\nEND\n\n```\n\n{5}------------------------------------------------\n\n```\n\nFUNCTION solve (m)\n  DIM i, t, d AS INTEGER\n  IF m = 1 THEN solve = (3)\n  ELSE\n    d = 2 * m + 1\n    t = 2: i = 1\n    DO\n      IF t = 1 THEN\n        solve = (4)\n        EXIT DO\n      END IF\n      IF (5) THEN\n        solve = i * m - 1\n        EXIT DO\n      END IF\n      t = (6)\n      i = i + 1\n    LOOP\n  END IF\nEND FUNCTION\n  \n```\n\n### 2. OIM 地形\n\n题目描述:\n\n二维离散世界有一种地形叫 OIM(OI Mountain)。这种山的坡度只能上升(' / ')或下降(' \\ '), 而且两边的山脚都与地平线等高, 山上所有地方都不低于地平线。例如:\n\n/ \\                      / \\  \n / \\ \\ 是一座 OIM; 而 / \\    不是。  \n                           \\\n\n这个世界的地理学家们为了方便记录, 给 OIM 所有可能的形状用正整数编好号, 而且每个正整数恰好对应一种山形。他们规定, 若两座山的宽度不同, 则较宽的编号较大; 若宽度相同, 则比较从左边开始第 1 个坡度不同的地方, 坡度上升的编号较大。以下三座 OIM 的编号由小到大递增:\n\n/ \\    / \\    / \\ / \\  \n / \\ \\ / \\ \\ / \\ / \\ \\。显然 / \\ 的编号为 1。但是地理学家在整理记录时发觉, 查找编号与山形的对应关系不是很方便。他们希望能快速地由编号得到山的形状。你自告奋勇答应给他们写一个程序, 输入编号, 能马上输出山形。\n\n输 入:\n\n一个编号(编号大小不超过 600,000,000),\n\n输 出:\n\n输入编号所对应的山形, 1 座山所占行数恰为它的高度, 即山顶上不能有多余空行。\n\n{6}------------------------------------------------\n\n输入样例：\n\n15\n\n输出样例：\n\n```\n\n  \\  /\n /  \\\n\n```\n\n程 序：\n\n```\n\nDECLARE SUB init ()\nDECLARE SUB drawn (k1 AS INTEGER, s1 AS INTEGER, nth AS INTEGER)\nCONST L% = 15 : CONST SZ% = 50 : CONST UP = \"/\" : CONST DN = \"\\\"\nDIM i, j AS INTEGER\nDIM SHARED k1 AS INTEGER\nDIM SHARED s1 AS INTEGER\nDIM SHARED x AS INTEGER\nDIM SHARED y AS INTEGER\nDIM SHARED h AS INTEGER\nDIM SHARED nth AS INTEGER\nDIM SHARED m&(0 TO 1, 0 TO 39, 0 TO 20)\nDIM SHARED pic$(0 TO SZ, 0 TO SZ)\nCALL init\nINPUT nth\nFOR i = 0 TO 49 : FOR j = 0 TO 49\n  pic$(i, j) = \" \"\nNEXT j : NEXT i\nx = 0 : y = 0 : h = 0 : i = 0\nDO WHILE (nth - m&(0, 2 * i, 0)) >= 0\n  nth = nth - m&(0, 2 * i, 0)\n  (1)\nLOOP\nk1 = 2 * I : s1 = 0\nCALL drawn( (2) )\nFOR i = h TO 0 STEP -1 : FOR j = 0 TO x - 1\n  PRINT pic$(i,j);\nNEXT j : PRINT : NEXT i\nEND\n\nSUB drawn (k1 AS INTEGER, s1 AS INTEGER, nth AS INTEGER)\nIF k1 = 0 THEN\n  EXIT SUB\nEND IF\n\nIF (nth - m&(1, k1, s1)) >= 0 THEN\n  nth = nth - m&(1, k1, s1)\n  IF (y > h) THEN\n\n```\n\n{7}------------------------------------------------\n\n(3)\n\nEND IF\n\npic\\$(y, x) = UP\n\ny = y + 1 : x = x + 1\n\nCALL drawn( (4) )\n\nELSE\n\ny = y - 1\n\npic\\$(y, x) = DN : x = x + 1\n\nCALL drawn(k1-1,s1-1,nth)\n\nEND IF\n\nEND SUB\n\nSUB init\n\nDIM a, b, c, k, s AS INTEGER\n\nFOR a = 0 TO 1 : FOR b = 0 TO 2 \\* L : FOR c = 0 TO L + 1\n\nm&(a, b, c) = 0\n\nNEXT c : NEXT b : NEXT a\n\nm&(0, 0, 0) = 1\n\nFOR k = 0 TO 2 \\* L - 1 : FOR s = 1 TO L\n\nm&(0, k + 1, s) = m&(0,k,s+1)+m&(1,k,s+1)\n\nm&(1, k + 1, s) = (5)\n\nNEXT s\n\nm&(0, k + 1, 0) = m&(0, k, 1) + m&(1, k, 1)\n\nNEXT k\n\nEND SUB",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 27
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 8,
+    "total_cost": 2.4,
+    "cost_breakdown": {
+      "final_cost_cents": 2.4
+    },
+    "runtime": 15.103056907653809,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 2.4
+  },
+  "page_count": 8,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2003/NOIP2003提高组初赛(Basic).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

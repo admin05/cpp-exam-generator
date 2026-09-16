@@ -1,0 +1,301 @@
+{
+  "request_id": "o1FODcUrKzxMEUOOwMC_7Q",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:56:14.196852+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "o1FODcUrKzxMEUOOwMC_7Q",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/o1FODcUrKzxMEUOOwMC_7Q",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2019CCF 非专业级别软件能力认证第一轮\n\n## (CSP-S) 提高级 Pascal 语言试题 B 卷\n\n认证时间：2019 年 10 月 19 日 09:30~11:30\n\n考生注意事项：\n\n- 试题纸共有 11 页，答题纸共有 1 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n一、单项选择题（共 15 题，每题 2 分，共计 30 分；每题有且仅有一个正确选项）\n\n1.  $a$  是 integer,  $x$  和  $y$  是 real。若  $a$  的值为 7,  $x$  的值为 2.5,  $y$  的值为 4.7, 则表达式  $x + a \\bmod 3 * \\text{trunc}(x + y) \\bmod 2$  的值是：（ ）  \nA. 0.000000      B. 2.750000      C. 3.500000      D. 2.500000\n2. 下列属于图像文件格式的有（ ）  \nA. MPEG      B. WMV      C. AVI      D. JPEG\n3. 二进制数 11 1011 1001 0111 和 01 0110 1110 1011 进行逻辑或运算的结果是（ ）。  \nA. 11 1111 1111 1101      B. 11 1111 1101 1111  \nC. 11 1111 1111 1111      D. 10 1111 1111 1111\n4. 编译器的功能是（ ）  \nA. 将低级语言翻译成高级语言  \nB. 将源程序重新组合  \nC. 将一种编程语言翻译成自然语言  \nD. 将一种语言（通常是高级语言）翻译成另一种语言（通常是低级语言）\n5. 设变量  $x$  为 real 型且已赋值，则以下语句中能将  $x$  中的数值保留到小数点后两位，并将第三位四舍五入的是（ ）  \nA.  $x := (x * 100 + 0.5) / 100.0$   \nB.  $x := (x / 100 + 0.5) * 100.0$   \nC.  $x := x * 100 + 0.5 / 100.0$   \nD.  $x := \\text{trunc}(x * 100 + 0.5) / 100.0$\n6. 由数字 1, 1, 2, 4, 8, 8 所组成的不同的 4 位数的个数是（ ）。  \nA. 98      B. 104      C. 102      D. 100\n\n{1}------------------------------------------------\n\n- 7. 排序的算法很多，若按排序的稳定性和不稳定性分类，则（ ）是不稳定排序。  \nA. 快速排序 B. 直接插入排序 C. 归并排序 D. 冒泡排序\n- 8.  $G$  是一个非连通无向图（没有重边和自环），共有 28 条边，则该图至少有（ ）个顶点。  \nA. 9 B. 8 C. 10 D. 11\n- 9. 一些数字可以颠倒过来看，例如 0、1、8 颠倒过来还是本身，6 颠倒过来是 9，9 颠倒过来看还是 6，其他数字颠倒过来都不构成数字。类似的，一些多位数也可以颠倒过来看，比如 106 颠倒过来是 901。假设某个城市的车牌只有 5 位数字，每一位都可以取 0 到 9。请问这个城市有多少个车牌倒过来恰好还是原来的车牌，并且车牌上的 5 位数能被 3 整除？（ ）  \nA. 20 B. 25 C. 30 D. 40\n- 10. 一次期末考试，某班有 15 人数学得满分，有 12 人语文得满分，并且有 4 人语、数都是满分，那么这个班至少有一门得满分的同学有多少人？（ ）。  \nA. 21 B. 23 C. 22 D. 20\n- 11. 设  $A$  和  $B$  是两个长为  $n$  的有序数组，现在需要将  $A$  和  $B$  合并成一个排好序的数组，请问任何以元素比较作为基本运算的归并算法，在最坏情况下至少要做多少次比较？（ ）。  \nA.  $n^2$  B.  $n \\log n$  C.  $2n - 1$  D.  $2n$\n- 12. 以下哪个结构可以用来存储图（ ）。  \nA. 二叉树 B. 队列 C. 邻接矩阵 D. 栈\n- 13. 以下哪些算法不属于贪心算法？（ ）。  \nA. Dijkstra 算法 B. Prim 算法 C. Kruskal 算法 D. Floyd 算法\n- 14. 有一个等比数列，共有奇数项，其中第一项和最后一项分别是 2 和 118098，中间一项是 486，请问以下哪个数是可能的公比？（ ）。  \nA. 2 B. 5 C. 4 D. 3\n- 15. 有正实数构成的数字三角形排列形式如图所示。第一行的数为  $a_{1,1}$ ；第二行的数从左到右依次为  $a_{2,1}, a_{2,2}$ ，第  $n$  行的数为  $a_{n,1}, a_{n,2}, \\dots, a_{n,n}$ 。从  $a_{1,1}$  开始，每一行的数  $a_{i,j}$  只有两条边可以分别通向下一行的两个数  $a_{i+1,j}$  和  $a_{i+1,j+1}$ 。用动态规划算法找出一条从  $a_{1,1}$  向下通到  $a_{n,1}, a_{n,2}, \\dots, a_{n,n}$  中某个数的路径，使得该路径上的数之和达到最大。\n\n{2}------------------------------------------------\n\n![A triangular diagram representing a path in a grid. The top node is a_{1,1}. It branches to a_{2,1} and a_{2,2}. These branch to a_{3,1}, a_{3,2}, and a_{3,3}. Ellipses indicate further rows down to a_{n,1}, a_{n,2}, ..., a_{n,n}.](b230b8f21d8e82d55c0d311c8c32ef73_img.jpg)\n\nA triangular diagram representing a path in a grid. The top node is a\\_{1,1}. It branches to a\\_{2,1} and a\\_{2,2}. These branch to a\\_{3,1}, a\\_{3,2}, and a\\_{3,3}. Ellipses indicate further rows down to a\\_{n,1}, a\\_{n,2}, ..., a\\_{n,n}.\n\n令  $C[i][j]$  是从  $a_{1,1}$  到  $a_{i,j}$  的路径上的数的最大和，并且\n\n$C[i][0]=C[0][j]=0$ ，则  $C[i][j] = ( )$ 。\n\n- A.  $\\max\\{C[i-1][j-1], C[i-1][j]\\} + a_{i,j}$\n- B.  $\\max\\{C[i-1][j-1], C[i-1][j]\\} + 1$\n- C.  $C[i-1][j-1] + C[i-1][j]$\n- D.  $\\max\\{C[i][j-1], C[i-1][j]\\} + a_{i,j}$\n\n二、阅读程序（程序输入不超过数组或字符串定义的范围；判断题正确填  $\\checkmark$ ，错误填  $\\times$ ；除特殊说明外，判断题 1.5 分，选择题 4 分，共计 40 分）\n\n1.\n\n```\n1 var\n2   n, ans, i: longint;\n3   a: array [0..99] of longint;\n4 begin\n5   read(n);\n6   for i := 1 to n do\n7     read(a[i]);\n8   ans := 1;\n9   for i := 1 to n do\n10  begin\n11    if (i > 1) and (a[i] < a[i - 1]) then\n12      ans := i;\n13    while (ans < n) and (a[i] >= a[ans + 1]) do\n14      ans := ans + 1;\n15    writeln(ans);\n16  end;\n17 end.\n```\n\n● 判断题\n\n- 1) （1 分）第 15 行输出 ans 时，ans 的值一定大于 i。（ ）\n- 2) （1 分）程序输出的 ans 小于等于 n。（ ）\n- 3) 若将第 11 行的 “<” 改为 “!=”，程序输出的结果不会改变。（ ）\n\n{3}------------------------------------------------\n\n4) 当程序执行到第 15 行时, 若  $ans - i > 2$ , 则  $a[i + 1] \\leq a[i]$ 。( )\n\n#### ● 选择题\n\n5) (3 分) 若输入的 a 数组是一个严格单调递增的数列, 此程序的时间复杂度是 ( )。\n\n- A.  $O(n)$                       B.  $O(\\log n)$                       C.  $O(n^2)$                       D.  $O(n \\log n)$\n\n6) 最坏情况下, 此程序的时间复杂度是 ( )。\n\n- A.  $O(\\log n)$                       B.  $O(n^2)$                       C.  $O(n \\log n)$                       D.  $O(n)$\n\n#### 2.\n\n```\n1  const\n2    maxn = 1000;\n3  var\n4    ans, i, n, a, b, x, y : longint;\n5    fa, cnt : array[0..maxn-1] of longint;\n6\n7  function getRoot(v : longint) : longint;\n8  begin\n9    if (fa[v] = v) then exit(v);\n10   exit(getRoot(fa[v]));\n11  end;\n12\n13  begin\n14    read(n);\n15    for i := 0 to n - 1 do\n16    begin\n17      fa[i] := i;\n18      cnt[i] := 1;\n19    end;\n20    ans := 0;\n21    for i := 0 to n - 2 do\n22    begin\n23      read(a, b);\n24      x := getRoot(a);\n25      y := getRoot(b);\n26      ans := ans + cnt[x] * cnt[y];\n27      fa[x] := y;\n28      cnt[y] := cnt[y] + cnt[x];\n29    end;\n30    writeln(ans);\n31  end.\n```\n\n{4}------------------------------------------------\n\n#### ● 判断题\n\n- 1) (1分) 输入的  $a$  和  $b$  值应在  $[0, n-1]$  的范围内。 ( )\n- 2) (1分) 第 17 行改成 “ $fa[i] := 0;$ ”，不影响程序运行结果。 ( )\n- 3) 若输入的  $a$  和  $b$  值均在  $[0, n-1]$  的范围内，则对于任意  $0 \\leq i < n$ ，都有  $0 \\leq fa[i] < n$ 。 ( )\n- 4) 若输入的  $a$  和  $b$  值均在  $[0, n-1]$  的范围内，则对于任意  $0 \\leq i < n$ ，都有  $1 \\leq cnt[i] \\leq n$ 。 ( )\n\n#### ● 选择题\n\n- 5) 当  $n$  等于 50 时，若  $a$ 、 $b$  的值都在  $[0, 49]$  的范围内，且在第 25 行时  $x$  总是不等于  $y$ ，那么输出为 ( )。  \nA. 1250                      B. 1276                      C. 1225                      D. 1176\n- 6) 此程序的时间复杂度是 ( )。  \nA.  $O(n^2)$                       B.  $O(\\log n)$                       C.  $O(n)$                       D.  $O(n \\log n)$\n\n- 3. 本题  $t$  是  $s$  的子序列的意思是：从  $s$  中删去若干个字符，可以得到  $t$ ；特别的，如果  $s=t$ ，那么  $t$  也是  $s$  的子序列；空串是任何串的子序列。例如 “ $acd$ ” 是 “ $abcde$ ” 的子序列，“ $acd$ ” 是 “ $acd$ ” 的子序列，但 “ $adc$ ” 不是 “ $abcde$ ” 的子序列。\n\n$s[x..y]$  表示  $s[x] \\dots s[y]$  共  $y-x+1$  个字符构成的字符串，若  $x > y$  则  $s[x..y]$  是空串。 $t[x..y]$  同理。\n\n```\n1  const\n2    maxl = 202;\n3  var\n4    suf, pre : array[1..maxl] of longint;\n5    s, t : ansistring;\n6    i, slen, tlen, j, tmp, ans : longint;\n7\n8  function max(a, b : longint) : longint;\n9  begin\n10   if a > b then exit(a);\n11   exit(b);\n12  end;\n13\n14 begin\n15   readln(s);\n16   readln(t);\n17   slen := length(s);\n```\n\n{5}------------------------------------------------\n\n```\n\n18  tlen := length(t);\n19  j := 1;\n20  for i := 1 to slen do\n21  begin\n22    if (j <= tlen) and (s[i] = t[j]) then\n23      inc(j);\n24    pre[i] := j; // t[1..j-1]是 s[1..i]的子序列\n25  end;\n26  j := tlen;\n27  for i := slen downto 1 do\n28  begin\n29    if (j >= 1) and (s[i] = t[j]) then\n30      dec(j);\n31    suf[i] := j; // t[j+1..tlen]是 s[i..slen]的子序列\n32  end;\n33  suf[slen+1] := tlen;\n34  ans := 0; j := 1; tmp := 1;\n35  for i := 1 to slen + 1 do\n36  begin\n37    while (j <= slen + 1) and (tmp >= suf[j] + 1) do\n38      inc(j);\n39    ans := max(ans, j - i - 1);\n40    tmp := pre[i];\n41  end;\n42  writeln(ans);\n43 end.\n\n```\n\n提示:\n\n$t[1..pre[i]-1]$ 是  $s[1..i]$ 的子序列;  \n $t[suf[i]+1..tlen]$ 是  $s[i..slen]$ 的子序列。\n\n#### ● 判断题\n\n- 1) (1分) 程序输出时,  $suf$  数组满足: 对任意  $0 < i \\leq slen$ ,  $suf[i] \\leq suf[i+1]$ 。( )\n- 2) (2分) 当  $t$  是  $s$  的子序列时, 输出一定不为 0。( )\n- 3) (2分) 程序运行到第 39 行时, “ $j - i - 1$ ”一定不小于 0。( )\n- 4) (2分) 当  $t$  是  $s$  的子序列时,  $pre$  数组和  $suf$  数组满足: 对任意  $0 < i \\leq slen$ ,  $pre[i] > suf[i+1] + 1$ 。( )\n\n#### ● 选择题\n\n{6}------------------------------------------------\n\n- 5) 若  $tlen=10$ , 输出为 0, 则  $slen$  最小为 ( )。  \n A. 12                      B. 0                      C. 1                      D. 10\n- 6) 若  $tlen=10$ , 输出为 2, 则  $slen$  最小为 ( )。  \n A. 1                      B. 10                      C. 0                      D. 12\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n- 1. （匠人的自我修养）一个匠人决定要学习  $n$  个新技术。要想成功学习一个新技术，他不仅要拥有一定的经验值，而且还必须要先学会若干个相关的技术。学会一个新技术之后，他的经验值会增加一个对应的值。给定每个技术的学习条件和习得后获得的经验值，给定他已有的经验值，请问他最多能学会多少个新技术。\n\n输入第一行有两个数，分别为新技术个数  $n$  ( $1 \\leq n \\leq 10^3$ )，以及已有经验值 ( $\\leq 10^7$ )。\n\n接下来  $n$  行。第  $i$  行的两个正整数，分别表示学习第  $i$  个技术所需的最低经验值 ( $\\leq 10^7$ )，以及学会第  $i$  个技术后可获得的经验值 ( $\\leq 10^4$ )。\n\n接下来  $n$  行。第  $i$  行的第一个数  $m_i$  ( $0 \\leq m_i < n$ )，表示第  $i$  个技术的相关技术数量。紧跟着  $m$  个两两不同的数，表示第  $i$  个技术的相关技术编号。输出最多能学会的新技术个数。\n\n下面的程序以  $O(n^2)$  的时间复杂度完成这个问题，试补全程序。\n\n```\n\n1  const\n2    maxn = 1001;\n3  var\n4    n, points, ans, i, j, m, fa : longint;\n5    unlock, threshold, bonus, cnt : array[0..maxn-1] of\nlongint;\n6    child : array[0..maxn-1, 0..maxn-1] of longint;\n7\n8  function find() : boolean;\n9  var\n10   i, target : longint;\n11  begin\n12   target := -1;\n13   for i := 1 to n do\n14     if (①) and (②) then\n15     begin\n16       target := i;\n17       break;\n18     end;\n```\n\n{7}------------------------------------------------\n\n```\n\n19  if (target = -1) then\n20    exit(false);\n21  unlock[target] := -1;\n22  ③;\n23  for i := 0 to cnt[target] - 1 do\n24    ④;\n25  exit(true);\n26 end;\n27\n28 begin\n29   readln(n, points);\n30   for i := 1 to n do\n31     begin\n32       cnt[i] := 0;\n33       read(threshold[i], bonus[i]);\n34     end;\n35   for i := 1 to n do\n36     begin\n37       read(m);\n38       ⑤;\n39       for j := 0 to m - 1 do\n40         begin\n41           read(fa);\n42           child[fa][cnt[fa]] := i;\n43           inc(cnt[fa]);\n44         end;\n45     end;\n46   ans := 0;\n47   while (find() = true) do\n48     inc(ans);\n49   writeln(ans);\n50 end.\n\n```\n\n1) ①处应填 ( )\n\n- A. `unlock[i] = 0`\n- B. `unlock[i] <= 0`\n- C. `unlock[i] >= 0`\n- D. `unlock[i] = -1`\n\n2) ②处应填 ( )\n\n- A. `threshold[i] > points`\n- B. `points >= threshold[i]`\n- C. `threshold[i] >= points`\n\n{8}------------------------------------------------\n\nD. `points > threshold[i]`\n\n3) ③处应填 ( )\n\n- A. `bonus[target] := 0`\n- B. `dec(cnt[target])`\n- C. `points := points + bonus[target]`\n- D. `target := -1`\n\n4) ④处应填 ( )\n\n- A. `unlock[child[target][i]] := 0`\n- B. `cnt[child[target][i]] := 0`\n- C. `cnt[child[target][i]] := cnt[child[target][i]] - 1`\n- D. `unlock[child[target][i]] := unlock[child[target][i]] - 1`\n\n5) ⑤处应填 ( )\n\n- A. `unlock[i] := 0`\n- B. `unlock[i] := -1`\n- C. `unlock[i] := m`\n- D. `unlock[i] := cnt[i]`\n\n2. (取石子) Alice 和 Bob 两个人在玩取石子游戏。他们制定了  $n$  条取石子的规则，第  $i$  条规则为：如果剩余石子的个数大于等于  $a[i]$  且大于等于  $b[i]$ ，那么他们可以取走  $b[i]$  个石子。他们轮流取石子。如果轮到某个人取石子，而他无法按照任何规则取走石子，那么他就输了。一开始石子有  $m$  个。请问先取石子的人是否有必胜的方法？\n\n输入第一行有两个正整数，分别为规则个数  $n$  ( $1 \\leq n \\leq 64$ )，以及石子个数  $m$  ( $\\leq 10^7$ )。接下来  $n$  行。第  $i$  行有两个正整数  $a[i]$  和  $b[i]$ 。 ( $1 \\leq a[i] \\leq 10^7, 1 \\leq b[i] \\leq 64$ )\n\n如果先取石子的人必胜，那么输出 “Win”，否则输出 “Loss”。\n\n提示：\n\n可以使用动态规划解决这个问题。由于  $b[i]$  不超过 64，所以可以使用 64 位无符号整数去压缩必要的状态。\n\n`status` 是胜负状态的二进制压缩，`trans` 是状态转移的二进制压缩。\n\n试补全程序。\n\n代码说明：\n\n“xor” 表示二进制异或运算符，它将两个参与运算的数中的每个对应的二进制位一一进行比较，若两个二进制位相同，则运算结果的对应二进制位为 0，反之为 1。\n\n“not” 表示二进制补码运算符，它将每个二进制位的 0 变为 1、1 变为 0；\n\n{9}------------------------------------------------\n\nqword 类型是 64 位无符号整数。\n\n```\n1  const\n2    maxn = 64;\n3  var\n4    status, trans : qword;\n5    i, j, n, m : longint;\n6    a, b : array[0..maxn-1] of longint;\n7    win : integer;\n8\n9  procedure swap(var a, b : longint);\n10 var\n11    t : longint;\n12 begin\n13    t := a; a := b; b := t;\n14 end;\n15\n16 begin\n17   read(n, m);\n18   for i := 0 to n - 1 do\n19     read(a[i], b[i]);\n20   for i := 0 to n - 1 do\n21     for j := i + 1 to n - 1 do\n22       if (a[i] > a[j]) then\n23       begin\n24         swap(a[i], a[j]);\n25         swap(b[i], b[j]);\n26       end;\n27   status := ①;\n28   trans := 0; j := 0;\n29   for i := 1 to m do\n30   begin\n31     while (j < n) and (②) do\n32     begin\n33       ③;\n34       inc(j);\n35     end;\n36     if ((④) > 0) then\n37       win := 1\n38     else\n39       win := 0;\n40     ⑤;\n41   end;\n```\n\n{10}------------------------------------------------\n\n```\n42 if (win = 1) then\n43     writeln('Win')\n44 else writeln('Loss');\n45 end.\n```\n\n1) ①处应填 ( )\n\n- A. `not qword(0)`    B. `1`    C. `0`    D. `not qword(0)`  \n`xor 1`\n\n2) ②处应填 ( )\n\n- A. `a[j] > i`    B. `a[j] <> i`    C. `a[j] = i`    D. `a[j] < i`\n\n3) ③处应填 ( )\n\n- A. `trans := trans + (qword(1) shl (b[j] - 1))`  \nB. `trans := trans or (qword(1) shl (b[j] - 1))`  \nC. `status := status or (qword(1) shl (b[j] - 1))`  \nD. `status := status + (qword(1) shl (b[j] - 1))`\n\n4) ④处应填 ( )\n\n- A. `not status and trans`    B. `not status or trans`  \nC. `status or trans`    D. `status and trans`\n\n5) ⑤处应填 ( )\n\n- A. `status := trans shr 1 xor win`  \nB. `trans := status xor trans or win`  \nC. `trans := status or trans xor win`  \nD. `status := status shl 1 xor win`",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "b230b8f21d8e82d55c0d311c8c32ef73_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 18
+          },
+          {
+            "page_id": 9,
+            "num_blocks": 3
+          },
+          {
+            "page_id": 10,
+            "num_blocks": 12
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 11,
+      "total_cost": 3.3,
+      "cost_breakdown": {
+        "final_cost_cents": 3.3
+      },
+      "runtime": 37.808696269989014,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2019CCF 非专业级别软件能力认证第一轮\n\n## (CSP-S) 提高级 Pascal 语言试题 B 卷\n\n认证时间：2019 年 10 月 19 日 09:30~11:30\n\n考生注意事项：\n\n- 试题纸共有 11 页，答题纸共有 1 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n一、单项选择题（共 15 题，每题 2 分，共计 30 分；每题有且仅有一个正确选项）\n\n1.  $a$  是 integer,  $x$  和  $y$  是 real。若  $a$  的值为 7,  $x$  的值为 2.5,  $y$  的值为 4.7, 则表达式  $x + a \\bmod 3 * \\text{trunc}(x + y) \\bmod 2$  的值是：（ ）  \nA. 0.000000      B. 2.750000      C. 3.500000      D. 2.500000\n2. 下列属于图像文件格式的有（ ）  \nA. MPEG      B. WMV      C. AVI      D. JPEG\n3. 二进制数 11 1011 1001 0111 和 01 0110 1110 1011 进行逻辑或运算的结果是（ ）。  \nA. 11 1111 1111 1101      B. 11 1111 1101 1111  \nC. 11 1111 1111 1111      D. 10 1111 1111 1111\n4. 编译器的功能是（ ）  \nA. 将低级语言翻译成高级语言  \nB. 将源程序重新组合  \nC. 将一种编程语言翻译成自然语言  \nD. 将一种语言（通常是高级语言）翻译成另一种语言（通常是低级语言）\n5. 设变量  $x$  为 real 型且已赋值，则以下语句中能将  $x$  中的数值保留到小数点后两位，并将第三位四舍五入的是（ ）  \nA.  $x := (x * 100 + 0.5) / 100.0$   \nB.  $x := (x / 100 + 0.5) * 100.0$   \nC.  $x := x * 100 + 0.5 / 100.0$   \nD.  $x := \\text{trunc}(x * 100 + 0.5) / 100.0$\n6. 由数字 1, 1, 2, 4, 8, 8 所组成的不同的 4 位数的个数是（ ）。  \nA. 98      B. 104      C. 102      D. 100\n\n{1}------------------------------------------------\n\n- 7. 排序的算法很多，若按排序的稳定性和不稳定性分类，则（ ）是不稳定排序。  \nA. 快速排序 B. 直接插入排序 C. 归并排序 D. 冒泡排序\n- 8.  $G$  是一个非连通无向图（没有重边和自环），共有 28 条边，则该图至少有（ ）个顶点。  \nA. 9 B. 8 C. 10 D. 11\n- 9. 一些数字可以颠倒过来看，例如 0、1、8 颠倒过来还是本身，6 颠倒过来是 9，9 颠倒过来看还是 6，其他数字颠倒过来都不构成数字。类似的，一些多位数也可以颠倒过来看，比如 106 颠倒过来是 901。假设某个城市的车牌只有 5 位数字，每一位都可以取 0 到 9。请问这个城市有多少个车牌倒过来恰好还是原来的车牌，并且车牌上的 5 位数能被 3 整除？（ ）  \nA. 20 B. 25 C. 30 D. 40\n- 10. 一次期末考试，某班有 15 人数学得满分，有 12 人语文得满分，并且有 4 人语、数都是满分，那么这个班至少有一门得满分的同学有多少人？（ ）。  \nA. 21 B. 23 C. 22 D. 20\n- 11. 设  $A$  和  $B$  是两个长为  $n$  的有序数组，现在需要将  $A$  和  $B$  合并成一个排好序的数组，请问任何以元素比较作为基本运算的归并算法，在最坏情况下至少要做多少次比较？（ ）。  \nA.  $n^2$  B.  $n \\log n$  C.  $2n - 1$  D.  $2n$\n- 12. 以下哪个结构可以用来存储图（ ）。  \nA. 二叉树 B. 队列 C. 邻接矩阵 D. 栈\n- 13. 以下哪些算法不属于贪心算法？（ ）。  \nA. Dijkstra 算法 B. Prim 算法 C. Kruskal 算法 D. Floyd 算法\n- 14. 有一个等比数列，共有奇数项，其中第一项和最后一项分别是 2 和 118098，中间一项是 486，请问以下哪个数是可能的公比？（ ）。  \nA. 2 B. 5 C. 4 D. 3\n- 15. 有正实数构成的数字三角形排列形式如图所示。第一行的数为  $a_{1,1}$ ；第二行的数从左到右依次为  $a_{2,1}, a_{2,2}$ ，第  $n$  行的数为  $a_{n,1}, a_{n,2}, \\dots, a_{n,n}$ 。从  $a_{1,1}$  开始，每一行的数  $a_{i,j}$  只有两条边可以分别通向下一行的两个数  $a_{i+1,j}$  和  $a_{i+1,j+1}$ 。用动态规划算法找出一条从  $a_{1,1}$  向下通到  $a_{n,1}, a_{n,2}, \\dots, a_{n,n}$  中某个数的路径，使得该路径上的数之和达到最大。\n\n{2}------------------------------------------------\n\n![A triangular diagram representing a path in a grid. The top node is a_{1,1}. It branches to a_{2,1} and a_{2,2}. These branch to a_{3,1}, a_{3,2}, and a_{3,3}. Ellipses indicate further rows down to a_{n,1}, a_{n,2}, ..., a_{n,n}.](b230b8f21d8e82d55c0d311c8c32ef73_img.jpg)\n\nA triangular diagram representing a path in a grid. The top node is a\\_{1,1}. It branches to a\\_{2,1} and a\\_{2,2}. These branch to a\\_{3,1}, a\\_{3,2}, and a\\_{3,3}. Ellipses indicate further rows down to a\\_{n,1}, a\\_{n,2}, ..., a\\_{n,n}.\n\n令  $C[i][j]$  是从  $a_{1,1}$  到  $a_{i,j}$  的路径上的数的最大和，并且\n\n$C[i][0]=C[0][j]=0$ ，则  $C[i][j] = ( )$ 。\n\n- A.  $\\max\\{C[i-1][j-1], C[i-1][j]\\} + a_{i,j}$\n- B.  $\\max\\{C[i-1][j-1], C[i-1][j]\\} + 1$\n- C.  $C[i-1][j-1] + C[i-1][j]$\n- D.  $\\max\\{C[i][j-1], C[i-1][j]\\} + a_{i,j}$\n\n二、阅读程序（程序输入不超过数组或字符串定义的范围；判断题正确填  $\\checkmark$ ，错误填  $\\times$ ；除特殊说明外，判断题 1.5 分，选择题 4 分，共计 40 分）\n\n1.\n\n```\n1 var\n2   n, ans, i: longint;\n3   a: array [0..99] of longint;\n4 begin\n5   read(n);\n6   for i := 1 to n do\n7     read(a[i]);\n8   ans := 1;\n9   for i := 1 to n do\n10  begin\n11    if (i > 1) and (a[i] < a[i - 1]) then\n12      ans := i;\n13    while (ans < n) and (a[i] >= a[ans + 1]) do\n14      ans := ans + 1;\n15    writeln(ans);\n16  end;\n17 end.\n```\n\n● 判断题\n\n- 1) （1 分）第 15 行输出 ans 时，ans 的值一定大于 i。（ ）\n- 2) （1 分）程序输出的 ans 小于等于 n。（ ）\n- 3) 若将第 11 行的 “<” 改为 “!=”，程序输出的结果不会改变。（ ）\n\n{3}------------------------------------------------\n\n4) 当程序执行到第 15 行时, 若  $ans - i > 2$ , 则  $a[i + 1] \\leq a[i]$ 。( )\n\n#### ● 选择题\n\n5) (3 分) 若输入的 a 数组是一个严格单调递增的数列, 此程序的时间复杂度是 ( )。\n\n- A.  $O(n)$                       B.  $O(\\log n)$                       C.  $O(n^2)$                       D.  $O(n \\log n)$\n\n6) 最坏情况下, 此程序的时间复杂度是 ( )。\n\n- A.  $O(\\log n)$                       B.  $O(n^2)$                       C.  $O(n \\log n)$                       D.  $O(n)$\n\n#### 2.\n\n```\n1  const\n2    maxn = 1000;\n3  var\n4    ans, i, n, a, b, x, y : longint;\n5    fa, cnt : array[0..maxn-1] of longint;\n6\n7  function getRoot(v : longint) : longint;\n8  begin\n9    if (fa[v] = v) then exit(v);\n10   exit(getRoot(fa[v]));\n11  end;\n12\n13  begin\n14    read(n);\n15    for i := 0 to n - 1 do\n16    begin\n17      fa[i] := i;\n18      cnt[i] := 1;\n19    end;\n20    ans := 0;\n21    for i := 0 to n - 2 do\n22    begin\n23      read(a, b);\n24      x := getRoot(a);\n25      y := getRoot(b);\n26      ans := ans + cnt[x] * cnt[y];\n27      fa[x] := y;\n28      cnt[y] := cnt[y] + cnt[x];\n29    end;\n30    writeln(ans);\n31  end.\n```\n\n{4}------------------------------------------------\n\n#### ● 判断题\n\n- 1) (1分) 输入的  $a$  和  $b$  值应在  $[0, n-1]$  的范围内。 ( )\n- 2) (1分) 第 17 行改成 “ $fa[i] := 0;$ ”，不影响程序运行结果。 ( )\n- 3) 若输入的  $a$  和  $b$  值均在  $[0, n-1]$  的范围内，则对于任意  $0 \\leq i < n$ ，都有  $0 \\leq fa[i] < n$ 。 ( )\n- 4) 若输入的  $a$  和  $b$  值均在  $[0, n-1]$  的范围内，则对于任意  $0 \\leq i < n$ ，都有  $1 \\leq cnt[i] \\leq n$ 。 ( )\n\n#### ● 选择题\n\n- 5) 当  $n$  等于 50 时，若  $a$ 、 $b$  的值都在  $[0, 49]$  的范围内，且在第 25 行时  $x$  总是不等于  $y$ ，那么输出为 ( )。  \nA. 1250                      B. 1276                      C. 1225                      D. 1176\n- 6) 此程序的时间复杂度是 ( )。  \nA.  $O(n^2)$                       B.  $O(\\log n)$                       C.  $O(n)$                       D.  $O(n \\log n)$\n\n- 3. 本题  $t$  是  $s$  的子序列的意思是：从  $s$  中删去若干个字符，可以得到  $t$ ；特别的，如果  $s=t$ ，那么  $t$  也是  $s$  的子序列；空串是任何串的子序列。例如 “ $acd$ ” 是 “ $abcde$ ” 的子序列，“ $acd$ ” 是 “ $acd$ ” 的子序列，但 “ $adc$ ” 不是 “ $abcde$ ” 的子序列。\n\n$s[x..y]$  表示  $s[x] \\dots s[y]$  共  $y-x+1$  个字符构成的字符串，若  $x > y$  则  $s[x..y]$  是空串。 $t[x..y]$  同理。\n\n```\n1  const\n2    maxl = 202;\n3  var\n4    suf, pre : array[1..maxl] of longint;\n5    s, t : ansistring;\n6    i, slen, tlen, j, tmp, ans : longint;\n7\n8  function max(a, b : longint) : longint;\n9  begin\n10   if a > b then exit(a);\n11   exit(b);\n12  end;\n13\n14 begin\n15   readln(s);\n16   readln(t);\n17   slen := length(s);\n```\n\n{5}------------------------------------------------\n\n```\n\n18  tlen := length(t);\n19  j := 1;\n20  for i := 1 to slen do\n21  begin\n22    if (j <= tlen) and (s[i] = t[j]) then\n23      inc(j);\n24    pre[i] := j; // t[1..j-1]是 s[1..i]的子序列\n25  end;\n26  j := tlen;\n27  for i := slen downto 1 do\n28  begin\n29    if (j >= 1) and (s[i] = t[j]) then\n30      dec(j);\n31    suf[i] := j; // t[j+1..tlen]是 s[i..slen]的子序列\n32  end;\n33  suf[slen+1] := tlen;\n34  ans := 0; j := 1; tmp := 1;\n35  for i := 1 to slen + 1 do\n36  begin\n37    while (j <= slen + 1) and (tmp >= suf[j] + 1) do\n38      inc(j);\n39    ans := max(ans, j - i - 1);\n40    tmp := pre[i];\n41  end;\n42  writeln(ans);\n43 end.\n\n```\n\n提示:\n\n$t[1..pre[i]-1]$ 是  $s[1..i]$ 的子序列;  \n $t[suf[i]+1..tlen]$ 是  $s[i..slen]$ 的子序列。\n\n#### ● 判断题\n\n- 1) (1分) 程序输出时,  $suf$  数组满足: 对任意  $0 < i \\leq slen$ ,  $suf[i] \\leq suf[i+1]$ 。( )\n- 2) (2分) 当  $t$  是  $s$  的子序列时, 输出一定不为 0。( )\n- 3) (2分) 程序运行到第 39 行时, “ $j - i - 1$ ”一定不小于 0。( )\n- 4) (2分) 当  $t$  是  $s$  的子序列时,  $pre$  数组和  $suf$  数组满足: 对任意  $0 < i \\leq slen$ ,  $pre[i] > suf[i+1] + 1$ 。( )\n\n#### ● 选择题\n\n{6}------------------------------------------------\n\n- 5) 若  $tlen=10$ , 输出为 0, 则  $slen$  最小为 ( )。  \n A. 12                      B. 0                      C. 1                      D. 10\n- 6) 若  $tlen=10$ , 输出为 2, 则  $slen$  最小为 ( )。  \n A. 1                      B. 10                      C. 0                      D. 12\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n- 1. （匠人的自我修养）一个匠人决定要学习  $n$  个新技术。要想成功学习一个新技术，他不仅要拥有一定的经验值，而且还必须要先学会若干个相关的技术。学会一个新技术之后，他的经验值会增加一个对应的值。给定每个技术的学习条件和习得后获得的经验值，给定他已有的经验值，请问他最多能学会多少个新技术。\n\n输入第一行有两个数，分别为新技术个数  $n$  ( $1 \\leq n \\leq 10^3$ )，以及已有经验值 ( $\\leq 10^7$ )。\n\n接下来  $n$  行。第  $i$  行的两个正整数，分别表示学习第  $i$  个技术所需的最低经验值 ( $\\leq 10^7$ )，以及学会第  $i$  个技术后可获得的经验值 ( $\\leq 10^4$ )。\n\n接下来  $n$  行。第  $i$  行的第一个数  $m_i$  ( $0 \\leq m_i < n$ )，表示第  $i$  个技术的相关技术数量。紧跟着  $m$  个两两不同的数，表示第  $i$  个技术的相关技术编号。输出最多能学会的新技术个数。\n\n下面的程序以  $O(n^2)$  的时间复杂度完成这个问题，试补全程序。\n\n```\n\n1  const\n2    maxn = 1001;\n3  var\n4    n, points, ans, i, j, m, fa : longint;\n5    unlock, threshold, bonus, cnt : array[0..maxn-1] of\nlongint;\n6    child : array[0..maxn-1, 0..maxn-1] of longint;\n7\n8  function find() : boolean;\n9  var\n10   i, target : longint;\n11  begin\n12   target := -1;\n13   for i := 1 to n do\n14     if (①) and (②) then\n15     begin\n16       target := i;\n17       break;\n18     end;\n```\n\n{7}------------------------------------------------\n\n```\n\n19  if (target = -1) then\n20    exit(false);\n21  unlock[target] := -1;\n22  ③;\n23  for i := 0 to cnt[target] - 1 do\n24    ④;\n25  exit(true);\n26 end;\n27\n28 begin\n29   readln(n, points);\n30   for i := 1 to n do\n31     begin\n32       cnt[i] := 0;\n33       read(threshold[i], bonus[i]);\n34     end;\n35   for i := 1 to n do\n36     begin\n37       read(m);\n38       ⑤;\n39       for j := 0 to m - 1 do\n40         begin\n41           read(fa);\n42           child[fa][cnt[fa]] := i;\n43           inc(cnt[fa]);\n44         end;\n45     end;\n46   ans := 0;\n47   while (find() = true) do\n48     inc(ans);\n49   writeln(ans);\n50 end.\n\n```\n\n1) ①处应填 ( )\n\n- A. `unlock[i] = 0`\n- B. `unlock[i] <= 0`\n- C. `unlock[i] >= 0`\n- D. `unlock[i] = -1`\n\n2) ②处应填 ( )\n\n- A. `threshold[i] > points`\n- B. `points >= threshold[i]`\n- C. `threshold[i] >= points`\n\n{8}------------------------------------------------\n\nD. `points > threshold[i]`\n\n3) ③处应填 ( )\n\n- A. `bonus[target] := 0`\n- B. `dec(cnt[target])`\n- C. `points := points + bonus[target]`\n- D. `target := -1`\n\n4) ④处应填 ( )\n\n- A. `unlock[child[target][i]] := 0`\n- B. `cnt[child[target][i]] := 0`\n- C. `cnt[child[target][i]] := cnt[child[target][i]] - 1`\n- D. `unlock[child[target][i]] := unlock[child[target][i]] - 1`\n\n5) ⑤处应填 ( )\n\n- A. `unlock[i] := 0`\n- B. `unlock[i] := -1`\n- C. `unlock[i] := m`\n- D. `unlock[i] := cnt[i]`\n\n2. (取石子) Alice 和 Bob 两个人在玩取石子游戏。他们制定了  $n$  条取石子的规则，第  $i$  条规则为：如果剩余石子的个数大于等于  $a[i]$  且大于等于  $b[i]$ ，那么他们可以取走  $b[i]$  个石子。他们轮流取石子。如果轮到某个人取石子，而他无法按照任何规则取走石子，那么他就输了。一开始石子有  $m$  个。请问先取石子的人是否有必胜的方法？\n\n输入第一行有两个正整数，分别为规则个数  $n$  ( $1 \\leq n \\leq 64$ )，以及石子个数  $m$  ( $\\leq 10^7$ )。接下来  $n$  行。第  $i$  行有两个正整数  $a[i]$  和  $b[i]$ 。 ( $1 \\leq a[i] \\leq 10^7, 1 \\leq b[i] \\leq 64$ )\n\n如果先取石子的人必胜，那么输出 “Win”，否则输出 “Loss”。\n\n提示：\n\n可以使用动态规划解决这个问题。由于  $b[i]$  不超过 64，所以可以使用 64 位无符号整数去压缩必要的状态。\n\n`status` 是胜负状态的二进制压缩，`trans` 是状态转移的二进制压缩。\n\n试补全程序。\n\n代码说明：\n\n“xor” 表示二进制异或运算符，它将两个参与运算的数中的每个对应的二进制位一一进行比较，若两个二进制位相同，则运算结果的对应二进制位为 0，反之为 1。\n\n“not” 表示二进制补码运算符，它将每个二进制位的 0 变为 1、1 变为 0；\n\n{9}------------------------------------------------\n\nqword 类型是 64 位无符号整数。\n\n```\n1  const\n2    maxn = 64;\n3  var\n4    status, trans : qword;\n5    i, j, n, m : longint;\n6    a, b : array[0..maxn-1] of longint;\n7    win : integer;\n8\n9  procedure swap(var a, b : longint);\n10 var\n11    t : longint;\n12 begin\n13    t := a; a := b; b := t;\n14 end;\n15\n16 begin\n17   read(n, m);\n18   for i := 0 to n - 1 do\n19     read(a[i], b[i]);\n20   for i := 0 to n - 1 do\n21     for j := i + 1 to n - 1 do\n22       if (a[i] > a[j]) then\n23       begin\n24         swap(a[i], a[j]);\n25         swap(b[i], b[j]);\n26       end;\n27   status := ①;\n28   trans := 0; j := 0;\n29   for i := 1 to m do\n30   begin\n31     while (j < n) and (②) do\n32     begin\n33       ③;\n34       inc(j);\n35     end;\n36     if ((④) > 0) then\n37       win := 1\n38     else\n39       win := 0;\n40     ⑤;\n41   end;\n```\n\n{10}------------------------------------------------\n\n```\n42 if (win = 1) then\n43     writeln('Win')\n44 else writeln('Loss');\n45 end.\n```\n\n1) ①处应填 ( )\n\n- A. `not qword(0)`    B. `1`    C. `0`    D. `not qword(0)`  \n`xor 1`\n\n2) ②处应填 ( )\n\n- A. `a[j] > i`    B. `a[j] <> i`    C. `a[j] = i`    D. `a[j] < i`\n\n3) ③处应填 ( )\n\n- A. `trans := trans + (qword(1) shl (b[j] - 1))`  \nB. `trans := trans or (qword(1) shl (b[j] - 1))`  \nC. `status := status or (qword(1) shl (b[j] - 1))`  \nD. `status := status + (qword(1) shl (b[j] - 1))`\n\n4) ④处应填 ( )\n\n- A. `not status and trans`    B. `not status or trans`  \nC. `status or trans`    D. `status and trans`\n\n5) ⑤处应填 ( )\n\n- A. `status := trans shr 1 xor win`  \nB. `trans := status xor trans or win`  \nC. `trans := status or trans xor win`  \nD. `status := status shl 1 xor win`",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "b230b8f21d8e82d55c0d311c8c32ef73_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 18
+        },
+        {
+          "page_id": 9,
+          "num_blocks": 3
+        },
+        {
+          "page_id": 10,
+          "num_blocks": 12
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 11,
+    "total_cost": 3.3,
+    "cost_breakdown": {
+      "final_cost_cents": 3.3
+    },
+    "runtime": 37.808696269989014,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 3.3
+  },
+  "page_count": 11,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2019/提高级-CSP-S1/CSP-J-S 2019_提高级-CSP-S1_Pascal.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "b230b8f21d8e82d55c0d311c8c32ef73_img.jpg"
+  ]
+}

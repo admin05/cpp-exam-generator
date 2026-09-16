@@ -1,0 +1,143 @@
+{
+  "request_id": "RQpm5EDz-e0RQFogjMVXow",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:02:44.852070+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "RQpm5EDz-e0RQFogjMVXow",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/RQpm5EDz-e0RQFogjMVXow",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![IOI logo with 'PORTUGAL 1998' text below it.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI logo with 'PORTUGAL 1998' text below it.\n\n![IOI logo featuring a dolphin jumping over a wave.](64662465bba247703fdec49c8f3309f9_img.jpg)\n\nIOI logo featuring a dolphin jumping over a wave.\n\n# Party Lamps\n\nTo brighten up the gala dinner of the IOI'98 we have a set of  $N$  coloured lamps numbered from 1 to  $N$ . The lamps are connected to four buttons:\n\n- button 1 -- when this button is pressed, all the lamps change their state: those that are ON are turned OFF and those that are OFF are turned ON.\n- button 2 -- changes the state of all the odd numbered lamps.\n- button 3 -- changes the state of all the even numbered lamps.\n- button 4 -- changes the state of the lamps whose number is of the form  $3K+1$  (with  $K \\geq 0$ ), i.e., 1, 4, 7, ...\n\nThere is a counter  $C$  which records the total number of button presses.\n\nWhen the party starts, all the lamps are ON and the counter  $C$  is set to zero.\n\n## Task\n\nYou are given the value of counter  $C$  and information on the final state of some of the lamps. Write a program to determine all the possible final configurations of the  $N$  lamps that are consistent with the given information, without repetitions.\n\n## Input Data\n\nThe file named PARTY.IN with four lines, describing the number  $N$  of lamps available, the number  $C$  of button presses, and the state of some of the lamps in the final configuration.\n\nThe first line contains the number  $N$  and the second line the final value of counter  $C$ . The third line lists the lamp numbers you are informed to be ON in the final configuration, separated by one space and terminated by the integer **-1**. The fourth line lists the lamp numbers you are informed to be OFF in the final configuration, separated by one space and terminated by the integer **-1**.\n\n### Sample Input:\n\n```\n10\n1\n-1\n7 -1\n```\n\nIn this case, there are 10 lamps and only one button has been pressed. Lamp 7 is OFF in the final configuration.\n\n## Output Data\n\nThe file PARTY.OUT must contain all the possible final configurations (without repetitions) of all the lamps. Each possible configuration must be written on a different line. Configurations may be listed in arbitrary order.\n\nEach line has  $N$  characters, where the first character represents the state of lamp 1 and the last character represents the state of lamp  $N$ . A **0** (zero) stands for a lamp that is OFF, and a **1** (one) stands for a lamp that is ON.\n\n### Sample Output:\n\n```\n0000000000\n0110110110\n0101010101\n```\n\nIn this case, there are three possible final configurations:\n\n- either all lamps are OFF;\n- or lamps 1, 4, 7, 10 are OFF, and lamps 2, 3, 5, 6, 8, 9 are ON;\n- or lamps 1, 3, 5, 7, 9 are OFF, and lamps 2, 4, 6, 8, 10 are ON.\n\n## Constraints\n\nThe parameters  $N$  and  $C$  are constrained by:\n\n$$10 \\leq N \\leq 100$$\n\n$$1 \\leq C \\leq 10000$$\n\nThe number of lamps you are informed to be ON, in the final configuration, is less than or equal to 2.\n\nThe number of lamps you are informed to be OFF, in the final configuration, is less than or equal to 2.\n\nThere is at least one possible final configuration for each input test file.",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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",
+        "64662465bba247703fdec49c8f3309f9_img.jpg": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABlAKsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iikJAIHrQAtIfrRuFNY4PTOetAA2BjcfpQOvJ61wPin4mWWiXv9l2Mf2y/P/LNT0rCi8QeMr4eaZBYRt0VlDYoA9a3BWxuAHuaaJYicF1B9N1eT3T+IJ7Zt2rBpT3CYrJt9M1VFLXGtEXGSd+DjHbigD3EHjIYYo3cZ614sNX8YaWc2+oC9jH8IjAq3bfFrUrFtmraQ6kfxbhQB6/15FB9ua8gm+NTSNttNJkf/AIFVU/FLxC53R6DLtz/fFAHtIJxyKDgV5LD8U9RiQPfaU0KDqS4ro9D+JWl624jgzuzgjB60AdxxQDmo0cSoHHANSDpQAtFFGc0AFFFFABRRRQAUxjhufwp9Nbg0AN+XG0nmud8Ya3/YHhu7vFGJkX5FzyTUXjbxHJ4a0Z7iCMvcP9yvMJr+78RXUFxrOoIsMR3GHbjdntQAeE9DNosmrXf7y9uWLfOMlRnI6/Wukabd/H8vpWRL4jswP9G/0iQfKI04xikTWJ5Bl9OkjX1JFAF+R0ZsAmmlgGwORjvTLe4S4hMqLhfWonDFs7utAD/MIbrxUM0kRGGVW+ozTidnDDmqxO7PGB60AJuX/lnDGvvtFL5jkbSBxycCoxvQ5yCKR5Ahy38XBoAw9HsLrx14re0kfy7C1J3474Ne7aNoWkaVapFaQxjaPvYGTXzna6xc+CPFrzFWNndk7iO2TXtOl6pDqdlHc2c29COx6UAd8vuRj2pRiuRW/uE5yTitC317GBKvHrQBvdKUHPaoILqG5XdG4NTBs8UAOoozRQAUUUUAFNbnIPSnU0jJxjigDP1XSrfV7N7a5QFSOCa83vvhlqdqzyadfRYPRGjLV6uR/Dg49aXGKAPCpPBnjyFiYZLXHqLUVEnhb4hqSxkhcrzgW/X9a96JwM54rJ1HUERfLjOX77aAPFr4+J9P0qdJ9Kla4wcbFAH5VLoGsx6xZZVdlxFxJGTyMcV6RLKsjHcuMc5fnNeYeKdEn0HUxr+jRM8ZP72BfbqfTqaAL9xcrCwDfcY4Y+lIf3o3ICU7MDxVW01Ow160eNZFWZ1w8eeVNcjHq+uaXqkmmxQNPGDkAKM4/GgDsWIJwrjjtTXdgMAZ9awIPGVrFMYb+1e2k6ZcirUev6VcsRFqEJYnG3mgCW8tYL63aK4jDA9GPaufs59Z8E332q2driyJzsHOB+NdI0gdN6fMmMYHeoTMrxngEfdwwzxQB3Ph/wAUWHiOxE1tKPPIy8WeQa2UkD8dNvGK8SmsJtHuRqWkOySZzJHkkH14r0nw34hi16wEkZHnxfLMo7NQB1kMs0TBkbArbsdYWRhG/B9a5aOc7dxOFqyJRkY4NAHchgRleaUDmub03VGiYRyng9zXRRsHXcpyDQA+iiigAooooAKQjNLUNxKIomYmgClqd4IIiqnk1zUkxJLN1NWLmdppWLdBWbNN19fSgAkmJ61UldZAVIGD13ciiSb5TmqE0y7cA4b1PSgDG1Dwnp9zMZ7V2in6koxA/IVjXPhCWS4Sdr9EnXgNzjFdLJcYHP5rxVOa7+XbuG3360AUzpYeJYL0W8wH8aRgE/jWZdeCdGnYmMSRZ9JCDn8K05r4K2CcrjtVdr4L0NAGE/hDU9NbzdM1FXQf8sn3OT+dKNTurcBNUsnt3BwJGACkeuK2xqBJ+8BTzcQzAx3KrKhHTHNAGeJ0eIS25EiMOSORVXT7k6Drcd1BkW8/yyrnjcTjNTTaQ8IafSpcDqY3y1U0mE8brKv74AqU9/WgD1SO4j2KVbdG3INWopTnI5FcV4U1HzNPNnI2+WDC+9dVbyg4+YAUAa6vvwehFb2laiAfKdvpXLrIY+eoq1DLgiUfLjp70Ad4ORmkJOapaXdi5tx8wJFXQQeaAHUh60tIaAEFY+tXOF8tTzWs7bYya5W9n8y5cnkUAUZ32R9eTWfK+Bz1qaeUOxHpVGeT5STxQBBNNjOazZ5wGJ7U64m61k3MuSQDxQAtxeY6Hisy5vgOAar3dxtyAc1nbixOaAJpbxmOBUZnc96jAGeaUUAPEzg9alS8ljOUAJ9xUFJwRzn8KANKG9G4M7EMewOBSakdMkRZLq4WCUcoQdoJ9/Ws9eFI9e5qs2jWd0xa5kldycIA/AoAl0bX47DXDKSBGT5bt2JPevT4G3orREMjDOex+lePX9rPpEflvCskef8AWheB9fep9P16/wBOeKaOR5Itp+QnP5UAe0wygYyc+1XY2A4J49K5Pw9rsWt6atwnEi43L3FdFE29mycA80AdFpV0YbwKPuNXVAjAxXCWsmxVPcGuytpg9tG24HIoAuVDNdRQsFdwCamry7x3cXCa86xXDIBt4DYx8ooA9HnmRrZyjg8VyFxu+bdnr261wi6tqMMLbbt2H+8acmvXqSZL7uOjUAdPIUCnPH161lzOu07SSPeqY14S/wCsX5vbpUTaisucL+VAEdzPtBGKwb64ABJ4NasxaUnBrNurB5edwoAwnYSMTzSAcZz+dayaVgcutPOlwqmZHGfY0AY/J6YNAVj14rbjtbWMZGWqRTCBxCPxFAGF5fHWm7SOOtbxZc4+zj/vmmkRk5MGPoKAMPae+aQHnAOD1FbhSBxymKjexgflGANAFRLdNT097aZ+WG7n1Fc1/wAIxrFvIfJ/eLjgYJ4rsY9OVSpSUDjPWtGKV4ApDgkUAcz4Sub/AETUcXlsyQTdRtx7V6nbPG+Hjb5W5Ga5w6hbkbp4UfsAB0qU64YIlSFEO3jkUAdnaiRmZSox64rctrlY7dELdB615ZLr97IxCyBfXbVT7beNz9pm5/2qAPoOvOfF9vFLr0u9cn5f/QRRRQBzFzZQrAwUEfQ1UltUROMk46miigCo0Qi5B60gX0JFFFAEJRt3EjCpFjOzBdjzRRQA14Bj7xpwiVo1Dc896KKAHRomXG0cColbAPA60UUANeU7xwKej5DZAoooASPa2MqOtKYEd242/SiigCF4gjYBNKUxjk0UUAL5YxmhUDA9sGiigCfyVXzG71JGBsHFFFAH/9k="
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 31
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 8.018610000610352,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![IOI logo with 'PORTUGAL 1998' text below it.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI logo with 'PORTUGAL 1998' text below it.\n\n![IOI logo featuring a dolphin jumping over a wave.](64662465bba247703fdec49c8f3309f9_img.jpg)\n\nIOI logo featuring a dolphin jumping over a wave.\n\n# Party Lamps\n\nTo brighten up the gala dinner of the IOI'98 we have a set of  $N$  coloured lamps numbered from 1 to  $N$ . The lamps are connected to four buttons:\n\n- button 1 -- when this button is pressed, all the lamps change their state: those that are ON are turned OFF and those that are OFF are turned ON.\n- button 2 -- changes the state of all the odd numbered lamps.\n- button 3 -- changes the state of all the even numbered lamps.\n- button 4 -- changes the state of the lamps whose number is of the form  $3K+1$  (with  $K \\geq 0$ ), i.e., 1, 4, 7, ...\n\nThere is a counter  $C$  which records the total number of button presses.\n\nWhen the party starts, all the lamps are ON and the counter  $C$  is set to zero.\n\n## Task\n\nYou are given the value of counter  $C$  and information on the final state of some of the lamps. Write a program to determine all the possible final configurations of the  $N$  lamps that are consistent with the given information, without repetitions.\n\n## Input Data\n\nThe file named PARTY.IN with four lines, describing the number  $N$  of lamps available, the number  $C$  of button presses, and the state of some of the lamps in the final configuration.\n\nThe first line contains the number  $N$  and the second line the final value of counter  $C$ . The third line lists the lamp numbers you are informed to be ON in the final configuration, separated by one space and terminated by the integer **-1**. The fourth line lists the lamp numbers you are informed to be OFF in the final configuration, separated by one space and terminated by the integer **-1**.\n\n### Sample Input:\n\n```\n10\n1\n-1\n7 -1\n```\n\nIn this case, there are 10 lamps and only one button has been pressed. Lamp 7 is OFF in the final configuration.\n\n## Output Data\n\nThe file PARTY.OUT must contain all the possible final configurations (without repetitions) of all the lamps. Each possible configuration must be written on a different line. Configurations may be listed in arbitrary order.\n\nEach line has  $N$  characters, where the first character represents the state of lamp 1 and the last character represents the state of lamp  $N$ . A **0** (zero) stands for a lamp that is OFF, and a **1** (one) stands for a lamp that is ON.\n\n### Sample Output:\n\n```\n0000000000\n0110110110\n0101010101\n```\n\nIn this case, there are three possible final configurations:\n\n- either all lamps are OFF;\n- or lamps 1, 4, 7, 10 are OFF, and lamps 2, 3, 5, 6, 8, 9 are ON;\n- or lamps 1, 3, 5, 7, 9 are OFF, and lamps 2, 4, 6, 8, 10 are ON.\n\n## Constraints\n\nThe parameters  $N$  and  $C$  are constrained by:\n\n$$10 \\leq N \\leq 100$$\n\n$$1 \\leq C \\leq 10000$$\n\nThe number of lamps you are informed to be ON, in the final configuration, is less than or equal to 2.\n\nThe number of lamps you are informed to be OFF, in the final configuration, is less than or equal to 2.\n\nThere is at least one possible final configuration for each input test file.",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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",
+      "64662465bba247703fdec49c8f3309f9_img.jpg": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABlAKsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iikJAIHrQAtIfrRuFNY4PTOetAA2BjcfpQOvJ61wPin4mWWiXv9l2Mf2y/P/LNT0rCi8QeMr4eaZBYRt0VlDYoA9a3BWxuAHuaaJYicF1B9N1eT3T+IJ7Zt2rBpT3CYrJt9M1VFLXGtEXGSd+DjHbigD3EHjIYYo3cZ614sNX8YaWc2+oC9jH8IjAq3bfFrUrFtmraQ6kfxbhQB6/15FB9ua8gm+NTSNttNJkf/AIFVU/FLxC53R6DLtz/fFAHtIJxyKDgV5LD8U9RiQPfaU0KDqS4ro9D+JWl624jgzuzgjB60AdxxQDmo0cSoHHANSDpQAtFFGc0AFFFFABRRRQAUxjhufwp9Nbg0AN+XG0nmud8Ya3/YHhu7vFGJkX5FzyTUXjbxHJ4a0Z7iCMvcP9yvMJr+78RXUFxrOoIsMR3GHbjdntQAeE9DNosmrXf7y9uWLfOMlRnI6/Wukabd/H8vpWRL4jswP9G/0iQfKI04xikTWJ5Bl9OkjX1JFAF+R0ZsAmmlgGwORjvTLe4S4hMqLhfWonDFs7utAD/MIbrxUM0kRGGVW+ozTidnDDmqxO7PGB60AJuX/lnDGvvtFL5jkbSBxycCoxvQ5yCKR5Ahy38XBoAw9HsLrx14re0kfy7C1J3474Ne7aNoWkaVapFaQxjaPvYGTXzna6xc+CPFrzFWNndk7iO2TXtOl6pDqdlHc2c29COx6UAd8vuRj2pRiuRW/uE5yTitC317GBKvHrQBvdKUHPaoILqG5XdG4NTBs8UAOoozRQAUUUUAFNbnIPSnU0jJxjigDP1XSrfV7N7a5QFSOCa83vvhlqdqzyadfRYPRGjLV6uR/Dg49aXGKAPCpPBnjyFiYZLXHqLUVEnhb4hqSxkhcrzgW/X9a96JwM54rJ1HUERfLjOX77aAPFr4+J9P0qdJ9Kla4wcbFAH5VLoGsx6xZZVdlxFxJGTyMcV6RLKsjHcuMc5fnNeYeKdEn0HUxr+jRM8ZP72BfbqfTqaAL9xcrCwDfcY4Y+lIf3o3ICU7MDxVW01Ow160eNZFWZ1w8eeVNcjHq+uaXqkmmxQNPGDkAKM4/GgDsWIJwrjjtTXdgMAZ9awIPGVrFMYb+1e2k6ZcirUev6VcsRFqEJYnG3mgCW8tYL63aK4jDA9GPaufs59Z8E332q2driyJzsHOB+NdI0gdN6fMmMYHeoTMrxngEfdwwzxQB3Ph/wAUWHiOxE1tKPPIy8WeQa2UkD8dNvGK8SmsJtHuRqWkOySZzJHkkH14r0nw34hi16wEkZHnxfLMo7NQB1kMs0TBkbArbsdYWRhG/B9a5aOc7dxOFqyJRkY4NAHchgRleaUDmub03VGiYRyng9zXRRsHXcpyDQA+iiigAooooAKQjNLUNxKIomYmgClqd4IIiqnk1zUkxJLN1NWLmdppWLdBWbNN19fSgAkmJ61UldZAVIGD13ciiSb5TmqE0y7cA4b1PSgDG1Dwnp9zMZ7V2in6koxA/IVjXPhCWS4Sdr9EnXgNzjFdLJcYHP5rxVOa7+XbuG3360AUzpYeJYL0W8wH8aRgE/jWZdeCdGnYmMSRZ9JCDn8K05r4K2CcrjtVdr4L0NAGE/hDU9NbzdM1FXQf8sn3OT+dKNTurcBNUsnt3BwJGACkeuK2xqBJ+8BTzcQzAx3KrKhHTHNAGeJ0eIS25EiMOSORVXT7k6Drcd1BkW8/yyrnjcTjNTTaQ8IafSpcDqY3y1U0mE8brKv74AqU9/WgD1SO4j2KVbdG3INWopTnI5FcV4U1HzNPNnI2+WDC+9dVbyg4+YAUAa6vvwehFb2laiAfKdvpXLrIY+eoq1DLgiUfLjp70Ad4ORmkJOapaXdi5tx8wJFXQQeaAHUh60tIaAEFY+tXOF8tTzWs7bYya5W9n8y5cnkUAUZ32R9eTWfK+Bz1qaeUOxHpVGeT5STxQBBNNjOazZ5wGJ7U64m61k3MuSQDxQAtxeY6Hisy5vgOAar3dxtyAc1nbixOaAJpbxmOBUZnc96jAGeaUUAPEzg9alS8ljOUAJ9xUFJwRzn8KANKG9G4M7EMewOBSakdMkRZLq4WCUcoQdoJ9/Ws9eFI9e5qs2jWd0xa5kldycIA/AoAl0bX47DXDKSBGT5bt2JPevT4G3orREMjDOex+lePX9rPpEflvCskef8AWheB9fep9P16/wBOeKaOR5Itp+QnP5UAe0wygYyc+1XY2A4J49K5Pw9rsWt6atwnEi43L3FdFE29mycA80AdFpV0YbwKPuNXVAjAxXCWsmxVPcGuytpg9tG24HIoAuVDNdRQsFdwCamry7x3cXCa86xXDIBt4DYx8ooA9HnmRrZyjg8VyFxu+bdnr261wi6tqMMLbbt2H+8acmvXqSZL7uOjUAdPIUCnPH161lzOu07SSPeqY14S/wCsX5vbpUTaisucL+VAEdzPtBGKwb64ABJ4NasxaUnBrNurB5edwoAwnYSMTzSAcZz+dayaVgcutPOlwqmZHGfY0AY/J6YNAVj14rbjtbWMZGWqRTCBxCPxFAGF5fHWm7SOOtbxZc4+zj/vmmkRk5MGPoKAMPae+aQHnAOD1FbhSBxymKjexgflGANAFRLdNT097aZ+WG7n1Fc1/wAIxrFvIfJ/eLjgYJ4rsY9OVSpSUDjPWtGKV4ApDgkUAcz4Sub/AETUcXlsyQTdRtx7V6nbPG+Hjb5W5Ga5w6hbkbp4UfsAB0qU64YIlSFEO3jkUAdnaiRmZSox64rctrlY7dELdB615ZLr97IxCyBfXbVT7beNz9pm5/2qAPoOvOfF9vFLr0u9cn5f/QRRRQBzFzZQrAwUEfQ1UltUROMk46miigCo0Qi5B60gX0JFFFAEJRt3EjCpFjOzBdjzRRQA14Bj7xpwiVo1Dc896KKAHRomXG0cColbAPA60UUANeU7xwKej5DZAoooASPa2MqOtKYEd242/SiigCF4gjYBNKUxjk0UUAL5YxmhUDA9sGiigCfyVXzG71JGBsHFFFAH/9k="
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 31
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 8.018610000610352,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi1998/party.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg",
+    "64662465bba247703fdec49c8f3309f9_img.jpg"
+  ]
+}

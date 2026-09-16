@@ -1,0 +1,204 @@
+{
+  "request_id": "9eHMxCBzDBabs9G4azo1pA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:06:26.848341+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "9eHMxCBzDBabs9G4azo1pA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/9eHMxCBzDBabs9G4azo1pA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# IOI 2000 Beijing China Messages from Output Format Checkers 输出格式检查器信息 DAY 1\n\n### Help\n\n#### 使用帮助\n\nIOI 2000 - Beijing China\n\nOutput checker for problem XXXX (XXXX = PALIN / CAR)\n\n题目 XXXX(PALIN/CAR)的输出检查\n\n#### USAGE:\n\n使用方法:\n\nXXXX\\_F [-h] <filename>\n\n#### ARGUMENTS:\n\n参数:\n\n|            |                                           |\n|------------|-------------------------------------------|\n| -h         | Display this help and exit<br>显示本帮助信息然后退出 |\n| <filename> | Output file to check<br>需要检查的输出文件名        |\n\n### Message when no error found\n\n### 格式正确时的信息\n\nPASSED ..\n\nREMEMBER : THIS DOES NOT MEAN THAT YOUR SOLUTION IS CORRECT!\n\n通过..\n\n注意:这并不表示你的答案是正确的!\n\n### Common Message\n\n#### 一般错误信息\n\nOutput filename required\n\n缺少输出文件名\n\nCannot open file XXXX\n\n文件 XXXX 不能打开\n\nUnexpected end-of-file at line XXXX\n\n{1}------------------------------------------------\n\n文件在 XXXX 行非正常结束\n\nExtra character found in line XXXX\n\n第 XXXX 行有多余字符\n\nExtra lines found\n\n找到多余的行\n\nIn line XXXX, non-digital character is found before No.YYYY integer\n\n在第 XXXX 行，在第 YYYY 个整数前发现非数字字符\n\nIn line XXXX, the No.YYYY integer is missing\n\n在第 XXXX 行，第 YYYY 个整数丢失\n\nIn line XXXX, space before the No.YYYY integer is missing\n\n在第 XXXX 行，第 YYYY 个整数前的空格丢失\n\nIn line XXXX, extra space is found before the No.YYYY integer\n\n在第 XXXX 行，第 YYYY 个整数前发现多余空格\n\n### CAR Message\n\n#### **CAR 错误信息**\n\nNumber of rounds is missing\n\n总轮数未找到\n\nNumber of rounds is smaller than zero\n\n总轮数小于 0\n\nIn No.XXXX round, the count of moved cars is missing\n\n在第 XXXX 轮，需要移动的车辆总数未找到\n\nIn No.XXXX round, the count of moved cars is smaller than zero\n\n在第 XXXX 轮，需要移动的车辆总数小于 0\n\nIn No.XXXX round, the count of moved cars is larger than 50\n\n在第 XXXX 轮，需要移动的车辆总数大于 50\n\nIn No.XXXX round No.YYYY move, the leaving position is missing\n\n在第 XXXX 轮的第 YYYY 次移动中，缺少移出位置\n\nIn No.XXXX round No.YYYY move, leaving position is smaller than 1\n\n在第 XXXX 轮的第 YYYY 次移动中，移出位置号小于 1\n\nIn No.XXXX round No.YYYY move, the arriving position is missing\n\n在第 XXXX 轮的第 YYYY 次移动中，缺少移入位置\n\nIn No.XXXX round No.YYYY move, arriving position is smaller than 1\n\n在第 XXXX 轮的第 YYYY 次移动中，移入位置号小于 1\n\nIn No.XXXX round, car in No.YYYY position is moved out twice\n\n在第 XXXX 轮，第 YYYY 位置的车被移出两次\n\nIn No.XXXX round, car in No.YYYY position is moved in twice\n\n{2}------------------------------------------------\n\n在第 XXXX 轮，第 YYYY 位置的车被移入两次\n\nIn No.XXXX round, car in No.YYYY position is moved twice\n\n在第 XXXX 轮，在 YYYY 位置的车被移动两次\n\nIn No.XXXX round, car in No.YYYY position is not moved out when another arrives\n\n在第 XXXX 轮，在 YYYY 位置的车没有被移出却有车移入该位置\n\nIn No.XXXX round, no car moved in No.YYYY position when the car leaves\n\n在第 XXXX 轮，在 YYYY 位置的车被移出却没有车移入该位置\n\n### **PALIN Message**\n\n#### **PALIN 错误信息**\n\nMinimum number is missing\n\n最小数目未找到\n\nYour number is larger than max possible value, 4999\n\n你给出的数字大于可能的最大数字 4999\n\nYour number is smaller than zero\n\n你给出的数字小于 0",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 29
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 40
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 19
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 2.0,
+      "cost_breakdown": {
+        "final_cost_cents": 2.0
+      },
+      "runtime": 29.396522283554077,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# IOI 2000 Beijing China Messages from Output Format Checkers 输出格式检查器信息 DAY 1\n\n### Help\n\n#### 使用帮助\n\nIOI 2000 - Beijing China\n\nOutput checker for problem XXXX (XXXX = PALIN / CAR)\n\n题目 XXXX(PALIN/CAR)的输出检查\n\n#### USAGE:\n\n使用方法:\n\nXXXX\\_F [-h] <filename>\n\n#### ARGUMENTS:\n\n参数:\n\n|            |                                           |\n|------------|-------------------------------------------|\n| -h         | Display this help and exit<br>显示本帮助信息然后退出 |\n| <filename> | Output file to check<br>需要检查的输出文件名        |\n\n### Message when no error found\n\n### 格式正确时的信息\n\nPASSED ..\n\nREMEMBER : THIS DOES NOT MEAN THAT YOUR SOLUTION IS CORRECT!\n\n通过..\n\n注意:这并不表示你的答案是正确的!\n\n### Common Message\n\n#### 一般错误信息\n\nOutput filename required\n\n缺少输出文件名\n\nCannot open file XXXX\n\n文件 XXXX 不能打开\n\nUnexpected end-of-file at line XXXX\n\n{1}------------------------------------------------\n\n文件在 XXXX 行非正常结束\n\nExtra character found in line XXXX\n\n第 XXXX 行有多余字符\n\nExtra lines found\n\n找到多余的行\n\nIn line XXXX, non-digital character is found before No.YYYY integer\n\n在第 XXXX 行，在第 YYYY 个整数前发现非数字字符\n\nIn line XXXX, the No.YYYY integer is missing\n\n在第 XXXX 行，第 YYYY 个整数丢失\n\nIn line XXXX, space before the No.YYYY integer is missing\n\n在第 XXXX 行，第 YYYY 个整数前的空格丢失\n\nIn line XXXX, extra space is found before the No.YYYY integer\n\n在第 XXXX 行，第 YYYY 个整数前发现多余空格\n\n### CAR Message\n\n#### **CAR 错误信息**\n\nNumber of rounds is missing\n\n总轮数未找到\n\nNumber of rounds is smaller than zero\n\n总轮数小于 0\n\nIn No.XXXX round, the count of moved cars is missing\n\n在第 XXXX 轮，需要移动的车辆总数未找到\n\nIn No.XXXX round, the count of moved cars is smaller than zero\n\n在第 XXXX 轮，需要移动的车辆总数小于 0\n\nIn No.XXXX round, the count of moved cars is larger than 50\n\n在第 XXXX 轮，需要移动的车辆总数大于 50\n\nIn No.XXXX round No.YYYY move, the leaving position is missing\n\n在第 XXXX 轮的第 YYYY 次移动中，缺少移出位置\n\nIn No.XXXX round No.YYYY move, leaving position is smaller than 1\n\n在第 XXXX 轮的第 YYYY 次移动中，移出位置号小于 1\n\nIn No.XXXX round No.YYYY move, the arriving position is missing\n\n在第 XXXX 轮的第 YYYY 次移动中，缺少移入位置\n\nIn No.XXXX round No.YYYY move, arriving position is smaller than 1\n\n在第 XXXX 轮的第 YYYY 次移动中，移入位置号小于 1\n\nIn No.XXXX round, car in No.YYYY position is moved out twice\n\n在第 XXXX 轮，第 YYYY 位置的车被移出两次\n\nIn No.XXXX round, car in No.YYYY position is moved in twice\n\n{2}------------------------------------------------\n\n在第 XXXX 轮，第 YYYY 位置的车被移入两次\n\nIn No.XXXX round, car in No.YYYY position is moved twice\n\n在第 XXXX 轮，在 YYYY 位置的车被移动两次\n\nIn No.XXXX round, car in No.YYYY position is not moved out when another arrives\n\n在第 XXXX 轮，在 YYYY 位置的车没有被移出却有车移入该位置\n\nIn No.XXXX round, no car moved in No.YYYY position when the car leaves\n\n在第 XXXX 轮，在 YYYY 位置的车被移出却没有车移入该位置\n\n### **PALIN Message**\n\n#### **PALIN 错误信息**\n\nMinimum number is missing\n\n最小数目未找到\n\nYour number is larger than max possible value, 4999\n\n你给出的数字大于可能的最大数字 4999\n\nYour number is smaller than zero\n\n你给出的数字小于 0",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 29
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 40
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 19
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 2.0,
+    "cost_breakdown": {
+      "final_cost_cents": 2.0
+    },
+    "runtime": 29.396522283554077,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 2.0
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2000/1-5.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

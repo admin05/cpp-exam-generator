@@ -1,0 +1,140 @@
+{
+  "request_id": "6vJPQGFbpZyUhIhBRFrQdA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:35:42.025215+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "6vJPQGFbpZyUhIhBRFrQdA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/6vJPQGFbpZyUhIhBRFrQdA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![NOI 2004 logo featuring a stylized orange and green design with the text 'NOI 2004' below it.](935eed7aa61f7777f62cfc032e11bee9_img.jpg)\n\nNOI 2004 logo featuring a stylized orange and green design with the text 'NOI 2004' below it.\n\n# 第二十一届全国信息学奥林匹克竞赛NOI 2004练习赛\n\n|         |            |          |                          |\n|---------|------------|----------|--------------------------|\n| 题目名称    | 辉辉的一天      | 姗姗的一天    | 佳佳的一天                    |\n| 英文代号    | huihui     | shanshan | jiajia                   |\n| 输入文件    | huihui.in  | N/A      | jiajia1.in~jiajia10.in   |\n| 输出文件    | huihui.out | N/A      | jiajia1.out~jiajia10.out |\n| 每个测试点时限 | 2 秒        | 2 秒      | N/A                      |\n| 测试点数目   | 10         | 10       | 10                       |\n| 每个测试点分值 | 10         | 10       | 10                       |\n| 是否有部分分  | 否          | 否        | 是                        |\n| 附加文件    | 无          | 无        | 无                        |\n| 题目类型    | 传统         | 交互       | 提交答案                     |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "935eed7aa61f7777f62cfc032e11bee9_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 5
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 3.9059555530548096,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![NOI 2004 logo featuring a stylized orange and green design with the text 'NOI 2004' below it.](935eed7aa61f7777f62cfc032e11bee9_img.jpg)\n\nNOI 2004 logo featuring a stylized orange and green design with the text 'NOI 2004' below it.\n\n# 第二十一届全国信息学奥林匹克竞赛NOI 2004练习赛\n\n|         |            |          |                          |\n|---------|------------|----------|--------------------------|\n| 题目名称    | 辉辉的一天      | 姗姗的一天    | 佳佳的一天                    |\n| 英文代号    | huihui     | shanshan | jiajia                   |\n| 输入文件    | huihui.in  | N/A      | jiajia1.in~jiajia10.in   |\n| 输出文件    | huihui.out | N/A      | jiajia1.out~jiajia10.out |\n| 每个测试点时限 | 2 秒        | 2 秒      | N/A                      |\n| 测试点数目   | 10         | 10       | 10                       |\n| 每个测试点分值 | 10         | 10       | 10                       |\n| 是否有部分分  | 否          | 否        | 是                        |\n| 附加文件    | 无          | 无        | 无                        |\n| 题目类型    | 传统         | 交互       | 提交答案                     |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "935eed7aa61f7777f62cfc032e11bee9_img.jpg": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACLAH0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3TUbz7DZPPjO0Vyg8eLn/AFOcCt/xLn+xJ8en9DXkudnTkGvHzHF1KM0oHrZfhKdaLczux48RkLeV0pD4+TCnyeCea4bAAwDwaTIPy9hXm/2nXPR/syget6LrH9rWxmVdozitMsQM1yXgfP8AZh5yN5rq2G1Tg19Bh67nS5pbnz+IpKFVxjscpe+MxaXTw7MlTioP+E8H/PKuX1zjVpu3NZ2fevDq5hUjNq7Pbp5fTlBOx3B8eD/nlV/SfFn9p3SQiPBJxXnHORzW74Sb/icRY/vVWFx9SpUSbZGJwFOnTckj1BWYjmsjW9b/ALIjjZ1zuJFaoHfNcd49Obe2/wB4/wAq9nE1XCi5I8jD01Oqosavj0beYsml/wCE8H/PGuGz6UZ96+feaVVZJnvLLKWt0dz/AMJ6v/PLFb2la1/aVr5wTHNeTtytd/4SONJA967cHjKtSdmzkxeCp06d4m34l/5Ac/0P8jXkoPyAdq9b8S/8gOf6H+RryQfdFRm9/aIvKbcjFpBxmiivFje57Lseh+BeNKf/AHzXUtyDXKeCDjSW/wB81vajqMFjbvI7AMFzivrMNJLD6nyeJi5Yh2PMtd/5Cs3Hes3FWb+6+2Xck3Yk1Wr5is4yqs+npRlGkg6A1v8AhEkazEB0yKwD0Nb3hL/kNRfUVrgUlXRnjW/YM9QHSuO8e/8AHvbf7x/lXYA8Vx/j0/6Pbf7x/lX0eOs8Oz5zBXWIicF2oo7UV8k9LH1y5Xe4dq9A8JY/sn8a8/PSu/8ACf8AyCvxr0cuc3UZ5mYqPstDp9RtVvbRoHJCt1xXM/8ACC2pyfPcDsNorr2OB1xUeQTndX0VXD0qrvM+fp16tNe4zk/+EEtsf8fL5/3RR/wgtp0Nw4PsorrCyk9RxWTrOsRaXbFyQZD0Fc88LhqUb2NoYnE1Hy3KafY/C1gUaUsSSQMck1w2rarNqN08krsUPAUcgCm6jqU+qXBnkIA6KpPSoLS2kuZRHGQFJ5ZjjFeLWxLqy9lT0R7VDDRoL2tXVhZ2c95Kttbx7mY8N6fWuwg8FQLCrXFwVfHIOMVq6DpNrplvvhlWV2HzlSD/ACrjPG3iK7bURbWc7JCuM4POe9duHwMaSvPVnlY/Nnf3HodJ/wAIPaEcXLn32ir2leFbfTbkTpM7sOgKiszwP4hl1KJ7Sc7pIlB3E9e1de11BGwR5o0kPRSwzXo0sPS0mkcMcwnWhrIm546Vl6zosWsRqssjLt6YHStMEE5H50uR3rokozi0xRk4yUonJf8ACC2mMfaJP++RSjwJaf8APxJ/3yK6wY9RilyPWuX6nRbtY6PrdZ9TkT4DtP8An5k/75FbenaNFp1v5MchI9xWgW9xTl6c4rWGFp03eJE61SS95mf4glkh0eaSJirgcEfQ15kNc1Pb/wAfs3516V4m/wCQHP8AT+hryUfdFeTmlSUanus9TLKcZx1Ro/23qbDBvpsfWqtxeXN1zcTNIR0LGoD0oJJHHpXjRqVJ6SbPZdKENYpFmx06fUrhEjj+8cFvSrnitk0WCLTbf5ZyAzuOpBHSup8Eop09pNvzbiK4HxbcG51+SRjkr8p+gr2MLh4QpKr1Pl86xtTWCNDwZrsllfNDPKzRSAAA9Aa5vUJWl1G5ZiWLSNg+2aijkMUyyIehyKbu3yMW6nmt/aSmrdD5iNRuPvG54V1AabrCNuwrYDe9VdS1m7u9SluPOckMQpz0wazUJBDqcEGkHBZs8Hp9acak7pdBRq8sGkezeDNTfUdDjeVy8gJBJ9qg8aXtzaQQG3maMknO09aw/hpOxa6t8/Kihh+JrV8ef8e9t9T/ACrorzcaDaPfyr95OKmcmNc1XH/H9N+dH9uar/z/AM351Q6CjNfMyxdZ7Nn16wtDokXzrmqj/l+m/Ou28NXtzc6bvmmZ2z1Y15yeld94T/5BI+td2Aq1pS95s8/H0IQj7qNzxL/yA5z7H+RryX+ENXsOtWsl5pksERAZh3+hrgv+EL1DIG+PGK7MzoVKk7wVznyytTpxfO7HOY4x6ij+Me3WuiHgrUS2d6cUp8F6iD99OTXmfUa6s+U9P67Qd1zG74GOdKcngeYa5TVPDVxPqM9zcyRwWxc7mY4JGe1dx4d0q40qxMMu0ksSMUX3h+O/nM93M5XGDHn5MfSvoKNL9woSVmfKZhFVZtp3PM3g0aKTy7RbmeQdeAVNWEN4n+q0HzB6tFXTRwWMu1bFIY5BKUOR1xXS2+j4hUyXMof0RuKqFBRR5kKCqaHmbpI4IuNIaIN18uPBFNh0zRr9THDcSQXC/wAMxAXNejahpZWMMkxwD85kPasSN9KubuWI6aRKFAwFG4+4peys7scqML8q3E8D6Lc6Xf3jS4MbIu116Hmn+OLuNxbxIwZwTkelF9qUWgxPb2ssskjrwrHO2uQmmluXaaVyWY9z0rzsZi0o8kT6TK8BONqjIvu/J1I5zQa0dP0S81MHyFG1f4iOtaP/AAhupEdUryo4WvUV0j25YqlB6s5w9M4J+ld/4U50rgHrWGfBmonjegrq9B0m4sLDyZGBOa9LBYarTfvI8/HYmFSNkzomxjmo8YOc1X1a7Njp8k6jJX/CuK/4TmdsYjH5V7GIxNOlpJnk0MNVq6wR3/amkE1wS+Orgq37sccdKP8AhOLn/nmOBnpWEswoO2pssvr9jvxjpnmkIDAqw4NZHh7V21ezMzqAQxHArXY4Uk9q7YzhOPOjinBwlyS3MM6GoupXVFRcZXAxzWygCRxrnkd647UvFs9pqBt1QED2qn/wm85z+7HHtXJUzGjTlys6aeWVEuZLc7q5iMkLqNuSON3SuK1LUIdISRYSj3jdW7gdqrXfjK5mgeILtZl4YDpXMySNJKWk3M/UtXDjMxjJWgdmFylKXPUFlleeQyO5bPJJPNa+haFNq04ZlK24PJ9af4f0CTVJVmdSsKn866nV9SXw1bQR28Y+ckYArmw2Hv8AvZnbiMU0vY0tzesbKCyt1ihUACrXHqK8/HjicceVg+4pf+E4uP8AnmPyr0qePoRVrnlyy7EN3aO+OKM+1cAfG8+R+7H5V1Gi6s2oWAmZcEmt6eJp1H7sjGphKlNe8iTxN/yA5/p/Q15KOgr1vxL/AMgOf6H+RryT+EV5WcfHc9XKH7rDFFLSDrXixd2j2GrJnoXgb/kGN/vmurb7hrlfAw/4lTH/AGzXUsNyGvr8ImsOfI4tr27PJdd/5C0p96za0tc/5Cs31rNr5evd1WfT0EvZIXjcCe1aXh+zTUdQSOXgbqzDgc+lb3hQE6zDxjkU8JG9ZRaDFvlouSZ6RaWsVpCI41AA9K5Lx8MQ2p/2j/Ku0TGM1xfj/wD1Nt/vH+VfS4uKhhnZHzeDk5YlXZw3XmijtRXyVrq59a2r2CvRPCRH9iJ9a87r0PwkudFT616WXX5jy8ySUDY8SAnRJwOpH9DXkqoxPKtkcdK9tlVWjw2NvfIqgq2ch+SGM4OD8or18dgvbyvzWPLweM9gmuW55D5T8kg+/FKUk2gop2jrxXr5FkJAhiiBPT5RzSMtkkm0xR5x02iuF5Py2fOdaze91yGD4I+XSmHT5yea6h87CdwxUe6GBflCKvUgCkNzEYnlVwVUZIr2KNNQh7PmPIrzc5+0UTy3XEc6rKVU7SeuKzvLbP3Tj6V687WbhGeOM7+ASo5pwSyztEUX/fIryp5Wpzb5j1aeaOEFHlPHipU/dPHTit/wkjDWY2ZT1Fd+0dmJVjaGMFunyinRi1SZhGiCRRngCtMPlvspqXMTiMydWDjylpcquMVxvj0NJHa7QSQx/lXXNdRJIiucMxwKjle3lkEbqrMORkZr0K9P2kHC559Cfs6inY8eKHzM4O70xRslLfMpx9K9fZLJNu+KLJ6fKKfJDZxpueKPH+6K8l5M2/iPVWbtfZPHGQ9SDntxXonhVX/sZM8c+lbqxWbLuEMWP90U+F4TGPKChfQCurD5d7F/Ec2Jx0q0bcpLeAm1fHXFYN3MRpTrGDvx2FdKQCMGmeVHjGwYr0Z0+Z3POjPlRz2/zbbT+SJAwzx14qz5TQxzRyZUuSQ3WtkRoMYUcdOKUqp6gGp9iP2hgkIrxlZSCPvEjO72ouIWaG7mKFFaLGf/AK1bojQdFH5UbFIwQMelNUkg9oYTv5v2DycsEYbuMYGKjkQqZLXcVjfkt6ZroBEgOQozR5SY+6Kfsg9oY0jq89qqSE7Djp7U0xeXBNblzvfJDY9TW55af3R+VBRT1UUnRGqpz6ROdP8AsqgySEn5vSnmNkWWFyVYqAG61uiNF6KBQY1bqoNL2I/anPLEU05rVXMkmc5x05q7JDLK6KVO1QK1PLT+6KXaPSn7LQXtNbmHBLJHfXAlUhMDZU+nkeU3XrWp5aZ+6KAigYCgVUYWE53P/9k="
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 5
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 3.9059555530548096,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOI/2004/day0/task/Day0-Overview.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "935eed7aa61f7777f62cfc032e11bee9_img.jpg"
+  ]
+}

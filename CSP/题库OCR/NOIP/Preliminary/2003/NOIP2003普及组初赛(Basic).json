@@ -1,0 +1,228 @@
+{
+  "request_id": "v-j2aPUxGj9Zp1MDkQW20A",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:02:42.151553+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "v-j2aPUxGj9Zp1MDkQW20A",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/v-j2aPUxGj9Zp1MDkQW20A",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第九届全国青少年信息学奥林匹克联赛初赛试题\n\n(普及组 BASIC 语言 二小时完成)\n\n全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效\n\n- 一、选择一个正确答案代码 (A/B/C/D/E)，填入每题的括号内 (每题1.5分，共30分)\n- 下列计算机设备中，既是输入设备，又是输出设备的是 ( )。  \nA) 键盘      B) 触摸屏      C) 扫描仪      D) 投影仪      E) 数字化仪\n- 下列分辨率的显示器所显示出的图像，最清晰的是 ( )。  \nA) 800\\*600    B) 1024\\*768    C) 640\\*480    D) 1280\\*1024    E) 800\\*1000\n- 下列说法中，正确的是 ( )。  \nA) 在内存中，可执行程序用二进制码表示，源程序用八进制表示。  \nB) 程序和数据在内存中都是用二进制码表示的。  \nC) 内存中数据的存取是以二进制位为单位的。  \nD) 中央处理器 CPU 执行的每条指令的长度都不同。  \nE) 一般来说，在计算机内部，中文信息用十六进制表示，英文信息用八进制表示。\n- 下列说法中，错误的是 ( )。  \nA) 程序是指令的序列，它有三种结构：顺序、分支和循环。  \nB) 地址总线决定了中央处理器 CPU 所能访问的最大内存空间的大小。  \nC) 中央处理器 CPU 内部有寄存器组，用来存储数据。  \nD) 不同厂家生产的 CPU 所能处理的指令集不一定相同。  \nE) 数据传输过程中不可能会出错。\n- CPU 访问内存的速度比访问下列哪个存储设备要慢 ( )。  \nA) 寄存器      B) 硬盘      C) 软盘      D) 磁带      E) 光盘\n- 下列电子邮件地址，正确的是 ( )。  \nA) wang@hotmail.com                      B) cai@jcc.pc.tool@rf.edu.jp  \nC) 162.105.111.22                          D) ccf.edu.cn  \nE) http://www.sina.com\n- 数字图像文件可以用下列哪个软件来编辑 ( )。  \nA) 画笔 (Paintbrush)      B) 记事簿 (Notepad)      C) Recorder  \nD) WinRAR                  E) MidiSoft\n- 下列哪个软件不是操作系统软件的名字 ( )。  \nA) Windows XP    B) DOS            C) Linux        D) OS/2            E) Arch/Info\n- 下列哪个不是个人计算机的硬件组成部分 ( )。  \nA) 主板            B) 操作系统        C) 电源            D) 硬盘            E) 软驱\n- 图灵 (Alan Turing) 是 ( )。  \nA) 美国人      B) 英国人      C) 德国人      D) 匈牙利人      E) 法国人\n\n{1}------------------------------------------------\n\n- 11. 第一个给计算机写程序的人是 ( )。  \nA) Alan Mathison Turing  \nB) Ada Lovelace  \nC) John von Neumann  \nD) John McCarthy  \nE) Edsger Wybe Dijkstra\n- 12. 十进制数 2003 等值于二进制数 ( )。  \nA) 11111010011 B) 10000011 C) 110000111 D) 0100000111 E) 1111010011\n- 13. 运算式  $(2008)_{10} - (3723)_8$  的结果是 ( )。  \nA)  $(-1715)_{10}$  B)  $(5)_{10}$  C)  $(-5)_{16}$  D)  $(111)_2$  E)  $(3263)_8$\n- 14. 下列关于程序语言的叙述，不正确的是 ( )。  \nA) 编写机器代码不比编写汇编代码容易。  \nB) 高级语言需要编译成目标代码或通过解释器解释后才能被 CPU 执行。  \nC) 同样一段高级语言程序通过不同的编译器可能产生不同的可执行程序。  \nD) 汇编代码可被 CPU 直接运行。  \nE) 不同的高级语言语法略有不同。\n- 15. 假设  $A = \\text{true}$ ,  $B = \\text{false}$ ,  $C = \\text{true}$ ,  $D = \\text{true}$ , 逻辑运算表达式  $A \\wedge B \\vee C \\wedge D$  的值是 ( )。  \nA) true B) false C) 0 D) 1 E) NULL\n- 16. 一个高度为  $h$  的二叉树最小元素数目是 ( )。  \nA)  $2h+1$  B)  $h$  C)  $2h-1$  D)  $2h$  E)  $2^{h-1}$\n- 17. 已知队列 (13, 2, 11, 34, 41, 77, 5, 7, 18, 26, 15), 第一个进入队列的元素是 13, 则第五个出队列的元素是 ( )。  \nA) 5 B) 41 C) 77 D) 13 E) 18\n- 18. 下列关于文件的叙述，不正确的是 ( )。  \nA) 一个可执行程序其实也是一个文件。  \nB) 文件可大可小，大的文件一张软盘装不下。  \nC) 一个文件夹下面可以有两个同名的文件，只要它们的大小不同就行了。  \nD) 文件的创建日期和最新修改日期可以在资源管理器中看到。  \nE) 某些文件的内容可以用记事本 (Notepad) 看到。\n- 19. 活动硬盘的容量比固定硬盘的容量 ( )。  \nA) 大 B) 小 C) 相等 D) 不一定大 E) 大致相等\n- 20. IP 地址是一个 ( ) 位二进制码。  \nA) 8 B) 16 C) 32 D) 64 E) 12\n\n## 二. 问题求解 (每题5分, 共10分)\n\n- 1. 现在市场上有一款汽车 A 很热销, 售价是 2 万美元。汽车 A 每加仑汽油可以行驶 20 英里。普通汽车每年大约行驶 12000 英里。油价是每加仑 1 美元。不久我公司就要推出新款节油汽车 B, 汽车 B 每加仑汽油可以行驶 30 英里。现在我们要为 B 制定价格 (它的价格要略高于 A): 我\n\n{2}------------------------------------------------\n\n们预计如果用户能够在两年内通过节省油钱把 B 高出 A 的价钱弥补回来，则他们就会购买 B，否则就不会购买 B。那么 B 的最高价格应为\\_\\_\\_\\_\\_万美元。\n\n- 2. 无向图 G 有 16 条边，有 3 个 4 度顶点、4 个 3 度顶点，其余顶点的度均小于 3，则 G 至少有\\_\\_\\_\\_\\_个顶点。\n\n## 三、阅读程序（每题8分，共32分）\n\n```\n1.  DIM a, x, y, ok1, ok2 AS INTEGER\n    READ a, x, y, ok1, ok2\n    DATA 100,10,20,5,0\n    IF x > y OR (y <> 20 AND NOT (ok1)) AND ok2 THEN\n        a = 1\n    ELSE\n        IF ok1 AND NOT (ok2) THEN\n            a = -1\n        ELSE\n            a = 0\n        END IF\n    END IF\n    PRINT a\nEND\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2.  DIM i, j AS INTEGER\n    DIM a$(7)\n    j = 0\n    FOR i = 0 TO 6\n        READ a$(i)\n    NEXT i\n    FOR i = 1 TO 6\n        IF a$(j) < a$(i) THEN\n            j = i\n        END IF\n    NEXT i\n    FOR i = 0 TO j - 1\n        PRINT a$(i);\n    NEXT i\n    PRINT\nDATA m,o,r,n,i,n,g\nEND\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n3.  DIM a, b, c, d, sum AS LONG\n    INPUT a, b, c, d\n    a = a MOD 23\n    b = b MOD 28\n    c = c MOD 33\n    sum = a * 5544 + b * 14421 + c * 1288 - d\n    sum = sum + 21252\n```\n\n{3}------------------------------------------------\n\n```\nsum = sum MOD 21252\nIF sum = 0 THEN\n  sum = 21252\nEND IF\nPRINT sum\nEND\n```\n\n输入: 283,102,23,320\n\n输出: \\_\\_\\_\\_\\_\n\n```\n4. DIM a%(6), cover%(22000)\nDIM sum, n, max, i, j, k AS INTEGER\nINPUT a%(5), a%(4), a%(3), a%(2), a%(1), a%(0)\n\nIF (a%(5) = 0) AND (a%(3) = 0) AND (a%(1) = 0) THEN\n  a%(5) = a%(4): a%(4) = a%(2): a%(3) = a%(0)\n  a%(2) = 0: a%(0) = 0\nEND IF\n\nFOR i = 0 TO 5\n  IF a%(i) > 10 THEN\n    a%(i) = 10 + a%(i) MOD 2\n  END IF\nNEXT i\nsum = 0\nFOR i = 0 TO 5\n  sum = sum + a%(i) * (6 - i)\nNEXT i\nIF (sum MOD 2) <> 0 THEN\n  PRINT \"Can't be divided.\"\nEND IF\nsum = sum \\ 2: max = 0: cover%(0) = 1\nFOR i = 1 TO sum * 2: cover%(i) = 0: NEXT i\nFOR i = 0 TO 5\n  j = 0\n  DO WHILE j < a%(i)\n    FOR k = max TO 0 STEP -1\n      IF cover%(k) = 1 THEN\n        cover%(k + 6 - i) = 1\n      END IF\n    NEXT k\n    max = max + 6 - i: j = j + 1\n  LOOP\nNEXT i\nIF cover%(sum) = 1 THEN PRINT \"Can be divided.\"\nELSE PRINT \"Can't be divided.\"\nEND IF\nEND\n```\n\n输入: 4, 7, 9, 20, 56, 48\n\n输入: 1000, 7, 101, 20, 55, 1\n\n输入: 2000, 5, 1, 1, 0, 0\n\n输出: \\_\\_\\_\\_\\_\n\n输出: \\_\\_\\_\\_\\_\n\n输出: \\_\\_\\_\\_\\_\n\n{4}------------------------------------------------\n\n## 四、完善程序（第 1 空 2 分，其余每空 3 分 共 28 分）\n\n### 1. 一元二次方程\n\n题目描述：\n\n方程  $ax^2+bx+c=0$ , 要求给出它的实数解.\n\n输入：\n\n三个实数: a, b, c, 是方程的三个系数 ( $a \\neq 0$ ).\n\n输出：\n\n如果无实数解，则输出 “No solution”;\n\n如果有两个相等的实数解，，则输出其中一个，四舍五入到小数点后面3位;\n\n如果有两个不等的实数解，则解与解之间用逗号隔开，同样要四舍五入到小数点后3位。\n\n输入样例：\n\n1, 2, 1\n\n输出样例：\n\n-1.000\n\n程序：\n\n```\nDIM a, b, c, d, m AS SINGLE\nINPUT a, b, c\nm = b ^ 2 - 4 * a * c\nIF ① THEN\nPRINT USING \"##.###\"; ②\nPRINT ③\nPRINT USING \"##.###\"; (-1 * b - SQR(m)) / (2 * a)\nELSE\nIF ④ THEN\nPRINT USING \"##.###\"; ⑤\nELSE\nPRINT \"No solution.\"\nEND If\nEND IF\nEND\n```\n\n### 2. 翻硬币\n\n题目描述：\n\n一摞硬币共有 m 枚，每一枚都是正面朝上。取下最上面的一枚硬币，将它翻面后放回原处。然后取下最上面的 2 枚硬币，将他们一起翻面后再放回原处。再取 3 枚，取 4 枚……直至 m 枚。然后再从这摞硬币最上面的一枚开始，重复刚才的做法。这样一直做下去，直到这摞硬币中的每一枚又都是正面朝上为止。例如，m 为 1 时，翻两次即可；m 为 2 时，翻 3 次即可；m 为 3 时，翻 9 次即可；m 为 4 时，翻 11 次即可；m 为 5 时，翻 24 次即可；…；m 为 30 时，翻 899 次即可；…\n\n{5}------------------------------------------------\n\n输入：仅有的一个数字是这摞硬币的枚数 m，0<m<1000。\n\n输出：为了使这摞硬币中的每一枚又都是正面朝上所必需翻的次数。\n\n输入样例：\n\n30\n\n输出样例：\n\n899\n\n程序：\n\n```\nDECLARE FUNCTION solve (m)\nDIM m, n AS INTEGER\nINPUT m\nIF m > 0 AND m < 1000 THEN\n  n = ①\n  PRINT n\nEND IF\nEND\n```\n\n```\nFUNCTION solve (m)\nDIM i, t, d AS INTEGER\n```\n\n```\nIF m = 1 THEN\n  solve = ②\nELSE\n  d = 2 * m + 1\n  t = 2\n  i = 1\n\nDO\n  IF t = 1 THEN\n    solve = ③\n    EXIT DO\n  END IF\n  IF ④ THEN\n    solve = i * m - 1\n    EXIT DO\n  END IF\n  t = ⑤\n  i = i + 1\nLOOP\nEND IF\n```\n\n```\nEND FUNCTION\n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 11
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 22
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 14
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.733,
+      "page_count": 6,
+      "total_cost": 1.8,
+      "cost_breakdown": {
+        "final_cost_cents": 1.8
+      },
+      "runtime": 19.352629899978638,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第九届全国青少年信息学奥林匹克联赛初赛试题\n\n(普及组 BASIC 语言 二小时完成)\n\n全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效\n\n- 一、选择一个正确答案代码 (A/B/C/D/E)，填入每题的括号内 (每题1.5分，共30分)\n- 下列计算机设备中，既是输入设备，又是输出设备的是 ( )。  \nA) 键盘      B) 触摸屏      C) 扫描仪      D) 投影仪      E) 数字化仪\n- 下列分辨率的显示器所显示出的图像，最清晰的是 ( )。  \nA) 800\\*600    B) 1024\\*768    C) 640\\*480    D) 1280\\*1024    E) 800\\*1000\n- 下列说法中，正确的是 ( )。  \nA) 在内存中，可执行程序用二进制码表示，源程序用八进制表示。  \nB) 程序和数据在内存中都是用二进制码表示的。  \nC) 内存中数据的存取是以二进制位为单位的。  \nD) 中央处理器 CPU 执行的每条指令的长度都不同。  \nE) 一般来说，在计算机内部，中文信息用十六进制表示，英文信息用八进制表示。\n- 下列说法中，错误的是 ( )。  \nA) 程序是指令的序列，它有三种结构：顺序、分支和循环。  \nB) 地址总线决定了中央处理器 CPU 所能访问的最大内存空间的大小。  \nC) 中央处理器 CPU 内部有寄存器组，用来存储数据。  \nD) 不同厂家生产的 CPU 所能处理的指令集不一定相同。  \nE) 数据传输过程中不可能会出错。\n- CPU 访问内存的速度比访问下列哪个存储设备要慢 ( )。  \nA) 寄存器      B) 硬盘      C) 软盘      D) 磁带      E) 光盘\n- 下列电子邮件地址，正确的是 ( )。  \nA) wang@hotmail.com                      B) cai@jcc.pc.tool@rf.edu.jp  \nC) 162.105.111.22                          D) ccf.edu.cn  \nE) http://www.sina.com\n- 数字图像文件可以用下列哪个软件来编辑 ( )。  \nA) 画笔 (Paintbrush)      B) 记事簿 (Notepad)      C) Recorder  \nD) WinRAR                  E) MidiSoft\n- 下列哪个软件不是操作系统软件的名字 ( )。  \nA) Windows XP    B) DOS            C) Linux        D) OS/2            E) Arch/Info\n- 下列哪个不是个人计算机的硬件组成部分 ( )。  \nA) 主板            B) 操作系统        C) 电源            D) 硬盘            E) 软驱\n- 图灵 (Alan Turing) 是 ( )。  \nA) 美国人      B) 英国人      C) 德国人      D) 匈牙利人      E) 法国人\n\n{1}------------------------------------------------\n\n- 11. 第一个给计算机写程序的人是 ( )。  \nA) Alan Mathison Turing  \nB) Ada Lovelace  \nC) John von Neumann  \nD) John McCarthy  \nE) Edsger Wybe Dijkstra\n- 12. 十进制数 2003 等值于二进制数 ( )。  \nA) 11111010011 B) 10000011 C) 110000111 D) 0100000111 E) 1111010011\n- 13. 运算式  $(2008)_{10} - (3723)_8$  的结果是 ( )。  \nA)  $(-1715)_{10}$  B)  $(5)_{10}$  C)  $(-5)_{16}$  D)  $(111)_2$  E)  $(3263)_8$\n- 14. 下列关于程序语言的叙述，不正确的是 ( )。  \nA) 编写机器代码不比编写汇编代码容易。  \nB) 高级语言需要编译成目标代码或通过解释器解释后才能被 CPU 执行。  \nC) 同样一段高级语言程序通过不同的编译器可能产生不同的可执行程序。  \nD) 汇编代码可被 CPU 直接运行。  \nE) 不同的高级语言语法略有不同。\n- 15. 假设  $A = \\text{true}$ ,  $B = \\text{false}$ ,  $C = \\text{true}$ ,  $D = \\text{true}$ , 逻辑运算表达式  $A \\wedge B \\vee C \\wedge D$  的值是 ( )。  \nA) true B) false C) 0 D) 1 E) NULL\n- 16. 一个高度为  $h$  的二叉树最小元素数目是 ( )。  \nA)  $2h+1$  B)  $h$  C)  $2h-1$  D)  $2h$  E)  $2^{h-1}$\n- 17. 已知队列 (13, 2, 11, 34, 41, 77, 5, 7, 18, 26, 15), 第一个进入队列的元素是 13, 则第五个出队列的元素是 ( )。  \nA) 5 B) 41 C) 77 D) 13 E) 18\n- 18. 下列关于文件的叙述，不正确的是 ( )。  \nA) 一个可执行程序其实也是一个文件。  \nB) 文件可大可小，大的文件一张软盘装不下。  \nC) 一个文件夹下面可以有两个同名的文件，只要它们的大小不同就行了。  \nD) 文件的创建日期和最新修改日期可以在资源管理器中看到。  \nE) 某些文件的内容可以用记事本 (Notepad) 看到。\n- 19. 活动硬盘的容量比固定硬盘的容量 ( )。  \nA) 大 B) 小 C) 相等 D) 不一定大 E) 大致相等\n- 20. IP 地址是一个 ( ) 位二进制码。  \nA) 8 B) 16 C) 32 D) 64 E) 12\n\n## 二. 问题求解 (每题5分, 共10分)\n\n- 1. 现在市场上有一款汽车 A 很热销, 售价是 2 万美元。汽车 A 每加仑汽油可以行驶 20 英里。普通汽车每年大约行驶 12000 英里。油价是每加仑 1 美元。不久我公司就要推出新款节油汽车 B, 汽车 B 每加仑汽油可以行驶 30 英里。现在我们要为 B 制定价格 (它的价格要略高于 A): 我\n\n{2}------------------------------------------------\n\n们预计如果用户能够在两年内通过节省油钱把 B 高出 A 的价钱弥补回来，则他们就会购买 B，否则就不会购买 B。那么 B 的最高价格应为\\_\\_\\_\\_\\_万美元。\n\n- 2. 无向图 G 有 16 条边，有 3 个 4 度顶点、4 个 3 度顶点，其余顶点的度均小于 3，则 G 至少有\\_\\_\\_\\_\\_个顶点。\n\n## 三、阅读程序（每题8分，共32分）\n\n```\n1.  DIM a, x, y, ok1, ok2 AS INTEGER\n    READ a, x, y, ok1, ok2\n    DATA 100,10,20,5,0\n    IF x > y OR (y <> 20 AND NOT (ok1)) AND ok2 THEN\n        a = 1\n    ELSE\n        IF ok1 AND NOT (ok2) THEN\n            a = -1\n        ELSE\n            a = 0\n        END IF\n    END IF\n    PRINT a\nEND\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n2.  DIM i, j AS INTEGER\n    DIM a$(7)\n    j = 0\n    FOR i = 0 TO 6\n        READ a$(i)\n    NEXT i\n    FOR i = 1 TO 6\n        IF a$(j) < a$(i) THEN\n            j = i\n        END IF\n    NEXT i\n    FOR i = 0 TO j - 1\n        PRINT a$(i);\n    NEXT i\n    PRINT\nDATA m,o,r,n,i,n,g\nEND\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n3.  DIM a, b, c, d, sum AS LONG\n    INPUT a, b, c, d\n    a = a MOD 23\n    b = b MOD 28\n    c = c MOD 33\n    sum = a * 5544 + b * 14421 + c * 1288 - d\n    sum = sum + 21252\n```\n\n{3}------------------------------------------------\n\n```\nsum = sum MOD 21252\nIF sum = 0 THEN\n  sum = 21252\nEND IF\nPRINT sum\nEND\n```\n\n输入: 283,102,23,320\n\n输出: \\_\\_\\_\\_\\_\n\n```\n4. DIM a%(6), cover%(22000)\nDIM sum, n, max, i, j, k AS INTEGER\nINPUT a%(5), a%(4), a%(3), a%(2), a%(1), a%(0)\n\nIF (a%(5) = 0) AND (a%(3) = 0) AND (a%(1) = 0) THEN\n  a%(5) = a%(4): a%(4) = a%(2): a%(3) = a%(0)\n  a%(2) = 0: a%(0) = 0\nEND IF\n\nFOR i = 0 TO 5\n  IF a%(i) > 10 THEN\n    a%(i) = 10 + a%(i) MOD 2\n  END IF\nNEXT i\nsum = 0\nFOR i = 0 TO 5\n  sum = sum + a%(i) * (6 - i)\nNEXT i\nIF (sum MOD 2) <> 0 THEN\n  PRINT \"Can't be divided.\"\nEND IF\nsum = sum \\ 2: max = 0: cover%(0) = 1\nFOR i = 1 TO sum * 2: cover%(i) = 0: NEXT i\nFOR i = 0 TO 5\n  j = 0\n  DO WHILE j < a%(i)\n    FOR k = max TO 0 STEP -1\n      IF cover%(k) = 1 THEN\n        cover%(k + 6 - i) = 1\n      END IF\n    NEXT k\n    max = max + 6 - i: j = j + 1\n  LOOP\nNEXT i\nIF cover%(sum) = 1 THEN PRINT \"Can be divided.\"\nELSE PRINT \"Can't be divided.\"\nEND IF\nEND\n```\n\n输入: 4, 7, 9, 20, 56, 48\n\n输入: 1000, 7, 101, 20, 55, 1\n\n输入: 2000, 5, 1, 1, 0, 0\n\n输出: \\_\\_\\_\\_\\_\n\n输出: \\_\\_\\_\\_\\_\n\n输出: \\_\\_\\_\\_\\_\n\n{4}------------------------------------------------\n\n## 四、完善程序（第 1 空 2 分，其余每空 3 分 共 28 分）\n\n### 1. 一元二次方程\n\n题目描述：\n\n方程  $ax^2+bx+c=0$ , 要求给出它的实数解.\n\n输入：\n\n三个实数: a, b, c, 是方程的三个系数 ( $a \\neq 0$ ).\n\n输出：\n\n如果无实数解，则输出 “No solution”;\n\n如果有两个相等的实数解，，则输出其中一个，四舍五入到小数点后面3位;\n\n如果有两个不等的实数解，则解与解之间用逗号隔开，同样要四舍五入到小数点后3位。\n\n输入样例：\n\n1, 2, 1\n\n输出样例：\n\n-1.000\n\n程序：\n\n```\nDIM a, b, c, d, m AS SINGLE\nINPUT a, b, c\nm = b ^ 2 - 4 * a * c\nIF ① THEN\nPRINT USING \"##.###\"; ②\nPRINT ③\nPRINT USING \"##.###\"; (-1 * b - SQR(m)) / (2 * a)\nELSE\nIF ④ THEN\nPRINT USING \"##.###\"; ⑤\nELSE\nPRINT \"No solution.\"\nEND If\nEND IF\nEND\n```\n\n### 2. 翻硬币\n\n题目描述：\n\n一摞硬币共有 m 枚，每一枚都是正面朝上。取下最上面的一枚硬币，将它翻面后放回原处。然后取下最上面的 2 枚硬币，将他们一起翻面后再放回原处。再取 3 枚，取 4 枚……直至 m 枚。然后再从这摞硬币最上面的一枚开始，重复刚才的做法。这样一直做下去，直到这摞硬币中的每一枚又都是正面朝上为止。例如，m 为 1 时，翻两次即可；m 为 2 时，翻 3 次即可；m 为 3 时，翻 9 次即可；m 为 4 时，翻 11 次即可；m 为 5 时，翻 24 次即可；…；m 为 30 时，翻 899 次即可；…\n\n{5}------------------------------------------------\n\n输入：仅有的一个数字是这摞硬币的枚数 m，0<m<1000。\n\n输出：为了使这摞硬币中的每一枚又都是正面朝上所必需翻的次数。\n\n输入样例：\n\n30\n\n输出样例：\n\n899\n\n程序：\n\n```\nDECLARE FUNCTION solve (m)\nDIM m, n AS INTEGER\nINPUT m\nIF m > 0 AND m < 1000 THEN\n  n = ①\n  PRINT n\nEND IF\nEND\n```\n\n```\nFUNCTION solve (m)\nDIM i, t, d AS INTEGER\n```\n\n```\nIF m = 1 THEN\n  solve = ②\nELSE\n  d = 2 * m + 1\n  t = 2\n  i = 1\n\nDO\n  IF t = 1 THEN\n    solve = ③\n    EXIT DO\n  END IF\n  IF ④ THEN\n    solve = i * m - 1\n    EXIT DO\n  END IF\n  t = ⑤\n  i = i + 1\nLOOP\nEND IF\n```\n\n```\nEND FUNCTION\n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 11
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 22
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 14
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.733,
+    "page_count": 6,
+    "total_cost": 1.8,
+    "cost_breakdown": {
+      "final_cost_cents": 1.8
+    },
+    "runtime": 19.352629899978638,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.733,
+  "cost_breakdown": {
+    "final_cost_cents": 1.8
+  },
+  "page_count": 6,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2003/NOIP2003普及组初赛(Basic).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

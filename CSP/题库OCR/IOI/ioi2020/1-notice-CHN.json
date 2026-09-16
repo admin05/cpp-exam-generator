@@ -1,0 +1,142 @@
+{
+  "request_id": "hefl8UZk_W6mSQJ8Gffzlw",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:21:45.983386+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "hefl8UZk_W6mSQJ8Gffzlw",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/hefl8UZk_W6mSQJ8Gffzlw",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第一试注意事项\n\n对于每道题目：\n\n- 你可以在比赛系统里下载一个附件包。\n- 附件包里面有评测程序示例、实现示例、测试样例示例和编译脚本。\n- 每道题目最多可以提交50次，每次只能提交一个文件。\n- 要提交的文件名在题面的页眉中给出（右上角）。\n- 题面要求实现的函数必须按照实现示例所给出的函数签名来实现。\n- 你可以根据需要而实现其他函数。\n- 你提交的程序不能读取标准输入，不能写入标准输出，也不能和其他任何文件做交互。但是，可以向标准错误流输出。\n- 你提交的程序不能调用 `exit()` 或 `System.exit()`。如果调用它们来贸然地结束运行，你的评测结果是不确定的。\n- 在使用评测程序示例来评测你的程序时，你的输入数据应当符合题面所要求的格式和限制条件，否则可能会导致不确定的结果。\n- 除非明确指定了其他格式，否则在评测程序示例的输入中，每一行里连续两项之间用一个空格来隔开。\n- 在本地机器测试你的代码时，建议使用附件包中的脚本。否则，特别是对C++来说，编译时一定要加上 `-std=gnu++17` 选项。\n- 如果无法提交到CMS，你可以使用 `ioisubmit` 工具来保存你的代码，以便在竞赛结束后评测。\n  - 在<源代码文件>所在的目录下，运行：`ioisubmit <题目> <源代码文件>`。\n  - 请求你的监考人拍一张 `ioisubmit` 输出结果的照片，并发送给竞赛组织者。如果不这样做的话，你的提交将不会被考虑。\n\n## 约定\n\n题面在给出函数签名时，会使用一般性的类型名称 `void`, `int`, `int64`, `int[]`（数组）和 `int[][]`（二维数组）。\n\n对于所支持的每种编程语言，评测程序会采用适当的数据类型和适当的实现，如下表所示：\n\n| 语言   | <code>void</code> | <code>int</code> | <code>int64</code>     | <code>int[]</code>                  | 数组 <code>a</code> 的长度 |\n|------|-------------------|------------------|------------------------|-------------------------------------|-----------------------|\n| C++  | <code>void</code> | <code>int</code> | <code>long long</code> | <code>std::vector&lt;int&gt;</code> | <code>a.size()</code> |\n| Java | <code>void</code> | <code>int</code> | <code>long</code>      | <code>int[]</code>                  | <code>a.length</code> |\n\n{1}------------------------------------------------\n\n一个二维数组是一个相同长度数组的非空数组。\n\n| 语言   | <code>int[][]</code>                                   | 二维数组 <b>a</b> 的行数     | 二维数组 <b>a</b> 的列数        |\n|------|--------------------------------------------------------|-----------------------|--------------------------|\n| C++  | <code>std::vector&lt;std::vector&lt;int&gt;&gt;</code> | <code>a.size()</code> | <code>a[0].size()</code> |\n| Java | <code>int[][]</code>                                   | <code>a.length</code> | <code>a[0].length</code> |\n\n## 限制\n\n| 题目         | 名称    | 时间限制    | 内存限制     |\n|------------|-------|---------|----------|\n| plants     | 植物比较  | 4.000 秒 | 2.00 GiB |\n| supertrees | 连接擎天树 | 1.000 秒 | 2.00 GiB |\n| tickets    | 嘉年华奖券 | 2.000 秒 | 2.00 GiB |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 5
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 2,
+      "total_cost": 0.6,
+      "cost_breakdown": {
+        "final_cost_cents": 0.6
+      },
+      "runtime": 8.734890222549438,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第一试注意事项\n\n对于每道题目：\n\n- 你可以在比赛系统里下载一个附件包。\n- 附件包里面有评测程序示例、实现示例、测试样例示例和编译脚本。\n- 每道题目最多可以提交50次，每次只能提交一个文件。\n- 要提交的文件名在题面的页眉中给出（右上角）。\n- 题面要求实现的函数必须按照实现示例所给出的函数签名来实现。\n- 你可以根据需要而实现其他函数。\n- 你提交的程序不能读取标准输入，不能写入标准输出，也不能和其他任何文件做交互。但是，可以向标准错误流输出。\n- 你提交的程序不能调用 `exit()` 或 `System.exit()`。如果调用它们来贸然地结束运行，你的评测结果是不确定的。\n- 在使用评测程序示例来评测你的程序时，你的输入数据应当符合题面所要求的格式和限制条件，否则可能会导致不确定的结果。\n- 除非明确指定了其他格式，否则在评测程序示例的输入中，每一行里连续两项之间用一个空格来隔开。\n- 在本地机器测试你的代码时，建议使用附件包中的脚本。否则，特别是对C++来说，编译时一定要加上 `-std=gnu++17` 选项。\n- 如果无法提交到CMS，你可以使用 `ioisubmit` 工具来保存你的代码，以便在竞赛结束后评测。\n  - 在<源代码文件>所在的目录下，运行：`ioisubmit <题目> <源代码文件>`。\n  - 请求你的监考人拍一张 `ioisubmit` 输出结果的照片，并发送给竞赛组织者。如果不这样做的话，你的提交将不会被考虑。\n\n## 约定\n\n题面在给出函数签名时，会使用一般性的类型名称 `void`, `int`, `int64`, `int[]`（数组）和 `int[][]`（二维数组）。\n\n对于所支持的每种编程语言，评测程序会采用适当的数据类型和适当的实现，如下表所示：\n\n| 语言   | <code>void</code> | <code>int</code> | <code>int64</code>     | <code>int[]</code>                  | 数组 <code>a</code> 的长度 |\n|------|-------------------|------------------|------------------------|-------------------------------------|-----------------------|\n| C++  | <code>void</code> | <code>int</code> | <code>long long</code> | <code>std::vector&lt;int&gt;</code> | <code>a.size()</code> |\n| Java | <code>void</code> | <code>int</code> | <code>long</code>      | <code>int[]</code>                  | <code>a.length</code> |\n\n{1}------------------------------------------------\n\n一个二维数组是一个相同长度数组的非空数组。\n\n| 语言   | <code>int[][]</code>                                   | 二维数组 <b>a</b> 的行数     | 二维数组 <b>a</b> 的列数        |\n|------|--------------------------------------------------------|-----------------------|--------------------------|\n| C++  | <code>std::vector&lt;std::vector&lt;int&gt;&gt;</code> | <code>a.size()</code> | <code>a[0].size()</code> |\n| Java | <code>int[][]</code>                                   | <code>a.length</code> | <code>a[0].length</code> |\n\n## 限制\n\n| 题目         | 名称    | 时间限制    | 内存限制     |\n|------------|-------|---------|----------|\n| plants     | 植物比较  | 4.000 秒 | 2.00 GiB |\n| supertrees | 连接擎天树 | 1.000 秒 | 2.00 GiB |\n| tickets    | 嘉年华奖券 | 2.000 秒 | 2.00 GiB |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 5
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 2,
+    "total_cost": 0.6,
+    "cost_breakdown": {
+      "final_cost_cents": 0.6
+    },
+    "runtime": 8.734890222549438,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.6
+  },
+  "page_count": 2,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2020/1-notice-CHN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}
