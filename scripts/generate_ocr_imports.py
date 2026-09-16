@@ -99,7 +99,11 @@ def build_round1() -> tuple[list[dict], list[str]]:
         for question in parsed:
             question["stem"] = re.sub(r"\n\s*-\s*$", "", question.get("stem", "")).strip()
             question["options"] = [
-                re.split(r"\n\s*(?:一、|二、|三、)\s*", option, maxsplit=1)[0]
+                re.split(
+                    r"\n\s*(?:一、|二、|三、|试补全(?:枚举)?算法|\(\d+\)\s)|\n\s*```",
+                    option,
+                    maxsplit=1,
+                )[0]
                 .rstrip(" -")
                 .strip()
                 for option in question.get("options", [])

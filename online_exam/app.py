@@ -1453,6 +1453,13 @@ def sync_corrected_question_snapshots(payload: dict) -> bool:
     changed = False
     for question in payload.get("choice_questions", []):
         question_id = str(question.get("id", ""))
+        canonical = CHOICE_QUESTIONS_BY_ID.get(question_id)
+        if canonical and "CSP/题库OCR/" in str(canonical.get("source", "")):
+            for field in CORRECTED_QUESTION_SNAPSHOT_FIELDS:
+                value = canonical.get(field, "")
+                if question.get(field) != value:
+                    question[field] = value
+                    changed = True
         rule = CSP_CORRECTED_QUESTION_SNAPSHOT_RULES.get(question_id)
         # Legacy saved papers may have lost or rewritten imported IDs. Match
         # the distinctive stem as a fallback so the correction still reaches
