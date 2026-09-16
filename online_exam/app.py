@@ -29,6 +29,7 @@ PORT = int(os.environ.get("PORT", "8000"))
 LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 BEIJING_TZ = timezone(timedelta(hours=8), name="Asia/Shanghai")
 PLATFORM_NAME = "C++ 竞赛训练平台"
+APP_VERSION = "0.3"
 EXAM_FORM_SETTINGS_KEY = "admin_exam_form_defaults"
 DEFAULT_EXAM_FORM = {
     "title": "CSP-J 第一轮模拟考试",
@@ -1204,9 +1205,11 @@ def layout(title: str, body: str) -> bytes:
     <nav>
       <a href="/">考试入口</a>
       <a href="/admin">管理后台</a>
+      <span class="version">v{h(APP_VERSION)}</span>
     </nav>
   </header>
   <main>{body}</main>
+  <footer class="site-footer">{h(PLATFORM_NAME)} · 版本 v{h(APP_VERSION)}</footer>
 </body>
 </html>"""
     return page.encode("utf-8")
@@ -2261,7 +2264,7 @@ def not_found() -> bytes:
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "CppContestExam/0.2"
+    server_version = f"CppContestExam/{APP_VERSION}"
 
     def send_html(self, data: bytes, status: int = 200) -> None:
         if data.startswith(b"REDIRECT:"):

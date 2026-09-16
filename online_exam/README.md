@@ -10,6 +10,9 @@
 题目实际由 `CSP/题库OCR` 中的重新生成 OCR Markdown 文件构建，使用仓库根目录执行
 `python3 scripts/generate_ocr_imports.py` 更新 `imported_ocr_questions.py`。
 
+应用版本号集中定义在 `app.py` 的 `APP_VERSION`。每次发布功能或修复更新时递增版本号；
+当前版本会显示在页面顶部导航和页脚，同时写入 HTTP `Server` 响应头。
+
 ## 添加题目
 
 结构化题目放在 `question_bank.py` 或其导入模块中。建议字段：
