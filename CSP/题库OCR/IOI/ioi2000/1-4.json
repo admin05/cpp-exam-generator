@@ -1,0 +1,134 @@
+{
+  "request_id": "gJWhEJu_-8cmO5KYSTgI5w",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:05:53.695059+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "gJWhEJu_-8cmO5KYSTgI5w",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/gJWhEJu_-8cmO5KYSTgI5w",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# **IOI 2000 Beijing China** **Messages from Interactive Library** **交互式函数库错误信息** **DAY 1**\n\n### **MEDIAN**\n\n**ERROR: Input file DEVICE.IN not found**\n\n输入文件 DEVICE.IN 没有找到\n\n**ERROR: Non-number value in first line of DEVICE.IN**\n\nDEVICE.IN 的第一行不是数字\n\n**ERROR: Value out of range in first line of DEVICE.IN**\n\nDEVICE.IN 第一行的数值超出范围\n\n**ERROR: N must be odd number in first line of DEVICE.IN**\n\nDEVICE.IN 第一行中的 N 必须是奇数\n\n**ERROR: Number of items in second line of file DEVICE.IN less than required**\n\nDEVICE.IN 第二行中的数据不全\n\n**ERROR: Value out of range in second line of file DEVICE.IN**\n\nDEVICE.IN 第二行中的数值超出范围\n\n**ERROR: Non-number value in second line of file DEVICE.IN**\n\nDEVICE.IN 的第二行不全是数字\n\n**ERROR: Duplicate values in second line of file DEVICE.IN**\n\nDEVICE.IN 的第二行出现重复数值\n\n**ERROR: Illegal Dialogue. GetN must be called first**\n\n函数 GetN 必须最先被调用\n\n**ERROR: Parameter out of range**\n\n函数参数超过范围\n\n**ERROR: Nondistinct parameter values**\n\n函数参数相同\n\n**ERROR: More than 7777 calls**\n\n调用超过 7777 次",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 30
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 5.836040735244751,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# **IOI 2000 Beijing China** **Messages from Interactive Library** **交互式函数库错误信息** **DAY 1**\n\n### **MEDIAN**\n\n**ERROR: Input file DEVICE.IN not found**\n\n输入文件 DEVICE.IN 没有找到\n\n**ERROR: Non-number value in first line of DEVICE.IN**\n\nDEVICE.IN 的第一行不是数字\n\n**ERROR: Value out of range in first line of DEVICE.IN**\n\nDEVICE.IN 第一行的数值超出范围\n\n**ERROR: N must be odd number in first line of DEVICE.IN**\n\nDEVICE.IN 第一行中的 N 必须是奇数\n\n**ERROR: Number of items in second line of file DEVICE.IN less than required**\n\nDEVICE.IN 第二行中的数据不全\n\n**ERROR: Value out of range in second line of file DEVICE.IN**\n\nDEVICE.IN 第二行中的数值超出范围\n\n**ERROR: Non-number value in second line of file DEVICE.IN**\n\nDEVICE.IN 的第二行不全是数字\n\n**ERROR: Duplicate values in second line of file DEVICE.IN**\n\nDEVICE.IN 的第二行出现重复数值\n\n**ERROR: Illegal Dialogue. GetN must be called first**\n\n函数 GetN 必须最先被调用\n\n**ERROR: Parameter out of range**\n\n函数参数超过范围\n\n**ERROR: Nondistinct parameter values**\n\n函数参数相同\n\n**ERROR: More than 7777 calls**\n\n调用超过 7777 次",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 30
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 5.836040735244751,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2000/1-4.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

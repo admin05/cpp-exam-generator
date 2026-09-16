@@ -1,0 +1,140 @@
+{
+  "request_id": "UL-_UNbReLZLV4nu7i9jWQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:24:04.010915+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "UL-_UNbReLZLV4nu7i9jWQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/UL-_UNbReLZLV4nu7i9jWQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十八届全国青少年信息学奥林匹克联赛初赛\n\n## 提高组参考答案\n\n## 一、单项选择题（共 10 题，每题 1.5 分，共计 15 分）\n\n|   |   |   |   |   |   |   |   |   |    |\n|---|---|---|---|---|---|---|---|---|----|\n| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| A | B | B | A | D | A | A | D | A | B  |\n\n## 二、不定项选择题（共 10 题，每题 1.5 分，共计 15 分，多选或少选均不得分）\n\n|    |    |    |    |     |\n|----|----|----|----|-----|\n| 1  | 2  | 3  | 4  | 5   |\n| A  | AD | AD | BD | ABC |\n| 6  | 7  | 8  | 9  | 10  |\n| CD | AB | A  | CD | BD  |\n\n## 三、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 256\n- 5536\n\n## 四、阅读程序写结果（共 4 题，每题 8 分，其中第 3 题的 2 个小题各 4 分，共计 32 分）\n\n- 41\n- 16\n- (1) 7 (4 分)  \n(2) 2004 (4 分)\n- 55\n\n## 五、完善程序（第 1 题第 2 空 3 分，其余每空 2.5 分，共计 28 分）以下各程序填空可能还有一些等价的写法，各省赛区可请本省专家审定和上机验证，可以不上报 CCF NOI 科学委员会检查。\n\n|   |   | Pascal 语言              | C++语言                 | C 语言              |\n|---|---|------------------------|-----------------------|-------------------|\n| 1 | ① | false                  |                       | 0                 |\n|   | ② | used[data[i]] := false | used[data[i]] = false | used[data[i]] = 0 |\n|   | ③ | j                      |                       |                   |\n|   | ④ | n                      |                       |                   |\n|   | ⑤ | break                  |                       |                   |\n| 2 | ① | next := (k mod c) + 1  | return (k % c) + 1    |                   |\n|   | ② | s[n] := q[tail]        | s[n] = q[tail]        |                   |\n|   | ③ | q[head]                |                       |                   |\n|   | ④ | q[head]                |                       |                   |\n|   | ⑤ | q[tail]                |                       |                   |\n|   | ⑥ | next(head)             |                       |                   |\n\n其中，Pascal 语言和 C++语言中的 false 可以用 0 代替；第 2 题第 1 空中的圆括号可以省略。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 13
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "list_cost_cents": 0.4,
+        "final_cost_cents": 0.3,
+        "regional_multiplier": 1.0
+      },
+      "runtime": 9.752369165420532,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十八届全国青少年信息学奥林匹克联赛初赛\n\n## 提高组参考答案\n\n## 一、单项选择题（共 10 题，每题 1.5 分，共计 15 分）\n\n|   |   |   |   |   |   |   |   |   |    |\n|---|---|---|---|---|---|---|---|---|----|\n| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| A | B | B | A | D | A | A | D | A | B  |\n\n## 二、不定项选择题（共 10 题，每题 1.5 分，共计 15 分，多选或少选均不得分）\n\n|    |    |    |    |     |\n|----|----|----|----|-----|\n| 1  | 2  | 3  | 4  | 5   |\n| A  | AD | AD | BD | ABC |\n| 6  | 7  | 8  | 9  | 10  |\n| CD | AB | A  | CD | BD  |\n\n## 三、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 256\n- 5536\n\n## 四、阅读程序写结果（共 4 题，每题 8 分，其中第 3 题的 2 个小题各 4 分，共计 32 分）\n\n- 41\n- 16\n- (1) 7 (4 分)  \n(2) 2004 (4 分)\n- 55\n\n## 五、完善程序（第 1 题第 2 空 3 分，其余每空 2.5 分，共计 28 分）以下各程序填空可能还有一些等价的写法，各省赛区可请本省专家审定和上机验证，可以不上报 CCF NOI 科学委员会检查。\n\n|   |   | Pascal 语言              | C++语言                 | C 语言              |\n|---|---|------------------------|-----------------------|-------------------|\n| 1 | ① | false                  |                       | 0                 |\n|   | ② | used[data[i]] := false | used[data[i]] = false | used[data[i]] = 0 |\n|   | ③ | j                      |                       |                   |\n|   | ④ | n                      |                       |                   |\n|   | ⑤ | break                  |                       |                   |\n| 2 | ① | next := (k mod c) + 1  | return (k % c) + 1    |                   |\n|   | ② | s[n] := q[tail]        | s[n] = q[tail]        |                   |\n|   | ③ | q[head]                |                       |                   |\n|   | ④ | q[head]                |                       |                   |\n|   | ⑤ | q[tail]                |                       |                   |\n|   | ⑥ | next(head)             |                       |                   |\n\n其中，Pascal 语言和 C++语言中的 false 可以用 0 代替；第 2 题第 1 空中的圆括号可以省略。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 13
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "list_cost_cents": 0.4,
+      "final_cost_cents": 0.3,
+      "regional_multiplier": 1.0
+    },
+    "runtime": 9.752369165420532,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "list_cost_cents": 0.4,
+    "final_cost_cents": 0.3,
+    "regional_multiplier": 1.0
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2012/noip2012hs_sol.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

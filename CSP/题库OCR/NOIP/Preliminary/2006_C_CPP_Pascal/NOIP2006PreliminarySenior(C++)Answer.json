@@ -1,0 +1,134 @@
+{
+  "request_id": "Z81C_8D_pDDGLlrPfRUUWQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:12:31.137109+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "Z81C_8D_pDDGLlrPfRUUWQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/Z81C_8D_pDDGLlrPfRUUWQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 提高组 (C++) 参考答案与评分标准\n\n## 一、单项选择题: (每题 1.5 分)\n\n1. E    2. C    3. D    4. E    5. C    6. E    7. C    8. B    9. A    10. B\n\n## 二、不定项选择题: (每题 1.5 分)\n\n11. ABC    12. AB    13. C    14. BC    15. ABCD  \n16. AD    17. CD    18. AB    19. BD    20. (满分, 空白 0 分)\n\n## 三、问题求解: (每题 5 分)\n\n1. 401    2. 9! (或 362880)\n\n## 四、阅读程序写结果\n\n1. -13, 57 (对 1 个数给 4 分, 无逗号扣 1 分)\n\n2. 6    28    496    8128    33550336\n\n(前 2 个对 1 个数给 1 分, 后 3 个对 1 个数给 2 分)\n\n3. 11\n\n4. 6    2    5    4    3    7    9    9    7    3    4    5    2    6 (数字之间无空格扣 2 分)\n\n## 五、完善程序 (前 5 空, 每空 2 分, 后 6 空, 每空 3 分)\n\n1. ① `j==k` (或 `k==j`)\n\n② `p=1;p<=k;p++`\n\n③ `perm2(j+1)`\n\n④ `a[j]=a[i];a[i]=t`\n\n⑤ `perm2(1)`\n\n2. ① `a1[i]=a2[i];a2[i]=t`\n\n② `kz1[i]=kz2[i]=1`\n\n③ `kz1[i]=kz2[j]=0`\n\n④ `a1[j]==a1[i] && kz1[j]==-1`\n\n⑤ `a2[j]==a2[kj] && kz2[j]==-1`\n\n⑥ `cross(a1, a2, t1, t2, n)`",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 25
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 7.210730075836182,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 提高组 (C++) 参考答案与评分标准\n\n## 一、单项选择题: (每题 1.5 分)\n\n1. E    2. C    3. D    4. E    5. C    6. E    7. C    8. B    9. A    10. B\n\n## 二、不定项选择题: (每题 1.5 分)\n\n11. ABC    12. AB    13. C    14. BC    15. ABCD  \n16. AD    17. CD    18. AB    19. BD    20. (满分, 空白 0 分)\n\n## 三、问题求解: (每题 5 分)\n\n1. 401    2. 9! (或 362880)\n\n## 四、阅读程序写结果\n\n1. -13, 57 (对 1 个数给 4 分, 无逗号扣 1 分)\n\n2. 6    28    496    8128    33550336\n\n(前 2 个对 1 个数给 1 分, 后 3 个对 1 个数给 2 分)\n\n3. 11\n\n4. 6    2    5    4    3    7    9    9    7    3    4    5    2    6 (数字之间无空格扣 2 分)\n\n## 五、完善程序 (前 5 空, 每空 2 分, 后 6 空, 每空 3 分)\n\n1. ① `j==k` (或 `k==j`)\n\n② `p=1;p<=k;p++`\n\n③ `perm2(j+1)`\n\n④ `a[j]=a[i];a[i]=t`\n\n⑤ `perm2(1)`\n\n2. ① `a1[i]=a2[i];a2[i]=t`\n\n② `kz1[i]=kz2[i]=1`\n\n③ `kz1[i]=kz2[j]=0`\n\n④ `a1[j]==a1[i] && kz1[j]==-1`\n\n⑤ `a2[j]==a2[kj] && kz2[j]==-1`\n\n⑥ `cross(a1, a2, t1, t2, n)`",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 25
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 7.210730075836182,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2006_C_CPP_Pascal/NOIP2006PreliminarySenior(C++)Answer.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

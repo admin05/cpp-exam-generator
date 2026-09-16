@@ -1,0 +1,237 @@
+{
+  "request_id": "E54M8jyx-72RrLwrrFAO1g",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:14:40.528421+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "E54M8jyx-72RrLwrrFAO1g",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/E54M8jyx-72RrLwrrFAO1g",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![International Olympiad in Informatics (IOI) Russia - Kazan 2016 Logo](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nInternational Olympiad in Informatics (IOI) Russia - Kazan 2016 Logo\n\n# Unscrambling a Messy Bug 解读Bug\n\n伊尔沙特是一位软件工程师，他的工作是**设计高效的数据结构**。有一天，他发明了一个新的数据结构。这个数据结构可以存储一个  $n$  位非负整数集合， $n$  是2的整数次幂，即  $n = 2^b$ ， $b$  是非负整数。\n\n这个**数据结构初始为空**。使用该**数据结构**的程序必须要遵守下列规则：\n\n- 程序可以添加一些元素到这个数据结构中，每次利用函数 `add_element(x)` 添加一个元素，每个元素是一个  $n$  位整数。如果程序要添加的元素已经在**数据结构**中，则什么事情也不会发生。\n- 当添加完最后一个元素以后，程序**应该调用一次**函数 `complie_set( )`，而且只能调用一次。\n- 最后，程序可以调用函数 `check_element(x)` 来检查元素  $x$  是否在数据结构中。这个函数可以调用多次。\n\n当伊尔沙特第一次**实现该数据结构时**，他在写函数 `compile_set()` 时出现一个bug。这个bug将集合中每个元素的二进制位以相同的方式重新排序。伊尔沙特希望你能帮助他找到由于该bug导致的重排列。\n\n考虑一个序列  $p = [p_0, \\dots, p_{n-1}]$ ，该序列中  $0$  到  $n - 1$  这  $n$  个数字每个数字恰好出现一次。我们称该序列为一个排列。考虑集合中的一个元素，该元素的二进制表达为  $a_0, \\dots, a_{n-1}$ （ $a_0$  是最高位）。当函数 `compile_set()` 被调用时，这个元素将被元素  $a_{p_0}, a_{p_1}, \\dots, a_{p_{n-1}}$  替代。\n\n同样的排列  $p$  会被用于每个元素的二进制位的重排列。这个排列  $p$  可以是任意一个排列，包括  $p_i = i, 0 \\leq i \\leq n - 1$ 。\n\n例如，假设  $n = 4, p = [2, 1, 3, 0]$ ，你已经插入的整数所对应的二进制表示为 `0000`, `1100` 和 `0111`。调用函数 `compile_set` 会将三个元素分别变成 `0000`, `0101` 和 `1110`。\n\n你的任务是写一个程序，该程序通过和**数据结构**的交互来找到排列  $p$ 。该程序应该（按照下列顺序）：\n\n1. 选择一个  $n$  位整数的集合，\n2. 将这些整数插入到数据结构中，\n3. 调用函数 `compile_set` 来激活bug，\n4. 检查某些元素是否在修改以后的集合当中，\n5. 利用该信息来判断和返回排列  $p$ 。\n\n注意你的程序只能调用函数 `compile_set` 一次。\n\n而且，你的程序**调用库函数**的次数是有限制的。具体的，你的程序可以\n\n- 调用 `add_element` 最多  $w$  次（ $w$  表示“写”）\n- 调用 `check_element` 最多调用  $r$  次（ $r$  表示“读”）。\n\n{1}------------------------------------------------\n\n## 实现细节\n\n你应该实现一个函数（方法）：\n\n- `int[] restore_permutation(int n, int w, int r)`\n  - `n`: 集合中每个元素的二进制表示的位数（也是排列  $p$  的长度）。\n  - `w`: 你的程序调用函数 `add_element` 的最大次数。\n  - `r`: 你的程序调用函数 `check_element` 的最大次数。\n  - 函数应该返回恢复的排列  $p$ 。\n\nC语言的函数原型略有不同：\n\n- `void restore_permutation(int n, int w, int r, int* result)`\n  - `n, w` 和 `r` 同上。\n  - 函数返回排列  $p$  的方式是将  $p$  存储到提供的数组 `result` 中：对每个  $i$ ，函数将  $p_i$  存到 `result[i]` 中。\n\n## 库函数\n\n为了和数据结构进行交互，你的程序应该使用下列三个函数（方法）\n\n- `void add_element(string x)`\n\n该函数将 `x` 所描述的元素添加到集合中。\n\n  - `x`: 一个由 '0' 和 '1' 构成的字符串，它是要添加到集合中的元素的二进制表示。`x` 的长度必须是  $n$ 。\n- `void compile_set()`\n\n该函数必须调用一次且只能调用一次。在调用该函数之后，你的程序不能再调用函数 `add_element()`。在调用该函数之前，你的程序也不能调用函数 `check_element()`。\n- `boolean check_element(string x)`\n\n该函数检查元素 `x` 是否在修改以后的集合当中。\n\n  - `x`: 一个由 '0' 和 '1' 构成的字符串，它是要检查的元素的二进制表示。`x` 的长度必须是  $n$ 。\n  - 如果元素 `x` 在修改后的集合中，则返回 `true`，否则返回 `false`。\n\n注意：如果你的程序违反上述的任何一条限制，其评分输出将是 \"Wrong Answer\"。\n\n对于所有的字符串，第一个字符都表示所对应整数的最高位。\n\n评测程序在调用函数 `restore_permutation` 之前已经确定了排列  $p$ 。\n\n请使用提供的模板文件，以获得关于你所使用的编程语言实现细节。\n\n## 例子\n\n评测程序执行下列函数调用：\n\n- `restore_permutation(4, 16, 16)`. 我们有  $n = 4$  而且程序最多执行 16 次\"写\"和 16 次\"读\"操作。\n\n程序执行下列函数调用：\n\n- `add_element(\"0001\")`\n- `add_element(\"0011\")`\n- `add_element(\"0100\")`\n- `compile_set()`\n\n{2}------------------------------------------------\n\n- `check_element(\"0001\")` returns `false`\n- `check_element(\"0010\")` returns `true`\n- `check_element(\"0100\")` returns `true`\n- `check_element(\"1000\")` returns `false`\n- `check_element(\"0011\")` returns `false`\n- `check_element(\"0101\")` returns `false`\n- `check_element(\"1001\")` returns `false`\n- `check_element(\"0110\")` returns `false`\n- `check_element(\"1010\")` returns `true`\n- `check_element(\"1100\")` returns `false`\n\n只有一个排列和函数 `check_element()` 返回的值一致：\n\n排列  $p = [2, 1, 3, 0]$ 。因此, `restore_permutation` 应该返回  $[2, 1, 3, 0]$ .\n\n## 子任务\n\n1. (20分)  $n = 8, w = 256, r = 256$ , 最多有两个下标  $i$  满足  $p_i \\neq i$  ( $0 \\leq i \\leq n - 1$ ),\n2. (18分)  $n = 32, w = 320, r = 1024$ ,\n3. (11分)  $n = 32, w = 1024, r = 320$ ,\n4. (21分)  $n = 128, w = 1792, r = 1792$ ,\n5. (30分)  $n = 128, w = 896, r = 896$ .\n\n## 样例评测程序\n\n样例评测程序按照以下格式读入输入：\n\n- 第一行: 整数  $n, w, r$ ,\n- 第二行:  $n$  个整数表示排列  $p$  的元素。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 17
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 18
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 9
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 1.0,
+      "cost_breakdown": {
+        "final_cost_cents": 1.0
+      },
+      "runtime": 30.603312969207764,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![International Olympiad in Informatics (IOI) Russia - Kazan 2016 Logo](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nInternational Olympiad in Informatics (IOI) Russia - Kazan 2016 Logo\n\n# Unscrambling a Messy Bug 解读Bug\n\n伊尔沙特是一位软件工程师，他的工作是**设计高效的数据结构**。有一天，他发明了一个新的数据结构。这个数据结构可以存储一个  $n$  位非负整数集合， $n$  是2的整数次幂，即  $n = 2^b$ ， $b$  是非负整数。\n\n这个**数据结构初始为空**。使用该**数据结构**的程序必须要遵守下列规则：\n\n- 程序可以添加一些元素到这个数据结构中，每次利用函数 `add_element(x)` 添加一个元素，每个元素是一个  $n$  位整数。如果程序要添加的元素已经在**数据结构**中，则什么事情也不会发生。\n- 当添加完最后一个元素以后，程序**应该调用一次**函数 `complie_set( )`，而且只能调用一次。\n- 最后，程序可以调用函数 `check_element(x)` 来检查元素  $x$  是否在数据结构中。这个函数可以调用多次。\n\n当伊尔沙特第一次**实现该数据结构时**，他在写函数 `compile_set()` 时出现一个bug。这个bug将集合中每个元素的二进制位以相同的方式重新排序。伊尔沙特希望你能帮助他找到由于该bug导致的重排列。\n\n考虑一个序列  $p = [p_0, \\dots, p_{n-1}]$ ，该序列中  $0$  到  $n - 1$  这  $n$  个数字每个数字恰好出现一次。我们称该序列为一个排列。考虑集合中的一个元素，该元素的二进制表达为  $a_0, \\dots, a_{n-1}$ （ $a_0$  是最高位）。当函数 `compile_set()` 被调用时，这个元素将被元素  $a_{p_0}, a_{p_1}, \\dots, a_{p_{n-1}}$  替代。\n\n同样的排列  $p$  会被用于每个元素的二进制位的重排列。这个排列  $p$  可以是任意一个排列，包括  $p_i = i, 0 \\leq i \\leq n - 1$ 。\n\n例如，假设  $n = 4, p = [2, 1, 3, 0]$ ，你已经插入的整数所对应的二进制表示为 `0000`, `1100` 和 `0111`。调用函数 `compile_set` 会将三个元素分别变成 `0000`, `0101` 和 `1110`。\n\n你的任务是写一个程序，该程序通过和**数据结构**的交互来找到排列  $p$ 。该程序应该（按照下列顺序）：\n\n1. 选择一个  $n$  位整数的集合，\n2. 将这些整数插入到数据结构中，\n3. 调用函数 `compile_set` 来激活bug，\n4. 检查某些元素是否在修改以后的集合当中，\n5. 利用该信息来判断和返回排列  $p$ 。\n\n注意你的程序只能调用函数 `compile_set` 一次。\n\n而且，你的程序**调用库函数**的次数是有限制的。具体的，你的程序可以\n\n- 调用 `add_element` 最多  $w$  次（ $w$  表示“写”）\n- 调用 `check_element` 最多调用  $r$  次（ $r$  表示“读”）。\n\n{1}------------------------------------------------\n\n## 实现细节\n\n你应该实现一个函数（方法）：\n\n- `int[] restore_permutation(int n, int w, int r)`\n  - `n`: 集合中每个元素的二进制表示的位数（也是排列  $p$  的长度）。\n  - `w`: 你的程序调用函数 `add_element` 的最大次数。\n  - `r`: 你的程序调用函数 `check_element` 的最大次数。\n  - 函数应该返回恢复的排列  $p$ 。\n\nC语言的函数原型略有不同：\n\n- `void restore_permutation(int n, int w, int r, int* result)`\n  - `n, w` 和 `r` 同上。\n  - 函数返回排列  $p$  的方式是将  $p$  存储到提供的数组 `result` 中：对每个  $i$ ，函数将  $p_i$  存到 `result[i]` 中。\n\n## 库函数\n\n为了和数据结构进行交互，你的程序应该使用下列三个函数（方法）\n\n- `void add_element(string x)`\n\n该函数将 `x` 所描述的元素添加到集合中。\n\n  - `x`: 一个由 '0' 和 '1' 构成的字符串，它是要添加到集合中的元素的二进制表示。`x` 的长度必须是  $n$ 。\n- `void compile_set()`\n\n该函数必须调用一次且只能调用一次。在调用该函数之后，你的程序不能再调用函数 `add_element()`。在调用该函数之前，你的程序也不能调用函数 `check_element()`。\n- `boolean check_element(string x)`\n\n该函数检查元素 `x` 是否在修改以后的集合当中。\n\n  - `x`: 一个由 '0' 和 '1' 构成的字符串，它是要检查的元素的二进制表示。`x` 的长度必须是  $n$ 。\n  - 如果元素 `x` 在修改后的集合中，则返回 `true`，否则返回 `false`。\n\n注意：如果你的程序违反上述的任何一条限制，其评分输出将是 \"Wrong Answer\"。\n\n对于所有的字符串，第一个字符都表示所对应整数的最高位。\n\n评测程序在调用函数 `restore_permutation` 之前已经确定了排列  $p$ 。\n\n请使用提供的模板文件，以获得关于你所使用的编程语言实现细节。\n\n## 例子\n\n评测程序执行下列函数调用：\n\n- `restore_permutation(4, 16, 16)`. 我们有  $n = 4$  而且程序最多执行 16 次\"写\"和 16 次\"读\"操作。\n\n程序执行下列函数调用：\n\n- `add_element(\"0001\")`\n- `add_element(\"0011\")`\n- `add_element(\"0100\")`\n- `compile_set()`\n\n{2}------------------------------------------------\n\n- `check_element(\"0001\")` returns `false`\n- `check_element(\"0010\")` returns `true`\n- `check_element(\"0100\")` returns `true`\n- `check_element(\"1000\")` returns `false`\n- `check_element(\"0011\")` returns `false`\n- `check_element(\"0101\")` returns `false`\n- `check_element(\"1001\")` returns `false`\n- `check_element(\"0110\")` returns `false`\n- `check_element(\"1010\")` returns `true`\n- `check_element(\"1100\")` returns `false`\n\n只有一个排列和函数 `check_element()` 返回的值一致：\n\n排列  $p = [2, 1, 3, 0]$ 。因此, `restore_permutation` 应该返回  $[2, 1, 3, 0]$ .\n\n## 子任务\n\n1. (20分)  $n = 8, w = 256, r = 256$ , 最多有两个下标  $i$  满足  $p_i \\neq i$  ( $0 \\leq i \\leq n - 1$ ),\n2. (18分)  $n = 32, w = 320, r = 1024$ ,\n3. (11分)  $n = 32, w = 1024, r = 320$ ,\n4. (21分)  $n = 128, w = 1792, r = 1792$ ,\n5. (30分)  $n = 128, w = 896, r = 896$ .\n\n## 样例评测程序\n\n样例评测程序按照以下格式读入输入：\n\n- 第一行: 整数  $n, w, r$ ,\n- 第二行:  $n$  个整数表示排列  $p$  的元素。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 17
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 18
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 9
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 1.0,
+    "cost_breakdown": {
+      "final_cost_cents": 1.0
+    },
+    "runtime": 30.603312969207764,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.0
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2016/2B-messy-CHN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg"
+  ]
+}

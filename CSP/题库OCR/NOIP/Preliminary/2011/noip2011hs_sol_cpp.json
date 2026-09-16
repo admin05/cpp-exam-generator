@@ -1,0 +1,161 @@
+{
+  "request_id": "UeRD0SDP3NkymYoRAskEVg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:22:41.993525+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "UeRD0SDP3NkymYoRAskEVg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/UeRD0SDP3NkymYoRAskEVg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CCF NOIP2011 提高组 (C++语言) 参考答案与评分标准\n\n## 一、单项选择题 (共 10 题, 每题 1.5 分, 共计 15 分)\n\n|   |   |   |   |   |   |   |   |   |    |\n|---|---|---|---|---|---|---|---|---|----|\n| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| B | B | A | D | B | A | C | D | B | A  |\n\n## 二、不定项选择题 (共 10 题, 每题 1.5 分, 共计 15 分, 多选或少选均不得分)\n\n|    |      |    |    |    |     |    |   |     |     |\n|----|------|----|----|----|-----|----|---|-----|-----|\n| 1  | 2    | 3  | 4  | 5  | 6   | 7  | 8 | 9   | 10  |\n| CD | ABCD | AB | BC | BC | ABD | CD | A | BCD | ABC |\n\n## 三、问题求解 (共 2 题, 每题 5 分, 共计 10 分)\n\n1. 9\n\n2. 4\n\n## 四、阅读程序写结果 (共 4 题, 每题 8 分, 共计 32 分)\n\n1. 3\n\n2. 1 2 5 13 34\n\n3. 150\n\n4. 57344\n\n## 五、完善程序 (第 1 题, 每空 2 分, 第 2 题, 每空 3 分, 共计 28 分)\n\n(说明: 以下各程序填空可能还有一些等价的写法, 各省可请本省专家审定和上机验证, 不一定上报科学委员会审查)\n\n1. ① `ans.num[i + j - 1]`\n\n② `ans.num[i] %= 10` (或 `ans.num[i] = ans.num[i] % 10`)\n\n③ `a.num[i] + b.num[i]`\n\n④ `ans.num[i] % 2` (或 `ans.num[i] & 1`)\n\n⑤ `ans.len++` (或 `++ans.len` 或 `ans.len += 1` 或 `ans.len = ans.len + 1`)\n\n⑥ `a.len < b.len`\n\n⑦ `'0'` (或 48)\n\n⑧ `times(middle, middle), target`\n\n2. ① `num++`\n\n② `j = i`\n\n③ `solve(left, j - 1, deep + 1)`\n\n④ `solve(j + 1, right, deep + 1)`",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 27
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 10.439209699630737,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CCF NOIP2011 提高组 (C++语言) 参考答案与评分标准\n\n## 一、单项选择题 (共 10 题, 每题 1.5 分, 共计 15 分)\n\n|   |   |   |   |   |   |   |   |   |    |\n|---|---|---|---|---|---|---|---|---|----|\n| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| B | B | A | D | B | A | C | D | B | A  |\n\n## 二、不定项选择题 (共 10 题, 每题 1.5 分, 共计 15 分, 多选或少选均不得分)\n\n|    |      |    |    |    |     |    |   |     |     |\n|----|------|----|----|----|-----|----|---|-----|-----|\n| 1  | 2    | 3  | 4  | 5  | 6   | 7  | 8 | 9   | 10  |\n| CD | ABCD | AB | BC | BC | ABD | CD | A | BCD | ABC |\n\n## 三、问题求解 (共 2 题, 每题 5 分, 共计 10 分)\n\n1. 9\n\n2. 4\n\n## 四、阅读程序写结果 (共 4 题, 每题 8 分, 共计 32 分)\n\n1. 3\n\n2. 1 2 5 13 34\n\n3. 150\n\n4. 57344\n\n## 五、完善程序 (第 1 题, 每空 2 分, 第 2 题, 每空 3 分, 共计 28 分)\n\n(说明: 以下各程序填空可能还有一些等价的写法, 各省可请本省专家审定和上机验证, 不一定上报科学委员会审查)\n\n1. ① `ans.num[i + j - 1]`\n\n② `ans.num[i] %= 10` (或 `ans.num[i] = ans.num[i] % 10`)\n\n③ `a.num[i] + b.num[i]`\n\n④ `ans.num[i] % 2` (或 `ans.num[i] & 1`)\n\n⑤ `ans.len++` (或 `++ans.len` 或 `ans.len += 1` 或 `ans.len = ans.len + 1`)\n\n⑥ `a.len < b.len`\n\n⑦ `'0'` (或 48)\n\n⑧ `times(middle, middle), target`\n\n2. ① `num++`\n\n② `j = i`\n\n③ `solve(left, j - 1, deep + 1)`\n\n④ `solve(j + 1, right, deep + 1)`",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 27
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 10.439209699630737,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2011/noip2011hs_sol_cpp.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

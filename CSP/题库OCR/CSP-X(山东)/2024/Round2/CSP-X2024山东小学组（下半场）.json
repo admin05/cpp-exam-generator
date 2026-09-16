@@ -1,0 +1,158 @@
+{
+  "request_id": "O96nkv6T8PdHV3O0CHTUEg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:00:06.807438+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "O96nkv6T8PdHV3O0CHTUEg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/O96nkv6T8PdHV3O0CHTUEg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2024 小学组二轮试题（下半场）\n\n考试时间： 2024 年 10 月 27 日上午 10：30--12：00\n\n|         |          |              |\n|---------|----------|--------------|\n| 题目名称    | 翻硬币      | 刷题           |\n| 题目类型    | 传统型      | 传统型          |\n| 目录      | coin     | question     |\n| 程序名称    | coin.cpp | question.cpp |\n| 输入文件名   | coin.in  | question.in  |\n| 输出文件名   | coin.out | question.out |\n| 测试点数量   | 10       | 20           |\n| 每测试点时限  | 1 秒      | 1 秒          |\n| 测试点是否等分 | 是        | 是            |\n| 内存限制    | 512M     | 512M         |\n\n## 注意事项\n\n- 1、 代码必须放在子文件夹内， 子文件夹名与题目英文名一致。 文件名（包括程序名和输入输出文件名） 必须使用英文小写。\n- 2、 C++编译选项： -O2 -std=c++14。 C++ 中函数 main() 的返回值类型必须是 int， 程序正常结束时的返回值必须是 0。\n- 3、 若无特殊说明， 输入文件中同一行内的多个整数、 浮点数、 字符串等均使用一个空格分隔。 若无特殊说明， 结果比较方式为忽略行末空格、 文末回车后的全文比较。\n- 4、 选手提交的程序源文件不能大于 100KB。\n- 5、 程序使用的栈空间内存限制与题目的内存限制要求一致。\n\n{1}------------------------------------------------\n\n## --- 翻硬币 (coin)\n\n### 【题目描述】\n\nn 枚硬币从左到右依次排成一排，编号依次为 1 到 n。硬币的正面朝上用 0 表示，背面朝上用 1 表示，一开始所有的硬币都是正面朝上。\n\n现进行 m 次操作，每次操作是把一个区间内的所有硬币翻过来：原来正面朝上的变为反面朝上，原来反面朝上的变为正面朝上。\n\n第 i 次操作的区间  $[l_i, r_i]$ ：表示把从第  $l_i$  到第  $r_i$  枚之间的所有硬币都翻过来。求 m 次操作后所有硬币从左到右依次组成的 01 数字序列。\n\n### 【输入格式】\n\n输入文件 coin.in\n\n第一行整数 n 和整数 m，表示一共有 n 枚硬币和 m 次操作。\n\n以下 m 行，每行两个正整数  $l_i, r_i$ ，依次表示每次操作区间。\n\n### 【输出格式】\n\n输出文件 coin.out\n\nm 次操作结束后 n 枚硬币从左到右依次组成的 01 数字序列。\n\n### 【样例 1 输入】\n\n5 3\n\n2 4\n\n1 3\n\n3 5\n\n### 【样例 1 输出】\n\n10101\n\n### 【样例 2 输入】\n\n10 5\n\n1 6\n\n8 10\n\n3 7\n\n{2}------------------------------------------------\n\n4 6\n\n2 5\n\n### **【样例 2 输出】**\n\n1010011111\n\n### **【数据范围】**\n\n60% 的数据  $1 \\leq n, m \\leq 1000$ ;\n\n100% 的数据  $1 \\leq n, m \\leq 200000$ 。\n\n## 刷题 (question)\n\n### **【题目描述】**\n\n比赛之路多艰，做题方得提升。努力刷题的人在比赛中往往能取得很好的成绩，小红就是这样的人。\n\n为了继续提升自己的编程实力，小红整理了一份刷题题单，并选中了题单中的  $n$  道编程题，将它们从 1 到  $n$  编号，计划用  $m$  天时间按照题目编号顺序做完所有的题目（一道题目只能在同一天完成，不可以使用多天完成同一道题目）。\n\n在小红的计划中，她完成第  $i$  道题目的时间为  $a_i$ 。因为题目有难有易，小红做题时可以找好朋友小明帮忙解题，通过询问小明一道题目的解法，可以省去这个题目的做题时间。当然了，小红做题是为了提升自己，而不是提升小明。因此小红决定一天最多求助小明一次。\n\n本题  $m$  天中，小红做题时间最长一天的总耗时定义为  $T$ （小明帮忙做的题目不计入小红的做题总时间）。请你帮小红求出  $T$  的最小值是多少？\n\n### **【输入格式】**\n\n输入文件为 question.in。\n\n{3}------------------------------------------------\n\n第一行两个正整数  $n, m$  分别表示小红做的题目以及小红刷完这些题目计划所用天数。\n\n第二行  $n$  个正整数，分别表示每个题目解题所用时间  $a_i$ 。\n\n### **【输出格式】**\n\n输出文件为 question.out。\n\n输出仅一行， $m$  天中耗时最长一天的总耗时  $T$  的最小值。\n\n### **【样例 1 输入】**\n\n4 2  \n1 2 3 3\n\n### **【样例 1 输出】**\n\n3\n\n### **【样例 2 输入】**\n\n3 4  \n999 999 999\n\n### **【样例 2 输出】**\n\n0\n\n### **【数据范围】**\n\n- 30% 的数据， $n \\leq 1000$ ;\n- 60% 的数据， $n \\leq 10000$ ;\n- 100% 的数据， $n \\leq 100000, 0 \\leq a_i \\leq 10000, 1 \\leq m \\leq 1000$ 。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 25
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 16
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 4,
+      "total_cost": 1.2,
+      "cost_breakdown": {
+        "final_cost_cents": 1.2
+      },
+      "runtime": 7.076747417449951,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2024 小学组二轮试题（下半场）\n\n考试时间： 2024 年 10 月 27 日上午 10：30--12：00\n\n|         |          |              |\n|---------|----------|--------------|\n| 题目名称    | 翻硬币      | 刷题           |\n| 题目类型    | 传统型      | 传统型          |\n| 目录      | coin     | question     |\n| 程序名称    | coin.cpp | question.cpp |\n| 输入文件名   | coin.in  | question.in  |\n| 输出文件名   | coin.out | question.out |\n| 测试点数量   | 10       | 20           |\n| 每测试点时限  | 1 秒      | 1 秒          |\n| 测试点是否等分 | 是        | 是            |\n| 内存限制    | 512M     | 512M         |\n\n## 注意事项\n\n- 1、 代码必须放在子文件夹内， 子文件夹名与题目英文名一致。 文件名（包括程序名和输入输出文件名） 必须使用英文小写。\n- 2、 C++编译选项： -O2 -std=c++14。 C++ 中函数 main() 的返回值类型必须是 int， 程序正常结束时的返回值必须是 0。\n- 3、 若无特殊说明， 输入文件中同一行内的多个整数、 浮点数、 字符串等均使用一个空格分隔。 若无特殊说明， 结果比较方式为忽略行末空格、 文末回车后的全文比较。\n- 4、 选手提交的程序源文件不能大于 100KB。\n- 5、 程序使用的栈空间内存限制与题目的内存限制要求一致。\n\n{1}------------------------------------------------\n\n## --- 翻硬币 (coin)\n\n### 【题目描述】\n\nn 枚硬币从左到右依次排成一排，编号依次为 1 到 n。硬币的正面朝上用 0 表示，背面朝上用 1 表示，一开始所有的硬币都是正面朝上。\n\n现进行 m 次操作，每次操作是把一个区间内的所有硬币翻过来：原来正面朝上的变为反面朝上，原来反面朝上的变为正面朝上。\n\n第 i 次操作的区间  $[l_i, r_i]$ ：表示把从第  $l_i$  到第  $r_i$  枚之间的所有硬币都翻过来。求 m 次操作后所有硬币从左到右依次组成的 01 数字序列。\n\n### 【输入格式】\n\n输入文件 coin.in\n\n第一行整数 n 和整数 m，表示一共有 n 枚硬币和 m 次操作。\n\n以下 m 行，每行两个正整数  $l_i, r_i$ ，依次表示每次操作区间。\n\n### 【输出格式】\n\n输出文件 coin.out\n\nm 次操作结束后 n 枚硬币从左到右依次组成的 01 数字序列。\n\n### 【样例 1 输入】\n\n5 3\n\n2 4\n\n1 3\n\n3 5\n\n### 【样例 1 输出】\n\n10101\n\n### 【样例 2 输入】\n\n10 5\n\n1 6\n\n8 10\n\n3 7\n\n{2}------------------------------------------------\n\n4 6\n\n2 5\n\n### **【样例 2 输出】**\n\n1010011111\n\n### **【数据范围】**\n\n60% 的数据  $1 \\leq n, m \\leq 1000$ ;\n\n100% 的数据  $1 \\leq n, m \\leq 200000$ 。\n\n## 刷题 (question)\n\n### **【题目描述】**\n\n比赛之路多艰，做题方得提升。努力刷题的人在比赛中往往能取得很好的成绩，小红就是这样的人。\n\n为了继续提升自己的编程实力，小红整理了一份刷题题单，并选中了题单中的  $n$  道编程题，将它们从 1 到  $n$  编号，计划用  $m$  天时间按照题目编号顺序做完所有的题目（一道题目只能在同一天完成，不可以使用多天完成同一道题目）。\n\n在小红的计划中，她完成第  $i$  道题目的时间为  $a_i$ 。因为题目有难有易，小红做题时可以找好朋友小明帮忙解题，通过询问小明一道题目的解法，可以省去这个题目的做题时间。当然了，小红做题是为了提升自己，而不是提升小明。因此小红决定一天最多求助小明一次。\n\n本题  $m$  天中，小红做题时间最长一天的总耗时定义为  $T$ （小明帮忙做的题目不计入小红的做题总时间）。请你帮小红求出  $T$  的最小值是多少？\n\n### **【输入格式】**\n\n输入文件为 question.in。\n\n{3}------------------------------------------------\n\n第一行两个正整数  $n, m$  分别表示小红做的题目以及小红刷完这些题目计划所用天数。\n\n第二行  $n$  个正整数，分别表示每个题目解题所用时间  $a_i$ 。\n\n### **【输出格式】**\n\n输出文件为 question.out。\n\n输出仅一行， $m$  天中耗时最长一天的总耗时  $T$  的最小值。\n\n### **【样例 1 输入】**\n\n4 2  \n1 2 3 3\n\n### **【样例 1 输出】**\n\n3\n\n### **【样例 2 输入】**\n\n3 4  \n999 999 999\n\n### **【样例 2 输出】**\n\n0\n\n### **【数据范围】**\n\n- 30% 的数据， $n \\leq 1000$ ;\n- 60% 的数据， $n \\leq 10000$ ;\n- 100% 的数据， $n \\leq 100000, 0 \\leq a_i \\leq 10000, 1 \\leq m \\leq 1000$ 。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 25
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 16
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 4,
+    "total_cost": 1.2,
+    "cost_breakdown": {
+      "final_cost_cents": 1.2
+    },
+    "runtime": 7.076747417449951,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.2
+  },
+  "page_count": 4,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2024/Round2/CSP-X2024山东小学组（下半场）.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

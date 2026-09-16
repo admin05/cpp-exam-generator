@@ -1,0 +1,266 @@
+{
+  "request_id": "qBOKNGW-fuNaO15HgYlgxA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:13:27.284546+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "qBOKNGW-fuNaO15HgYlgxA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/qBOKNGW-fuNaO15HgYlgxA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十二届全国青少年信息学奥林匹克联赛初赛试题\n\n## （提高组 Pascal 语言 二小时完成）\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n## 一、单项选择题（共 10 题，每题 1.5 分，共计 15 分。每题有且仅有一个正确答案。）\n\n1. 在以下各项中。（ ）不是 CPU 的组成部分。\n\n- A. 控制器      B. 运算器      C. 寄存器      D. ALU      E. RAM\n\n2. BIOS（基本输入输出系统）是一组固化在计算机内（ ）上一个 ROM 芯片上的程序。\n\n- A. 控制器      B. CPU      C. 主板      D. 内存条      E. 硬盘\n\n3. 在下面各世界顶级的奖项中，为计算机科学与技术领域作出杰出贡献的科学家设立的奖项是（ ）。\n\n- A. 沃尔夫奖      B. 诺贝尔奖      C. 菲尔兹奖  \nD. 图灵奖      E. 南丁格尔奖\n\n4. 在编程时（使用任一种高级语言，不一定是 Pascal），如果需要从磁盘文件中输入一个很大的二维数组（例如  $1000 \\times 1000$  的 double 型数组），按行读（即外层循环是关于行的）与按列读（即外层循环是关于列的）相比，在输入效率上（ ）。\n\n- A. 没有区别      B. 有一些区别，但机器处理速度很快，可忽略不计  \nC. 按行读的方式要高一些      D. 按列读的方式要高一些      E. 取决于数组的存储方式。\n\n5. 在 Pascal 语言中，表达式  $(21 \\text{ xor } 2)$  的值是（ ）\n\n- A. 441      B. 42      C. 23      D. 24      E. 25\n\n6. 在 Pascal 语言中，判断 a 不等于 0 且 b 不等于 0 的正确的条件表达式是（ ）\n\n- A.  $\\text{not } a=0 \\text{ or not } b=0$       B.  $\\text{not}((a=0) \\text{ and } (b=0))$       C.  $\\text{not}(a=0 \\text{ and } b=0)$   \nD.  $(a \\neq 0) \\text{ or } (b \\neq 0)$       E.  $(a \\neq 0) \\text{ and } (b \\neq 0)$\n\n7. 某个车站呈狭长形，宽度只能容下一台车，并且只有一个出入口。已知某时刻该车站状态为空，从这一时刻开始的出入记录为：“进，出，进，进，进，出，出，进，进，进，出，出”。假设车辆入站的顺序为 1, 2, 3, ……，则车辆出站的顺序为（ ）。\n\n- A. 1, 2, 3, 4, 5      B. 1, 2, 4, 5, 7      C. 1, 4, 3, 7, 6  \nD. 1, 4, 3, 7, 2      E. 1, 4, 3, 7, 5\n\n8. 高度为 n 的均衡的二叉树是指：如果去掉叶结点及相应的树枝，它应该是高度为  $n-1$  的满二叉树。\n\n{1}------------------------------------------------\n\n在这里，树高等于叶结点的最大深度，根结点的深度为 0，如果某个均衡的二叉树共有 2381 个结点，则该树的树高为（ ）。\n\n- A. 10      B. 11      C. 12      D. 13      E.  $2^{10} - 1$\n\n9. 与十进制数 1770.625 对应的八进制数是（ ）。\n\n- A. 3352.5                      B. 3350.5                      C. 3352.1161\n- D. 3350.1151                      E. 前 4 个答案都不对\n\n10. 将 5 个数的序列排序，不论原先的顺序如何，最少都可以通过（ ）次比较，完成从小到大的排序。\n\n- A. 6      B. 7      C. 8      D. 9      E. 10\n\n## **二、不定项选择题（共 10 题，每题 1.5 分，共计 15 分。每题正确答案的个数大于或等于 1。多选或少选均不得分）。**\n\n11. 设 A=B=D=true, C=E=false, 以下逻辑运算表达式值为真的有（ ）。\n\n- A.  $(\\neg A \\wedge B) \\vee (C \\wedge D) \\vee \\neg E$       B.  $\\neg(((A \\wedge B) \\vee C) \\wedge D \\wedge E)$\n- C.  $A \\wedge (B \\vee C \\vee D \\vee E)$       D.  $(A \\wedge (B \\vee C)) \\wedge D \\wedge E$\n\n12.  $(2010)_{16} + (32)_8$  的结果是（ ）。\n\n- A.  $(8234)_{10}$                       B.  $(202A)_{16}$\n- C.  $(100000000110)_2$       D.  $(2042)_{16}$\n\n13. 设栈 S 的初始状态为空，元素 a, b, c, d, e 依次入栈，以下出栈序列不可能出现的有（ ）。\n\n- A. a, b, c, e, d                      B. b, c, a, e, d\n- C. a, e, c, b, d                      D. d, c, e, b, a\n\n14. 已知 6 个结点的二叉树的先根遍历是 1 2 3 4 5 6（数字为结点的编号，以下同），后根遍历是 3 2 5 6 4 1，则该二叉树的可能的中根遍历是（ ）\n\n- A. 3 2 1 4 6 5                      B. 3 2 1 5 4 6\n- C. 2 3 1 5 4 6                      D. 2 3 1 4 6 5\n\n15. 在下列各数据库系统软件中，以关系型数据库为主体结构的是（ ）。\n\n- A. ACCESS                      B. SQL Server\n- C. Oracle                      D. Foxpro\n\n16. 在下列各软件中，属于 NOIP 竞赛（复赛）推荐使用的语言环境有（ ）。\n\n- A. gcc/g++                      B. Turbo Pascal\n- C. Turbo C                      D. free pascal\n\n{2}------------------------------------------------\n\n17. 以下断电之后将不能保存数据的有（ ）。\n\n- A. 硬盘 B. ROM C. 显存 D. RAM\n\n18. 在下列关于计算机语言的说法中，正确的有（ ）。\n\n- A. Pascal和C都是编译执行的高级语言\n- B. 高级语言程序比汇编语言程序更容易从一种计算机移植到另一种计算机上\n- C. C++是历史上的第一个支持面向对象的计算机语言\n- D. 高级语言比汇编语言更高级，是因为它的程序的运行效率更高\n\n19. 在下列关于计算机算法的说法中，正确的有（ ）。\n\n- A. 一个正确的算法至少要有个输入\n- B. 算法的改进，在很大程度上推动了计算机科学与技术的进步\n- C. 判断一个算法的好坏，主要依据它在某台计算机上具体实现时的运行时间\n- D. 目前仍然存在许多涉及到国计民生的重大课题，还没有找到能够在计算机上实施的有效算法\n\n20. 在下列关于青少年信息学竞赛的说法中，你赞成的是（ ）（本题不回答为0分，答题一律满分）。\n\n- A. 举行信息学竞赛的目的，是为了带动广大青少年学科学、爱科学，为造就一大批优秀的计算机科学与技术人才奠定良好的基础\n- B. 如果竞赛优胜者不能直接保送上大学，我今后就不再参与这项活动了\n- C. 准备竞赛无非要靠题海战术，为了取得好成绩，就得拼时间、拼体力\n- D. 为了取得好成绩，不光要看智力因素，还要看非智力因素。优秀选手应该有坚韧不拔的意志，有严谨求实的作风，既要努力奋进，又要胜不骄败不馁\n\n## **三. 问题求解（共 2 题，每题 5 分，共计 10 分）**\n\n1. 将 2006 个人分成若干不相交的子集，每个子集至少有 3 个人，并且：\n\n- (1) 在每个子集中，没有人认识该子集的所有人。\n- (2) 同一子集的任何 3 个人中，至少有 2 个人互不认识。\n- (3) 对同一子集中任何 2 个不相识的人，在该子集中恰好只有 1 个人认识这两个人。\n\n则满足上述条件的子集最多能有\\_\\_\\_\\_\\_个？\n\n2. 将边长为  $n$  的正三角形每边  $n$  等分，过每个分点分别做另外两边的平行线，得到若干个正三角形，我们称为小三角形。正三角形的一条通路是一条连续的折线，起点是最上面的一个小三角形，终点是最下面一行位于中间的小三角形。在通路中，只允许由一个小三角形走到另一个与其有公共边的且位于同一行或下一行的小三角形，并且每个小三角形不能经过两次或两次以上（图中是  $n=5$  时一条通路的例子）。设  $n=10$ ，则该正三角形的不同的通路的总数为\\_\\_\\_\\_\\_。\n\n{3}------------------------------------------------\n\n![A triangular grid diagram representing a Pascal's triangle structure. It consists of 10 rows of small equilateral triangles. A path is shown starting from the top vertex and moving downwards through various grid points, ending at a point near the bottom. The path is marked with dots and connected by lines. An arrow points to the final point of the path.](2763901b7a1fd1b5d704cdc450d12ed0_img.jpg)\n\nA triangular grid diagram representing a Pascal's triangle structure. It consists of 10 rows of small equilateral triangles. A path is shown starting from the top vertex and moving downwards through various grid points, ending at a point near the bottom. The path is marked with dots and connected by lines. An arrow points to the final point of the path.\n\n## 四. 阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n1. Program ex401;\n\n```\n\nvar\n  u,v:array[0..3] of integer;\n  i,x,y:integer;\nbegin\n  x:=10; y:=10;\n  for i:=0 to 3 do\n    read(u[i]);\n  v[0]:=(u[0]+u[1]+u[2]+u[3]) div 7;\n  v[1]:=u[0] div ((u[1]-u[2]) div u[3]);\n  v[2]:=u[0]*u[1] div u[2]*u[3];\n  v[3]:=v[0]*v[1];\n  x:=(v[0]+v[1]+2)-u[(v[3]+3) mod 4];\n  if (x>10) then\n    y:=y+(v[2]*100-v[3]) div (u[u[0] mod 3]*5)\n  else\n    y:=y+20+(v[2]*100-v[3]) div (u[v[0] mod 3]*5);\n  writeln (x,',',',',y);\nend.  {*注: 本例中, 给定的输入数据可以避免分母为 0 或下标越界。 }\n\n```\n\n输入: 9 3 9 4\n\n输出: \\_\\_\\_\\_\\_\n\n2.Program ex402;\n\n```\n\nconst\n  m:array[0..4] of integer=(2,3,5,7,13);\nvar\n  i,j:integer;\n  t: longint;\nbegin\n\n```\n\n{4}------------------------------------------------\n\n```\n\nfor i:=0 to 4 do\n  begin\n    t:=1;\n    for j:=1 to m[i]-1 do t:=t*2;\n    t:=(t*2-1)*t;\n    write (t,' ');\n  end;\n  writeln;\nend.\n\n```\n\n输出:\n\n#### 3. Program ex403;\n\n```\n\nConst NN=7;\nType\n  Arr1=array[0..30] of char;\nvar\n  s:arr1;\n  k,p:integer;\nfunction fun1(s:arr1; a:char;n:integer):integer;\n  var\n    j:integer;\n  begin\n    j:=n;\n    while (a<s[j])and(j>0) do dec(j);\n    fun1:=j;\n  end;\nFunction fun2(s:arr1; a:char; n:integer):integer;\n  var\n    j:integer;\n  begin\n    j:=1;\n    while (a>s[j])and(j<n) do inc(j);\n    fun2:=j;\n  end;\nbegin\n  for k:=1 to NN do\n    s[k]:=chr(ord('A')+2*k+1);\n  k:=fun1(s,'M',NN)+fun2(s,'M',NN);\n\n```\n\n{5}------------------------------------------------\n\n```\nwriteln(k);\n```\n\n```\nend.\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n4. program ex404;\n  var\n    x,x2:longint;\n  procedure digit(n,m:longint);\n    var n2:integer;\n  begin\n    if(m>0) then\n    begin\n      n2:=n mod 10;\n      write(n2:2);\n      if(m>1) then digit(n div 10,m div 10);\n      n2:=n mod 10;\n      write(n2:2);\n    end;\n  end;\nbegin\n  writeln('Input a number:');\n  readln(x);\n  x2:=1;\n  while(x2<x) do x2:=x2*10;\n  x2:=x2 div 10;\n  digit(x,x2);\n  writeln;\nend.\n```\n\n输入: 9734526\n\n输出: \\_\\_\\_\\_\\_\n\n## 五. 完善程序 (前 5 空, 每空 2 分, 后 6 空, 每空 3 分, 共 28 分)\n\n1. (选排列) 下面程序的功能是利用递归方法生成从 1 到 n (n<10) 的 n 个数中取 k (1<=k<=n) 个数的全部可能的排列 (不一定按升序输出)。例如, 当 n=3, k=2 时, 应该输出 (每行输出 5 个排列):\n\n12 13 21 23 32\n\n31\n\n程序:\n\n{6}------------------------------------------------\n\n```\n\nProgram ex501;\nVar\n  i,n,k:integer;\n  a:array[1..10] of integer;\n  count:longint;\nProcedure perm2(j:integer);\n  var i,p,t:integer;\n  begin\n    if ① then\n    begin\n      for i:=k to n do\n      begin\n        inc(count);\n        t:=a[k]; a[k]:=a[i]; a[i]:=t;\n        for ② do write(a[p]:1);\n        write(' ');\n        t:=a[k];a[k]:=a[i];a[i]:=t;\n        if (count mod 5=0) then writeln;\n      end;\n      exit;\n    end;\n    for i:=j to n do\n    begin\n      t:=a[j];a[j]:=a[i];a[i]:=t;\n      ③ ;\n      t:=a[j]; ④ ;\n    end\n  end;\nbegin\n  writeln('Entry n,k (k<=n):'); read(n,k);\n  count:=0;\n  for i:=1 to n do a[i]:=i;\n  ⑤ ;\nend.\n\n```\n\n**2. (TSP 问题的交叉算子)** TSP 问题(Traveling Salesman Problem)描述如下: 给定 n 个城市, 构成一个完全图, 任何两城市之间都有一个代价 (例如路程、旅费等), 现要构造遍历所有城市的环路, 每个城市恰好经过一次, 求使总代价达到最小的一条环路。\n\n{7}------------------------------------------------\n\n遗传算法是求解该问题的一个很有效的近似算法。在该算法中，一个个体为一条环路，其编码方法之一是 1 到 n 这 n 个数字的一个排列，每个数字为一个城市的编号。例如当 n=5 时，“3 4 2 1 5” 表示该方案实施的路线为 3->4->2->1->5->3。遗传算法的核心是通过两个个体的交叉操作，产生两个新的个体。下面的程序给出了最简单的一种交叉算法。具体过程如下：\n\n(1) 选定中间一段作为互换段，该段的起止下标为 t1, t2，随机生成 t1, t2 后，互换两段。\n\n(2) 互换后，在每个新的排列中可能有重复数字，因而不能作为新个体的编码，一般再做两步处理：\n\n(2.1) 将两个互换段中，共同的数字标记为 0，表示已处理完。\n\n(2.2) 将两个互换段中其余数字标记为 1，按顺序将互换段外重复的数字进行替换。\n\n例如：n=12，两个个体分别是：\n\na1: 1 3 5 4 \\* 2 6 7 9 \\* 10 12 8 11\n\na2: 3 2 1 12 \\* 6 7 10 11 \\* 8 5 4 9\n\nt1=5, t2=8。上述每一行中，两个星号间的部分为互换段。假定数组的下标从 1 开始，互换后有：\n\na1: 1 3 5 4 \\* 6 7 10 11 \\* 10 12 8 11\n\na2: 3 2 1 12 \\* 2 6 7 9 \\* 8 5 4 9\n\n然后，将数字 6, 7 对应的项标记为 0，星号内数字 2, 9, 10, 11 对应的项标记为 1，并且按顺序对应关系为：10<->2, 11<->9。于是，将 a1[9]=10 替换为 a1[9]=2，将 a2[2]=2 替换为 a2[2]=10，类似再做第 2 组替换。这样处理后，就得到了两个新个体：\n\na1: 1 3 5 4 6 7 10 11 2 12 8 9\n\na2: 3 10 1 12 2 6 7 9 8 5 4 11\n\n(3) 输出两个新个体的编码。\n\n程序：\n\n```\nprogram ex502;\ntype arr1=array[1..20] of integer;\nvar\n  a1,a2,kz1,kz2:arr1;\n  n,k,t1,t2:integer;\nfunction rand1(k:integer):integer;\nvar t:integer;\nbegin\n  t:=0;\n  while (t<2) or (t>k) do\n    t:=random(k+1)-2;\n  rand1:=t;\nend;\nprocedure read1(var a:arr1;m:integer);\n{读入数组元素 a[1]至 a[m]，a[0]=0，略。}\nprocedure wrt1(var a:arr1;m:integer);\n{输出数组元素 a[1]至 a[m]，略。}\n```\n\n{8}------------------------------------------------\n\n```\n\nprocedure cross(var a1,a2:arr1;t1, t2,n:integer);\nvar\n  i,j,t,kj:integer;\nbegin\n  for i:=t1 to t2 do\n  begin\n    t:=a1[i]; ① ;\n  end;\n  for i:=1 to n do\n  if (i<t1)or(i>t2) then\n  begin\n    kz1[i]:=-1;kz2[i]:=-1;\n  end\n  else\n  begin ② ; end;\n  for i:=t1 to t2 do\n  for j:=t1 to t2 do\n  if(a1[i]=a2[j]) then\n  begin ③ ; break; end;\n  for i:=t1 to t2 do\n  if(kz1[i]=1) then\n  begin\n    for j:=t1 to t2 do\n    if(kz2[j]=1) then\n    begin kj:=j; break; end;\n    for j:=1 to n do\n    if ④ then\n    begin a1[j]:=a2[kj];break; end;\n    for j:=1 to n do\n    if ⑤ then\n    begin a2[j]:=a1[i]; break; end;\n    kz1[i]:=0;kz2[kj]:=0;\n  end;\nend;\nbegin\n  writeln('input (n>5):');\n  readln(n);\n  writeln('input array 1:'); read1(a1,n);\n\n```\n\n{9}------------------------------------------------\n\n```\nwriteln('input array 2:'); read1(a2,n);  \nt1:=rand1(n-1);  \nrepeat  \n  t2:=rand1(n-1);  \nuntil(t1<>t2);  \nif(t1>t2) then  \n  begin k:=t1; t1:=t2; t2:=k; end;  \n  ⑥;  \nwrt1(a1,n); wrt1(a2,n);  \nend.\n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "2763901b7a1fd1b5d704cdc450d12ed0_img.jpg": "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oY9XTsa16x9ZheB4tUgBMtvxIoP34z1H8j+FAGxRUcE0dxBHNEwaN1DKfUGpKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooqK5njtbeSeVsJGpYn6UAZmtSvcGLTIGYSXH32XqidzWpBClvCkUYwiDAArM0W3kfzdSuAfPuTkKf4EHQfzP41r0AFIcEc9K4jV/ir4b0bxONBuZpDdZCkqhKhj0Fb2zUdWX94WsrU/wKR5jj3Pb8OaAIjqsenXj2EKtcu53Qxx849QT0HOTUy6Zc6gA+qygx5yLaP7n4nvU76VDBZhLONUlQ71buzD1PerdpcLdW6yDr0YehoAiGlWCzxzi0hEsYwj7BlR7VcoqOaVYYmkY4VRk0AVL92lZLOI/NJ98+i9/wA+lXY0WONUUYVRgVTsIXIe6mH72bnHovYflV6gApGUMpUjIIwRS0UAYumltN1CXTHJ8p8y27H0PVfw/kK2qztYsnurUSQnbcQHzImHXI6j8RkfjU+nXi39lHOvBIwy/wB1hwR+dAFqiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArFvx/ampJpynMEJElxjuRyF/l+Bq/qN6tjZvKeX+6i+rHgCotIsfsVrl+Z5j5krerH/AA6fhQBfUBVAHQcCloooA8z1j4c6FqHxRs9Umjk8x4WuHQN8rOrKAf1r0sDAxWFdf8jtY/8AXlL/AOhpW9QAVnEfYdQDDiC4OD7P/wDX/pWjUNzbrcwPE/Rh19KAJqzrjN5erbA/uosNL7nsP6/hUK6tHDAYJpU+2r8nl7uWPYgVesbY28A3nMrHc59SaALI4ooooAKKKKACsUKNI1gnpa3rc+iydP14/GtqquoWSahZyW78bhlW/usOh/A0AWqKztIvGubYxTcXEB8uRfcd/wAq0aACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKztXunht1ggybi4by4wO3qfpigDHv3n1LVUuEmZLCyfaSo+85GCfoM4rYFjcMoI1GUg8g4/+vU9tYxW9gtoBlAuGz/Ee5P1qKwdoXeyk6x8of7y9v8PwoAT+z7n/AKCEv5f/AF6P7Puf+ghL+X/1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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 20
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 5
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 3
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 18
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 9,
+            "num_blocks": 2
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.667,
+      "page_count": 10,
+      "total_cost": 3.0,
+      "cost_breakdown": {
+        "final_cost_cents": 3.0
+      },
+      "runtime": 24.815192699432373,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十二届全国青少年信息学奥林匹克联赛初赛试题\n\n## （提高组 Pascal 语言 二小时完成）\n\n●● 全部试题答案均要求写在答卷纸上，写在试卷纸上一律无效 ●●\n\n## 一、单项选择题（共 10 题，每题 1.5 分，共计 15 分。每题有且仅有一个正确答案。）\n\n1. 在以下各项中。（ ）不是 CPU 的组成部分。\n\n- A. 控制器      B. 运算器      C. 寄存器      D. ALU      E. RAM\n\n2. BIOS（基本输入输出系统）是一组固化在计算机内（ ）上一个 ROM 芯片上的程序。\n\n- A. 控制器      B. CPU      C. 主板      D. 内存条      E. 硬盘\n\n3. 在下面各世界顶级的奖项中，为计算机科学与技术领域作出杰出贡献的科学家设立的奖项是（ ）。\n\n- A. 沃尔夫奖      B. 诺贝尔奖      C. 菲尔兹奖  \nD. 图灵奖      E. 南丁格尔奖\n\n4. 在编程时（使用任一种高级语言，不一定是 Pascal），如果需要从磁盘文件中输入一个很大的二维数组（例如  $1000 \\times 1000$  的 double 型数组），按行读（即外层循环是关于行的）与按列读（即外层循环是关于列的）相比，在输入效率上（ ）。\n\n- A. 没有区别      B. 有一些区别，但机器处理速度很快，可忽略不计  \nC. 按行读的方式要高一些      D. 按列读的方式要高一些      E. 取决于数组的存储方式。\n\n5. 在 Pascal 语言中，表达式  $(21 \\text{ xor } 2)$  的值是（ ）\n\n- A. 441      B. 42      C. 23      D. 24      E. 25\n\n6. 在 Pascal 语言中，判断 a 不等于 0 且 b 不等于 0 的正确的条件表达式是（ ）\n\n- A.  $\\text{not } a=0 \\text{ or not } b=0$       B.  $\\text{not}((a=0) \\text{ and } (b=0))$       C.  $\\text{not}(a=0 \\text{ and } b=0)$   \nD.  $(a \\neq 0) \\text{ or } (b \\neq 0)$       E.  $(a \\neq 0) \\text{ and } (b \\neq 0)$\n\n7. 某个车站呈狭长形，宽度只能容下一台车，并且只有一个出入口。已知某时刻该车站状态为空，从这一时刻开始的出入记录为：“进，出，进，进，进，出，出，进，进，进，出，出”。假设车辆入站的顺序为 1, 2, 3, ……，则车辆出站的顺序为（ ）。\n\n- A. 1, 2, 3, 4, 5      B. 1, 2, 4, 5, 7      C. 1, 4, 3, 7, 6  \nD. 1, 4, 3, 7, 2      E. 1, 4, 3, 7, 5\n\n8. 高度为 n 的均衡的二叉树是指：如果去掉叶结点及相应的树枝，它应该是高度为  $n-1$  的满二叉树。\n\n{1}------------------------------------------------\n\n在这里，树高等于叶结点的最大深度，根结点的深度为 0，如果某个均衡的二叉树共有 2381 个结点，则该树的树高为（ ）。\n\n- A. 10      B. 11      C. 12      D. 13      E.  $2^{10} - 1$\n\n9. 与十进制数 1770.625 对应的八进制数是（ ）。\n\n- A. 3352.5                      B. 3350.5                      C. 3352.1161\n- D. 3350.1151                      E. 前 4 个答案都不对\n\n10. 将 5 个数的序列排序，不论原先的顺序如何，最少都可以通过（ ）次比较，完成从小到大的排序。\n\n- A. 6      B. 7      C. 8      D. 9      E. 10\n\n## **二、不定项选择题（共 10 题，每题 1.5 分，共计 15 分。每题正确答案的个数大于或等于 1。多选或少选均不得分）。**\n\n11. 设 A=B=D=true, C=E=false, 以下逻辑运算表达式值为真的有（ ）。\n\n- A.  $(\\neg A \\wedge B) \\vee (C \\wedge D) \\vee \\neg E$       B.  $\\neg(((A \\wedge B) \\vee C) \\wedge D \\wedge E)$\n- C.  $A \\wedge (B \\vee C \\vee D \\vee E)$       D.  $(A \\wedge (B \\vee C)) \\wedge D \\wedge E$\n\n12.  $(2010)_{16} + (32)_8$  的结果是（ ）。\n\n- A.  $(8234)_{10}$                       B.  $(202A)_{16}$\n- C.  $(100000000110)_2$       D.  $(2042)_{16}$\n\n13. 设栈 S 的初始状态为空，元素 a, b, c, d, e 依次入栈，以下出栈序列不可能出现的有（ ）。\n\n- A. a, b, c, e, d                      B. b, c, a, e, d\n- C. a, e, c, b, d                      D. d, c, e, b, a\n\n14. 已知 6 个结点的二叉树的先根遍历是 1 2 3 4 5 6（数字为结点的编号，以下同），后根遍历是 3 2 5 6 4 1，则该二叉树的可能的中根遍历是（ ）\n\n- A. 3 2 1 4 6 5                      B. 3 2 1 5 4 6\n- C. 2 3 1 5 4 6                      D. 2 3 1 4 6 5\n\n15. 在下列各数据库系统软件中，以关系型数据库为主体结构的是（ ）。\n\n- A. ACCESS                      B. SQL Server\n- C. Oracle                      D. Foxpro\n\n16. 在下列各软件中，属于 NOIP 竞赛（复赛）推荐使用的语言环境有（ ）。\n\n- A. gcc/g++                      B. Turbo Pascal\n- C. Turbo C                      D. free pascal\n\n{2}------------------------------------------------\n\n17. 以下断电之后将不能保存数据的有（ ）。\n\n- A. 硬盘 B. ROM C. 显存 D. RAM\n\n18. 在下列关于计算机语言的说法中，正确的有（ ）。\n\n- A. Pascal和C都是编译执行的高级语言\n- B. 高级语言程序比汇编语言程序更容易从一种计算机移植到另一种计算机上\n- C. C++是历史上的第一个支持面向对象的计算机语言\n- D. 高级语言比汇编语言更高级，是因为它的程序的运行效率更高\n\n19. 在下列关于计算机算法的说法中，正确的有（ ）。\n\n- A. 一个正确的算法至少要有个输入\n- B. 算法的改进，在很大程度上推动了计算机科学与技术的进步\n- C. 判断一个算法的好坏，主要依据它在某台计算机上具体实现时的运行时间\n- D. 目前仍然存在许多涉及到国计民生的重大课题，还没有找到能够在计算机上实施的有效算法\n\n20. 在下列关于青少年信息学竞赛的说法中，你赞成的是（ ）（本题不回答为0分，答题一律满分）。\n\n- A. 举行信息学竞赛的目的，是为了带动广大青少年学科学、爱科学，为造就一大批优秀的计算机科学与技术人才奠定良好的基础\n- B. 如果竞赛优胜者不能直接保送上大学，我今后就不再参与这项活动了\n- C. 准备竞赛无非要靠题海战术，为了取得好成绩，就得拼时间、拼体力\n- D. 为了取得好成绩，不光要看智力因素，还要看非智力因素。优秀选手应该有坚韧不拔的意志，有严谨求实的作风，既要努力奋进，又要胜不骄败不馁\n\n## **三. 问题求解（共 2 题，每题 5 分，共计 10 分）**\n\n1. 将 2006 个人分成若干不相交的子集，每个子集至少有 3 个人，并且：\n\n- (1) 在每个子集中，没有人认识该子集的所有人。\n- (2) 同一子集的任何 3 个人中，至少有 2 个人互不认识。\n- (3) 对同一子集中任何 2 个不相识的人，在该子集中恰好只有 1 个人认识这两个人。\n\n则满足上述条件的子集最多能有\\_\\_\\_\\_\\_个？\n\n2. 将边长为  $n$  的正三角形每边  $n$  等分，过每个分点分别做另外两边的平行线，得到若干个正三角形，我们称为小三角形。正三角形的一条通路是一条连续的折线，起点是最上面的一个小三角形，终点是最下面一行位于中间的小三角形。在通路中，只允许由一个小三角形走到另一个与其有公共边的且位于同一行或下一行的小三角形，并且每个小三角形不能经过两次或两次以上（图中是  $n=5$  时一条通路的例子）。设  $n=10$ ，则该正三角形的不同的通路的总数为\\_\\_\\_\\_\\_。\n\n{3}------------------------------------------------\n\n![A triangular grid diagram representing a Pascal's triangle structure. It consists of 10 rows of small equilateral triangles. A path is shown starting from the top vertex and moving downwards through various grid points, ending at a point near the bottom. The path is marked with dots and connected by lines. An arrow points to the final point of the path.](2763901b7a1fd1b5d704cdc450d12ed0_img.jpg)\n\nA triangular grid diagram representing a Pascal's triangle structure. It consists of 10 rows of small equilateral triangles. A path is shown starting from the top vertex and moving downwards through various grid points, ending at a point near the bottom. The path is marked with dots and connected by lines. An arrow points to the final point of the path.\n\n## 四. 阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n1. Program ex401;\n\n```\n\nvar\n  u,v:array[0..3] of integer;\n  i,x,y:integer;\nbegin\n  x:=10; y:=10;\n  for i:=0 to 3 do\n    read(u[i]);\n  v[0]:=(u[0]+u[1]+u[2]+u[3]) div 7;\n  v[1]:=u[0] div ((u[1]-u[2]) div u[3]);\n  v[2]:=u[0]*u[1] div u[2]*u[3];\n  v[3]:=v[0]*v[1];\n  x:=(v[0]+v[1]+2)-u[(v[3]+3) mod 4];\n  if (x>10) then\n    y:=y+(v[2]*100-v[3]) div (u[u[0] mod 3]*5)\n  else\n    y:=y+20+(v[2]*100-v[3]) div (u[v[0] mod 3]*5);\n  writeln (x,',',',',y);\nend.  {*注: 本例中, 给定的输入数据可以避免分母为 0 或下标越界。 }\n\n```\n\n输入: 9 3 9 4\n\n输出: \\_\\_\\_\\_\\_\n\n2.Program ex402;\n\n```\n\nconst\n  m:array[0..4] of integer=(2,3,5,7,13);\nvar\n  i,j:integer;\n  t: longint;\nbegin\n\n```\n\n{4}------------------------------------------------\n\n```\n\nfor i:=0 to 4 do\n  begin\n    t:=1;\n    for j:=1 to m[i]-1 do t:=t*2;\n    t:=(t*2-1)*t;\n    write (t,' ');\n  end;\n  writeln;\nend.\n\n```\n\n输出:\n\n#### 3. Program ex403;\n\n```\n\nConst NN=7;\nType\n  Arr1=array[0..30] of char;\nvar\n  s:arr1;\n  k,p:integer;\nfunction fun1(s:arr1; a:char;n:integer):integer;\n  var\n    j:integer;\n  begin\n    j:=n;\n    while (a<s[j])and(j>0) do dec(j);\n    fun1:=j;\n  end;\nFunction fun2(s:arr1; a:char; n:integer):integer;\n  var\n    j:integer;\n  begin\n    j:=1;\n    while (a>s[j])and(j<n) do inc(j);\n    fun2:=j;\n  end;\nbegin\n  for k:=1 to NN do\n    s[k]:=chr(ord('A')+2*k+1);\n  k:=fun1(s,'M',NN)+fun2(s,'M',NN);\n\n```\n\n{5}------------------------------------------------\n\n```\nwriteln(k);\n```\n\n```\nend.\n```\n\n输出: \\_\\_\\_\\_\\_\n\n```\n4. program ex404;\n  var\n    x,x2:longint;\n  procedure digit(n,m:longint);\n    var n2:integer;\n  begin\n    if(m>0) then\n    begin\n      n2:=n mod 10;\n      write(n2:2);\n      if(m>1) then digit(n div 10,m div 10);\n      n2:=n mod 10;\n      write(n2:2);\n    end;\n  end;\nbegin\n  writeln('Input a number:');\n  readln(x);\n  x2:=1;\n  while(x2<x) do x2:=x2*10;\n  x2:=x2 div 10;\n  digit(x,x2);\n  writeln;\nend.\n```\n\n输入: 9734526\n\n输出: \\_\\_\\_\\_\\_\n\n## 五. 完善程序 (前 5 空, 每空 2 分, 后 6 空, 每空 3 分, 共 28 分)\n\n1. (选排列) 下面程序的功能是利用递归方法生成从 1 到 n (n<10) 的 n 个数中取 k (1<=k<=n) 个数的全部可能的排列 (不一定按升序输出)。例如, 当 n=3, k=2 时, 应该输出 (每行输出 5 个排列):\n\n12 13 21 23 32\n\n31\n\n程序:\n\n{6}------------------------------------------------\n\n```\n\nProgram ex501;\nVar\n  i,n,k:integer;\n  a:array[1..10] of integer;\n  count:longint;\nProcedure perm2(j:integer);\n  var i,p,t:integer;\n  begin\n    if ① then\n    begin\n      for i:=k to n do\n      begin\n        inc(count);\n        t:=a[k]; a[k]:=a[i]; a[i]:=t;\n        for ② do write(a[p]:1);\n        write(' ');\n        t:=a[k];a[k]:=a[i];a[i]:=t;\n        if (count mod 5=0) then writeln;\n      end;\n      exit;\n    end;\n    for i:=j to n do\n    begin\n      t:=a[j];a[j]:=a[i];a[i]:=t;\n      ③ ;\n      t:=a[j]; ④ ;\n    end\n  end;\nbegin\n  writeln('Entry n,k (k<=n):'); read(n,k);\n  count:=0;\n  for i:=1 to n do a[i]:=i;\n  ⑤ ;\nend.\n\n```\n\n**2. (TSP 问题的交叉算子)** TSP 问题(Traveling Salesman Problem)描述如下: 给定 n 个城市, 构成一个完全图, 任何两城市之间都有一个代价 (例如路程、旅费等), 现要构造遍历所有城市的环路, 每个城市恰好经过一次, 求使总代价达到最小的一条环路。\n\n{7}------------------------------------------------\n\n遗传算法是求解该问题的一个很有效的近似算法。在该算法中，一个个体为一条环路，其编码方法之一是 1 到 n 这 n 个数字的一个排列，每个数字为一个城市的编号。例如当 n=5 时，“3 4 2 1 5” 表示该方案实施的路线为 3->4->2->1->5->3。遗传算法的核心是通过两个个体的交叉操作，产生两个新的个体。下面的程序给出了最简单的一种交叉算法。具体过程如下：\n\n(1) 选定中间一段作为互换段，该段的起止下标为 t1, t2，随机生成 t1, t2 后，互换两段。\n\n(2) 互换后，在每个新的排列中可能有重复数字，因而不能作为新个体的编码，一般再做两步处理：\n\n(2.1) 将两个互换段中，共同的数字标记为 0，表示已处理完。\n\n(2.2) 将两个互换段中其余数字标记为 1，按顺序将互换段外重复的数字进行替换。\n\n例如：n=12，两个个体分别是：\n\na1: 1 3 5 4 \\* 2 6 7 9 \\* 10 12 8 11\n\na2: 3 2 1 12 \\* 6 7 10 11 \\* 8 5 4 9\n\nt1=5, t2=8。上述每一行中，两个星号间的部分为互换段。假定数组的下标从 1 开始，互换后有：\n\na1: 1 3 5 4 \\* 6 7 10 11 \\* 10 12 8 11\n\na2: 3 2 1 12 \\* 2 6 7 9 \\* 8 5 4 9\n\n然后，将数字 6, 7 对应的项标记为 0，星号内数字 2, 9, 10, 11 对应的项标记为 1，并且按顺序对应关系为：10<->2, 11<->9。于是，将 a1[9]=10 替换为 a1[9]=2，将 a2[2]=2 替换为 a2[2]=10，类似再做第 2 组替换。这样处理后，就得到了两个新个体：\n\na1: 1 3 5 4 6 7 10 11 2 12 8 9\n\na2: 3 10 1 12 2 6 7 9 8 5 4 11\n\n(3) 输出两个新个体的编码。\n\n程序：\n\n```\nprogram ex502;\ntype arr1=array[1..20] of integer;\nvar\n  a1,a2,kz1,kz2:arr1;\n  n,k,t1,t2:integer;\nfunction rand1(k:integer):integer;\nvar t:integer;\nbegin\n  t:=0;\n  while (t<2) or (t>k) do\n    t:=random(k+1)-2;\n  rand1:=t;\nend;\nprocedure read1(var a:arr1;m:integer);\n{读入数组元素 a[1]至 a[m]，a[0]=0，略。}\nprocedure wrt1(var a:arr1;m:integer);\n{输出数组元素 a[1]至 a[m]，略。}\n```\n\n{8}------------------------------------------------\n\n```\n\nprocedure cross(var a1,a2:arr1;t1, t2,n:integer);\nvar\n  i,j,t,kj:integer;\nbegin\n  for i:=t1 to t2 do\n  begin\n    t:=a1[i]; ① ;\n  end;\n  for i:=1 to n do\n  if (i<t1)or(i>t2) then\n  begin\n    kz1[i]:=-1;kz2[i]:=-1;\n  end\n  else\n  begin ② ; end;\n  for i:=t1 to t2 do\n  for j:=t1 to t2 do\n  if(a1[i]=a2[j]) then\n  begin ③ ; break; end;\n  for i:=t1 to t2 do\n  if(kz1[i]=1) then\n  begin\n    for j:=t1 to t2 do\n    if(kz2[j]=1) then\n    begin kj:=j; break; end;\n    for j:=1 to n do\n    if ④ then\n    begin a1[j]:=a2[kj];break; end;\n    for j:=1 to n do\n    if ⑤ then\n    begin a2[j]:=a1[i]; break; end;\n    kz1[i]:=0;kz2[kj]:=0;\n  end;\nend;\nbegin\n  writeln('input (n>5):');\n  readln(n);\n  writeln('input array 1:'); read1(a1,n);\n\n```\n\n{9}------------------------------------------------\n\n```\nwriteln('input array 2:'); read1(a2,n);  \nt1:=rand1(n-1);  \nrepeat  \n  t2:=rand1(n-1);  \nuntil(t1<>t2);  \nif(t1>t2) then  \n  begin k:=t1; t1:=t2; t2:=k; end;  \n  ⑥;  \nwrt1(a1,n); wrt1(a2,n);  \nend.\n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "2763901b7a1fd1b5d704cdc450d12ed0_img.jpg": "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oY9XTsa16x9ZheB4tUgBMtvxIoP34z1H8j+FAGxRUcE0dxBHNEwaN1DKfUGpKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooqK5njtbeSeVsJGpYn6UAZmtSvcGLTIGYSXH32XqidzWpBClvCkUYwiDAArM0W3kfzdSuAfPuTkKf4EHQfzP41r0AFIcEc9K4jV/ir4b0bxONBuZpDdZCkqhKhj0Fb2zUdWX94WsrU/wKR5jj3Pb8OaAIjqsenXj2EKtcu53Qxx849QT0HOTUy6Zc6gA+qygx5yLaP7n4nvU76VDBZhLONUlQ71buzD1PerdpcLdW6yDr0YehoAiGlWCzxzi0hEsYwj7BlR7VcoqOaVYYmkY4VRk0AVL92lZLOI/NJ98+i9/wA+lXY0WONUUYVRgVTsIXIe6mH72bnHovYflV6gApGUMpUjIIwRS0UAYumltN1CXTHJ8p8y27H0PVfw/kK2qztYsnurUSQnbcQHzImHXI6j8RkfjU+nXi39lHOvBIwy/wB1hwR+dAFqiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArFvx/ampJpynMEJElxjuRyF/l+Bq/qN6tjZvKeX+6i+rHgCotIsfsVrl+Z5j5krerH/AA6fhQBfUBVAHQcCloooA8z1j4c6FqHxRs9Umjk8x4WuHQN8rOrKAf1r0sDAxWFdf8jtY/8AXlL/AOhpW9QAVnEfYdQDDiC4OD7P/wDX/pWjUNzbrcwPE/Rh19KAJqzrjN5erbA/uosNL7nsP6/hUK6tHDAYJpU+2r8nl7uWPYgVesbY28A3nMrHc59SaALI4ooooAKKKKACsUKNI1gnpa3rc+iydP14/GtqquoWSahZyW78bhlW/usOh/A0AWqKztIvGubYxTcXEB8uRfcd/wAq0aACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKztXunht1ggybi4by4wO3qfpigDHv3n1LVUuEmZLCyfaSo+85GCfoM4rYFjcMoI1GUg8g4/+vU9tYxW9gtoBlAuGz/Ee5P1qKwdoXeyk6x8of7y9v8PwoAT+z7n/AKCEv5f/AF6P7Puf+ghL+X/1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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 20
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 5
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 3
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 18
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 9,
+          "num_blocks": 2
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.667,
+    "page_count": 10,
+    "total_cost": 3.0,
+    "cost_breakdown": {
+      "final_cost_cents": 3.0
+    },
+    "runtime": 24.815192699432373,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.667,
+  "cost_breakdown": {
+    "final_cost_cents": 3.0
+  },
+  "page_count": 10,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2006_C_CPP_Pascal/NOIP2006PreliminarySenior(Pascal).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "2763901b7a1fd1b5d704cdc450d12ed0_img.jpg"
+  ]
+}

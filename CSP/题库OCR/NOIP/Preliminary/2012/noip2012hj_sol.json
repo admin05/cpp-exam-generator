@@ -1,0 +1,161 @@
+{
+  "request_id": "CFAojF2ewcrRLQF06NEWUg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:23:27.600987+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "CFAojF2ewcrRLQF06NEWUg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/CFAojF2ewcrRLQF06NEWUg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十八届全国青少年信息学奥林匹克联赛初赛普及组参考答案\n\n## 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分）\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| A  | B  | A  | B  | C  | C  | B  | C  | A  | A  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| B  | D  | B  | C  | C  | D  | C  | A  | C  | B  |\n\n## 二、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 5\n- 2880\n\n## 三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- 10\n- 6\n- 14\n- ACBBADAD\n\n## 四、完善程序（前 2 空每空 2 分，后 8 空每空 3 分，共计 28 分） 以下各程序填空可能还有一些等价的写法，各省赛区可请本省专家审定和上机验证，可以不上报 CCF NOI 科学委员会检查。\n\n|   |   | Pascal 语言                                                                 | C++语言                                                                     | C 语言                           |\n|---|---|---------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------|\n| 1 | ① | 0                                                                         |                                                                           |                                |\n|   | ② | $y[j] < y[i]$（或 $y[i] > y[j]$）                                            |                                                                           |                                |\n|   | ③ | <code>inc(f[i])</code><br>(或 <code>f[i] := f[i] + 1</code>)               | <code>f[i]++</code>（或 <code>++f[i]</code>，或 <code>f[i] = f[i] + 1</code>） |                                |\n|   | ④ | <code>f[i] &gt;= max_f</code>（或 <code>max_f &lt;= f[i]</code>，两种答案均必须有等号） |                                                                           |                                |\n|   | ⑤ | <code>ans := i</code>                                                     | <code>ans = i</code>                                                      |                                |\n| 2 | ① | false                                                                     |                                                                           | 0                              |\n|   | ② | <code>used[data[i]] := false</code>                                       | <code>used[data[i]] = false</code>                                        | <code>used[data[i]] = 0</code> |\n|   | ③ | j                                                                         |                                                                           |                                |\n|   | ④ | n                                                                         |                                                                           |                                |\n|   | ⑤ | break                                                                     |                                                                           |                                |\n\n其中，Pascal 语言和 C++语言中的 false 可以用 0 代替。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.333,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 11.704625606536865,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十八届全国青少年信息学奥林匹克联赛初赛普及组参考答案\n\n## 一、单项选择题（共 20 题，每题 1.5 分，共计 30 分）\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| A  | B  | A  | B  | C  | C  | B  | C  | A  | A  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| B  | D  | B  | C  | C  | D  | C  | A  | C  | B  |\n\n## 二、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 5\n- 2880\n\n## 三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- 10\n- 6\n- 14\n- ACBBADAD\n\n## 四、完善程序（前 2 空每空 2 分，后 8 空每空 3 分，共计 28 分） 以下各程序填空可能还有一些等价的写法，各省赛区可请本省专家审定和上机验证，可以不上报 CCF NOI 科学委员会检查。\n\n|   |   | Pascal 语言                                                                 | C++语言                                                                     | C 语言                           |\n|---|---|---------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------|\n| 1 | ① | 0                                                                         |                                                                           |                                |\n|   | ② | $y[j] < y[i]$（或 $y[i] > y[j]$）                                            |                                                                           |                                |\n|   | ③ | <code>inc(f[i])</code><br>(或 <code>f[i] := f[i] + 1</code>)               | <code>f[i]++</code>（或 <code>++f[i]</code>，或 <code>f[i] = f[i] + 1</code>） |                                |\n|   | ④ | <code>f[i] &gt;= max_f</code>（或 <code>max_f &lt;= f[i]</code>，两种答案均必须有等号） |                                                                           |                                |\n|   | ⑤ | <code>ans := i</code>                                                     | <code>ans = i</code>                                                      |                                |\n| 2 | ① | false                                                                     |                                                                           | 0                              |\n|   | ② | <code>used[data[i]] := false</code>                                       | <code>used[data[i]] = false</code>                                        | <code>used[data[i]] = 0</code> |\n|   | ③ | j                                                                         |                                                                           |                                |\n|   | ④ | n                                                                         |                                                                           |                                |\n|   | ⑤ | break                                                                     |                                                                           |                                |\n\n其中，Pascal 语言和 C++语言中的 false 可以用 0 代替。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.333,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 11.704625606536865,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.333,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2012/noip2012hj_sol.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,150 @@
+{
+  "request_id": "zRUgKhJZOLUuZypPwpGhPA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:12:22.209771+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "zRUgKhJZOLUuZypPwpGhPA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/zRUgKhJZOLUuZypPwpGhPA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# User Manual for IOI 2002 Yong-In, Korea\n\n## GENERAL\n\n### Contestant materials\n\nContestants will get the competition materials in the competition envelope. The envelope will contain a sheet for a user id and password for the web services. You need them to access the services.\n\n### Selecting operating system\n\nYou can select Linux or Windows XP at booting. Competition computers are configured for dual-booting. Use the cursor key to highlight your choice and type Enter key.\n\n### Login\n\nYou do not need to login to Windows XP. You can login to Linux with\n\n```\nusername: ioi  \npassword: ioi\n```\n\n### Restarting your computer\n\nIn Windows XP, click 'Start' and 'Turn off computer'. From the menu that appears choose 'Restart'.\n\nIn Linux, you may press **Ctrl-Alt-F1** to change console mode. (You can return to X-Windows mode by pressing **Ctrl-Alt-F7**.) Then you may press **Ctrl-Alt-Del** to restart.\n\n### If you need help\n\nIf you need any assistance (system trouble, go to toilet, whatever), please just raise your hand and wait for help.\n\n## PROGRAMMING\n\n### Comment tags for grading\n\nYour program or output file (for output-only tasks) must have certain tags in comments for the grading system to identify the task and the programming languages (for source code file). For the source code submission, the syntax will be\n\n```\nTASK: taskname  \nLANG: LANGUAGE\n```\n\nwhere `LANGUAGE` is one of `C`, `C++`, or `PASCAL`. For the output only tasks, the syntax will be `#FILE taskname data`. See the task overviews and task descriptions for detail.\n\n{1}------------------------------------------------\n\n### Range of integer variable\n\nThe ordinary type 'integer' in freepascal has the range of -32768 to +32767. In some tasks, this may not be enough. Use 32bit variant 'longint' type which has the range of -2147483648 to +2147483647.\n\n### Exit value\n\nFor C and C++ programmers: make sure that your program terminates with exit(0) or \"return 0\" in main(). Exiting with any other value is considered as an incorrect termination.\n\nA normally terminated Pascal program returns a 0 when it terminates.\n\n### Differences between Linux and Windows XP\n\nA program submitted for grading or testing will be compiled using the options given in the overview sheet. The compiled program will be executed on Linux.\n\nRunning programs on a Linux machine differs slightly from running programs on a Windows machine.\n\n- If you access a pointer variable that points the memory outside your allocation, your program may stop abnormally.\n- If you access outside the boundary of an array, your program may stop abnormally.\n- Linux does not initialize local variables to any predictable value.\n\nThese differences mean that your program might work fine on Windows XP and fail on Linux. Be careful when using pointers, arrays and uninitialized variables to avoid these problems\n\n## TROUBLES\n\nThere are some inconveniences for programming in the competition environment. You can avoid these problems.\n\n### RHIDE and debugging problem in Windows XP\n\n**Trouble:** If you set breakpoints and the program terminates without reaching any of the breakpoints, the DOS box will be terminated without even a message.\n\n**Solution:** Set any breakpoints on the first or last line to reach in any case.\n\n### RHIDE and black screen in Windows XP\n\n**Trouble:** If you launch RHIDE in full screen mode and you choose DOS shell, or execute the program, or exit RHIDE, you may see only a black screen.\n\n**Solution:** Change to the window mode by pressing Alt+Enter. You may avoid this problem by launching RHIDE with '-S' option.\n\n{2}------------------------------------------------\n\n### Freepascal IDE in Linux\n\n**Trouble:** The function of viewing user screen in FP IDE has some trouble. It breaks the IDE editing screen.\n\n**Solution:** Returning of editing mode makes the screen clean again. You may avoid this problem by using console compilation and debugging.\n\n## FORBIDDEN\n\n### A contestant\n\n- trying to interfere with other contestants' activities,\n- trying to break the installations or evaluation facilities,\n- trying to harmfully interfere with the running of the competition in any way, or\n- trying to communicate in any way during a competition round with anyone other than the competition staff\n\nwill be disqualified from the competition.\n\n### Submitted programs\n\n- are not allowed to access the network,\n- are not allowed to fork,\n- are not allowed to read or create files directly,\n- are not allowed to attack the system security or the grader,\n- are not allowed to attempt to execute other programs,\n- are not allowed to change file system permissions, and\n- are not allowed to read file system information.\n\nA contestant whose program attempts any of the above will be disqualified",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 24
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 23
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 15
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 0.9,
+      "cost_breakdown": {
+        "final_cost_cents": 0.9
+      },
+      "runtime": 7.248414039611816,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# User Manual for IOI 2002 Yong-In, Korea\n\n## GENERAL\n\n### Contestant materials\n\nContestants will get the competition materials in the competition envelope. The envelope will contain a sheet for a user id and password for the web services. You need them to access the services.\n\n### Selecting operating system\n\nYou can select Linux or Windows XP at booting. Competition computers are configured for dual-booting. Use the cursor key to highlight your choice and type Enter key.\n\n### Login\n\nYou do not need to login to Windows XP. You can login to Linux with\n\n```\nusername: ioi  \npassword: ioi\n```\n\n### Restarting your computer\n\nIn Windows XP, click 'Start' and 'Turn off computer'. From the menu that appears choose 'Restart'.\n\nIn Linux, you may press **Ctrl-Alt-F1** to change console mode. (You can return to X-Windows mode by pressing **Ctrl-Alt-F7**.) Then you may press **Ctrl-Alt-Del** to restart.\n\n### If you need help\n\nIf you need any assistance (system trouble, go to toilet, whatever), please just raise your hand and wait for help.\n\n## PROGRAMMING\n\n### Comment tags for grading\n\nYour program or output file (for output-only tasks) must have certain tags in comments for the grading system to identify the task and the programming languages (for source code file). For the source code submission, the syntax will be\n\n```\nTASK: taskname  \nLANG: LANGUAGE\n```\n\nwhere `LANGUAGE` is one of `C`, `C++`, or `PASCAL`. For the output only tasks, the syntax will be `#FILE taskname data`. See the task overviews and task descriptions for detail.\n\n{1}------------------------------------------------\n\n### Range of integer variable\n\nThe ordinary type 'integer' in freepascal has the range of -32768 to +32767. In some tasks, this may not be enough. Use 32bit variant 'longint' type which has the range of -2147483648 to +2147483647.\n\n### Exit value\n\nFor C and C++ programmers: make sure that your program terminates with exit(0) or \"return 0\" in main(). Exiting with any other value is considered as an incorrect termination.\n\nA normally terminated Pascal program returns a 0 when it terminates.\n\n### Differences between Linux and Windows XP\n\nA program submitted for grading or testing will be compiled using the options given in the overview sheet. The compiled program will be executed on Linux.\n\nRunning programs on a Linux machine differs slightly from running programs on a Windows machine.\n\n- If you access a pointer variable that points the memory outside your allocation, your program may stop abnormally.\n- If you access outside the boundary of an array, your program may stop abnormally.\n- Linux does not initialize local variables to any predictable value.\n\nThese differences mean that your program might work fine on Windows XP and fail on Linux. Be careful when using pointers, arrays and uninitialized variables to avoid these problems\n\n## TROUBLES\n\nThere are some inconveniences for programming in the competition environment. You can avoid these problems.\n\n### RHIDE and debugging problem in Windows XP\n\n**Trouble:** If you set breakpoints and the program terminates without reaching any of the breakpoints, the DOS box will be terminated without even a message.\n\n**Solution:** Set any breakpoints on the first or last line to reach in any case.\n\n### RHIDE and black screen in Windows XP\n\n**Trouble:** If you launch RHIDE in full screen mode and you choose DOS shell, or execute the program, or exit RHIDE, you may see only a black screen.\n\n**Solution:** Change to the window mode by pressing Alt+Enter. You may avoid this problem by launching RHIDE with '-S' option.\n\n{2}------------------------------------------------\n\n### Freepascal IDE in Linux\n\n**Trouble:** The function of viewing user screen in FP IDE has some trouble. It breaks the IDE editing screen.\n\n**Solution:** Returning of editing mode makes the screen clean again. You may avoid this problem by using console compilation and debugging.\n\n## FORBIDDEN\n\n### A contestant\n\n- trying to interfere with other contestants' activities,\n- trying to break the installations or evaluation facilities,\n- trying to harmfully interfere with the running of the competition in any way, or\n- trying to communicate in any way during a competition round with anyone other than the competition staff\n\nwill be disqualified from the competition.\n\n### Submitted programs\n\n- are not allowed to access the network,\n- are not allowed to fork,\n- are not allowed to read or create files directly,\n- are not allowed to attack the system security or the grader,\n- are not allowed to attempt to execute other programs,\n- are not allowed to change file system permissions, and\n- are not allowed to read file system information.\n\nA contestant whose program attempts any of the above will be disqualified",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 24
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 23
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 15
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 0.9,
+    "cost_breakdown": {
+      "final_cost_cents": 0.9
+    },
+    "runtime": 7.248414039611816,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.9
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2002/day0/day0material/UserManual.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

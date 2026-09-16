@@ -1,0 +1,255 @@
+{
+  "request_id": "5Nsap1Kv40_0pKMviM2UYw",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T04:03:23.447681+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "5Nsap1Kv40_0pKMviM2UYw",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/5Nsap1Kv40_0pKMviM2UYw",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2021 CCF 非专业级别软件能力认证第一轮 (CSP-J1) 入门级 C++语言试题\n\n认证时间：2021 年 9 月 19 日 14:30~16:30\n\n## 考生注意事项：\n\n- 试题纸共有 12 页，答题纸共有 1 页，满分 100 分。请在答题纸上作答，写在试题纸上的  \n一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n## 一、单项选择题（共 15 题，每题 2 分，共计 30 分；每题有且仅有一个正确选项）\n\n1. 以下不属于面向对象程序设计语言的是（ ）。\n\n- A. C++\n- B. Python\n- C. Java\n- D. C\n\n2. 以下奖项与计算机领域最相关的是（ ）。\n\n- A. 奥斯卡奖\n- B. 图灵奖\n- C. 诺贝尔奖\n- D. 普利策奖\n\n3. 目前主流的计算机储存数据最终都是转换成（ ）数据进行储存。\n\n- A. 二进制\n- B. 十进制\n- C. 八进制\n- D. 十六进制\n\n4. 以比较作为基本运算，在  $N$  个数中找出最大数，最坏情况下所需要的最少的比较次数为（ ）。\n\n- A.  $N^2$\n\n{1}------------------------------------------------\n\n- B. N\n- C. N-1\n- D. N+1\n\n5. 对于入栈顺序为 a, b, c, d, e 的序列，下列（ ）不是合法的出栈序列。\n\n- A. a, b, c, d, e\n- B. e, d, c, b, a\n- C. b, a, c, d, e\n- D. c, d, a, e, b\n\n6. 对于有 n 个顶点、m 条边的无向连通图 ( $m > n$ )，需要删掉（ ）条边才能使其成为一棵树。\n\n- A. n-1\n- B. m-n\n- C. m-n-1\n- D. m-n+1\n\n7. 二进制数 101.11 对应的十进制数是（ ）。\n\n- A. 6.5\n- B. 5.5\n- C. 5.75\n- D. 5.25\n\n8. 如果一棵二叉树只有根结点，那么这棵二叉树高度为 1。请问高度为 5 的完全二叉树有（ ）种不同的形态？\n\n- A. 16\n- B. 15\n- C. 17\n- D. 32\n\n{2}------------------------------------------------\n\n9. 表达式  $a*(b+c)*d$  的后缀表达式为( )，其中“\\*”和“+”是运算符。\n\n- A.  $**a+bcd$\n- B.  $abc+*d*$\n- C.  $abc+d**$\n- D.  $*a*+bcd$\n\n10. 6 个人，两个人组一队，总共组成三队，不区分队伍的编号。不同的组队情况有( )种。\n\n- A. 10\n- B. 15\n- C. 30\n- D. 20\n\n11. 在数据压缩编码中的哈夫曼编码方法，在本质上是一种( )的策略。\n\n- A. 枚举\n- B. 贪心\n- C. 递归\n- D. 动态规划\n\n12. 由 1, 1, 2, 2, 3 这五个数字组成不同的三位数有( )种。\n\n- A. 18\n- B. 15\n- C. 12\n- D. 24\n\n13. 考虑如下递归算法\n\n```\nsolve(n)  \n  if n<=1 return 1\n```\n\n{3}------------------------------------------------\n\n```\nelse if n>=5 return n*solve(n-2)\nelse return n*solve(n-1)\n```\n\n则调用 solve(7)得到的返回结果为（ ）。\n\n- A. 105\nB. 840\nC. 210\nD. 420\n\n14. 以 a 为起点，对右边的无向图进行深度优先遍历，则 b、 c、 d、 e 四个点中有可能作为最后一个遍历到的点的个数为（ ）。\n\n- A. 1\nB. 2\nC. 3\nD. 4\n\n![An undirected graph with 5 vertices labeled a, b, c, d, and e. Vertex a is connected to b and c. Vertex b is connected to a and d. Vertex c is connected to a and d. Vertex d is connected to b and c. Vertex e is connected to c.](f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg)\n\nAn undirected graph with 5 vertices labeled a, b, c, d, and e. Vertex a is connected to b and c. Vertex b is connected to a and d. Vertex c is connected to a and d. Vertex d is connected to b and c. Vertex e is connected to c.\n\n15. 有四个人要从 A 点坐一条船过河到 B 点，船一开始在 A 点。该船一次最多可坐两个人。\n已知这四个人中每个人独自坐船的过河时间分别为 1，2，4，8，且两个人坐船的过河时间为两人独自过河时间的较大者。则最短（ ）时间可以让四个人都过河到 B 点（包括从 B 点把船开回 A 点的时间）。\n\n- A. 14\nB. 15\nC. 16\nD. 17\n\n## 二、阅读程序（程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分）\n\n(1)\n\n```\n01 #include <iostream>\n02 using namespace std;\n03\n04 int n;\n```\n\n{4}------------------------------------------------\n\n```\n\n05 int a[1000];\n06\n07 int f(int x)\n08 {\n09     int ret = 0;\n10     for (; x; x &= x - 1) ret++;\n11     return ret;\n12 }\n13\n14 int g(int x)\n15 {\n16     return x & -x;\n17 }\n18\n19 int main()\n20 {\n21     cin >> n;\n22     for (int i = 0; i < n; i++) cin >> a[i];\n23     for (int i = 0; i < n; i++)\n24         cout << f(a[i]) + g(a[i]) << ' ';\n25     cout << endl;\n26     return 0;\n27 }\n\n```\n\n### ● 判断题\n\n16. 输入的  $n$  等于 1001 时，程序不会发生下标越界。（ ）\n17. 输入的  $a[i]$  必须全为正整数，否则程序将陷入死循环。（ ）\n18. 当输入为 “5 2 11 9 16 10” 时，输出为 “3 4 3 17 5”。（ ）\n19. 当输入为 “1 511998” 时，输出为 “18”。（ ）\n20. 将源代码中  $g$  函数的定义（14-17 行）移到  $main$  函数的后面，程序可以正常编译运行。（ ）\n\n### ● 单选题\n\n21. 当输入为 “2 -65536 2147483647” 时，输出为（ ）。\n- A. “65532 33”    B. “65552 32”    C. “65535 34”    D. “65554 33”\n\n(2)\n\n```\n\n01 #include <iostream>\n02 #include <string>\n\n```\n\n{5}------------------------------------------------\n\n```\n\n03 using namespace std;\n04\n05 char base[64];\n06 char table[256];\n07\n08 void init()\n09 {\n10     for (int i = 0; i < 26; i++) base[i] = 'A' + i;\n11     for (int i = 0; i < 26; i++) base[26 + i] = 'a' + i;\n12     for (int i = 0; i < 10; i++) base[52 + i] = '0' + i;\n13     base[62] = '+', base[63] = '/';\n14\n15     for (int i = 0; i < 256; i++) table[i] = 0xff;\n16     for (int i = 0; i < 64; i++) table[base[i]] = i;\n17     table['='] = 0;\n18 }\n19\n20 string decode(string str)\n21 {\n22     string ret;\n23     int i;\n24     for (i = 0; i < str.size(); i += 4) {\n25         ret += table[str[i]] << 2 | table[str[i + 1]] >> 4;\n26         if (str[i + 2] != '=')\n27             ret += (table[str[i + 1]] & 0x0f) << 4 | table[str[i +\n28                                     2]] >> 2;\n29         if (str[i + 3] != '=')\n30             ret += table[str[i + 2]] << 6 | table[str[i + 3]];\n31     }\n32     return ret;\n33 }\n34 int main()\n35 {\n36     init();\n37     cout << int(table[0]) << endl;\n38\n39     string str;\n40     cin >> str;\n41     cout << decode(str) << endl;\n42     return 0;\n43 }\n\n```\n\n### ● 判断题\n\n{6}------------------------------------------------\n\n22. 输出的第二行一定是由小写字母、大写字母、数字和“+”、“/”、“=”构成的字符串。（ ）\n\n23. 可能存在输入不同，但输出的第二行相同的情形。（ ）\n\n24. 输出的第一行为“-1”。（ ）\n\n### ● 单选题\n\n25. 设输入字符串长度为  $n$ ，decode 函数的时间复杂度为（ ）。\n\n- A.  $\\Theta(\\sqrt{n})$       B.  $\\Theta(n)$       C.  $\\Theta(n \\log n)$       D.  $\\Theta(n^2)$\n\n26. 当输入为“Y3Nx”时，输出的第二行为（ ）。\n\n- A. “csp”      B. “csq”      C. “CSP”      D. “Csp”\n\n27. (3.5 分) 当输入为“Y2NmIDIwMjE=”时，输出的第二行为（ ）。\n\n- A. “ccf2021”      B. “ccf2022”      C. “ccf 2021”      D. “ccf 2022”\n\n(3)\n\n```\n01 #include <iostream>\n02 using namespace std;\n03\n04 const int n = 100000;\n05 const int N = n + 1;\n06\n07 int m;\n08 int a[N], b[N], c[N], d[N];\n09 int f[N], g[N];\n10\n11 void init()\n12 {\n13     f[1] = g[1] = 1;\n14     for (int i = 2; i <= n; i++) {\n15         if (!a[i]) {\n16             b[m++] = i;\n17             c[i] = 1, f[i] = 2;\n18             d[i] = 1, g[i] = i + 1;\n19         }\n20         for (int j = 0; j < m && b[j] * i <= n; j++) {\n21             int k = b[j];\n22             a[i * k] = 1;\n23             if (i % k == 0) {\n24                 c[i * k] = c[i] + 1;\n25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n26                 d[i * k] = d[i];\n            }\n        }\n    }\n}\n```\n\n{7}------------------------------------------------\n\n```\n\n27             g[i * k] = g[i] * k + d[i];\n28             break;\n29         }\n30     else {\n31         c[i * k] = 1;\n32         f[i * k] = 2 * f[i];\n33         d[i * k] = g[i];\n34         g[i * k] = g[i] * (k + 1);\n35     }\n36 }\n37 }\n38 }\n39\n40 int main()\n41 {\n42     init();\n43\n44     int x;\n45     cin >> x;\n46     cout << f[x] << ' ' << g[x] << endl;\n47     return 0;\n48 }\n\n```\n\n假设输入的  $x$  是不超过 1000 的自然数，完成下面的判断题和单选题：\n\n### ● 判断题\n\n28. 若输入不为“1”，把第 13 行删去不会影响输出的结果。（ ）\n\n29. (2 分) 第 25 行的“ $f[i] / c[i * k]$ ”可能存在无法整除而向下取整的情况。（ ）\n\n30. (2 分) 在执行完 `init()` 后， $f$  数组不是单调递增的，但  $g$  数组是单调递增的。（ ）\n\n### ● 单选题\n\n31. `init` 函数的时间复杂度为（ ）。\n\n- A.  $\\Theta(n)$       B.  $\\Theta(n \\log n)$       C.  $\\Theta(n\\sqrt{n})$       D.  $\\Theta(n^2)$\n\n32. 在执行完 `init()` 后， $f[1]$ ,  $f[2]$ ,  $f[3]$  .....  $f[100]$  中有（ ）个等于 2。\n\n- A. 23      B. 24      C. 25      D. 26\n\n33. (4 分) 当输入为“1000”时，输出为（ ）。\n\n- A. “15 1340”      B. “15 2340”      C. “16 2340”      D. “16 1340”\n\n{8}------------------------------------------------\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n（1）（Josephus 问题）有  $n$  个人围成一个圈，依次标号 0 至  $n-1$ 。从 0 号开始，依次 0,1,0,1,... 交替报数，报到 1 的人会离开，直至圈中只剩下一个人。求最后剩下人的编号。\n\n试补全模拟程序。\n\n```\n01 #include <iostream>\n02\n03 using namespace std;\n04\n05 const int MAXN = 1000000;\n06 int F[MAXN];\n07\n08 int main() {\n09     int n;\n10     cin >> n;\n11     int i = 0, p = 0, c = 0;\n12     while (①) {\n13         if (F[i] == 0) {\n14             if (②) {\n15                 F[i] = 1;\n16                 ③;\n17             }\n18             ④;\n19         }\n20         ⑤;\n21     }\n22     int ans = -1;\n23     for (i = 0; i < n; i++)\n24         if (F[i] == 0)\n25             ans = i;\n26     cout << ans << endl;\n27     return 0;\n28 }\n```\n\n34. ①处应填（ ）\n\n- A.  $i < n$                       B.  $c < n$                       C.  $i < n - 1$                       D.  $c < n - 1$\n\n35. ②处应填（ ）\n\n- A.  $i \\% 2 == 0$                       B.  $i \\% 2 == 1$                       C.  $p$                       D.  $!p$\n\n{9}------------------------------------------------\n\n36. ③处应填 ( )\n\nA. `i++`\n\nB. `i = (i + 1) % n`\n\nC. `c++`\n\nD. `p ^= 1`\n\n37. ④处应填 ( )\n\nA. `i++`\n\nB. `i = (i + 1) % n`\n\nC. `c++`\n\nD. `p ^= 1`\n\n38. ⑤处应填 ( )\n\nA. `i++`\n\nB. `i = (i + 1) % n`\n\nC. `c++`\n\nD. `p ^= 1`\n\n(2) (矩形计数) 平面上有  $n$  个关键点, 求有多少个四条边都和  $x$  轴或者  $y$  轴平行的矩形, 满足四个顶点都是关键点。给出的关键点可能有重复, 但完全重合的矩形只计一次。\n\n试补全枚举算法。\n\n```\n01 #include <iostream>\n02\n03 using namespace std;\n04\n05 struct point {\n06     int x, y, id;\n07 };\n08\n09 bool equals(point a, point b) {\n10     return a.x == b.x && a.y == b.y;\n11 }\n12\n13 bool cmp(point a, point b) {\n14     return ①;\n15 }\n16\n17 void sort(point A[], int n) {\n18     for (int i = 0; i < n; i++)\n19         for (int j = 1; j < n; j++)\n20             if (cmp(A[j], A[j - 1])) {\n21                 point t = A[j];\n22                 A[j] = A[j - 1];\n23                 A[j - 1] = t;\n24             }\n25 }\n26\n```\n\n{10}------------------------------------------------\n\n```\n\n27 int unique(point A[], int n) {\n28     int t = 0;\n29     for (int i = 0; i < n; i++)\n30         if (②)\n31             A[t++] = A[i];\n32     return t;\n33 }\n34\n35 bool binary_search(point A[], int n, int x, int y) {\n36     point p;\n37     p.x = x;\n38     p.y = y;\n39     p.id = n;\n40     int a = 0, b = n - 1;\n41     while (a < b) {\n42         int mid = ③;\n43         if (④)\n44             a = mid + 1;\n45         else\n46             b = mid;\n47     }\n48     return equals(A[a], p);\n49 }\n50\n51 const int MAXN = 1000;\n52 point A[MAXN];\n53\n54 int main() {\n55     int n;\n56     cin >> n;\n57     for (int i = 0; i < n; i++) {\n58         cin >> A[i].x >> A[i].y;\n59         A[i].id = i;\n60     }\n61     sort(A, n);\n62     n = unique(A, n);\n63     int ans = 0;\n64     for (int i = 0; i < n; i++)\n65         for (int j = 0; j < n; j++)\n66             if (⑤ && binary_search(A, n, A[i].x, A[j].y) &&\n67                 binary_search(A, n, A[j].x, A[i].y)) {\n68                 ans++;\n69             }\n70     cout << ans << endl;\n\n```\n\n{11}------------------------------------------------\n\n```\n70     return 0;  \n71 }\n```\n\n39. ①处应填 ( )\n\n- A. `a.x != b.x ? a.x < b.x : a.id < b.id`\n- B. `a.x != b.x ? a.x < b.x : a.y < b.y`\n- C. `equals(a, b) ? a.id < b.id : a.x < b.x`\n- D. `equals(a, b) ? a.id < b.id : (a.x != b.x ? a.x < b.x : a.y < b.y)`\n\n40. ②处应填 ( )\n\n- A. `i == 0 || cmp(A[i], A[i - 1])`\n- B. `t == 0 || equals(A[i], A[t - 1])`\n- C. `i == 0 || !cmp(A[i], A[i - 1])`\n- D. `t == 0 || !equals(A[i], A[t - 1])`\n\n41. ③处应填 ( )\n\n- A. `b - (b - a) / 2 + 1`\n- B. `(a + b + 1) >> 1`\n- C. `(a + b) >> 1`\n- D. `a + (b - a + 1) / 2`\n\n42. ④处应填 ( )\n\n- A. `!cmp(A[mid], p)`\n- B. `cmp(A[mid], p)`\n- C. `cmp(p, A[mid])`\n- D. `!cmp(p, A[mid])`\n\n43. ⑤处应填 ( )\n\n- A. `A[i].x == A[j].x`\n- B. `A[i].id < A[j].id`\n- C. `A[i].x == A[j].x && A[i].id < A[j].id`\n- D. `A[i].x < A[j].x && A[i].y < A[j].y`",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 11
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 3
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 9,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 10,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 11,
+            "num_blocks": 12
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 12,
+      "total_cost": 3.6,
+      "cost_breakdown": {
+        "final_cost_cents": 3.6
+      },
+      "runtime": 19.078758239746094,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2021 CCF 非专业级别软件能力认证第一轮 (CSP-J1) 入门级 C++语言试题\n\n认证时间：2021 年 9 月 19 日 14:30~16:30\n\n## 考生注意事项：\n\n- 试题纸共有 12 页，答题纸共有 1 页，满分 100 分。请在答题纸上作答，写在试题纸上的  \n一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n## 一、单项选择题（共 15 题，每题 2 分，共计 30 分；每题有且仅有一个正确选项）\n\n1. 以下不属于面向对象程序设计语言的是（ ）。\n\n- A. C++\n- B. Python\n- C. Java\n- D. C\n\n2. 以下奖项与计算机领域最相关的是（ ）。\n\n- A. 奥斯卡奖\n- B. 图灵奖\n- C. 诺贝尔奖\n- D. 普利策奖\n\n3. 目前主流的计算机储存数据最终都是转换成（ ）数据进行储存。\n\n- A. 二进制\n- B. 十进制\n- C. 八进制\n- D. 十六进制\n\n4. 以比较作为基本运算，在  $N$  个数中找出最大数，最坏情况下所需要的最少的比较次数为（ ）。\n\n- A.  $N^2$\n\n{1}------------------------------------------------\n\n- B. N\n- C. N-1\n- D. N+1\n\n5. 对于入栈顺序为 a, b, c, d, e 的序列，下列（ ）不是合法的出栈序列。\n\n- A. a, b, c, d, e\n- B. e, d, c, b, a\n- C. b, a, c, d, e\n- D. c, d, a, e, b\n\n6. 对于有 n 个顶点、m 条边的无向连通图 ( $m > n$ )，需要删掉（ ）条边才能使其成为一棵树。\n\n- A. n-1\n- B. m-n\n- C. m-n-1\n- D. m-n+1\n\n7. 二进制数 101.11 对应的十进制数是（ ）。\n\n- A. 6.5\n- B. 5.5\n- C. 5.75\n- D. 5.25\n\n8. 如果一棵二叉树只有根结点，那么这棵二叉树高度为 1。请问高度为 5 的完全二叉树有（ ）种不同的形态？\n\n- A. 16\n- B. 15\n- C. 17\n- D. 32\n\n{2}------------------------------------------------\n\n9. 表达式  $a*(b+c)*d$  的后缀表达式为( )，其中“\\*”和“+”是运算符。\n\n- A.  $**a+bcd$\n- B.  $abc+*d*$\n- C.  $abc+d**$\n- D.  $*a*+bcd$\n\n10. 6 个人，两个人组一队，总共组成三队，不区分队伍的编号。不同的组队情况有( )种。\n\n- A. 10\n- B. 15\n- C. 30\n- D. 20\n\n11. 在数据压缩编码中的哈夫曼编码方法，在本质上是一种( )的策略。\n\n- A. 枚举\n- B. 贪心\n- C. 递归\n- D. 动态规划\n\n12. 由 1, 1, 2, 2, 3 这五个数字组成不同的三位数有( )种。\n\n- A. 18\n- B. 15\n- C. 12\n- D. 24\n\n13. 考虑如下递归算法\n\n```\nsolve(n)  \n  if n<=1 return 1\n```\n\n{3}------------------------------------------------\n\n```\nelse if n>=5 return n*solve(n-2)\nelse return n*solve(n-1)\n```\n\n则调用 solve(7)得到的返回结果为（ ）。\n\n- A. 105\nB. 840\nC. 210\nD. 420\n\n14. 以 a 为起点，对右边的无向图进行深度优先遍历，则 b、 c、 d、 e 四个点中有可能作为最后一个遍历到的点的个数为（ ）。\n\n- A. 1\nB. 2\nC. 3\nD. 4\n\n![An undirected graph with 5 vertices labeled a, b, c, d, and e. Vertex a is connected to b and c. Vertex b is connected to a and d. Vertex c is connected to a and d. Vertex d is connected to b and c. Vertex e is connected to c.](f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg)\n\nAn undirected graph with 5 vertices labeled a, b, c, d, and e. Vertex a is connected to b and c. Vertex b is connected to a and d. Vertex c is connected to a and d. Vertex d is connected to b and c. Vertex e is connected to c.\n\n15. 有四个人要从 A 点坐一条船过河到 B 点，船一开始在 A 点。该船一次最多可坐两个人。\n已知这四个人中每个人独自坐船的过河时间分别为 1，2，4，8，且两个人坐船的过河时间为两人独自过河时间的较大者。则最短（ ）时间可以让四个人都过河到 B 点（包括从 B 点把船开回 A 点的时间）。\n\n- A. 14\nB. 15\nC. 16\nD. 17\n\n## 二、阅读程序（程序输入不超过数组或字符串定义的范围；判断题正确填√，错误填×；除特殊说明外，判断题 1.5 分，选择题 3 分，共计 40 分）\n\n(1)\n\n```\n01 #include <iostream>\n02 using namespace std;\n03\n04 int n;\n```\n\n{4}------------------------------------------------\n\n```\n\n05 int a[1000];\n06\n07 int f(int x)\n08 {\n09     int ret = 0;\n10     for (; x; x &= x - 1) ret++;\n11     return ret;\n12 }\n13\n14 int g(int x)\n15 {\n16     return x & -x;\n17 }\n18\n19 int main()\n20 {\n21     cin >> n;\n22     for (int i = 0; i < n; i++) cin >> a[i];\n23     for (int i = 0; i < n; i++)\n24         cout << f(a[i]) + g(a[i]) << ' ';\n25     cout << endl;\n26     return 0;\n27 }\n\n```\n\n### ● 判断题\n\n16. 输入的  $n$  等于 1001 时，程序不会发生下标越界。（ ）\n17. 输入的  $a[i]$  必须全为正整数，否则程序将陷入死循环。（ ）\n18. 当输入为 “5 2 11 9 16 10” 时，输出为 “3 4 3 17 5”。（ ）\n19. 当输入为 “1 511998” 时，输出为 “18”。（ ）\n20. 将源代码中  $g$  函数的定义（14-17 行）移到  $main$  函数的后面，程序可以正常编译运行。（ ）\n\n### ● 单选题\n\n21. 当输入为 “2 -65536 2147483647” 时，输出为（ ）。\n- A. “65532 33”    B. “65552 32”    C. “65535 34”    D. “65554 33”\n\n(2)\n\n```\n\n01 #include <iostream>\n02 #include <string>\n\n```\n\n{5}------------------------------------------------\n\n```\n\n03 using namespace std;\n04\n05 char base[64];\n06 char table[256];\n07\n08 void init()\n09 {\n10     for (int i = 0; i < 26; i++) base[i] = 'A' + i;\n11     for (int i = 0; i < 26; i++) base[26 + i] = 'a' + i;\n12     for (int i = 0; i < 10; i++) base[52 + i] = '0' + i;\n13     base[62] = '+', base[63] = '/';\n14\n15     for (int i = 0; i < 256; i++) table[i] = 0xff;\n16     for (int i = 0; i < 64; i++) table[base[i]] = i;\n17     table['='] = 0;\n18 }\n19\n20 string decode(string str)\n21 {\n22     string ret;\n23     int i;\n24     for (i = 0; i < str.size(); i += 4) {\n25         ret += table[str[i]] << 2 | table[str[i + 1]] >> 4;\n26         if (str[i + 2] != '=')\n27             ret += (table[str[i + 1]] & 0x0f) << 4 | table[str[i +\n28                                     2]] >> 2;\n29         if (str[i + 3] != '=')\n30             ret += table[str[i + 2]] << 6 | table[str[i + 3]];\n31     }\n32     return ret;\n33 }\n34 int main()\n35 {\n36     init();\n37     cout << int(table[0]) << endl;\n38\n39     string str;\n40     cin >> str;\n41     cout << decode(str) << endl;\n42     return 0;\n43 }\n\n```\n\n### ● 判断题\n\n{6}------------------------------------------------\n\n22. 输出的第二行一定是由小写字母、大写字母、数字和“+”、“/”、“=”构成的字符串。（ ）\n\n23. 可能存在输入不同，但输出的第二行相同的情形。（ ）\n\n24. 输出的第一行为“-1”。（ ）\n\n### ● 单选题\n\n25. 设输入字符串长度为  $n$ ，decode 函数的时间复杂度为（ ）。\n\n- A.  $\\Theta(\\sqrt{n})$       B.  $\\Theta(n)$       C.  $\\Theta(n \\log n)$       D.  $\\Theta(n^2)$\n\n26. 当输入为“Y3Nx”时，输出的第二行为（ ）。\n\n- A. “csp”      B. “csq”      C. “CSP”      D. “Csp”\n\n27. (3.5 分) 当输入为“Y2NmIDIwMjE=”时，输出的第二行为（ ）。\n\n- A. “ccf2021”      B. “ccf2022”      C. “ccf 2021”      D. “ccf 2022”\n\n(3)\n\n```\n01 #include <iostream>\n02 using namespace std;\n03\n04 const int n = 100000;\n05 const int N = n + 1;\n06\n07 int m;\n08 int a[N], b[N], c[N], d[N];\n09 int f[N], g[N];\n10\n11 void init()\n12 {\n13     f[1] = g[1] = 1;\n14     for (int i = 2; i <= n; i++) {\n15         if (!a[i]) {\n16             b[m++] = i;\n17             c[i] = 1, f[i] = 2;\n18             d[i] = 1, g[i] = i + 1;\n19         }\n20         for (int j = 0; j < m && b[j] * i <= n; j++) {\n21             int k = b[j];\n22             a[i * k] = 1;\n23             if (i % k == 0) {\n24                 c[i * k] = c[i] + 1;\n25                 f[i * k] = f[i] / c[i * k] * (c[i * k] + 1);\n26                 d[i * k] = d[i];\n            }\n        }\n    }\n}\n```\n\n{7}------------------------------------------------\n\n```\n\n27             g[i * k] = g[i] * k + d[i];\n28             break;\n29         }\n30     else {\n31         c[i * k] = 1;\n32         f[i * k] = 2 * f[i];\n33         d[i * k] = g[i];\n34         g[i * k] = g[i] * (k + 1);\n35     }\n36 }\n37 }\n38 }\n39\n40 int main()\n41 {\n42     init();\n43\n44     int x;\n45     cin >> x;\n46     cout << f[x] << ' ' << g[x] << endl;\n47     return 0;\n48 }\n\n```\n\n假设输入的  $x$  是不超过 1000 的自然数，完成下面的判断题和单选题：\n\n### ● 判断题\n\n28. 若输入不为“1”，把第 13 行删去不会影响输出的结果。（ ）\n\n29. (2 分) 第 25 行的“ $f[i] / c[i * k]$ ”可能存在无法整除而向下取整的情况。（ ）\n\n30. (2 分) 在执行完 `init()` 后， $f$  数组不是单调递增的，但  $g$  数组是单调递增的。（ ）\n\n### ● 单选题\n\n31. `init` 函数的时间复杂度为（ ）。\n\n- A.  $\\Theta(n)$       B.  $\\Theta(n \\log n)$       C.  $\\Theta(n\\sqrt{n})$       D.  $\\Theta(n^2)$\n\n32. 在执行完 `init()` 后， $f[1]$ ,  $f[2]$ ,  $f[3]$  .....  $f[100]$  中有（ ）个等于 2。\n\n- A. 23      B. 24      C. 25      D. 26\n\n33. (4 分) 当输入为“1000”时，输出为（ ）。\n\n- A. “15 1340”      B. “15 2340”      C. “16 2340”      D. “16 1340”\n\n{8}------------------------------------------------\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n（1）（Josephus 问题）有  $n$  个人围成一个圈，依次标号 0 至  $n-1$ 。从 0 号开始，依次 0,1,0,1,... 交替报数，报到 1 的人会离开，直至圈中只剩下一个人。求最后剩下人的编号。\n\n试补全模拟程序。\n\n```\n01 #include <iostream>\n02\n03 using namespace std;\n04\n05 const int MAXN = 1000000;\n06 int F[MAXN];\n07\n08 int main() {\n09     int n;\n10     cin >> n;\n11     int i = 0, p = 0, c = 0;\n12     while (①) {\n13         if (F[i] == 0) {\n14             if (②) {\n15                 F[i] = 1;\n16                 ③;\n17             }\n18             ④;\n19         }\n20         ⑤;\n21     }\n22     int ans = -1;\n23     for (i = 0; i < n; i++)\n24         if (F[i] == 0)\n25             ans = i;\n26     cout << ans << endl;\n27     return 0;\n28 }\n```\n\n34. ①处应填（ ）\n\n- A.  $i < n$                       B.  $c < n$                       C.  $i < n - 1$                       D.  $c < n - 1$\n\n35. ②处应填（ ）\n\n- A.  $i \\% 2 == 0$                       B.  $i \\% 2 == 1$                       C.  $p$                       D.  $!p$\n\n{9}------------------------------------------------\n\n36. ③处应填 ( )\n\nA. `i++`\n\nB. `i = (i + 1) % n`\n\nC. `c++`\n\nD. `p ^= 1`\n\n37. ④处应填 ( )\n\nA. `i++`\n\nB. `i = (i + 1) % n`\n\nC. `c++`\n\nD. `p ^= 1`\n\n38. ⑤处应填 ( )\n\nA. `i++`\n\nB. `i = (i + 1) % n`\n\nC. `c++`\n\nD. `p ^= 1`\n\n(2) (矩形计数) 平面上有  $n$  个关键点, 求有多少个四条边都和  $x$  轴或者  $y$  轴平行的矩形, 满足四个顶点都是关键点。给出的关键点可能有重复, 但完全重合的矩形只计一次。\n\n试补全枚举算法。\n\n```\n01 #include <iostream>\n02\n03 using namespace std;\n04\n05 struct point {\n06     int x, y, id;\n07 };\n08\n09 bool equals(point a, point b) {\n10     return a.x == b.x && a.y == b.y;\n11 }\n12\n13 bool cmp(point a, point b) {\n14     return ①;\n15 }\n16\n17 void sort(point A[], int n) {\n18     for (int i = 0; i < n; i++)\n19         for (int j = 1; j < n; j++)\n20             if (cmp(A[j], A[j - 1])) {\n21                 point t = A[j];\n22                 A[j] = A[j - 1];\n23                 A[j - 1] = t;\n24             }\n25 }\n26\n```\n\n{10}------------------------------------------------\n\n```\n\n27 int unique(point A[], int n) {\n28     int t = 0;\n29     for (int i = 0; i < n; i++)\n30         if (②)\n31             A[t++] = A[i];\n32     return t;\n33 }\n34\n35 bool binary_search(point A[], int n, int x, int y) {\n36     point p;\n37     p.x = x;\n38     p.y = y;\n39     p.id = n;\n40     int a = 0, b = n - 1;\n41     while (a < b) {\n42         int mid = ③;\n43         if (④)\n44             a = mid + 1;\n45         else\n46             b = mid;\n47     }\n48     return equals(A[a], p);\n49 }\n50\n51 const int MAXN = 1000;\n52 point A[MAXN];\n53\n54 int main() {\n55     int n;\n56     cin >> n;\n57     for (int i = 0; i < n; i++) {\n58         cin >> A[i].x >> A[i].y;\n59         A[i].id = i;\n60     }\n61     sort(A, n);\n62     n = unique(A, n);\n63     int ans = 0;\n64     for (int i = 0; i < n; i++)\n65         for (int j = 0; j < n; j++)\n66             if (⑤ && binary_search(A, n, A[i].x, A[j].y) &&\n67                 binary_search(A, n, A[j].x, A[i].y)) {\n68                 ans++;\n69             }\n70     cout << ans << endl;\n\n```\n\n{11}------------------------------------------------\n\n```\n70     return 0;  \n71 }\n```\n\n39. ①处应填 ( )\n\n- A. `a.x != b.x ? a.x < b.x : a.id < b.id`\n- B. `a.x != b.x ? a.x < b.x : a.y < b.y`\n- C. `equals(a, b) ? a.id < b.id : a.x < b.x`\n- D. `equals(a, b) ? a.id < b.id : (a.x != b.x ? a.x < b.x : a.y < b.y)`\n\n40. ②处应填 ( )\n\n- A. `i == 0 || cmp(A[i], A[i - 1])`\n- B. `t == 0 || equals(A[i], A[t - 1])`\n- C. `i == 0 || !cmp(A[i], A[i - 1])`\n- D. `t == 0 || !equals(A[i], A[t - 1])`\n\n41. ③处应填 ( )\n\n- A. `b - (b - a) / 2 + 1`\n- B. `(a + b + 1) >> 1`\n- C. `(a + b) >> 1`\n- D. `a + (b - a + 1) / 2`\n\n42. ④处应填 ( )\n\n- A. `!cmp(A[mid], p)`\n- B. `cmp(A[mid], p)`\n- C. `cmp(p, A[mid])`\n- D. `!cmp(p, A[mid])`\n\n43. ⑤处应填 ( )\n\n- A. `A[i].x == A[j].x`\n- B. `A[i].id < A[j].id`\n- C. `A[i].x == A[j].x && A[i].id < A[j].id`\n- D. `A[i].x < A[j].x && A[i].y < A[j].y`",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 11
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 3
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 9,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 10,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 11,
+          "num_blocks": 12
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 12,
+    "total_cost": 3.6,
+    "cost_breakdown": {
+      "final_cost_cents": 3.6
+    },
+    "runtime": 19.078758239746094,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 3.6
+  },
+  "page_count": 12,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2021/入门级-CSP-J1/CSP-J-S 2021_入门级-CSP-J1_C++.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "f0bae10b54c4f3cf8d0e33f5e2fb7cfa_img.jpg"
+  ]
+}

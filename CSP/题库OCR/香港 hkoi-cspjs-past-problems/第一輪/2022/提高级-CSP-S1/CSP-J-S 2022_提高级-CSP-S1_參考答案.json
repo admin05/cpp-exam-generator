@@ -1,0 +1,134 @@
+{
+  "request_id": "cNaY_db-9GBlO78M1EAEAA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T04:11:23.763016+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "cNaY_db-9GBlO78M1EAEAA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/cNaY_db-9GBlO78M1EAEAA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n=== ↓ senior ↓ ===\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 1  | B  |  | 9  | D  |\n| 2  | A  |  | 10 | A  |\n| 3  | D  |  | 11 | C  |\n| 4  | C  |  | 12 | D  |\n| 5  | A  |  | 13 | B  |\n| 6  | B  |  | 14 | B  |\n| 7  | C  |  | 15 | B  |\n| 8  | B  |  |    |    |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 16 | √  |  | 22 | ×  |\n| 17 | ×  |  | 23 | ×  |\n| 18 | √  |  | 24 | √  |\n| 19 | D  |  | 25 | D  |\n| 20 | A  |  | 26 | D  |\n| 21 | B  |  | 27 | C  |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 28 | √  |  | 34 | D  |\n| 29 | ×  |  | 35 | B  |\n| 30 | ×  |  | 36 | C  |\n| 31 | A  |  | 37 | C  |\n| 32 | B  |  | 38 | A  |\n| 33 | B  |  |    |    |\n\n| 序号 | 答案 |\n|----|----|\n| 39 | A  |\n| 40 | C  |\n| 41 | A  |\n| 42 | A  |\n| 43 | C  |\n\n=== ↑ senior ↑ ===",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 6
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 4.590287208557129,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n=== ↓ senior ↓ ===\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 1  | B  |  | 9  | D  |\n| 2  | A  |  | 10 | A  |\n| 3  | D  |  | 11 | C  |\n| 4  | C  |  | 12 | D  |\n| 5  | A  |  | 13 | B  |\n| 6  | B  |  | 14 | B  |\n| 7  | C  |  | 15 | B  |\n| 8  | B  |  |    |    |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 16 | √  |  | 22 | ×  |\n| 17 | ×  |  | 23 | ×  |\n| 18 | √  |  | 24 | √  |\n| 19 | D  |  | 25 | D  |\n| 20 | A  |  | 26 | D  |\n| 21 | B  |  | 27 | C  |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 28 | √  |  | 34 | D  |\n| 29 | ×  |  | 35 | B  |\n| 30 | ×  |  | 36 | C  |\n| 31 | A  |  | 37 | C  |\n| 32 | B  |  | 38 | A  |\n| 33 | B  |  |    |    |\n\n| 序号 | 答案 |\n|----|----|\n| 39 | A  |\n| 40 | C  |\n| 41 | A  |\n| 42 | A  |\n| 43 | C  |\n\n=== ↑ senior ↑ ===",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 6
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 4.590287208557129,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2022/提高级-CSP-S1/CSP-J-S 2022_提高级-CSP-S1_參考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

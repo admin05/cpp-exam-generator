@@ -1,0 +1,158 @@
+{
+  "request_id": "J4ckxAseO7fF2dHpEwkPWQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:57:36.719636+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "J4ckxAseO7fF2dHpEwkPWQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/J4ckxAseO7fF2dHpEwkPWQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# NOIP2020 山东省小学组复赛试题( 下半场 )\n\n考试时间：2020 年 11 月 7 日上午 10：30--12：00\n\n|           |           |           |\n|-----------|-----------|-----------|\n| 中文题目名称    | 侠盗阿飞      | 分糖果       |\n| 英文题目与子目录名 | money     | candy     |\n| 输入文件名     | money.in  | candy.in  |\n| 输出文件名     | money.out | candy.out |\n| 每个测试点时限   | 1 秒       | 1 秒       |\n| 测试点数目     | 10        | 10        |\n| 每个测试点分值   | 10        | 10        |\n| 附加样例文件    |           |           |\n| 运行内存上限    | 128M      | 128M      |\n\n提交源程序文件名\n\n|           |           |           |\n|-----------|-----------|-----------|\n| 对于 C++语言  | money.cpp | candy.cpp |\n| 对于 C 语言   | money.c   | candy.c   |\n| 对于 Pascal | money.pas | candy.pas |\n\n{1}------------------------------------------------\n\n## 三、侠盗阿飞\n\n### 【问题描述】\n\n侠盗阿飞获得了一笔意外之财  $w$  元钱，他想用这笔钱去帮助需要帮助的人。现在知道有  $n$  个需要帮助的人以及他们每个人需要的钱数  $x_i$  元（ $i=0, 1, 2, 3, \\dots, n-1$ ），阿飞应该如何支配这笔钱使得能得到帮助的人数最多？\n\n### 【输入格式】\n\n第一行：两个数，阿飞的钱数  $w$ ，需要帮助的人数  $n$ 。\n\n第二行： $n$  个数，分别表示第  $i$  个人需要的钱数  $x_i$ 。\n\n### 【输出格式】\n\n只有一个整数，表示阿飞最多能帮到的人数（最多的人数）。\n\n### 【输入输出样例】\n\n| money.in                                        | money.out |\n|-------------------------------------------------|-----------|\n| 10 5<br>1 2 3 4 5                               | 4         |\n| 1000 10<br>20 20 150 110 180 50 200 140 120 200 | 9         |\n\n### 【数据范围】\n\n对于 30% 的数据， $x_i$  为升序序列（ $x_0 < x_1 < x_2 < x_3 < \\dots$ ）\n\n对于 100% 的数据， $0 \\leq n \\leq 500$ ， $0 < x_i \\leq 50000$ ， $0 \\leq w \\leq 2 \\times 10^9$\n\n{2}------------------------------------------------\n\n## 四、分糖果\n\n### 【问题描述】\n\n老师组织一群孩子围成一个圈进行游戏，游戏结束后老师会根据每个孩子的表现进行评分并给予糖果奖励。\n\n每个孩子只能看见与自己相邻的 2 个孩子（左边的和右边的）的情况，只会关心相邻的且比自己评分低的同学的糖果数（如果相邻 2 个孩子的评分相等，则不关心）。为保证公平，相邻的孩子中，评分高的孩子必须获得更多的糖果（如果左右相邻 2 个孩子的评分相等，则不关心，即分最少的糖果 1 个）。同时，为鼓励孩子的积极性，每个孩子至少都能拿到 1 个糖果。\n\n现在需要你帮助老师来分发糖果，问怎么分配才能使要准备的糖果数最少？计算出需要的最少糖果数。\n\n### 【输入格式】\n\n输入文件名为 candy.in。\n\n输入有二行，第一行一个正整数  $n$  表示孩子的个数。\n\n第二行  $n$  个非负整数，相邻的数用空格隔开，分别表示孩子的表现评分。\n\n### 【输出格式】\n\n输出文件名为 candy.out。\n\n一个整数，表示最少需要准备的糖果数。\n\n{3}------------------------------------------------\n\n### **【输入输出样例】**\n\n| candy.in     | candy.out |\n|--------------|-----------|\n| 3<br>1 2 0   | 6         |\n| 4<br>2 3 3 3 | 6         |\n\n### **【数据范围】**\n\n对于 40% 的数据， $1 \\leq n \\leq 100$ ；\n\n对于 100% 的数据， $1 \\leq n \\leq 100000$ ；\n\n所有评分都是 0 到 100 之间的一个整数。\n\n### **【样例解释】**\n\n样例一，分别分配 2、3、1 的糖果，所以最少需要 6 个糖果。\n\n样例二，分别分配 1、2、1、2 的糖果，所以最少需要 6 个糖果。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 5
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 9
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 4,
+      "total_cost": 1.2,
+      "cost_breakdown": {
+        "final_cost_cents": 1.2
+      },
+      "runtime": 5.60434889793396,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# NOIP2020 山东省小学组复赛试题( 下半场 )\n\n考试时间：2020 年 11 月 7 日上午 10：30--12：00\n\n|           |           |           |\n|-----------|-----------|-----------|\n| 中文题目名称    | 侠盗阿飞      | 分糖果       |\n| 英文题目与子目录名 | money     | candy     |\n| 输入文件名     | money.in  | candy.in  |\n| 输出文件名     | money.out | candy.out |\n| 每个测试点时限   | 1 秒       | 1 秒       |\n| 测试点数目     | 10        | 10        |\n| 每个测试点分值   | 10        | 10        |\n| 附加样例文件    |           |           |\n| 运行内存上限    | 128M      | 128M      |\n\n提交源程序文件名\n\n|           |           |           |\n|-----------|-----------|-----------|\n| 对于 C++语言  | money.cpp | candy.cpp |\n| 对于 C 语言   | money.c   | candy.c   |\n| 对于 Pascal | money.pas | candy.pas |\n\n{1}------------------------------------------------\n\n## 三、侠盗阿飞\n\n### 【问题描述】\n\n侠盗阿飞获得了一笔意外之财  $w$  元钱，他想用这笔钱去帮助需要帮助的人。现在知道有  $n$  个需要帮助的人以及他们每个人需要的钱数  $x_i$  元（ $i=0, 1, 2, 3, \\dots, n-1$ ），阿飞应该如何支配这笔钱使得能得到帮助的人数最多？\n\n### 【输入格式】\n\n第一行：两个数，阿飞的钱数  $w$ ，需要帮助的人数  $n$ 。\n\n第二行： $n$  个数，分别表示第  $i$  个人需要的钱数  $x_i$ 。\n\n### 【输出格式】\n\n只有一个整数，表示阿飞最多能帮到的人数（最多的人数）。\n\n### 【输入输出样例】\n\n| money.in                                        | money.out |\n|-------------------------------------------------|-----------|\n| 10 5<br>1 2 3 4 5                               | 4         |\n| 1000 10<br>20 20 150 110 180 50 200 140 120 200 | 9         |\n\n### 【数据范围】\n\n对于 30% 的数据， $x_i$  为升序序列（ $x_0 < x_1 < x_2 < x_3 < \\dots$ ）\n\n对于 100% 的数据， $0 \\leq n \\leq 500$ ， $0 < x_i \\leq 50000$ ， $0 \\leq w \\leq 2 \\times 10^9$\n\n{2}------------------------------------------------\n\n## 四、分糖果\n\n### 【问题描述】\n\n老师组织一群孩子围成一个圈进行游戏，游戏结束后老师会根据每个孩子的表现进行评分并给予糖果奖励。\n\n每个孩子只能看见与自己相邻的 2 个孩子（左边的和右边的）的情况，只会关心相邻的且比自己评分低的同学的糖果数（如果相邻 2 个孩子的评分相等，则不关心）。为保证公平，相邻的孩子中，评分高的孩子必须获得更多的糖果（如果左右相邻 2 个孩子的评分相等，则不关心，即分最少的糖果 1 个）。同时，为鼓励孩子的积极性，每个孩子至少都能拿到 1 个糖果。\n\n现在需要你帮助老师来分发糖果，问怎么分配才能使要准备的糖果数最少？计算出需要的最少糖果数。\n\n### 【输入格式】\n\n输入文件名为 candy.in。\n\n输入有二行，第一行一个正整数  $n$  表示孩子的个数。\n\n第二行  $n$  个非负整数，相邻的数用空格隔开，分别表示孩子的表现评分。\n\n### 【输出格式】\n\n输出文件名为 candy.out。\n\n一个整数，表示最少需要准备的糖果数。\n\n{3}------------------------------------------------\n\n### **【输入输出样例】**\n\n| candy.in     | candy.out |\n|--------------|-----------|\n| 3<br>1 2 0   | 6         |\n| 4<br>2 3 3 3 | 6         |\n\n### **【数据范围】**\n\n对于 40% 的数据， $1 \\leq n \\leq 100$ ；\n\n对于 100% 的数据， $1 \\leq n \\leq 100000$ ；\n\n所有评分都是 0 到 100 之间的一个整数。\n\n### **【样例解释】**\n\n样例一，分别分配 2、3、1 的糖果，所以最少需要 6 个糖果。\n\n样例二，分别分配 1、2、1、2 的糖果，所以最少需要 6 个糖果。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 5
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 9
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 4,
+    "total_cost": 1.2,
+    "cost_breakdown": {
+      "final_cost_cents": 1.2
+    },
+    "runtime": 5.60434889793396,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.2
+  },
+  "page_count": 4,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2020/Round2/CSP-X2020山东省小学组二轮试题(下半场).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

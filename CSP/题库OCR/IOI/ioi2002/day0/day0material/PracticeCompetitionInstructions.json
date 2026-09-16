@@ -1,0 +1,134 @@
+{
+  "request_id": "qHBlEZF06Aqo2vQ2DKXvAA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:11:35.969142+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "qHBlEZF06Aqo2vQ2DKXvAA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/qHBlEZF06Aqo2vQ2DKXvAA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# Practice Competition Instructions for Contestants\n\nPractice competition is held for you to learn to operate your environment. The tasks are easy and printed solutions are provided at the competition.\n\nFirst of all, you should study the programming environments you are planning to use so that you know how to use and customize them. In IOI 2002 you have a choice of several different program development tools. You should try to make a decision on which tools to use.\n\nThe primary choices available for Linux are:\n\n- For C, C++, and Pascal: editor of your choice (for example vim, emacs), command line compilation, and gdb or ddd for debugging.\n- For C and C++: RHIDE - an integrated development environment. RHIDE can also be used as just an editor for C, C++ or Pascal program development.\n- For Pascal: fp - an integrated development environment that comes with freepascal. The fp is still in beta and may have some problems.\n\nThe primary choices available for Windows XP are:\n\n- For C, C++, and Pascal: editor of your choice (for example Edit), command line compilation, and gdb for debugging.\n- For C and C++: RHIDE - an integrated development environment.\n- For Pascal: fp - an integrated development environment that comes with freepascal. The fp is known to have some problems.\n\nSecond, you need to learn to use the web service for IOI 2002: *submitting solutions, test executing your programs*, printing, and making backups. You should also try submitting solutions that do not compile or work correctly.\n\nThird, you need to familiarize yourself with the task types and the materials that come with sample tasks. You may need to use a library in the actual competition. To be familiar with using libraries, you should try to link to your program the library provided for the task **string**, even though you do not really need it to solve the task.",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 15
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 7.797801971435547,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# Practice Competition Instructions for Contestants\n\nPractice competition is held for you to learn to operate your environment. The tasks are easy and printed solutions are provided at the competition.\n\nFirst of all, you should study the programming environments you are planning to use so that you know how to use and customize them. In IOI 2002 you have a choice of several different program development tools. You should try to make a decision on which tools to use.\n\nThe primary choices available for Linux are:\n\n- For C, C++, and Pascal: editor of your choice (for example vim, emacs), command line compilation, and gdb or ddd for debugging.\n- For C and C++: RHIDE - an integrated development environment. RHIDE can also be used as just an editor for C, C++ or Pascal program development.\n- For Pascal: fp - an integrated development environment that comes with freepascal. The fp is still in beta and may have some problems.\n\nThe primary choices available for Windows XP are:\n\n- For C, C++, and Pascal: editor of your choice (for example Edit), command line compilation, and gdb for debugging.\n- For C and C++: RHIDE - an integrated development environment.\n- For Pascal: fp - an integrated development environment that comes with freepascal. The fp is known to have some problems.\n\nSecond, you need to learn to use the web service for IOI 2002: *submitting solutions, test executing your programs*, printing, and making backups. You should also try submitting solutions that do not compile or work correctly.\n\nThird, you need to familiarize yourself with the task types and the materials that come with sample tasks. You may need to use a library in the actual competition. To be familiar with using libraries, you should try to link to your program the library provided for the task **string**, even though you do not really need it to solve the task.",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 15
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 7.797801971435547,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2002/day0/day0material/PracticeCompetitionInstructions.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

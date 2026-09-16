@@ -1,0 +1,142 @@
+{
+  "request_id": "CXf0fo1O5-iziT_bPOy9ag",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:11:48.224055+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "CXf0fo1O5-iziT_bPOy9ag",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/CXf0fo1O5-iziT_bPOy9ag",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# Red Devil\n\n## PROBLEM\n\n*Red Devil*, the Korean national soccer team supporters club will have a country-wide tour to  $N$  cities to celebrate the achievement in 2002 FIFA World Cup Korea/Japan.\n\nCities are represented by numbers  $1, 2, \\dots, N$ . The Red Devil's tour starts with city 1 and visit all  $N$  cities exactly once, after which it should return to city 1, the starting position. The travel distance between two cities  $I$  and  $J$ , denoted by  $d(I, J)$  is known.\n\nNote that the distance from city  $I$  to city  $J$  is symmetric to the distance from city  $J$  to city  $I$ , that is,  $d(I, J) = d(J, I)$ . For any three distinct cities  $I, J, K$ , it holds that  $d(I, K) \\leq d(I, J) + d(J, K)$ . Furthermore it holds that  $d(I, I) = 0$  for any city  $I$ .\n\nGiven the distance between cities, you are to find a Red Devil's tour with the shortest possible length. You are given the input files describing the distances. **You must submit files describing the tours, not a program to find the tours.**\n\n## INPUT\n\nYou are given 4 problem instances in the text files named `red1.in` to `red4.in`. Each input file is organized as follows. The first line contains one integer: the number of cities,  $N$ ,  $5 \\leq N \\leq 50$ . The following  $N$  lines represent the distance  $d(I, J)$ , where for each  $d(I, J)$  we have  $0 \\leq d(I, J) \\leq 50$ . These  $N$  lines are organized in such a way that the  $K$ -th of these  $N$  lines contains  $N$  integers: the distance  $d(K, 1), d(K, 2), \\dots, d(K, N)$ . This way, the input is organized in the following form:\n\n$$\\begin{array}{l} N \\\\ d(1,1) \\ d(1,2) \\ \\dots \\ d(1,N) \\\\ d(2,1) \\ d(2,2) \\ \\dots \\ d(2,N) \\\\ \\dots \\\\ d(N,1) \\ d(N,2) \\ \\dots \\ d(N,N) \\end{array}$$\n\n## OUTPUT\n\nYou are to submit 4 output files corresponding to the given input files. You do not need to submit your solution program source.\n\nThe first line contains the text\n\n```\n#FILE red I\n```\n\n, where integer  $I$  is the number of the respective input file. The second line contains  $N+1$  integers, which represent the cities in the order in which they are visited in the tour of your solution.\n\n{1}------------------------------------------------\n\n## EXAMPLE INPUTS AND OUTPUTS\n\nExample1: red0.in\n\n```\n5\n0 2 5 9 5\n2 0 3 7 5\n5 3 0 4 6\n9 7 4 0 4\n5 5 6 4 0\n```\n\nred0.out\n\n```\n#FILE red 0\n1 3 2 5 4 1\n```\n\n## SCORING\n\nIf the output is not a valid tour, your score is zero. Otherwise, your score is  $5 + 20 \\times \\text{DistanceInBestAnswer} / \\text{DistanceInYourAnswer}$ .\n\nThe score is rounded off to the first decimal place for each case. The total score is rounded off to the nearest integer.\n\nSuppose that you submit the tour “1→3→2→5→4→1”. The length of your tour is 26. If the best of submitted solutions is a tour “1→2→3→4→5→1”, whose length is 18, your score becomes  $5 + 20 \\times 18 / 26 (= 18.846\\dots)$ , which will be rounded off to 18.8.",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 14
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 2,
+      "total_cost": 0.6,
+      "cost_breakdown": {
+        "final_cost_cents": 0.6
+      },
+      "runtime": 9.386597633361816,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# Red Devil\n\n## PROBLEM\n\n*Red Devil*, the Korean national soccer team supporters club will have a country-wide tour to  $N$  cities to celebrate the achievement in 2002 FIFA World Cup Korea/Japan.\n\nCities are represented by numbers  $1, 2, \\dots, N$ . The Red Devil's tour starts with city 1 and visit all  $N$  cities exactly once, after which it should return to city 1, the starting position. The travel distance between two cities  $I$  and  $J$ , denoted by  $d(I, J)$  is known.\n\nNote that the distance from city  $I$  to city  $J$  is symmetric to the distance from city  $J$  to city  $I$ , that is,  $d(I, J) = d(J, I)$ . For any three distinct cities  $I, J, K$ , it holds that  $d(I, K) \\leq d(I, J) + d(J, K)$ . Furthermore it holds that  $d(I, I) = 0$  for any city  $I$ .\n\nGiven the distance between cities, you are to find a Red Devil's tour with the shortest possible length. You are given the input files describing the distances. **You must submit files describing the tours, not a program to find the tours.**\n\n## INPUT\n\nYou are given 4 problem instances in the text files named `red1.in` to `red4.in`. Each input file is organized as follows. The first line contains one integer: the number of cities,  $N$ ,  $5 \\leq N \\leq 50$ . The following  $N$  lines represent the distance  $d(I, J)$ , where for each  $d(I, J)$  we have  $0 \\leq d(I, J) \\leq 50$ . These  $N$  lines are organized in such a way that the  $K$ -th of these  $N$  lines contains  $N$  integers: the distance  $d(K, 1), d(K, 2), \\dots, d(K, N)$ . This way, the input is organized in the following form:\n\n$$\\begin{array}{l} N \\\\ d(1,1) \\ d(1,2) \\ \\dots \\ d(1,N) \\\\ d(2,1) \\ d(2,2) \\ \\dots \\ d(2,N) \\\\ \\dots \\\\ d(N,1) \\ d(N,2) \\ \\dots \\ d(N,N) \\end{array}$$\n\n## OUTPUT\n\nYou are to submit 4 output files corresponding to the given input files. You do not need to submit your solution program source.\n\nThe first line contains the text\n\n```\n#FILE red I\n```\n\n, where integer  $I$  is the number of the respective input file. The second line contains  $N+1$  integers, which represent the cities in the order in which they are visited in the tour of your solution.\n\n{1}------------------------------------------------\n\n## EXAMPLE INPUTS AND OUTPUTS\n\nExample1: red0.in\n\n```\n5\n0 2 5 9 5\n2 0 3 7 5\n5 3 0 4 6\n9 7 4 0 4\n5 5 6 4 0\n```\n\nred0.out\n\n```\n#FILE red 0\n1 3 2 5 4 1\n```\n\n## SCORING\n\nIf the output is not a valid tour, your score is zero. Otherwise, your score is  $5 + 20 \\times \\text{DistanceInBestAnswer} / \\text{DistanceInYourAnswer}$ .\n\nThe score is rounded off to the first decimal place for each case. The total score is rounded off to the nearest integer.\n\nSuppose that you submit the tour “1→3→2→5→4→1”. The length of your tour is 26. If the best of submitted solutions is a tour “1→2→3→4→5→1”, whose length is 18, your score becomes  $5 + 20 \\times 18 / 26 (= 18.846\\dots)$ , which will be rounded off to 18.8.",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 14
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 2,
+    "total_cost": 0.6,
+    "cost_breakdown": {
+      "final_cost_cents": 0.6
+    },
+    "runtime": 9.386597633361816,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.6
+  },
+  "page_count": 2,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2002/day0/day0material/red.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

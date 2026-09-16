@@ -1,0 +1,166 @@
+{
+  "request_id": "OPCktxd-ibuZDXVUQfN9bQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:59:06.226007+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "OPCktxd-ibuZDXVUQfN9bQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/OPCktxd-ibuZDXVUQfN9bQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2023 山东小学组第二轮试题（下半场）\n\n考试时间： 2023 年 10 月 22 日上午 10：30--12：00\n\n|        |           |          |\n|--------|-----------|----------|\n| 题目名称   | 克隆机       | 代价       |\n| 题目类型   | 传统型       | 传统型      |\n| 子文件夹名  | clone     | cost     |\n| 程序名称   | clone.cpp | cost.cpp |\n| 输入文件名  | clone.in  | cost.in  |\n| 输出文件名  | clone.out | cost.out |\n| 测试点数量  | 10        | 10       |\n| 每测试点时限 | 1 秒       | 2 秒      |\n| 每测试点分值 | 10        | 10       |\n| 内存限制   | 512M      | 512M     |\n\n## 注意事项\n\n- 1、 代码必须放在子文件夹内， 子文件夹名与题目英文名一致。 文件名（包括程序名和输入输出文件名） 必须使用英文小写。\n- 2、 C++编译选项： -O2 -std=c++14。 C++ 中函数 main() 的返回值类型必须是 int， 程序正常结束时的返回值必须是 0。\n- 3、 若无特殊说明， 输入文件中同一行内的多个整数、 浮点数、 字符串等均使用一个空格分隔。 若无特殊说明， 结果比较方式为忽略行末空格、 文末回车后的全文比较。\n- 4、 选手提交的程序源文件不能大于 100KB。\n- 5、 程序使用的栈空间内存限制与题目的内存限制要求一致。\n\n{1}------------------------------------------------\n\n## 克隆机 (clone)\n\n### 【题目描述】\n\n有一台神奇的克隆机，可以克隆任何东西。将样品放进克隆机，可以克隆出一份一样的“复制品”。小明得到了  $k$  种珍贵的植物种子，依次用  $A, B, C, D, \\dots, Z$  表示 ( $1 \\leq k \\leq 26$ )。一开始，每种植物种子只有 1 粒。\n\n小明想利用克隆机克隆出更多种子。将一粒种子作为样品放进克隆机，就可以得到一粒克隆出来的相同的种子，这样一粒种子就变成了两粒种子。小明将  $k$  粒不同的种子按字母先后顺序排队，从  $A$  开始依次放入克隆机，每次把得到的两粒相同的种子（放入的 1 粒和克隆出来的 1 粒）放到队尾，这样不断的进行克隆。\n\n例如，一共有 7 种不同的种子，依次用  $A, B, C, D, E, F, G$  表示。\n\n第 1 粒种子  $A$  放进克隆机之前，队列是： $A, B, C, D, E, F, G$ 。\n\n第 1 粒种子  $A$  放进克隆机之后，队列是： $B, C, D, E, F, G, A, A$ 。\n\n第 3 粒种子  $C$  放进克隆机之前，队列是： $C, D, E, F, G, A, A, B, B$ 。\n\n第 3 粒种子  $C$  放进克隆机之后，队列是： $D, E, F, G, A, A, B, B, C, C$ 。\n\n请问第  $n$  粒放进克隆机的是什么种子？用  $A, B, \\dots, Z$  表示。\n\n### 【输入格式】\n\n输入文件名为 `clone.in`。\n\n输入 1 行 2 个数字， $k$  和  $n$ ，用空格隔开。\n\n### 【输出格式】\n\n输出文件名为 `clone.out`。\n\n输出 1 个字符，代表第  $n$  粒放进克隆机的种子。\n\n### 【样例 1 输入】\n\n7 10\n\n### 【样例 1 输出】\n\nB\n\n### 【样例 1 解释】\n\n| 序号 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |\n|----|---|---|---|---|---|---|---|---|---|----|----|\n| 种子 | A | B | C | D | E | F | G | A | A | B  | B  |\n\n### 【样例 2 输入】\n\n{2}------------------------------------------------\n\n---\n\n26 80\n\n### **【样例 2 输出】**\n\nA\n\n### **【样例 3 输入】**\n\n15 689\n\n### **【样例 3 输出】**\n\nG\n\n### **【数据范围】**\n\n对于 50% 的数据， $1 \\leq n \\leq 10^6$ ；\n\n对于 100% 的数据， $1 \\leq k \\leq 26$ ， $1 \\leq n \\leq 10^{18}$ 。\n\nCSP-X2023第二轮小学组试题（下半场）\n\n{3}------------------------------------------------\n\n## --- 代价 (cost)\n\n### 【题目描述】\n\n因为“黑发不知勤学早”，于是小明成为了一名伟大的流水线工人，天天起早摸黑打螺丝。\n\n这一天，小明所在的流水线生成了  $n$  件产品，其中第  $i$  号产品规格用一个正整数  $a_i$  表示。\n\n所谓流水线，就是需要标准化。于是，小明想把这  $n$  件产品规格修整得全部相同。\n\n小明手边有两种工具来进对产品进行修整，但是使用不同工具需要花费不同的代价，小明可以进行以下操作任意次：\n\n- 使用一次第一种工具花费  $A$  的代价将第  $i$  件产品的规格  $a_i$  修改成  $a_i + 1$ （其中  $i \\in [1, n]$ ）。\n- 使用一次第二种工具花费  $B$  的代价将第  $i$  件产品的规格  $a_i$  修改成  $a_i - 1$ （其中  $i \\in [1, n]$ ）。\n\n现在小明想要花费最少的代价将所有产品的规格都变得相同，于是他找到了自幼勤学苦练的你来帮忙。\n\n你只需要计算出把所有产品调整为相同规格的最小代价即可。\n\n### 【输入格式】\n\n输入文件为 `cost.in`。\n\n第一行三个正整数  $n, A, B$ ，分别表示产品数量，使用一次第一种工具的代价  $A$  和使用一次第二种工具的代价  $B$ 。\n\n第二行  $n$  个正整数  $a_1, a_2, \\dots, a_n$  表示每件产品的产品规格。\n\n### 【输出格式】\n\n输出文件为 `cost.out`。\n\n一行一个整数表示最小的总代价。\n\n### 【样例 1 输入】\n\n```\n3 1 1\n1 2 5\n```\n\n### 【样例 1 输出】\n\n4\n\n{4}------------------------------------------------\n\n### --- 【样例 1 解释】\n\n两种操作的代价相等，所以把所有产品规格修改成 2 花费的代价最小，计算可得最小代价为 4（1 变为 2，5 变为 4，4 再变为 3，3 再变为 2，已经规格相同，共 4 次）。\n\n### 【样例 2 输入】\n\n3 1 100  \n1 2 5\n\n### 【样例 2 输出】\n\n7\n\n### 【样例 2 解释】\n\n因为二操作代价 B 太大，所以把所有产品规格修改成 5 花费代价最小，计算可得最小代价为 7（用一操作，1 变为 5 需要 4 次，2 变为 5 需要 3 次，共 7 次）。\n\n### 【样例 3 输入】\n\n3 2 5  \n9999999999 9999999999 9999999999\n\n### 【样例 3 输出】\n\n0\n\n### 【数据范围】\n\n- 对于 30% 的数据， $1 \\leq n \\leq 10, 1 \\leq a_i \\leq 100, 1 \\leq A, B \\leq 10$ ;\n- 对于 60% 的数据， $1 \\leq n \\leq 10^5, 1 \\leq a_i \\leq 10^5, 1 \\leq A, B \\leq 100$ ;\n- 其中有 30% 的数据， $A = B$ ;\n- 对于 100% 的数据， $1 \\leq n \\leq 10^5, 0 \\leq a_i \\leq 10^9, 1 \\leq A, B \\leq 1000$ 。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 24
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 21
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 15
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 5,
+      "total_cost": 1.5,
+      "cost_breakdown": {
+        "final_cost_cents": 1.5
+      },
+      "runtime": 7.415724515914917,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CSP-X2023 山东小学组第二轮试题（下半场）\n\n考试时间： 2023 年 10 月 22 日上午 10：30--12：00\n\n|        |           |          |\n|--------|-----------|----------|\n| 题目名称   | 克隆机       | 代价       |\n| 题目类型   | 传统型       | 传统型      |\n| 子文件夹名  | clone     | cost     |\n| 程序名称   | clone.cpp | cost.cpp |\n| 输入文件名  | clone.in  | cost.in  |\n| 输出文件名  | clone.out | cost.out |\n| 测试点数量  | 10        | 10       |\n| 每测试点时限 | 1 秒       | 2 秒      |\n| 每测试点分值 | 10        | 10       |\n| 内存限制   | 512M      | 512M     |\n\n## 注意事项\n\n- 1、 代码必须放在子文件夹内， 子文件夹名与题目英文名一致。 文件名（包括程序名和输入输出文件名） 必须使用英文小写。\n- 2、 C++编译选项： -O2 -std=c++14。 C++ 中函数 main() 的返回值类型必须是 int， 程序正常结束时的返回值必须是 0。\n- 3、 若无特殊说明， 输入文件中同一行内的多个整数、 浮点数、 字符串等均使用一个空格分隔。 若无特殊说明， 结果比较方式为忽略行末空格、 文末回车后的全文比较。\n- 4、 选手提交的程序源文件不能大于 100KB。\n- 5、 程序使用的栈空间内存限制与题目的内存限制要求一致。\n\n{1}------------------------------------------------\n\n## 克隆机 (clone)\n\n### 【题目描述】\n\n有一台神奇的克隆机，可以克隆任何东西。将样品放进克隆机，可以克隆出一份一样的“复制品”。小明得到了  $k$  种珍贵的植物种子，依次用  $A, B, C, D, \\dots, Z$  表示 ( $1 \\leq k \\leq 26$ )。一开始，每种植物种子只有 1 粒。\n\n小明想利用克隆机克隆出更多种子。将一粒种子作为样品放进克隆机，就可以得到一粒克隆出来的相同的种子，这样一粒种子就变成了两粒种子。小明将  $k$  粒不同的种子按字母先后顺序排队，从  $A$  开始依次放入克隆机，每次把得到的两粒相同的种子（放入的 1 粒和克隆出来的 1 粒）放到队尾，这样不断的进行克隆。\n\n例如，一共有 7 种不同的种子，依次用  $A, B, C, D, E, F, G$  表示。\n\n第 1 粒种子  $A$  放进克隆机之前，队列是： $A, B, C, D, E, F, G$ 。\n\n第 1 粒种子  $A$  放进克隆机之后，队列是： $B, C, D, E, F, G, A, A$ 。\n\n第 3 粒种子  $C$  放进克隆机之前，队列是： $C, D, E, F, G, A, A, B, B$ 。\n\n第 3 粒种子  $C$  放进克隆机之后，队列是： $D, E, F, G, A, A, B, B, C, C$ 。\n\n请问第  $n$  粒放进克隆机的是什么种子？用  $A, B, \\dots, Z$  表示。\n\n### 【输入格式】\n\n输入文件名为 `clone.in`。\n\n输入 1 行 2 个数字， $k$  和  $n$ ，用空格隔开。\n\n### 【输出格式】\n\n输出文件名为 `clone.out`。\n\n输出 1 个字符，代表第  $n$  粒放进克隆机的种子。\n\n### 【样例 1 输入】\n\n7 10\n\n### 【样例 1 输出】\n\nB\n\n### 【样例 1 解释】\n\n| 序号 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |\n|----|---|---|---|---|---|---|---|---|---|----|----|\n| 种子 | A | B | C | D | E | F | G | A | A | B  | B  |\n\n### 【样例 2 输入】\n\n{2}------------------------------------------------\n\n---\n\n26 80\n\n### **【样例 2 输出】**\n\nA\n\n### **【样例 3 输入】**\n\n15 689\n\n### **【样例 3 输出】**\n\nG\n\n### **【数据范围】**\n\n对于 50% 的数据， $1 \\leq n \\leq 10^6$ ；\n\n对于 100% 的数据， $1 \\leq k \\leq 26$ ， $1 \\leq n \\leq 10^{18}$ 。\n\nCSP-X2023第二轮小学组试题（下半场）\n\n{3}------------------------------------------------\n\n## --- 代价 (cost)\n\n### 【题目描述】\n\n因为“黑发不知勤学早”，于是小明成为了一名伟大的流水线工人，天天起早摸黑打螺丝。\n\n这一天，小明所在的流水线生成了  $n$  件产品，其中第  $i$  号产品规格用一个正整数  $a_i$  表示。\n\n所谓流水线，就是需要标准化。于是，小明想把这  $n$  件产品规格修整得全部相同。\n\n小明手边有两种工具来进对产品进行修整，但是使用不同工具需要花费不同的代价，小明可以进行以下操作任意次：\n\n- 使用一次第一种工具花费  $A$  的代价将第  $i$  件产品的规格  $a_i$  修改成  $a_i + 1$ （其中  $i \\in [1, n]$ ）。\n- 使用一次第二种工具花费  $B$  的代价将第  $i$  件产品的规格  $a_i$  修改成  $a_i - 1$ （其中  $i \\in [1, n]$ ）。\n\n现在小明想要花费最少的代价将所有产品的规格都变得相同，于是他找到了自幼勤学苦练的你来帮忙。\n\n你只需要计算出把所有产品调整为相同规格的最小代价即可。\n\n### 【输入格式】\n\n输入文件为 `cost.in`。\n\n第一行三个正整数  $n, A, B$ ，分别表示产品数量，使用一次第一种工具的代价  $A$  和使用一次第二种工具的代价  $B$ 。\n\n第二行  $n$  个正整数  $a_1, a_2, \\dots, a_n$  表示每件产品的产品规格。\n\n### 【输出格式】\n\n输出文件为 `cost.out`。\n\n一行一个整数表示最小的总代价。\n\n### 【样例 1 输入】\n\n```\n3 1 1\n1 2 5\n```\n\n### 【样例 1 输出】\n\n4\n\n{4}------------------------------------------------\n\n### --- 【样例 1 解释】\n\n两种操作的代价相等，所以把所有产品规格修改成 2 花费的代价最小，计算可得最小代价为 4（1 变为 2，5 变为 4，4 再变为 3，3 再变为 2，已经规格相同，共 4 次）。\n\n### 【样例 2 输入】\n\n3 1 100  \n1 2 5\n\n### 【样例 2 输出】\n\n7\n\n### 【样例 2 解释】\n\n因为二操作代价 B 太大，所以把所有产品规格修改成 5 花费代价最小，计算可得最小代价为 7（用一操作，1 变为 5 需要 4 次，2 变为 5 需要 3 次，共 7 次）。\n\n### 【样例 3 输入】\n\n3 2 5  \n9999999999 9999999999 9999999999\n\n### 【样例 3 输出】\n\n0\n\n### 【数据范围】\n\n- 对于 30% 的数据， $1 \\leq n \\leq 10, 1 \\leq a_i \\leq 100, 1 \\leq A, B \\leq 10$ ;\n- 对于 60% 的数据， $1 \\leq n \\leq 10^5, 1 \\leq a_i \\leq 10^5, 1 \\leq A, B \\leq 100$ ;\n- 其中有 30% 的数据， $A = B$ ;\n- 对于 100% 的数据， $1 \\leq n \\leq 10^5, 0 \\leq a_i \\leq 10^9, 1 \\leq A, B \\leq 1000$ 。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 24
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 21
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 15
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 5,
+    "total_cost": 1.5,
+    "cost_breakdown": {
+      "final_cost_cents": 1.5
+    },
+    "runtime": 7.415724515914917,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 1.5
+  },
+  "page_count": 5,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2023/Round2/CSP-X2023二轮认证山东小学组试题（下半场).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,221 @@
+{
+  "request_id": "TK_CsI-_6qdE10w8LjZ94g",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:54:37.785678+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "TK_CsI-_6qdE10w8LjZ94g",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/TK_CsI-_6qdE10w8LjZ94g",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CCF 全国信息学奥林匹克联赛（NOIP2017）复赛\n\n## 提高组 day1\n\n（请选手务必仔细阅读本页内容）\n\n## 一. 题目概况\n\n|           |                   |                |          |\n|-----------|-------------------|----------------|----------|\n| 中文题目名称    | 小凯的疑惑             | 时间复杂度          | 逛公园      |\n| 英文题目与子目录名 | math              | complexity     | park     |\n| 可执行文件名    | math              | complexity     | park     |\n| 输入文件名     | math.in           | complexity.in  | park.in  |\n| 输出文件名     | math.out          | complexity.out | park.out |\n| 每个测试点时限   | 1 秒               | 1 秒            | 3 秒      |\n| 测试点数目     | 20                | 10             | 10       |\n| 每个测试点分值   | 5                 | 10             | 10       |\n| 附加样例文件    | 有                 | 有              | 有        |\n| 结果比较方式    | 全文比较（过滤行末空格及文末回车） |                |          |\n| 题目类型      | 传统                | 传统             | 传统       |\n| 运行内存上限    | 256M              | 256M           | 512M     |\n\n## 二. 提交源程序文件名\n\n|              |          |                |          |\n|--------------|----------|----------------|----------|\n| 对于 C++语言     | math.cpp | complexity.cpp | park.cpp |\n| 对于 C 语言      | math.c   | complexity.c   | park.c   |\n| 对于 pascal 语言 | math.pas | complexity.pas | park.pas |\n\n## 三. 编译命令（不包含任何优化开关）\n\n|              |                             |                                         |                             |\n|--------------|-----------------------------|-----------------------------------------|-----------------------------|\n| 对于 C++语言     | g++ -o math<br>math.cpp -lm | g++ -o complexity<br>complexity.cpp -lm | g++ -o park<br>park.cpp -lm |\n| 对于 C 语言      | gcc -o math math.c<br>-lm   | gcc -o complexity<br>complexity.c -lm   | gcc -o park park.c<br>-lm   |\n| 对于 pascal 语言 | fpc math.pas                | fpc complexity.pas                      | fpc park.pas                |\n\n### 注意事项:\n\n- 1、文件名（程序名和输入输出文件名）必须使用英文小写。\n- 2、C/C++中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n- 3、全国统一评测时采用的机器配置为：CPU AMD Athlon(tm) II x2 240 processor，2.8GHz，内存 4G，上述时限以此配置为准。\n- 4、只提供 Linux 格式附加样例文件。\n- 5、提交的程序代码文件的放置位置请参照各省的具体要求。\n- 6、特别提醒：评测在当前最新公布的 NOI Linux 下进行，各语言的编译器版本以其为准。\n\n{1}------------------------------------------------\n\n### 1. 小凯的疑惑\n\n(math.cpp/c/pas)\n\n#### 【问题描述】\n\n小凯手中有两种面值的金币，两种面值均为正整数且彼此互素。每种金币小凯都有无数个。在不找零的情况下，仅凭这两种金币，有些物品他是无法准确支付的。现在小凯想知道在无法准确支付的物品中，最贵的价值是多少金币？注意：输入数据保证存在小凯无法准确支付的商品。\n\n#### 【输入格式】\n\n输入文件名为 math.in。\n\n输入数据仅一行，包含两个正整数 a 和 b，它们之间用一个空格隔开，表示小凯手中金币的面值。\n\n#### 【输出格式】\n\n输出文件名为 math.out。\n\n输出文件仅一行，一个正整数 N，表示不找零的情况下，小凯用手中的金币不能准确支付的最贵的物品的价值。\n\n#### 【输入输出样例 1】\n\n| math.in | math.out |\n|---------|----------|\n| 3 7     | 11       |\n\n见选手目录下的 math/math1.in 和 math/math1.ans。\n\n##### 【输入输出样例 1 说明】\n\n小凯手中有面值为 3 和 7 的金币无数个，在不找零的前提下无法准确支付价值为 1、2、4、5、8、11 的物品，其中最贵的物品价值为 11，比 11 贵的物品都能买到，比如：\n\n$$12 = 3 * 4 + 7 * 0$$\n\n$$13 = 3 * 2 + 7 * 1$$\n\n$$14 = 3 * 0 + 7 * 2$$\n\n$$15 = 3 * 5 + 7 * 0$$\n\n.....\n\n##### 【输入输出样例 2】\n\n见选手目录下的 math/math2.in 和 math/math2.ans。\n\n#### 【数据规模与约定】\n\n对于 30% 的数据：  $1 \\leq a, b \\leq 50$ 。\n\n对于 60% 的数据：  $1 \\leq a, b \\leq 10,000$ 。\n\n对于 100% 的数据：  $1 \\leq a, b \\leq 1,000,000,000$ 。\n\n{2}------------------------------------------------\n\n### 2. 时间复杂度\n\n(complexity.cpp/c/pas)\n\n#### 【问题描述】\n\n小明正在学习一种新的编程语言 A++，刚学会循环语句的他激动地写了好多程序并给出了他自己算出的时间复杂度，可他的编程老师实在不想一个一个检查小明的程序，于是你的机会来啦！下面请你编写程序来判断小明对他的每个程序给出的时间复杂度是否正确。\n\nA++语言的循环结构如下：\n\n![](7a1dee155822446f7828dcb055c465c3_img.jpg)\n\n|                     |\n|---------------------|\n| F i x y<br>循环体<br>E |\n|---------------------|\n\n其中“F i x y”表示新建变量  $i$ （变量  $i$  不可与未被销毁的变量重名）并初始化为  $x$ ，然后判断  $i$  和  $y$  的大小关系，若  $i$  小于等于  $y$  则进入循环，否则不进入。每次循环结束后  $i$  都会被修改成  $i+1$ ，一旦  $i$  大于  $y$  终止循环。\n\n$x$  和  $y$  可以是正整数（ $x$  和  $y$  的大小关系不定）或变量  $n$ 。 $n$  是一个表示数据规模的变量，在时间复杂度计算中需保留该变量而不能将其视为常数，该数**远大于** 100。\n\n“E”表示循环体结束。循环体结束时，这个循环体新建的变量也被销毁。\n\n注：本题中为了书写方便，在描述复杂度时，使用大写英文字母“O”表示通常意义下“ $\\Theta$ ”的概念。\n\n#### 【输入格式】\n\n输入文件名为 complexity.in。\n\n输入文件第一行一个正整数  $t$ ，表示有  $t$ （ $t \\leq 10$ ）个程序需要计算时间复杂度。每个程序我们只需抽取其中“F i x y”和“E”即可计算时间复杂度。**注意：循环结构允许嵌套。**\n\n接下来每个程序的第一行包含一个正整数  $L$  和一个字符串， $L$  代表程序行数，字符串表示这个程序的复杂度，“ $O(1)$ ”表示常数复杂度，“ $O(n^w)$ ”表示复杂度为  $n^w$ ，其中  $w$  是一个小于 100 的正整数（输入中不包含引号），输入保证复杂度只有  $O(1)$  和  $O(n^w)$  两种类型。\n\n接下来  $L$  行代表程序中循环结构中的“F i x y”或者“E”。\n\n程序行若以“F”开头，表示进入一个循环，之后有空格分离的三个字符（串） $i x y$ ，其中  $i$  是一个小写字母（保证不为“n”），表示新建的变量名， $x$  和  $y$  可能是正整数或  $n$ ，已知若为正整数则一定小于 100。\n\n程序行若以“E”开头，则表示循环体结束。\n\n#### 【输出格式】\n\n输出文件名为 complexity.out。\n\n输出文件共  $t$  行，对应输入的  $t$  个程序，每行输出“Yes”或“No”或者“ERR”（输出中不包含引号），若程序实际复杂度与输入给出的复杂度一致则输出“Yes”，不一致则输出“No”，若程序有语法错误（其中语法错误只有：① F 和 E 不匹配 ②新建的变量与已经存在但未被销毁的变量重复两种情况），则输出“ERR”。\n\n注意：即使在程序不会执行的循环体中出现了语法错误也会编译错误，要输出“ERR”。\n\n{3}------------------------------------------------\n\n#### 【输入输出样例 1】\n\n| <b>complexity.in</b> | <b>complexity.out</b> |\n|----------------------|-----------------------|\n| 8                    | Yes                   |\n| 2 O(1)               | Yes                   |\n| F i 1 1              | ERR                   |\n| E                    | Yes                   |\n| 2 O(n^1)             | No                    |\n| F x 1 n              | Yes                   |\n| E                    | Yes                   |\n| 1 O(1)               | ERR                   |\n| F x 1 n              |                       |\n| 4 O(n^2)             |                       |\n| F x 5 n              |                       |\n| F y 10 n             |                       |\n| E                    |                       |\n| E                    |                       |\n| 4 O(n^2)             |                       |\n| F x 9 n              |                       |\n| E                    |                       |\n| F y 2 n              |                       |\n| E                    |                       |\n| 4 O(n^1)             |                       |\n| F x 9 n              |                       |\n| F y n 4              |                       |\n| E                    |                       |\n| E                    |                       |\n| 4 O(1)               |                       |\n| F y n 4              |                       |\n| F x 9 n              |                       |\n| E                    |                       |\n| E                    |                       |\n| 4 O(n^2)             |                       |\n| F x 1 n              |                       |\n| F x 1 10             |                       |\n| E                    |                       |\n| E                    |                       |\n\n见选手目录下的\n\ncomplexity/complexity1.in 和 complexity/complexity1.ans。\n\n##### 【输入输出样例 1 说明】\n\n第一个程序 i 从 1 到 1 是常数复杂度。\n\n第二个程序 x 从 1 到 n 是 n 的一次方的复杂度。\n\n{4}------------------------------------------------\n\n第三个程序有一个 F 开启循环却没有 E 结束，语法错误。\n\n第四个程序二重循环， $n$  的平方的复杂度。\n\n第五个程序两个一重循环， $n$  的一次方的复杂度。\n\n第六个程序第一重循环正常，但第二重循环开始即终止（因为  $n$  远大于 100，100 大于 4）。\n\n第七个程序第一重循环无法进入，故为常数复杂度。\n\n第八个程序第二重循环中的变量  $x$  与第一重循环中的变量重复，出现语法错误②，输出 ERR。\n\n#### 【输入输出样例 2】\n\n见选手目录下的\n\ncomplexity/complexity2.in 和 complexity/complexity2.ans。\n\n#### 【数据规模与约定】\n\n对于 30% 的数据：不存在语法错误，数据保证小明给出的每个程序的前  $L/2$  行一定为以 F 开头的语句，第  $L/2+1$  行至第  $L$  行一定为以 E 开头的语句， $L \\leq 10$ ，若  $x$ 、 $y$  均为整数， $x$  一定小于  $y$ ，且只有  $y$  有可能为  $n$ 。\n\n对于 50% 的数据：不存在语法错误， $L \\leq 100$ ，且若  $x$ 、 $y$  均为整数， $x$  一定小于  $y$ ，且只有  $y$  有可能为  $n$ 。\n\n对于 70% 的数据：不存在语法错误， $L \\leq 100$ 。\n\n对于 100% 的数据： $L \\leq 100$ 。\n\n{5}------------------------------------------------\n\n### 3. 逛公园\n\n(park.cpp/c/pas)\n\n#### **【问题描述】**\n\n策策同学特别喜欢逛公园。公园可以看成一张 $N$ 个点 $M$ 条边构成的有向图，且没有自环和重边。其中1号点是公园的入口， $N$ 号点是公园的出口，每条边有一个非负权值，代表策策经过这条边所要花的时间。\n\n策策每天都会去逛公园，他总是从1号点进去，从 $N$ 号点出来。\n\n策策喜欢新鲜的事物，他不希望有两天逛公园的路线完全一样，同时策策还是一个特别热爱学习的好孩子，他不希望每天在逛公园这件事上花费太多的时间。如果1号点到 $N$ 号点的最短路长为 $d$ ，那么策策只会喜欢长度不超过 $d + K$ 的路线。\n\n策策同学想知道总共有多少条满足条件的路线，你能帮帮他吗？\n\n为避免输出过大，答案对 $P$ 取模。\n\n如果有无穷多条合法的路线，请输出-1。\n\n#### **【输入格式】**\n\n输入文件名为 park.in。\n\n第一行包含一个整数  $T$ ，代表数据组数。\n\n接下来 $T$ 组数据，对于每组数据：\n\n第一行包含四个整数  $N, M, K, P$ ，每两个整数之间用一个空格隔开。\n\n接下来 $M$ 行，每行三个整数 $a_i, b_i, c_i$ ，代表编号为 $a_i, b_i$ 的点之间有一条权值为 $c_i$ 的有向边，每两个整数之间用一个空格隔开。\n\n#### **【输出格式】**\n\n输出文件名为 park.out。\n\n输出文件包含  $T$  行，每行一个整数代表答案。\n\n#### **【输入输出样例 1】**\n\n| park.in  | park.out |\n|----------|----------|\n| 2        | 3        |\n| 5 7 2 10 | -1       |\n| 1 2 1    |          |\n| 2 4 0    |          |\n| 4 5 2    |          |\n| 2 3 2    |          |\n| 3 4 1    |          |\n| 3 5 2    |          |\n| 1 5 3    |          |\n| 2 2 0 10 |          |\n| 1 2 0    |          |\n| 2 1 0    |          |\n\n见选手目录下的 park/park1.in 和 park/park1.ans。\n\n对于第一组数据，最短路为 3。\n\n1-5, 1-2-4-5, 1-2-3-5 为 3 条合法路径。\n\n{6}------------------------------------------------\n\n#### **【输入输出样例 2】**\n\n见选手目录下的 park/park2.in 和 park/park2.ans。\n\n#### **【数据规模与约定】**\n\n对于不同的测试点，我们约定各种参数的规模**不会超过**如下\n\n| 测试点编号 | $T$ | $N$    | $M$    | $K$ | 是否有 0 边 |\n|-------|-----|--------|--------|-----|---------|\n| 1     | 5   | 5      | 10     | 0   | 否       |\n| 2     | 5   | 1000   | 2000   | 0   | 否       |\n| 3     | 5   | 1000   | 2000   | 50  | 否       |\n| 4     | 5   | 1000   | 2000   | 50  | 否       |\n| 5     | 5   | 1000   | 2000   | 50  | 否       |\n| 6     | 5   | 1000   | 2000   | 50  | 是       |\n| 7     | 5   | 100000 | 200000 | 0   | 否       |\n| 8     | 3   | 100000 | 200000 | 50  | 否       |\n| 9     | 3   | 100000 | 200000 | 50  | 是       |\n| 10    | 3   | 100000 | 200000 | 50  | 是       |\n|       |     |        |        |     |         |\n\n对于 100% 的数据,  $1 \\leq P \\leq 10^9, 1 \\leq a_i, b_i \\leq N, 0 \\leq c_i \\leq 1000$ 。\n\n数据保证：至少存在一条合法的路线。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "7a1dee155822446f7828dcb055c465c3_img.jpg": "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g8EA9RQBeooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOU8ef8eWif9h2w/8ARy11dcp48/48tE/7Dth/6OWuroAK82+O3/JK77/rvD/6GK9Jrzb47f8AJK77/rvD/wChigDS0/4g+EtN8J2ckviPSmkgso90KXkbSEhB8u0HOc8YxXT6LDbR6bHNaw+VHdk3RTOcNJ8x/U1V0yxttS8GWNndRJJBPYRo6soIIKAd6n0i8s5PO02zZ5F03ZbPIcEbgo+XPqBjP1oA06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDlPHn/Hlon/YdsP8A0ctdXXKePP8Ajy0T/sO2H/o5a6ugArD8Q+EdF8VwCDWree5gBB8kXc0aEjoSqMAT7kVuUUAc1H4D0OG3W3ifWEgRQixrrd4FVfQDzcYrT0PQdN8OacLDSrb7Pbb2k2mRnJZjkksxJJ+prSooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k="
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 29
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 24
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 17
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 26
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 7,
+      "total_cost": 2.1,
+      "cost_breakdown": {
+        "list_cost_cents": 2.8,
+        "final_cost_cents": 2.1,
+        "regional_multiplier": 1.0
+      },
+      "runtime": 19.718809843063354,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CCF 全国信息学奥林匹克联赛（NOIP2017）复赛\n\n## 提高组 day1\n\n（请选手务必仔细阅读本页内容）\n\n## 一. 题目概况\n\n|           |                   |                |          |\n|-----------|-------------------|----------------|----------|\n| 中文题目名称    | 小凯的疑惑             | 时间复杂度          | 逛公园      |\n| 英文题目与子目录名 | math              | complexity     | park     |\n| 可执行文件名    | math              | complexity     | park     |\n| 输入文件名     | math.in           | complexity.in  | park.in  |\n| 输出文件名     | math.out          | complexity.out | park.out |\n| 每个测试点时限   | 1 秒               | 1 秒            | 3 秒      |\n| 测试点数目     | 20                | 10             | 10       |\n| 每个测试点分值   | 5                 | 10             | 10       |\n| 附加样例文件    | 有                 | 有              | 有        |\n| 结果比较方式    | 全文比较（过滤行末空格及文末回车） |                |          |\n| 题目类型      | 传统                | 传统             | 传统       |\n| 运行内存上限    | 256M              | 256M           | 512M     |\n\n## 二. 提交源程序文件名\n\n|              |          |                |          |\n|--------------|----------|----------------|----------|\n| 对于 C++语言     | math.cpp | complexity.cpp | park.cpp |\n| 对于 C 语言      | math.c   | complexity.c   | park.c   |\n| 对于 pascal 语言 | math.pas | complexity.pas | park.pas |\n\n## 三. 编译命令（不包含任何优化开关）\n\n|              |                             |                                         |                             |\n|--------------|-----------------------------|-----------------------------------------|-----------------------------|\n| 对于 C++语言     | g++ -o math<br>math.cpp -lm | g++ -o complexity<br>complexity.cpp -lm | g++ -o park<br>park.cpp -lm |\n| 对于 C 语言      | gcc -o math math.c<br>-lm   | gcc -o complexity<br>complexity.c -lm   | gcc -o park park.c<br>-lm   |\n| 对于 pascal 语言 | fpc math.pas                | fpc complexity.pas                      | fpc park.pas                |\n\n### 注意事项:\n\n- 1、文件名（程序名和输入输出文件名）必须使用英文小写。\n- 2、C/C++中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。\n- 3、全国统一评测时采用的机器配置为：CPU AMD Athlon(tm) II x2 240 processor，2.8GHz，内存 4G，上述时限以此配置为准。\n- 4、只提供 Linux 格式附加样例文件。\n- 5、提交的程序代码文件的放置位置请参照各省的具体要求。\n- 6、特别提醒：评测在当前最新公布的 NOI Linux 下进行，各语言的编译器版本以其为准。\n\n{1}------------------------------------------------\n\n### 1. 小凯的疑惑\n\n(math.cpp/c/pas)\n\n#### 【问题描述】\n\n小凯手中有两种面值的金币，两种面值均为正整数且彼此互素。每种金币小凯都有无数个。在不找零的情况下，仅凭这两种金币，有些物品他是无法准确支付的。现在小凯想知道在无法准确支付的物品中，最贵的价值是多少金币？注意：输入数据保证存在小凯无法准确支付的商品。\n\n#### 【输入格式】\n\n输入文件名为 math.in。\n\n输入数据仅一行，包含两个正整数 a 和 b，它们之间用一个空格隔开，表示小凯手中金币的面值。\n\n#### 【输出格式】\n\n输出文件名为 math.out。\n\n输出文件仅一行，一个正整数 N，表示不找零的情况下，小凯用手中的金币不能准确支付的最贵的物品的价值。\n\n#### 【输入输出样例 1】\n\n| math.in | math.out |\n|---------|----------|\n| 3 7     | 11       |\n\n见选手目录下的 math/math1.in 和 math/math1.ans。\n\n##### 【输入输出样例 1 说明】\n\n小凯手中有面值为 3 和 7 的金币无数个，在不找零的前提下无法准确支付价值为 1、2、4、5、8、11 的物品，其中最贵的物品价值为 11，比 11 贵的物品都能买到，比如：\n\n$$12 = 3 * 4 + 7 * 0$$\n\n$$13 = 3 * 2 + 7 * 1$$\n\n$$14 = 3 * 0 + 7 * 2$$\n\n$$15 = 3 * 5 + 7 * 0$$\n\n.....\n\n##### 【输入输出样例 2】\n\n见选手目录下的 math/math2.in 和 math/math2.ans。\n\n#### 【数据规模与约定】\n\n对于 30% 的数据：  $1 \\leq a, b \\leq 50$ 。\n\n对于 60% 的数据：  $1 \\leq a, b \\leq 10,000$ 。\n\n对于 100% 的数据：  $1 \\leq a, b \\leq 1,000,000,000$ 。\n\n{2}------------------------------------------------\n\n### 2. 时间复杂度\n\n(complexity.cpp/c/pas)\n\n#### 【问题描述】\n\n小明正在学习一种新的编程语言 A++，刚学会循环语句的他激动地写了好多程序并给出了他自己算出的时间复杂度，可他的编程老师实在不想一个一个检查小明的程序，于是你的机会来啦！下面请你编写程序来判断小明对他的每个程序给出的时间复杂度是否正确。\n\nA++语言的循环结构如下：\n\n![](7a1dee155822446f7828dcb055c465c3_img.jpg)\n\n|                     |\n|---------------------|\n| F i x y<br>循环体<br>E |\n|---------------------|\n\n其中“F i x y”表示新建变量  $i$ （变量  $i$  不可与未被销毁的变量重名）并初始化为  $x$ ，然后判断  $i$  和  $y$  的大小关系，若  $i$  小于等于  $y$  则进入循环，否则不进入。每次循环结束后  $i$  都会被修改成  $i+1$ ，一旦  $i$  大于  $y$  终止循环。\n\n$x$  和  $y$  可以是正整数（ $x$  和  $y$  的大小关系不定）或变量  $n$ 。 $n$  是一个表示数据规模的变量，在时间复杂度计算中需保留该变量而不能将其视为常数，该数**远大于** 100。\n\n“E”表示循环体结束。循环体结束时，这个循环体新建的变量也被销毁。\n\n注：本题中为了书写方便，在描述复杂度时，使用大写英文字母“O”表示通常意义下“ $\\Theta$ ”的概念。\n\n#### 【输入格式】\n\n输入文件名为 complexity.in。\n\n输入文件第一行一个正整数  $t$ ，表示有  $t$ （ $t \\leq 10$ ）个程序需要计算时间复杂度。每个程序我们只需抽取其中“F i x y”和“E”即可计算时间复杂度。**注意：循环结构允许嵌套。**\n\n接下来每个程序的第一行包含一个正整数  $L$  和一个字符串， $L$  代表程序行数，字符串表示这个程序的复杂度，“ $O(1)$ ”表示常数复杂度，“ $O(n^w)$ ”表示复杂度为  $n^w$ ，其中  $w$  是一个小于 100 的正整数（输入中不包含引号），输入保证复杂度只有  $O(1)$  和  $O(n^w)$  两种类型。\n\n接下来  $L$  行代表程序中循环结构中的“F i x y”或者“E”。\n\n程序行若以“F”开头，表示进入一个循环，之后有空格分离的三个字符（串） $i x y$ ，其中  $i$  是一个小写字母（保证不为“n”），表示新建的变量名， $x$  和  $y$  可能是正整数或  $n$ ，已知若为正整数则一定小于 100。\n\n程序行若以“E”开头，则表示循环体结束。\n\n#### 【输出格式】\n\n输出文件名为 complexity.out。\n\n输出文件共  $t$  行，对应输入的  $t$  个程序，每行输出“Yes”或“No”或者“ERR”（输出中不包含引号），若程序实际复杂度与输入给出的复杂度一致则输出“Yes”，不一致则输出“No”，若程序有语法错误（其中语法错误只有：① F 和 E 不匹配 ②新建的变量与已经存在但未被销毁的变量重复两种情况），则输出“ERR”。\n\n注意：即使在程序不会执行的循环体中出现了语法错误也会编译错误，要输出“ERR”。\n\n{3}------------------------------------------------\n\n#### 【输入输出样例 1】\n\n| <b>complexity.in</b> | <b>complexity.out</b> |\n|----------------------|-----------------------|\n| 8                    | Yes                   |\n| 2 O(1)               | Yes                   |\n| F i 1 1              | ERR                   |\n| E                    | Yes                   |\n| 2 O(n^1)             | No                    |\n| F x 1 n              | Yes                   |\n| E                    | Yes                   |\n| 1 O(1)               | ERR                   |\n| F x 1 n              |                       |\n| 4 O(n^2)             |                       |\n| F x 5 n              |                       |\n| F y 10 n             |                       |\n| E                    |                       |\n| E                    |                       |\n| 4 O(n^2)             |                       |\n| F x 9 n              |                       |\n| E                    |                       |\n| F y 2 n              |                       |\n| E                    |                       |\n| 4 O(n^1)             |                       |\n| F x 9 n              |                       |\n| F y n 4              |                       |\n| E                    |                       |\n| E                    |                       |\n| 4 O(1)               |                       |\n| F y n 4              |                       |\n| F x 9 n              |                       |\n| E                    |                       |\n| E                    |                       |\n| 4 O(n^2)             |                       |\n| F x 1 n              |                       |\n| F x 1 10             |                       |\n| E                    |                       |\n| E                    |                       |\n\n见选手目录下的\n\ncomplexity/complexity1.in 和 complexity/complexity1.ans。\n\n##### 【输入输出样例 1 说明】\n\n第一个程序 i 从 1 到 1 是常数复杂度。\n\n第二个程序 x 从 1 到 n 是 n 的一次方的复杂度。\n\n{4}------------------------------------------------\n\n第三个程序有一个 F 开启循环却没有 E 结束，语法错误。\n\n第四个程序二重循环， $n$  的平方的复杂度。\n\n第五个程序两个一重循环， $n$  的一次方的复杂度。\n\n第六个程序第一重循环正常，但第二重循环开始即终止（因为  $n$  远大于 100，100 大于 4）。\n\n第七个程序第一重循环无法进入，故为常数复杂度。\n\n第八个程序第二重循环中的变量  $x$  与第一重循环中的变量重复，出现语法错误②，输出 ERR。\n\n#### 【输入输出样例 2】\n\n见选手目录下的\n\ncomplexity/complexity2.in 和 complexity/complexity2.ans。\n\n#### 【数据规模与约定】\n\n对于 30% 的数据：不存在语法错误，数据保证小明给出的每个程序的前  $L/2$  行一定为以 F 开头的语句，第  $L/2+1$  行至第  $L$  行一定为以 E 开头的语句， $L \\leq 10$ ，若  $x$ 、 $y$  均为整数， $x$  一定小于  $y$ ，且只有  $y$  有可能为  $n$ 。\n\n对于 50% 的数据：不存在语法错误， $L \\leq 100$ ，且若  $x$ 、 $y$  均为整数， $x$  一定小于  $y$ ，且只有  $y$  有可能为  $n$ 。\n\n对于 70% 的数据：不存在语法错误， $L \\leq 100$ 。\n\n对于 100% 的数据： $L \\leq 100$ 。\n\n{5}------------------------------------------------\n\n### 3. 逛公园\n\n(park.cpp/c/pas)\n\n#### **【问题描述】**\n\n策策同学特别喜欢逛公园。公园可以看成一张 $N$ 个点 $M$ 条边构成的有向图，且没有自环和重边。其中1号点是公园的入口， $N$ 号点是公园的出口，每条边有一个非负权值，代表策策经过这条边所要花的时间。\n\n策策每天都会去逛公园，他总是从1号点进去，从 $N$ 号点出来。\n\n策策喜欢新鲜的事物，他不希望有两天逛公园的路线完全一样，同时策策还是一个特别热爱学习的好孩子，他不希望每天在逛公园这件事上花费太多的时间。如果1号点到 $N$ 号点的最短路长为 $d$ ，那么策策只会喜欢长度不超过 $d + K$ 的路线。\n\n策策同学想知道总共有多少条满足条件的路线，你能帮帮他吗？\n\n为避免输出过大，答案对 $P$ 取模。\n\n如果有无穷多条合法的路线，请输出-1。\n\n#### **【输入格式】**\n\n输入文件名为 park.in。\n\n第一行包含一个整数  $T$ ，代表数据组数。\n\n接下来 $T$ 组数据，对于每组数据：\n\n第一行包含四个整数  $N, M, K, P$ ，每两个整数之间用一个空格隔开。\n\n接下来 $M$ 行，每行三个整数 $a_i, b_i, c_i$ ，代表编号为 $a_i, b_i$ 的点之间有一条权值为 $c_i$ 的有向边，每两个整数之间用一个空格隔开。\n\n#### **【输出格式】**\n\n输出文件名为 park.out。\n\n输出文件包含  $T$  行，每行一个整数代表答案。\n\n#### **【输入输出样例 1】**\n\n| park.in  | park.out |\n|----------|----------|\n| 2        | 3        |\n| 5 7 2 10 | -1       |\n| 1 2 1    |          |\n| 2 4 0    |          |\n| 4 5 2    |          |\n| 2 3 2    |          |\n| 3 4 1    |          |\n| 3 5 2    |          |\n| 1 5 3    |          |\n| 2 2 0 10 |          |\n| 1 2 0    |          |\n| 2 1 0    |          |\n\n见选手目录下的 park/park1.in 和 park/park1.ans。\n\n对于第一组数据，最短路为 3。\n\n1-5, 1-2-4-5, 1-2-3-5 为 3 条合法路径。\n\n{6}------------------------------------------------\n\n#### **【输入输出样例 2】**\n\n见选手目录下的 park/park2.in 和 park/park2.ans。\n\n#### **【数据规模与约定】**\n\n对于不同的测试点，我们约定各种参数的规模**不会超过**如下\n\n| 测试点编号 | $T$ | $N$    | $M$    | $K$ | 是否有 0 边 |\n|-------|-----|--------|--------|-----|---------|\n| 1     | 5   | 5      | 10     | 0   | 否       |\n| 2     | 5   | 1000   | 2000   | 0   | 否       |\n| 3     | 5   | 1000   | 2000   | 50  | 否       |\n| 4     | 5   | 1000   | 2000   | 50  | 否       |\n| 5     | 5   | 1000   | 2000   | 50  | 否       |\n| 6     | 5   | 1000   | 2000   | 50  | 是       |\n| 7     | 5   | 100000 | 200000 | 0   | 否       |\n| 8     | 3   | 100000 | 200000 | 50  | 否       |\n| 9     | 3   | 100000 | 200000 | 50  | 是       |\n| 10    | 3   | 100000 | 200000 | 50  | 是       |\n|       |     |        |        |     |         |\n\n对于 100% 的数据,  $1 \\leq P \\leq 10^9, 1 \\leq a_i, b_i \\leq N, 0 \\leq c_i \\leq 1000$ 。\n\n数据保证：至少存在一条合法的路线。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "7a1dee155822446f7828dcb055c465c3_img.jpg": "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g8EA9RQBeooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOU8ef8eWif9h2w/8ARy11dcp48/48tE/7Dth/6OWuroAK82+O3/JK77/rvD/6GK9Jrzb47f8AJK77/rvD/wChigDS0/4g+EtN8J2ckviPSmkgso90KXkbSEhB8u0HOc8YxXT6LDbR6bHNaw+VHdk3RTOcNJ8x/U1V0yxttS8GWNndRJJBPYRo6soIIKAd6n0i8s5PO02zZ5F03ZbPIcEbgo+XPqBjP1oA06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDlPHn/Hlon/YdsP8A0ctdXXKePP8Ajy0T/sO2H/o5a6ugArD8Q+EdF8VwCDWree5gBB8kXc0aEjoSqMAT7kVuUUAc1H4D0OG3W3ifWEgRQixrrd4FVfQDzcYrT0PQdN8OacLDSrb7Pbb2k2mRnJZjkksxJJ+prSooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k="
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 29
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 24
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 17
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 26
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 7,
+    "total_cost": 2.1,
+    "cost_breakdown": {
+      "list_cost_cents": 2.8,
+      "final_cost_cents": 2.1,
+      "regional_multiplier": 1.0
+    },
+    "runtime": 19.718809843063354,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "list_cost_cents": 2.8,
+    "final_cost_cents": 2.1,
+    "regional_multiplier": 1.0
+  },
+  "page_count": 7,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Final/NOIP2017/noip2017提高组 day1.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "7a1dee155822446f7828dcb055c465c3_img.jpg"
+  ]
+}

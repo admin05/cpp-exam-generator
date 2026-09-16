@@ -1,0 +1,134 @@
+{
+  "request_id": "-aSDidVt7cAOMEfCYQpMkQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:32:13.053225+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "-aSDidVt7cAOMEfCYQpMkQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/-aSDidVt7cAOMEfCYQpMkQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n省份： 分赛区： 学校：\n\n姓名： 性别： 准考证号：\n\n----- 密 封 线 -----\n\n# 2021 CCF 非专业级别软件能力认证第一轮 (CSP-J) 入门级答题纸\n\n语言： ☒ Pascal ☒ C++ ☐ C (请考生在选择的语言前打√)\n\n本表由阅卷人员填写\n\n|     |   |   |   |    |\n|-----|---|---|---|----|\n|     | 一 | 二 | 三 | 总分 |\n| 得分  |   |   |   |    |\n| 评卷人 |   |   |   |    |\n| 复核人 |   |   |   |    |\n\n## 一、单项选择题 (共 15 题，每题 2 分，共计 30 分)\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| D  | B  | A  | C  | D  | D | C | A | B | B  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| B  | A  | C  | B  | B  |   |   |   |   |    |\n\n## 二、阅读程序 (除特殊说明外，判断题 1.5 分，单选题 3 分，共计 40 分)\n\n|       |            |           |           |     |     |             |\n|-------|------------|-----------|-----------|-----|-----|-------------|\n| 第 1 题 | 判断题 (填√或×) |           |           |     |     | 单选题         |\n|       | 16)        | 17)       | 18)       | 19) | 20) | 21)         |\n|       | ×          | ×         | ×         | √   | ×   | B           |\n| 第 2 题 | 判断题 (填√或×) |           |           | 单选题 |     |             |\n|       | 22)        | 23)       | 24)       | 25) | 26) | 27) (3.5 分) |\n|       | ×          | √         | √         | B   | B   | C           |\n| 第 3 题 | 判断题 (填√或×) |           |           | 单选题 |     |             |\n|       | 28)        | 29) (2 分) | 30) (2 分) | 31) | 32) | 33) (4 分)   |\n|       | √          | ×         | ×         | A   | C   | C           |\n\n## 三、完善程序 (单选题，每小题 3 分，共计 30 分)\n\n|       |     |     |     |     |       |     |     |     |     |\n|-------|-----|-----|-----|-----|-------|-----|-----|-----|-----|\n| 第 1 题 |     |     |     |     | 第 2 题 |     |     |     |     |\n| 34)   | 35) | 36) | 37) | 38) | 39)   | 40) | 41) | 42) | 43) |\n| D     | C   | C   | D   | B   | B     | D   | C   | B   | D   |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 12
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 9.07938814163208,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n省份： 分赛区： 学校：\n\n姓名： 性别： 准考证号：\n\n----- 密 封 线 -----\n\n# 2021 CCF 非专业级别软件能力认证第一轮 (CSP-J) 入门级答题纸\n\n语言： ☒ Pascal ☒ C++ ☐ C (请考生在选择的语言前打√)\n\n本表由阅卷人员填写\n\n|     |   |   |   |    |\n|-----|---|---|---|----|\n|     | 一 | 二 | 三 | 总分 |\n| 得分  |   |   |   |    |\n| 评卷人 |   |   |   |    |\n| 复核人 |   |   |   |    |\n\n## 一、单项选择题 (共 15 题，每题 2 分，共计 30 分)\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| D  | B  | A  | C  | D  | D | C | A | B | B  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| B  | A  | C  | B  | B  |   |   |   |   |    |\n\n## 二、阅读程序 (除特殊说明外，判断题 1.5 分，单选题 3 分，共计 40 分)\n\n|       |            |           |           |     |     |             |\n|-------|------------|-----------|-----------|-----|-----|-------------|\n| 第 1 题 | 判断题 (填√或×) |           |           |     |     | 单选题         |\n|       | 16)        | 17)       | 18)       | 19) | 20) | 21)         |\n|       | ×          | ×         | ×         | √   | ×   | B           |\n| 第 2 题 | 判断题 (填√或×) |           |           | 单选题 |     |             |\n|       | 22)        | 23)       | 24)       | 25) | 26) | 27) (3.5 分) |\n|       | ×          | √         | √         | B   | B   | C           |\n| 第 3 题 | 判断题 (填√或×) |           |           | 单选题 |     |             |\n|       | 28)        | 29) (2 分) | 30) (2 分) | 31) | 32) | 33) (4 分)   |\n|       | √          | ×         | ×         | A   | C   | C           |\n\n## 三、完善程序 (单选题，每小题 3 分，共计 30 分)\n\n|       |     |     |     |     |       |     |     |     |     |\n|-------|-----|-----|-----|-----|-------|-----|-----|-----|-----|\n| 第 1 题 |     |     |     |     | 第 2 题 |     |     |     |     |\n| 34)   | 35) | 36) | 37) | 38) | 39)   | 40) | 41) | 42) | 43) |\n| D     | C   | C   | D   | B   | B     | D   | C   | B   | D   |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 12
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 9.07938814163208,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "CSP-J/2021/Round1/cspjs2021hj_sol.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

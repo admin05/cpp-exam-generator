@@ -1,0 +1,303 @@
+{
+  "request_id": "s9K_ZkgLFBNYHrP9pSfoLQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:19:28.076374+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "s9K_ZkgLFBNYHrP9pSfoLQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/s9K_ZkgLFBNYHrP9pSfoLQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十六届全国青少年信息学奥林匹克联赛初赛试题(普及组 Pascal 语言 两小时完成)\n\n●●全部试题答案均要求写在答卷纸上，写在试卷上一律无效●●\n\n一、单项选择题（共 20 题，每题 1.5 分，共计 30 分。每题有且仅有一个正确选项。）\n\n1.  $2E+03$  表示（ ）。\n\n- A. 2.03                      B. 5                      C. 8                      D. 2000\n\n2. 一个字节 (byte) 由（ ）个二进制位组成。\n\n- A. 8                      B. 16                      C. 32                      D. 以上都有可能\n\n3. 以下逻辑表达式的值恒为真的是（ ）。\n\n- A.  $P \\vee (\\neg P \\wedge Q) \\vee (\\neg P \\wedge \\neg Q)$                       B.  $Q \\vee (\\neg P \\wedge Q) \\vee (P \\wedge \\neg Q)$   \nC.  $P \\vee Q \\vee (P \\wedge \\neg Q) \\vee (\\neg P \\wedge Q)$                       D.  $P \\vee \\neg Q \\vee (P \\wedge \\neg Q) \\vee (\\neg P \\wedge \\neg Q)$\n\n4. Linux 下可执行文件的默认扩展名为（ ）。\n\n- A. exe                      B. com                      C. dll                      D. 以上都不是\n\n5. 如果树根算第 1 层，那么一棵  $n$  层的二叉树最多有（ ）个结点。\n\n- A.  $2^n - 1$                       B.  $2^n$                       C.  $2^n + 1$                       D.  $2^{n+1}$\n\n6. 提出“存储程序”的计算机工作原理的是（ ）。\n\n- A. 克劳德·香农      B. 戈登·摩尔      C. 查尔斯·巴比奇      D. 冯·诺依曼\n\n7. 设  $X$ 、 $Y$ 、 $Z$  分别代表三进制下的一位数字，若等式  $XY + ZX = XYX$  在三进制下成立，那么同样在三进制下，等式  $XY * ZX =$ （ ）也成立。\n\n- A.  $YXZ$                       B.  $ZXY$                       C.  $XYZ$                       D.  $XZY$\n\n8. Pascal 语言、C 语言和 C++ 语言都属于（ ）。\n\n- A. 面向对象语言      B. 脚本语言      C. 解释性语言      D. 编译性语言\n\n9. 前缀表达式“ $+ 3 * 2 + 5 \\ 12$ ”的值是（ ）。\n\n- A. 23                      B. 25                      C. 37                      D. 65\n\n{1}------------------------------------------------\n\n10. 主存储器的存取速度比中央处理器 (CPU) 的工作速度慢得多, 从而使得后者的效率受到影响。而根据局部性原理, CPU 所访问的存储单元通常都趋于聚集在一个较小的连续区域中。于是, 为了提高系统整体的执行效率, 在 CPU 中引入了 ( )。\n\n- A. 寄存器\n- B. 高速缓存\n- C. 闪存\n- D. 外存\n\n11. 一个字长为 8 位的整数的补码是 11111001, 则它的原码是 ( )。\n\n- A. 00000111\n- B. 01111001\n- C. 11111001\n- D. 10000111\n\n12. 基于比较的排序时间复杂度的下限是 ( ), 其中 n 表示待排序的元素个数。\n\n- A.  $\\Theta(n)$\n- B.  $\\Theta(n \\log n)$\n- C.  $\\Theta(\\log n)$\n- D.  $\\Theta(n^2)$\n\n13. 一个自然数在十进制下有 n 位, 则它在二进制下的位数与 ( ) 最接近。\n\n- A. 5n\n- B.  $n \\cdot \\log_2 10$\n- C.  $10 \\cdot \\log_2 n$\n- D.  $10^n \\log_2 n$\n\n14. 在下列 HTML 语句中, 可以正确产生一个指向 NOI 官方网站的超链接的是 ( )。\n\n- A. `<a url=\"http://www.noi.cn\">欢迎访问 NOI 网站</a>`\n- B. `<a href=\"http://www.noi.cn\">欢迎访问 NOI 网站</a>`\n- C. `<a>http://www.noi.cn</a>`\n- D. `<a name=\"http://www.noi.cn\">欢迎访问 NOI 网站</a>`\n\n15. 元素 R1、R2、R3、R4、R5 入栈的顺序为 R1、R2、R3、R4、R5。如果第 1 个出栈的是 R3, 那么第 5 个出栈的不可能是 ( )。\n\n- A. R1\n- B. R2\n- C. R4\n- D. R5\n\n16. 双向链表中有两个指针域 llink 和 rlink, 分别指向该结点的前驱及后继。设 p 指向链表中的一个结点, 它的左右结点均非空。现要求删除结点 p, 则下面语句序列中错误的是 ( )。\n\n- A. `p^.rlink^.llink = p^.rlink;`  \n`p^.llink^.rlink = p^.llink; dispose(p);`\n- B. `p^.llink^.rlink = p^.rlink;`  \n`p^.rlink^.llink = p^.llink; dispose(p);`\n- C. `p^.rlink^.llink = p^.llink;`  \n`p^.rlink^.llink^.rlink = p^.rlink; dispose(p);`\n- D. `p^.llink^.rlink = p^.rlink;`  \n`p^.llink^.rlink^.llink = p^.llink; dispose(p);`\n\n17. 一棵二叉树的前序遍历序列是 ABCDEFG, 后序遍历序列是 CBFEGDA, 则根结点的左子树的结点个数可能是 ( )。\n\n{2}------------------------------------------------\n\n- A. 2                      B. 3                      C. 4                      D. 5\n\n18. 关于拓扑排序，下面说法正确的是（ ）。\n\n- A. 所有连通的有向图都可以实现拓扑排序\n- B. 对同一个图而言，拓扑排序的结果是唯一的\n- C. 拓扑排序中入度为 0 的结点总会排在入度大于 0 的结点的前面\n- D. 拓扑排序结果序列中的第一个结点一定是入度为 0 的点\n\n19. 完全二叉树的顺序存储方案，是指将完全二叉树的结点从上至下、从左至右依次存放到一个顺序结构的数组中。假定根结点存放在数组的 1 号位置，则第  $k$  号结点的父结点如果存在的话，应当存放在数组的（ ）号位置。\n\n- A.  $2k$                       B.  $2k+1$                       C.  $k/2$  下取整                      D.  $(k+1)/2$  下取整\n\n20. 全国青少年信息学奥林匹克系列活动的主办单位是（ ）。\n\n- A. 教育部                      B. 科技部                      C. 共青团中央                      D. 中国计算机学会\n\n### **二、问题求解（共 2 题，每题 5 分，共计 10 分）**\n\n1. LZW 编码是一种自适应词典编码。在编码的过程中，开始时只有一部基础构造元素的编码词典，如果在编码的过程中遇到一个新的词条，则该词条及一个新的编码会被追加到词典中，并用于后继信息的编码。\n\n举例说明，考虑一个待编码的信息串：“xyx yy yy xyx”。初始词典只有 3 个条目，第一个为  $x$ ，编码为 1；第二个为  $y$ ，编码为 2；第三个为空格，编码为 3；于是串“xyx”的编码为 1-2-1（其中 - 为编码分隔符），加上后面的一个空格就是 1-2-1-3。但由于有了一个空格，我们就知道前面的“xyx”是一个单词，而由于该单词没有在词典中，我们就可以自适应的把这个词条添加到词典里，编码为 4，然后按照新的词典对后继信息进行编码，以此类推。于是，最后得到编码：1-2-1-3-2-2-3-5-3-4。\n\n现在已知初始词典的 3 个条目如上述，则信息串“yyxy xx yyxy xyx xx xyx”的编码是\\_\\_\\_\\_\\_。\n\n2. 队列快照是指在某一时刻队列中的元素组成的有序序列。例如，当元素 1、2、3 入队，元素 1 出队后，此刻的队列快照是“2 3”。当元素 2、3 也出队后，队列快照是“”，即为空。现有 3 个正整数元素依次入队、出队。已知它们的和为 8，则共有\\_\\_\\_\\_\\_种可能的不同的队列快照（不同队列的相同快照只计一次）。例如，“5 1”、“4 2 2”、“”都是可能的队列快照；而“7”不是可能的队列快照，因为剩下的 2 个正整数的和不可能是 1。\n\n## **三、阅读程序写结果（共 4 题，每题 8 分，其中第 4 题（1）、（2）各 4 分，共计 32 分）**\n\n{3}------------------------------------------------\n\n```\n1.\nvar\n  a1, a2, a3, x : integer;\n\nprocedure swap(var a, b : integer);\nvar\n  t : integer;\nbegin\n  t := a;\n  a := b;\n  b := t;\nend;\n\nbegin\n  readln(a1, a2, a3);\n  if a1 > a2 then\n    swap(a1, a2);\n  if a2 > a3 then\n    swap(a2, a3);\n  if a1 > a2 then\n    swap(a1, a2);\n\n  readln(x);\n  if x < a2 then\n    if x < a1 then\n      writeln(x, ' ', a1, ' ', a2, ' ', a3)\n    else\n      writeln(a1, ' ', x, ' ', a2, ' ', a3)\n  else\n    if x < a3 then\n      writeln(a1, ' ', a2, ' ', x, ' ', a3)\n    else\n      writeln(a1, ' ', a2, ' ', a3, ' ', x);\nend.\n```\n\n输入:\n\n91 2 20\n\n77\n\n{4}------------------------------------------------\n\n2.\n\n```\nvar\n  n, m, i : integer;\n\nfunction rSum(j : integer) : integer;\nvar\n  sum : integer;\nbegin\n  sum := 0;\n  while j <> 0 do\n  begin\n    sum := sum * 10 + (j mod 10);\n    j := j div 10;\n  end;\n  rSum := sum;\nend;\n\nbegin\n  readln(n, m);\n  for i := n to m do\n    if i = rSum(i)\n      then write(i, ' ');\nend.\n```\n\n输入: 90 120\n\n输出: \\_\\_\\_\\_\\_\n\n3.\n\n```\nvar\n  s : string;\n  i : integer;\n  m1, m2 : char;\n\nbegin\n  readln(s);\n  m1 := ' ';\n```\n\n{5}------------------------------------------------\n\n```\n\nm2 := ' ';\nfor i := 1 to length(s) do\n  if s[i] > m1 then\n  begin\n    m2 := m1;\n    m1 := s[i];\n  end\n  else if s[i] > m2 then\n    m2 := s[i];\nwriteln(ord(m1), ' ', ord(m2));\nend.\n\n```\n\n输入: Expo 2010 Shanghai China\n\n输出: \\_\\_\\_\\_\\_\n\n提示:\n\n| 字符      | 空格 | '0' | 'A' | 'a' |\n|---------|----|-----|-----|-----|\n| ASCII 码 | 32 | 48  | 65  | 97  |\n\n4.\n\nconst\n\n```\nNUM = 5;\n```\n\nvar\n\n```\nn : integer;\n```\n\n```\nfunction r(n : integer) : integer;\n```\n\nvar\n\n```\ni : integer;\n```\n\n```\nbegin\n```\n\n```\n  if n <= NUM then\n```\n\n```\n  begin\n```\n\n```\n    r := n;\n```\n\n```\n    exit;\n```\n\n```\n  end;\n```\n\n```\n  for i := 1 to NUM do\n```\n\n```\n    if r(n - i) < 0 then\n```\n\n```\n    begin\n```\n\n```\n      r := i;\n```\n\n{6}------------------------------------------------\n\n```\n        exit;\n    end;\n    r := -1;\nend;\n\nbegin\n    readln(n);\n    writeln(r(n));\nend.\n```\n\n(1)\n\n输入: 7\n\n输出: \\_\\_\\_\\_\\_ (4 分)\n\n(2)\n\n输入: 16\n\n输出: \\_\\_\\_\\_\\_ (4 分)\n\n## 四、完善程序 (前 4 空, 每空 2.5 分, 后 6 空, 每空 3 分, 共计 28 分)\n\n1. (哥德巴赫猜想) 哥德巴赫猜想是指, 任一大于 2 的偶数都可写成两个质数之和。迄今为止, 这仍然是一个著名的世界难题, 被誉为数学王冠上的明珠。试编写程序, 验证任一大于 2 且不超过  $n$  的偶数都能写成两个质数之和。\n\n```\nconst\n    SIZE = 1000;\n\nvar\n    n, r, i, j, k, ans : integer;\n    p : array[1.. SIZE] of integer;\n    tmp : boolean;\n\nbegin\n    readln(n);\n    r := 1;\n    p[1] := 2;\n    for i := 3 to n do\n    begin\n        ① ;\n    end;\nend.\n```\n\n{7}------------------------------------------------\n\n```\n\nfor j := 1 to r do\n  if i mod ② = 0 then\n  begin\n    tmp := false;\n    break;\n  end;\n  if tmp then\n  begin\n    inc(r);\n    ③;\n  end;\nend;\n\nans := 0;\nfor i := 2 to (n div 2) do\nbegin\n  tmp := false;\n  for j := 1 to r do\n  for k := j to r do\n    if i + i = ④ then\n    begin\n      tmp := true;\n      break;\n    end;\n  if tmp then\n    inc(ans);\nend;\nwriteln(ans);\nend.\n\n```\n\n若输入  $n$  为 2010，则输出 ⑤ 时表示验证成功，即大于 2 且不超过 2010 的偶数都满足哥德巴赫猜想。\n\n2. (过河问题) 在一个月黑风高的夜晚，有一群人在河的右岸，想通过唯一的一根独木桥走到河的左岸。在这伸手不见五指的黑夜里，过桥时必须借助灯光来照明，不幸的是，他们只有一盏灯。另外，独木桥上最多承受两个人同时经过，否则将会坍塌。每个人单独过桥都需要一定的时间，不同的人需要的时间可能不同。两个人一起过桥时，由于只有一盏灯，所以需要的时间是较慢的那个人单独过桥时所花的时间。现输入  $n$  ( $2 \\leq n < 100$ ) 和这  $n$  个人\n\n{8}------------------------------------------------\n\n单独过桥时需要的时间，请计算总共最少需要多少时间，他们才能全部到达河的左岸。\n\n例如，有 3 个人甲、乙、丙，他们单独过桥的时间分别为 1、2、4，则总共最少需要的时间为 7。具体方法是：甲、乙一起过桥到河的左岸，甲单独回到河的右岸将灯带回，然后甲、丙再一起过桥到河的左岸，总时间为  $2+1+4=7$ 。\n\n```\nconst\n    SIZE = 100;\n    INFINITY = 10000;\n    LEFT = true;\n    RIGHT = false;\n    LEFT_TO_RIGHT = true;\n    RIGHT_TO_LEFT = false;\n\nvar\n    n, i : integer;\n    time : array[1..SIZE] of integer;\n    pos : array[1..SIZE] of boolean;\n\nfunction max(a, b : integer) : integer;\nbegin\n    if a > b then\n        max := a\n    else\n        max := b;\nend;\n\nfunction go(stage : boolean) : integer;\nvar\n    i, j, num, tmp, ans : integer;\nbegin\n    if (stage = RIGHT_TO_LEFT)\n    then begin\n        num := 0;\n        ans := 0;\n        for i := 1 to n do\n            if pos[i] = Right then\n            begin\n                inc(num);\n            end;\n    end;\n```\n\n{9}------------------------------------------------\n\n```\n\n        if time[i] > ans then\n            ans := time[i];\n        end;\n    if ① then\n    begin\n        go := ans;\n        exit;\n    end;\n    ans := INFINITY;\n    for i := 1 to n - 1 do\n        if pos[i] = RIGHT then\n            for j := i + 1 to n do\n                if pos[j] = RIGHT then\n                    begin\n                        pos[i] := LEFT;\n                        pos[j] := LEFT;\n                        tmp := max(time[i], time[j]) + ②;\n                        if tmp < ans then\n                            ans := tmp;\n                        pos[i] := RIGHT;\n                        pos[j] := RIGHT;\n                    end;\n            go := ans;\n    end\nelse if (stage = LEFT_TO_RIGHT)\nthen begin\n    ans := INFINITY;\n    for i := 1 to n do\n        if ③ then\n        begin\n            pos[i] := RIGHT;\n            tmp := ④;\n            if tmp < ans then\n                ans := tmp;\n            ⑤;\n        end;\n    go := ans;\nend\n\n```\n\n{10}------------------------------------------------\n\n```\n    else\n        go := 0;\nend;\n\nbegin\n    readln(n);\n    for i := 1 to n do\n    begin\n        read(time[i]);\n        pos[i] := RIGHT;\n    end;\n    writeln(go(RIGHT_TO_LEFT));\nend.\n```\n\n{11}------------------------------------------------\n\n## CCF NOIP2010 普及组 (Pascal 语言) 参考答案与评分标准\n\n### 一、单项选择题 (共 20 题, 每题 1.5 分, 共计 30 分)\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| D  | A  | A  | D  | A  | D  | B  | D  | C  | B  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| D  | B  | B  | B  | B  | A  | A  | D  | C  | D  |\n\n### 二、问题求解 (共 2 题, 每题 5 分, 共计 10 分)\n\n1、2-2-1-2-3-1-1-3-4-3-1-2-1-3-5-3-6 (或 22123113431213536)\n\n2、49\n\n### 三、阅读程序写结果 (共 4 题, 每题 8 分, 其中第 4 题 (1)、(2) 各 4 分, 共计 32 分)\n\n1、2 20 77 91\n\n2、99 101 111\n\n3、120 112\n\n4、(1) 1\n\n(2) 4\n\n### 四、完善程序 (前 4 空, 每空 2.5 分, 后 6 空, 每空 3 分, 共计 28 分)\n\n(说明: 以下各程序填空可能还有一些等价的写法, 各省可请本省专家审定和上机验证, 不一定上报科学委员会审查)\n\n1、① `tmp := true`\n\n② `p[j]`\n\n③ `p[r] := i`\n\n④ `p[j] + p[k]` (或 `p[k] + p[j]`)\n\n⑤ `1004`\n\n2、① `num <= 2` (或 `num < 3` 或 `num = 2`)\n\n② `go(LEFT_TO_RIGHT)`\n\n③ `pos[i] = LEFT` (或 `LEFT = pos[i]`)\n\n④ `time[i] + go(RIGHT_TO_LEFT)` (或 `go(RIGHT_TO_LEFT) + time[i]`)\n\n⑤ `pos[i] := LEFT`\n\n本小题中, `LEFT` 可用 `true` 代替, `LEFT_TO_RIGHT` 可用 `true` 代替, `RIGHT_TO_LEFT` 可用 `false` 代替。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 22
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 14
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 5
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 7
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 24
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 11
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 9,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 10,
+            "num_blocks": 2
+          },
+          {
+            "page_id": 11,
+            "num_blocks": 26
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.467,
+      "page_count": 12,
+      "total_cost": 3.6,
+      "cost_breakdown": {
+        "final_cost_cents": 3.6
+      },
+      "runtime": 36.927332639694214,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十六届全国青少年信息学奥林匹克联赛初赛试题(普及组 Pascal 语言 两小时完成)\n\n●●全部试题答案均要求写在答卷纸上，写在试卷上一律无效●●\n\n一、单项选择题（共 20 题，每题 1.5 分，共计 30 分。每题有且仅有一个正确选项。）\n\n1.  $2E+03$  表示（ ）。\n\n- A. 2.03                      B. 5                      C. 8                      D. 2000\n\n2. 一个字节 (byte) 由（ ）个二进制位组成。\n\n- A. 8                      B. 16                      C. 32                      D. 以上都有可能\n\n3. 以下逻辑表达式的值恒为真的是（ ）。\n\n- A.  $P \\vee (\\neg P \\wedge Q) \\vee (\\neg P \\wedge \\neg Q)$                       B.  $Q \\vee (\\neg P \\wedge Q) \\vee (P \\wedge \\neg Q)$   \nC.  $P \\vee Q \\vee (P \\wedge \\neg Q) \\vee (\\neg P \\wedge Q)$                       D.  $P \\vee \\neg Q \\vee (P \\wedge \\neg Q) \\vee (\\neg P \\wedge \\neg Q)$\n\n4. Linux 下可执行文件的默认扩展名为（ ）。\n\n- A. exe                      B. com                      C. dll                      D. 以上都不是\n\n5. 如果树根算第 1 层，那么一棵  $n$  层的二叉树最多有（ ）个结点。\n\n- A.  $2^n - 1$                       B.  $2^n$                       C.  $2^n + 1$                       D.  $2^{n+1}$\n\n6. 提出“存储程序”的计算机工作原理的是（ ）。\n\n- A. 克劳德·香农      B. 戈登·摩尔      C. 查尔斯·巴比奇      D. 冯·诺依曼\n\n7. 设  $X$ 、 $Y$ 、 $Z$  分别代表三进制下的一位数字，若等式  $XY + ZX = XYX$  在三进制下成立，那么同样在三进制下，等式  $XY * ZX =$ （ ）也成立。\n\n- A.  $YXZ$                       B.  $ZXY$                       C.  $XYZ$                       D.  $XZY$\n\n8. Pascal 语言、C 语言和 C++ 语言都属于（ ）。\n\n- A. 面向对象语言      B. 脚本语言      C. 解释性语言      D. 编译性语言\n\n9. 前缀表达式“ $+ 3 * 2 + 5 \\ 12$ ”的值是（ ）。\n\n- A. 23                      B. 25                      C. 37                      D. 65\n\n{1}------------------------------------------------\n\n10. 主存储器的存取速度比中央处理器 (CPU) 的工作速度慢得多, 从而使得后者的效率受到影响。而根据局部性原理, CPU 所访问的存储单元通常都趋于聚集在一个较小的连续区域中。于是, 为了提高系统整体的执行效率, 在 CPU 中引入了 ( )。\n\n- A. 寄存器\n- B. 高速缓存\n- C. 闪存\n- D. 外存\n\n11. 一个字长为 8 位的整数的补码是 11111001, 则它的原码是 ( )。\n\n- A. 00000111\n- B. 01111001\n- C. 11111001\n- D. 10000111\n\n12. 基于比较的排序时间复杂度的下限是 ( ), 其中 n 表示待排序的元素个数。\n\n- A.  $\\Theta(n)$\n- B.  $\\Theta(n \\log n)$\n- C.  $\\Theta(\\log n)$\n- D.  $\\Theta(n^2)$\n\n13. 一个自然数在十进制下有 n 位, 则它在二进制下的位数与 ( ) 最接近。\n\n- A. 5n\n- B.  $n \\cdot \\log_2 10$\n- C.  $10 \\cdot \\log_2 n$\n- D.  $10^n \\log_2 n$\n\n14. 在下列 HTML 语句中, 可以正确产生一个指向 NOI 官方网站的超链接的是 ( )。\n\n- A. `<a url=\"http://www.noi.cn\">欢迎访问 NOI 网站</a>`\n- B. `<a href=\"http://www.noi.cn\">欢迎访问 NOI 网站</a>`\n- C. `<a>http://www.noi.cn</a>`\n- D. `<a name=\"http://www.noi.cn\">欢迎访问 NOI 网站</a>`\n\n15. 元素 R1、R2、R3、R4、R5 入栈的顺序为 R1、R2、R3、R4、R5。如果第 1 个出栈的是 R3, 那么第 5 个出栈的不可能是 ( )。\n\n- A. R1\n- B. R2\n- C. R4\n- D. R5\n\n16. 双向链表中有两个指针域 llink 和 rlink, 分别指向该结点的前驱及后继。设 p 指向链表中的一个结点, 它的左右结点均非空。现要求删除结点 p, 则下面语句序列中错误的是 ( )。\n\n- A. `p^.rlink^.llink = p^.rlink;`  \n`p^.llink^.rlink = p^.llink; dispose(p);`\n- B. `p^.llink^.rlink = p^.rlink;`  \n`p^.rlink^.llink = p^.llink; dispose(p);`\n- C. `p^.rlink^.llink = p^.llink;`  \n`p^.rlink^.llink^.rlink = p^.rlink; dispose(p);`\n- D. `p^.llink^.rlink = p^.rlink;`  \n`p^.llink^.rlink^.llink = p^.llink; dispose(p);`\n\n17. 一棵二叉树的前序遍历序列是 ABCDEFG, 后序遍历序列是 CBFEGDA, 则根结点的左子树的结点个数可能是 ( )。\n\n{2}------------------------------------------------\n\n- A. 2                      B. 3                      C. 4                      D. 5\n\n18. 关于拓扑排序，下面说法正确的是（ ）。\n\n- A. 所有连通的有向图都可以实现拓扑排序\n- B. 对同一个图而言，拓扑排序的结果是唯一的\n- C. 拓扑排序中入度为 0 的结点总会排在入度大于 0 的结点的前面\n- D. 拓扑排序结果序列中的第一个结点一定是入度为 0 的点\n\n19. 完全二叉树的顺序存储方案，是指将完全二叉树的结点从上至下、从左至右依次存放到一个顺序结构的数组中。假定根结点存放在数组的 1 号位置，则第  $k$  号结点的父结点如果存在的话，应当存放在数组的（ ）号位置。\n\n- A.  $2k$                       B.  $2k+1$                       C.  $k/2$  下取整                      D.  $(k+1)/2$  下取整\n\n20. 全国青少年信息学奥林匹克系列活动的主办单位是（ ）。\n\n- A. 教育部                      B. 科技部                      C. 共青团中央                      D. 中国计算机学会\n\n### **二、问题求解（共 2 题，每题 5 分，共计 10 分）**\n\n1. LZW 编码是一种自适应词典编码。在编码的过程中，开始时只有一部基础构造元素的编码词典，如果在编码的过程中遇到一个新的词条，则该词条及一个新的编码会被追加到词典中，并用于后继信息的编码。\n\n举例说明，考虑一个待编码的信息串：“xyx yy yy xyx”。初始词典只有 3 个条目，第一个为  $x$ ，编码为 1；第二个为  $y$ ，编码为 2；第三个为空格，编码为 3；于是串“xyx”的编码为 1-2-1（其中 - 为编码分隔符），加上后面的一个空格就是 1-2-1-3。但由于有了一个空格，我们就知道前面的“xyx”是一个单词，而由于该单词没有在词典中，我们就可以自适应的把这个词条添加到词典里，编码为 4，然后按照新的词典对后继信息进行编码，以此类推。于是，最后得到编码：1-2-1-3-2-2-3-5-3-4。\n\n现在已知初始词典的 3 个条目如上述，则信息串“yyxy xx yyxy xyx xx xyx”的编码是\\_\\_\\_\\_\\_。\n\n2. 队列快照是指在某一时刻队列中的元素组成的有序序列。例如，当元素 1、2、3 入队，元素 1 出队后，此刻的队列快照是“2 3”。当元素 2、3 也出队后，队列快照是“”，即为空。现有 3 个正整数元素依次入队、出队。已知它们的和为 8，则共有\\_\\_\\_\\_\\_种可能的不同的队列快照（不同队列的相同快照只计一次）。例如，“5 1”、“4 2 2”、“”都是可能的队列快照；而“7”不是可能的队列快照，因为剩下的 2 个正整数的和不可能是 1。\n\n## **三、阅读程序写结果（共 4 题，每题 8 分，其中第 4 题（1）、（2）各 4 分，共计 32 分）**\n\n{3}------------------------------------------------\n\n```\n1.\nvar\n  a1, a2, a3, x : integer;\n\nprocedure swap(var a, b : integer);\nvar\n  t : integer;\nbegin\n  t := a;\n  a := b;\n  b := t;\nend;\n\nbegin\n  readln(a1, a2, a3);\n  if a1 > a2 then\n    swap(a1, a2);\n  if a2 > a3 then\n    swap(a2, a3);\n  if a1 > a2 then\n    swap(a1, a2);\n\n  readln(x);\n  if x < a2 then\n    if x < a1 then\n      writeln(x, ' ', a1, ' ', a2, ' ', a3)\n    else\n      writeln(a1, ' ', x, ' ', a2, ' ', a3)\n  else\n    if x < a3 then\n      writeln(a1, ' ', a2, ' ', x, ' ', a3)\n    else\n      writeln(a1, ' ', a2, ' ', a3, ' ', x);\nend.\n```\n\n输入:\n\n91 2 20\n\n77\n\n{4}------------------------------------------------\n\n2.\n\n```\nvar\n  n, m, i : integer;\n\nfunction rSum(j : integer) : integer;\nvar\n  sum : integer;\nbegin\n  sum := 0;\n  while j <> 0 do\n  begin\n    sum := sum * 10 + (j mod 10);\n    j := j div 10;\n  end;\n  rSum := sum;\nend;\n\nbegin\n  readln(n, m);\n  for i := n to m do\n    if i = rSum(i)\n      then write(i, ' ');\nend.\n```\n\n输入: 90 120\n\n输出: \\_\\_\\_\\_\\_\n\n3.\n\n```\nvar\n  s : string;\n  i : integer;\n  m1, m2 : char;\n\nbegin\n  readln(s);\n  m1 := ' ';\n```\n\n{5}------------------------------------------------\n\n```\n\nm2 := ' ';\nfor i := 1 to length(s) do\n  if s[i] > m1 then\n  begin\n    m2 := m1;\n    m1 := s[i];\n  end\n  else if s[i] > m2 then\n    m2 := s[i];\nwriteln(ord(m1), ' ', ord(m2));\nend.\n\n```\n\n输入: Expo 2010 Shanghai China\n\n输出: \\_\\_\\_\\_\\_\n\n提示:\n\n| 字符      | 空格 | '0' | 'A' | 'a' |\n|---------|----|-----|-----|-----|\n| ASCII 码 | 32 | 48  | 65  | 97  |\n\n4.\n\nconst\n\n```\nNUM = 5;\n```\n\nvar\n\n```\nn : integer;\n```\n\n```\nfunction r(n : integer) : integer;\n```\n\nvar\n\n```\ni : integer;\n```\n\n```\nbegin\n```\n\n```\n  if n <= NUM then\n```\n\n```\n  begin\n```\n\n```\n    r := n;\n```\n\n```\n    exit;\n```\n\n```\n  end;\n```\n\n```\n  for i := 1 to NUM do\n```\n\n```\n    if r(n - i) < 0 then\n```\n\n```\n    begin\n```\n\n```\n      r := i;\n```\n\n{6}------------------------------------------------\n\n```\n        exit;\n    end;\n    r := -1;\nend;\n\nbegin\n    readln(n);\n    writeln(r(n));\nend.\n```\n\n(1)\n\n输入: 7\n\n输出: \\_\\_\\_\\_\\_ (4 分)\n\n(2)\n\n输入: 16\n\n输出: \\_\\_\\_\\_\\_ (4 分)\n\n## 四、完善程序 (前 4 空, 每空 2.5 分, 后 6 空, 每空 3 分, 共计 28 分)\n\n1. (哥德巴赫猜想) 哥德巴赫猜想是指, 任一大于 2 的偶数都可写成两个质数之和。迄今为止, 这仍然是一个著名的世界难题, 被誉为数学王冠上的明珠。试编写程序, 验证任一大于 2 且不超过  $n$  的偶数都能写成两个质数之和。\n\n```\nconst\n    SIZE = 1000;\n\nvar\n    n, r, i, j, k, ans : integer;\n    p : array[1.. SIZE] of integer;\n    tmp : boolean;\n\nbegin\n    readln(n);\n    r := 1;\n    p[1] := 2;\n    for i := 3 to n do\n    begin\n        ① ;\n    end;\nend.\n```\n\n{7}------------------------------------------------\n\n```\n\nfor j := 1 to r do\n  if i mod ② = 0 then\n  begin\n    tmp := false;\n    break;\n  end;\n  if tmp then\n  begin\n    inc(r);\n    ③;\n  end;\nend;\n\nans := 0;\nfor i := 2 to (n div 2) do\nbegin\n  tmp := false;\n  for j := 1 to r do\n  for k := j to r do\n    if i + i = ④ then\n    begin\n      tmp := true;\n      break;\n    end;\n  if tmp then\n    inc(ans);\nend;\nwriteln(ans);\nend.\n\n```\n\n若输入  $n$  为 2010，则输出 ⑤ 时表示验证成功，即大于 2 且不超过 2010 的偶数都满足哥德巴赫猜想。\n\n2. (过河问题) 在一个月黑风高的夜晚，有一群人在河的右岸，想通过唯一的一根独木桥走到河的左岸。在这伸手不见五指的黑夜里，过桥时必须借助灯光来照明，不幸的是，他们只有一盏灯。另外，独木桥上最多承受两个人同时经过，否则将会坍塌。每个人单独过桥都需要一定的时间，不同的人需要的时间可能不同。两个人一起过桥时，由于只有一盏灯，所以需要的时间是较慢的那个人单独过桥时所花的时间。现输入  $n$  ( $2 \\leq n < 100$ ) 和这  $n$  个人\n\n{8}------------------------------------------------\n\n单独过桥时需要的时间，请计算总共最少需要多少时间，他们才能全部到达河的左岸。\n\n例如，有 3 个人甲、乙、丙，他们单独过桥的时间分别为 1、2、4，则总共最少需要的时间为 7。具体方法是：甲、乙一起过桥到河的左岸，甲单独回到河的右岸将灯带回，然后甲、丙再一起过桥到河的左岸，总时间为  $2+1+4=7$ 。\n\n```\nconst\n    SIZE = 100;\n    INFINITY = 10000;\n    LEFT = true;\n    RIGHT = false;\n    LEFT_TO_RIGHT = true;\n    RIGHT_TO_LEFT = false;\n\nvar\n    n, i : integer;\n    time : array[1..SIZE] of integer;\n    pos : array[1..SIZE] of boolean;\n\nfunction max(a, b : integer) : integer;\nbegin\n    if a > b then\n        max := a\n    else\n        max := b;\nend;\n\nfunction go(stage : boolean) : integer;\nvar\n    i, j, num, tmp, ans : integer;\nbegin\n    if (stage = RIGHT_TO_LEFT)\n    then begin\n        num := 0;\n        ans := 0;\n        for i := 1 to n do\n            if pos[i] = Right then\n            begin\n                inc(num);\n            end;\n    end;\n```\n\n{9}------------------------------------------------\n\n```\n\n        if time[i] > ans then\n            ans := time[i];\n        end;\n    if ① then\n    begin\n        go := ans;\n        exit;\n    end;\n    ans := INFINITY;\n    for i := 1 to n - 1 do\n        if pos[i] = RIGHT then\n            for j := i + 1 to n do\n                if pos[j] = RIGHT then\n                    begin\n                        pos[i] := LEFT;\n                        pos[j] := LEFT;\n                        tmp := max(time[i], time[j]) + ②;\n                        if tmp < ans then\n                            ans := tmp;\n                        pos[i] := RIGHT;\n                        pos[j] := RIGHT;\n                    end;\n            go := ans;\n    end\nelse if (stage = LEFT_TO_RIGHT)\nthen begin\n    ans := INFINITY;\n    for i := 1 to n do\n        if ③ then\n        begin\n            pos[i] := RIGHT;\n            tmp := ④;\n            if tmp < ans then\n                ans := tmp;\n            ⑤;\n        end;\n    go := ans;\nend\n\n```\n\n{10}------------------------------------------------\n\n```\n    else\n        go := 0;\nend;\n\nbegin\n    readln(n);\n    for i := 1 to n do\n    begin\n        read(time[i]);\n        pos[i] := RIGHT;\n    end;\n    writeln(go(RIGHT_TO_LEFT));\nend.\n```\n\n{11}------------------------------------------------\n\n## CCF NOIP2010 普及组 (Pascal 语言) 参考答案与评分标准\n\n### 一、单项选择题 (共 20 题, 每题 1.5 分, 共计 30 分)\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| D  | A  | A  | D  | A  | D  | B  | D  | C  | B  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| D  | B  | B  | B  | B  | A  | A  | D  | C  | D  |\n\n### 二、问题求解 (共 2 题, 每题 5 分, 共计 10 分)\n\n1、2-2-1-2-3-1-1-3-4-3-1-2-1-3-5-3-6 (或 22123113431213536)\n\n2、49\n\n### 三、阅读程序写结果 (共 4 题, 每题 8 分, 其中第 4 题 (1)、(2) 各 4 分, 共计 32 分)\n\n1、2 20 77 91\n\n2、99 101 111\n\n3、120 112\n\n4、(1) 1\n\n(2) 4\n\n### 四、完善程序 (前 4 空, 每空 2.5 分, 后 6 空, 每空 3 分, 共计 28 分)\n\n(说明: 以下各程序填空可能还有一些等价的写法, 各省可请本省专家审定和上机验证, 不一定上报科学委员会审查)\n\n1、① `tmp := true`\n\n② `p[j]`\n\n③ `p[r] := i`\n\n④ `p[j] + p[k]` (或 `p[k] + p[j]`)\n\n⑤ `1004`\n\n2、① `num <= 2` (或 `num < 3` 或 `num = 2`)\n\n② `go(LEFT_TO_RIGHT)`\n\n③ `pos[i] = LEFT` (或 `LEFT = pos[i]`)\n\n④ `time[i] + go(RIGHT_TO_LEFT)` (或 `go(RIGHT_TO_LEFT) + time[i]`)\n\n⑤ `pos[i] := LEFT`\n\n本小题中, `LEFT` 可用 `true` 代替, `LEFT_TO_RIGHT` 可用 `true` 代替, `RIGHT_TO_LEFT` 可用 `false` 代替。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 22
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 14
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 5
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 7
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 24
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 11
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 9,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 10,
+          "num_blocks": 2
+        },
+        {
+          "page_id": 11,
+          "num_blocks": 26
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.467,
+    "page_count": 12,
+    "total_cost": 3.6,
+    "cost_breakdown": {
+      "final_cost_cents": 3.6
+    },
+    "runtime": 36.927332639694214,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.467,
+  "cost_breakdown": {
+    "final_cost_cents": 3.6
+  },
+  "page_count": 12,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2010/NOIP2010普及组初赛(Pascal)及参考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,156 @@
+{
+  "request_id": "jOLWqeph-nenkQNeyB2tLA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:18:04.355115+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "jOLWqeph-nenkQNeyB2tLA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/jOLWqeph-nenkQNeyB2tLA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.\n\n# 排座位\n\n你要在一个长方形大厅里举办国际编程比赛，该大厅共有  $HW$  个座位（ $H$  行  $W$  列）。行的编号是从 0 到  $H - 1$ ，列的编号是从 0 到  $W - 1$ 。位于  $r$  行  $c$  列的座位用  $(r, c)$  表示。一共邀请了  $HW$  位参赛者，编号是从 0 到  $HW - 1$ 。你制定好了一个座位表，第  $i$  ( $0 \\leq i \\leq HW - 1$ ) 个参赛者被安排到座位  $(R_i, C_i)$ 。座位表中参赛者和座位是一一对应的。\n\n大厅中一个座位集合  $S$  被称为是长方形的，如果存在整数  $r_1, r_2, c_1$  和  $c_2$  满足下列条件：\n\n- $0 \\leq r_1 \\leq r_2 \\leq H - 1$ 。\n- $0 \\leq c_1 \\leq c_2 \\leq W - 1$ 。\n- $S$  正好是所有满足  $r_1 \\leq r \\leq r_2$  和  $c_1 \\leq c \\leq c_2$  的座位  $(r, c)$  的集合。\n\n如果一个长方形座位集合包含  $k$  ( $1 \\leq k \\leq HW$ ) 个座位，并且被分配到这个集合的参赛者的编号恰好是从 0 到  $k - 1$ ，那么该集合是美妙的。一个座位表的美妙度定义为这个表中美妙的长方形座位集合的个数。\n\n在准备好座位表后，你会收到一些交换两个参赛者座位的请求。具体来说，有  $Q$  个这样的请求，按时间顺序编号为 0 到  $Q - 1$ 。第  $j$  ( $0 \\leq j \\leq Q - 1$ ) 个请求希望交换参赛者  $A_j$  和  $B_j$  的座位。你立即接受每个请求并更新座位表。每次更新后，你的目标是计算当前座位表的美妙度。\n\n## 实现细节\n\n你应该实现下列过程和函数：\n\n```\ngive_initial_chart(int H, int W, int[] R, int[] C)\n```\n\n- $H, W$ : 行数和列数\n- $R, C$ : 两个长度为  $HW$  的数组，代表初始的座位表\n- 这个过程只被调用一次，而且是在 `swap_seats` 的任何调用之前\n\n```\nint swap_seats(int a, int b)\n```\n\n- 该函数用来处理一次交换座位的请求\n- $a, b$ : 需要交换座位的参赛者\n- 该函数被调用  $Q$  次\n- 该函数应返回交换座位后座位表的美妙度\n\n{1}------------------------------------------------\n\n## 例子\n\n令  $H = 2, W = 3, R = [0, 1, 1, 0, 0, 1], C = [0, 0, 1, 1, 2, 2]$ , 和  $Q = 2$ 。\n\n评测程序先调用 `give_initial_chart(2, 3, [0, 1, 1, 0, 0, 1], [0, 0, 1, 1, 2, 2])`。\n\n最初，座位表如下：\n\n|   |   |   |\n|---|---|---|\n| 0 | 3 | 4 |\n| 1 | 2 | 5 |\n\n假设评测程序调用 `swap_seats(0, 5)`。在这个编号为0的请求完成后，座位表变成：\n\n|   |   |   |\n|---|---|---|\n| 5 | 3 | 4 |\n| 1 | 2 | 0 |\n\n对应参赛者集合  $\\{0\\}$ ,  $\\{0, 1, 2\\}$  和  $\\{0, 1, 2, 3, 4, 5\\}$  的三个座位集合都是长方形和美妙的。所以，该座位表的美妙度为3，`swap_seats`应该返回3。\n\n假设评测程序再次调用 `swap_seats(0, 5)`。在这个编号为1的请求完成后，座位表回到初始状态。对应参赛者集合  $\\{0\\}$ ,  $\\{0, 1\\}$ ,  $\\{0, 1, 2, 3\\}$  和  $\\{0, 1, 2, 3, 4, 5\\}$  的四个座位集合都是长方形和美妙的。所以，该表的美妙度为4，`swap_seats`应该返回4。\n\n在压缩附件包里的文件 `sample-01-in.txt` 和 `sample-01-out.txt` 对应于上述例子。此外，压缩附件包中还有一些其他的输入输出例子。\n\n## 限制条件\n\n- $1 \\leq H$\n- $1 \\leq W$\n- $HW \\leq 1\\,000\\,000$\n- $0 \\leq R_i \\leq H - 1$  ( $0 \\leq i \\leq HW - 1$ )\n- $0 \\leq C_i \\leq W - 1$  ( $0 \\leq i \\leq HW - 1$ )\n- $(R_i, C_i) \\neq (R_j, C_j)$  ( $0 \\leq i < j \\leq HW - 1$ )\n\n{2}------------------------------------------------\n\n- $1 \\leq Q \\leq 50\\,000$\n- 对于 `swap_seats` 的所有调用,  $0 \\leq a \\leq HW - 1$\n- 对于 `swap_seats` 的所有调用,  $0 \\leq b \\leq HW - 1$\n- 对于 `swap_seats` 的所有调用,  $a \\neq b$\n\n## 子任务\n\n1. (5分)  $HW \\leq 100, Q \\leq 5\\,000$\n2. (6分)  $HW \\leq 10\\,000, Q \\leq 5\\,000$\n3. (20分)  $H \\leq 1\\,000, W \\leq 1\\,000, Q \\leq 5\\,000$\n4. (6分) 对于 `swap_seats` 的所有调用,  $Q \\leq 5\\,000, |a - b| \\leq 10\\,000$\n5. (33分)  $H = 1$\n6. (30分) 无附加限制条件\n\n## 评测程序示例\n\n评测程序示例按照以下格式读入输入\n\n- 第1行:  $H\\ W\\ Q$\n- 第  $2 + i$  行 ( $0 \\leq i \\leq HW - 1$ ):  $R_i\\ C_i$\n- 第  $2 + HW + j$  行 ( $0 \\leq j \\leq Q - 1$ ):  $A_j\\ B_j$\n\n这里  $A_j$  和  $B_j$  是调用 `swap_seats` 处理请求  $j$  时的参数。\n\n评测程序示例按照以下格式打印你的答案：\n\n- 第  $1 + j$  行 ( $0 \\leq j \\leq Q - 1$ ): `swap_seats` 对于请求  $j$  的返回值",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 13
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 0.9,
+      "cost_breakdown": {
+        "final_cost_cents": 0.9
+      },
+      "runtime": 6.723931312561035,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.\n\n# 排座位\n\n你要在一个长方形大厅里举办国际编程比赛，该大厅共有  $HW$  个座位（ $H$  行  $W$  列）。行的编号是从 0 到  $H - 1$ ，列的编号是从 0 到  $W - 1$ 。位于  $r$  行  $c$  列的座位用  $(r, c)$  表示。一共邀请了  $HW$  位参赛者，编号是从 0 到  $HW - 1$ 。你制定好了一个座位表，第  $i$  ( $0 \\leq i \\leq HW - 1$ ) 个参赛者被安排到座位  $(R_i, C_i)$ 。座位表中参赛者和座位是一一对应的。\n\n大厅中一个座位集合  $S$  被称为是长方形的，如果存在整数  $r_1, r_2, c_1$  和  $c_2$  满足下列条件：\n\n- $0 \\leq r_1 \\leq r_2 \\leq H - 1$ 。\n- $0 \\leq c_1 \\leq c_2 \\leq W - 1$ 。\n- $S$  正好是所有满足  $r_1 \\leq r \\leq r_2$  和  $c_1 \\leq c \\leq c_2$  的座位  $(r, c)$  的集合。\n\n如果一个长方形座位集合包含  $k$  ( $1 \\leq k \\leq HW$ ) 个座位，并且被分配到这个集合的参赛者的编号恰好是从 0 到  $k - 1$ ，那么该集合是美妙的。一个座位表的美妙度定义为这个表中美妙的长方形座位集合的个数。\n\n在准备好座位表后，你会收到一些交换两个参赛者座位的请求。具体来说，有  $Q$  个这样的请求，按时间顺序编号为 0 到  $Q - 1$ 。第  $j$  ( $0 \\leq j \\leq Q - 1$ ) 个请求希望交换参赛者  $A_j$  和  $B_j$  的座位。你立即接受每个请求并更新座位表。每次更新后，你的目标是计算当前座位表的美妙度。\n\n## 实现细节\n\n你应该实现下列过程和函数：\n\n```\ngive_initial_chart(int H, int W, int[] R, int[] C)\n```\n\n- $H, W$ : 行数和列数\n- $R, C$ : 两个长度为  $HW$  的数组，代表初始的座位表\n- 这个过程只被调用一次，而且是在 `swap_seats` 的任何调用之前\n\n```\nint swap_seats(int a, int b)\n```\n\n- 该函数用来处理一次交换座位的请求\n- $a, b$ : 需要交换座位的参赛者\n- 该函数被调用  $Q$  次\n- 该函数应返回交换座位后座位表的美妙度\n\n{1}------------------------------------------------\n\n## 例子\n\n令  $H = 2, W = 3, R = [0, 1, 1, 0, 0, 1], C = [0, 0, 1, 1, 2, 2]$ , 和  $Q = 2$ 。\n\n评测程序先调用 `give_initial_chart(2, 3, [0, 1, 1, 0, 0, 1], [0, 0, 1, 1, 2, 2])`。\n\n最初，座位表如下：\n\n|   |   |   |\n|---|---|---|\n| 0 | 3 | 4 |\n| 1 | 2 | 5 |\n\n假设评测程序调用 `swap_seats(0, 5)`。在这个编号为0的请求完成后，座位表变成：\n\n|   |   |   |\n|---|---|---|\n| 5 | 3 | 4 |\n| 1 | 2 | 0 |\n\n对应参赛者集合  $\\{0\\}$ ,  $\\{0, 1, 2\\}$  和  $\\{0, 1, 2, 3, 4, 5\\}$  的三个座位集合都是长方形和美妙的。所以，该座位表的美妙度为3，`swap_seats`应该返回3。\n\n假设评测程序再次调用 `swap_seats(0, 5)`。在这个编号为1的请求完成后，座位表回到初始状态。对应参赛者集合  $\\{0\\}$ ,  $\\{0, 1\\}$ ,  $\\{0, 1, 2, 3\\}$  和  $\\{0, 1, 2, 3, 4, 5\\}$  的四个座位集合都是长方形和美妙的。所以，该表的美妙度为4，`swap_seats`应该返回4。\n\n在压缩附件包里的文件 `sample-01-in.txt` 和 `sample-01-out.txt` 对应于上述例子。此外，压缩附件包中还有一些其他的输入输出例子。\n\n## 限制条件\n\n- $1 \\leq H$\n- $1 \\leq W$\n- $HW \\leq 1\\,000\\,000$\n- $0 \\leq R_i \\leq H - 1$  ( $0 \\leq i \\leq HW - 1$ )\n- $0 \\leq C_i \\leq W - 1$  ( $0 \\leq i \\leq HW - 1$ )\n- $(R_i, C_i) \\neq (R_j, C_j)$  ( $0 \\leq i < j \\leq HW - 1$ )\n\n{2}------------------------------------------------\n\n- $1 \\leq Q \\leq 50\\,000$\n- 对于 `swap_seats` 的所有调用,  $0 \\leq a \\leq HW - 1$\n- 对于 `swap_seats` 的所有调用,  $0 \\leq b \\leq HW - 1$\n- 对于 `swap_seats` 的所有调用,  $a \\neq b$\n\n## 子任务\n\n1. (5分)  $HW \\leq 100, Q \\leq 5\\,000$\n2. (6分)  $HW \\leq 10\\,000, Q \\leq 5\\,000$\n3. (20分)  $H \\leq 1\\,000, W \\leq 1\\,000, Q \\leq 5\\,000$\n4. (6分) 对于 `swap_seats` 的所有调用,  $Q \\leq 5\\,000, |a - b| \\leq 10\\,000$\n5. (33分)  $H = 1$\n6. (30分) 无附加限制条件\n\n## 评测程序示例\n\n评测程序示例按照以下格式读入输入\n\n- 第1行:  $H\\ W\\ Q$\n- 第  $2 + i$  行 ( $0 \\leq i \\leq HW - 1$ ):  $R_i\\ C_i$\n- 第  $2 + HW + j$  行 ( $0 \\leq j \\leq Q - 1$ ):  $A_j\\ B_j$\n\n这里  $A_j$  和  $B_j$  是调用 `swap_seats` 处理请求  $j$  时的参数。\n\n评测程序示例按照以下格式打印你的答案：\n\n- 第  $1 + j$  行 ( $0 \\leq j \\leq Q - 1$ ): `swap_seats` 对于请求  $j$  的返回值",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 13
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 0.9,
+    "cost_breakdown": {
+      "final_cost_cents": 0.9
+    },
+    "runtime": 6.723931312561035,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.9
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2018/1B-seats-CHN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg"
+  ]
+}

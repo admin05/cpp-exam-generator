@@ -1,0 +1,134 @@
+{
+  "request_id": "SUQfyK44VSAIKH2QGXZ1Ag",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:59:18.666140+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "SUQfyK44VSAIKH2QGXZ1Ag",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/SUQfyK44VSAIKH2QGXZ1Ag",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 2024 年山东省信息学小学组（CSP-X）一轮试题答案\n\n## 一、单项选择题（共 15 题，每题 2 分，共计 30 分）\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| C  | D  | B  | A  | B  | A | C | B | B | C  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| B  | B  | C  | A  | D  |   |   |   |   |    |\n\n## 二、阅读程序（判断题 2 分，选择题 3 分，共计 40 分）\n\n|     |           |    |    |     |         |    |\n|-----|-----------|----|----|-----|---------|----|\n| 第一题 | 判断题(填√或×) |    |    |     |         |    |\n|     | 16        | 17 | 18 | 19  | 20      | 21 |\n|     | √         | ×  | √  | ×   | ×       | ×  |\n| 第二题 | 判断题(填√或×) |    |    |     | 单选题     |    |\n|     | 22        | 23 | 24 | 25  | 26（2 分） | 27 |\n|     | √         | √  | ×  | ×   | A       | B  |\n| 第三题 | 判断题(填√或×) |    |    | 单选题 |         |    |\n|     | 28        | 29 | 30 | 31  | 32      | 33 |\n|     | ×         | ×  | ×  | C   | C       | D  |\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n|     |    |    |    |    |     |    |    |    |    |\n|-----|----|----|----|----|-----|----|----|----|----|\n| 第一题 |    |    |    |    | 第二题 |    |    |    |    |\n| 34  | 35 | 36 | 37 | 38 | 39  | 40 | 41 | 42 | 43 |\n| D   | B  | C  | B  | B  | B   | D  | A  | C  | B  |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 7
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 7.506703615188599,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 2024 年山东省信息学小学组（CSP-X）一轮试题答案\n\n## 一、单项选择题（共 15 题，每题 2 分，共计 30 分）\n\n|    |    |    |    |    |   |   |   |   |    |\n|----|----|----|----|----|---|---|---|---|----|\n| 1  | 2  | 3  | 4  | 5  | 6 | 7 | 8 | 9 | 10 |\n| C  | D  | B  | A  | B  | A | C | B | B | C  |\n| 11 | 12 | 13 | 14 | 15 |   |   |   |   |    |\n| B  | B  | C  | A  | D  |   |   |   |   |    |\n\n## 二、阅读程序（判断题 2 分，选择题 3 分，共计 40 分）\n\n|     |           |    |    |     |         |    |\n|-----|-----------|----|----|-----|---------|----|\n| 第一题 | 判断题(填√或×) |    |    |     |         |    |\n|     | 16        | 17 | 18 | 19  | 20      | 21 |\n|     | √         | ×  | √  | ×   | ×       | ×  |\n| 第二题 | 判断题(填√或×) |    |    |     | 单选题     |    |\n|     | 22        | 23 | 24 | 25  | 26（2 分） | 27 |\n|     | √         | √  | ×  | ×   | A       | B  |\n| 第三题 | 判断题(填√或×) |    |    | 单选题 |         |    |\n|     | 28        | 29 | 30 | 31  | 32      | 33 |\n|     | ×         | ×  | ×  | C   | C       | D  |\n\n## 三、完善程序（单选题，每小题 3 分，共计 30 分）\n\n|     |    |    |    |    |     |    |    |    |    |\n|-----|----|----|----|----|-----|----|----|----|----|\n| 第一题 |    |    |    |    | 第二题 |    |    |    |    |\n| 34  | 35 | 36 | 37 | 38 | 39  | 40 | 41 | 42 | 43 |\n| D   | B  | C  | B  | B  | B   | D  | A  | C  | B  |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 7
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 7.506703615188599,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "CSP-X(山东)/2024/Round1/CSP-X2024小学组一轮试题答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

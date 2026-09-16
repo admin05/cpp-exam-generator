@@ -1,0 +1,142 @@
+{
+  "request_id": "ylVZppOFnPqYBCQsWJHdVw",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:22:36.393938+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "ylVZppOFnPqYBCQsWJHdVw",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/ylVZppOFnPqYBCQsWJHdVw",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第二试注意事项\n\n对于每道题目：\n\n- 你可以在比赛系统里下载一个附件包。\n• 附件包里面有评测程序示例、实现示例、测试样例示例和编译脚本。\n• 每道题目最多可以提交 50 次，每次只能提交一个文件。\n• 要提交的文件名在题面的页眉中给出（右上角）。\n• 禁止你的提交进行以下操作，如果违反将得到不确定的评测结果（通常是 Security Violation）：\n ◦ 从标准输入读取，写入到标准输出，或者与任何其他文件交互；\n ◦ 调用 exit() 或 System.exit()。\n• 在使用评测程序示例来评测你的程序时，你的输入数据应当符合题面所要求的格式和限制条件，否则可能会导致不确定的结果。\n• 除非明确指定了其他格式，否则在评测程序示例的输入中，每一行里连续两项之间用一个空格来隔开。\n• 在本地机器测试你的代码时，建议使用附件包中的脚本。否则，特别是对 C++ 来说，编译时一定要加上 -std=gnu++17 选项。\n• 如果无法提交到 CMS，你可以使用 ioisubmit 工具来保存你的代码，以便在竞赛结束后评测。\n ◦ 在 <源代码文件> 所在的目录下，运行 ioisubmit <题目> <源代码文件>。\n ◦ 请你的监考人拍一张 ioisubmit 输出结果的照片，并发送给竞赛组织者。如果不这样做的话，你的提交将不会被考虑。\n\n## 约定\n\n题面在给出函数签名时，会使用一般性的类型名称 void、int、int[]（数组）、int64 和 int64[]（数组）。\n\n对于所支持的每种编程语言，评测程序会采用适当的数据类型和适当的实现，如下表所示：\n\n| 语言   | void | int | int[]            | int64        | int64[]                   | 数组 a 的长度 |\n|------|------|-----|------------------|--------------|---------------------------|----------|\n| C++  | void | int | std::vector<int> | long<br>long | std::vector<long<br>long> | a.size() |\n| Java | void | int | int[]            | long         | long[]                    | a.length |\n\n{1}------------------------------------------------\n\n## 限制\n\n| 题目        | 名称   | 时间限制    | 内存限制     |\n|-----------|------|---------|----------|\n| biscuits  | 装饼干  | 1.000 秒 | 2.00 GiB |\n| mushrooms | 数蘑菇  | 2.000 秒 | 2.00 GiB |\n| stations  | 网络站点 | 1.000 秒 | 2.00 GiB |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 3
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.75,
+      "page_count": 2,
+      "total_cost": 0.6,
+      "cost_breakdown": {
+        "final_cost_cents": 0.6
+      },
+      "runtime": 7.770832538604736,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第二试注意事项\n\n对于每道题目：\n\n- 你可以在比赛系统里下载一个附件包。\n• 附件包里面有评测程序示例、实现示例、测试样例示例和编译脚本。\n• 每道题目最多可以提交 50 次，每次只能提交一个文件。\n• 要提交的文件名在题面的页眉中给出（右上角）。\n• 禁止你的提交进行以下操作，如果违反将得到不确定的评测结果（通常是 Security Violation）：\n ◦ 从标准输入读取，写入到标准输出，或者与任何其他文件交互；\n ◦ 调用 exit() 或 System.exit()。\n• 在使用评测程序示例来评测你的程序时，你的输入数据应当符合题面所要求的格式和限制条件，否则可能会导致不确定的结果。\n• 除非明确指定了其他格式，否则在评测程序示例的输入中，每一行里连续两项之间用一个空格来隔开。\n• 在本地机器测试你的代码时，建议使用附件包中的脚本。否则，特别是对 C++ 来说，编译时一定要加上 -std=gnu++17 选项。\n• 如果无法提交到 CMS，你可以使用 ioisubmit 工具来保存你的代码，以便在竞赛结束后评测。\n ◦ 在 <源代码文件> 所在的目录下，运行 ioisubmit <题目> <源代码文件>。\n ◦ 请你的监考人拍一张 ioisubmit 输出结果的照片，并发送给竞赛组织者。如果不这样做的话，你的提交将不会被考虑。\n\n## 约定\n\n题面在给出函数签名时，会使用一般性的类型名称 void、int、int[]（数组）、int64 和 int64[]（数组）。\n\n对于所支持的每种编程语言，评测程序会采用适当的数据类型和适当的实现，如下表所示：\n\n| 语言   | void | int | int[]            | int64        | int64[]                   | 数组 a 的长度 |\n|------|------|-----|------------------|--------------|---------------------------|----------|\n| C++  | void | int | std::vector<int> | long<br>long | std::vector<long<br>long> | a.size() |\n| Java | void | int | int[]            | long         | long[]                    | a.length |\n\n{1}------------------------------------------------\n\n## 限制\n\n| 题目        | 名称   | 时间限制    | 内存限制     |\n|-----------|------|---------|----------|\n| biscuits  | 装饼干  | 1.000 秒 | 2.00 GiB |\n| mushrooms | 数蘑菇  | 2.000 秒 | 2.00 GiB |\n| stations  | 网络站点 | 1.000 秒 | 2.00 GiB |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 3
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.75,
+    "page_count": 2,
+    "total_cost": 0.6,
+    "cost_breakdown": {
+      "final_cost_cents": 0.6
+    },
+    "runtime": 7.770832538604736,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.75,
+  "cost_breakdown": {
+    "final_cost_cents": 0.6
+  },
+  "page_count": 2,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2020/2-notice-CHN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

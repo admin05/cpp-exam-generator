@@ -1,0 +1,134 @@
+{
+  "request_id": "_fvwLJFoix44Rd9BUJZNfA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T04:10:25.707798+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "_fvwLJFoix44Rd9BUJZNfA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/_fvwLJFoix44Rd9BUJZNfA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n=== ↓ junior ↓ ===\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 1  | A  |  | 9  | A  |\n| 2  | C  |  | 10 | D  |\n| 3  | D  |  | 11 | D  |\n| 4  | C  |  | 12 | B  |\n| 5  | B  |  | 13 | C  |\n| 6  | B  |  | 14 | A  |\n| 7  | B  |  | 15 | B  |\n| 8  | C  |  |    |    |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 16 | √  |  | 22 | ×  |\n| 17 | ×  |  | 23 | √  |\n| 18 | ×  |  | 24 | √  |\n| 19 | ×  |  | 25 | C  |\n| 20 | ×  |  | 26 | C  |\n| 21 | B  |  | 27 | B  |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 28 | √  |  | 35 | A  |\n| 29 | √  |  | 36 | B  |\n| 30 | ×  |  | 37 | C  |\n| 31 | ×  |  | 38 | D  |\n| 32 | C  |  | 39 | A  |\n| 33 | B  |  |    |    |\n| 34 | A  |  |    |    |\n\n| 序号 | 答案 |\n|----|----|\n| 40 | A  |\n| 41 | B  |\n| 42 | C  |\n| 43 | D  |\n| 44 | A  |\n\n=== ↑ junior ↑ ===",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 6
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 4.9064106941223145,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n=== ↓ junior ↓ ===\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 1  | A  |  | 9  | A  |\n| 2  | C  |  | 10 | D  |\n| 3  | D  |  | 11 | D  |\n| 4  | C  |  | 12 | B  |\n| 5  | B  |  | 13 | C  |\n| 6  | B  |  | 14 | A  |\n| 7  | B  |  | 15 | B  |\n| 8  | C  |  |    |    |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 16 | √  |  | 22 | ×  |\n| 17 | ×  |  | 23 | √  |\n| 18 | ×  |  | 24 | √  |\n| 19 | ×  |  | 25 | C  |\n| 20 | ×  |  | 26 | C  |\n| 21 | B  |  | 27 | B  |\n\n| 序号 | 答案 |  | 序号 | 答案 |\n|----|----|--|----|----|\n| 28 | √  |  | 35 | A  |\n| 29 | √  |  | 36 | B  |\n| 30 | ×  |  | 37 | C  |\n| 31 | ×  |  | 38 | D  |\n| 32 | C  |  | 39 | A  |\n| 33 | B  |  |    |    |\n| 34 | A  |  |    |    |\n\n| 序号 | 答案 |\n|----|----|\n| 40 | A  |\n| 41 | B  |\n| 42 | C  |\n| 43 | D  |\n| 44 | A  |\n\n=== ↑ junior ↑ ===",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 6
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 4.9064106941223145,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "香港 hkoi-cspjs-past-problems/第一輪/2022/入门级-CSP-J1/CSP-J-S 2022_入门级-CSP-J1_參考答案.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

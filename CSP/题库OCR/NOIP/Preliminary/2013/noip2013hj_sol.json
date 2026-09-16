@@ -1,0 +1,134 @@
+{
+  "request_id": "CB9dbJvTv-06AZDYGifbrA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:24:29.895532+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "CB9dbJvTv-06AZDYGifbrA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/CB9dbJvTv-06AZDYGifbrA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第十九届全国青少年信息学奥林匹克联赛初赛 普及组参考答案\n\n一、单项选择题（共 20 题，每题 1.5 分，共计 30 分）\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| A  | A  | B  | C  | D  | B  | B  | C  | A  | C  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| A  | A  | D  | A  | C  | C  | A  | D  | A  | B  |\n\n二、问题求解（共 2 题，每题 5 分，共计 10 分；每题全部答对得 5 分，没有部分分）\n\n- 14\n- $s_1 = 0, s_2 = 1, s_3 = 1, s_4 = 1$\n\n三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- $3+5=8$\n- 6\n- 7\n- 4\n\n四、完善程序（共计 28 分，以下各程序填空可能还有一些等价的写法，由各省赛区组织本省专家审定及上机验证，可以不上报 CCF NOI 科学委员会复核）\n\n|    |     | Pascal 语言              | C++语言 | C 语言 | 分值 |\n|----|-----|------------------------|-------|------|----|\n| 1. | (1) | $n - p + i$            |       |      | 3  |\n|    | (2) | $a[i]$                 |       |      | 3  |\n|    | (3) | $n$                    |       |      | 2  |\n|    | (4) | $i - p + 1$            |       |      | 3  |\n|    | (5) | $a[i - p]$             |       |      | 3  |\n| 2. | (1) | $cur < upper\\_bound$   |       |      | 3  |\n|    | (2) | $a[root].right\\_child$ |       |      | 3  |\n|    | (3) | $cur$                  |       |      | 3  |\n|    | (4) | $upper\\_bound$         |       |      | 3  |\n|    | (5) | 1                      |       |      | 2  |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 9
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 9.559500455856323,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第十九届全国青少年信息学奥林匹克联赛初赛 普及组参考答案\n\n一、单项选择题（共 20 题，每题 1.5 分，共计 30 分）\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| A  | A  | B  | C  | D  | B  | B  | C  | A  | C  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| A  | A  | D  | A  | C  | C  | A  | D  | A  | B  |\n\n二、问题求解（共 2 题，每题 5 分，共计 10 分；每题全部答对得 5 分，没有部分分）\n\n- 14\n- $s_1 = 0, s_2 = 1, s_3 = 1, s_4 = 1$\n\n三、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n- $3+5=8$\n- 6\n- 7\n- 4\n\n四、完善程序（共计 28 分，以下各程序填空可能还有一些等价的写法，由各省赛区组织本省专家审定及上机验证，可以不上报 CCF NOI 科学委员会复核）\n\n|    |     | Pascal 语言              | C++语言 | C 语言 | 分值 |\n|----|-----|------------------------|-------|------|----|\n| 1. | (1) | $n - p + i$            |       |      | 3  |\n|    | (2) | $a[i]$                 |       |      | 3  |\n|    | (3) | $n$                    |       |      | 2  |\n|    | (4) | $i - p + 1$            |       |      | 3  |\n|    | (5) | $a[i - p]$             |       |      | 3  |\n| 2. | (1) | $cur < upper\\_bound$   |       |      | 3  |\n|    | (2) | $a[root].right\\_child$ |       |      | 3  |\n|    | (3) | $cur$                  |       |      | 3  |\n|    | (4) | $upper\\_bound$         |       |      | 3  |\n|    | (5) | 1                      |       |      | 2  |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 9
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 9.559500455856323,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2013/noip2013hj_sol.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,134 @@
+{
+  "request_id": "761A_In0bPIVRvDDfDDs3g",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:10:01.052368+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "761A_In0bPIVRvDDfDDs3g",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/761A_In0bPIVRvDDfDDs3g",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 普及组（C 语言）参考答案与评分标准\n\n## 一、单项选择题：（每题 1.5 分）\n\n1. D    2. B    3. B    4. C    5. B    6. B    7. C    8. A    9. D    10. D  \n11. C   12. D   13. C   14. B   15. C   16. B   17. B   18. A   19. C   20. B\n\n## 二、问题求解：（每题 5 分）\n\n1. 4 次 (1 分),  \n    第一步：分成 3 组：27，27，26，将前 2 组放到天平上 (4 分)。\n2. 有获胜策略(1 分)，，第 1 次在第 5 堆中取 32 颗石子(4 分)，。\n\n## 三、阅读程序写结果\n\n1. 10，10   （对 1 个数给 4 分，无逗号扣 1 分）\n2. 6   28   496   8128   33550336  \n（前 2 个对 1 个数给 1 分，后 3 个对 1 个数给 2 分）\n3. 5\n4. 6   2   5   4   3   7   9   9   7   3   4   5   2   6（数字之间无空格扣 2 分）\n\n## 四、完善程序 (前 4 空 (①--④)，每空 2.5 分，后 6 空 (⑤--⑩)，每空 3 分)\n\n1. ①  $k == n$    （或  $n == k$ ）  \n    ②  $count \\% 5 == 0$   \n    ③  $perm(k+1)$   \n    ④  $a[k] = a[j]; a[j] = t$    （分号可以用逗号代替）  \n    ⑤  $perm(1)$\n2. ⑥  $break$   \n    ⑦  $t \\% 50 == 0$   \n    ⑧  $a - p * b$    （或  $a - b * p$ ）  \n    ⑨  $c * 10 + 1$    （或  $10 * c + 1$ ）  \n    ⑩  $--n$    （只写  $n$  给 1 分）",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 9
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 9.981125116348267,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 普及组（C 语言）参考答案与评分标准\n\n## 一、单项选择题：（每题 1.5 分）\n\n1. D    2. B    3. B    4. C    5. B    6. B    7. C    8. A    9. D    10. D  \n11. C   12. D   13. C   14. B   15. C   16. B   17. B   18. A   19. C   20. B\n\n## 二、问题求解：（每题 5 分）\n\n1. 4 次 (1 分),  \n    第一步：分成 3 组：27，27，26，将前 2 组放到天平上 (4 分)。\n2. 有获胜策略(1 分)，，第 1 次在第 5 堆中取 32 颗石子(4 分)，。\n\n## 三、阅读程序写结果\n\n1. 10，10   （对 1 个数给 4 分，无逗号扣 1 分）\n2. 6   28   496   8128   33550336  \n（前 2 个对 1 个数给 1 分，后 3 个对 1 个数给 2 分）\n3. 5\n4. 6   2   5   4   3   7   9   9   7   3   4   5   2   6（数字之间无空格扣 2 分）\n\n## 四、完善程序 (前 4 空 (①--④)，每空 2.5 分，后 6 空 (⑤--⑩)，每空 3 分)\n\n1. ①  $k == n$    （或  $n == k$ ）  \n    ②  $count \\% 5 == 0$   \n    ③  $perm(k+1)$   \n    ④  $a[k] = a[j]; a[j] = t$    （分号可以用逗号代替）  \n    ⑤  $perm(1)$\n2. ⑥  $break$   \n    ⑦  $t \\% 50 == 0$   \n    ⑧  $a - p * b$    （或  $a - b * p$ ）  \n    ⑨  $c * 10 + 1$    （或  $10 * c + 1$ ）  \n    ⑩  $--n$    （只写  $n$  给 1 分）",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 9
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 9.981125116348267,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2006_C_CPP_Pascal/NOIP2006PreliminaryJunior(C)Answer.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

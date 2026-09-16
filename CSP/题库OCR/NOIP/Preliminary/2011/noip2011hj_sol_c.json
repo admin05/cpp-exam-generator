@@ -1,0 +1,188 @@
+{
+  "request_id": "V52mc6f_WTQa4r_d6oqKww",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:20:48.110932+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "V52mc6f_WTQa4r_d6oqKww",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/V52mc6f_WTQa4r_d6oqKww",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# CCF NOIP2011 普及组 (C 语言) 参考答案与评分标准\n\n## 一、单项选择题 (共 20 题, 每题 1.5 分, 共计 30 分)\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| B  | B  | C  | C  | B  | D  | C  | B  | C  | C  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| B  | A  | C  | C  | C  | D  | A  | A  | A  | C  |\n\n## 二、问题求解 (共 2 题, 每题 5 分, 共计 10 分)\n\n1. 128\n\n2. 3\n\n## 三、阅读程序写结果 (共 4 题, 每题 8 分, 共计 32 分)\n\n1. 165\n\n2. 22366472011\n\n3. 3\n\n4. 20\n\n## 四、完善程序 (前 11 空, 每空 2 分, 后 2 空, 每空 3 分, 共计 28 分)\n\n(说明: 以下各程序填空可能还有一些等价的写法, 各省可请本省专家审定和上机验证, 不一定上报科学委员会审查)\n\n1. ① `scanf(\"%d\", &b[i][j])` (或 `scanf(\"%d\", b[i] + j)`)\n\n② `m1 - m2 + 1`\n\n③ `good = 1`\n\n④ `m2`\n\n⑤ `haveAns = 1`\n\n2. ① `ans.num[i + j - 1]`\n\n② `ans.num[i] %= 10` (或 `ans.num[i] = ans.num[i] % 10`)\n\n③ `a.num[i] + b.num[i]`\n\n④ `ans.num[i] % 2` (或 `ans.num[i] & 1`)\n\n⑤ `ans.len++` (或 `++ans.len` 或 `ans.len += 1` 或 `ans.len = ans.len + 1`)\n\n⑥ `a.len < b.len`\n\n⑦ `'0'` (或 48)\n\n⑧ `times(middle, middle), target`",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 26
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 5.0,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 22.762593746185303,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# CCF NOIP2011 普及组 (C 语言) 参考答案与评分标准\n\n## 一、单项选择题 (共 20 题, 每题 1.5 分, 共计 30 分)\n\n|    |    |    |    |    |    |    |    |    |    |\n|----|----|----|----|----|----|----|----|----|----|\n| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n| B  | B  | C  | C  | B  | D  | C  | B  | C  | C  |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |\n| B  | A  | C  | C  | C  | D  | A  | A  | A  | C  |\n\n## 二、问题求解 (共 2 题, 每题 5 分, 共计 10 分)\n\n1. 128\n\n2. 3\n\n## 三、阅读程序写结果 (共 4 题, 每题 8 分, 共计 32 分)\n\n1. 165\n\n2. 22366472011\n\n3. 3\n\n4. 20\n\n## 四、完善程序 (前 11 空, 每空 2 分, 后 2 空, 每空 3 分, 共计 28 分)\n\n(说明: 以下各程序填空可能还有一些等价的写法, 各省可请本省专家审定和上机验证, 不一定上报科学委员会审查)\n\n1. ① `scanf(\"%d\", &b[i][j])` (或 `scanf(\"%d\", b[i] + j)`)\n\n② `m1 - m2 + 1`\n\n③ `good = 1`\n\n④ `m2`\n\n⑤ `haveAns = 1`\n\n2. ① `ans.num[i + j - 1]`\n\n② `ans.num[i] %= 10` (或 `ans.num[i] = ans.num[i] % 10`)\n\n③ `a.num[i] + b.num[i]`\n\n④ `ans.num[i] % 2` (或 `ans.num[i] & 1`)\n\n⑤ `ans.len++` (或 `++ans.len` 或 `ans.len += 1` 或 `ans.len = ans.len + 1`)\n\n⑥ `a.len < b.len`\n\n⑦ `'0'` (或 48)\n\n⑧ `times(middle, middle), target`",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 26
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 5.0,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 22.762593746185303,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 5.0,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2011/noip2011hj_sol_c.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

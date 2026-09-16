@@ -1,0 +1,140 @@
+{
+  "request_id": "TBgl3TkYPe7jp1C2zJhzzw",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:11:23.822113+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "TBgl3TkYPe7jp1C2zJhzzw",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/TBgl3TkYPe7jp1C2zJhzzw",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'](935eed7aa61f7777f62cfc032e11bee9_img.jpg)\n\nIOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'\n\n# TASK OVERVIEW SHEET / DAY-0\n\n| TASK                                     |           | NUMBER                                 | STRING                                 | RED                         |\n|------------------------------------------|-----------|----------------------------------------|----------------------------------------|-----------------------------|\n| Task material directory                  | Linux     | ~/number                               | ~/string                               | ~/red                       |\n|                                          | WinXP     | C:\\IOI\\number                          | C:\\IOI\\string                          | C:\\IOI\\red                  |\n| Time limit per test                      |           | 1 secs                                 | 1 secs                                 | -                           |\n| Memory limit                             |           | 32 MB                                  | 32 MB                                  | -                           |\n| Compiler options                         | C and C++ | -O2 -static -lm                        | -O2 -static -lm                        | -                           |\n|                                          | Pascal    | -So -O2 -XS                            | -So -O2 -XS                            | -                           |\n| Number of tests                          |           | 5                                      | 5                                      | 4                           |\n| Maximum points per test                  |           | 20                                     | 20                                     | 25                          |\n| Maximum total points                     |           | 100                                    | 100                                    | 100                         |\n| Program header comment when using C      |           | /*<br>TASK: number<br>LANG: C<br>*/    | /*<br>TASK: string<br>LANG: C<br>*/    | -                           |\n| Program header comment when using C++    |           | /*<br>TASK: number<br>LANG: C++<br>*/  | /*<br>TASK: string<br>LANG: C++<br>*/  | -                           |\n| Program header comment when using Pascal |           | {<br>TASK: number<br>LANG: PASCAL<br>} | {<br>TASK: string<br>LANG: PASCAL<br>} | -                           |\n| Submission is accepted, if;              |           | Example 1 is solved.                   | Example 1 is solved.                   | The file format is correct. |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "935eed7aa61f7777f62cfc032e11bee9_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 7
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 7.066146612167358,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'](935eed7aa61f7777f62cfc032e11bee9_img.jpg)\n\nIOI 2002 logo with text 'International Olympiad in Informatics YONG-IN KOREA'\n\n# TASK OVERVIEW SHEET / DAY-0\n\n| TASK                                     |           | NUMBER                                 | STRING                                 | RED                         |\n|------------------------------------------|-----------|----------------------------------------|----------------------------------------|-----------------------------|\n| Task material directory                  | Linux     | ~/number                               | ~/string                               | ~/red                       |\n|                                          | WinXP     | C:\\IOI\\number                          | C:\\IOI\\string                          | C:\\IOI\\red                  |\n| Time limit per test                      |           | 1 secs                                 | 1 secs                                 | -                           |\n| Memory limit                             |           | 32 MB                                  | 32 MB                                  | -                           |\n| Compiler options                         | C and C++ | -O2 -static -lm                        | -O2 -static -lm                        | -                           |\n|                                          | Pascal    | -So -O2 -XS                            | -So -O2 -XS                            | -                           |\n| Number of tests                          |           | 5                                      | 5                                      | 4                           |\n| Maximum points per test                  |           | 20                                     | 20                                     | 25                          |\n| Maximum total points                     |           | 100                                    | 100                                    | 100                         |\n| Program header comment when using C      |           | /*<br>TASK: number<br>LANG: C<br>*/    | /*<br>TASK: string<br>LANG: C<br>*/    | -                           |\n| Program header comment when using C++    |           | /*<br>TASK: number<br>LANG: C++<br>*/  | /*<br>TASK: string<br>LANG: C++<br>*/  | -                           |\n| Program header comment when using Pascal |           | {<br>TASK: number<br>LANG: PASCAL<br>} | {<br>TASK: string<br>LANG: PASCAL<br>} | -                           |\n| Submission is accepted, if;              |           | Example 1 is solved.                   | Example 1 is solved.                   | The file format is correct. |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "935eed7aa61f7777f62cfc032e11bee9_img.jpg": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACFAKsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigApjTRKcNIgPoWFcz4j1+SCQ2dqdrD77/wBK5N7qeRtzzOzepNOxDmkeqAhhkEEeopa860zXbqwnUtI0kXdGOePavQLa4S6t0mj+64yKGilK5LRRQSACScAd6QwqOa4htoy88qRqO7sAK4bxb8SrPRN1rYbbm76Eg5VP8a8f1fxPq2tyMby7kZG/5ZgkL+VcdbGQhpHVn0GX8PYjFpTn7sfPf7j3bUfH3h7TG2y3oZvRAW/lWW/xY8PKwCvIw9dp/wAK8ForjeNqvY+hhwrg0rSk2z6Dt/id4auJRH9qZCehKH/Cums9VsL9Q1rdwyZ7K4z+VfK1WLO/utPmEtpcSQv6o2KqGOmviVzHEcJ0ZL9zNp+ep9W0V454W+K88MiWutjzIuAJlHK/X1r120u4L23Se3kWSNxkFTmvQpV4VV7p8njstxGCny1Vp0fRk1FFFbHAFMM0SnBlQH0LCuT1/wARyCZ7W0baq8M465rmWuZnbc0rlvUmnYhzSPVQQRkHIorz/SvENzZTKsrtJD0IJziu9ilWaJZEOVYZBoaKTuPpshxGxHoadQRkYNIZ5bfOz3szMSSWPJqvW54j0uS0vnnRD5Mhzn0NYdUYNahXeeE3d9KIY5Cthea4i3t5bqZYolLOx4Ar0jSrIWFhHBj5gPm+tDKgi7XmvxH8ZT2cTaVpeTM2RM6j7o9K73VZ3t7CQxf60jC/WvL5vDE9zK006s0rnLH1NefjKrS5Inu5RDDqr7bEapbLzPLWguHYs0chY8kkcmk+zT/88n/KvUP+ESb/AJ5tR/wiTf8APNq8zlPtP7ew/wDSPL/s0/8Azyf8qPs0/wDzyf8AKvUP+ESb/nm1H/CJN/zzajlD+3sP5/ceX/Zp/wDnk/5UfZp/+eT/AJV6h/wiTf8APNqP+ESb/nm1HKH9vYfz+48v+zT/APPJ/wAq7HwP4tvvDd+sNz5jafIw8wNk7PcVv/8ACJN/zzakPhEkYMZqo3i+ZGGJzXB4mm6VVXT8j1y2uI7q3jnhYNHIMqw7iluCRbSkdQh/lXN+EPPs7VrC4ztT/VZ9PSunZQ6lT0Iwa9ujU9pFSPgK9NU6jinddDymZi0zsTkljmmVq65pcun3rHafKc5Vu30rKrc4mrMK7TSby7TSrdUAKheM/WuStLSW9uFhhUsxP5V6XZ2iWlnFAoBCLjkUmXBFiiikb7p+lSaFO4vLBt0M8sZxwVasmTTvD8jlg0a57AmuV1BHk1a4VAWO88CqsiSRNtcFT6GqsZufkeg2Z0axXEDxKfXnNacUqTRh42DKehFeWRxSynEaM30Fd74ayuix7gQRnrSaHGV9CHWfEFtYXIt2EbsBkhj0rN/4Su1/55Q/ma8n8aapqE3inVZIbG4kghlwXCkgcDpXJ/8ACTPnHknPpXdDA86va/3A6ttLn0J/wldr/wA8ofzNH/CV2v8Azyh/M14PJqOpRWouZNOnWE9HKnFVF8SyOwVYGZjwAOSaay9S2X5B7a3U+g/+Ertf+eUP5mj/AISu1/55Q/ma8Gu9T1CwVGurCaJXGVLKQDUEGv3F1MsUFq8kjdFXk0f2erXtp8g9t5n0B/wldr/zyh/M0f8ACV2v/PKH8zXgd3rF7YSeXdWUkLejjFFnrF7qEvlWlnJM+M4QZo/s9WvbT5B7bpc98/4Su1/55Q/maP8AhK7X/nlD+Zr5+m8QT28rRTWzxyKcFWGCKsWup6hexvJbWE0qJ94quQKHgEldr8g9t5nvkPiy185P3cQycZBrrFdWQODlSM5r5OHiaSOUZhKsp6HtX0t4W1D+0/CNjdsfmktwTn1xWOIwzopO241U5upenvNNmUxzyxsO4NZTaboDPu3xj2ya5C8J+2zdfvmmvBNGm90YL6kVz2Jc/I9AtZNHshi3aJPXGa045EljDxsGVuhHevKVDMwAyT6CvStHQx6RbKRghOlJoqMrl6kb7p+lLSN90/SkUcPPdxadcXkigG6dztOOgqrdXcep2SlwBdrwTjqKp6oc6nc/75qqCQcg4Na3XyORxffU1hqQ0+0SC0P7zOXb+ldBp2uwrafvEYbhwApwTXEV33huGOTRoS8asRnBIzjmlddUUoyfwvU8m8T/ABKn03xg1lawqmnxvtuoiuN5PU/kRWXceGdEuvEy6xb3cK6Mx88pvAII524/LiqPxf0ltO8azT7cJdjzQQOPT+lcGJZBGYw7bCclc8V71CipU4zpu11qZTunZs9Pi+JJvvEc2nXix/2BMDbrDt4QdAw9Kh0fQ9L8Laxda3qM0M9nbktaIpB3k8rx2xXmdSPcTSIEeV2QdATxWrwqStB2T3Fdnpun+Mh4zgv9F154gJgWtJiMeWew/Kq+lLaeANKu9Qnkil1eb93ahWDBB68dO/NebglSCCQR3FOklklIMjs5HGWOaPqqTai7RfQG2z0tdVi+IHhN7PUJ4xrdod0U0hxvXjjJ+hqMaxF4A8NJa6c8f9u3DB5Zl52r/dyPqa83R3jYMjFWHcHFEkjytukdmb1JzR9VXw393e39dA5ne9z0bVYbbx9pdtqsMkMGrJ+7uUYgbx0Dfp+tT6j4zi8I/YdH0BlMdvg3br0lbuM9+teZxzSRHMcjIT/dOKYTk5PWhYVN2k7xWyC7PStU0LS/EGs2ms2MsEFhMA9whcAqe/Fe56PFZvoED2C7LcxZjGMYGK+T9MSe5v7e0hLHzZVGwHg819eWNr9i0iK2wB5UW3A+leZmEXT5Y3v/AJGtKHNfmOH8uCLU3mlO6JSWI9T6VYj1oXLywXSj7O4+UY+76Vk3hP2uYZON54qCuBtdBKL1uzUspIdPkknf5nH+qH9a7vS5Gm0yCRzlmXJrzEkkjJJr0vRv+QPa/wC5Uya6GtJP7W5epG+6fpS0jfdP0qDY8x1P/kJ3P/XQ1Uq3qf8AyE7n/roaqVZg9wr0Hwx/yBYvx/nXn1eg+GP+QLF+P86TKhucX8ZvDkureHor61j3S2jbnwOSuMY/WvCtP0pbu1a4kaUKGwAiZzX19PClxBJDIoZHUqwPoa+bviN4TvvCt6sVqH/sqVswlex9M/lXdhq1WVP2FOXK77+XUtKnGfPUjddjl5dPs4yFmE8G4/KxXPH50h0WOBDLc3SrG2THs+ZmH0pbovHaW9mSXcfOSeevariWyG/sbXdvC8uD74OK4pY/E0rpVL7/AHLqvU+ihleFqQhUlDl62uVDYWQXc63CRkcSbM/pmov7EkkkLW8qPbZ/1hOMD39DVmwne81eeGQ/upMqV7YFUfOkjV4lchCeQK6JYnGYefI53dk9dd/1/A58NgcJjoN048tmW10/TyzRwtPcMp5ZU4/nSR6NBdzCO2uCH3HekgwVHelvpWtNOsliAUtiQkdSf8ip7y5ltb2C9jCh5IVJ+pHNYvE42EI1VP4r2vboOGEwVetPDwhZx63I5NKs7cHK3LhTy5TAx+dUrixgaF5rORmCDLqwwQPWtW4R4dQkvGyIREpAJ4ZyAcfzpfD2mXWrXbw2se6Sf92q9snnn2qqWMxEJRl7Tmvb8ehLwWGqYapPk5XG6TvvY3vhB4Zk1jxOmoOv+jWXzEnoT0x+tfR8n+qf/dNYXhDwzb+FtBhsYgDJjMr45Zq3ZP8AVP8A7pqsXX9tVcuh4sI8sbHl15/x+Tf75qCp7z/j8m/3zUFYmQd69M0b/kD2v+5XmfevTNG/5A9r/uUnsaQL1MlYJE7E4ABNPqhqtncX1qYYJ1iDfeJHUVJoed3somvZpV6MxIqCus/4Qtv+fpfyNH/CFt/z9L+RqjHlZydd54TnWTSvLBG6M4IrP/4Qtv8An6X8jV3S/D9zpl0JI7tCh+8uDzQyoppnQ1wnxQ16y0rw60M0Uc88pxGjdj613Rzj3rz3xL8Mj4n1Rr271FgTwqL0UVjUctkduE9l7VOs9EeJadaPIj6vNEZYkkAIUjOSetSJYyWuoG+eQJArhsnuDzivVo/gvFChSPVZVU9QD/8AWrRtfhJpqadJa3U7zFmBD55H6VzzjN7L/hj2pZjSU2+a6elrHiNva/2dqFxdud0IUtGwI+cntWcLWeWJ51iJjB5Neqah8G721cvYutyB0V+hrnZfh746W7Ux6YAqcIqyKFx+dehCNXEy55SSdra6bHLTx2HwMXGgnK7OYuLd9StLMQkMYwEcZwVHrS3afa7+K2iYskarHu7ccE13Nj8J9cvipvbNLM8Z2MMfoa66y+EEVtYtF9sUStkF1BzisKsqqgqdr8t7fM0o4nCUqsq8G7y/A8fvnk1O/g0+2IYIBGD6npzXu/hXT9D8HaJCbi4t/tTLl3Byc+grn1+CVsj7l1KQN6j/APVVqz+D1vb3sE8uoySrG4bYx4Nc6jKKSgth4rE4etBQU7JeW56TZ3S3lqlwilUcZXPpTrmRYraV2IACnr9KfGgijVFGAowKztY0+61GAQw3CxRk/NkHJrqjeyueDLyPPJ3Ek8jjozE1HXWf8IW3/P0v5Gj/AIQtv+fpfyNWY8jOTrttK1yGHTLeN2UMq4NVf+ELb/n6X8jR/wAIZJ2u1/I0aFJNHXVyvjPWrnRm0p7dwqS3DLKMdVCk11VYXiXw4PEK2atOYhbyM/AzuypH9aS31Lexy198Tklt0bTrd1cSR7vNUjKMwGRn8avSfE7S0S4It7hzFKsQVUJLEnHHFV5PhojpGv29sJFFGPk/uNn171bt/AnkRLF9pTCXguVcRDcfmztJq/cFqLYfEfT9Qumt47aZJNjMu8FckdRyKytS8ffbZDDCJLeye2Z5JUzvRg+Miprz4ZvOwli1R4pVeV1ZUx99t2OtNj+GciWphOo53QGFj5fXLbs9afuINTQf4iaVZwPu82VImEYkAJ3tjOP1p6/EGwm0w3awSqPN8l1YEFCcAHp71Ql+GUUokiN4RB5omjULja/APf0FRXfwxklv3uItVdUkl8x4ivynnPTNFodw1JbbxJd2Xg6/vw73E5vpIIS7ZxlsL+ArH8QatrugQJaTai0n2+2M0bLkNG+BwDnpk12Fr4Njj8NXOkTTl/OleUSbfuMTkH8KzbrwDcapEx1LUjLPHD5EDBMBFxjOM9eBRGUb6hqTRfELTodIE0kczSRBUkXac5x9Kij+KGlvDK/2edWRN6qykF+cccUieDYtRbUlErQiR0Aby+oCAdPwrE8U+AWsrKG4s7iWWSMLEFCZ43df1ppU2GprWfjSDUNV+2Qm5DJAS9m2QqlQScnGM1R1j4hw6ra2cGlefHI88RmdcjYCR8ue+elWZfhi7wl49WkiupDmV1XhievfpUVl8LZLN02an+7MqSSr5Q+bacjHPFH7vcNTS1Xxfa6FrhW4luJW8pB5CgkEkA5qXVfFxuPBjaxppMbA4w46c1JqvgWLU9aTUjdsrq0ZC7em0Y9aG8DqfDEuji8I3uX37enPpmpfJpYNTJ1b4kW32C5treOZLpVVVk2nBYkZ5x6E1bsfHWnabYRw3LXD+WGjM0pLFnUZIziobn4ZrcJtOoHBkDn937D39qdc/DaO7MsMt4TbeY00a7eVdhg9+egp+4Go1/irpyxBhY3RZlDBdpHXp271NP8AEm0FnFNDayZnR/L3dnU424x60kvw7EjIRfFQqwLjZn/V/j3qlB8L5ItQWd9VZ4hKZBGY+Fyc8c017O4ajtL8bo8i395JMJZImC2ozgndjgeta8vxD0u2laG5SWOZeGQqTg/lWafhrlo5xfkTwZMXy8A5zk81sy+GJriQyzvavK33mNupJNJ8lw1Oorm/G1tqUvh+WXSrhobmEFxgZ3e1dJTJVDQupGQVIIrCceaNjWnPkmpI8a0f4gahq3h230mGVv7aeYIzY52AjJ/LNXYtb1jxV4mPh2xvGt7S0G2e4UZZ2Xr/ACqh4I09F+KesKYNqoz+XxwAc9KXRnbwR8Rr99VjaO0u2ZlnI45Jx/OuS13d7f8ADHu1IUoylGnH3rXXq/8AIu6/ea38PNXs5/7RkvNLlOJFlAyP881W8aeNNX0nxNZXVnKxsTGJXjxwR7074galH421Cw0XRAbkFg0kqDhf85rVGiQXnjFtLvIvNhFiIzuHQ8Un7rSjsRBwjGM6sfes7ryJ9f8AF7XukaHf6TcbRPchJQOe3Q1U1zxNq+v+Mv8AhG9EuPs8cRImmwCeOv8AKuGutF1Dwx4tt9KmDGxa53xNzj0ro75LjwV8S5dZurd30+5Y4kQZAzn/ABpNyu/kNUKcbclno3E7/wAPeH9V0fUGe71eS9gZcYdQCD+FX5vFugwStFLqlssittZS/INeYQ+IJNY+K8MthcyyaeyqMDO3NdXffCfSL/Upb17q4V5H3lRjGa1i5rSC/r8DjrUYRmvrErNrojG8XeIdRs/H2l2lnclLO4G4hRwwrFsPiBqOleNJ4tTkMmmvJ5Y3AYWp/Gls8XxI0SFA7xwoFBx0Aq1pPhaPxLpfiCCaPE63JMDkdPlWs7vm8/8AgnelRjRi5rRr9dzqW1eaf4i2UMFzusZrbeFHQ8NzUvxN1G60zwjLcWcpilEigMPrXnfw7TUrXx7Dp+oq4e1jaMbvQA13fxbBbwRMACT5i9PrVwvyyv3OOpRjTxNOG60+Zzdl4o1XWdK0zQtNmLahcAvcT9fLXP8A9epb7XNVv/Elr4Q0m8aNYsC5usZb3/nXFQ2l/wCFm0jxLaRyPEw/ege2OPxroILqPRPH8XiSVGbTb5AfNUcRnjOfxBrKFtNTtdGCblFJ6O3+L+tjX8TQ674DFrqdpqkt5bFws8cw7frVLWPFGoap4r02Cxv3trW7hVztAO0nNXPiFr8Him2tNE0Mm7lmcFyg4Va5TXfDc1t4m0vR1c+YtqE3jPBwacuVaR21/IjDxUoxdVWlZ9Oh1HhvxPrP9sa5pUl39qgtY5Sk5AG0gHH8qpeErvV/EMdxPd+JTa+XNtEe1fmGT/hUfg7Uf7Fj1rw3qEey52SeXMy8vwe9UvAcnhmKG5j1w7boTny8lh3PpUy7IucFFTcY9tknfzPQ/H/iK48P+GUWyk3XsoCowGT06/pWVoHxOtW0K0N+xN1s/eHHfJqncQX3jTxTM2mTrHaaegijZxwcgH0ry/WfDuo6ZrF1Z4LeU+MrnB71fM5Pe3mZ4fC0Zw9lU+Lf7z6oo60UV3HgkCWdvFKZUhRZD1YDmkubG1vV23MCSj/aFFFLlVrWHzO97jbXTbKyz9mto4s/3RUwgiExlEa+YeC2OaKKOVdgcm+oy4sra6KmeFJCpypYdDTpreG4TZNGrr6MM0UUcq7BzPuQW2lWFm++3tYo29VFXKKKEktgbb3IZLS3llEjwozjoxHNOigigB8qNUycnA60UUcqvewczta4z7FbG6Fz5CecBjfjmnXFtBdxeXPEsiddrDiiijlXYOZ73GNY2rW32cwIYR/BjimHS7Frb7ObWMw/3COKKKXLHsPml3EtdKsLJy9taxxMepUVJJYWstwLh4EaYdHI5FFFHLHawc0r3uMn0yyuZPMmto3f+8RzUX9haXnP2GH/AL5ooo5I9hqpNbMs21lbWYYW8KRhjk7R1psmn2ksheS3jZj1JHWiijkja1hc0r3uf//Z"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 7
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 7.066146612167358,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2002/day0/day0material/Overview0.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "935eed7aa61f7777f62cfc032e11bee9_img.jpg"
+  ]
+}

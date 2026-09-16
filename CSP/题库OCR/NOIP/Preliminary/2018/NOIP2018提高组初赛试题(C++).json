@@ -1,0 +1,252 @@
+{
+  "request_id": "_PTNZnq72ofm3k5lRYfE9Q",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T03:46:19.098269+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "_PTNZnq72ofm3k5lRYfE9Q",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/_PTNZnq72ofm3k5lRYfE9Q",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十四届全国青少年信息学奥林匹克联赛初赛\n\n## 提高组 C++语言试题\n\n竞赛时间：2018 年 10 月 13 日 14:30~16:30\n\n## 选手注意：\n\n- 试题纸共有 10 页，答题纸共有 2 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n## 一、单项选择题（共 10 题，每题 2 分，共计 20 分；每题有且仅有一个正确选项）\n\n1. 下列四个不同进制的数中，与其它三项数值上不相等的是（ ）。  \nA.  $(269)_{16}$   \nB.  $(617)_{10}$   \nC.  $(1151)_8$   \nD.  $(1001101011)_2$\n2. 下列属于解释执行的程序设计语言是（ ）。  \nA. C  \nB. C++  \nC. Pascal  \nD. Python\n3. 中国计算机学会于（ ）年创办全国青少年计算机程序设计竞赛。  \nA. 1983  \nB. 1984  \nC. 1985  \nD. 1986\n4. 设根节点深度为 0，一棵深度为  $h$  的满  $k$  ( $k>1$ ) 叉树，即除最后一层无任何子节点外，每一层上的所有结点都有  $k$  个子结点的树，共有（ ）个结点。  \nA.  $(k^{h+1} - 1) / (k - 1)$   \nB.  $k^{h-1}$   \nC.  $k^h$   \nD.  $(k^{h-1}) / (k - 1)$\n5. 设某算法的时间复杂度函数的递推方程是  $T(n) = T(n - 1) + n$  ( $n$  为正整数) 及  $T(0) = 1$ ，则该算法的时间复杂度为（ ）。  \nA.  $O(\\log n)$       B.  $O(n \\log n)$       C.  $O(n)$       D.  $O(n^2)$\n\n{1}------------------------------------------------\n\n- 6. 表达式  $a * d - b * c$  的前缀形式是（ ）。  \nA.  $a d * b c * -$   \nB.  $- * a d * b c$   \nC.  $a * d - b * c$   \nD.  $- * * a d b c$\n- 7. 在一条长度为 1 的线段上随机取两个点，则以这两个点为端点的线段的期望长度是（ ）。  \nA.  $1/2$   \nB.  $1/3$   \nC.  $2/3$   \nD.  $3/5$\n- 8. 关于 Catalan 数  $C_n = (2n)! / (n+1)! / n!$ ，下列说法中错误的是（ ）。  \nA.  $C_n$  表示有  $n+1$  个结点的不同形态的二叉树的个数。  \nB.  $C_n$  表示含  $n$  对括号的合法括号序列的个数。  \nC.  $C_n$  表示长度为  $n$  的入栈序列对应的合法出栈序列个数。  \nD.  $C_n$  表示通过连接顶点而将  $n+2$  边的凸多边形分成三角形的方法个数。\n- 9. 假设一台抽奖机中有红、蓝两色的球，任意时刻按下抽奖按钮，都会等概率获得红球或蓝球之一。有足够多的人每人都用这台抽奖机抽奖，假如他们的策略均为：抽中蓝球则继续抽球，抽中红球则停止。最后每个人都把自己获得的所有球放到一个大箱子里，最终大箱子里的红球与蓝球的比例接近于（ ）。  \nA.  $1:2$   \nB.  $2:1$   \nC.  $1:3$   \nD.  $1:1$\n- 10. 为了统计一个非负整数的二进制形式中 1 的个数，代码如下：\n\n```\nint CountBit(int x)\n{\n    int ret = 0;\n    while (x)\n    {\n        ret++;\n        _____;\n    }\n    return ret;\n}\n```\n\n则空格内要填入的语句是（ ）。\n\n- A.  $x >>= 1$\n\n{2}------------------------------------------------\n\n- B.  $x \\&= x - 1$\n- C.  $x |= x >> 1$\n- D.  $x <<= 1$\n\n## 二、不定项选择题（共 5 题，每题 2 分，共计 10 分；每题有一个或多个正确选项，多选或少选均不得分）\n\n1. NOIP 初赛中，选手可以带入考场的有（ ）。\n  - A. 笔\n  - B. 橡皮\n  - C. 手机（关机）\n  - D. 草稿纸\n2. 2-3 树是一种特殊的树，它满足两个条件：  \n（1）每个内部结点有两个或三个子结点；  \n（2）所有的叶结点到根的路径长度相同。  \n如果一棵 2-3 树有 10 个叶结点，那么它可能有（ ）个非叶结点。\n  - A. 5\n  - B. 6\n  - C. 7\n  - D. 8\n3. 下列关于最短路算法的说法正确的有（ ）。\n  - A. 当图中不存在负权回路但是存在负权边时，Dijkstra 算法不一定能求出源点到所有点的最短路。\n  - B. 当图中不存在负权边时，调用多次 Dijkstra 算法能求出每对顶点间最短路径。\n  - C. 图中存在负权回路时，调用一次 Dijkstra 算法也一定能求出源点到所有点的最短路。\n  - D. 当图中不存在负权边时，调用一次 Dijkstra 算法不能用于每对顶点间最短路径计算。\n4. 下列说法中，是树的性质的有（ ）。\n  - A. 无环\n  - B. 任意两个结点之间有且只有一条简单路径\n  - C. 有且只有一个简单环\n  - D. 边的数目恰是顶点数目减 1\n5. 下列关于图灵奖的说法中，正确的有（ ）。\n  - A. 图灵奖是由电气和电子工程师协会（IEEE）设立的。\n  - B. 目前获得该奖项的华人学者只有姚期智教授一人。\n  - C. 其名称取自计算机科学的先驱、英国科学家艾伦·麦席森·图灵。\n\n{3}------------------------------------------------\n\nD. 它是计算机界最负盛名、最崇高的一个奖项，有“计算机界的诺贝尔奖”之称。\n\n## 三、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 1. 甲乙丙丁四人在考虑周末要不要外出郊游。  \n已知①如果周末下雨，并且乙不去，则甲一定不去；②如果乙去，则丁一定去；③如果丙去，则丁一定不去；④如果丁不去，而且甲不去，则丙一定不去。如果周末丙去了，则甲\\_\\_\\_\\_\\_（去了/没去）(1 分)，乙\\_\\_\\_\\_\\_（去了/没去）(1 分)，丁\\_\\_\\_\\_\\_（去了/没去）(1 分)，周末\\_\\_\\_\\_\\_（下雨/没下雨）(2 分)。\n- 2. 方程  $a * b = (a \\text{ or } b) * (a \\text{ and } b)$ ，在  $a, b$  都取  $[0, 31]$  中的整数时，共有\\_\\_\\_\\_\\_组解。（\\*表示乘法；or 表示按位或运算；and 表示按位与运算）\n\n## 四、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n```\n1. #include <cstdio>\nint main() {\n    int x;\n    scanf(\"%d\", &x);\n    int res = 0;\n    for (int i = 0; i < x; ++i) {\n        if (i * i % x == 1) {\n            ++res;\n        }\n    }\n    printf(\"%d\", res);\n    return 0;\n}\n```\n\n输入: 15  \n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include <cstdio>\nint n, d[100];\nbool v[100];\nint main() {\n    scanf(\"%d\", &n);\n    for (int i = 0; i < n; ++i) {\n        scanf(\"%d\", d + i);\n        v[i] = false;\n    }\n}\n```\n\n{4}------------------------------------------------\n\n```\n\n}\nint cnt = 0;\nfor (int i = 0; i < n; ++i) {\n    if (!v[i]) {\n        for (int j = i; !v[j]; j = d[j]) {\n            v[j] = true;\n        }\n        ++cnt;\n    }\n}\nprintf(\"%d\\n\", cnt);\nreturn 0;\n}\n\n```\n\n输入: 10 7 1 4 3 2 5 9 8 0 6\n\n输出: \\_\\_\\_\\_\\_\n\n3. #include <iostream>  \nusing namespace std;  \nstring s;  \nlong long magic(int l, int r) {  \n long long ans = 0;  \n for (int i = l; i <= r; ++i) {  \n ans = ans \\* 4 + s[i] - 'a' + 1;  \n }  \n return ans;  \n}  \nint main() {  \n cin >> s;  \n int len = s.length();  \n int ans = 0;  \n for (int l1 = 0; l1 < len; ++l1) {  \n for (int r1 = l1; r1 < len; ++r1) {  \n bool bo = true;  \n for (int l2 = 0; l2 < len; ++l2) {  \n for (int r2 = l2; r2 < len; ++r2) {  \n if (magic(l1, r1) == magic(l2, r2) && (l1 !=  \n12 || r1 != r2)) {  \n bo = false;  \n }  \n }  \n }  \n }  \n }  \n if (bo) {\n\n{5}------------------------------------------------\n\n```\n\n        ans += 1;\n    }\n}\n}\ncout << ans << endl;\nreturn 0;\n}\n\n```\n\n输入: abacaba\n\n输出: \\_\\_\\_\\_\\_\n\n4. #include <cstdio>  \nusing namespace std;  \nconst int N = 110;  \nbool isUse[N];  \nint n, t;  \nint a[N], b[N];  \nbool isSmall() {  \n for (int i = 1; i <= n; ++i)  \n if (a[i] != b[i]) return a[i] < b[i];  \n return false;  \n}  \nbool getPermutation(int pos) {  \n if (pos > n) {  \n return isSmall();  \n }  \n for (int i = 1; i <= n; ++i) {  \n if (!isUse[i]) {  \n b[pos] = i; isUse[i] = true;  \n if (getPermutation(pos + 1)) {  \n return true;  \n }  \n isUse[i] = false;  \n }  \n }  \n return false;  \n}  \nvoid getNext() {  \n for (int i = 1; i <= n; ++i) {  \n isUse[i] = false;  \n }  \n getPermutation(1);  \n for (int i = 1; i <= n; ++i) {\n\n{6}------------------------------------------------\n\n```\n\n        a[i] = b[i];\n    }\n}\nint main() {\n    scanf(\"%d%d\", &n, &t);\n    for (int i = 1; i <= n; ++i) {\n        scanf(\"%d\", &a[i]);\n    }\n    for (int i = 1; i <= t; ++i) {\n        getNext();\n    }\n    for (int i = 1; i <= n; ++i) {\n        printf(\"%d\", a[i]);\n        if (i == n) putchar('\\n'); else putchar(' ');\n    }\n    return 0;\n}\n\n```\n\n输入 1: 6 10 1 6 4 5 3 2\n\n输出 1: \\_\\_\\_\\_\\_ (3 分)\n\n输入 2: 6 200 1 5 3 4 2 6\n\n输出 2: \\_\\_\\_\\_\\_ (5 分)\n\n## 五、完善程序 (共 2 题, 每题 14 分, 共计 28 分)\n\n- 1. 对于一个 1 到  $n$  的排列  $P$  (即 1 到  $n$  中每一个数在  $P$  中出现了恰好一次), 令  $q_i$  为第  $i$  个位置之后第一个比  $P_i$  值更大的位置, 如果不存在这样的位置, 则  $q_i = n + 1$ 。举例来说, 如果  $n = 5$  且  $P$  为 1 5 4 2 3, 则  $q$  为 2 6 6 5 6。\n\n下列程序读入了排列  $P$ , 使用双向链表求解了答案。试补全程序。(第二空 2 分, 其余 3 分)\n\n数据范围  $1 \\leq n \\leq 10^5$ 。\n\n```\n\n#include <iostream>\nusing namespace std;\nconst int N = 100010;\nint n;\nint L[N], R[N], a[N];\nint main() {\n    cin >> n;\n    for (int i = 1; i <= n; ++i) {\n        int x;\n\n```\n\n{7}------------------------------------------------\n\n```\n\n    cin >> x;\n    (1);\n}\nfor (int i = 1; i <= n; ++i) {\n    R[i] = (2);\n    L[i] = i - 1;\n}\nfor (int i = 1; i <= n; ++i) {\n    L[(3)] = L[a[i]];\n    R[L[a[i]]] = R[(4)];\n}\nfor (int i = 1; i <= n; ++i) {\n    cout << (5) << \" \";\n}\ncout << endl;\nreturn 0;\n}\n\n```\n\n### 2. 一只小猪要买 N 件物品（N 不超过 1000）。\n\n它要买的所有物品在两家商店里都有卖。第 i 件物品在第一家商店的价格是 a[i]，在第二家商店的价格是 b[i]，两个价格都不小于 0 且不超过 10000。如果在第一家商店买的物品的总额不少于 50000，那么在第一家店买的物品都可以打 95 折(价格变为原来的 0.95 倍)。\n\n求小猪买齐所有物品所需最少的总额。\n\n输入：第一行一个数 N。接下来 N 行，每行两个数。第 i 行的两个数分别代表 a[i]，b[i]。\n\n输出：输出一行一个数，表示最少需要的总额，保留两位小数。\n\n试补全程序。（第一空 2 分，其余 3 分）\n\n```\n\n#include <cstdio>\n#include <algorithm>\nusing namespace std;\n\nconst int Inf = 1000000000;\nconst int threshold = 50000;\nconst int maxn = 1000;\n\nint n, a[maxn], b[maxn];\nbool put_a[maxn];\nint total_a, total_b;\n\n```\n\n{8}------------------------------------------------\n\n```\n\ndouble ans;\nint f[threshold];\n\nint main() {\n    scanf(\"%d\", &n);\n    total_a = total_b = 0;\n    for (int i = 0; i < n; ++i) {\n        scanf(\"%d%d\", a + i, b + i);\n        if (a[i] <= b[i]) total_a += a[i];\n        else total_b += b[i];\n    }\n    ans = total_a + total_b;\n    total_a = total_b = 0;\n    for (int i = 0; i < n; ++i) {\n        if (____(1)____) {\n            put_a[i] = true;\n            total_a += a[i];\n        } else {\n            put_a[i] = false;\n            total_b += b[i];\n        }\n    }\n    if (____(2)____) {\n        printf(\"%.2f\", total_a * 0.95 + total_b);\n        return 0;\n    }\n    f[0] = 0;\n    for (int i = 1; i < threshold; ++i)\n        f[i] = Inf;\n    int total_b_prefix = 0;\n    for (int i = 0; i < n; ++i)\n        if (!put_a[i]) {\n            total_b_prefix += b[i];\n            for (int j = threshold - 1; j >= 0; --j) {\n                if (____(3)____ >= threshold && f[j] != Inf)\n                    ans = min(ans, (total_a + j + a[i]) * 0.95\n                               + ____ (4) ____);\n                f[j] = min(f[j] + b[i], j >= a[i] ? ____ (5) ____ : Inf);\n            }\n        }\n    printf(\"%.2f\", ans);\n    return 0;\n}\n\n```",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 9
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 4
+          },
+          {
+            "page_id": 3,
+            "num_blocks": 8
+          },
+          {
+            "page_id": 4,
+            "num_blocks": 5
+          },
+          {
+            "page_id": 5,
+            "num_blocks": 6
+          },
+          {
+            "page_id": 6,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 7,
+            "num_blocks": 10
+          },
+          {
+            "page_id": 8,
+            "num_blocks": 2
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": 4.767,
+      "page_count": 9,
+      "total_cost": 2.7,
+      "cost_breakdown": {
+        "final_cost_cents": 2.7
+      },
+      "runtime": 20.82070255279541,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第二十四届全国青少年信息学奥林匹克联赛初赛\n\n## 提高组 C++语言试题\n\n竞赛时间：2018 年 10 月 13 日 14:30~16:30\n\n## 选手注意：\n\n- 试题纸共有 10 页，答题纸共有 2 页，满分 100 分。请在答题纸上作答，写在试题纸上的一律无效。\n- 不得使用任何电子设备（如计算器、手机、电子词典等）或查阅任何书籍资料。\n\n## 一、单项选择题（共 10 题，每题 2 分，共计 20 分；每题有且仅有一个正确选项）\n\n1. 下列四个不同进制的数中，与其它三项数值上不相等的是（ ）。  \nA.  $(269)_{16}$   \nB.  $(617)_{10}$   \nC.  $(1151)_8$   \nD.  $(1001101011)_2$\n2. 下列属于解释执行的程序设计语言是（ ）。  \nA. C  \nB. C++  \nC. Pascal  \nD. Python\n3. 中国计算机学会于（ ）年创办全国青少年计算机程序设计竞赛。  \nA. 1983  \nB. 1984  \nC. 1985  \nD. 1986\n4. 设根节点深度为 0，一棵深度为  $h$  的满  $k$  ( $k>1$ ) 叉树，即除最后一层无任何子节点外，每一层上的所有结点都有  $k$  个子结点的树，共有（ ）个结点。  \nA.  $(k^{h+1} - 1) / (k - 1)$   \nB.  $k^{h-1}$   \nC.  $k^h$   \nD.  $(k^{h-1}) / (k - 1)$\n5. 设某算法的时间复杂度函数的递推方程是  $T(n) = T(n - 1) + n$  ( $n$  为正整数) 及  $T(0) = 1$ ，则该算法的时间复杂度为（ ）。  \nA.  $O(\\log n)$       B.  $O(n \\log n)$       C.  $O(n)$       D.  $O(n^2)$\n\n{1}------------------------------------------------\n\n- 6. 表达式  $a * d - b * c$  的前缀形式是（ ）。  \nA.  $a d * b c * -$   \nB.  $- * a d * b c$   \nC.  $a * d - b * c$   \nD.  $- * * a d b c$\n- 7. 在一条长度为 1 的线段上随机取两个点，则以这两个点为端点的线段的期望长度是（ ）。  \nA.  $1/2$   \nB.  $1/3$   \nC.  $2/3$   \nD.  $3/5$\n- 8. 关于 Catalan 数  $C_n = (2n)! / (n+1)! / n!$ ，下列说法中错误的是（ ）。  \nA.  $C_n$  表示有  $n+1$  个结点的不同形态的二叉树的个数。  \nB.  $C_n$  表示含  $n$  对括号的合法括号序列的个数。  \nC.  $C_n$  表示长度为  $n$  的入栈序列对应的合法出栈序列个数。  \nD.  $C_n$  表示通过连接顶点而将  $n+2$  边的凸多边形分成三角形的方法个数。\n- 9. 假设一台抽奖机中有红、蓝两色的球，任意时刻按下抽奖按钮，都会等概率获得红球或蓝球之一。有足够多的人每人都用这台抽奖机抽奖，假如他们的策略均为：抽中蓝球则继续抽球，抽中红球则停止。最后每个人都把自己获得的所有球放到一个大箱子里，最终大箱子里的红球与蓝球的比例接近于（ ）。  \nA.  $1:2$   \nB.  $2:1$   \nC.  $1:3$   \nD.  $1:1$\n- 10. 为了统计一个非负整数的二进制形式中 1 的个数，代码如下：\n\n```\nint CountBit(int x)\n{\n    int ret = 0;\n    while (x)\n    {\n        ret++;\n        _____;\n    }\n    return ret;\n}\n```\n\n则空格内要填入的语句是（ ）。\n\n- A.  $x >>= 1$\n\n{2}------------------------------------------------\n\n- B.  $x \\&= x - 1$\n- C.  $x |= x >> 1$\n- D.  $x <<= 1$\n\n## 二、不定项选择题（共 5 题，每题 2 分，共计 10 分；每题有一个或多个正确选项，多选或少选均不得分）\n\n1. NOIP 初赛中，选手可以带入考场的有（ ）。\n  - A. 笔\n  - B. 橡皮\n  - C. 手机（关机）\n  - D. 草稿纸\n2. 2-3 树是一种特殊的树，它满足两个条件：  \n（1）每个内部结点有两个或三个子结点；  \n（2）所有的叶结点到根的路径长度相同。  \n如果一棵 2-3 树有 10 个叶结点，那么它可能有（ ）个非叶结点。\n  - A. 5\n  - B. 6\n  - C. 7\n  - D. 8\n3. 下列关于最短路算法的说法正确的有（ ）。\n  - A. 当图中不存在负权回路但是存在负权边时，Dijkstra 算法不一定能求出源点到所有点的最短路。\n  - B. 当图中不存在负权边时，调用多次 Dijkstra 算法能求出每对顶点间最短路径。\n  - C. 图中存在负权回路时，调用一次 Dijkstra 算法也一定能求出源点到所有点的最短路。\n  - D. 当图中不存在负权边时，调用一次 Dijkstra 算法不能用于每对顶点间最短路径计算。\n4. 下列说法中，是树的性质的有（ ）。\n  - A. 无环\n  - B. 任意两个结点之间有且只有一条简单路径\n  - C. 有且只有一个简单环\n  - D. 边的数目恰是顶点数目减 1\n5. 下列关于图灵奖的说法中，正确的有（ ）。\n  - A. 图灵奖是由电气和电子工程师协会（IEEE）设立的。\n  - B. 目前获得该奖项的华人学者只有姚期智教授一人。\n  - C. 其名称取自计算机科学的先驱、英国科学家艾伦·麦席森·图灵。\n\n{3}------------------------------------------------\n\nD. 它是计算机界最负盛名、最崇高的一个奖项，有“计算机界的诺贝尔奖”之称。\n\n## 三、问题求解（共 2 题，每题 5 分，共计 10 分）\n\n- 1. 甲乙丙丁四人在考虑周末要不要外出郊游。  \n已知①如果周末下雨，并且乙不去，则甲一定不去；②如果乙去，则丁一定去；③如果丙去，则丁一定不去；④如果丁不去，而且甲不去，则丙一定不去。如果周末丙去了，则甲\\_\\_\\_\\_\\_（去了/没去）(1 分)，乙\\_\\_\\_\\_\\_（去了/没去）(1 分)，丁\\_\\_\\_\\_\\_（去了/没去）(1 分)，周末\\_\\_\\_\\_\\_（下雨/没下雨）(2 分)。\n- 2. 方程  $a * b = (a \\text{ or } b) * (a \\text{ and } b)$ ，在  $a, b$  都取  $[0, 31]$  中的整数时，共有\\_\\_\\_\\_\\_组解。（\\*表示乘法；or 表示按位或运算；and 表示按位与运算）\n\n## 四、阅读程序写结果（共 4 题，每题 8 分，共计 32 分）\n\n```\n1. #include <cstdio>\nint main() {\n    int x;\n    scanf(\"%d\", &x);\n    int res = 0;\n    for (int i = 0; i < x; ++i) {\n        if (i * i % x == 1) {\n            ++res;\n        }\n    }\n    printf(\"%d\", res);\n    return 0;\n}\n```\n\n输入: 15  \n输出: \\_\\_\\_\\_\\_\n\n```\n2. #include <cstdio>\nint n, d[100];\nbool v[100];\nint main() {\n    scanf(\"%d\", &n);\n    for (int i = 0; i < n; ++i) {\n        scanf(\"%d\", d + i);\n        v[i] = false;\n    }\n}\n```\n\n{4}------------------------------------------------\n\n```\n\n}\nint cnt = 0;\nfor (int i = 0; i < n; ++i) {\n    if (!v[i]) {\n        for (int j = i; !v[j]; j = d[j]) {\n            v[j] = true;\n        }\n        ++cnt;\n    }\n}\nprintf(\"%d\\n\", cnt);\nreturn 0;\n}\n\n```\n\n输入: 10 7 1 4 3 2 5 9 8 0 6\n\n输出: \\_\\_\\_\\_\\_\n\n3. #include <iostream>  \nusing namespace std;  \nstring s;  \nlong long magic(int l, int r) {  \n long long ans = 0;  \n for (int i = l; i <= r; ++i) {  \n ans = ans \\* 4 + s[i] - 'a' + 1;  \n }  \n return ans;  \n}  \nint main() {  \n cin >> s;  \n int len = s.length();  \n int ans = 0;  \n for (int l1 = 0; l1 < len; ++l1) {  \n for (int r1 = l1; r1 < len; ++r1) {  \n bool bo = true;  \n for (int l2 = 0; l2 < len; ++l2) {  \n for (int r2 = l2; r2 < len; ++r2) {  \n if (magic(l1, r1) == magic(l2, r2) && (l1 !=  \n12 || r1 != r2)) {  \n bo = false;  \n }  \n }  \n }  \n }  \n }  \n if (bo) {\n\n{5}------------------------------------------------\n\n```\n\n        ans += 1;\n    }\n}\n}\ncout << ans << endl;\nreturn 0;\n}\n\n```\n\n输入: abacaba\n\n输出: \\_\\_\\_\\_\\_\n\n4. #include <cstdio>  \nusing namespace std;  \nconst int N = 110;  \nbool isUse[N];  \nint n, t;  \nint a[N], b[N];  \nbool isSmall() {  \n for (int i = 1; i <= n; ++i)  \n if (a[i] != b[i]) return a[i] < b[i];  \n return false;  \n}  \nbool getPermutation(int pos) {  \n if (pos > n) {  \n return isSmall();  \n }  \n for (int i = 1; i <= n; ++i) {  \n if (!isUse[i]) {  \n b[pos] = i; isUse[i] = true;  \n if (getPermutation(pos + 1)) {  \n return true;  \n }  \n isUse[i] = false;  \n }  \n }  \n return false;  \n}  \nvoid getNext() {  \n for (int i = 1; i <= n; ++i) {  \n isUse[i] = false;  \n }  \n getPermutation(1);  \n for (int i = 1; i <= n; ++i) {\n\n{6}------------------------------------------------\n\n```\n\n        a[i] = b[i];\n    }\n}\nint main() {\n    scanf(\"%d%d\", &n, &t);\n    for (int i = 1; i <= n; ++i) {\n        scanf(\"%d\", &a[i]);\n    }\n    for (int i = 1; i <= t; ++i) {\n        getNext();\n    }\n    for (int i = 1; i <= n; ++i) {\n        printf(\"%d\", a[i]);\n        if (i == n) putchar('\\n'); else putchar(' ');\n    }\n    return 0;\n}\n\n```\n\n输入 1: 6 10 1 6 4 5 3 2\n\n输出 1: \\_\\_\\_\\_\\_ (3 分)\n\n输入 2: 6 200 1 5 3 4 2 6\n\n输出 2: \\_\\_\\_\\_\\_ (5 分)\n\n## 五、完善程序 (共 2 题, 每题 14 分, 共计 28 分)\n\n- 1. 对于一个 1 到  $n$  的排列  $P$  (即 1 到  $n$  中每一个数在  $P$  中出现了恰好一次), 令  $q_i$  为第  $i$  个位置之后第一个比  $P_i$  值更大的位置, 如果不存在这样的位置, 则  $q_i = n + 1$ 。举例来说, 如果  $n = 5$  且  $P$  为 1 5 4 2 3, 则  $q$  为 2 6 6 5 6。\n\n下列程序读入了排列  $P$ , 使用双向链表求解了答案。试补全程序。(第二空 2 分, 其余 3 分)\n\n数据范围  $1 \\leq n \\leq 10^5$ 。\n\n```\n\n#include <iostream>\nusing namespace std;\nconst int N = 100010;\nint n;\nint L[N], R[N], a[N];\nint main() {\n    cin >> n;\n    for (int i = 1; i <= n; ++i) {\n        int x;\n\n```\n\n{7}------------------------------------------------\n\n```\n\n    cin >> x;\n    (1);\n}\nfor (int i = 1; i <= n; ++i) {\n    R[i] = (2);\n    L[i] = i - 1;\n}\nfor (int i = 1; i <= n; ++i) {\n    L[(3)] = L[a[i]];\n    R[L[a[i]]] = R[(4)];\n}\nfor (int i = 1; i <= n; ++i) {\n    cout << (5) << \" \";\n}\ncout << endl;\nreturn 0;\n}\n\n```\n\n### 2. 一只小猪要买 N 件物品（N 不超过 1000）。\n\n它要买的所有物品在两家商店里都有卖。第 i 件物品在第一家商店的价格是 a[i]，在第二家商店的价格是 b[i]，两个价格都不小于 0 且不超过 10000。如果在第一家商店买的物品的总额不少于 50000，那么在第一家店买的物品都可以打 95 折(价格变为原来的 0.95 倍)。\n\n求小猪买齐所有物品所需最少的总额。\n\n输入：第一行一个数 N。接下来 N 行，每行两个数。第 i 行的两个数分别代表 a[i]，b[i]。\n\n输出：输出一行一个数，表示最少需要的总额，保留两位小数。\n\n试补全程序。（第一空 2 分，其余 3 分）\n\n```\n\n#include <cstdio>\n#include <algorithm>\nusing namespace std;\n\nconst int Inf = 1000000000;\nconst int threshold = 50000;\nconst int maxn = 1000;\n\nint n, a[maxn], b[maxn];\nbool put_a[maxn];\nint total_a, total_b;\n\n```\n\n{8}------------------------------------------------\n\n```\n\ndouble ans;\nint f[threshold];\n\nint main() {\n    scanf(\"%d\", &n);\n    total_a = total_b = 0;\n    for (int i = 0; i < n; ++i) {\n        scanf(\"%d%d\", a + i, b + i);\n        if (a[i] <= b[i]) total_a += a[i];\n        else total_b += b[i];\n    }\n    ans = total_a + total_b;\n    total_a = total_b = 0;\n    for (int i = 0; i < n; ++i) {\n        if (____(1)____) {\n            put_a[i] = true;\n            total_a += a[i];\n        } else {\n            put_a[i] = false;\n            total_b += b[i];\n        }\n    }\n    if (____(2)____) {\n        printf(\"%.2f\", total_a * 0.95 + total_b);\n        return 0;\n    }\n    f[0] = 0;\n    for (int i = 1; i < threshold; ++i)\n        f[i] = Inf;\n    int total_b_prefix = 0;\n    for (int i = 0; i < n; ++i)\n        if (!put_a[i]) {\n            total_b_prefix += b[i];\n            for (int j = threshold - 1; j >= 0; --j) {\n                if (____(3)____ >= threshold && f[j] != Inf)\n                    ans = min(ans, (total_a + j + a[i]) * 0.95\n                               + ____ (4) ____);\n                f[j] = min(f[j] + b[i], j >= a[i] ? ____ (5) ____ : Inf);\n            }\n        }\n    printf(\"%.2f\", ans);\n    return 0;\n}\n\n```",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 9
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 4
+        },
+        {
+          "page_id": 3,
+          "num_blocks": 8
+        },
+        {
+          "page_id": 4,
+          "num_blocks": 5
+        },
+        {
+          "page_id": 5,
+          "num_blocks": 6
+        },
+        {
+          "page_id": 6,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 7,
+          "num_blocks": 10
+        },
+        {
+          "page_id": 8,
+          "num_blocks": 2
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": 4.767,
+    "page_count": 9,
+    "total_cost": 2.7,
+    "cost_breakdown": {
+      "final_cost_cents": 2.7
+    },
+    "runtime": 20.82070255279541,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": 4.767,
+  "cost_breakdown": {
+    "final_cost_cents": 2.7
+  },
+  "page_count": 9,
+  "success": true,
+  "error": null,
+  "source": "NOIP/Preliminary/2018/NOIP2018提高组初赛试题(C++).pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

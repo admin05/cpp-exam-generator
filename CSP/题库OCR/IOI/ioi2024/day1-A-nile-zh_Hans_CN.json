@@ -1,0 +1,150 @@
+{
+  "request_id": "xWoah3RgIOM3LPRiaznbxg",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:29:42.435072+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "xWoah3RgIOM3LPRiaznbxg",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/xWoah3RgIOM3LPRiaznbxg",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 尼罗河船运 (nile)\n\n你想通过尼罗河来运输  $N$  件手工艺品。这些手工艺品从 0 到  $N - 1$  编号。第  $i$  ( $0 \\leq i < N$ ) 件手工艺品的重量是  $W[i]$ 。\n\n为了运输这些手工艺品，你使用了特制的船。每艘船**最多**可以运**两件**手工艺品。\n\n- 如果你决定将单件手工艺品放在一艘船上，那么这件手工艺品的重量可以是任意的。\n- 如果你想把两件手工艺品一起放在同一艘船上，你必须保证这艘船的平衡。具体来说，如果手工艺品  $p$  和  $q$  ( $0 \\leq p < q < N$ ) 的重量差的绝对值不超过  $D$ ，即满足  $|W[p] - W[q]| \\leq D$ ，那么你可以将它们一起放在同一艘船上。\n\n你必须付费来运一件手工艺品，其运费取决于同一艘船上所运载的手工艺品数量。手工艺品  $i$  ( $0 \\leq i < N$ ) 的运费是：\n\n- $A[i]$ ，如果你把手工艺品  $i$  单独放在船上，或者\n- $B[i]$ ，如果你把手工艺品  $i$  和另一件手工艺品一起放在船上。\n\n注意在第二种情况中，你要为船上两件手工艺品都支付运费。具体来说，如果你决定用同一艘船运输手工艺品  $p$  和  $q$  ( $0 \\leq p < q < N$ )，你需要支付  $B[p] + B[q]$ 。\n\n一件手工艺品单独用一艘船运输的费用，总是比与其他手工艺品合用一艘船时的费用要高，所以对任意满足  $0 \\leq i < N$  的  $i$ ，都有  $B[i] < A[i]$ 。\n\n麻烦的是，由于尼罗河变化莫测，导致  $D$  的值经常改变。你的任务是回答  $Q$  个问题，从 0 到  $Q - 1$  编号。这些问题用一个长度为  $Q$  的数组  $E$  来描述。问题  $j$  ( $0 \\leq j < Q$ ) 的答案，是在  $D$  的值等于  $E[j]$  时运输所有  $N$  件手工艺品的最小总代价。\n\n## 实现细节\n\n你需要实现以下函数。\n\n```\nstd::vector<long long> calculate_costs(  \n    std::vector<int> W, std::vector<int> A,  \n    std::vector<int> B, std::vector<int> E)\n```\n\n- $W$ ,  $A$ ,  $B$ : 长度均为  $N$  的整数数组，分别给出手工艺品的重量和运费。\n- $E$ : 长度为  $Q$  的整数数组，给出每个问题中的  $D$  值。\n\n{1}------------------------------------------------\n\n- 该函数应该返回一个包含  $Q$  个整数的数组  $R$ ，给出运输手工艺品的最小总代价，其中  $R[j]$  对应  $D$  等于  $E[j]$ （对每个满足  $0 \\leq j < Q$  的  $j$ ）时的运费。\n- 对于每个测试用例，该函数恰好被调用一次。\n\n## 约束条件\n\n- $1 \\leq N \\leq 100\\,000$\n- $1 \\leq Q \\leq 100\\,000$\n- 对每个满足  $0 \\leq i < N$  的  $i$ ，都有  $1 \\leq W[i] \\leq 10^9$\n- 对每个满足  $0 \\leq i < N$  的  $i$ ，都有  $1 \\leq B[i] < A[i] \\leq 10^9$\n- 对每个满足  $0 \\leq j < Q$  的  $j$ ，都有  $1 \\leq E[j] \\leq 10^9$\n\n## 子任务\n\n| 子任务 | 分数 | 额外的约束条件                                                             |\n|-----|----|---------------------------------------------------------------------|\n| 1   | 6  | $Q \\leq 5$; $N \\leq 2000$; 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $W[i] = 1$ |\n| 2   | 13 | $Q \\leq 5$; 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $W[i] = i + 1$            |\n| 3   | 17 | $Q \\leq 5$; 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $A[i] = 2$ 且 $B[i] = 1$   |\n| 4   | 11 | $Q \\leq 5$; $N \\leq 2000$                                           |\n| 5   | 20 | $Q \\leq 5$                                                          |\n| 6   | 15 | 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $A[i] = 2$ 且 $B[i] = 1$               |\n| 7   | 18 | 没有额外的约束条件。                                                          |\n\n## 例子\n\n考虑以下调用。\n\n```\ncalculate_costs([15, 12, 2, 10, 21],\n                [5, 4, 5, 6, 3],\n                [1, 2, 2, 3, 2],\n                [5, 9, 1])\n```\n\n在该例子中，我们有  $N = 5$  件手工艺品和  $Q = 3$  个问题。\n\n在第一个问题中， $D = 5$ 。你可以把手工艺品 0 和手工艺品 3 放在同一艘船上（因为  $|15 - 10| \\leq 5$ ），而其他手工艺品都各自放在不同的船上。这使得运输所有手工艺品的总代价最小，即  $1 + 4 + 5 + 3 + 3 = 16$ 。\n\n在第二个问题中， $D = 9$ 。你可以把手工艺品 0 和手工艺品 1 放在同一艘船上（因为  $|15 - 12| \\leq 9$ ），而把手工艺品 2 和手工艺品 3 放在同一艘船上（因为  $|2 - 10| \\leq 9$ ）。剩下的手工艺品单独用一艘船运\n\n{2}------------------------------------------------\n\n输。这使得运输所有手工艺品的总代价最小，即  $1 + 2 + 2 + 3 + 3 = 11$ 。\n\n在最后一个问题中， $D = 1$ 。你需要把每件手工艺品都单独用一艘船运输。这使得运输所有手工艺品的总代价最小，即  $5 + 4 + 5 + 6 + 3 = 23$ 。\n\n因此，该函数应该返回  $[16, 11, 23]$ 。\n\n## 评测程序示例\n\n输入格式：\n\n```\nN\nW[0] A[0] B[0]\nW[1] A[1] B[1]\n...\nW[N-1] A[N-1] B[N-1]\nQ\nE[0]\nE[1]\n...\nE[Q-1]\n```\n\n输出格式：\n\n```\nR[0]\nR[1]\n...\nR[S-1]\n```\n\n这里， $S$  是 `calculate_costs` 所返回的数组  $R$  的长度。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 16
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 12
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 0.9,
+      "cost_breakdown": {
+        "final_cost_cents": 0.9
+      },
+      "runtime": 7.8141326904296875,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 尼罗河船运 (nile)\n\n你想通过尼罗河来运输  $N$  件手工艺品。这些手工艺品从 0 到  $N - 1$  编号。第  $i$  ( $0 \\leq i < N$ ) 件手工艺品的重量是  $W[i]$ 。\n\n为了运输这些手工艺品，你使用了特制的船。每艘船**最多**可以运**两件**手工艺品。\n\n- 如果你决定将单件手工艺品放在一艘船上，那么这件手工艺品的重量可以是任意的。\n- 如果你想把两件手工艺品一起放在同一艘船上，你必须保证这艘船的平衡。具体来说，如果手工艺品  $p$  和  $q$  ( $0 \\leq p < q < N$ ) 的重量差的绝对值不超过  $D$ ，即满足  $|W[p] - W[q]| \\leq D$ ，那么你可以将它们一起放在同一艘船上。\n\n你必须付费来运一件手工艺品，其运费取决于同一艘船上所运载的手工艺品数量。手工艺品  $i$  ( $0 \\leq i < N$ ) 的运费是：\n\n- $A[i]$ ，如果你把手工艺品  $i$  单独放在船上，或者\n- $B[i]$ ，如果你把手工艺品  $i$  和另一件手工艺品一起放在船上。\n\n注意在第二种情况中，你要为船上两件手工艺品都支付运费。具体来说，如果你决定用同一艘船运输手工艺品  $p$  和  $q$  ( $0 \\leq p < q < N$ )，你需要支付  $B[p] + B[q]$ 。\n\n一件手工艺品单独用一艘船运输的费用，总是比与其他手工艺品合用一艘船时的费用要高，所以对任意满足  $0 \\leq i < N$  的  $i$ ，都有  $B[i] < A[i]$ 。\n\n麻烦的是，由于尼罗河变化莫测，导致  $D$  的值经常改变。你的任务是回答  $Q$  个问题，从 0 到  $Q - 1$  编号。这些问题用一个长度为  $Q$  的数组  $E$  来描述。问题  $j$  ( $0 \\leq j < Q$ ) 的答案，是在  $D$  的值等于  $E[j]$  时运输所有  $N$  件手工艺品的最小总代价。\n\n## 实现细节\n\n你需要实现以下函数。\n\n```\nstd::vector<long long> calculate_costs(  \n    std::vector<int> W, std::vector<int> A,  \n    std::vector<int> B, std::vector<int> E)\n```\n\n- $W$ ,  $A$ ,  $B$ : 长度均为  $N$  的整数数组，分别给出手工艺品的重量和运费。\n- $E$ : 长度为  $Q$  的整数数组，给出每个问题中的  $D$  值。\n\n{1}------------------------------------------------\n\n- 该函数应该返回一个包含  $Q$  个整数的数组  $R$ ，给出运输手工艺品的最小总代价，其中  $R[j]$  对应  $D$  等于  $E[j]$ （对每个满足  $0 \\leq j < Q$  的  $j$ ）时的运费。\n- 对于每个测试用例，该函数恰好被调用一次。\n\n## 约束条件\n\n- $1 \\leq N \\leq 100\\,000$\n- $1 \\leq Q \\leq 100\\,000$\n- 对每个满足  $0 \\leq i < N$  的  $i$ ，都有  $1 \\leq W[i] \\leq 10^9$\n- 对每个满足  $0 \\leq i < N$  的  $i$ ，都有  $1 \\leq B[i] < A[i] \\leq 10^9$\n- 对每个满足  $0 \\leq j < Q$  的  $j$ ，都有  $1 \\leq E[j] \\leq 10^9$\n\n## 子任务\n\n| 子任务 | 分数 | 额外的约束条件                                                             |\n|-----|----|---------------------------------------------------------------------|\n| 1   | 6  | $Q \\leq 5$; $N \\leq 2000$; 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $W[i] = 1$ |\n| 2   | 13 | $Q \\leq 5$; 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $W[i] = i + 1$            |\n| 3   | 17 | $Q \\leq 5$; 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $A[i] = 2$ 且 $B[i] = 1$   |\n| 4   | 11 | $Q \\leq 5$; $N \\leq 2000$                                           |\n| 5   | 20 | $Q \\leq 5$                                                          |\n| 6   | 15 | 对每个满足 $0 \\leq i < N$ 的 $i$，都有 $A[i] = 2$ 且 $B[i] = 1$               |\n| 7   | 18 | 没有额外的约束条件。                                                          |\n\n## 例子\n\n考虑以下调用。\n\n```\ncalculate_costs([15, 12, 2, 10, 21],\n                [5, 4, 5, 6, 3],\n                [1, 2, 2, 3, 2],\n                [5, 9, 1])\n```\n\n在该例子中，我们有  $N = 5$  件手工艺品和  $Q = 3$  个问题。\n\n在第一个问题中， $D = 5$ 。你可以把手工艺品 0 和手工艺品 3 放在同一艘船上（因为  $|15 - 10| \\leq 5$ ），而其他手工艺品都各自放在不同的船上。这使得运输所有手工艺品的总代价最小，即  $1 + 4 + 5 + 3 + 3 = 16$ 。\n\n在第二个问题中， $D = 9$ 。你可以把手工艺品 0 和手工艺品 1 放在同一艘船上（因为  $|15 - 12| \\leq 9$ ），而把手工艺品 2 和手工艺品 3 放在同一艘船上（因为  $|2 - 10| \\leq 9$ ）。剩下的手工艺品单独用一艘船运\n\n{2}------------------------------------------------\n\n输。这使得运输所有手工艺品的总代价最小，即  $1 + 2 + 2 + 3 + 3 = 11$ 。\n\n在最后一个问题中， $D = 1$ 。你需要把每件手工艺品都单独用一艘船运输。这使得运输所有手工艺品的总代价最小，即  $5 + 4 + 5 + 6 + 3 = 23$ 。\n\n因此，该函数应该返回  $[16, 11, 23]$ 。\n\n## 评测程序示例\n\n输入格式：\n\n```\nN\nW[0] A[0] B[0]\nW[1] A[1] B[1]\n...\nW[N-1] A[N-1] B[N-1]\nQ\nE[0]\nE[1]\n...\nE[Q-1]\n```\n\n输出格式：\n\n```\nR[0]\nR[1]\n...\nR[S-1]\n```\n\n这里， $S$  是 `calculate_costs` 所返回的数组  $R$  的长度。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 16
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 12
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 0.9,
+    "cost_breakdown": {
+      "final_cost_cents": 0.9
+    },
+    "runtime": 7.8141326904296875,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.9
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2024/day1-A-nile-zh_Hans_CN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

@@ -1,0 +1,134 @@
+{
+  "request_id": "m0GnRNu8PN0RMijA3hRWAA",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:09:10.751265+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "m0GnRNu8PN0RMijA3hRWAA",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/m0GnRNu8PN0RMijA3hRWAA",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n# 第二轮比赛题目总览\n\n第二轮比赛各题目录都放在 C:\\DAY2 之下。\n\n|           |          |           |                      |\n|-----------|----------|-----------|----------------------|\n| 题目        | post     | walls     | block                |\n| 题目类型      | 提交式      | 提交式       | 提交式                  |\n| 题目目录名     | POST     | WALLS     | BLOCK                |\n| 程序名       | POST.EXE | WALLS.EXE | BLOCK.EXE            |\n| 输入文件名     | POST.IN  | WALLS.IN  | BLOCK.IN<br>TYPES.IN |\n| 输出文件名     | POST.OUT | WALLS.OUT | BLOCK.OUT            |\n| 每个测试样例的时限 | 2 秒      | 2 秒       | 6 秒                  |\n| 测试样例数     | 10       | 10        | 10                   |\n| 总分        | 100      | 100       | 100                  |\n| 是否有部分分    | 是        | 否         | 否                    |",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 3
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 1,
+      "total_cost": 0.3,
+      "cost_breakdown": {
+        "final_cost_cents": 0.3
+      },
+      "runtime": 3.165947198867798,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n# 第二轮比赛题目总览\n\n第二轮比赛各题目录都放在 C:\\DAY2 之下。\n\n|           |          |           |                      |\n|-----------|----------|-----------|----------------------|\n| 题目        | post     | walls     | block                |\n| 题目类型      | 提交式      | 提交式       | 提交式                  |\n| 题目目录名     | POST     | WALLS     | BLOCK                |\n| 程序名       | POST.EXE | WALLS.EXE | BLOCK.EXE            |\n| 输入文件名     | POST.IN  | WALLS.IN  | BLOCK.IN<br>TYPES.IN |\n| 输出文件名     | POST.OUT | WALLS.OUT | BLOCK.OUT            |\n| 每个测试样例的时限 | 2 秒      | 2 秒       | 6 秒                  |\n| 测试样例数     | 10       | 10        | 10                   |\n| 总分        | 100      | 100       | 100                  |\n| 是否有部分分    | 是        | 否         | 否                    |",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 3
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 1,
+    "total_cost": 0.3,
+    "cost_breakdown": {
+      "final_cost_cents": 0.3
+    },
+    "runtime": 3.165947198867798,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.3
+  },
+  "page_count": 1,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2000/day2overview.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}

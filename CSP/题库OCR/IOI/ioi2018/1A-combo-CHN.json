@@ -1,0 +1,156 @@
+{
+  "request_id": "8w8AKKuDJBDRrdFxCjxAjQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T02:17:51.635712+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "8w8AKKuDJBDRrdFxCjxAjQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/8w8AKKuDJBDRrdFxCjxAjQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.\n\n## 组合动作\n\n你在玩一个动作游戏。游戏控制器有4个按键，A、B、X和Y。在游戏中，你用组合动作来赚金币。你可以依次按这些按键来完成一个组合动作。\n\n这个游戏有一个隐藏的按键序列，可以表示为由这4个字符组成的串 $S$ 。你并不知道这个串 $S$ ，但是你知道它的长度为 $N$ 。\n\n你还知道， $S$ 的首字符不会在串中重复出现。例如， $S$ 可以是“ABXYY”或者“XYYAA”，但不能是“AAAAA”或“BXYBX”。\n\n你可以依次按最多 $4N$ 个按键来完成一个组合动作。串 $p$ 为你所按的按键序列。你用这个组合动作赚到的金币数量，等于同时为 $p$ 之子串和 $S$ 之前缀的最长字符串的长度。串 $t$ 的子串定义为 $t$ 中的连续字符序列（可以为空）。 $t$ 的前缀定义为 $t$ 的子串，其或者为空，或者包含 $t$ 的首字符。\n\n例如，如果 $S$ 是“ABXYY”，而 $p$ 是“XXYYABYABXAY”，你会得到3个金币，因为“ABX”是可作为 $p$ 的子串的 $S$ 的前缀中最长的。\n\n你的任务是，用少量的组合动作，找出隐藏字符串 $S$ 。\n\n## 实现细节\n\n你需要实现下面的函数：\n\n```\nstring guess_sequence(int N)\n```\n\n- $N$ ：串 $S$ 的长度。\n- 对每个测试用例，该函数被调用恰好一次。\n- 该函数应返回串 $S$ 。\n\n你的程序可以调用下面的函数：\n\n```\nint press(string p)\n```\n\n- $p$ ：你的按键序列。\n- $p$ 必须是长度为从0到 $4N$ 的串（包括0和 $4N$ ）。 $p$ 的每个字符必须是A、B、X或者Y。\n- 对每个测试用例，你调用该函数的次数不能超过8 000次。\n- 该函数的返回结果是，当按出按键序列 $p$ 后你赚到的金币数量。\n\n如果不满足上面的条件，你的程序将被判为**Wrong Answer**。否则，你的程序将被判为**Accepted**，\n\n{1}------------------------------------------------\n\n而你的得分将根据press的调用次数来计算（参见子任务）。\n\n## 例子\n\n设 $S$ 为“ABXYY”。评测程序调用了guess\\_sequence(5)。数据交互过程的例子如下所示：\n\n| 调用                    | 返回值 |\n|-----------------------|-----|\n| press(\"XXYYABYABXAY\") | 3   |\n| press(\"ABXYY\")        | 5   |\n| press(\"ABXYYABXYY\")   | 5   |\n| press(\"\")             | 0   |\n| press(\"X\")            | 0   |\n| press(\"BXYY\")         | 0   |\n| press(\"YYXBA\")        | 1   |\n| press(\"AY\")           | 1   |\n\n对于press的第1次调用，“ABX”是“XXYYABYABXAY”的子串，而“ABXY”不是，因此返回3。\n\n对于press的第3次调用，“ABXYY”本身是“ABXYYABXYY”的子串，因此返回5。\n\n对于press的第6次调用，除了空串以外没有“ABXYY”的其他前缀可以是“BXYY”的子串，因此返回0。\n\n最后，guess\\_sequence(5)应当返回“ABXYY”。\n\n附件压缩包中的文件sample-01-in.txt对应于本例。\n\n## 限制条件\n\n- $1 \\leq N \\leq 2000$\n- 串 $S$ 的每个字符必须是A、B、X或Y。\n- $S$ 的首字符不会在 $S$ 中重复出现。\n\n在本题中，评测程序不是适应性的。意思是说，在评测程序开始运行的时候 $S$ 就固定下来，而且不依赖于你的程序所做的询问。\n\n## 子任务\n\n1. （5分） $N = 3$\n2. （95分）没有附加限制。对该子任务，你在每个测试用例上的得分将计算如下。设 $q$ 为调\n\n{2}------------------------------------------------\n\n用press的次数。\n\n- 如果 $q \\leq N + 2$ ，你的得分为95。\n- 如果 $N + 2 < q \\leq N + 10$ ，你的得分为 $95 - 3(q - N - 2)$ 。\n- 如果 $N + 10 < q \\leq 2N + 1$ ，你的得分为25。\n- 如果 $\\max\\{N + 10, 2N + 1\\} < q \\leq 4N$ ，你的得分为5。\n- 否则，你的得分为0。\n\n注意，你在每个子任务上的得分，等于你在该子任务下所有测试用例上的最低得分。\n\n## 评测程序示例\n\n评测程序示例将读取如下格式的输入：\n\n- 第1行： $S$\n\n如果你的程序被判为**Accepted**，评测系统示例将打印出**Accepted: q**，这里q为函数press的调用次数。\n\n如果你的程序被判为**Wrong Answer**，它打印出**Wrong Answer: MSG**。各类MSG的含义如下：\n\n- **invalid press**：输入到press的值p是无效的。也就是说，p的长度不在0到 $4N$ 之间（含0和 $4N$ ），或者p的某些字符不是A、B、X和Y。\n- **too many moves**：函数press的调用次数超过8 000次。\n- **wrong guess**：guess\\_sequence返回的不是 $S$ 。",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {
+        "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+      },
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 19
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 15
+          },
+          {
+            "page_id": 2,
+            "num_blocks": 10
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 3,
+      "total_cost": 0.9,
+      "cost_breakdown": {
+        "final_cost_cents": 0.9
+      },
+      "runtime": 6.114891290664673,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n![IOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)\n\nIOI 2018 logo featuring a red circle with a white stylized flower inside, flanked by two blue vertical bars.\n\n## 组合动作\n\n你在玩一个动作游戏。游戏控制器有4个按键，A、B、X和Y。在游戏中，你用组合动作来赚金币。你可以依次按这些按键来完成一个组合动作。\n\n这个游戏有一个隐藏的按键序列，可以表示为由这4个字符组成的串 $S$ 。你并不知道这个串 $S$ ，但是你知道它的长度为 $N$ 。\n\n你还知道， $S$ 的首字符不会在串中重复出现。例如， $S$ 可以是“ABXYY”或者“XYYAA”，但不能是“AAAAA”或“BXYBX”。\n\n你可以依次按最多 $4N$ 个按键来完成一个组合动作。串 $p$ 为你所按的按键序列。你用这个组合动作赚到的金币数量，等于同时为 $p$ 之子串和 $S$ 之前缀的最长字符串的长度。串 $t$ 的子串定义为 $t$ 中的连续字符序列（可以为空）。 $t$ 的前缀定义为 $t$ 的子串，其或者为空，或者包含 $t$ 的首字符。\n\n例如，如果 $S$ 是“ABXYY”，而 $p$ 是“XXYYABYABXAY”，你会得到3个金币，因为“ABX”是可作为 $p$ 的子串的 $S$ 的前缀中最长的。\n\n你的任务是，用少量的组合动作，找出隐藏字符串 $S$ 。\n\n## 实现细节\n\n你需要实现下面的函数：\n\n```\nstring guess_sequence(int N)\n```\n\n- $N$ ：串 $S$ 的长度。\n- 对每个测试用例，该函数被调用恰好一次。\n- 该函数应返回串 $S$ 。\n\n你的程序可以调用下面的函数：\n\n```\nint press(string p)\n```\n\n- $p$ ：你的按键序列。\n- $p$ 必须是长度为从0到 $4N$ 的串（包括0和 $4N$ ）。 $p$ 的每个字符必须是A、B、X或者Y。\n- 对每个测试用例，你调用该函数的次数不能超过8 000次。\n- 该函数的返回结果是，当按出按键序列 $p$ 后你赚到的金币数量。\n\n如果不满足上面的条件，你的程序将被判为**Wrong Answer**。否则，你的程序将被判为**Accepted**，\n\n{1}------------------------------------------------\n\n而你的得分将根据press的调用次数来计算（参见子任务）。\n\n## 例子\n\n设 $S$ 为“ABXYY”。评测程序调用了guess\\_sequence(5)。数据交互过程的例子如下所示：\n\n| 调用                    | 返回值 |\n|-----------------------|-----|\n| press(\"XXYYABYABXAY\") | 3   |\n| press(\"ABXYY\")        | 5   |\n| press(\"ABXYYABXYY\")   | 5   |\n| press(\"\")             | 0   |\n| press(\"X\")            | 0   |\n| press(\"BXYY\")         | 0   |\n| press(\"YYXBA\")        | 1   |\n| press(\"AY\")           | 1   |\n\n对于press的第1次调用，“ABX”是“XXYYABYABXAY”的子串，而“ABXY”不是，因此返回3。\n\n对于press的第3次调用，“ABXYY”本身是“ABXYYABXYY”的子串，因此返回5。\n\n对于press的第6次调用，除了空串以外没有“ABXYY”的其他前缀可以是“BXYY”的子串，因此返回0。\n\n最后，guess\\_sequence(5)应当返回“ABXYY”。\n\n附件压缩包中的文件sample-01-in.txt对应于本例。\n\n## 限制条件\n\n- $1 \\leq N \\leq 2000$\n- 串 $S$ 的每个字符必须是A、B、X或Y。\n- $S$ 的首字符不会在 $S$ 中重复出现。\n\n在本题中，评测程序不是适应性的。意思是说，在评测程序开始运行的时候 $S$ 就固定下来，而且不依赖于你的程序所做的询问。\n\n## 子任务\n\n1. （5分） $N = 3$\n2. （95分）没有附加限制。对该子任务，你在每个测试用例上的得分将计算如下。设 $q$ 为调\n\n{2}------------------------------------------------\n\n用press的次数。\n\n- 如果 $q \\leq N + 2$ ，你的得分为95。\n- 如果 $N + 2 < q \\leq N + 10$ ，你的得分为 $95 - 3(q - N - 2)$ 。\n- 如果 $N + 10 < q \\leq 2N + 1$ ，你的得分为25。\n- 如果 $\\max\\{N + 10, 2N + 1\\} < q \\leq 4N$ ，你的得分为5。\n- 否则，你的得分为0。\n\n注意，你在每个子任务上的得分，等于你在该子任务下所有测试用例上的最低得分。\n\n## 评测程序示例\n\n评测程序示例将读取如下格式的输入：\n\n- 第1行： $S$\n\n如果你的程序被判为**Accepted**，评测系统示例将打印出**Accepted: q**，这里q为函数press的调用次数。\n\n如果你的程序被判为**Wrong Answer**，它打印出**Wrong Answer: MSG**。各类MSG的含义如下：\n\n- **invalid press**：输入到press的值p是无效的。也就是说，p的长度不在0到 $4N$ 之间（含0和 $4N$ ），或者p的某些字符不是A、B、X和Y。\n- **too many moves**：函数press的调用次数超过8 000次。\n- **wrong guess**：guess\\_sequence返回的不是 $S$ 。",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {
+      "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg": "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"
+    },
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 19
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 15
+        },
+        {
+          "page_id": 2,
+          "num_blocks": 10
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 3,
+    "total_cost": 0.9,
+    "cost_breakdown": {
+      "final_cost_cents": 0.9
+    },
+    "runtime": 6.114891290664673,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.9
+  },
+  "page_count": 3,
+  "success": true,
+  "error": null,
+  "source": "IOI/ioi2018/1A-combo-CHN.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": [
+    "2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg"
+  ]
+}

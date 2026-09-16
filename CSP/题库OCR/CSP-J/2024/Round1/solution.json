@@ -1,0 +1,142 @@
+{
+  "request_id": "nMeQsn_79GeZEd-nem-AdQ",
+  "request_parameters": {
+    "output_format": "markdown",
+    "mode": "balanced",
+    "paginate": true
+  },
+  "completed_at": "2026-09-16T01:37:21.208100+00:00",
+  "submit_response": {
+    "success": true,
+    "error": null,
+    "request_id": "nMeQsn_79GeZEd-nem-AdQ",
+    "request_check_url": "https://www.datalab.to/api/v1/convert/nMeQsn_79GeZEd-nem-AdQ",
+    "versions": null,
+    "checkpoint_reused": null
+  },
+  "poll_responses": [
+    {
+      "status": "processing",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": null,
+      "chunks": null,
+      "json": null,
+      "markdown": null,
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": null,
+      "metadata": null,
+      "success": null,
+      "error": null,
+      "parse_quality_score": null,
+      "page_count": null,
+      "total_cost": null,
+      "cost_breakdown": null,
+      "runtime": null,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    },
+    {
+      "status": "complete",
+      "result_url": null,
+      "expires_in": null,
+      "output_format": "markdown",
+      "chunks": null,
+      "json": null,
+      "markdown": "\n\n{0}------------------------------------------------\n\n1. C\n2. A\n3. B\n4. D\n5. D\n6. C\n7. D\n8. B\n9. B\n10. A\n11. B\n12. A\n13. D\n14. A\n15. B\n  \n16. √\n17. ×\n18. √\n19. B\n20. A\n  \n21. √\n22. ×\n23. ×\n24. A\n25. B\n26. A\n  \n27. ×\n28. √\n29. √\n30. B\n31. C\n32. D\n\n{1}------------------------------------------------\n\n- 33. A\n- 34. B\n- 35. D\n- 36. C (A 也算正确)\n- 37. D\n  \n- 38. B\n- 39. B\n- 40. B\n- 41. B\n- 42. C",
+      "html": null,
+      "extraction_schema_json": null,
+      "extraction_score_average": null,
+      "extraction_mode": null,
+      "segmentation_results": null,
+      "segmentation_schema": null,
+      "images": {},
+      "metadata": {
+        "page_stats": [
+          {
+            "page_id": 0,
+            "num_blocks": 1
+          },
+          {
+            "page_id": 1,
+            "num_blocks": 1
+          }
+        ],
+        "failed_pages": []
+      },
+      "success": true,
+      "error": "",
+      "parse_quality_score": null,
+      "page_count": 2,
+      "total_cost": 0.6,
+      "cost_breakdown": {
+        "final_cost_cents": 0.6
+      },
+      "runtime": 4.171395301818848,
+      "checkpoint_id": null,
+      "versions": null,
+      "evaluation": null
+    }
+  ],
+  "result_url_response": null,
+  "final_response": {
+    "status": "complete",
+    "result_url": null,
+    "expires_in": null,
+    "output_format": "markdown",
+    "chunks": null,
+    "json": null,
+    "markdown": "\n\n{0}------------------------------------------------\n\n1. C\n2. A\n3. B\n4. D\n5. D\n6. C\n7. D\n8. B\n9. B\n10. A\n11. B\n12. A\n13. D\n14. A\n15. B\n  \n16. √\n17. ×\n18. √\n19. B\n20. A\n  \n21. √\n22. ×\n23. ×\n24. A\n25. B\n26. A\n  \n27. ×\n28. √\n29. √\n30. B\n31. C\n32. D\n\n{1}------------------------------------------------\n\n- 33. A\n- 34. B\n- 35. D\n- 36. C (A 也算正确)\n- 37. D\n  \n- 38. B\n- 39. B\n- 40. B\n- 41. B\n- 42. C",
+    "html": null,
+    "extraction_schema_json": null,
+    "extraction_score_average": null,
+    "extraction_mode": null,
+    "segmentation_results": null,
+    "segmentation_schema": null,
+    "images": {},
+    "metadata": {
+      "page_stats": [
+        {
+          "page_id": 0,
+          "num_blocks": 1
+        },
+        {
+          "page_id": 1,
+          "num_blocks": 1
+        }
+      ],
+      "failed_pages": []
+    },
+    "success": true,
+    "error": "",
+    "parse_quality_score": null,
+    "page_count": 2,
+    "total_cost": 0.6,
+    "cost_breakdown": {
+      "final_cost_cents": 0.6
+    },
+    "runtime": 4.171395301818848,
+    "checkpoint_id": null,
+    "versions": null,
+    "evaluation": null
+  },
+  "versions": null,
+  "parse_quality_score": null,
+  "cost_breakdown": {
+    "final_cost_cents": 0.6
+  },
+  "page_count": 2,
+  "success": true,
+  "error": null,
+  "source": "CSP-J/2024/Round1/solution.pdf",
+  "output_format": "markdown",
+  "mode": "balanced",
+  "paginate": true,
+  "image_files": []
+}
