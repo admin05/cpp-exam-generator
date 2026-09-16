@@ -31,8 +31,8 @@ BEIJING_TZ = timezone(timedelta(hours=8), name="Asia/Shanghai")
 PLATFORM_NAME = "C++ 竞赛训练平台"
 EXAM_FORM_SETTINGS_KEY = "admin_exam_form_defaults"
 DEFAULT_EXAM_FORM = {
-    "title": "素养大赛 C++ 模拟训练",
-    "question_bank": "literacy",
+    "title": "CSP-J 第一轮模拟考试",
+    "question_bank": "csp_j_round1",
     "choice_count": 10,
     "program_count": 4,
     "duration": 90,
@@ -184,6 +184,12 @@ QUESTION_BANK_PROFILES = {
     },
 }
 
+# Only the four official CSP-J/S templates are exposed by this deployment.
+QUESTION_BANK_PROFILES = {
+    key: QUESTION_BANK_PROFILES[key]
+    for key in ("csp_j_round1", "csp_j_round2", "csp_s_round1", "csp_s_round2")
+}
+
 
 def db() -> sqlite3.Connection:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -308,6 +314,22 @@ def init_db() -> None:
             )
             """
         )
+        reset_row = conn.execute(
+            "SELECT value FROM app_settings WHERE name = ?",
+            ("ocr_question_bank_reset_v1",),
+        ).fetchone()
+        if not reset_row:
+            # Existing papers embed the old question snapshots, so retaining
+            # them would continue exposing questions outside the OCR corpus.
+            conn.execute("DELETE FROM submissions")
+            conn.execute("DELETE FROM exams")
+            conn.execute(
+                """
+                INSERT INTO app_settings(name, value, updated_at)
+                VALUES (?, ?, ?)
+                """,
+                ("ocr_question_bank_reset_v1", "done", now_text()),
+            )
     backfill_round1_explanations()
 
 
@@ -899,7 +921,7 @@ def question_competition(item: dict) -> str:
 
 
 def question_bank_profile(key: str) -> dict:
-    return QUESTION_BANK_PROFILES.get(key, QUESTION_BANK_PROFILES["all"])
+    return QUESTION_BANK_PROFILES.get(key, QUESTION_BANK_PROFILES["csp_j_round1"])
 
 
 def filter_bank_items(items: list[dict], bank_key: str, item_type: str) -> list[dict]:

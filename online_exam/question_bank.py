@@ -3998,6 +3998,7 @@ PROGRAMMING_TASKS.extend(IMPORTED_FUZHOU_PROGRAMMING_TASKS)
 
 from .imported_fusai_questions import IMPORTED_FUSAI_PROGRAMMING_TASKS
 from .imported_csp_questions import CSP_ROUND1_CHOICE_QUESTIONS, CSP_ROUND2_PROGRAMMING_TASKS
+from .imported_ocr_questions import OCR_ROUND1_CHOICE_QUESTIONS, OCR_ROUND2_PROGRAMMING_TASKS
 
 
 def sanitize_csp_imported_text(value: object) -> str:
@@ -4410,6 +4411,12 @@ def apply_final_round_syllabus_filter() -> None:
 
 
 apply_final_round_syllabus_filter()
+
+# The deployable exam bank is intentionally limited to the regenerated OCR
+# corpus. Keep the older bundled practice data available in Git history, but do
+# not expose it through the application.
+CHOICE_QUESTIONS[:] = OCR_ROUND1_CHOICE_QUESTIONS
+PROGRAMMING_TASKS[:] = OCR_ROUND2_PROGRAMMING_TASKS
 
 for task in PROGRAMMING_TASKS:
     if task.get("source", "").endswith("导入"):
