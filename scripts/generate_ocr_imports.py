@@ -100,7 +100,7 @@ def build_round1() -> tuple[list[dict], list[str]]:
             question["stem"] = re.sub(r"\n\s*-\s*$", "", question.get("stem", "")).strip()
             question["options"] = [
                 re.split(
-                    r"\n\s*(?:一、|二、|三、|试补全(?:枚举)?算法|\(\d+\)\s)|\n\s*```",
+                    r"\n\s*(?:(?:#{1,6}\s*)?(?:一、|二、|三、)|(?:#{1,6}\s+\d+[.、])|试补全(?:枚举)?算法|\(\d+\)\s)|\n\s*```",
                     option,
                     maxsplit=1,
                 )[0]
@@ -135,11 +135,32 @@ def build_round2() -> tuple[list[dict], list[str]]:
     return tasks, report
 
 
+def validate_questions(questions: list[dict], tasks: list[dict]) -> None:
+    boundary_pattern = re.compile(
+        r"\n\s*(?:(?:#{1,6}\s*)?(?:一、|二、|三、)|"
+        r"(?:#{1,6}\s+\d+[.、])|试补全(?:枚举)?算法|\(\d+\)\s)"
+    )
+    errors = []
+    for question in questions:
+        options = question.get("options", [])
+        if not 2 <= len(options) <= 4:
+            errors.append(f"{question.get('id')}: invalid option count {len(options)}")
+        for index, option in enumerate(options):
+            if boundary_pattern.search(str(option)):
+                errors.append(f"{question.get('id')} option {index}: next-section marker")
+    for task in tasks:
+        if not task.get("title") or not task.get("description"):
+            errors.append(f"{task.get('id')}: incomplete programming task")
+    if errors:
+        raise RuntimeError("OCR question validation failed:\n" + "\n".join(errors[:20]))
+
+
 def main() -> None:
     questions, round1_report = build_round1()
     tasks, round2_report = build_round2()
     questions, skipped_questions, renamed_questions = dedupe_items(questions, "choice")
     tasks, skipped_tasks, renamed_tasks = dedupe_items(tasks, "programming")
+    validate_questions(questions, tasks)
     report = round1_report + round2_report + [
         f"dedupe round1 skipped duplicates: {skipped_questions}, renamed id collisions: {renamed_questions}",
         f"dedupe round2 skipped duplicates: {skipped_tasks}, renamed id collisions: {renamed_tasks}",
